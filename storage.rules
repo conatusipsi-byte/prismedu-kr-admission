@@ -1,0 +1,12 @@
+rules_version = '2';
+
+// PRISM은 현재 Firebase Storage를 사용하지 않아요.
+// 누구도 읽기/쓰기 불가 — 버킷이 실수로 퍼블릭 노출되는 것을 차단.
+// 향후 Storage 기능(예: 에세이 첨부, 프로필 이미지) 도입 시 이 파일을 확장.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

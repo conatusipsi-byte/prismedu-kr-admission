@@ -1,0 +1,33 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "regions": ["icn1"],
+  "functions": {
+    "app/api/match/route.ts": {
+      "maxDuration": 30,
+      "memory": 1024
+    },
+    "app/api/match/[id]/route.ts": {
+      "maxDuration": 15,
+      "memory": 512
+    },
+    "app/api/match/simulate/route.ts": {
+      "maxDuration": 30,
+      "memory": 1024
+    },
+    "app/api/chat/route.ts": {
+      "maxDuration": 60,
+      "memory": 1024
+    },
+    "app/api/admissions/analyze/route.ts": {
+      "maxDuration": 30,
+      "memory": 1024
+    },
+    "app/api/payment/confirm/route.ts": {
+      "maxDuration": 20,
+      "memory": 512
+    }
+  }
+}

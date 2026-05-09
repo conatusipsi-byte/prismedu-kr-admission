@@ -1,0 +1,890 @@
+[
+  {
+    "id": "Harvard",
+    "name": "Harvard University",
+    "tone": ["지적 진정성", "성찰적", "절제된 자신감", "구체적 일화 중심", "겸손한 리더십"],
+    "avoidance": [
+      "업적 나열식 이력서형 서술",
+      "'세상을 바꾸겠다' 식의 과장된 선언",
+      "Harvard 이름을 반복 언급하며 아부하는 톤",
+      "공식 수상·직책으로 리더십을 증명하려는 접근",
+      "너무 완벽해 보이는 서사 (결점·불확실성 부재)"
+    ],
+    "idealTraits": [
+      "작은 순간에서 큰 의미를 끌어내는 관찰력",
+      "지적 호기심이 일상 행동으로 드러남",
+      "기여형 리더십 (직책 아닌 영향)",
+      "자기 비판 능력과 성장 과정의 솔직한 서술",
+      "학문 분야 간 연결을 자연스럽게 보여주는 사고"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 1(배경/정체성)과 Prompt 5(성장 경험) 선호. 일상의 한 장면에서 출발해 사고 과정을 펼치는 구조가 잘 맞음.",
+        "sampleThemes": [
+          "가족과의 대화에서 촉발된 학문적 질문",
+          "실패한 프로젝트에서 배운 협업의 본질",
+          "개인적 루틴(요리·정원 가꾸기·편지 쓰기)이 사고방식이 된 과정",
+          "문화·언어 경계에서 겪은 인식의 전환"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Harvard는 'Why Harvard'를 직접 묻지 않음. 대신 지원자가 House 시스템·Gen Ed 커리큘럼·특정 교수 연구실에서 어떻게 성장할지 구체적으로 상상한 흔적을 간접적으로 보여주는 것이 중요.",
+        "specificPrompts": [
+          { "prompt": "지적 경험 (Intellectual Experience) 200단어", "keyAdvice": "수업/책/대화 하나만 깊게. 나열 금지. 왜 그것이 사고를 바꿨는지가 핵심." },
+          { "prompt": "추가 활동 (Extracurricular/Work) 150단어", "keyAdvice": "가장 의미 있었던 활동 하나의 구체적 순간. Activities List와 중복되는 요약 금지." },
+          { "prompt": "룸메이트에게 알려주고 싶은 것 (Top 3) 200단어", "keyAdvice": "진짜 일상 습관·취향. 성취 자랑 금지. 유머와 자기인식 환영." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2,
+      "personalVoice": 2.5,
+      "intellectualDepth": 2.5,
+      "communityFit": 1.5,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "MIT",
+    "name": "Massachusetts Institute of Technology",
+    "tone": ["문제 해결 지향", "협업적", "실용적·구체적", "'만드는 사람'의 언어", "간결함"],
+    "avoidance": [
+      "순수 학업 성취 나열 (GPA·올림피아드 메달)",
+      "'나는 천재적이다' 식의 개인 영웅 서사",
+      "경쟁·개인 우월감 중심 스토리",
+      "추상적 이론만 있고 손으로 만든 흔적 없음",
+      "100~200단어 제한을 무시한 장황한 구조"
+    ],
+    "idealTraits": [
+      "손으로 만들고 고친 경험 (mens et manus)",
+      "팀 내에서 남을 돕거나 함께 문제 푼 순간",
+      "실패한 실험·프로젝트를 반복한 집요함",
+      "순수한 즐거움으로 하는 것 (pleasure 질문 대응)",
+      "커뮤니티·사람을 돕기 위한 기술적 사고"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "MIT는 Common App을 사용하지 않음. 자체 5개 짧은 답변(100~200단어)이 전부. Common App 주 에세이는 평가 대상 아님.",
+        "sampleThemes": [
+          "고장난 가전제품을 분해한 경험이 전공 관심으로 이어짐",
+          "동아리에서 다른 멤버의 버그를 함께 해결한 밤",
+          "부모님 가게의 비효율을 소프트웨어로 개선한 과정",
+          "순수 취미(종이접기·베이킹·음악 편곡)에서 본 수학"
+        ]
+      },
+      "supplement": {
+        "whyUs": "MIT는 'Why MIT'를 명시적으로 묻지 않음. 5개 질문 전체가 '어떤 사람인지' 평가용. UROP, lab, 동아리 이름을 언급할 수 있으면 가산점이나 필수는 아님. 핵심은 '문제에 어떻게 접근하는 사람인가'.",
+        "specificPrompts": [
+          { "prompt": "Field of Study 100단어", "keyAdvice": "언제부터·왜가 아니라 '지금 어떤 질문이 당신을 사로잡고 있는가'. 구체적 문제 하나만." },
+          { "prompt": "Pleasure 100~200단어", "keyAdvice": "이력서에 없는 것. 성취로 연결하지 말 것. 순수한 기쁨 자체를 묘사." },
+          { "prompt": "Educational Differentiation 100~200단어", "keyAdvice": "기대에서 벗어나 다르게 한 일. 반항이 아니라 자기 판단의 근거를 보여줄 것." },
+          { "prompt": "Collaboration 100~200단어", "keyAdvice": "배운 것·가르친 것·함께 만든 것 중 하나. 공동체·멤버의 이름·역할을 구체적으로." },
+          { "prompt": "Challenge Management 100~200단어", "keyAdvice": "예상치 못한 도전. 해결 결과보다 대응 방식·배운 점이 핵심." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 3,
+      "personalVoice": 2,
+      "intellectualDepth": 2.5,
+      "communityFit": 1.5,
+      "storytelling": 1
+    }
+  },
+  {
+    "id": "Yale",
+    "name": "Yale University",
+    "tone": ["지적 대화", "따뜻한 진정성", "호기심 있는 겸손", "Residential College 공동체", "다면적 자아"],
+    "avoidance": [
+      "단일 관심사 과몰입 (Yale은 다면성을 중시)",
+      "엘리트 의식·지원 학교 나열 암시",
+      "추상적 '배움을 사랑한다' 선언",
+      "사교적 가면 뒤의 진짜 목소리 부재",
+      "공동체를 추상적 이상으로만 언급"
+    ],
+    "idealTraits": [
+      "대화 속에서 사고가 발전하는 사람",
+      "두 개 이상의 분야를 진심으로 사랑하는 다면성",
+      "작은 공동체(가족·팀·반)에 구체적으로 기여한 경험",
+      "다른 의견을 흡수해 자기 관점을 재편한 적 있는 태도",
+      "가르치고 배우는 양방향 관계에 익숙함"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 1(정체성), 4(문제 해결), 7(자유 주제) 모두 잘 맞음. 대화·사제 관계·도서관 순간처럼 '둘 이상의 마음이 만나는' 장면이 Yale 감각에 부합.",
+        "sampleThemes": [
+          "선생님·멘토와의 긴 대화가 한 관점을 뒤집은 순간",
+          "서로 다른 두 커뮤니티(종교·언어·예술 등) 사이를 오가며 얻은 통찰",
+          "읽기 모임·토론 동아리에서 자기 입장이 바뀐 과정",
+          "가족 중 누군가를 가르치며 오히려 배운 경험"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Yale은 Why Yale(125단어)을 직접 묻고, 추가로 '무엇이 당신을 감동시키는가' 같은 짧은 질문(200자 내외) 여러 개와 400단어 장문 에세이로 다면성을 본다. Why Yale은 residential college, Directed Studies, Grand Strategy, Yale Daily News 등 Yale 고유 제도를 구체적으로 연결해야 함.",
+        "specificPrompts": [
+          { "prompt": "Why Yale 125단어", "keyAdvice": "제도(residential college, shopping period, Directed Studies)를 1~2개 구체 언급. 단순 '학문적 명성'은 감점." },
+          { "prompt": "Why this major 200단어", "keyAdvice": "Yale 해당 학과의 특정 과목·교수·세미나 시리즈와 자기 질문을 연결." },
+          { "prompt": "Short Takes 200자 ×3", "keyAdvice": "진짜 사소하고 솔직한 답. 교훈형·과시형 답변 지양." },
+          { "prompt": "400단어 장문 (공동체/불편함/관점 등 택1)", "keyAdvice": "'다면성'이 드러나는 주제 선택. 단일 정체성에 갇힌 서사 지양." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2,
+      "personalVoice": 2,
+      "intellectualDepth": 2.5,
+      "communityFit": 2,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "Princeton",
+    "name": "Princeton University",
+    "tone": ["지적 엄격함", "서비스 의식", "글쓰기 완성도", "학부 중심 집중도", "겸손한 사회적 관심"],
+    "avoidance": [
+      "'Ivy 지원자' 일반론",
+      "service/volunteer 경험의 단순 나열",
+      "graded paper가 없어도 된다는 오해 (필수임)",
+      "research 경험을 이력서처럼 기술",
+      "Princeton이 공학/비즈니스 학교처럼 접근"
+    ],
+    "idealTraits": [
+      "한 질문을 길게 파고든 경험 (senior thesis 문화와 호응)",
+      "학문적 글쓰기 완성도 (graded paper로 검증됨)",
+      "'국가를 섬기는' 모토와 맞는 사회적 관심 (정치·정책·저널리즘 불문)",
+      "학부 중심 집중 환경을 활용할 계획",
+      "소규모 precept(토론 수업)에서 빛날 대화 능력"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 4(감사·문제 해결)나 Prompt 6(몰입 주제)가 Princeton의 '길게 파고들기' 문화에 잘 맞음. 글 자체의 논증 구조가 다른 학교보다 더 엄격히 평가됨.",
+        "sampleThemes": [
+          "한 사회 이슈를 2~3년간 추적·기록한 과정",
+          "JP·thesis처럼 스스로 설정한 장기 프로젝트",
+          "다른 의견을 진지하게 듣고 자기 입장을 수정한 경험",
+          "작은 공동체의 구조적 문제를 분석하고 개선한 기록"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Princeton은 Graded Written Paper(2~3쪽, 고교 수업에서 실제 채점된 글)를 필수로 제출받는다. 이것이 Princeton만의 핵심 차별 요소. 에세이는 Why this major(250), Civic engagement(250), 짧은 단답 3개로 구성. '서비스(service)' 프롬프트를 '자원봉사 나열'로 답하면 감점.",
+        "specificPrompts": [
+          { "prompt": "Graded Written Paper (필수 제출)", "keyAdvice": "분석적·논증적 글. 창의적 fiction보다는 인문/사회 에세이가 유리. 교사 피드백이 표시된 상태 그대로." },
+          { "prompt": "Why this major 250단어 (AB/BSE에 따라 프롬프트 상이)", "keyAdvice": "Princeton 학과의 특정 세미나·교수·research를 구체 언급." },
+          { "prompt": "Civic Engagement 250단어", "keyAdvice": "service 활동 나열 금지. 한 공동체 이슈에 대한 자기 관점과 구체 행동만." },
+          { "prompt": "More About You 짧은 3개 (50단어 내외)", "keyAdvice": "기쁨·영감·자랑 등. 가볍고 솔직하게." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2.5,
+      "personalVoice": 1.5,
+      "intellectualDepth": 2.5,
+      "communityFit": 2,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "Columbia",
+    "name": "Columbia University",
+    "tone": ["지적 폭넓음", "도시적 감수성", "문학적·분석적", "다문화적 시각", "Core Curriculum 친화"],
+    "avoidance": [
+      "단일 전공·진로에만 갇힌 좁은 시야",
+      "NYC를 배경으로만 언급 (단순 관광객 시선)",
+      "인문학·예술 경시하는 STEM 일변도 서사",
+      "리스트 질문에서 유명작만 나열 (과시용 취향)",
+      "Core Curriculum에 대한 인식 부재"
+    ],
+    "idealTraits": [
+      "인문학·예술·과학을 넘나드는 지적 호기심",
+      "도시·공동체·다양성에 실제로 관여한 경험",
+      "읽고 쓰는 문화를 자기 삶의 일부로 갖춘 사람",
+      "논쟁·토론에서 자기 입장을 정교화해본 사고력",
+      "서로 다른 관점을 연결·종합하는 능력"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "주제보다 '어떻게 쓰는가'가 중요. 문장 수준과 구조적 사고가 다른 학교보다 더 엄격히 평가됨. Prompt 1·4·6 모두 잘 맞음.",
+        "sampleThemes": [
+          "두 언어·두 문화 사이에서 번역이 드러내는 의미",
+          "한 권의 책·시가 세상을 보는 방식을 재편한 과정",
+          "낯선 도시·동네에서 관찰자에서 참여자가 된 경험",
+          "가족사·이민 서사에서 발견한 역사적 맥락"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Columbia는 리스트 질문(책·영화·관람 경험)과 Why Columbia/Why major를 함께 본다. Core Curriculum의 구체적 과목(Lit Hum, CC, Music Hum)과 뉴욕의 구체적 경험(특정 박물관·공연장·동네)을 연결해야 한다. 단순히 '도시 캠퍼스라서'는 감점.",
+        "specificPrompts": [
+          { "prompt": "리스트 질문 (Books/Media/Experiences outside classroom) 각 75~150단어", "keyAdvice": "균형 잡힌 폭(고전+동시대, 전공+비전공). 각 항목에 왜 의미있는지 한 줄 이유. 과시성 제목 나열 금지." },
+          { "prompt": "Why Columbia 150단어", "keyAdvice": "Core Curriculum 특정 과목·교수·전통을 최소 1개 구체 언급. '도시' 자체만으로는 부족." },
+          { "prompt": "Why this major 200단어", "keyAdvice": "학과 내 구체적 과목·교수 연구를 언급하며, 당신의 질문이 그 학과와 어떻게 만나는지." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2,
+      "personalVoice": 1.5,
+      "intellectualDepth": 3,
+      "communityFit": 2,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "Stanford",
+    "name": "Stanford University",
+    "tone": ["따뜻한 진정성", "지적 활기", "비공식적·편안함", "창의적 에너지", "동료 친화"],
+    "avoidance": [
+      "실리콘밸리 스타트업 클리셰 ('나는 이미 CEO')",
+      "너무 다듬어 생기가 없는 문장",
+      "'Stanford가 꿈이다' 식의 감정 토로",
+      "roommate letter에서 업적 자랑",
+      "'What matters to you'에 교과서적 답변 (세계 평화 등)"
+    ],
+    "idealTraits": [
+      "roommate가 되고 싶은 사람의 따뜻함·유머",
+      "'What matters to you, and why'에 진심으로 답할 수 있는 성찰",
+      "지적 활기 (Intellectual Vitality) — 호기심이 삶을 움직임",
+      "공동체 내 긍정적 에너지와 기여",
+      "업적보다 태도와 목소리로 기억에 남는 사람"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 1·5·7 모두 가능. Stanford는 문장 자체의 생기·목소리를 중시하므로 형식적 완벽함보다 살아있는 디테일 우선.",
+        "sampleThemes": [
+          "가족 식탁·할머니 레시피처럼 사적인 장면에서 발견한 정체성",
+          "오래 지속해온 사소한 프로젝트와 그것이 가르쳐준 것",
+          "친구와의 대화에서 자기 생각이 바뀐 경험",
+          "실패를 유머로 풀어낸 에피소드"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Stanford는 'Why Stanford'를 직접 묻지 않는다. 대신 roommate letter, 'What matters to you and why', 'Meaningful contribution at Stanford' 세 장문 + 5개 단답으로 사람 자체를 본다. 제도 언급보다는 태도·목소리·관계 맺는 방식이 더 중요.",
+        "specificPrompts": [
+          { "prompt": "Roommate Letter 100~250단어", "keyAdvice": "미래 룸메이트에게 쓰는 편지. 일상의 습관·취향·이상한 버릇 환영. 이력서형 자기소개 금지." },
+          { "prompt": "What matters to you, and why 100~250단어", "keyAdvice": "작고 구체적인 것. 거대 담론보다 개인의 진짜 관심사. 'why'가 핵심." },
+          { "prompt": "Meaningful contribution / Stanford community 100~250단어", "keyAdvice": "Stanford에서 어떻게 기여할지. 특정 student group·Intro Seminar·research 언급 가능." },
+          { "prompt": "Short Questions 50단어 ×5", "keyAdvice": "장난기·개성·진정성. 과시 금지." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 1.5,
+      "personalVoice": 2.5,
+      "intellectualDepth": 2,
+      "communityFit": 1.5,
+      "storytelling": 2.5
+    }
+  },
+  {
+    "id": "UPenn",
+    "name": "University of Pennsylvania",
+    "tone": ["전문성 지향", "학제 간 야망", "실용 + 지적 균형", "구체적 프로그램 인식", "정밀함"],
+    "avoidance": [
+      "Wharton을 '비즈니스 학교' 일반론으로만 접근",
+      "CAS/SEAS/Nursing/Wharton 단과대 미식별",
+      "dual-degree program(M&T, Huntsman, LSM, VIPER, NETS, DMD) 존재 모름",
+      "Penn을 Ivy 대안 정도로 접근",
+      "필라델피아 도시 자원 무시"
+    ],
+    "idealTraits": [
+      "Penn의 학부 구조(4개 단과대 + 7개 dual degree)에 정확히 맞는 서사",
+      "학제 간 사고 (Penn 모토 'Inter in Omnibus')",
+      "pre-professional 방향성과 지적 깊이의 공존",
+      "Penn 졸업 후 하고 싶은 일의 구체성",
+      "공동체 참여 이력 (Penn은 West Philly 연계 중시)"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Common App은 상대적으로 비중 낮음. Penn은 school-specific supplement에서 지원자를 본다. Common App은 Penn supplement와 중복되지 않는 '다른 각도의 자기'를 보여주는 게 유리.",
+        "sampleThemes": [
+          "두 분야(예: 비즈니스+생물, 공학+디자인)의 교차점에서 발견한 문제",
+          "가족 사업·지역 경제를 구조적으로 분석한 경험",
+          "공동체 문제를 정책·기술로 해결 시도한 과정"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Penn supplement의 핵심은 '왜 이 학부(school)'가 아니라 '왜 Penn의 이 특정 프로그램'. Wharton 지원 시 OIDD/Management 등 concentration, M&T 지원 시 공학+경영 양쪽 모두 구체 논증 필요. 단과대 이름 틀리면 치명적.",
+        "specificPrompts": [
+          { "prompt": "Thank-you note 150~200단어", "keyAdvice": "당신에게 영향을 준 사람에게 쓰는 감사 편지. 가족·교사·동료 다 가능. 과장 금지." },
+          { "prompt": "Why Penn + Why major 150~200단어", "keyAdvice": "Penn 특정 단과대(Wharton/CAS/SEAS/Nursing) + 세부 프로그램(concentration/minor) 명시. 교수·센터·과목 1~2개 구체." },
+          { "prompt": "School-specific essay (단과대별 추가 질문)", "keyAdvice": "지원한 dual degree(M&T, Huntsman, LSM 등)면 추가 에세이. 두 분야를 왜 함께 하려는지 구체적 목표." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 3,
+      "personalVoice": 1.5,
+      "intellectualDepth": 2,
+      "communityFit": 2.5,
+      "storytelling": 1
+    }
+  },
+  {
+    "id": "UChicago",
+    "name": "University of Chicago",
+    "tone": ["지적 유희", "실험적 사고", "'life of the mind'", "장르 교차", "학문적 집착"],
+    "avoidance": [
+      "'안전한' 주제 선택",
+      "반지성주의·학문 경시 암시",
+      "uncommon essay를 평범한 personal essay로 답변",
+      "Core Curriculum 인식 부재",
+      "'다재다능'만 강조하고 깊이 없음"
+    ],
+    "idealTraits": [
+      "하나의 이상한 질문을 진지하게 끝까지 밀어붙이는 집요함",
+      "장르·형식 실험에 편안한 글쓰기 감각",
+      "Socratic 토론에서 빛날 논증·반박 능력",
+      "교실 밖에서도 '생각하는 삶'을 사는 증거",
+      "quirky essay prompt를 자기 사유의 기회로 삼는 태도"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "UChicago는 Common App을 받지만 Uncommon Essay가 훨씬 더 중요. Common App은 '정상 범위의 자기 소개'로, Uncommon Essay는 '지적 개성'을 드러내는 용도로 분리.",
+        "sampleThemes": [
+          "오래 사로잡혀온 학문적 질문의 여정",
+          "일상의 사물/개념(예: 괄호, 소수, 지도)을 재정의한 사고 실험",
+          "서로 무관한 두 분야를 연결한 엉뚱한 통찰"
+        ]
+      },
+      "supplement": {
+        "whyUs": "UChicago supplement는 Why UChicago + Uncommon Essay 두 개. Why는 무제한 단어지만 보통 500단어 내외. Core Curriculum, O-Week, House system, 특정 교수/연구소(Oriental Institute, Becker Friedman 등)를 구체 언급해야 함. Uncommon Essay는 매년 바뀌는 6개 prompt 중 택1, 분량 무제한이지만 보통 650~1000단어.",
+        "specificPrompts": [
+          { "prompt": "Why UChicago (무제한, 권장 ~500단어)", "keyAdvice": "Core(Sosc, Hum sequence) + 특정 교수·프로그램·전통 구체 언급. Hyde Park 지역 언급 가능." },
+          { "prompt": "Uncommon Essay (6개 prompt 중 택1, 무제한)", "keyAdvice": "prompt가 이상할수록 진지하게 답하지 말고 장난스럽게 사유할 것. 형식 실험(대화·리스트·letter) 환영. 650~1000단어 권장." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 1,
+      "personalVoice": 2,
+      "intellectualDepth": 3.5,
+      "communityFit": 1,
+      "storytelling": 2.5
+    }
+  },
+  {
+    "id": "Brown",
+    "name": "Brown University",
+    "tone": ["개인적·솔직함", "비관습적 사고", "즐거움과 호기심", "자기 주도적", "장르 교차"],
+    "avoidance": [
+      "경직된 진로 계획·로드맵형 서사",
+      "전통적 성취(AP 점수·대회 수상) 중심 자기 소개",
+      "Open Curriculum에 대한 언급 없는 Why Brown",
+      "지나치게 격식 있는 문장 (Brown은 덜 포멀함)",
+      "'다양한 관심사'를 나열만 하고 통합 서사 부재"
+    ],
+    "idealTraits": [
+      "서로 무관해 보이는 관심사를 스스로 연결하는 사고",
+      "구조 없는 환경에서도 자기 길을 설계한 경험",
+      "즐거움·호기심이 학문으로 이어진 자연스러움",
+      "전형적 리더십이 아닌 비관습적 기여",
+      "자기만의 질문을 끈질기게 파고드는 독립성"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 2(도전과 실패) 또는 Prompt 7(자유 주제)이 Brown의 비관습적 분위기에 잘 맞음. 형식 실험도 허용되는 분위기.",
+        "sampleThemes": [
+          "무용수·수학자·요리사 등 겹치지 않는 정체성이 하나로 엮이는 순간",
+          "학교가 가르치지 않는 것을 스스로 독학한 과정",
+          "'이상한 취미'가 진지한 학문적 질문이 된 여정",
+          "규칙을 어기거나 재정의한 경험과 그 의미"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Brown의 세 에세이는 서로 다른 각도로 '당신은 구조 없이도 자기 길을 만들 수 있는가'를 묻는다. Open Curriculum을 언급하되 막연한 찬양이 아니라, 자신이 그 안에서 어떤 과목 조합·집중을 원하는지 구체적으로.",
+        "specificPrompts": [
+          { "prompt": "Why Brown / Open Curriculum 200~250단어", "keyAdvice": "Open Curriculum을 구체 과목 조합(예: 뇌과학+음악이론+페르시아어)으로 보여줄 것. '자유로워서 좋다'만으론 부족." },
+          { "prompt": "기쁨 (Brings you joy) 200~250단어", "keyAdvice": "작고 구체적인 것. 일상의 사소한 기쁨이 진정성 있게. 성취 연결 금지." },
+          { "prompt": "커뮤니티 (Community essay) 200~250단어", "keyAdvice": "전통적 공동체(학교·국가)보다 덜 명백한 커뮤니티(온라인·취미·가족 내 소그룹)가 더 신선하게 읽힘." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 1.5,
+      "personalVoice": 3,
+      "intellectualDepth": 2,
+      "communityFit": 1.5,
+      "storytelling": 2
+    }
+  },
+  {
+    "id": "Dartmouth",
+    "name": "Dartmouth College",
+    "tone": ["친밀함", "야외 지향", "학부 중심 자부심", "뉴잉글랜드 계절감", "공동체 밀착"],
+    "avoidance": [
+      "대도시·대형 연구대학 기대",
+      "Dartmouth를 'Ivy 중 가장 덜 유명한 곳' 식으로 접근",
+      "D-Plan·sophomore summer 모름",
+      "DOC(Outing Club)·First-Year Trips 인식 부재",
+      "Tuck(경영대)·Geisel(의대)만 떠올리고 학부 정체성 놓침"
+    ],
+    "idealTraits": [
+      "작은 공동체에서 빛나는 관계 맺기 능력",
+      "자연·신체·야외 활동과 학문의 연결",
+      "D-Plan(학기제 + sophomore summer)을 적극 활용할 상상력",
+      "학부 중심 환경에서 교수와 직접 일하고 싶은 태도",
+      "Hanover 지역 문화·계절에 대한 감수성"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 1·5·7 모두 잘 맞음. Dartmouth는 소규모·친밀한 공동체 감각을 중시하므로 '큰 무대' 성취보다 작은 관계의 깊이가 더 유리.",
+        "sampleThemes": [
+          "야외 활동(하이킹·캠핑·농사)에서 얻은 관점",
+          "소규모 팀·학급에서 장기적으로 관계를 쌓아간 과정",
+          "계절의 변화와 자기 리듬이 연결된 서사",
+          "작은 지역 공동체에서 역할을 만들어낸 경험"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Dartmouth는 짧은 Why Dartmouth(100단어) + 에세이 #2(250단어, 여러 prompt 중 택1)로 구성. Why는 제도(D-Plan, First-Year Trips, residential house, DOC, FSP 해외 프로그램) 구체 언급 필수. 에세이 #2는 'Lives of consequence' 같은 Dartmouth 철학 prompt가 많음.",
+        "specificPrompts": [
+          { "prompt": "Why Dartmouth 100단어", "keyAdvice": "D-Plan·sophomore summer·FSP·DOC 중 1~2개 구체 언급 + 자기 계획. 100단어 내에서 군더더기 없이." },
+          { "prompt": "Essay #2 (여러 prompt 중 택1) 250단어", "keyAdvice": "'Lives of consequence', 'belief that was challenged' 등 Dartmouth 특유 질문. 공동체·관계 중심 서사가 잘 맞음." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 1.5,
+      "personalVoice": 2.5,
+      "intellectualDepth": 1.5,
+      "communityFit": 3,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "Cornell",
+    "name": "Cornell University",
+    "tone": ["단과대 정체성 강조", "실용적 지향", "'any person, any study'", "학문 분야 열정", "Ithaca 지역 의식"],
+    "avoidance": [
+      "7개 단과대(CAS/Engineering/CALS/AAP/ILR/Hotel/Human Ecology) 중 잘못된 학교 선택",
+      "Cornell을 'Ivy 백도어'로 접근 (Hotel/CALS 지원 후 전과 의도 드러남)",
+      "Ithaca 지역·기후·크기 무시",
+      "단과대 학풍을 일반 liberal arts처럼 접근",
+      "Why major를 Why Cornell과 분리해 답변"
+    ],
+    "idealTraits": [
+      "지원 단과대의 학풍에 진심으로 맞는 배경 (예: Hotel은 hospitality 경험, ILR은 노동·조직 관심)",
+      "실용성과 학문성의 균형",
+      "대규모 연구대학의 자원을 구체적으로 활용할 계획",
+      "Ithaca의 자연·지역성에 대한 긍정적 인식",
+      "cross-registration으로 학부 간 연계 상상 가능"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Common App은 '전체적인 나'를 보여주고, Cornell의 핵심은 school-specific essay. 단과대와 관련된 배경을 Common App에 미리 심어두면 일관성 있음.",
+        "sampleThemes": [
+          "실제 현장 경험(농장·호텔·공장·노동조합)에서 발견한 학문적 질문",
+          "지역 경제·공동체 구조를 분석한 경험",
+          "디자인·건축·예술을 실용적 문제 해결과 결합한 과정"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Cornell supplement는 단과대별로 완전히 다른 질문 하나(250~650단어). Hotel의 'Why Hospitality', CALS의 agricultural focus, Engineering의 'Why Cornell Engineering + major', AAP의 portfolio·창작 과정 등. 단과대 오답하면 불합격 사유.",
+        "specificPrompts": [
+          { "prompt": "School-Specific Essay 250~650단어 (단과대별 상이)", "keyAdvice": "지원 단과대 이름을 정확히 쓰고, 그 학교 고유 가치(Hotel: hospitality industry, CALS: life sciences+agriculture, ILR: labor/HR, AAP: design studio, Human Ecology: applied science)를 자기 경험과 연결." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 3.5,
+      "personalVoice": 1.5,
+      "intellectualDepth": 2,
+      "communityFit": 2,
+      "storytelling": 1
+    }
+  },
+  {
+    "id": "Caltech",
+    "name": "California Institute of Technology",
+    "tone": ["과학적 엄밀함", "협업적 문제 해결", "학문적 진지함", "Honor Code 친화", "STEM 집착"],
+    "avoidance": [
+      "인문학 일변도 서사 (Caltech은 STEM-only 학교)",
+      "스타 과학자 모방·우상화",
+      "개인 성취 자랑 (Caltech Honor Code는 협업 중시)",
+      "과학 클럽 활동 나열",
+      "Caltech 크기(~240 per class) 모르고 대형대학처럼 접근"
+    ],
+    "idealTraits": [
+      "실제 실험·연구·프로젝트에서 손을 움직인 기록",
+      "틀린 가설을 수정해간 과학적 사고 과정",
+      "동료와 함께 문제를 푸는 Honor Code 친화성",
+      "STEM 외 창의적 활동(음악·글쓰기·그림)도 진지하게 하는 폭",
+      "작고 강도 높은 커뮤니티에서 버틸 수 있는 태도"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Caltech은 Common App 주 에세이도 받지만 STEM 경험 에세이가 실질적 핵심. Common App에서 STEM 이외의 '사람으로서의 나'를 보여주는 게 균형 측면에서 유리.",
+        "sampleThemes": [
+          "오랜 실험의 실패와 방법론 수정 과정",
+          "가족·친구에게 과학을 설명하며 얻은 통찰",
+          "STEM 외 취미(음악·요리·스포츠)에서 발견한 패턴과 수학",
+          "학교 실험실이나 지역 연구 기회를 활용한 경험"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Caltech은 'Why Caltech'를 따로 묻지 않는다. 대신 STEM 경험 essay + Creative activity outside STEM essay + 3개 짧은 답변으로 평가. Caltech 특유 표현: 'collaboration', 'curiosity-driven', 'honor code'. 경쟁 언어 금지.",
+        "specificPrompts": [
+          { "prompt": "STEM Experiences 250~400단어 (여러 개 가능)", "keyAdvice": "수업·연구·프로젝트 중 가장 깊게 관여한 것. 결과 자랑보다 방법론·질문의 변화." },
+          { "prompt": "Creative Activity Outside STEM 250~400단어", "keyAdvice": "STEM이 아닌 진짜 취미. 가볍고 구체적으로. 성취 연결 금지." },
+          { "prompt": "Short Answers 3개", "keyAdvice": "Caltech 커뮤니티에서 어떻게 기여할지, 실패 경험 등. 짧게 구체적으로." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2.5,
+      "personalVoice": 1,
+      "intellectualDepth": 3.5,
+      "communityFit": 1.5,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "Northwestern",
+    "name": "Northwestern University",
+    "tone": ["단과대 정체성", "학제 간 야망", "quarter system 활용", "Chicago-Evanston 이중성", "pre-professional 열기"],
+    "avoidance": [
+      "6개 학부(Weinberg/McCormick/Medill/Bienen/Communication/SESP/SoC) 미식별",
+      "Northwestern을 '중서부 대형 사립대' 일반론으로 접근",
+      "quarter system 모름 (10주 단위, 3개 quarter)",
+      "Chicago와의 거리만 강조하고 Evanston 인식 부재",
+      "Medill·Bienen 지원하면서 일반 liberal arts essay 작성"
+    ],
+    "idealTraits": [
+      "지원 단과대의 고유 강점에 맞는 배경과 계획",
+      "double major·dual degree(MMSS, ISP, Kellogg Certificate) 활용 의지",
+      "저널리즘·공학·공연예술·커뮤니케이션 등 각 단과대 특화 분야 이해",
+      "Chicago 도시 자원을 학문과 연결할 상상력",
+      "학제 간 combined studies를 구체적으로 설계할 수 있음"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Northwestern supplement 하나(300단어)가 Why Northwestern 전부. Common App에서 자기 배경·관심 분야를 충실히 보여주는 게 balance 측면에서 중요.",
+        "sampleThemes": [
+          "저널리즘·보도·스토리텔링 경험(Medill 지원 시)",
+          "공학 프로젝트와 사회적 응용(McCormick 지원 시)",
+          "연극·영화·미디어 제작(Communication/SoC 지원 시)",
+          "두 분야(예: 경제+미디어, 공학+음악)의 교차점"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Northwestern은 Why Northwestern 300단어 단 하나. 단과대 이름을 정확히 쓰고, 그 단과대 고유 프로그램(Medill: Journalism Residency, McCormick: Design Thinking, Bienen: double degree with Weinberg, SoC: RTVF) + quarter system + Evanston/Chicago 접근성 중 최소 2개 구체 언급 필요.",
+        "specificPrompts": [
+          { "prompt": "Why Northwestern 300단어", "keyAdvice": "단과대 → 세부 프로그램/과목 → quarter system 활용 계획 → Chicago/Evanston 중 최소 3개 축 연결. 일반론 금지." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 3,
+      "personalVoice": 2,
+      "intellectualDepth": 1.5,
+      "communityFit": 2,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "Duke",
+    "name": "Duke University",
+    "tone": ["균형감 있는 야망", "공동체 지향", "Trinity vs Pratt 정체성", "남부 따뜻함", "학문 + 삶의 균형"],
+    "avoidance": [
+      "Trinity(자유학예)와 Pratt(공학) 혼동",
+      "Duke = '농구 학교' 로만 접근",
+      "DukeEngage·Bass Connections·Focus Program 인식 부재",
+      "Durham 지역·Research Triangle 무시",
+      "pre-professional 야망만 강조, 공동체·관계 차원 부재"
+    ],
+    "idealTraits": [
+      "지적 진지함과 생활 균형을 함께 보여주는 사람",
+      "소규모 팀·공동체에서 역할을 만든 경험",
+      "service·community engagement 이력 (DukeEngage 친화)",
+      "학제 간 사고 (Bass Connections, Focus Program 활용)",
+      "Duke 캠퍼스 문화(전통·이벤트·House system) 존중"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Duke는 Common App과 supplement 모두 잘 본다. Common App에서 인간적 깊이·공동체 기여를 보여주고, supplement에서 Duke 특정 프로그램 연결.",
+        "sampleThemes": [
+          "service·mentorship에서 장기적으로 쌓은 관계",
+          "작은 팀에서 갈등을 중재하거나 역할을 만든 경험",
+          "자기 정체성(가족·지역·신념)과 학문적 관심의 연결",
+          "실패 후 회복력을 보여준 장면"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Duke supplement는 Why Duke(200단어) + 선택 에세이 5개 중 2개(각 250단어). 선택 에세이는 정체성(race, gender, sexuality, religion, values 등)·관점·도전을 다룸. Why Duke는 Trinity/Pratt 명시 + 구체 프로그램(Bass Connections, Focus, DukeEngage, Duke in...) 언급 필수.",
+        "specificPrompts": [
+          { "prompt": "Why Duke 200단어", "keyAdvice": "Trinity 또는 Pratt 명시 + 특정 프로그램(Bass Connections, Focus Program, DukeEngage 등) 1~2개 구체 언급." },
+          { "prompt": "Optional Essays 250단어 × 2 (5개 중 택2)", "keyAdvice": "정체성·가치·공동체 관련 질문. 자기만의 경험 없이 일반론 답변 금지." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2,
+      "personalVoice": 2.5,
+      "intellectualDepth": 1.5,
+      "communityFit": 2.5,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "Johns Hopkins",
+    "name": "Johns Hopkins University",
+    "tone": ["연구 지향", "협업적 학문", "학제 간 사고", "pre-med 경계 넘기", "실험적 태도"],
+    "avoidance": [
+      "단순 pre-med 서사 ('의사가 꿈')",
+      "연구=논문 수 나열",
+      "JHU를 'Baltimore 의대'로만 접근 (학부는 Homewood 캠퍼스)",
+      "협업 경험 부재 (JHU는 'collaboration' 반복 강조)",
+      "학부 연구 기회(BDP, Woodrow Wilson Fellowship) 모름"
+    ],
+    "idealTraits": [
+      "학부 때부터 연구에 참여할 적극성",
+      "'collaboration'을 경험으로 보여줄 수 있는 사람",
+      "전공 간 경계를 넘나드는 호기심",
+      "협업 중 자기 역할을 솔직히 서술할 수 있는 자기인식",
+      "Baltimore 도시·공동체와의 연계 의지"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 1·4·6 모두 잘 맞음. JHU는 'collaborative research' 정체성이 강하므로 혼자 이룬 성취보다 함께 만든 결과가 유리.",
+        "sampleThemes": [
+          "팀 프로젝트에서 자기 역할과 다른 멤버 기여를 균형 있게 서술",
+          "실험 실패 후 원인을 공동으로 찾은 과정",
+          "학문 외 분야(음악·체육)에서 배운 협업의 본질",
+          "가족·공동체 내 돌봄 경험과 과학적 관심의 연결"
+        ]
+      },
+      "supplement": {
+        "whyUs": "JHU supplement(300~400단어)는 '당신의 배경·관점이 JHU 캠퍼스 공동체에 어떻게 기여할지'를 묻는다. 학문적 Why JHU만 답하면 프롬프트 이탈. BDP(학부연구), HopkinsLocal, Milton S. Eisenhower Library, Bloomberg School 연계 등 구체 자원 언급 가능.",
+        "specificPrompts": [
+          { "prompt": "Contribution to JHU Community 300~400단어", "keyAdvice": "자기 배경·관점 + JHU 공동체에 어떻게 더할지. 학문적 Why만 답변하는 흔한 실수 주의. collaboration 키워드 자연스럽게." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2,
+      "personalVoice": 2,
+      "intellectualDepth": 2.5,
+      "communityFit": 1.5,
+      "storytelling": 2
+    }
+  },
+  {
+    "id": "Rice",
+    "name": "Rice University",
+    "tone": ["따뜻함", "괴짜 환영", "협업적·비경쟁적", "residential college 자부심", "Houston 도시 의식"],
+    "avoidance": [
+      "경쟁적 Ivy 지원자 스타일",
+      "11개 residential college 시스템 모름 (랜덤 배정, 평생 소속)",
+      "#UnconventionalWisdom 태그 모름",
+      "The Box (사진 업로드) 무시하거나 일반 셀카 제출",
+      "Houston을 '석유 도시' 스테레오타입으로 접근"
+    ],
+    "idealTraits": [
+      "작은 공동체(300명 내외 residential college)에서 관계 맺는 능력",
+      "비경쟁적·협업적 태도 (Rice 학풍의 핵심)",
+      "자기만의 이상한 관심사를 솔직히 드러내는 용기",
+      "Houston의 다양성(medical center, NASA, arts)과 연결할 상상력",
+      "The Box에 자기 정체성을 시각적으로 표현할 창의성"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 7(자유)이나 Prompt 1(정체성)이 Rice의 '개성 환영' 문화와 잘 맞음. 지나치게 완벽한 서사보다 약간의 엉뚱함이 유리.",
+        "sampleThemes": [
+          "누구와도 공유하지 않는 이상한 취미·관심",
+          "작은 공동체에서 괴짜로서 받아들여진 경험",
+          "Houston 같은 다문화 도시의 일상을 관찰한 기록",
+          "실패에 대한 유머러스한 접근"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Rice supplement는 Why Rice(150단어) + Perspective essay(500단어) + Residential college essay(500단어) + The Box(사진 1장). 4개 모두 중요. The Box는 자기를 대표하는 사진 업로드 — 창의적·개인적인 것일수록 유리.",
+        "specificPrompts": [
+          { "prompt": "Why Rice 150단어", "keyAdvice": "residential college 시스템 + 특정 학과/프로그램 1개 구체 언급. Houston 자원 언급 가능." },
+          { "prompt": "Perspective Essay 500단어", "keyAdvice": "당신의 배경·관점이 캠퍼스에 어떻게 기여할지. 단순 정체성 소개 말고 관점 변화·행동 사례로." },
+          { "prompt": "Residential College Life Essay 500단어", "keyAdvice": "작은 공동체에서 어떻게 살아왔는지. 지원서의 다른 부분과 중복 금지." },
+          { "prompt": "The Box (사진 1장)", "keyAdvice": "자기를 대표하는 이미지. 수상증·풍경 사진보다 개성이 드러나는 일상 장면." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 1.5,
+      "personalVoice": 2.5,
+      "intellectualDepth": 1.5,
+      "communityFit": 2.5,
+      "storytelling": 2
+    }
+  },
+  {
+    "id": "WashU",
+    "name": "Washington University in St. Louis",
+    "tone": ["정중함", "학제 간 유연성", "학문 + 전문 균형", "쾌활한 진지함", "St. Louis 지역 의식"],
+    "avoidance": [
+      "5개 학부(Arts&Sciences / McKelvey Engineering / Olin Business / Sam Fox Art&Arch / Brown School) 중 오답",
+      "WashU를 'Ivy 아니면 여기' 식으로 접근",
+      "BS/MD (University Scholars Program in Medicine) 미식별하고 지원",
+      "St. Louis 지역·Delmar Loop·Forest Park 인식 부재",
+      "'Why WashU'를 general rank/prestige 언어로 답변"
+    ],
+    "idealTraits": [
+      "지원 학부의 고유 강점 이해 (Olin: team-based, Sam Fox: studio, Brown: social work)",
+      "학부 간 cross-registration과 dual degree 활용 의지",
+      "WashU의 '유연한 전공 변경' 문화에 맞는 탐색적 태도",
+      "경쟁보다 공동 성장을 지향하는 학풍과의 조화",
+      "구체적 학문적 질문과 그 해답을 찾기 위한 계획"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Common App은 다른 Top 학교와 공유 가능. WashU는 supplement 비중이 상대적으로 짧으므로 Common App에서 탐색적·학제 간 성향을 보여주는 게 유리.",
+        "sampleThemes": [
+          "서로 다른 두 분야에서 공통 주제를 발견한 경험",
+          "학문과 예술·비즈니스를 연결한 프로젝트",
+          "가족·공동체 문제를 학문적 관점으로 본 시도"
+        ]
+      },
+      "supplement": {
+        "whyUs": "WashU supplement는 Why WashU(200단어 내외). 5개 학부 중 지원 학부 이름 + 세부 전공/프로그램/dual degree 옵션(예: Beyond Boundaries, Ampersand Program) + 특정 교수·연구 언급. BS/MD University Scholars나 Beyond Boundaries 지원 시 별도 에세이.",
+        "specificPrompts": [
+          { "prompt": "Why WashU 200단어", "keyAdvice": "지원 학부 명시(Arts&Sciences/McKelvey/Olin/Sam Fox/Brown) + 학부 내 세부 프로그램 1개 이상. 학부 간 유연성(cross-registration) 언급하면 학풍 이해 증명." },
+          { "prompt": "Special Program Essays (Beyond Boundaries, University Scholars 등 지원 시)", "keyAdvice": "해당 프로그램의 고유 가치를 자기 질문과 연결." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2.5,
+      "personalVoice": 1.5,
+      "intellectualDepth": 2,
+      "communityFit": 2.5,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "Vanderbilt",
+    "name": "Vanderbilt University",
+    "tone": ["남부 환대", "공동체 지향", "학교 spirit", "Nashville 도시 의식", "다양성 존중"],
+    "avoidance": [
+      "4개 학부(Arts&Science / Peabody / Blair / Engineering) 미식별",
+      "Vanderbilt를 'SEC 농구 학교'로만 접근",
+      "Nashville을 '음악 도시' 스테레오타입으로 접근",
+      "Immersion Vanderbilt·Martha Rivers Ingram Commons 모름",
+      "학교 spirit에 냉소적 거리두기"
+    ],
+    "idealTraits": [
+      "작은 공동체(residential commons 1학년 필수)에서 빛나는 사교성",
+      "Immersion Vanderbilt(심화 프로젝트) 활용할 구체 계획",
+      "Peabody(교육), Blair(음악), Engineering 등 특화 학부 이해",
+      "service·leadership에 실제 이력",
+      "Nashville의 복합성(음악·의료·교육·창업) 인식"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "Prompt 1·5·7 모두 가능. Vanderbilt는 '공동체 안의 나'를 보여주는 서사를 선호함.",
+        "sampleThemes": [
+          "팀·클럽·합창단 등 장기 공동체에서 역할 변화",
+          "service·tutoring·mentorship의 구체적 순간",
+          "가족·지역 전통 속 자기 정체성",
+          "공연·예술·스포츠에서 협업이 만들어낸 결과"
+        ]
+      },
+      "supplement": {
+        "whyUs": "Vanderbilt supplement는 Community Essay(250단어) 하나. '당신이 공동체에 어떻게 영향을 미쳤고/받았는지' 질문. Vanderbilt는 Why Vanderbilt를 직접 묻지 않으므로, 이 에세이에서 공동체 역량을 드러내면서 Vanderbilt 제도(Commons, Immersion Vanderbilt)와 자연스럽게 연결 가능.",
+        "specificPrompts": [
+          { "prompt": "Community Essay 250단어", "keyAdvice": "구체 공동체 하나 선택. 영향을 주고받은 양방향성. Immersion Vanderbilt·Commons로 간접 연결 가능." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 1.5,
+      "personalVoice": 2,
+      "intellectualDepth": 1.5,
+      "communityFit": 3,
+      "storytelling": 2
+    }
+  },
+  {
+    "id": "NYU",
+    "name": "New York University",
+    "tone": ["직업적 야망", "글로벌 감수성", "다양성·포용성", "도시적 실용성", "학교 내 특정 단과대학 지향"],
+    "avoidance": [
+      "'NYC를 사랑한다'는 일반적 러브레터",
+      "Stern·Tisch·Gallatin 등 단과대별 특성 무시한 지원",
+      "특정 학과·프로그램 언급 없는 막연한 Why NYU",
+      "Ivy 예비군 느낌 (NYU만의 정체성 모름)",
+      "순수 학문만 강조하고 전문성·커리어 연결 부재"
+    ],
+    "idealTraits": [
+      "지원한 단과대학(Stern/Tisch/CAS/Gallatin 등)의 정체성에 맞는 서사",
+      "글로벌 배경·다언어·해외 경험 (글로벌 캠퍼스 네트워크 친화)",
+      "예술·비즈니스·사회운동 등 현장 기반 경험",
+      "뉴욕이라는 도시를 'lab'으로 활용할 구체적 계획",
+      "다양성·차이를 다루는 성숙함 (NYU는 다양성 지표를 에세이로 검증)"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "어느 Prompt든 가능하나 Prompt 3(신념 도전) 또는 Prompt 1(정체성)이 다양성·글로벌 서사와 잘 맞음. 직업적 방향성이 은근히 드러나면 가산점.",
+        "sampleThemes": [
+          "서로 다른 문화권을 오가며 형성된 관점의 충돌과 통합",
+          "예술·창업·액티비즘 등 현장에서 직접 만든 결과물",
+          "이민 1·1.5세대로서 겪은 문화·경제적 현실",
+          "커뮤니티 내 언어·정체성 이슈를 공론화한 경험"
+        ]
+      },
+      "supplement": {
+        "whyUs": "NYU의 Why 에세이는 '왜 NYU + 왜 이 특정 학과/프로그램 + 왜 뉴욕(또는 Abu Dhabi/Shanghai)'을 모두 답해야 함. 셋 중 하나라도 빠지면 약해진다. 단과대 이름을 정확히 쓰고, 프로그램 내 구체 과목·교수·시설을 언급하는 게 기본.",
+        "specificPrompts": [
+          { "prompt": "Why NYU 250단어", "keyAdvice": "단과대+프로그램+도시 세 축을 모두 연결. Clive Davis·ITP·Gallatin 같은 특수 프로그램 지원 시 해당 프로그램의 고유 특성 명시." },
+          { "prompt": "Identity/Background (선택적 에세이) 250단어", "keyAdvice": "다양성 차원이 단순 배경 소개에 그치지 않고 관점·행동 변화로 이어져야 함." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2.5,
+      "personalVoice": 2,
+      "intellectualDepth": 1.5,
+      "communityFit": 2.5,
+      "storytelling": 1.5
+    }
+  },
+  {
+    "id": "USC",
+    "name": "University of Southern California",
+    "tone": ["Trojan 네트워크 의식", "업계 야망", "LA 도시 친화", "창의적 자신감", "quirky 프롬프트 대응"],
+    "avoidance": [
+      "Hollywood 스타 추종·celebrity chasing",
+      "LA를 테마파크로 접근 (Santa Monica Pier·Disney 언급만)",
+      "특정 스쿨(Cinematic Arts/Annenberg/Marshall/Viterbi/Thornton/IYA/Dornsife) 미식별",
+      "Trojan Family 네트워크 모름",
+      "quirky 단답 프롬프트에 성실·교훈형 답변"
+    ],
+    "idealTraits": [
+      "지원 스쿨 고유 특성 이해 (Cinematic Arts: production track, Annenberg: journalism+PR+comm, IYA: arts+tech+business)",
+      "LA의 산업(엔터테인먼트·테크·헬스케어·디자인) 자원 활용 계획",
+      "Trojan Family 동문 네트워크 활용 의지",
+      "2 majors 또는 major+minor 조합을 구체적으로 설계",
+      "quirky 단답에 장난기와 개성을 드러낼 수 있는 자기감"
+    ],
+    "essaySpecifics": {
+      "commonApp": {
+        "focus": "USC는 Common App 주 에세이 + USC supplement(Why major 250단어) + 짧은 단답 여러 개. Common App에서 '전문성으로 이어진 개인 서사'를 보여주면 좋음.",
+        "sampleThemes": [
+          "특정 산업·직업 세계에 일찍 발을 들인 경험",
+          "창작물(영상·음악·글)을 실제로 완성해 공개한 과정",
+          "다문화·이민 배경이 직업 관심으로 이어진 서사",
+          "quirky 취미가 전공 선택에 영향을 준 일화"
+        ]
+      },
+      "supplement": {
+        "whyUs": "USC supplement는 Why USC Major(250단어) + 짧은 단답 여러 개(describe yourself in 3 words, favorite snack, dream job 등). Why Major는 지원 스쿨 + 세부 track/program을 정확히 명시. 단답은 진지하게 답하지 말고 개성을 드러낼 것.",
+        "specificPrompts": [
+          { "prompt": "Why USC Major 250단어", "keyAdvice": "지원 스쿨(School of Cinematic Arts, Annenberg, Marshall, Viterbi, Thornton, IYA, Dornsife) + 세부 track/concentration 명시. 특정 교수·제작 시설(SCA stages, Iovine and Young Academy lab) 언급 가능." },
+          { "prompt": "Short Takes (3 words describe, favorite snack, dream job 등)", "keyAdvice": "quirky·개성적·솔직한 답. '리더십', '끈기' 같은 교훈형 답변 지양. 유머 환영." }
+        ]
+      }
+    },
+    "weightings": {
+      "specificity": 2.5,
+      "personalVoice": 2.5,
+      "intellectualDepth": 1,
+      "communityFit": 2,
+      "storytelling": 2
+    }
+  }
+]

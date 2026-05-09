@@ -1,0 +1,120 @@
+name: staging 자동 배포
+
+# 본 워크플로는 main 브랜치 push 시 staging 환경으로 자동 배포한다.
+#
+# 활성화 절차 (클라이언트 시크릿 등록 후):
+#   1. GitHub Settings → Secrets and variables → Actions 에 다음 시크릿 등록:
+#        VERCEL_TOKEN              — Vercel 계정 토큰 (vercel.com/account/tokens)
+#        VERCEL_ORG_ID             — Vercel 팀/계정 ID (vercel.com/<team>/settings)
+#        VERCEL_PROJECT_ID         — 프로젝트 ID (Project Settings → General)
+#        FIREBASE_SERVICE_ACCOUNT  — 서비스 계정 JSON (테스트·시드 단계용)
+#        ANTHROPIC_API_KEY         — Claude API 키 (typecheck/build엔 불필요, 빌드 후 smoke용)
+#   2. 본 파일의 `if: false` 두 곳을 모두 제거 (smoke job + deploy job)
+#   3. 첫 push로 검증 — Actions 탭에서 실행 결과 확인
+#
+# 비활성화 상태 유지 사유 (2026-05-08 기준):
+#   클라이언트 Vercel·Firebase 가입 응답 대기 중 — 시크릿 미등록 상태에서 활성화하면
+#   매 push마다 실패 알림 폭주. 시크릿 등록 시점에 한 번에 활성화.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "수동 배포 사유"
+        required: false
+        default: "수동 배포"
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  # ── 1. 4단계 smoke (typecheck → test → build → lint) ──────────
+  smoke:
+    if: false  # ⚠️ 클라이언트 시크릿 등록 후 본 줄 제거
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node 20 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: 의존성 설치
+        run: npm ci
+      - name: typecheck
+        run: npm run typecheck
+      - name: test (1회차 — 안정성 검증 위해 2회 실행)
+        run: npm run test
+      - name: test (2회차)
+        run: npm run test
+      - name: build (smoke 단계 — Vercel 빌드와 별개로 PR 단계 검증)
+        run: npm run build
+        env:
+          # 빌드 시점 secret 검증 — 누락 시 빌드 실패하므로 미리 잡힘
+          NEXT_PUBLIC_FIREBASE_API_KEY: ${{ secrets.NEXT_PUBLIC_FIREBASE_API_KEY || 'placeholder' }}
+          NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_PROJECT_ID || 'placeholder' }}
+      - name: lint
+        run: npm run lint
+
+  # ── 2. Vercel 배포 (smoke 통과해야 진입) ─────────────────────
+  deploy:
+    if: false  # ⚠️ 클라이언트 시크릿 등록 후 본 줄 제거
+    runs-on: ubuntu-latest
+    needs: smoke
+    timeout-minutes: 20
+    environment:
+      name: staging
+      url: https://${{ steps.deploy.outputs.preview_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node 20 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Vercel CLI 설치
+        run: npm install --global vercel@latest
+      - name: Vercel 환경 pull (staging — Preview)
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: Vercel 빌드
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: Vercel 배포 (Preview = staging)
+        id: deploy
+        run: |
+          URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          echo "preview_url=${URL#https://}" >> "$GITHUB_OUTPUT"
+          echo "✅ Deployed: $URL"
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: 배포 후 헬스 체크
+        run: |
+          # 60초 대기 후 첫 페이지 200 OK 확인 (DNS 전파·캐시 워밍)
+          sleep 60
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://${{ steps.deploy.outputs.preview_url }}")
+          if [ "$STATUS" != "200" ]; then
+            echo "❌ 헬스 체크 실패: $STATUS"
+            exit 1
+          fi
+          echo "✅ 헬스 체크 통과 (200 OK)"
+
+  # ── 3. (안내) 시크릿 미등록 시 워크플로 동작 ─────────────────
+  notify-disabled:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 안내
+        run: |
+          echo "⚠️  staging-deploy.yml 은 현재 비활성화 상태입니다."
+          echo "    활성화 절차: .github/workflows/staging-deploy.yml 상단 주석 참조"
+          echo "    (클라이언트 Vercel·Firebase 시크릿 등록 후 'if: false' 두 줄 제거)"
