@@ -20,6 +20,7 @@ import {
   Users,
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { AdminKpiCards } from "./AdminKpiCards";
 
 export const metadata: Metadata = {
   title: "운영자 대시보드 — conatusipsi",
@@ -78,13 +79,6 @@ const QUICK_LINKS = [
   },
 ] as const;
 
-const KPIS = [
-  { label: "오늘 가입자", value: "—", hint: "GET /api/admin/kpi 본체 PR 후 활성화" },
-  { label: "오늘 분석 요청", value: "—", hint: "matches/{matchId} 일별 카운트" },
-  { label: "오늘 결제", value: "—", hint: "orders/{orderId} status='paid' 카운트" },
-  { label: "표본 부족 학과", value: "—", hint: "verifiedCount<5 비율" },
-] as const;
-
 export default function AdminDashboardPage(): React.ReactElement {
   return (
     <div className="flex flex-col gap-section-lg">
@@ -97,17 +91,7 @@ export default function AdminDashboardPage(): React.ReactElement {
 
       <section aria-label="KPI">
         <h2 className="text-sm font-semibold text-foreground mb-3">오늘 KPI</h2>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {KPIS.map((k) => (
-            <Card key={k.label} className="p-card-lg space-y-1.5">
-              <p className="text-xs text-muted-foreground">{k.label}</p>
-              <p className="text-2xl font-bold tabular-nums text-foreground">
-                {k.value}
-              </p>
-              <p className="text-2xs text-muted-foreground/70">{k.hint}</p>
-            </Card>
-          ))}
-        </div>
+        <AdminKpiCards />
       </section>
 
       <section aria-label="빠른 액션">
