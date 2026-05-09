@@ -33,9 +33,9 @@ import { POST as similarPost } from "@/app/api/admissions/similar/route";
 
 import { GET as profileGet, POST as profilePost } from "@/app/api/user/profile/route";
 import { GET as specsGet, POST as specsPost } from "@/app/api/user/specs/route";
-import { GET as dashboardGet } from "@/app/api/user/dashboard/route";
+// dashboardGet — 실 구현으로 교체됨 (카탈로그 제외)
 
-import { POST as simulatePost } from "@/app/api/match/simulate/route";
+// simulatePost — 실 구현으로 교체됨 (카탈로그 제외)
 import { POST as intentValidatePost } from "@/app/api/intent/validate/route";
 
 // sanitize-monitor·etl-status·sample-stats 모두 실 구현 — 카탈로그 제외
@@ -66,7 +66,7 @@ const ROUTES: RouteCase[] = [
   // (match.post, match.byId 는 실 구현으로 교체됨 — 카탈로그 제외)
   { name: "POST /api/admissions/analyze",                         handler: analyzePost,         expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
   { name: "POST /api/admissions/similar",                         handler: similarPost,         expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
-  { name: "POST /api/match/simulate",                             handler: simulatePost,        expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
+  // (match.simulate 는 실 구현으로 교체됨 — 카탈로그 제외)
   { name: "POST /api/intent/validate",                            handler: intentValidatePost,  expectedAuth: "user",   schemaRefMustInclude: "P-003",   hasSchema: true },
 
   // ── 사용자 (인증) ────────────────────────────────────────
@@ -74,7 +74,7 @@ const ROUTES: RouteCase[] = [
   { name: "POST /api/user/profile",                               handler: profilePost,         expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
   { name: "GET  /api/user/specs",                                 handler: specsGet,            expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: false },
   { name: "POST /api/user/specs",                                 handler: specsPost,           expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
-  { name: "GET  /api/user/dashboard",                             handler: dashboardGet,        expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: false },
+  // (user.dashboard 는 실 구현으로 교체됨 — 카탈로그 제외)
 
   // ── 결제 (인증) ──────────────────────────────────────────
   // (payment.request, payment.confirm, payment.cancel, orders.list 는 실 구현으로 교체됨 — 카탈로그 제외)
@@ -157,7 +157,7 @@ describe("API 라우트 옵션 — routeId 명명 + 스키마 정의", () => {
    ═══════════════════════════════════════════════════════════════════════ */
 
 describe("API 라우트 카탈로그 카운트", () => {
-  it("총 stub 라우트 핸들러 11개 (실 구현 9건 제외 — search·sanitize-monitor·match×2·payment×3·orders·etl-status·sample-stats)", () => {
-    expect(ROUTES).toHaveLength(11);
+  it("총 stub 라우트 핸들러 9개 (실 구현 11건 제외 — search·sanitize-monitor·match×2·simulate·dashboard·payment×3·orders·etl-status·sample-stats)", () => {
+    expect(ROUTES).toHaveLength(9);
   });
 });
