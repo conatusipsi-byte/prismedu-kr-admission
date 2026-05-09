@@ -124,30 +124,36 @@ export function DashboardView(): React.ReactElement {
   const hasSpec = !!data?.specs?.latest;
 
   return (
-    <div className="flex flex-col gap-6">
-      {/* Header */}
-      <header className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
-        <div>
-          <p className="text-xs font-semibold text-mint-600 dark:text-mint-400 mb-1">
-            안녕하세요
-          </p>
-          <h1 className="text-2xl lg:text-3xl font-bold text-foreground">
-            {displayName}님의 입시 대시보드
-          </h1>
-        </div>
-        <div className="flex gap-2">
-          <Button asChild size="sm" variant="outline">
-            <Link href="/profile">
-              <Pencil className="h-3.5 w-3.5" />
-              프로필 수정
-            </Link>
-          </Button>
-          <Button asChild size="sm" className="bg-mint-600 hover:bg-mint-700">
-            <Link href="/analysis">
-              분석 시작
-              <ArrowRight className="h-3.5 w-3.5" />
-            </Link>
-          </Button>
+    <div className="flex flex-col gap-8">
+      {/* Header — gradient background card */}
+      <header className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-mint-50 via-background to-emerald-50/50 dark:from-mint-950/40 dark:via-background dark:to-emerald-950/30 p-6 lg:p-8">
+        <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-48 h-48 rounded-full bg-mint-300/20 blur-3xl" aria-hidden="true" />
+        <div className="relative flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-mint-600 dark:text-mint-400 mb-1.5">
+              안녕하세요 👋
+            </p>
+            <h1 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
+              {displayName}님의 입시 대시보드
+            </h1>
+            <p className="mt-1.5 text-sm text-muted-foreground">
+              오늘도 한 걸음씩, 차근차근 진행해요.
+            </p>
+          </div>
+          <div className="flex gap-2 shrink-0">
+            <Button asChild size="default" variant="outline" className="backdrop-blur-sm bg-background/50">
+              <Link href="/profile">
+                <Pencil className="h-3.5 w-3.5" />
+                프로필
+              </Link>
+            </Button>
+            <Button asChild size="default" className="bg-mint-600 hover:bg-mint-700 text-white shadow-lg shadow-mint-500/30">
+              <Link href="/analysis">
+                분석 시작
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -333,7 +339,6 @@ function formatDDay(d: number): string {
 }
 
 function SusiSlotProgress({ filled }: { filled: number }): React.ReactElement {
-  const pct = Math.round((filled / SUSI_TOTAL) * 100);
   return (
     <Card className="p-card-lg">
       <div className="flex items-center justify-between mb-3">

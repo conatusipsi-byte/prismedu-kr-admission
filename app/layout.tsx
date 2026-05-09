@@ -8,6 +8,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
+import { PublicNav } from "@/components/nav/PublicNav";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://conatusipsi.com"),
@@ -61,6 +62,7 @@ export default function RootLayout({
           메인 콘텐츠로 건너뛰기
         </a>
         <AuthProvider>
+          <PublicNav />
           <main id="main-content" className="min-h-dvh bg-background">
             {children}
           </main>

@@ -110,22 +110,22 @@ html {
 
 @layer base {
   :root {
-    /* Warm off-white #f5f3f0 */
-    --background: 36 12% 95%;
-    --foreground: 30 15% 9%;
+    /* Cool off-white — mint 브랜드와 톤 일치 (#fafaf9 살짝 차갑게) */
+    --background: 180 6% 97%;
+    --foreground: 180 25% 8%;
     --card: 0 0% 100%;
-    --card-foreground: 30 15% 9%;
+    --card-foreground: 180 25% 8%;
     --popover: 0 0% 100%;
-    --popover-foreground: 30 15% 9%;
-    /* Deep burnt orange #9a3c12 */
-    --primary: 19 79% 34%;
+    --popover-foreground: 180 25% 8%;
+    /* Brand mint #00C9A7 = HSL(170 100% 39%). CLAUDE.md 디자인 가이드 일치. */
+    --primary: 170 100% 39%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 36 12% 90%;
-    --secondary-foreground: 30 15% 9%;
-    --muted: 36 10% 88%;
-    --muted-foreground: 30 15% 45%;
-    --accent: 19 79% 95%;
-    --accent-foreground: 19 79% 34%;
+    --secondary: 170 25% 92%;
+    --secondary-foreground: 180 25% 8%;
+    --muted: 180 8% 90%;
+    --muted-foreground: 180 12% 38%;
+    --accent: 170 80% 95%;
+    --accent-foreground: 170 100% 28%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --success: 142 71% 36%;
@@ -139,9 +139,9 @@ html {
     --info: 217 71% 48%;
     --info-foreground: 0 0% 98%;
     --info-soft: 217 70% 95%;
-    --border: 36 12% 85%;
-    --input: 36 12% 85%;
-    --ring: 19 79% 34%;
+    --border: 180 8% 88%;
+    --input: 180 8% 88%;
+    --ring: 170 100% 39%;
     /* shadcn radius base — lg=var(--radius), md=lg-2, sm=lg-4. xl/2xl는 Tailwind 기본(12/16). */
     --radius: 12px;
 
@@ -183,22 +183,21 @@ html {
   }
 
   .dark {
-    --background: 30 10% 7%;
-    --foreground: 36 12% 95%;
-    --card: 30 10% 14%;
-    --card-foreground: 36 12% 95%;
-    --popover: 30 10% 14%;
-    --popover-foreground: 36 12% 95%;
-    --primary: 19 79% 50%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 30 10% 18%;
-    --secondary-foreground: 36 12% 92%;
-    --muted: 30 10% 20%;
-    /* Phase 11: 60% → 65% — bg(7%)/card(14%) 위 4.5:1+ 보장 (AA Normal).
-       시니어·저시력 사용자에 secondary 텍스트 가독성 회복. */
-    --muted-foreground: 30 12% 65%;
-    --accent: 19 50% 15%;
-    --accent-foreground: 19 79% 60%;
+    --background: 180 15% 6%;
+    --foreground: 180 12% 95%;
+    --card: 180 15% 11%;
+    --card-foreground: 180 12% 95%;
+    --popover: 180 15% 11%;
+    --popover-foreground: 180 12% 95%;
+    /* mint #00C9A7 다크에선 살짝 밝게(50%) 가독성 ↑ */
+    --primary: 170 75% 50%;
+    --primary-foreground: 180 25% 8%;
+    --secondary: 180 12% 16%;
+    --secondary-foreground: 180 12% 92%;
+    --muted: 180 12% 18%;
+    --muted-foreground: 180 8% 65%;
+    --accent: 170 50% 14%;
+    --accent-foreground: 170 70% 65%;
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
     --success: 142 60% 50%;
@@ -211,9 +210,9 @@ html {
     --info: 217 80% 60%;
     --info-foreground: 0 0% 98%;
     --info-soft: 217 50% 14%;
-    --border: 30 10% 22%;
-    --input: 30 10% 22%;
-    --ring: 19 79% 50%;
+    --border: 180 12% 22%;
+    --input: 180 12% 22%;
+    --ring: 170 75% 50%;
 
     /* Dark mode: soft 배경은 더 깊고 채도 낮게, fg는 더 밝게 */
     --cat-safety: 160 60% 50%;
