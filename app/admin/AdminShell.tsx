@@ -21,14 +21,14 @@ import {
 import { cn } from "@/lib/utils";
 
 const ADMIN_NAV = [
-  { href: "/admin", label: "대시보드", icon: ClipboardList, status: "planned" },
+  { href: "/admin", label: "대시보드", icon: ClipboardList, status: "active" },
   { href: "/admin/sanitize-monitor", label: "카운슬러 가드", icon: ShieldAlert, status: "active" },
   { href: "/admin/etl-upload", label: "PDF 업로드", icon: CloudUpload, status: "active" },
   { href: "/admin/etl-status", label: "ETL 검수", icon: Activity, status: "active" },
   { href: "/admin/sample-stats", label: "표본 집계", icon: FileBarChart, status: "active" },
-  { href: "/admin/admissions", label: "모집요강", icon: Database, status: "planned" },
+  { href: "/admin/admissions", label: "모집요강", icon: Database, status: "active" },
   { href: "/admin/users", label: "사용자", icon: Users, status: "active" },
-  { href: "/admin/orders", label: "주문", icon: ShoppingBag, status: "planned" },
+  { href: "/admin/orders", label: "주문", icon: ShoppingBag, status: "active" },
 ] as const;
 
 export function AdminShell({ children }: { children: React.ReactNode }) {
@@ -58,27 +58,17 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
           <nav className="flex flex-col gap-1 p-3" aria-label="admin 메뉴">
             {ADMIN_NAV.map((item) => {
               const Icon = item.icon;
-              const isPlanned = item.status === "planned";
               return (
                 <Link
                   key={item.href}
-                  href={isPlanned ? "#" : item.href}
-                  aria-disabled={isPlanned}
+                  href={item.href}
                   className={cn(
                     "flex items-center gap-2 rounded-md px-2 py-1.5 text-sm transition",
-                    isPlanned
-                      ? "cursor-not-allowed text-muted-foreground/60"
-                      : "hover:bg-muted hover:text-foreground",
+                    "hover:bg-muted hover:text-foreground",
                   )}
-                  onClick={(e) => isPlanned && e.preventDefault()}
                 >
                   <Icon aria-hidden className="h-3.5 w-3.5" />
                   <span>{item.label}</span>
-                  {isPlanned && (
-                    <span className="ml-auto text-[10px] text-muted-foreground">
-                      준비 중
-                    </span>
-                  )}
                 </Link>
               );
             })}
