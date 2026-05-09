@@ -1,4 +1,4 @@
-# 종합 진행 보고서 — 2026-05-09
+# 종합 진행 보고서 — 2026-05-09 (v2 — 디자인 업그레이드 추가)
 
 방준현 클라이언트 / conatusipsi 프로젝트 / Claude Opus 4.7 (1M context) 작업 완료 시점.
 
@@ -76,7 +76,22 @@
 ### 코드 품질
 - TypeScript: 모든 변경 후 `tsc --noEmit` EXIT=0 유지
 - 테스트: **496개 테스트 모두 통과** (27 파일, 회귀 0)
+- ESLint: 9개 minor 경고만 (에러 0). 내가 작성한 코드의 미사용 var 1건 정리.
 - 정직성 원칙(P-001~P-013) 코드 레벨 가드 유지
+
+### 디자인 업그레이드 (v2)
+- **CSS variables**: `--primary` 를 burnt orange → mint #00C9A7 으로 통일
+  - CLAUDE.md 브랜드 가이드 일치 ("브랜드 컬러: #00C9A7 (mint)")
+  - `--background`/`--border`/`--ring` 등 모두 mint hue로 정렬
+  - 다크 모드도 동일 일관성
+- **PublicNav**: sticky 반투명 nav (모바일 햄버거 포함). admin/login 자동 hide
+- **랜딩 페이지 전면 업그레이드**:
+  - Floating prismatic orbs 3개 (mint·violet·amber)
+  - Hero typography 4xl→6xl/7xl + gradient highlight
+  - fade-up stagger 애니메이션
+  - 모든 카드 hover lift + shadow glow
+  - Footer CTA gradient pill 디자인
+- **대시보드/프로필 헤더**: gradient bg + decorative orb + 더 큰 위계
 
 ### 도구·스크립트
 - `scripts/grant-admin.mjs` — admin 권한 부여 헬퍼
