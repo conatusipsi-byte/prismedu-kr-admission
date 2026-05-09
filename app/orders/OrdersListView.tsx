@@ -136,11 +136,45 @@ export function OrdersListView(): React.ReactElement {
       )}
 
       {!loading && items.length === 0 && !error && (
-        <div className="flex flex-col items-center gap-3 rounded-lg border border-dashed p-12 text-center">
-          <p className="text-sm text-muted-foreground">아직 결제 이력이 없어요.</p>
-          <Button asChild>
-            <Link href="/payment">결제 페이지로</Link>
-          </Button>
+        <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-mint-50 via-background to-emerald-50/40 dark:from-mint-950/40 dark:via-background dark:to-emerald-950/30 p-10 lg:p-14 text-center">
+          <div
+            aria-hidden="true"
+            className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/4 w-64 h-64 rounded-full bg-mint-300/20 blur-3xl"
+          />
+          <div className="relative flex flex-col items-center gap-4">
+            <div className="w-14 h-14 rounded-2xl bg-mint-500 text-white flex items-center justify-center shadow-lg shadow-mint-500/30">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-6 w-6"
+                aria-hidden="true"
+              >
+                <path d="M16 11V7a4 4 0 0 0-8 0v4" />
+                <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+              </svg>
+            </div>
+            <div className="space-y-1.5 max-w-md">
+              <h2 className="text-lg font-bold text-foreground">
+                아직 결제 이력이 없어요
+              </h2>
+              <p className="text-sm text-muted-foreground break-keep-all leading-relaxed">
+                단건 분석 리포트(₩9,900) 또는 시즌권(₩99,000)으로 학과별 합격률 분석을 무제한으로 사용해보세요.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2 mt-2">
+              <Button asChild size="lg" className="bg-mint-600 hover:bg-mint-700 text-white shadow-lg shadow-mint-500/25">
+                <Link href="/pricing">요금제 보기 →</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link href="/payment">바로 결제</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       )}
 
