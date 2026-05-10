@@ -9,11 +9,9 @@
  *
  * 직접 import 사용 가능 — 컴포넌트가 getBusinessInfo() 전체 객체를 가져올 필요 없음:
  *   import { SUPPORT_EMAIL } from "@/lib/business-info";
- *
- * 과거 prism-app.com / prism-edu.com 등 여러 주소가 산재했었음 — Phase 11에서 통일.
  */
 export const SUPPORT_EMAIL: string =
-  process.env.NEXT_PUBLIC_BIZ_EMAIL || "support@prismedu.kr";
+  process.env.NEXT_PUBLIC_BIZ_EMAIL || "support@conatusipsi.com";
 
 export interface BusinessInfo {
   name: string;
@@ -29,15 +27,15 @@ export interface BusinessInfo {
 }
 
 const PLACEHOLDER: BusinessInfo = {
-  name: "(주)PRISM",
+  name: "conatusipsi (사업자명 미정)",
   representative: "대표자명",
   registrationNumber: "000-00-00000",
   telecomNumber: "0000-서울-00000",
   address: "서울특별시",
-  email: "support@prismedu.kr",
+  email: "support@conatusipsi.com",
   phone: undefined,
   privacyOfficer: "개인정보보호책임자",
-  privacyOfficerEmail: "privacy@prismedu.kr",
+  privacyOfficerEmail: "privacy@conatusipsi.com",
   isPlaceholder: true,
 };
 

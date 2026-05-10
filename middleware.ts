@@ -13,7 +13,7 @@ import { NextRequest, NextResponse } from "next/server";
  * Edge에서 firebase-admin은 사용 불가 → 본 파일은 쿠키 **존재**만 검사.
  */
 
-const CANONICAL_HOST = "prismedu.kr";
+const CANONICAL_HOST = "conatusipsi.com";
 
 // `lib/api-auth.ts`의 SESSION_COOKIE_NAME과 정확히 일치
 export const SESSION_COOKIE_NAME = "__session";

@@ -160,20 +160,25 @@ describe("middleware — 보호 라우트 가드", () => {
    ═══════════════════════════════════════════════════════════════════════ */
 
 describe("middleware — 비-canonical 호스트 noindex", () => {
-  it("prismedu.kr 외 호스트는 X-Robots-Tag 부착", () => {
+  it("conatusipsi.com 외 호스트는 X-Robots-Tag 부착 (staging vercel URL 등)", () => {
     const res = middleware(
       makeReq("/admissions", { host: "preview.web.app" }),
     );
     expect(res.headers.get("X-Robots-Tag")).toBe("noindex, nofollow");
   });
 
-  it("canonical 호스트는 X-Robots-Tag 미부착", () => {
-    const res = middleware(makeReq("/admissions", { host: "prismedu.kr" }));
+  it("canonical 호스트(conatusipsi.com)는 X-Robots-Tag 미부착", () => {
+    const res = middleware(makeReq("/admissions", { host: "conatusipsi.com" }));
     expect(res.headers.get("X-Robots-Tag")).toBeNull();
   });
 
-  it("www. canonical 호스트도 미부착", () => {
-    const res = middleware(makeReq("/admissions", { host: "www.prismedu.kr" }));
+  it("www. canonical 호스트(www.conatusipsi.com)도 미부착", () => {
+    const res = middleware(makeReq("/admissions", { host: "www.conatusipsi.com" }));
     expect(res.headers.get("X-Robots-Tag")).toBeNull();
+  });
+
+  it("prismedu.kr 은 더 이상 canonical 아님 (마이그레이션 회귀 가드)", () => {
+    const res = middleware(makeReq("/admissions", { host: "prismedu.kr" }));
+    expect(res.headers.get("X-Robots-Tag")).toBe("noindex, nofollow");
   });
 });
