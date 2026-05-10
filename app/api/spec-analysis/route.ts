@@ -20,6 +20,7 @@ import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { getAnthropicClient, createMessageWithTimeout } from "@/lib/anthropic";
+import { reportRouteError } from "@/lib/sentry-report";
 import { canUseFeature, type Plan } from "@/lib/plans";
 import {
   SpecAnalysisRequestSchema,
@@ -81,7 +82,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     });
     return NextResponse.json(result);
   } catch (e) {
-    console.error("[/api/spec-analysis] error:", e);
+    reportRouteError("api.spec-analysis", e, { uid: auth.uid });
     return NextResponse.json(
       { error: "분석 처리 중 오류가 발생했어요. 잠시 후 다시 시도해주세요." },
       { status: 502 },

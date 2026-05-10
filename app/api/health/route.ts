@@ -37,6 +37,10 @@ export async function GET(): Promise<NextResponse> {
         !env.toss.set ? "결제 페이지는 503 (출시 직전 등록)" : undefined,
       kakaoMissing:
         !env.kakao.set ? "카카오 로그인 비활성 (Google + 이메일만)" : undefined,
+      sentryMissing:
+        !env.sentry.set
+          ? "Sentry DSN 미설정 — 에러 보고 비활성 (출시 전 NEXT_PUBLIC_SENTRY_DSN 등록 권장)"
+          : undefined,
     },
   });
 }

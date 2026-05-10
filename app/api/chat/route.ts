@@ -29,6 +29,7 @@ import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { callKrCounselor } from "@/lib/anthropic";
 import { getAdminDb } from "@/lib/firebase-admin";
+import { reportRouteError } from "@/lib/sentry-report";
 import { ChatRequestSchema, type ChatResponseBody } from "@/lib/schemas/api/chat";
 import { buildCounselorSystemPrompt } from "@/lib/prompts/counselor-guards";
 import { recordSanitizeMetric } from "@/lib/admission/counselor-metric";
@@ -109,7 +110,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       upstreamSignal: req.signal,
     });
   } catch (e) {
-    console.error("[/api/chat] callKrCounselor 실패:", e);
+    reportRouteError("api.chat", e, { uid: auth.uid, conversationId });
     return NextResponse.json(
       { error: "AI 카운슬러 응답 처리 중 오류가 발생했어요. 잠시 후 다시 시도해주세요." },
       { status: 502 },

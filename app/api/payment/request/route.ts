@@ -28,6 +28,7 @@ import {
   canPurchaseProductKr,
   getProductKr,
 } from "@/lib/plans";
+import { reportRouteError } from "@/lib/sentry-report";
 import { buildKrOrderId } from "@/lib/admission/order-id";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
@@ -125,7 +126,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       updatedAt: FieldValue.serverTimestamp(),
     });
   } catch (e) {
-    console.error("[payment/request] Firestore write failed:", e);
+    reportRouteError("api.payment.request.firestore", e, { uid: auth.uid, orderId });
     return NextResponse.json(
       { error: "결제 준비에 실패했어요. 잠시 후 다시 시도해주세요." },
       { status: 503 },

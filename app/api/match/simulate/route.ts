@@ -13,6 +13,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { getAdminDb } from "@/lib/firebase-admin";
+import { reportRouteError } from "@/lib/sentry-report";
 import {
   KrSpecsSchema,
   MatchSimulateSchema,
@@ -119,7 +120,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       candidateCount: candidates.length,
     });
   } catch (e) {
-    console.error("[/api/match/simulate] error:", e);
+    reportRouteError("api.match.simulate", e, { uid: auth.uid, baseSpecId });
     return NextResponse.json(
       { error: "시뮬레이션 처리 중 오류가 발생했습니다." },
       { status: 500 },

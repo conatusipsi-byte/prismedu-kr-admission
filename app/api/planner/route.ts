@@ -18,6 +18,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { FieldValue } from "firebase-admin/firestore";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { getAdminDb } from "@/lib/firebase-admin";
+import { reportRouteError } from "@/lib/sentry-report";
 import { canUseFeature, type Plan } from "@/lib/plans";
 import {
   PlannerPatchRequestSchema,
@@ -80,7 +81,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     };
     return NextResponse.json(response);
   } catch (e) {
-    console.error("[/api/planner] GET error:", e);
+    reportRouteError("api.planner.GET", e, { uid: auth.uid });
     return NextResponse.json({ error: "플래너 조회 실패" }, { status: 500 });
   }
 }
@@ -133,7 +134,7 @@ export async function PATCH(req: NextRequest): Promise<NextResponse> {
 
     return NextResponse.json({ ok: true, taskId, completed });
   } catch (e) {
-    console.error("[/api/planner] PATCH error:", e);
+    reportRouteError("api.planner.PATCH", e, { uid: auth.uid, taskId });
     return NextResponse.json({ error: "완료 상태 저장 실패" }, { status: 500 });
   }
 }

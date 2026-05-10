@@ -27,6 +27,7 @@ import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { PaymentConfirmSchema } from "@/lib/schemas/api/payment";
 import { getProductKr } from "@/lib/plans";
+import { reportRouteError } from "@/lib/sentry-report";
 import {
   parseKrOrderId,
   validateOrderTimestamp,
@@ -145,7 +146,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     });
     tossData = (await tossRes.json()) as TossConfirmResponse;
   } catch (e) {
-    console.error("[payment/confirm] Toss API 호출 실패:", e);
+    reportRouteError("api.payment.confirm.toss", e, { uid: auth.uid, orderId });
     return NextResponse.json(
       { error: "결제사 통신 오류. 잠시 후 다시 시도해주세요." },
       { status: 502 },
@@ -259,11 +260,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       );
     });
   } catch (txError) {
-    // 토스에선 승인됐으나 DB 저장 실패 — silent X. 운영팀 추적 가능 식별자.
-    console.error(
-      `[payment/confirm] CRITICAL: transaction failed orderId=${orderId} uid=${auth.uid}`,
-      txError,
-    );
+    // 토스에선 승인됐으나 DB 저장 실패 — CRITICAL. recoveryId 로 운영팀 추적.
+    reportRouteError("api.payment.confirm.tx_failed", txError, {
+      uid: auth.uid,
+      orderId,
+      severity: "critical",
+    });
     return NextResponse.json(
       {
         error: "결제는 승인됐지만 권한 적용 중 오류가 발생했어요. 고객센터에 다음 번호를 알려주세요.",

@@ -14,6 +14,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { getAdminDb } from "@/lib/firebase-admin";
+import { reportRouteError } from "@/lib/sentry-report";
 import { CompareRequestSchema } from "@/lib/schemas/api/compare";
 import { KrSpecsSchema, type KrSpecsInput } from "@/lib/schemas/api/match";
 import {
@@ -103,7 +104,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       if (e.kind === "ok") validCandidates.push(e.candidate);
     }
 
-    let probMap: Map<string, CandidateProbability> = new Map();
+    const probMap: Map<string, CandidateProbability> = new Map();
     let globalCaveats: string[] = [];
     if (baseSpecs && validCandidates.length > 0) {
       const result = matchKrAdmissions({ specs: baseSpecs, candidates: validCandidates });
@@ -129,7 +130,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       globalCaveats,
     });
   } catch (e) {
-    console.error("[/api/compare] error:", e);
+    reportRouteError("api.compare", e, { uid: auth.uid, itemCount: items.length });
     return NextResponse.json(
       { error: "비교 처리 중 오류가 발생했습니다." },
       { status: 500 },

@@ -18,6 +18,7 @@ import { getAdminDb } from "@/lib/firebase-admin";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { PaymentCancelSchema } from "@/lib/schemas/api/payment";
+import { reportRouteError } from "@/lib/sentry-report";
 import type { Order, UserEntitlement } from "@/types/admission";
 
 const TOSS_CANCEL_URL = (paymentKey: string) =>
@@ -112,7 +113,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     });
     tossData = (await tossRes.json()) as typeof tossData;
   } catch (e) {
-    console.error("[payment/cancel] Toss API 호출 실패:", e);
+    reportRouteError("api.payment.cancel.toss", e, { uid: auth.uid, orderId });
     return NextResponse.json(
       { error: "결제사 통신 오류. 잠시 후 다시 시도해주세요." },
       { status: 502 },
@@ -164,10 +165,11 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       );
     });
   } catch (e) {
-    console.error(
-      `[payment/cancel] CRITICAL transaction failed orderId=${orderId}`,
-      e,
-    );
+    reportRouteError("api.payment.cancel.tx_failed", e, {
+      uid: auth.uid,
+      orderId,
+      severity: "critical",
+    });
     return NextResponse.json(
       {
         error: "환불은 처리됐지만 권한 갱신 중 오류가 발생했어요. 고객센터에 문의해주세요.",

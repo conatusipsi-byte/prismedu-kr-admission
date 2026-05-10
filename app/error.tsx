@@ -4,11 +4,12 @@
  * 전역 error.tsx — 모든 페이지의 server/client 에러 catch
  *
  * 페이지별 error.tsx보다 우선순위 낮음. 페이지에 자체 error.tsx가 없을 때 fallback.
- * Sentry로 자동 캡처되며, 사용자에겐 친화 메시지 + 재시도 버튼 노출.
+ * Sentry.captureException 으로 명시 보고 (DSN 미설정이면 no-op) + 친화 폴백.
  */
 
 import * as React from "react";
 import Link from "next/link";
+import * as Sentry from "@sentry/nextjs";
 import { ArrowRight, Home, RefreshCw, ShieldAlert } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -20,9 +21,9 @@ export default function GlobalError({
   reset: () => void;
 }): React.ReactElement {
   React.useEffect(() => {
-    // dev에선 console로, prod에선 Sentry가 자동 캡처
+    Sentry.captureException(error);
     if (process.env.NODE_ENV !== "production") {
-      console.error("[GlobalError]", error);
+      console.error("[error.tsx]", error);
     }
   }, [error]);
 

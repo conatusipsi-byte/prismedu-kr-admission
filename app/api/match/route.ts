@@ -22,6 +22,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { FieldValue } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
+import { reportRouteError } from "@/lib/sentry-report";
 import { KrSpecsSchema, type KrSpecsInput, type MatchResultItem } from "@/lib/schemas/api/match";
 import {
   matchKrAdmissions,
@@ -119,7 +120,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       globalCaveats,
     });
   } catch (e) {
-    console.error("[/api/match] error:", e);
+    reportRouteError("api.match", e, { uid: auth.uid });
     return NextResponse.json(
       { error: "분석 처리 중 오류가 발생했습니다" },
       { status: 500 },

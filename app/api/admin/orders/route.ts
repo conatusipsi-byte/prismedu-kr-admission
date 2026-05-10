@@ -17,6 +17,7 @@ import { requireMasterAuth, zodErrorResponse } from "@/lib/api-auth";
 import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
 import { AdminOrdersListQuerySchema } from "@/lib/schemas/api/admin";
 import { getProductKr } from "@/lib/plans";
+import { reportRouteError } from "@/lib/sentry-report";
 import type { Order, OrderStatus, ProductKind } from "@/types/admission";
 
 interface AdminOrderItem {
@@ -143,7 +144,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       nextCursor,
     } satisfies ApiResponse);
   } catch (e) {
-    console.error("[/api/admin/orders] error:", e);
+    reportRouteError("api.admin.orders", e, { uid: auth.uid });
     return NextResponse.json({ error: "주문 조회 중 오류가 발생했어요." }, { status: 500 });
   }
 }
