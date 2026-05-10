@@ -1,13 +1,13 @@
 /**
  * /spec-analysis — 스펙 분석 (Pro 전용)
  *
- * 생기부 비교과(자율·동아리·진로·세특·행특)를 정량 입력하면 학종 적합도를 정성적으로
- * 분석. 본 PR 단계: ProGate 잠금 + UI placeholder. POST /api/spec-analysis 본체 PR 후
- * wiring (Anthropic Claude 호출 — 토큰 비용 가드 처음부터 적용).
+ * 생기부 비교과(자율·동아리·진로·세특·행특)를 정량 입력하면 학종 적합도를 AI가
+ * 정성적으로 분석. Pro 미만은 ProGate 잠금. Pro/Elite 는 SpecAnalysisView 본체.
  */
 
 import type { Metadata } from "next";
 import { ProGate } from "@/components/access/ProGate";
+import { SpecAnalysisView } from "./SpecAnalysisView";
 
 export const metadata: Metadata = {
   title: "스펙 분석 — conatusipsi",
@@ -38,7 +38,9 @@ export default function SpecAnalysisPage(): React.ReactElement {
           "추천 보강 액션 (어떤 활동이 부족한지)",
           "정직성 원칙: 데이터 부족 시 추측치 X, '정보 부족' 명시",
         ]}
-      />
+      >
+        <SpecAnalysisView />
+      </ProGate>
     </div>
   );
 }

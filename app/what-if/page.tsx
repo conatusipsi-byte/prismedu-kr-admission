@@ -1,12 +1,16 @@
 /**
  * /what-if — 가정 시뮬레이터 (Pro 전용)
  *
- * 수능 등급/내신을 슬라이더로 조정하면 합격률이 실시간으로 변동.
- * 본 PR 단계: ProGate 잠금 + UI placeholder. POST /api/match/simulate 본체 PR 후 wiring.
+ * 기존 분석(matchId)을 기준으로 점수만 조정해서 합격률 변화를 본다.
+ * Pro 미만은 ProGate 잠금. Pro/Elite 는 WhatIfView 본체.
+ *
+ * URL ?baseSpecId=match_xxx — 분석 결과 페이지에서 진입.
  */
 
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ProGate } from "@/components/access/ProGate";
+import { WhatIfView } from "./WhatIfView";
 
 export const metadata: Metadata = {
   title: "What-if 시뮬레이터 — conatusipsi",
@@ -37,7 +41,11 @@ export default function WhatIfPage(): React.ReactElement {
           "변화 전/후 합격률 비교 (Δ% 표시)",
           "생기부 비교과 점수 가정 (시간·횟수·세특)",
         ]}
-      />
+      >
+        <Suspense fallback={null}>
+          <WhatIfView />
+        </Suspense>
+      </ProGate>
     </div>
   );
 }

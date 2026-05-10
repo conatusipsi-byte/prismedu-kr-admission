@@ -2,11 +2,12 @@
  * /planner — 입시 자동 플래너 (Pro 전용)
  *
  * 사용자 의향(수시 6장·정시 가/나/다군) + 학년/모집 일정 → 카테고리별 task 자동 생성.
- * 본 PR 단계: ProGate 잠금 + UI placeholder. /api/planner/* 본체 PR 후 wiring.
+ * Pro 미만은 ProGate 잠금. Pro/Elite 는 PlannerView 가 GET /api/planner 호출.
  */
 
 import type { Metadata } from "next";
 import { ProGate } from "@/components/access/ProGate";
+import { PlannerView } from "./PlannerView";
 
 export const metadata: Metadata = {
   title: "입시 플래너 — conatusipsi",
@@ -36,7 +37,9 @@ export default function PlannerPage(): React.ReactElement {
           "D-Day 카운트다운 + 마감 임박 task 우선 노출",
           "체크리스트 기반 — 완료 시 진척도 자동 갱신",
         ]}
-      />
+      >
+        <PlannerView />
+      </ProGate>
     </div>
   );
 }

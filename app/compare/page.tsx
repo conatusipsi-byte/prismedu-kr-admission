@@ -2,12 +2,15 @@
  * /compare — 학과 비교 (Pro 전용)
  *
  * 여러 학과(2~4개)를 한 화면에 나란히 놓고 모집인원·전년 컷·반영비·합격률을 비교.
- * 본 PR 단계: ProGate로 잠금 + UI placeholder. POST /api/compare 라우트 본체 PR 후
- * 실 데이터 wiring.
+ * Pro 미만은 ProGate 잠금. Pro/Elite 는 CompareView 본체.
+ *
+ * URL ?baseSpecId=match_xxx — /analysis/[matchId] 결과 페이지에서 진입 시 합격률 비교.
  */
 
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ProGate } from "@/components/access/ProGate";
+import { CompareView } from "./CompareView";
 
 export const metadata: Metadata = {
   title: "학과 비교 — conatusipsi",
@@ -38,7 +41,11 @@ export default function ComparePage(): React.ReactElement {
           "전형별(학종·교과·논술·정시) 분리 비교",
           "표본 부족 학과는 P-001 정직성 원칙대로 비공개 처리",
         ]}
-      />
+      >
+        <Suspense fallback={null}>
+          <CompareView />
+        </Suspense>
+      </ProGate>
     </div>
   );
 }
