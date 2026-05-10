@@ -23,7 +23,9 @@ function uniqueEmail(): string {
 
 test.describe("회원가입 → 온보딩 진입", () => {
   test("이메일 회원가입 → /onboarding 자동 redirect", async ({ page }) => {
-    await page.goto(`${BASE_URL}/login`);
+    // returnUrl=/onboarding — 실 제품 플로우 (PublicNav "무료로 시작" 버튼 동일).
+    // returnUrl 미지정 시 기본 "/" 라 onboarding 검증이 의미 없어짐.
+    await page.goto(`${BASE_URL}/login?returnUrl=/onboarding`);
 
     // 회원가입 모드로 토글 — LoginView 의 data-testid="switch-to-signup"
     await page.getByTestId("switch-to-signup").click();
