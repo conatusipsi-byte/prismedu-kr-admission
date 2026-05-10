@@ -24,13 +24,17 @@ import {
   BarChart3,
   Bot,
   Calendar,
+  CalendarCheck,
   CheckCircle2,
   ClipboardList,
   Compass,
+  GitCompare,
+  Lightbulb,
   Loader2,
   Pencil,
   Sparkles,
   Target,
+  Wand2,
 } from "lucide-react";
 import { useAuth } from "@/lib/auth-context";
 import { fetchWithAuth, ApiError } from "@/lib/api-client";
@@ -203,8 +207,8 @@ export function DashboardView(): React.ReactElement {
         <JeongsiSlotProgress filled={jeongsiFilled} />
       </section>
 
-      {/* Quick actions */}
-      <section aria-label="빠른 액션">
+      {/* Quick actions — 기본 도구 */}
+      <section aria-label="기본 도구">
         <SectionHeader
           icon={<Sparkles className="h-4 w-4" />}
           title="다음에 할 일"
@@ -233,6 +237,41 @@ export function DashboardView(): React.ReactElement {
             icon={<Target className="h-5 w-5" />}
             title="결제 내역"
             body="단건 분석권·시즌권 관리"
+          />
+        </div>
+      </section>
+
+      {/* Pro 도구 — Free 사용자엔 ProGate 잠금이 노출됨 (페이지에서 처리) */}
+      <section aria-label="Pro 도구">
+        <SectionHeader
+          icon={<Sparkles className="h-4 w-4" />}
+          title="Pro 도구"
+          hint="요금제 가입 시 활성화"
+        />
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <ActionCard
+            href="/planner"
+            icon={<CalendarCheck className="h-5 w-5" />}
+            title="입시 플래너"
+            body="원서·면접·논술·수능 task 자동 생성"
+          />
+          <ActionCard
+            href="/spec-analysis"
+            icon={<Lightbulb className="h-5 w-5" />}
+            title="스펙 분석"
+            body="비교과 영역별 강·약점 AI 분석"
+          />
+          <ActionCard
+            href="/what-if"
+            icon={<Wand2 className="h-5 w-5" />}
+            title="What-If 시뮬"
+            body="등급 조정 → 합격률 변화 확인"
+          />
+          <ActionCard
+            href="/compare"
+            icon={<GitCompare className="h-5 w-5" />}
+            title="학과 비교"
+            body="2~4개 학과 모집요강·합격률"
           />
         </div>
       </section>

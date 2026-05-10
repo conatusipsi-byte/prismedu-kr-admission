@@ -28,7 +28,14 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { AlertCircle, MessageSquareHeart, Printer, RotateCcw } from "lucide-react";
+import {
+  AlertCircle,
+  GitCompare,
+  MessageSquareHeart,
+  Printer,
+  RotateCcw,
+  Sparkles,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { InsufficientSampleCard } from "@/components/access/Gated";
@@ -216,6 +223,17 @@ export function AnalysisResultView({
           <Button asChild size="sm" className="bg-mint-600 hover:bg-mint-700" data-testid="counselor-cta">
             <Link href={`/chat?matchId=${encodeURIComponent(data.matchId)}`}>
               <MessageSquareHeart className="mr-1.5 h-3.5 w-3.5" /> AI 카운슬러로 상담
+            </Link>
+          </Button>
+          {/* Pro 기능 진입 CTA — baseSpecId 자동 연결. ProGate 가 Free 사용자엔 잠금 노출. */}
+          <Button asChild variant="outline" size="sm" data-testid="what-if-cta">
+            <Link href={`/what-if?baseSpecId=${encodeURIComponent(data.matchId)}`}>
+              <Sparkles className="mr-1.5 h-3.5 w-3.5" /> What-If 시뮬레이션
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="sm" data-testid="compare-cta">
+            <Link href={`/compare?baseSpecId=${encodeURIComponent(data.matchId)}`}>
+              <GitCompare className="mr-1.5 h-3.5 w-3.5" /> 학과 비교
             </Link>
           </Button>
           <Button asChild variant="outline" size="sm">
