@@ -113,3 +113,22 @@ export const AdminUserMutationSchema = z.object({
 });
 
 export type AdminUserMutationInput = z.infer<typeof AdminUserMutationSchema>;
+
+/* ═══════════════════════════════════════════════════════════════════════
+   GET /api/admin/orders — 주문 목록·필터·페이지네이션
+   ═══════════════════════════════════════════════════════════════════════ */
+
+export const AdminOrdersListQuerySchema = z.object({
+  status: z
+    .enum(["pending", "approved", "failed", "refunded", "cancelled", "all"])
+    .default("all"),
+  /** 환불 요청 대기만 노출 — refund 필드는 없지만 status=cancelled 또는 별도 환불 상태 도큐먼트로 구현 가능. 일단 status 필터로 시작. */
+  /** 검색 — orderId, uid, email, productName 부분 매칭 (메모리 필터) */
+  q: z.string().max(100).optional(),
+  /** YYYY-MM-DD — createdAt >= from 00:00 KST */
+  from: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "YYYY-MM-DD 형식").optional(),
+  /** YYYY-MM-DD — createdAt < to+1 00:00 KST */
+  to: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "YYYY-MM-DD 형식").optional(),
+  limit: z.coerce.number().int().min(1).max(200).default(50),
+  cursor: z.string().max(500).optional(),
+});
