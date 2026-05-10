@@ -21,7 +21,7 @@ const PUBLIC_PAGES: Array<{ path: string; expectInTitle: RegExp; expectOnPage: R
   { path: "/", expectInTitle: /conatusipsi/, expectOnPage: /합격|학과|입시/ },
   { path: "/admissions", expectInTitle: /학과 검색|conatusipsi/, expectOnPage: /학과/ },
   { path: "/admissions/jaeoegukmin", expectInTitle: /재외국민|conatusipsi/, expectOnPage: /재외국민|외국인/ },
-  { path: "/pricing", expectInTitle: /요금제|conatusipsi/, expectOnPage: /요금|Free|Pro/ },
+  { path: "/pricing", expectInTitle: /요금제|conatusipsi/, expectOnPage: /단건권|시즌권|결제/ },
   { path: "/privacy", expectInTitle: /개인정보|conatusipsi/, expectOnPage: /개인정보/ },
   { path: "/terms", expectInTitle: /이용약관|conatusipsi/, expectOnPage: /약관/ },
   { path: "/refund", expectInTitle: /환불|conatusipsi/, expectOnPage: /환불/ },
@@ -56,13 +56,15 @@ test.describe("공개 페이지 SEO 흐름", () => {
   test("랜딩 → /pricing CTA 클릭 → 요금제 페이지 이동", async ({ page }) => {
     await page.goto(`${BASE_URL}/`);
 
-    // /pricing 으로 가는 링크가 적어도 하나 노출 (Hero CTA / Footer / 어느 쪽이든)
-    const pricingLink = page.locator('a[href="/pricing"]').first();
+    // /pricing 으로 가는 링크 중 화면에 보이는 것 (모바일은 desktop nav 가 hidden md:flex 라
+    // .first() 가 hidden 링크를 잡는 케이스 회피 — :visible filter 사용).
+    const pricingLink = page.locator('a[href="/pricing"]:visible').first();
     await expect(pricingLink).toBeVisible({ timeout: 10_000 });
     await pricingLink.click();
 
     await expect(page).toHaveURL(/\/pricing$/);
-    await expect(page.locator("body")).toContainText(/Free|Pro|Elite/);
+    // PRODUCTS_KR 카탈로그 카드가 렌더되는지 — "단건권 / 시즌권 / 결제하러 가기"
+    await expect(page.locator("body")).toContainText(/단건권|시즌권|결제하러/);
   });
 
   test("재외국민 페이지 (P-013) — 한국 학생 폼과 분리", async ({ page }) => {

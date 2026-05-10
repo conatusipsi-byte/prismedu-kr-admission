@@ -33,19 +33,20 @@ test.describe("Pro 게이트 잠금 검증", () => {
       // 페이지 자체 feature 카피
       await expect(page.locator("body")).toContainText(p.feature);
 
-      // CTA — /pricing 링크
-      const pricingCta = page.locator('a[href="/pricing"]').first();
+      // CTA — /pricing 링크 (mobile 에서 desktop nav 가 hidden 인 케이스 대비 :visible)
+      const pricingCta = page.locator('a[href="/pricing"]:visible').first();
       await expect(pricingCta).toBeVisible({ timeout: 10_000 });
     });
   }
 
   test("Pro 페이지 → /pricing 이동 + 요금제 노출", async ({ page }) => {
     await page.goto(`${BASE_URL}/compare`);
-    const pricingCta = page.locator('a[href="/pricing"]').first();
+    const pricingCta = page.locator('a[href="/pricing"]:visible').first();
     await pricingCta.click();
     await expect(page).toHaveURL(/\/pricing$/);
-    await expect(page.locator("body")).toContainText(/Free/);
-    await expect(page.locator("body")).toContainText(/Pro/);
+    // PRODUCTS_KR 카드가 노출 — 단건권/시즌권 텍스트
+    await expect(page.locator("body")).toContainText(/단건권|시즌권/);
+    await expect(page.locator("body")).toContainText(/결제하러|결제/);
   });
 
   test("Pro 페이지 본문에 실 분석 결과 누설 없음 (P-001 회귀)", async ({ page }) => {

@@ -70,11 +70,20 @@ export async function runSeed(opts: Options): Promise<void> {
 
 async function main(opts: Options): Promise<void> {
   if (getApps().length === 0) {
-    initializeApp({
-      credential: process.env.GOOGLE_APPLICATION_CREDENTIALS
-        ? cert(process.env.GOOGLE_APPLICATION_CREDENTIALS)
-        : applicationDefault(),
-    });
+    // Emulator 모드 — FIRESTORE_EMULATOR_HOST 가 있으면 credential 없이 bare init.
+    // (applicationDefault()는 GCP credential 부재 시 throw — CI 에서 emulator 사용 시 차단됨)
+    const isEmulator = !!process.env.FIRESTORE_EMULATOR_HOST;
+    if (isEmulator) {
+      initializeApp({
+        projectId: process.env.GCLOUD_PROJECT || process.env.FIREBASE_ADMIN_PROJECT_ID || "demo-conatusipsi",
+      });
+    } else {
+      initializeApp({
+        credential: process.env.GOOGLE_APPLICATION_CREDENTIALS
+          ? cert(process.env.GOOGLE_APPLICATION_CREDENTIALS)
+          : applicationDefault(),
+      });
+    }
   }
   const db = getFirestore();
   const now = Timestamp.now();

@@ -57,10 +57,11 @@ jobs:
           NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: 'demo-conatusipsi.firebasestorage.app'
           NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: '0'
           NEXT_PUBLIC_FIREBASE_APP_ID: '0:0:web:e2e'
-          # Admin SDK — Emulator 모드에선 인증 불필요하지만 init 통과를 위해 placeholder
+          # Admin SDK — Emulator 모드. CLIENT_EMAIL/PRIVATE_KEY 의도적으로 미설정 →
+          # firebase-admin.ts 가 ADC 폴백 → 결국 bare initializeApp({projectId}) 진입.
+          # FIREBASE_AUTH_EMULATOR_HOST + FIRESTORE_EMULATOR_HOST 가 있으면 SDK 가
+          # 자동으로 emulator 호출 (인증 검사 우회).
           FIREBASE_ADMIN_PROJECT_ID: 'demo-conatusipsi'
-          FIREBASE_ADMIN_CLIENT_EMAIL: 'e2e@example.com'
-          FIREBASE_ADMIN_PRIVATE_KEY: '-----BEGIN PRIVATE KEY-----\nplaceholder\n-----END PRIVATE KEY-----\n'
           MASTER_EMAILS: 'admin@example.com'
           # Auth Emulator 호스트 — Admin SDK 가 자동 인지
           FIRESTORE_EMULATOR_HOST: 'localhost:8080'
