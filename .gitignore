@@ -48,13 +48,24 @@ next-env.d.ts
 # firebase
 firebase-debug.log
 firestore-debug.log
+.firebase/
 # Firebase Admin SDK 서비스 계정 키 — 절대 커밋 금지
 *-firebase-adminsdk*.json
 *service-account*.json
 serviceAccountKey.json
+
+# playwright
+/playwright-report/
+/test-results/
+/blob-report/
+/playwright/.cache/
 
 # prismedu.kr 참고 코드 — 로컬 참조용, deploy 대상 아님
 /_prism_reference/
 
 # Claude Code local session state
 /.claude/
+
+# OS
+Thumbs.db
+desktop.ini
