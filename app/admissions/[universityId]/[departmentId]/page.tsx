@@ -23,8 +23,11 @@ import { ProbabilityTab } from "@/components/admissions/ProbabilityTab";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { getMockDepartmentDetail } from "@/lib/admission/mock-data";
+import { fetchDepartmentDetail } from "@/lib/admission/fetch-detail";
 import type { AdmissionTrackKind, AdmissionTrack } from "@/types/admission";
+
+// ISR — 10분 stale-while-revalidate. 503/throttle 완화 + DB 부하 감소.
+export const revalidate = 600;
 
 interface PageParams {
   universityId: string;
@@ -39,7 +42,13 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { universityId, departmentId } = await params;
-  const detail = getMockDepartmentDetail(universityId, departmentId);
+  // metadata 에서는 DB 에러를 silent fallback. 본문 렌더에서 notFound/throw 처리.
+  let detail: Awaited<ReturnType<typeof fetchDepartmentDetail>> = null;
+  try {
+    detail = await fetchDepartmentDetail(universityId, departmentId);
+  } catch {
+    /* metadata 단계 에러는 무시 — 본문에서 처리. */
+  }
   if (!detail) return { title: "학과를 찾을 수 없습니다" };
   const title = `${detail.university.n} ${detail.department.name}`;
   return {
@@ -52,7 +61,9 @@ export async function generateMetadata({
 
 export default async function DepartmentDetailPage({ params }: PageProps) {
   const { universityId, departmentId } = await params;
-  const detail = getMockDepartmentDetail(universityId, departmentId);
+  // throw 는 error.tsx 가 잡음 (Supabase 일시 장애 대응).
+  // null 은 notFound() — 진짜로 존재하지 않는 학과.
+  const detail = await fetchDepartmentDetail(universityId, departmentId);
   if (!detail) notFound();
 
   const { university, department, admissions, prevYearResult, sampleSufficient } = detail;
