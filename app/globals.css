@@ -195,8 +195,9 @@ html {
     --card-foreground: 210 40% 98%;
     --popover: 222 40% 8%;
     --popover-foreground: 210 40% 98%;
-    /* emerald 다크에선 brand-300 (#6EE7B7) 톤 = HSL(156 72% 67%) — 가독성 ↑ */
-    --primary: 156 72% 67%;
+    /* emerald 다크에선 brand-300 (#6EE7B7) — UP-05 audit: 채도 -7로 살짝 죽임
+       (이전 saturation 72% → 65%). 다크 ink 위에서 너무 튀던 현상 해소. */
+    --primary: 156 65% 67%;
     --primary-foreground: 222 47% 11%;
     --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
@@ -218,7 +219,7 @@ html {
     --info-soft: 217 50% 14%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 156 72% 67%;
+    --ring: 156 65% 67%;
 
     /* Dark mode: soft 배경은 더 깊고 채도 낮게, fg는 더 밝게 */
     --cat-safety: 160 60% 50%;

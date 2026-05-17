@@ -112,6 +112,8 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
             { href: "#overview",    label: "개요" },
             { href: "#tracks",      label: "모집요강" },
             { href: "#probability", label: "합격률 분석", icon: <Lock className="h-3 w-3" /> },
+            { href: "#prev-trend",  label: "경쟁률 추이" },
+            { href: "#similar",     label: "유사 학과" },
             { href: "#prev-result", label: "이전 입결" },
           ].map((s) => (
             <a
@@ -184,6 +186,53 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
                   isAuthenticated={false}
                 />
               </Suspense>
+            </section>
+
+            {/* 경쟁률 추이 — placeholder (UP-07 audit: 콘텐츠 골격 정의) */}
+            <section id="prev-trend" data-section="prev-trend" className="rounded-3xl border border-border bg-card p-6 lg:p-7">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-base font-bold tracking-tight">경쟁률 · 모집인원 3년 추이</h2>
+                <Badge variant="pill-ink" size="sm">3개년</Badge>
+              </div>
+              {/* 임시 bar chart placeholder — 실 데이터 연결 전까지 시각만 */}
+              <div className="grid grid-cols-3 gap-4 mb-4">
+                {[2023, 2024, 2025].map((y, i) => (
+                  <div key={y} className="flex flex-col items-center gap-2">
+                    <span className="text-2xs font-semibold text-muted-foreground font-numeric tabular-nums">{y}학년도</span>
+                    <div className="relative w-full h-32 rounded-xl bg-muted/30 overflow-hidden flex items-end">
+                      <div
+                        className="w-full rounded-xl bg-gradient-to-t from-brand-500 to-brand-300 transition-all"
+                        style={{ height: `${[55, 72, 64][i]}%` }}
+                      />
+                    </div>
+                    <span className="text-2xs text-muted-foreground">데이터 등록 중</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-2xs text-muted-foreground border-t border-border/60 pt-3 break-keep-all leading-relaxed">
+                ⚠️ 시각 placeholder — 실 데이터는 7~9월 시즌 모집요강 갱신 시 자동 채워집니다.
+              </p>
+            </section>
+
+            {/* 유사 학과 비교 — placeholder (UP-07) */}
+            <section id="similar" data-section="similar" className="flex flex-col gap-3">
+              <div className="flex items-center justify-between">
+                <h2 className="text-base font-bold tracking-tight">동일 계열 타 대학</h2>
+                <Badge variant="pill-iris" size="sm">비교</Badge>
+              </div>
+              <p className="text-sm text-muted-foreground break-keep-all">
+                {department.name}와 동일 계열을 운영하는 타 대학 학과를 곧 보여드릴 예정이에요.
+              </p>
+              <div className="grid sm:grid-cols-3 gap-3">
+                {[1, 2, 3].map((i) => (
+                  <div
+                    key={i}
+                    className="rounded-2xl border border-dashed border-border bg-muted/20 p-5 text-center"
+                  >
+                    <p className="text-2xs text-muted-foreground">학과 데이터 준비 중</p>
+                  </div>
+                ))}
+              </div>
             </section>
 
             {/* 이전 입결 — Mobile에서만 메인에 노출 (데스크톱은 사이드바) */}

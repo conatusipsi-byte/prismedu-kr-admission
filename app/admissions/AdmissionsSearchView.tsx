@@ -193,6 +193,51 @@ export function AdmissionsSearchView(): React.ReactElement {
                 )}
               </Button>
             </div>
+
+            {/* UP-04: 활성 필터 chip — 모바일에서 sticky bar 아래 가로 스크롤, 클릭 시 제거. */}
+            {hasActiveFilters && (
+              <div className="md:hidden mt-2 flex items-center gap-1.5 overflow-x-auto scroll-fade-right pb-1 -mr-3 pr-3">
+                {regions.map((r) => (
+                  <button
+                    key={`r-${r}`}
+                    type="button"
+                    onClick={() => setRegions(regions.filter((x) => x !== r))}
+                    className="inline-flex shrink-0 items-center gap-1 rounded-full border border-brand-300 bg-brand-50 dark:bg-brand-950/60 dark:border-brand-700 text-brand-700 dark:text-brand-300 px-2.5 py-1 text-2xs font-semibold"
+                  >
+                    {r}
+                    <X className="h-3 w-3" />
+                  </button>
+                ))}
+                {tracks.map((t) => (
+                  <button
+                    key={`t-${t}`}
+                    type="button"
+                    onClick={() => setTracks(tracks.filter((x) => x !== t))}
+                    className="inline-flex shrink-0 items-center gap-1 rounded-full border border-iris-300 bg-iris-soft dark:bg-iris/15 dark:border-iris/40 text-iris-700 dark:text-iris-300 px-2.5 py-1 text-2xs font-semibold"
+                  >
+                    {t}
+                    <X className="h-3 w-3" />
+                  </button>
+                ))}
+                {category !== "all" && (
+                  <button
+                    type="button"
+                    onClick={() => setCategory("all")}
+                    className="inline-flex shrink-0 items-center gap-1 rounded-full border border-violet-300 bg-violet-50 dark:bg-violet-950/30 dark:border-violet-700 text-violet-700 dark:text-violet-300 px-2.5 py-1 text-2xs font-semibold"
+                  >
+                    {category}
+                    <X className="h-3 w-3" />
+                  </button>
+                )}
+                <button
+                  type="button"
+                  onClick={clearAllFilters}
+                  className="inline-flex shrink-0 items-center gap-1 rounded-full border border-border bg-background text-muted-foreground hover:text-foreground px-2.5 py-1 text-2xs font-medium"
+                >
+                  전체 해제
+                </button>
+              </div>
+            )}
           </div>
         </header>
 
