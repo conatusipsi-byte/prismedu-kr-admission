@@ -9,6 +9,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 import { PublicNav } from "@/components/nav/PublicNav";
+import { Footer } from "@/components/nav/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
@@ -68,6 +69,7 @@ export default function RootLayout({
             <main id="main-content" className="min-h-dvh bg-background">
               {children}
             </main>
+            <Footer />
           </AuthProvider>
         </ThemeProvider>
       </body>

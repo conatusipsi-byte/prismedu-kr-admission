@@ -53,12 +53,12 @@ export function ChatContextBadge({
       data-component="chat-context-badge"
       data-mode={matchId ? "match" : contextSchools.length > 0 ? "school-focus" : "general"}
       className={cn(
-        "flex flex-col gap-2 rounded-lg border border-mint-200 bg-mint-50/40 p-3 dark:border-mint-900/40 dark:bg-mint-950/15",
+        "flex flex-col gap-2 rounded-lg border border-brand-200 bg-brand-50/40 p-3 dark:border-brand-900/40 dark:bg-brand-950/15",
         className,
       )}
     >
       <div className="flex items-center justify-between gap-2">
-        <div className="flex items-center gap-1.5 text-xs font-medium text-mint-800 dark:text-mint-200">
+        <div className="flex items-center gap-1.5 text-xs font-medium text-brand-800 dark:text-brand-200">
           {matchId ? (
             <>
               <Sparkles aria-hidden className="h-3.5 w-3.5" />
@@ -82,7 +82,7 @@ export function ChatContextBadge({
             variant="ghost"
             size="sm"
             onClick={onChangeRequested}
-            className="h-7 px-2 text-2xs text-mint-800 hover:text-mint-900 dark:text-mint-200"
+            className="h-7 px-2 text-2xs text-brand-800 hover:text-brand-900 dark:text-brand-200"
             data-testid="chat-context-change-trigger"
           >
             <Settings2 aria-hidden className="mr-0.5 h-3 w-3" />
@@ -108,7 +108,7 @@ export function ChatContextBadge({
               className={cn(
                 "text-2xs",
                 s.sampleSufficient
-                  ? "border-mint-300 bg-mint-50 text-mint-800 dark:border-mint-800/40 dark:bg-mint-950/20 dark:text-mint-300"
+                  ? "border-brand-300 bg-brand-50 text-brand-800 dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-300"
                   : "border-zinc-300 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-900/40 dark:text-zinc-300",
               )}
             >

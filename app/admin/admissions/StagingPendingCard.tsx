@@ -74,7 +74,7 @@ export function StagingPendingCard(): React.ReactElement {
         </h2>
         <Card className="p-card-lg">
           <div className="flex items-start gap-3">
-            <div className="w-12 h-12 rounded-full bg-mint-50 dark:bg-mint-950/40 flex items-center justify-center text-mint-700 dark:text-mint-300 shrink-0">
+            <div className="w-12 h-12 rounded-full bg-brand-50 dark:bg-brand-950/40 flex items-center justify-center text-brand-700 dark:text-brand-300 shrink-0">
               <GitMerge className="h-5 w-5" />
             </div>
             <div className="min-w-0 flex-1">
@@ -98,7 +98,7 @@ export function StagingPendingCard(): React.ReactElement {
                   </p>
                   <Link
                     href="/admin/etl-status"
-                    className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-mint-600 dark:text-mint-400 hover:underline"
+                    className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline"
                   >
                     ETL 상세 보기
                     <ArrowRight className="h-3 w-3" />
@@ -141,7 +141,7 @@ export function StagingPendingCard(): React.ReactElement {
                   </p>
                   <Link
                     href="/admin/etl-status?trustLevel=suspicious"
-                    className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-mint-600 dark:text-mint-400 hover:underline"
+                    className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline"
                   >
                     의심 학과만 보기
                     <ArrowRight className="h-3 w-3" />

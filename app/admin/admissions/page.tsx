@@ -45,7 +45,7 @@ export default function AdminAdmissionsPage(): React.ReactElement {
     <div className="flex flex-col gap-section-lg">
       <header>
         <h1 className="text-2xl font-bold text-foreground flex items-center gap-2">
-          <Database className="h-5 w-5 text-mint-600 dark:text-mint-400" />
+          <Database className="h-5 w-5 text-brand-600 dark:text-brand-400" />
           모집요강 관리
         </h1>
         <p className="mt-1.5 text-sm text-muted-foreground break-keep-all">
@@ -60,7 +60,7 @@ export default function AdminAdmissionsPage(): React.ReactElement {
           {STAGES.map((s, i) => (
             <Card key={s.id} className="p-card-lg flex flex-col gap-3">
               <div className="flex items-center gap-2">
-                <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-mint-500 text-white text-xs font-bold">
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-500 text-white text-xs font-bold">
                   {i + 1}
                 </span>
                 <p className="text-sm font-semibold text-foreground">{s.label}</p>
@@ -71,7 +71,7 @@ export default function AdminAdmissionsPage(): React.ReactElement {
               {s.href ? (
                 <Link
                   href={s.href}
-                  className="text-xs font-medium text-mint-600 dark:text-mint-400 hover:underline inline-flex items-center gap-1"
+                  className="text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"
                 >
                   바로가기
                   <ArrowRight className="h-3 w-3" />

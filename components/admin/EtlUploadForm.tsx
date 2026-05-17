@@ -158,11 +158,11 @@ export function EtlUploadForm({ fetchOverride }: EtlUploadFormProps): React.Reac
         className={cn(
           "flex cursor-pointer flex-col items-center gap-2 rounded-lg border-2 border-dashed p-8 text-center transition",
           dragOver
-            ? "border-mint-500 bg-mint-50/40 dark:border-mint-700 dark:bg-mint-950/20"
-            : "border-border hover:border-mint-300 hover:bg-muted/40",
+            ? "border-brand-500 bg-brand-50/40 dark:border-brand-700 dark:bg-brand-950/20"
+            : "border-border hover:border-brand-300 hover:bg-muted/40",
         )}
       >
-        <CloudUpload aria-hidden className="h-8 w-8 text-mint-600" />
+        <CloudUpload aria-hidden className="h-8 w-8 text-brand-600" />
         <p className="text-sm font-medium">
           {file ? file.name : "PDF 파일을 끌어다 놓거나 클릭"}
         </p>
@@ -208,7 +208,7 @@ export function EtlUploadForm({ fetchOverride }: EtlUploadFormProps): React.Reac
       {phase === "uploading" && (
         <div
           data-element="upload-progress"
-          className="flex items-center gap-2 rounded-md border border-mint-300 bg-mint-50/40 p-2 text-xs text-mint-800 dark:border-mint-800/40 dark:bg-mint-950/20 dark:text-mint-300"
+          className="flex items-center gap-2 rounded-md border border-brand-300 bg-brand-50/40 p-2 text-xs text-brand-800 dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-300"
         >
           <Loader2 aria-hidden className="h-4 w-4 animate-spin" />
           <span>{progressMessage}</span>
@@ -231,7 +231,7 @@ export function EtlUploadForm({ fetchOverride }: EtlUploadFormProps): React.Reac
         <Button
           type="submit"
           disabled={!file || phase === "uploading"}
-          className="bg-mint-600 hover:bg-mint-700"
+          className="bg-brand-600 hover:bg-brand-700"
         >
           {phase === "uploading" ? (
             <>

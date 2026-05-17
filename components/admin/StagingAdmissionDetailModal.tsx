@@ -253,7 +253,7 @@ export function StagingAdmissionDetailModal({
             disabled={!canPromote}
             data-testid="promote-button"
             className={cn(
-              "bg-mint-600 hover:bg-mint-700",
+              "bg-brand-600 hover:bg-brand-700",
               !canPromote && "opacity-50",
             )}
           >

@@ -37,7 +37,7 @@ export function ChatLoadingIndicator({
     >
       <div
         aria-hidden
-        className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-mint-100 text-mint-700 dark:bg-mint-950/40 dark:text-mint-400"
+        className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 dark:bg-brand-950/40 dark:text-brand-400"
       >
         <Bot className="h-4 w-4" />
       </div>

@@ -136,13 +136,13 @@ export function OrdersListView(): React.ReactElement {
       )}
 
       {!loading && items.length === 0 && !error && (
-        <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-mint-50 via-background to-emerald-50/40 dark:from-mint-950/40 dark:via-background dark:to-emerald-950/30 p-10 lg:p-14 text-center">
+        <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-brand-50 via-background to-emerald-50/40 dark:from-brand-950/40 dark:via-background dark:to-emerald-950/30 p-10 lg:p-14 text-center">
           <div
             aria-hidden="true"
-            className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/4 w-64 h-64 rounded-full bg-mint-300/20 blur-3xl"
+            className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/4 w-64 h-64 rounded-full bg-brand-300/20 blur-3xl"
           />
           <div className="relative flex flex-col items-center gap-4">
-            <div className="w-14 h-14 rounded-2xl bg-mint-500 text-white flex items-center justify-center shadow-lg shadow-mint-500/30">
+            <div className="w-14 h-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/30">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -167,7 +167,7 @@ export function OrdersListView(): React.ReactElement {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-2 mt-2">
-              <Button asChild size="lg" className="bg-mint-600 hover:bg-mint-700 text-white shadow-lg shadow-mint-500/25">
+              <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700 text-white shadow-lg shadow-brand-500/25">
                 <Link href="/pricing">요금제 보기 →</Link>
               </Button>
               <Button asChild size="lg" variant="outline">

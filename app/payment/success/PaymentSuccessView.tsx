@@ -60,7 +60,7 @@ export function PaymentSuccessView(): React.ReactElement {
         <CardContent className="flex flex-col items-center gap-4 py-12 text-center">
           {state.kind === "loading" && (
             <>
-              <Loader2 aria-hidden className="h-12 w-12 animate-spin text-mint-600" />
+              <Loader2 aria-hidden className="h-12 w-12 animate-spin text-brand-600" />
               <h1 className="text-xl font-semibold">결제 승인 중…</h1>
               <p className="text-sm text-muted-foreground">
                 잠시만 기다려주세요. 토스페이먼츠 응답을 확인하고 있어요.
@@ -70,8 +70,8 @@ export function PaymentSuccessView(): React.ReactElement {
 
           {state.kind === "ok" && (
             <>
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-mint-100 dark:bg-mint-950/40">
-                <CheckCircle2 aria-hidden className="h-10 w-10 text-mint-600" />
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-100 dark:bg-brand-950/40">
+                <CheckCircle2 aria-hidden className="h-10 w-10 text-brand-600" />
               </div>
               <h1 data-testid="success-headline" className="text-xl font-semibold">결제가 완료됐어요</h1>
               <p className="text-sm text-muted-foreground">

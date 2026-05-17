@@ -53,7 +53,7 @@ export function ProductCard({
       data-disabled={disabled}
       className={cn(
         "h-full transition",
-        disabledReason ? "opacity-60" : "hover:shadow-md hover:border-mint-300",
+        disabledReason ? "opacity-60" : "hover:shadow-md hover:border-brand-300",
         className,
       )}
     >
@@ -97,7 +97,7 @@ export function ProductCard({
         <ul className="flex flex-col gap-1.5">
           {product.highlights.map((h, i) => (
             <li key={i} className="flex items-start gap-1.5 text-xs">
-              <Check aria-hidden className="mt-0.5 h-3.5 w-3.5 shrink-0 text-mint-600" />
+              <Check aria-hidden className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand-600" />
               <span>{h}</span>
             </li>
           ))}
@@ -118,7 +118,7 @@ export function ProductCard({
             type="button"
             disabled={disabled}
             onClick={() => onPurchase?.(product.kind)}
-            className="w-full bg-mint-600 hover:bg-mint-700"
+            className="w-full bg-brand-600 hover:bg-brand-700"
           >
             {pending ? (
               <>

@@ -121,7 +121,7 @@ const TRACK_LABEL: Record<AdmissionTrackKind, string> = {
 
 const CATEGORY_LABEL: Record<string, { label: string; cls: string }> = {
   safety: { label: "안정", cls: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300" },
-  target: { label: "적정", cls: "bg-mint-50 text-mint-700 dark:bg-mint-950/40 dark:text-mint-300" },
+  target: { label: "적정", cls: "bg-brand-50 text-brand-700 dark:bg-brand-950/40 dark:text-brand-300" },
   hard_target: { label: "도전", cls: "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300" },
   reach: { label: "상향", cls: "bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300" },
   insufficient_sample: { label: "표본 부족", cls: "bg-muted text-muted-foreground" },
@@ -196,7 +196,7 @@ export function CompareView(): React.ReactElement {
   return (
     <div className="flex flex-col gap-6">
       {baseSpecId && (
-        <Card className="p-card-lg border-mint-200 bg-mint-50/30 dark:border-mint-900/40 dark:bg-mint-950/15">
+        <Card className="p-card-lg border-brand-200 bg-brand-50/30 dark:border-brand-900/40 dark:bg-brand-950/15">
           <p className="text-xs text-foreground">
             ✓ 분석 결과 (<code className="font-mono text-2xs">{baseSpecId}</code>) 와 함께 합격률 비교 모드
           </p>
@@ -240,7 +240,7 @@ export function CompareView(): React.ReactElement {
         size="lg"
         disabled={!canCompare || submitting}
         onClick={() => void handleCompare()}
-        className="bg-mint-600 hover:bg-mint-700 self-start"
+        className="bg-brand-600 hover:bg-brand-700 self-start"
       >
         {submitting ? (
           <>

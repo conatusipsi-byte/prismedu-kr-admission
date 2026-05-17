@@ -151,7 +151,7 @@ export function OnboardingWizard({
       data-component="onboarding-wizard"
       data-step={step}
       className={cn(
-        "border-mint-200 bg-mint-50/20 dark:border-mint-900/40",
+        "border-brand-200 bg-brand-50/20 dark:border-brand-900/40",
         className,
       )}
     >
@@ -173,9 +173,9 @@ export function OnboardingWizard({
                   className={cn(
                     "flex h-7 w-7 items-center justify-center rounded-full text-xs font-semibold",
                     active
-                      ? "bg-mint-600 text-white"
+                      ? "bg-brand-600 text-white"
                       : done
-                      ? "bg-mint-200 text-mint-700 dark:bg-mint-900 dark:text-mint-300"
+                      ? "bg-brand-200 text-brand-700 dark:bg-brand-900 dark:text-brand-300"
                       : "bg-muted text-muted-foreground",
                   )}
                   aria-current={active ? "step" : undefined}
@@ -264,7 +264,7 @@ export function OnboardingWizard({
               size="sm"
               onClick={handleNext}
               disabled={!stepValid[step] || submitting}
-              className="bg-mint-600 hover:bg-mint-700"
+              className="bg-brand-600 hover:bg-brand-700"
             >
               {submitting ? "저장 중…" : step < 3 ? "다음" : "프로필 저장"}
               <ArrowRight className="ml-1 h-3.5 w-3.5" />
@@ -285,7 +285,7 @@ function DoneStep({
 }): React.ReactElement {
   return (
     <div className="flex flex-col items-center gap-5 py-6 text-center">
-      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-mint-100 text-mint-600 dark:bg-mint-900/60 dark:text-mint-300">
+      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-100 text-brand-600 dark:bg-brand-900/60 dark:text-brand-300">
         <CheckCircle2 className="h-7 w-7" />
       </div>
       <div className="space-y-1.5 max-w-md break-keep-all">
@@ -303,7 +303,7 @@ function DoneStep({
           type="button"
           size="lg"
           onClick={() => router.push("/analysis")}
-          className="bg-mint-600 hover:bg-mint-700"
+          className="bg-brand-600 hover:bg-brand-700"
         >
           첫 분석 시작하기
           <ArrowRight className="ml-1 h-3.5 w-3.5" />

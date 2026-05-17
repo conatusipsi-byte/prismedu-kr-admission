@@ -55,13 +55,13 @@ export function ProGate({
   }
 
   return (
-    <Card className="p-card-lg border-mint-300 dark:border-mint-700 bg-mint-50/40 dark:bg-mint-950/30">
+    <Card className="p-card-lg border-brand-300 dark:border-brand-700 bg-brand-50/40 dark:bg-brand-950/30">
       <div className="flex flex-col items-center text-center gap-4 py-6">
-        <div className="w-14 h-14 rounded-2xl bg-mint-500 text-white flex items-center justify-center">
+        <div className="w-14 h-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center">
           <Lock className="h-6 w-6" />
         </div>
         <div className="space-y-1.5 max-w-md">
-          <p className="inline-flex items-center gap-1.5 text-2xs font-semibold rounded-full bg-mint-100 dark:bg-mint-900/60 text-mint-700 dark:text-mint-300 px-2.5 py-1">
+          <p className="inline-flex items-center gap-1.5 text-2xs font-semibold rounded-full bg-brand-100 dark:bg-brand-900/60 text-brand-700 dark:text-brand-300 px-2.5 py-1">
             <Sparkles className="h-3 w-3" />
             Pro 전용 기능
           </p>
@@ -80,7 +80,7 @@ export function ProGate({
                 key={h}
                 className="text-sm text-foreground flex items-start gap-2"
               >
-                <span className="text-mint-500 mt-0.5">✓</span>
+                <span className="text-brand-500 mt-0.5">✓</span>
                 <span className="break-keep-all">{h}</span>
               </li>
             ))}
@@ -91,7 +91,7 @@ export function ProGate({
           <Button
             asChild
             size="lg"
-            className="bg-mint-600 hover:bg-mint-700"
+            className="bg-brand-600 hover:bg-brand-700"
           >
             <Link href="/pricing">
               요금제 보기

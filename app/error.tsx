@@ -59,7 +59,7 @@ export default function GlobalError({
           <Button
             onClick={reset}
             size="lg"
-            className="bg-mint-600 hover:bg-mint-700 text-white shadow-lg shadow-mint-500/25"
+            className="bg-brand-600 hover:bg-brand-700 text-white shadow-lg shadow-brand-500/25"
           >
             <RefreshCw className="h-3.5 w-3.5" />
             다시 시도

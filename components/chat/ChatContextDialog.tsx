@@ -314,7 +314,7 @@ export function ChatContextDialog({
           <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>
             취소
           </Button>
-          <Button type="button" onClick={handleApply} className="bg-mint-600 hover:bg-mint-700">
+          <Button type="button" onClick={handleApply} className="bg-brand-600 hover:bg-brand-700">
             확인하고 새 대화 시작
           </Button>
         </DialogFooter>

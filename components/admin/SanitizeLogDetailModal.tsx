@@ -53,7 +53,7 @@ export function SanitizeLogDetailModal({
                 {log.triggerType === "regression_suspect" ? (
                   <AlertCircle className="h-5 w-5 text-rose-600" />
                 ) : (
-                  <ShieldCheck className="h-5 w-5 text-mint-600" />
+                  <ShieldCheck className="h-5 w-5 text-brand-600" />
                 )}
                 <span>{TYPE_LABEL[log.triggerType]}</span>
                 {!log.resolved && (
@@ -132,7 +132,7 @@ export function SanitizeLogDetailModal({
                 </p>
                 <div
                   data-element="sanitized-response"
-                  className="max-h-48 overflow-y-auto rounded-md border bg-mint-50/40 p-3 text-xs leading-relaxed text-foreground dark:bg-mint-950/10"
+                  className="max-h-48 overflow-y-auto rounded-md border bg-brand-50/40 p-3 text-xs leading-relaxed text-foreground dark:bg-brand-950/10"
                 >
                   {log.sanitizedResponse}
                 </div>

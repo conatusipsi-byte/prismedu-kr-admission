@@ -100,7 +100,7 @@ export function ChatInput({
           aria-label="메시지 입력"
           className={cn(
             "min-h-[44px] resize-none",
-            "focus-visible:ring-mint-500",
+            "focus-visible:ring-brand-500",
           )}
         />
         <Button
@@ -108,7 +108,7 @@ export function ChatInput({
           size="sm"
           disabled={disabled || text.trim().length === 0}
           onClick={() => void submit()}
-          className="bg-mint-600 hover:bg-mint-700"
+          className="bg-brand-600 hover:bg-brand-700"
           aria-label="전송"
         >
           {pending ? (

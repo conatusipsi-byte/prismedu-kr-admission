@@ -44,12 +44,12 @@ export default function NotFound(): React.ReactElement {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
       >
-        <div className="absolute top-[20%] left-[10%] h-96 w-96 rounded-full bg-mint-300/20 blur-3xl dark:bg-mint-700/20" />
+        <div className="absolute top-[20%] left-[10%] h-96 w-96 rounded-full bg-brand-300/20 blur-3xl dark:bg-brand-700/20" />
         <div className="absolute bottom-[10%] right-[10%] h-80 w-80 rounded-full bg-violet-300/15 blur-3xl dark:bg-violet-800/15" />
       </div>
 
       <div className="relative max-w-2xl mx-auto text-center">
-        <p className="text-9xl lg:text-[10rem] font-extrabold tracking-tight bg-gradient-to-br from-mint-500 to-emerald-600 bg-clip-text text-transparent leading-none">
+        <p className="text-9xl lg:text-[10rem] font-extrabold tracking-tight bg-gradient-to-br from-brand-500 to-emerald-600 bg-clip-text text-transparent leading-none">
           404
         </p>
         <h1 className="mt-4 text-2xl lg:text-3xl font-bold text-foreground">
@@ -67,9 +67,9 @@ export default function NotFound(): React.ReactElement {
               <Link
                 key={s.href}
                 href={s.href}
-                className="group rounded-2xl border border-border/60 bg-card/80 backdrop-blur-sm p-5 text-left shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-mint-300 dark:hover:border-mint-700 transition-all"
+                className="group rounded-2xl border border-border/60 bg-card/80 backdrop-blur-sm p-5 text-left shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-brand-300 dark:hover:border-brand-700 transition-all"
               >
-                <div className="w-10 h-10 rounded-xl bg-mint-50 dark:bg-mint-950/60 text-mint-600 dark:text-mint-400 flex items-center justify-center mb-3">
+                <div className="w-10 h-10 rounded-xl bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400 flex items-center justify-center mb-3">
                   <Icon className="h-4 w-4" />
                 </div>
                 <p className="text-sm font-semibold text-foreground flex items-center gap-1">
@@ -88,7 +88,7 @@ export default function NotFound(): React.ReactElement {
           <Button
             asChild
             size="lg"
-            className="bg-mint-600 hover:bg-mint-700 text-white shadow-lg shadow-mint-500/25"
+            className="bg-brand-600 hover:bg-brand-700 text-white shadow-lg shadow-brand-500/25"
           >
             <Link href="/">
               홈으로 돌아가기

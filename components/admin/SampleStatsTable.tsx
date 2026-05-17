@@ -97,7 +97,7 @@ export function SampleStatsTable({
                 {sufficient ? (
                   <Badge
                     variant="outline"
-                    className="border-mint-300 bg-mint-50 text-mint-800 text-2xs dark:border-mint-800/40 dark:bg-mint-950/20 dark:text-mint-300"
+                    className="border-brand-300 bg-brand-50 text-brand-800 text-2xs dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-300"
                   >
                     <CheckCircle2 aria-hidden className="mr-0.5 h-2.5 w-2.5" />
                     충족

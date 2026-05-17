@@ -28,7 +28,7 @@ export default function OnboardingPage(): React.ReactElement {
       className="mx-auto max-w-content px-gutter-sm md:px-gutter lg:px-gutter-lg py-6 lg:py-10"
     >
       <header className="mb-6 max-w-2xl">
-        <p className="text-xs font-semibold text-mint-600 dark:text-mint-400 mb-1.5">
+        <p className="text-xs font-semibold text-brand-600 dark:text-brand-400 mb-1.5">
           처음이시군요 👋
         </p>
         <h1 className="text-2xl lg:text-3xl font-bold text-foreground">

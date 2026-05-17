@@ -23,7 +23,7 @@ import type { AdminUserItem } from "@/lib/admission/admin-users-mock";
 
 const PLAN_TONE: Record<AdminUserItem["plan"], string> = {
   free: "border-zinc-300 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-900/40 dark:text-zinc-300",
-  pro: "border-mint-300 bg-mint-50 text-mint-800 dark:border-mint-800/40 dark:bg-mint-950/20 dark:text-mint-300",
+  pro: "border-brand-300 bg-brand-50 text-brand-800 dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-300",
   elite: "border-amber-300 bg-amber-50 text-amber-800 dark:border-amber-900/40 dark:bg-amber-900/15 dark:text-amber-300",
 };
 
@@ -104,7 +104,7 @@ export function UsersTable({
                     차단
                   </Badge>
                 ) : (
-                  <Badge variant="outline" className="border-mint-300 bg-mint-50 text-mint-800 text-2xs dark:border-mint-800/40 dark:bg-mint-950/20 dark:text-mint-300">
+                  <Badge variant="outline" className="border-brand-300 bg-brand-50 text-brand-800 text-2xs dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-300">
                     정상
                   </Badge>
                 )}

@@ -69,7 +69,7 @@ const SECTION_META: Record<
   target: {
     label: "적정 (Target)",
     description: "현재 점수와 가장 일치 — 메인 지원 후보",
-    tone: "border-mint-300 dark:border-mint-800/40",
+    tone: "border-brand-300 dark:border-brand-800/40",
   },
   safety: {
     label: "안정 (Safety)",
@@ -220,7 +220,7 @@ export function AnalysisResultView({
         </div>
         <div className="flex flex-wrap gap-2">
           {/* AI 카운슬러 — Day 7 연동. 표본 부족 학과만 있어도 일반론 상담은 가능. */}
-          <Button asChild size="sm" className="bg-mint-600 hover:bg-mint-700" data-testid="counselor-cta">
+          <Button asChild size="sm" className="bg-brand-600 hover:bg-brand-700" data-testid="counselor-cta">
             <Link href={`/chat?matchId=${encodeURIComponent(data.matchId)}`}>
               <MessageSquareHeart className="mr-1.5 h-3.5 w-3.5" /> AI 카운슬러로 상담
             </Link>

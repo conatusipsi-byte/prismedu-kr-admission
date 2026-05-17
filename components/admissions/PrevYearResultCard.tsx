@@ -87,7 +87,7 @@ export function PrevYearResultCard({
     >
       <CardContent className="flex flex-col gap-3 py-5">
         <div className="flex items-center gap-2">
-          <TrendingUp aria-hidden className="h-4 w-4 text-mint-600" />
+          <TrendingUp aria-hidden className="h-4 w-4 text-brand-600" />
           <h3 className="text-sm font-semibold">전년도 입결</h3>
         </div>
 

@@ -41,7 +41,7 @@ const STATUS_LABEL: Record<OrderRowData["status"], string> = {
 
 const STATUS_TONE: Record<OrderRowData["status"], string> = {
   pending: "border-amber-200 bg-amber-50 text-amber-700 dark:border-amber-900/40 dark:bg-amber-900/20 dark:text-amber-300",
-  approved: "border-mint-300 bg-mint-50 text-mint-700 dark:border-mint-800/40 dark:bg-mint-950/20 dark:text-mint-400",
+  approved: "border-brand-300 bg-brand-50 text-brand-700 dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-400",
   failed: "border-rose-200 bg-rose-50 text-rose-700 dark:border-rose-900/40 dark:bg-rose-950/20 dark:text-rose-300",
   refunded: "border-zinc-300 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-900/40 dark:text-zinc-300",
   cancelled: "border-zinc-300 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-900/40 dark:text-zinc-300",

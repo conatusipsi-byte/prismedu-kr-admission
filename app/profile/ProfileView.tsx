@@ -65,10 +65,10 @@ export function ProfileView(): React.ReactElement {
 
   return (
     <div className="flex flex-col gap-section-lg">
-      <header className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-mint-50 via-background to-emerald-50/50 dark:from-mint-950/40 dark:via-background dark:to-emerald-950/30 p-6 lg:p-8">
-        <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-48 h-48 rounded-full bg-mint-300/20 blur-3xl" aria-hidden="true" />
+      <header className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-brand-50 via-background to-emerald-50/50 dark:from-brand-950/40 dark:via-background dark:to-emerald-950/30 p-6 lg:p-8">
+        <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-48 h-48 rounded-full bg-brand-300/20 blur-3xl" aria-hidden="true" />
         <div className="relative">
-          <p className="text-xs font-semibold uppercase tracking-wider text-mint-600 dark:text-mint-400 mb-1.5">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-1.5">
             나의 계정
           </p>
           <h1 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">프로필</h1>
@@ -179,13 +179,13 @@ function AccountSection({
               size="default"
               onClick={handleSave}
               disabled={!dirty || pending}
-              className="bg-mint-600 hover:bg-mint-700"
+              className="bg-brand-600 hover:bg-brand-700"
             >
               {pending ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : "저장"}
             </Button>
           </div>
           {savedAt && !dirty && (
-            <p className="text-2xs text-mint-600 dark:text-mint-400 flex items-center gap-1">
+            <p className="text-2xs text-brand-600 dark:text-brand-400 flex items-center gap-1">
               <CheckCircle2 className="h-3 w-3" /> 저장되었어요
             </p>
           )}
@@ -211,7 +211,7 @@ function SpecSection({ hasSpec }: { hasSpec: boolean }): React.ReactElement {
             ? "현재 저장된 프로필을 기반으로 분석·시뮬레이션이 동작합니다. 학기가 바뀌면 새로 입력해주세요."
             : "아직 저장된 입시 프로필이 없어요. 한 번 입력하면 분석·What-if·카운슬러가 같은 데이터로 동작합니다."}
         </p>
-        <Button asChild size="default" variant={hasSpec ? "outline" : "default"} className={hasSpec ? "" : "bg-mint-600 hover:bg-mint-700"}>
+        <Button asChild size="default" variant={hasSpec ? "outline" : "default"} className={hasSpec ? "" : "bg-brand-600 hover:bg-brand-700"}>
           <Link href="/onboarding">
             {hasSpec ? "프로필 수정하기" : "프로필 만들기"}
             <ArrowRight className="h-3.5 w-3.5" />
@@ -402,7 +402,7 @@ function SectionCard({
           className={
             tone === "destructive"
               ? "w-9 h-9 rounded-lg bg-destructive/10 text-destructive flex items-center justify-center shrink-0"
-              : "w-9 h-9 rounded-lg bg-mint-50 dark:bg-mint-950/60 text-mint-600 dark:text-mint-400 flex items-center justify-center shrink-0"
+              : "w-9 h-9 rounded-lg bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400 flex items-center justify-center shrink-0"
           }
         >
           {icon}

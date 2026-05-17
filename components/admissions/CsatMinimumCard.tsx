@@ -41,7 +41,7 @@ export function CsatMinimumCard({
       data-auto-evaluable={isAuto}
       className={cn(
         isAuto
-          ? "border-mint-200 bg-mint-50/30 dark:border-mint-900/40 dark:bg-mint-950/10"
+          ? "border-brand-200 bg-brand-50/30 dark:border-brand-900/40 dark:bg-brand-950/10"
           : "border-amber-200 bg-amber-50/30 dark:border-amber-900/40 dark:bg-amber-950/10",
         className,
       )}
@@ -54,7 +54,7 @@ export function CsatMinimumCard({
               {COMPLEXITY_LABEL[m.complexity]}
             </Badge>
             {isAuto ? (
-              <Badge className="bg-mint-600 text-white text-xs">
+              <Badge className="bg-brand-600 text-white text-xs">
                 <CheckCircle2 className="mr-1 h-3 w-3" />
                 자동 판정
               </Badge>

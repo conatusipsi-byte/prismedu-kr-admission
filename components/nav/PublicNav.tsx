@@ -1,26 +1,33 @@
 "use client";
 
 /**
- * PublicNav — 비로그인·로그인 공통 상단 nav (sticky)
+ * PublicNav — sticky 상단 네비.
  *
- * - 로고 + 메인 메뉴 + Auth CTA
- * - 모바일: 햄버거 menu (Sheet)
- * - 사용자 로그인 시 우측 메뉴를 "대시보드" 로 변경
+ * - 스크롤 ≥ 16px 에서 blur·border 강화 (Linear/Vercel 스타일)
+ * - 로고: 모노그램 'c' + 미니 학사모, brand→iris 그라디언트
+ * - 메뉴: 학과 검색 · 요금제 · 도움말 · 변경 사항
+ * - CTA: outline(로그인) + filled(무료로 시작)
+ * - 다크모드 토글: 우측 ThemeToggle
+ * - 모바일: 햄버거 → 풀스크린 시트 (framer-motion)
  *
- * /admin/* 페이지에선 AdminShell이 자체 nav를 가지므로 본 컴포넌트 미사용.
+ * /admin/* 와 /login 에선 자체 헤더가 있으므로 nav 숨김.
  */
 
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GraduationCap, Menu, X } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import { useAuth } from "@/lib/auth-context";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { Logo } from "@/components/brand/Logo";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { href: "/admissions", label: "학과 검색" },
   { href: "/pricing", label: "요금제" },
+  { href: "/changelog", label: "변경 사항" },
   { href: "/help", label: "도움말" },
 ] as const;
 
@@ -28,130 +35,179 @@ export function PublicNav(): React.ReactElement | null {
   const { user, loading } = useAuth();
   const pathname = usePathname();
   const [open, setOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
 
-  // admin/login 페이지에선 자체 헤더가 있으므로 nav 숨김
+  // 스크롤 감지 — passive listener, threshold 16px
+  React.useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 16);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // 라우트 변경 시 시트 자동 닫힘
+  React.useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   if (pathname?.startsWith("/admin") || pathname === "/login") {
     return null;
   }
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
-      <nav
-        aria-label="메인 메뉴"
-        className="mx-auto flex h-16 max-w-content-wide items-center justify-between gap-4 px-gutter-sm md:px-gutter lg:px-gutter-lg"
-      >
-        {/* Logo */}
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-base font-bold text-foreground transition-opacity hover:opacity-80"
-        >
-          <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-mint-400 to-mint-600 text-white shadow-md shadow-mint-500/25">
-            <GraduationCap className="h-4 w-4" />
-          </div>
-          <span className="tracking-tight">conatusipsi</span>
-        </Link>
-
-        {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-1">
-          {NAV_ITEMS.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        {/* Right side CTA */}
-        <div className="hidden md:flex items-center gap-2">
-          {!loading && (
-            <>
-              {user ? (
-                <Button asChild size="sm" className="bg-mint-600 hover:bg-mint-700 text-white">
-                  <Link href="/dashboard">대시보드 →</Link>
-                </Button>
-              ) : (
-                <>
-                  <Button asChild size="sm" variant="ghost">
-                    <Link href="/login">로그인</Link>
-                  </Button>
-                  <Button asChild size="sm" className="bg-mint-600 hover:bg-mint-700 text-white shadow-sm shadow-mint-500/30">
-                    <Link href="/login?returnUrl=/onboarding">무료로 시작</Link>
-                  </Button>
-                </>
-              )}
-            </>
-          )}
-        </div>
-
-        {/* Mobile toggle */}
-        <button
-          type="button"
-          onClick={() => setOpen((o) => !o)}
-          aria-label="메뉴 열기/닫기"
-          aria-expanded={open}
-          className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground hover:bg-muted hover:text-foreground"
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
-      </nav>
-
-      {/* Mobile drawer */}
-      <div
+    <>
+      <header
         className={cn(
-          "md:hidden border-t border-border/40 bg-background overflow-hidden transition-[max-height,opacity] duration-300 ease-toss",
-          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
+          "sticky top-0 z-40 w-full transition-[background-color,border-color,backdrop-filter] duration-200 ease-toss",
+          scrolled
+            ? "border-b border-border/60 bg-background/70 backdrop-blur-xl supports-[backdrop-filter]:bg-background/55"
+            : "border-b border-transparent bg-background/0",
         )}
       >
-        <ul className="flex flex-col gap-1 p-3">
-          {NAV_ITEMS.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="block rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-muted"
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-          <li className="mt-2 border-t border-border/40 pt-2">
+        <nav
+          aria-label="메인 메뉴"
+          className="mx-auto flex h-16 max-w-content-wide items-center justify-between gap-4 px-gutter-sm md:px-gutter lg:px-gutter-lg"
+        >
+          {/* Logo */}
+          <Link
+            href="/"
+            className="group flex items-center gap-2.5 text-base font-bold text-foreground transition-opacity hover:opacity-90"
+          >
+            <Logo className="h-8 w-8" />
+            <span className="font-display text-[15px] tracking-tight">conatusipsi</span>
+          </Link>
+
+          {/* Desktop nav */}
+          <ul className="hidden md:flex items-center gap-0.5">
+            {NAV_ITEMS.map((item) => {
+              const active = pathname === item.href || pathname?.startsWith(`${item.href}/`);
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={cn(
+                      "rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+                      active
+                        ? "text-foreground"
+                        : "text-muted-foreground hover:bg-muted hover:text-foreground",
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+
+          {/* Right side */}
+          <div className="hidden md:flex items-center gap-2">
+            <ThemeToggle size="sm" />
             {!loading && (
               <>
                 {user ? (
-                  <Link
-                    href="/dashboard"
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg bg-mint-500 px-3 py-2.5 text-center text-sm font-semibold text-white"
-                  >
-                    대시보드 →
-                  </Link>
+                  <Button asChild size="sm" variant="primary">
+                    <Link href="/dashboard">대시보드</Link>
+                  </Button>
                 ) : (
-                  <div className="flex flex-col gap-1.5">
-                    <Link
-                      href="/login"
-                      onClick={() => setOpen(false)}
-                      className="block rounded-lg px-3 py-2.5 text-center text-sm font-medium text-foreground hover:bg-muted"
-                    >
-                      로그인
-                    </Link>
-                    <Link
-                      href="/login?returnUrl=/onboarding"
-                      onClick={() => setOpen(false)}
-                      className="block rounded-lg bg-mint-500 px-3 py-2.5 text-center text-sm font-semibold text-white"
-                    >
-                      무료로 시작
-                    </Link>
-                  </div>
+                  <>
+                    <Button asChild size="sm" variant="outline">
+                      <Link href="/login">로그인</Link>
+                    </Button>
+                    <Button asChild size="sm" variant="primary">
+                      <Link href="/login?returnUrl=/onboarding">무료로 시작</Link>
+                    </Button>
+                  </>
                 )}
               </>
             )}
-          </li>
-        </ul>
-      </div>
-    </header>
+          </div>
+
+          {/* Mobile toggle */}
+          <div className="md:hidden flex items-center gap-1">
+            <ThemeToggle size="sm" />
+            <button
+              type="button"
+              onClick={() => setOpen((o) => !o)}
+              aria-label={open ? "메뉴 닫기" : "메뉴 열기"}
+              aria-expanded={open}
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-background/60 text-foreground/80 backdrop-blur transition-colors hover:bg-background"
+            >
+              {open ? <X className="h-[18px] w-[18px]" /> : <Menu className="h-[18px] w-[18px]" />}
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      {/* Mobile full-screen sheet */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            key="mobile-sheet"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="md:hidden fixed inset-0 z-30 bg-background/95 backdrop-blur-xl pt-16"
+            onClick={() => setOpen(false)}
+          >
+            <motion.ul
+              initial="hidden"
+              animate="show"
+              variants={{
+                hidden: {},
+                show: { transition: { staggerChildren: 0.04, delayChildren: 0.05 } },
+              }}
+              className="flex flex-col gap-1 px-gutter-sm py-6"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {NAV_ITEMS.map((item) => (
+                <motion.li
+                  key={item.href}
+                  variants={{
+                    hidden: { opacity: 0, x: 8 },
+                    show: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <Link
+                    href={item.href}
+                    className="block rounded-xl px-4 py-3 text-lg font-semibold text-foreground hover:bg-muted"
+                  >
+                    {item.label}
+                  </Link>
+                </motion.li>
+              ))}
+              <motion.li
+                variants={{
+                  hidden: { opacity: 0, y: 8 },
+                  show: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                className="mt-4 border-t border-border/60 pt-4"
+              >
+                {!loading && (
+                  <div className="flex flex-col gap-2">
+                    {user ? (
+                      <Button asChild size="xl" variant="primary" className="w-full">
+                        <Link href="/dashboard">대시보드</Link>
+                      </Button>
+                    ) : (
+                      <>
+                        <Button asChild size="xl" variant="outline" className="w-full">
+                          <Link href="/login">로그인</Link>
+                        </Button>
+                        <Button asChild size="xl" variant="primary" className="w-full">
+                          <Link href="/login?returnUrl=/onboarding">무료로 시작</Link>
+                        </Button>
+                      </>
+                    )}
+                  </div>
+                )}
+              </motion.li>
+            </motion.ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

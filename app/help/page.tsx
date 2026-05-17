@@ -73,9 +73,9 @@ export default function HelpPage(): React.ReactElement {
               <Link
                 key={q.title}
                 href={q.href}
-                className="group rounded-2xl border border-border/60 bg-card p-card-lg shadow-sm hover:shadow-md hover:border-mint-300 dark:hover:border-mint-700 transition-all flex flex-col gap-3"
+                className="group rounded-2xl border border-border/60 bg-card p-card-lg shadow-sm hover:shadow-md hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col gap-3"
               >
-                <div className="w-10 h-10 rounded-xl bg-mint-50 dark:bg-mint-950/60 text-mint-600 dark:text-mint-400 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400 flex items-center justify-center">
                   <Icon className="h-5 w-5" />
                 </div>
                 <div>
@@ -117,7 +117,7 @@ export default function HelpPage(): React.ReactElement {
 
       <Card variant="accent" className="p-card-lg">
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-mint-500/15 text-mint-600 dark:text-mint-400 flex items-center justify-center shrink-0">
+          <div className="w-12 h-12 rounded-xl bg-brand-500/15 text-brand-600 dark:text-brand-400 flex items-center justify-center shrink-0">
             <Mail className="h-5 w-5" />
           </div>
           <div className="flex-1 min-w-0 space-y-1">

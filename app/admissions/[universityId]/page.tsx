@@ -125,7 +125,7 @@ export default async function UniversityDetailPage({
                 href={university.admissionGuideUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs font-medium text-mint-600 dark:text-mint-400 hover:underline"
+                className="inline-flex items-center gap-1 text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline"
               >
                 공식 입학처
                 <ExternalLink className="h-3 w-3" />
@@ -163,7 +163,7 @@ export default async function UniversityDetailPage({
                 <li key={department.id}>
                   <Link
                     href={`/admissions/${university.id}/${department.id}`}
-                    className="group block rounded-2xl border border-border/60 bg-card p-card-lg shadow-sm hover:shadow-md hover:border-mint-300 dark:hover:border-mint-700 transition-all h-full"
+                    className="group block rounded-2xl border border-border/60 bg-card p-card-lg shadow-sm hover:shadow-md hover:border-brand-300 dark:hover:border-brand-700 transition-all h-full"
                   >
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <h3 className="text-base font-semibold text-foreground">
@@ -183,7 +183,7 @@ export default async function UniversityDetailPage({
                       {department.isProfessional && (
                         <Badge
                           variant="secondary"
-                          className="text-2xs bg-mint-50 text-mint-700 dark:bg-mint-950/60 dark:text-mint-300"
+                          className="text-2xs bg-brand-50 text-brand-700 dark:bg-brand-950/60 dark:text-brand-300"
                         >
                           전문 자격
                         </Badge>
@@ -215,7 +215,7 @@ export default async function UniversityDetailPage({
             <Card>
               <CardContent className="py-5 space-y-3">
                 <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
-                  <Building2 className="h-4 w-4 text-mint-600 dark:text-mint-400" />
+                  <Building2 className="h-4 w-4 text-brand-600 dark:text-brand-400" />
                   캠퍼스
                 </div>
                 <ul className="space-y-2.5">
@@ -224,7 +224,7 @@ export default async function UniversityDetailPage({
                       <p className="font-medium text-foreground flex items-center gap-1.5">
                         {c.name}
                         {c.isMain && (
-                          <span className="text-2xs text-mint-600 dark:text-mint-400">
+                          <span className="text-2xs text-brand-600 dark:text-brand-400">
                             (본교)
                           </span>
                         )}

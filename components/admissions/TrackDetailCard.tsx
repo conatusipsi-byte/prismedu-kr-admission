@@ -135,7 +135,7 @@ function StagesSection({
             className="rounded-md border border-border bg-background/50 p-3"
           >
             <div className="mb-2 flex items-center gap-2 text-xs">
-              <Badge variant="outline" className="bg-mint-50 text-mint-700 dark:bg-mint-950/40 dark:text-mint-400">
+              <Badge variant="outline" className="bg-brand-50 text-brand-700 dark:bg-brand-950/40 dark:text-brand-400">
                 {stage.step}단계
               </Badge>
               {stage.multiplier && (

@@ -91,7 +91,7 @@ export function EtlStatusView(): React.ReactElement {
             {source === "mock" && " (현재 mock 데이터 — Firestore 시드 후 자동 전환)"}
           </p>
         </div>
-        <Button asChild className="bg-mint-600 hover:bg-mint-700">
+        <Button asChild className="bg-brand-600 hover:bg-brand-700">
           <Link href="/admin/etl-upload">
             <Plus className="mr-1.5 h-3.5 w-3.5" /> 새 PDF 업로드
           </Link>

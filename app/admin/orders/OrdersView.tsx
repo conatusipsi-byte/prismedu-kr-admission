@@ -119,7 +119,7 @@ export function OrdersView(): React.ReactElement {
     <div className="flex flex-col gap-section-lg">
       <header>
         <h1 className="text-2xl font-bold text-foreground flex items-center gap-2">
-          <ShoppingBag className="h-5 w-5 text-mint-600 dark:text-mint-400" />
+          <ShoppingBag className="h-5 w-5 text-brand-600 dark:text-brand-400" />
           주문 관리
         </h1>
         <p className="mt-1.5 text-sm text-muted-foreground break-keep-all">

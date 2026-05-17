@@ -96,7 +96,7 @@ const STEPS = [
     icon: GraduationCap,
     title: "성적·생기부 입력",
     desc: "내신·수능/모의·세특·비교과를 한 번 입력하면 분석에 그대로 사용돼요.",
-    color: "from-mint-400 to-mint-600",
+    color: "from-brand-400 to-brand-600",
   },
   {
     icon: BarChart3,
@@ -164,7 +164,7 @@ export default function LandingPage(): React.ReactElement {
 
       {/* 배경 floating orbs — 시각적 깊이 */}
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
-        <div className="absolute top-[-10%] left-[-10%] h-[40rem] w-[40rem] rounded-full bg-gradient-to-br from-mint-300/40 to-mint-500/20 blur-3xl dark:from-mint-700/30 dark:to-mint-900/20" />
+        <div className="absolute top-[-10%] left-[-10%] h-[40rem] w-[40rem] rounded-full bg-gradient-to-br from-brand-300/40 to-brand-500/20 blur-3xl dark:from-brand-700/30 dark:to-brand-900/20" />
         <div className="absolute top-[20%] right-[-15%] h-[35rem] w-[35rem] rounded-full bg-gradient-to-bl from-violet-300/30 to-blue-400/20 blur-3xl dark:from-violet-700/20 dark:to-blue-800/15" />
         <div className="absolute bottom-[-15%] left-[20%] h-[30rem] w-[30rem] rounded-full bg-gradient-to-tr from-amber-200/25 to-orange-300/15 blur-3xl dark:from-amber-700/15 dark:to-orange-800/10" />
       </div>
@@ -184,11 +184,11 @@ export default function LandingPage(): React.ReactElement {
         <section className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg pt-12 pb-16 lg:pt-20 lg:pb-24">
           <header className="flex flex-col items-center text-center gap-6 lg:gap-8">
             <div
-              className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-mint-200 dark:border-mint-800 bg-mint-50/80 dark:bg-mint-950/60 px-4 py-1.5 backdrop-blur-sm"
+              className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-brand-200 dark:border-brand-800 bg-brand-50/80 dark:bg-brand-950/60 px-4 py-1.5 backdrop-blur-sm"
               style={{ animationDelay: "0.05s" }}
             >
-              <Sparkles className="h-3.5 w-3.5 text-mint-600 dark:text-mint-400" />
-              <span className="text-xs font-semibold text-mint-700 dark:text-mint-300">
+              <Sparkles className="h-3.5 w-3.5 text-brand-600 dark:text-brand-400" />
+              <span className="text-xs font-semibold text-brand-700 dark:text-brand-300">
                 2027학년도 시즌 준비
               </span>
             </div>
@@ -199,7 +199,7 @@ export default function LandingPage(): React.ReactElement {
             >
               내 성적으로 갈 수 있는 학과,
               <br className="hidden sm:block" />
-              <span className="bg-gradient-to-r from-mint-500 via-mint-600 to-emerald-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-500 via-brand-600 to-emerald-600 bg-clip-text text-transparent">
                 3초면
               </span>{" "}
               알 수 있어요
@@ -221,7 +221,7 @@ export default function LandingPage(): React.ReactElement {
               <Button
                 asChild
                 size="2xl"
-                className="bg-mint-500 hover:bg-mint-600 text-white shadow-xl shadow-mint-500/40 hover:shadow-2xl hover:shadow-mint-500/50 hover:-translate-y-0.5 transition-all"
+                className="bg-brand-500 hover:bg-brand-600 text-white shadow-xl shadow-brand-500/40 hover:shadow-2xl hover:shadow-brand-500/50 hover:-translate-y-0.5 transition-all"
               >
                 <Link href="/login?returnUrl=/onboarding">
                   지금 무료로 분석 시작
@@ -249,9 +249,9 @@ export default function LandingPage(): React.ReactElement {
                 return (
                   <li
                     key={t.label}
-                    className="group relative flex flex-col items-center gap-2 rounded-2xl bg-card/80 border border-border/60 p-4 sm:p-5 backdrop-blur-sm hover:shadow-lg hover:border-mint-300 dark:hover:border-mint-700 transition-all"
+                    className="group relative flex flex-col items-center gap-2 rounded-2xl bg-card/80 border border-border/60 p-4 sm:p-5 backdrop-blur-sm hover:shadow-lg hover:border-brand-300 dark:hover:border-brand-700 transition-all"
                   >
-                    <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-mint-50 to-mint-100 dark:from-mint-950 dark:to-mint-900 text-mint-600 dark:text-mint-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 dark:from-brand-950 dark:to-brand-900 text-brand-600 dark:text-brand-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                       <Icon className="h-4 w-4" />
                     </div>
                     <span className="text-base sm:text-2xl font-bold text-foreground tabular-nums leading-none">
@@ -273,7 +273,7 @@ export default function LandingPage(): React.ReactElement {
         {/* ═══ How it works ═══ */}
         <section className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-16 lg:py-24">
           <div className="text-center mb-10 lg:mb-14">
-            <p className="text-xs font-semibold uppercase tracking-wider text-mint-600 dark:text-mint-400 mb-2">
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2">
               How it works
             </p>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
@@ -310,10 +310,10 @@ export default function LandingPage(): React.ReactElement {
 
         {/* ═══ Honesty note ═══ */}
         <section className="mx-auto w-full max-w-content px-gutter-sm md:px-gutter lg:px-gutter-lg py-12 lg:py-16">
-          <div className="relative overflow-hidden rounded-3xl border border-mint-200 dark:border-mint-800 bg-gradient-to-br from-mint-50 via-mint-50/50 to-emerald-50 dark:from-mint-950/60 dark:via-mint-950/30 dark:to-emerald-950/40 p-8 lg:p-10">
-            <div className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/4 w-64 h-64 rounded-full bg-mint-300/30 blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl border border-brand-200 dark:border-brand-800 bg-gradient-to-br from-brand-50 via-brand-50/50 to-emerald-50 dark:from-brand-950/60 dark:via-brand-950/30 dark:to-emerald-950/40 p-8 lg:p-10">
+            <div className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/4 w-64 h-64 rounded-full bg-brand-300/30 blur-3xl" />
             <div className="relative flex flex-col md:flex-row items-start gap-5">
-              <div className="w-14 h-14 rounded-2xl bg-mint-500 text-white flex items-center justify-center shrink-0 shadow-lg shadow-mint-500/30">
+              <div className="w-14 h-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center shrink-0 shadow-lg shadow-brand-500/30">
                 <ShieldCheck className="h-6 w-6" />
               </div>
               <div className="min-w-0 flex-1">
@@ -337,7 +337,7 @@ export default function LandingPage(): React.ReactElement {
         {/* ═══ Personas ═══ */}
         <section className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-16 lg:py-24">
           <div className="text-center mb-10 lg:mb-14">
-            <p className="text-xs font-semibold uppercase tracking-wider text-mint-600 dark:text-mint-400 mb-2">
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2">
               누가 쓰나요
             </p>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
@@ -352,7 +352,7 @@ export default function LandingPage(): React.ReactElement {
               >
                 <div className="flex items-center gap-3">
                   <div className="text-3xl">{p.avatar}</div>
-                  <span className="text-2xs font-bold tracking-wider uppercase rounded-full px-2.5 py-1 bg-mint-100 text-mint-700 dark:bg-mint-900/60 dark:text-mint-300">
+                  <span className="text-2xs font-bold tracking-wider uppercase rounded-full px-2.5 py-1 bg-brand-100 text-brand-700 dark:bg-brand-900/60 dark:text-brand-300">
                     {p.label}
                   </span>
                 </div>
@@ -370,7 +370,7 @@ export default function LandingPage(): React.ReactElement {
         {/* ═══ Feature highlights ═══ */}
         <section className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-16 lg:py-24">
           <div className="text-center mb-10 lg:mb-14">
-            <p className="text-xs font-semibold uppercase tracking-wider text-mint-600 dark:text-mint-400 mb-2">
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2">
               핵심 기능
             </p>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
@@ -386,7 +386,7 @@ export default function LandingPage(): React.ReactElement {
             />
             <FeatureCard
               icon={<School className="h-5 w-5" />}
-              gradient="from-mint-400 to-emerald-600"
+              gradient="from-brand-400 to-emerald-600"
               title="전형별 분리 (수시·정시·논술·실기)"
               body="학생부종합·학생부교과·논술·실기·정시 가나다군까지 — 전형별로 별도 카드로 비교 가능."
             />
@@ -408,7 +408,7 @@ export default function LandingPage(): React.ReactElement {
         {/* ═══ FAQ ═══ */}
         <section className="mx-auto w-full max-w-content px-gutter-sm md:px-gutter lg:px-gutter-lg py-16 lg:py-24">
           <div className="text-center mb-10 lg:mb-14">
-            <p className="text-xs font-semibold uppercase tracking-wider text-mint-600 dark:text-mint-400 mb-2">
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2">
               FAQ
             </p>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
@@ -435,7 +435,7 @@ export default function LandingPage(): React.ReactElement {
 
         {/* ═══ Footer CTA ═══ */}
         <section className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-16 lg:py-24">
-          <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-mint-500 via-mint-600 to-emerald-700 text-white p-10 lg:p-16 text-center shadow-2xl shadow-mint-500/30">
+          <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-500 via-brand-600 to-emerald-700 text-white p-10 lg:p-16 text-center shadow-2xl shadow-brand-500/30">
             {/* decorative orbs */}
             <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-72 h-72 rounded-full bg-white/10 blur-3xl" />
             <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-64 h-64 rounded-full bg-emerald-300/20 blur-3xl" />
@@ -456,7 +456,7 @@ export default function LandingPage(): React.ReactElement {
               <Button
                 asChild
                 size="2xl"
-                className="bg-white text-mint-700 hover:bg-white/95 hover:scale-105 shadow-xl transition-all"
+                className="bg-white text-brand-700 hover:bg-white/95 hover:scale-105 shadow-xl transition-all"
               >
                 <Link href="/login?returnUrl=/onboarding">
                   무료로 시작하기
@@ -471,7 +471,7 @@ export default function LandingPage(): React.ReactElement {
         <footer className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-8 lg:py-10 border-t border-border/40">
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-between text-xs text-muted-foreground">
             <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-mint-500/10 text-mint-600 dark:text-mint-400">
+              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-brand-500/10 text-brand-600 dark:text-brand-400">
                 <GraduationCap className="h-3.5 w-3.5" />
               </div>
               <span>© {new Date().getFullYear()} conatusipsi</span>

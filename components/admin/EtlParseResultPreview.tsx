@@ -33,7 +33,7 @@ const TRUST_LABEL: Record<ParserTrustLevel, string> = {
 };
 
 const TRUST_TONE: Record<ParserTrustLevel, string> = {
-  trusted: "border-mint-300 bg-mint-50 text-mint-800 dark:border-mint-800/40 dark:bg-mint-950/20 dark:text-mint-300",
+  trusted: "border-brand-300 bg-brand-50 text-brand-800 dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-300",
   "trusted-fallback": "border-amber-300 bg-amber-50 text-amber-800 dark:border-amber-900/40 dark:bg-amber-900/15 dark:text-amber-300",
   suspicious: "border-rose-300 bg-rose-50 text-rose-800 dark:border-rose-900/40 dark:bg-rose-950/15 dark:text-rose-300",
 };
@@ -159,7 +159,7 @@ export function EtlParseResultPreview({
                 className={cn(
                   "text-2xs",
                   csatMinimumFinalized.autoEvaluable
-                    ? "border-mint-300 text-mint-700 dark:border-mint-800/40 dark:text-mint-300"
+                    ? "border-brand-300 text-brand-700 dark:border-brand-800/40 dark:text-brand-300"
                     : "border-amber-300 text-amber-700 dark:border-amber-900/40 dark:text-amber-300",
                 )}
               >

@@ -223,15 +223,15 @@ export function LockCard({
     <Card
       data-gated-state="locked"
       className={cn(
-        "border-mint-300 bg-mint-50/40 dark:border-mint-800/40 dark:bg-mint-950/20",
+        "border-brand-300 bg-brand-50/40 dark:border-brand-800/40 dark:bg-brand-950/20",
       )}
     >
       <CardContent className="flex flex-col items-center gap-3 py-8 text-center">
         <div
           aria-hidden
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-mint-500/10"
+          className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-500/10"
         >
-          <Lock className="h-6 w-6 text-mint-600 dark:text-mint-400" />
+          <Lock className="h-6 w-6 text-brand-600 dark:text-brand-400" />
         </div>
 
         <p className="text-sm font-medium">
@@ -242,7 +242,7 @@ export function LockCard({
           {FEATURE_UPGRADE_COPY[feature]}
         </p>
 
-        <Button asChild size="sm" className="mt-2 bg-mint-600 hover:bg-mint-700">
+        <Button asChild size="sm" className="mt-2 bg-brand-600 hover:bg-brand-700">
           <Link href={upgradeHref}>업그레이드</Link>
         </Button>
       </CardContent>
@@ -272,8 +272,8 @@ export function FreePreviewCounter({
       variant="outline"
       className={cn(
         "absolute right-2 top-2",
-        "border-mint-300 bg-mint-50/80 text-mint-700",
-        "dark:border-mint-800 dark:bg-mint-950/40 dark:text-mint-400",
+        "border-brand-300 bg-brand-50/80 text-brand-700",
+        "dark:border-brand-800 dark:bg-brand-950/40 dark:text-brand-400",
       )}
     >
       무료 {current} / {max}

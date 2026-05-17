@@ -102,7 +102,7 @@ export function SpecAnalysisView(): React.ReactElement {
 
   return (
     <div className="flex flex-col gap-5">
-      <Card className="p-card-lg border-mint-200 bg-mint-50/20 dark:border-mint-900/40">
+      <Card className="p-card-lg border-brand-200 bg-brand-50/20 dark:border-brand-900/40">
         <Label htmlFor="focus-major" className="text-xs">
           목표 전공 (선택) — 입력 시 적합도 평가에 반영
         </Label>
@@ -137,7 +137,7 @@ export function SpecAnalysisView(): React.ReactElement {
       {submitting && (
         <Card className="p-card-lg">
           <div className="flex items-center gap-3 py-4">
-            <Loader2 className="h-5 w-5 animate-spin text-mint-600" />
+            <Loader2 className="h-5 w-5 animate-spin text-brand-600" />
             <p className="text-sm">AI 분석 중… (10~20초 소요)</p>
           </div>
         </Card>
@@ -279,7 +279,7 @@ function ActivityCard({
       {!isInsufficient && (
         <div className="h-1.5 rounded-full bg-muted overflow-hidden">
           <div
-            className="h-full bg-mint-500"
+            className="h-full bg-brand-500"
             style={{ width: `${activity.score ?? 0}%` }}
           />
         </div>
@@ -305,12 +305,12 @@ function ListSection({
   const TONE_CLASS = {
     emerald: "border-emerald-200 bg-emerald-50/40 dark:border-emerald-900/40 dark:bg-emerald-900/10",
     amber: "border-amber-200 bg-amber-50/40 dark:border-amber-900/40 dark:bg-amber-900/10",
-    mint: "border-mint-200 bg-mint-50/40 dark:border-mint-900/40 dark:bg-mint-950/15",
+    mint: "border-brand-200 bg-brand-50/40 dark:border-brand-900/40 dark:bg-brand-950/15",
   } as const;
   const ICON_TONE = {
     emerald: "text-emerald-700 dark:text-emerald-300",
     amber: "text-amber-700 dark:text-amber-300",
-    mint: "text-mint-700 dark:text-mint-300",
+    mint: "text-brand-700 dark:text-brand-300",
   } as const;
 
   return (

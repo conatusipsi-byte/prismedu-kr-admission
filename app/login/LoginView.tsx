@@ -215,7 +215,7 @@ export function LoginView(): React.ReactElement {
         <Button
           type="submit"
           disabled={!!pending}
-          className="bg-mint-600 hover:bg-mint-700"
+          className="bg-brand-600 hover:bg-brand-700"
           data-testid="login-email-submit"
         >
           {pending === "email" || pending === "email-signup" ? (
@@ -251,7 +251,7 @@ export function LoginView(): React.ReactElement {
             비밀번호를 잊으셨나요?
           </button>
           {resetSent && (
-            <span className="text-mint-700">재설정 메일 발송됨</span>
+            <span className="text-brand-700">재설정 메일 발송됨</span>
           )}
         </div>
       )}
@@ -267,7 +267,7 @@ export function LoginView(): React.ReactElement {
                 setMode("signup");
                 setError(null);
               }}
-              className="font-semibold text-mint-700 underline-offset-2 hover:underline"
+              className="font-semibold text-brand-700 underline-offset-2 hover:underline"
               data-testid="switch-to-signup"
             >
               회원가입
@@ -282,7 +282,7 @@ export function LoginView(): React.ReactElement {
                 setMode("login");
                 setError(null);
               }}
-              className="font-semibold text-mint-700 underline-offset-2 hover:underline"
+              className="font-semibold text-brand-700 underline-offset-2 hover:underline"
               data-testid="switch-to-login"
             >
               로그인

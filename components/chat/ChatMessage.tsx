@@ -65,7 +65,7 @@ export function ChatMessage({ message, className }: ChatMessageProps): React.Rea
       {!isUser && (
         <div
           aria-hidden
-          className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-mint-100 text-mint-700 dark:bg-mint-950/40 dark:text-mint-400"
+          className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 dark:bg-brand-950/40 dark:text-brand-400"
         >
           <Bot className="h-4 w-4" />
         </div>
@@ -76,7 +76,7 @@ export function ChatMessage({ message, className }: ChatMessageProps): React.Rea
           className={cn(
             "rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed whitespace-pre-wrap break-words",
             isUser
-              ? "bg-mint-600 text-white"
+              ? "bg-brand-600 text-white"
               : "bg-zinc-50 text-zinc-900 dark:bg-zinc-900/50 dark:text-zinc-100",
           )}
         >

@@ -142,7 +142,7 @@ export function AnalysisFormWizard({
     <Card
       data-component="analysis-form-wizard"
       data-step={step}
-      className={cn("border-mint-200 bg-mint-50/20 dark:border-mint-900/40", className)}
+      className={cn("border-brand-200 bg-brand-50/20 dark:border-brand-900/40", className)}
     >
       <CardContent className="flex flex-col gap-6 py-6">
         {/* Step indicator */}
@@ -162,9 +162,9 @@ export function AnalysisFormWizard({
                   className={cn(
                     "flex h-7 w-7 items-center justify-center rounded-full text-xs font-semibold",
                     active
-                      ? "bg-mint-600 text-white"
+                      ? "bg-brand-600 text-white"
                       : done
-                      ? "bg-mint-200 text-mint-700 dark:bg-mint-900 dark:text-mint-300"
+                      ? "bg-brand-200 text-brand-700 dark:bg-brand-900 dark:text-brand-300"
                       : "bg-muted text-muted-foreground",
                   )}
                   aria-current={active ? "step" : undefined}
@@ -239,7 +239,7 @@ export function AnalysisFormWizard({
             size="sm"
             onClick={handleNext}
             disabled={!stepValid[step] || submitting}
-            className="bg-mint-600 hover:bg-mint-700"
+            className="bg-brand-600 hover:bg-brand-700"
           >
             {submitting ? "분석 중…" : step < 3 ? "다음" : "분석 시작"}
             <ArrowRight className="ml-1 h-3.5 w-3.5" />

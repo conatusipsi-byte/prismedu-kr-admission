@@ -35,7 +35,7 @@ export default function PricingPage(): React.ReactElement {
   return (
     <div className="mx-auto max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-10 lg:py-16">
       <header className="text-center max-w-2xl mx-auto mb-10 lg:mb-14">
-        <p className="inline-flex items-center gap-2 rounded-full bg-mint-50 dark:bg-mint-950/60 border border-mint-200 dark:border-mint-800 px-4 py-1.5 text-xs font-semibold text-mint-700 dark:text-mint-300 mb-4">
+        <p className="inline-flex items-center gap-2 rounded-full bg-brand-50 dark:bg-brand-950/60 border border-brand-200 dark:border-brand-800 px-4 py-1.5 text-xs font-semibold text-brand-700 dark:text-brand-300 mb-4">
           <Sparkles className="h-3.5 w-3.5" />
           출시 전 임시 가격 (P-014 확정 예정)
         </p>
@@ -57,12 +57,12 @@ export default function PricingPage(): React.ReactElement {
               key={p.kind}
               className={
                 featured
-                  ? "p-card-lg flex flex-col gap-4 border-2 border-mint-500 dark:border-mint-400 shadow-lg shadow-mint-500/15 relative"
+                  ? "p-card-lg flex flex-col gap-4 border-2 border-brand-500 dark:border-brand-400 shadow-lg shadow-brand-500/15 relative"
                   : "p-card-lg flex flex-col gap-4"
               }
             >
               {featured && (
-                <span className="absolute -top-3 left-card-lg inline-flex items-center gap-1 rounded-full bg-mint-500 text-white text-2xs font-semibold px-2.5 py-1">
+                <span className="absolute -top-3 left-card-lg inline-flex items-center gap-1 rounded-full bg-brand-500 text-white text-2xs font-semibold px-2.5 py-1">
                   추천
                 </span>
               )}
@@ -95,7 +95,7 @@ export default function PricingPage(): React.ReactElement {
                     key={h}
                     className="flex items-start gap-2 text-xs text-foreground"
                   >
-                    <Check className="h-3.5 w-3.5 text-mint-600 dark:text-mint-400 shrink-0 mt-0.5" />
+                    <Check className="h-3.5 w-3.5 text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" />
                     <span className="break-keep-all leading-relaxed">{h}</span>
                   </li>
                 ))}
@@ -106,7 +106,7 @@ export default function PricingPage(): React.ReactElement {
                 size="lg"
                 className={
                   featured
-                    ? "bg-mint-600 hover:bg-mint-700 w-full"
+                    ? "bg-brand-600 hover:bg-brand-700 w-full"
                     : "w-full"
                 }
                 variant={featured ? "default" : "outline"}
@@ -128,7 +128,7 @@ export default function PricingPage(): React.ReactElement {
           <li>• 결제 즉시 권한이 활성화되며, 영수증은 등록된 이메일로 자동 발송됩니다.</li>
           <li>
             • 환불 정책은{" "}
-            <Link href="/refund" className="text-mint-600 dark:text-mint-400 underline">
+            <Link href="/refund" className="text-brand-600 dark:text-brand-400 underline">
               환불 페이지
             </Link>
             에서 확인하세요. 결제 후 7일 이내 미사용 시 전액 환불됩니다.

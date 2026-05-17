@@ -223,7 +223,7 @@ function UsersOverview({ summary }: { summary: AdminUsersSummary }): React.React
 
 const TONE_CLASS = {
   neutral: "border-border bg-card",
-  mint: "border-mint-200 bg-mint-50/30 dark:border-mint-800/40 dark:bg-mint-950/15",
+  mint: "border-brand-200 bg-brand-50/30 dark:border-brand-800/40 dark:bg-brand-950/15",
   amber: "border-amber-200 bg-amber-50/30 dark:border-amber-900/40 dark:bg-amber-900/10",
   rose: "border-rose-300 bg-rose-50/40 dark:border-rose-900/40 dark:bg-rose-950/15",
 } as const;

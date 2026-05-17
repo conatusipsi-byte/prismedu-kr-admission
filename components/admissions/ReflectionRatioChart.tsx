@@ -77,7 +77,7 @@ export function ReflectionRatioChart({
                   </span>
                   <div className="relative h-5 flex-1 overflow-hidden rounded-md bg-muted">
                     <div
-                      className="h-full bg-mint-500"
+                      className="h-full bg-brand-500"
                       style={{ width: `${pct}%` }}
                     />
                   </div>
@@ -120,8 +120,8 @@ export function ReflectionRatioChart({
 
         {/* 과탐 조합 가산 (B4) */}
         {r.investigationCombinationBonus && (
-          <div className="rounded-md bg-mint-50/50 p-3 dark:bg-mint-950/20">
-            <p className="mb-1.5 text-xs font-medium text-mint-700 dark:text-mint-400">
+          <div className="rounded-md bg-brand-50/50 p-3 dark:bg-brand-950/20">
+            <p className="mb-1.5 text-xs font-medium text-brand-700 dark:text-brand-400">
               과탐 조합 가산
             </p>
             <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs">

@@ -49,16 +49,16 @@ export function PreviewLockOverlay({
       data-component="preview-lock-overlay"
       data-locked-count={lockedCount}
       className={cn(
-        "border-mint-300 bg-mint-50/40 dark:border-mint-800/40 dark:bg-mint-950/20",
+        "border-brand-300 bg-brand-50/40 dark:border-brand-800/40 dark:bg-brand-950/20",
         className,
       )}
     >
       <CardContent className="flex flex-col items-center gap-3 py-8 text-center">
         <div
           aria-hidden
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-mint-500/10"
+          className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-500/10"
         >
-          <Lock className="h-6 w-6 text-mint-600 dark:text-mint-400" />
+          <Lock className="h-6 w-6 text-brand-600 dark:text-brand-400" />
         </div>
 
         <p className="text-sm font-medium">
@@ -71,7 +71,7 @@ export function PreviewLockOverlay({
           학과 분석이 열립니다.
         </p>
 
-        <Button asChild size="sm" className="mt-2 bg-mint-600 hover:bg-mint-700">
+        <Button asChild size="sm" className="mt-2 bg-brand-600 hover:bg-brand-700">
           <Link href={upgradeHref}>업그레이드</Link>
         </Button>
       </CardContent>

@@ -41,7 +41,7 @@ const CATEGORY_LABEL: Record<ProbabilityCategory, string> = {
 const CATEGORY_TONE: Record<ProbabilityCategory, string> = {
   reach: "border-rose-200 bg-rose-50/40 text-rose-700 dark:border-rose-900/40 dark:bg-rose-950/20 dark:text-rose-300",
   hard_target: "border-amber-200 bg-amber-50/40 text-amber-700 dark:border-amber-900/40 dark:bg-amber-950/20 dark:text-amber-300",
-  target: "border-mint-300 bg-mint-50/40 text-mint-700 dark:border-mint-800/40 dark:bg-mint-950/20 dark:text-mint-400",
+  target: "border-brand-300 bg-brand-50/40 text-brand-700 dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-400",
   safety: "border-emerald-200 bg-emerald-50/40 text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-950/20 dark:text-emerald-300",
   insufficient_sample: "border-zinc-300 bg-zinc-50 text-zinc-600 dark:border-zinc-700 dark:bg-zinc-900/40 dark:text-zinc-300",
 };
@@ -65,9 +65,9 @@ export function DepartmentRecommendCard({
       data-sample-sufficient={result.sampleSufficient}
       data-university-id={result.universityId}
       data-department-id={result.departmentId}
-      className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint-500"
+      className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
     >
-      <Card className={cn("h-full transition hover:shadow-md hover:border-mint-300", className)}>
+      <Card className={cn("h-full transition hover:shadow-md hover:border-brand-300", className)}>
         <CardContent className="flex flex-col gap-3 py-5">
           {/* 헤더: 대학·학과 + 카테고리 뱃지 */}
           <div className="flex items-start justify-between gap-2">

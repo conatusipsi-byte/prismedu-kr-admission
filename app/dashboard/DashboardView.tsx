@@ -130,11 +130,11 @@ export function DashboardView(): React.ReactElement {
   return (
     <div className="flex flex-col gap-8">
       {/* Header — gradient background card */}
-      <header className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-mint-50 via-background to-emerald-50/50 dark:from-mint-950/40 dark:via-background dark:to-emerald-950/30 p-6 lg:p-8">
-        <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-48 h-48 rounded-full bg-mint-300/20 blur-3xl" aria-hidden="true" />
+      <header className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-brand-50 via-background to-emerald-50/50 dark:from-brand-950/40 dark:via-background dark:to-emerald-950/30 p-6 lg:p-8">
+        <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-48 h-48 rounded-full bg-brand-300/20 blur-3xl" aria-hidden="true" />
         <div className="relative flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-mint-600 dark:text-mint-400 mb-1.5">
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-1.5">
               안녕하세요 👋
             </p>
             <h1 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
@@ -151,7 +151,7 @@ export function DashboardView(): React.ReactElement {
                 프로필
               </Link>
             </Button>
-            <Button asChild size="default" className="bg-mint-600 hover:bg-mint-700 text-white shadow-lg shadow-mint-500/30">
+            <Button asChild size="default" className="bg-brand-600 hover:bg-brand-700 text-white shadow-lg shadow-brand-500/30">
               <Link href="/analysis">
                 분석 시작
                 <ArrowRight className="h-3.5 w-3.5" />
@@ -165,7 +165,7 @@ export function DashboardView(): React.ReactElement {
       {!loading && !hasSpec && (
         <Card variant="accent">
           <CardContent className="flex flex-col sm:flex-row sm:items-center gap-3 p-card-lg">
-            <div className="w-10 h-10 rounded-xl bg-mint-500/15 text-mint-600 dark:text-mint-400 flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-brand-500/15 text-brand-600 dark:text-brand-400 flex items-center justify-center shrink-0">
               <ClipboardList className="h-5 w-5" />
             </div>
             <div className="flex-1 min-w-0">
@@ -177,7 +177,7 @@ export function DashboardView(): React.ReactElement {
                 같은 데이터로 동작해요.
               </p>
             </div>
-            <Button asChild size="sm" className="bg-mint-600 hover:bg-mint-700">
+            <Button asChild size="sm" className="bg-brand-600 hover:bg-brand-700">
               <Link href="/onboarding">
                 프로필 만들기
                 <ArrowRight className="h-3.5 w-3.5" />
@@ -292,7 +292,7 @@ function DashboardSkeleton(): React.ReactElement {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-center gap-3">
-        <Loader2 className="h-4 w-4 animate-spin text-mint-600" />
+        <Loader2 className="h-4 w-4 animate-spin text-brand-600" />
         <Skeleton className="h-7 w-48" />
       </div>
       <div className="grid gap-3 sm:grid-cols-3">
@@ -320,7 +320,7 @@ function SectionHeader({
   return (
     <div className="flex items-center justify-between mb-3">
       <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
-        <span className="text-mint-600 dark:text-mint-400">{icon}</span>
+        <span className="text-brand-600 dark:text-brand-400">{icon}</span>
         {title}
       </div>
       {hint && <span className="text-2xs text-muted-foreground">{hint}</span>}
@@ -359,7 +359,7 @@ function DDayCard({
       <p
         className={cn(
           "text-2xl font-bold tabular-nums",
-          isPast ? "text-muted-foreground" : "text-mint-600 dark:text-mint-400",
+          isPast ? "text-muted-foreground" : "text-brand-600 dark:text-brand-400",
         )}
       >
         {display || <span className="invisible">D-000</span>}
@@ -399,7 +399,7 @@ function SusiSlotProgress({ filled }: { filled: number }): React.ReactElement {
             className={cn(
               "h-8 rounded-md flex items-center justify-center text-2xs font-semibold",
               i < filled
-                ? "bg-mint-500 text-white"
+                ? "bg-brand-500 text-white"
                 : "bg-muted text-muted-foreground border border-dashed border-border",
             )}
           >
@@ -444,7 +444,7 @@ function JeongsiSlotProgress({
               className={cn(
                 "h-14 rounded-lg flex flex-col items-center justify-center gap-0.5 transition-colors",
                 isFilled
-                  ? "bg-mint-500 text-white"
+                  ? "bg-brand-500 text-white"
                   : "bg-muted text-muted-foreground border border-dashed border-border",
               )}
             >
@@ -475,9 +475,9 @@ function ActionCard({
   return (
     <Link
       href={href}
-      className="group rounded-2xl border border-border/60 bg-card p-card-lg shadow-sm hover:shadow-md hover:border-mint-300 dark:hover:border-mint-700 transition-all flex flex-col gap-3"
+      className="group rounded-2xl border border-border/60 bg-card p-card-lg shadow-sm hover:shadow-md hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col gap-3"
     >
-      <div className="w-10 h-10 rounded-xl bg-mint-50 dark:bg-mint-950/60 text-mint-600 dark:text-mint-400 flex items-center justify-center">
+      <div className="w-10 h-10 rounded-xl bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400 flex items-center justify-center">
         {icon}
       </div>
       <div className="min-w-0">

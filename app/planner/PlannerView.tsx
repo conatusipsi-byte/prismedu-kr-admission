@@ -38,7 +38,7 @@ interface ApiResponse {
 const CATEGORY_LABEL: Record<PlannerCategory, { label: string; tone: string }> = {
   csat: { label: "수능 준비", tone: "border-rose-300 bg-rose-50/40 dark:border-rose-900/40 dark:bg-rose-950/15" },
   naesin: { label: "내신 관리", tone: "border-amber-300 bg-amber-50/40 dark:border-amber-900/40 dark:bg-amber-950/15" },
-  application: { label: "원서접수", tone: "border-mint-300 bg-mint-50/40 dark:border-mint-800 dark:bg-mint-950/30" },
+  application: { label: "원서접수", tone: "border-brand-300 bg-brand-50/40 dark:border-brand-800 dark:bg-brand-950/30" },
   interview: { label: "면접", tone: "border-violet-300 bg-violet-50/40 dark:border-violet-900/40 dark:bg-violet-950/15" },
   essay: { label: "논술", tone: "border-blue-300 bg-blue-50/40 dark:border-blue-900/40 dark:bg-blue-950/15" },
   practical: { label: "실기", tone: "border-emerald-300 bg-emerald-50/40 dark:border-emerald-900/40 dark:bg-emerald-950/15" },
@@ -179,7 +179,7 @@ export function PlannerView(): React.ReactElement {
         </div>
         <div className="h-2 rounded-full bg-muted overflow-hidden">
           <div
-            className="h-full bg-mint-500 transition-all duration-500"
+            className="h-full bg-brand-500 transition-all duration-500"
             style={{ width: `${pct}%` }}
           />
         </div>
@@ -266,7 +266,7 @@ function TaskRow({
         {pending ? (
           <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
         ) : task.completed ? (
-          <CheckCircle2 className="h-5 w-5 text-mint-600" />
+          <CheckCircle2 className="h-5 w-5 text-brand-600" />
         ) : (
           <Circle className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
         )}
@@ -308,7 +308,7 @@ function EmptyState(): React.ReactElement {
           분석 페이지에서 수시 6장 또는 정시 가/나/다군 의향을 입력하면, 표준 입시
           일정 기반으로 task 가 자동 생성됩니다.
         </p>
-        <Button asChild size="lg" className="bg-mint-600 hover:bg-mint-700">
+        <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
           <Link href="/analysis">
             분석 폼으로 가기
             <ArrowRight className="h-3.5 w-3.5" />

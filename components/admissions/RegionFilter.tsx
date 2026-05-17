@@ -57,15 +57,15 @@ export function RegionFilter({
             onClick={() => toggle(region)}
             className={cn(
               "rounded-full transition",
-              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint-500",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
             )}
           >
             <Badge
               variant={isOn ? "default" : "outline"}
               className={cn(
                 isOn
-                  ? "bg-mint-600 text-white hover:bg-mint-700"
-                  : "bg-transparent hover:bg-mint-50 dark:hover:bg-mint-950/40",
+                  ? "bg-brand-600 text-white hover:bg-brand-700"
+                  : "bg-transparent hover:bg-brand-50 dark:hover:bg-brand-950/40",
                 "cursor-pointer border",
               )}
             >

@@ -79,16 +79,16 @@ export function ProbabilityTab({
       <Card
         data-component="probability-tab"
         data-state="anonymous"
-        className={cn("border-mint-200 bg-mint-50/30", className)}
+        className={cn("border-brand-200 bg-brand-50/30", className)}
       >
         <CardContent className="flex flex-col items-center gap-3 py-8 text-center">
-          <Sparkles className="h-6 w-6 text-mint-600" />
+          <Sparkles className="h-6 w-6 text-brand-600" />
           <p className="text-sm font-medium">합격 확률을 분석해드릴게요</p>
           <p className="max-w-sm text-xs text-muted-foreground">
             내 내신·수능 점수를 입력하면 본 학과 합격 가능성을 분석합니다.
             모집요강·일정은 로그인 없이도 자유롭게 확인할 수 있어요.
           </p>
-          <Button asChild size="sm" className="bg-mint-600 hover:bg-mint-700">
+          <Button asChild size="sm" className="bg-brand-600 hover:bg-brand-700">
             <Link href={`/login?next=${encodeURIComponent(`/admissions`)}`}>
               로그인하고 분석 시작
             </Link>
@@ -213,7 +213,7 @@ function ProbabilityContent({
               </div>
               <div>
                 <dt className="text-xs text-muted-foreground">최종 합격</dt>
-                <dd className="text-lg font-semibold tabular-nums text-mint-600">
+                <dd className="text-lg font-semibold tabular-nums text-brand-600">
                   {hakjong.combined != null
                     ? `${(hakjong.combined * 100).toFixed(0)}%`
                     : "—"}

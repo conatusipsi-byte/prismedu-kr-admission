@@ -56,13 +56,13 @@ export function DepartmentCard({
       data-sample-sufficient={sampleSufficient}
       data-university-id={university.id}
       data-department-id={department.id}
-      className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint-500 rounded-lg"
+      className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded-lg"
     >
       <Card
         className={cn(
           "h-full transition hover:shadow-md",
           sampleSufficient
-            ? "border-border bg-card hover:border-mint-300"
+            ? "border-border bg-card hover:border-brand-300"
             : "border-dashed border-zinc-300 bg-zinc-50/60 dark:border-zinc-700 dark:bg-zinc-900/40",
           className,
         )}

@@ -72,7 +72,7 @@ export function AdmissionDetailHero({
         <Badge variant="secondary">{UNIVERSITY_CATEGORY_LABELS[university.category]}</Badge>
         <Badge variant="secondary">{TRACK_LABELS[department.track]}</Badge>
         {department.isProfessional && (
-          <Badge variant="secondary" className="bg-mint-50 text-mint-700">
+          <Badge variant="secondary" className="bg-brand-50 text-brand-700">
             전문 자격
           </Badge>
         )}

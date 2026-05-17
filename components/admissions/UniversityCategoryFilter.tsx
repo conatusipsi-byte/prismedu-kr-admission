@@ -56,9 +56,9 @@ export function UniversityCategoryFilter({
             onClick={() => onChange(cat)}
             className={cn(
               "rounded-md px-3 py-1 text-sm transition",
-              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint-500",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
               isOn
-                ? "bg-mint-600 text-white hover:bg-mint-700"
+                ? "bg-brand-600 text-white hover:bg-brand-700"
                 : "bg-transparent text-muted-foreground hover:bg-muted hover:text-foreground",
             )}
           >

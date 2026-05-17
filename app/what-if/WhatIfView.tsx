@@ -57,7 +57,7 @@ interface SimulateResponse {
 
 const CATEGORY_LABEL: Record<string, { label: string; cls: string }> = {
   safety: { label: "안정", cls: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300" },
-  target: { label: "적정", cls: "bg-mint-50 text-mint-700 dark:bg-mint-950/40 dark:text-mint-300" },
+  target: { label: "적정", cls: "bg-brand-50 text-brand-700 dark:bg-brand-950/40 dark:text-brand-300" },
   hard_target: { label: "도전", cls: "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300" },
   reach: { label: "상향", cls: "bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300" },
   insufficient_sample: { label: "표본 부족", cls: "bg-muted text-muted-foreground" },
@@ -143,7 +143,7 @@ export function WhatIfView(): React.ReactElement {
 
   return (
     <div className="flex flex-col gap-6">
-      <Card className="p-card-lg border-mint-200 bg-mint-50/30 dark:border-mint-900/40 dark:bg-mint-950/15">
+      <Card className="p-card-lg border-brand-200 bg-brand-50/30 dark:border-brand-900/40 dark:bg-brand-950/15">
         <p className="text-xs text-foreground">
           ✓ 기준 분석:{" "}
           <code className="font-mono text-2xs">{baseSpecId}</code>
@@ -193,7 +193,7 @@ export function WhatIfView(): React.ReactElement {
           size="lg"
           disabled={!hasAnyOverride || submitting}
           onClick={() => void handleSimulate()}
-          className="bg-mint-600 hover:bg-mint-700"
+          className="bg-brand-600 hover:bg-brand-700"
         >
           {submitting ? (
             <>
@@ -257,7 +257,7 @@ function GradeSlider({
         <div className="flex items-center gap-2">
           {enabled ? (
             <>
-              <span className="text-lg font-bold tabular-nums text-mint-700 dark:text-mint-300">
+              <span className="text-lg font-bold tabular-nums text-brand-700 dark:text-brand-300">
                 {value}
                 <span className="text-xs text-muted-foreground"> 등급</span>
               </span>
@@ -426,7 +426,7 @@ function NoBaseSpecState(): React.ReactElement {
   return (
     <Card className="p-card-lg">
       <div className="flex flex-col items-center text-center gap-3 py-8 max-w-md mx-auto">
-        <div className="w-14 h-14 rounded-2xl bg-mint-50 dark:bg-mint-950/40 text-mint-700 dark:text-mint-300 flex items-center justify-center">
+        <div className="w-14 h-14 rounded-2xl bg-brand-50 dark:bg-brand-950/40 text-brand-700 dark:text-brand-300 flex items-center justify-center">
           <Sparkles className="h-6 w-6" />
         </div>
         <h2 className="text-lg font-bold text-foreground">기준 분석이 필요해요</h2>
@@ -435,7 +435,7 @@ function NoBaseSpecState(): React.ReactElement {
           먼저 분석 폼을 작성하고, 결과 페이지에서 &ldquo;What-If 시뮬레이션&rdquo; 으로 들어오세요.
         </p>
         <div className="flex gap-2">
-          <Button asChild size="lg" className="bg-mint-600 hover:bg-mint-700">
+          <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
             <Link href="/analysis">
               분석 시작 <ArrowRight className="h-3.5 w-3.5" />
             </Link>

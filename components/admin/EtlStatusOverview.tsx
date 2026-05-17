@@ -116,7 +116,7 @@ interface StatCardProps {
 
 const TONE_CLASS: Record<StatCardProps["tone"], string> = {
   neutral: "border-border bg-card",
-  mint: "border-mint-200 bg-mint-50/30 dark:border-mint-800/40 dark:bg-mint-950/15",
+  mint: "border-brand-200 bg-brand-50/30 dark:border-brand-800/40 dark:bg-brand-950/15",
   amber: "border-amber-200 bg-amber-50/30 dark:border-amber-900/40 dark:bg-amber-900/10",
   rose: "border-rose-300 bg-rose-50/40 dark:border-rose-900/40 dark:bg-rose-950/15",
 };
@@ -151,7 +151,7 @@ interface TrustBarProps {
 function TrustBar({ label, count, total, tone }: TrustBarProps): React.ReactElement {
   const pct = total === 0 ? 0 : Math.round((count / total) * 100);
   const fillClass: Record<TrustBarProps["tone"], string> = {
-    mint: "bg-mint-500",
+    mint: "bg-brand-500",
     amber: "bg-amber-500",
     rose: "bg-rose-500",
   };
@@ -204,8 +204,8 @@ function Last7DaysChart({ data }: { data: EtlStatusSummary["last7DaysUploads"] }
               width={barW}
               height={h}
               rx={2}
-              fill="hsl(var(--mint-500, 180 100% 39%))"
-              className="fill-mint-500"
+              fill="hsl(var(--brand-500, 180 100% 39%))"
+              className="fill-brand-500"
             />
             <text
               x={x + barW / 2}
