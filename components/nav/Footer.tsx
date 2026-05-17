@@ -38,7 +38,7 @@ const LEGAL_LINKS = [
 
 export function Footer(): React.ReactElement | null {
   const pathname = usePathname();
-  if (pathname?.startsWith("/admin") || pathname === "/login") return null;
+  if (pathname?.startsWith("/admin") || pathname === "/login" || pathname === "/signup") return null;
 
   const year = new Date().getFullYear();
 

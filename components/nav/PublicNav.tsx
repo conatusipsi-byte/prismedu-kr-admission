@@ -50,7 +50,7 @@ export function PublicNav(): React.ReactElement | null {
     setOpen(false);
   }, [pathname]);
 
-  if (pathname?.startsWith("/admin") || pathname === "/login") {
+  if (pathname?.startsWith("/admin") || pathname === "/login" || pathname === "/signup") {
     return null;
   }
 

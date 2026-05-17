@@ -28,13 +28,18 @@ type Mode = "login" | "signup";
 
 const KAKAO_YELLOW = "#FEE500";
 
-export function LoginView(): React.ReactElement {
+export interface LoginViewProps {
+  /** 초기 모드 — /signup 페이지에서 "signup" 로 진입. 기본 "login". */
+  initialMode?: Mode;
+}
+
+export function LoginView({ initialMode = "login" }: LoginViewProps = {}): React.ReactElement {
   const auth = useAuth();
   const router = useRouter();
   const params = useSearchParams();
   const returnUrlRaw = params.get("returnUrl") ?? "/";
 
-  const [mode, setMode] = React.useState<Mode>("login");
+  const [mode, setMode] = React.useState<Mode>(initialMode);
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [name, setName] = React.useState("");
