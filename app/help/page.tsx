@@ -56,23 +56,23 @@ export default function HelpPage(): React.ReactElement {
             자주 묻는 질문을 먼저 확인하시고, 답을 찾지 못하셨다면 아래 이메일로 연락 주세요.
           </p>
 
-          {/* Algolia-style big search bar */}
-          <form
+          {/* Algolia-style big search bar (시각 placeholder — 실 검색은 출시 직전 활성화) */}
+          <div
+            aria-label="도움말 검색 (준비 중)"
             className="mt-4 w-full max-w-xl flex items-center gap-2 rounded-2xl border border-border bg-card pl-5 pr-2 py-2 shadow-sm focus-within:shadow-glow-brand focus-within:border-brand-400 transition-all"
-            action="#"
-            onSubmit={(e) => e.preventDefault()}
           >
             <Search className="h-5 w-5 text-muted-foreground" aria-hidden />
             <input
               type="search"
               placeholder="어떤 도움이 필요하세요?"
-              aria-label="도움말 검색"
-              className="flex-1 bg-transparent text-base placeholder:text-muted-foreground outline-none py-2"
+              aria-label="도움말 검색 — 출시 직전 활성화 예정"
+              disabled
+              className="flex-1 bg-transparent text-base placeholder:text-muted-foreground outline-none py-2 cursor-not-allowed"
             />
             <span className="hidden md:inline-flex items-center gap-1 rounded-md border border-border bg-muted px-2 py-1 text-2xs text-muted-foreground font-numeric">
               ⌘ K
             </span>
-          </form>
+          </div>
           <p className="text-2xs text-muted-foreground">검색 기능은 출시 직전 활성화 — 지금은 아래 카테고리·FAQ를 이용해주세요.</p>
         </header>
 
