@@ -37,6 +37,7 @@ import { Badge } from "@/components/ui/badge";
 import { HeroMockup } from "@/components/marketing/HeroMockup";
 import { MotionSection, MotionItem } from "@/components/marketing/MotionSection";
 import { QuickMatchDemo } from "@/components/marketing/QuickMatchDemo";
+import { TrustSignals } from "@/components/marketing/TrustSignals";
 import { LANDING_FAQS } from "@/lib/landing-faq";
 
 export const metadata: Metadata = {
@@ -475,6 +476,9 @@ export default function LandingPage(): React.ReactElement {
           </MotionItem>
         </div>
       </MotionSection>
+
+      {/* ═══ Trust signals (UP-02) ═══ */}
+      <TrustSignals />
 
       {/* ═══ FAQ ═══ */}
       <MotionSection className="mx-auto w-full max-w-content px-gutter-sm md:px-gutter lg:px-gutter-lg py-20 lg:py-28">
