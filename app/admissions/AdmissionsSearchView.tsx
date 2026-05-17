@@ -159,13 +159,14 @@ export function AdmissionsSearchView(): React.ReactElement {
           <div className="flex flex-col items-start gap-3">
             <Badge variant="pill-brand" size="md">
               <Sparkles className="h-3 w-3" />
-              1,000+ 학과 데이터
+              전국 주요 대학 모집요강
             </Badge>
             <h1 className="font-display text-3xl lg:text-5xl font-extrabold tracking-tighter">
               학과 검색
             </h1>
             <p className="text-sm lg:text-base text-muted-foreground break-keep-all">
               전국 주요 대학의 모집요강·전형 정보를 한 화면에서 비교하세요. 로그인 없이 무료로 조회 가능합니다.
+              <span className="ml-1 text-2xs text-muted-foreground/80">베타: 학과 데이터 순차 등록 중</span>
             </p>
           </div>
 

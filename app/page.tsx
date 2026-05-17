@@ -117,7 +117,7 @@ const PERSONAS = [
 ] as const;
 
 const TRUST_KEYWORDS = [
-  "전국 1,000여 학과 데이터 학습",
+  "전국 주요 대학 모집요강 학습",
   "KAIST·POSTECH·SKY 포함",
   "수시 6장 · 정시 가나다군 분리",
   "재외국민·특례 전형 지원",
@@ -182,7 +182,7 @@ export default function LandingPage(): React.ReactElement {
               className="animate-fade-up text-base sm:text-lg text-muted-foreground leading-relaxed text-balance break-keep-all max-w-[44ch]"
               style={{ animationDelay: "0.2s" }}
             >
-              전국 1,000여 학과 모집요강·합격 사례를 학습한 AI가
+              전국 주요 대학의 모집요강을 학습한 AI가
               내신·수능·생기부에 맞는 <span className="font-semibold text-foreground/90">수시 6장 + 정시 가나다군</span> 전략을 정리해드려요.
             </p>
 
@@ -191,8 +191,8 @@ export default function LandingPage(): React.ReactElement {
               style={{ animationDelay: "0.3s" }}
             >
               <Button asChild size="2xl" variant="primary" className="shadow-glow-brand">
-                <Link href="/login?returnUrl=/onboarding">
-                  무료로 분석 시작
+                <Link href="/signup?returnUrl=/onboarding">
+                  무료 가입하고 분석 받기
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
@@ -205,7 +205,7 @@ export default function LandingPage(): React.ReactElement {
               className="animate-fade-up text-2xs text-muted-foreground"
               style={{ animationDelay: "0.4s" }}
             >
-              가입 즉시 무료 분석 · 결제는 결과 확인 후 결정
+              가입 30초 · 카드 정보 불필요 · 결제는 결과 확인 후 결정
             </p>
           </header>
 
@@ -533,10 +533,13 @@ export default function LandingPage(): React.ReactElement {
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tightest leading-tight max-w-3xl break-keep-all">
               올해 입시, 막막함 대신
               <br className="hidden sm:block" />
+              {/* 그라디언트 중간 명도 보장: brand-300 → cyan 250 → iris-300
+                  단순 2-stop 은 중간색이 어두워 어두운 배경에서 가독성 저하 (P0-06). */}
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  backgroundImage: "linear-gradient(90deg, hsl(156 72% 67%), hsl(243 91% 73%))",
+                  backgroundImage:
+                    "linear-gradient(90deg, hsl(156 72% 72%), hsl(180 80% 75%), hsl(243 91% 78%))",
                 }}
               >
                 데이터로 시작
@@ -547,13 +550,20 @@ export default function LandingPage(): React.ReactElement {
               가입 즉시 무료 분석 + AI 카운슬러 사용 가능. 결제는 분석을 먼저 보고 결정하세요.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-2 w-full sm:w-auto">
-              <Button asChild size="2xl" className="bg-white text-ink-950 hover:bg-white/95 shadow-xl">
-                <Link href="/login?returnUrl=/onboarding">
-                  무료로 시작하기
+              {/* variant=ghost 로 default bg-brand-600 클래스 충돌 차단 후 dark-bg 위 white 토큰 명시.
+                  P0-06 audit: 이전엔 default variant 의 dark:bg-brand-500 와 className 의 bg-white 가 동시 적용. */}
+              <Button
+                asChild
+                size="2xl"
+                variant="ghost"
+                className="bg-white text-ink-950 hover:bg-white/90 shadow-xl focus-visible:ring-white"
+              >
+                <Link href="/signup?returnUrl=/onboarding">
+                  무료 가입하고 분석 받기
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild size="2xl" variant="ghost" className="text-white hover:bg-white/10">
+              <Button asChild size="2xl" variant="ghost" className="text-white hover:bg-white/10 border border-white/20">
                 <Link href="/pricing">요금제 보기</Link>
               </Button>
             </div>

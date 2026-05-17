@@ -352,7 +352,10 @@ function PricingCard({
       </header>
 
       {/* Price */}
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-1.5">
+        {product.isPricePlaceholder && (
+          <Badge variant="pill-amber" size="sm" className="self-start">베타 임시 가격</Badge>
+        )}
         <div className="flex items-baseline gap-2">
           <span className="font-numeric tabular-nums text-5xl font-extrabold tracking-tightest text-foreground leading-none">
             ₩{product.priceKrw.toLocaleString("ko-KR")}
@@ -360,9 +363,7 @@ function PricingCard({
           <span className="text-xs font-medium text-muted-foreground">{periodLabel}</span>
         </div>
         {product.isPricePlaceholder && (
-          <p className="text-2xs text-amber-700 dark:text-amber-400 font-numeric tabular-nums">
-            ⚠️ 임시 가격 — 출시 시 변경
-          </p>
+          <p className="text-2xs text-muted-foreground">정식 출시(2026.09) 전 변경될 수 있어요.</p>
         )}
       </div>
 

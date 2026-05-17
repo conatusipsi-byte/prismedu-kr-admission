@@ -15,7 +15,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Mail } from "lucide-react";
 import { Logo } from "@/components/brand/Logo";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 const PRODUCT_LINKS = [
   { href: "/admissions", label: "학과 검색" },
@@ -55,7 +54,8 @@ export function Footer(): React.ReactElement | null {
               정직한 데이터로 입시를 설계합니다. 표본이 부족한 학과는 추측 수치를 보여드리지 않아요.
             </p>
             <div className="flex items-center gap-2 pt-1">
-              <ThemeToggle size="sm" />
+              {/* ThemeToggle 제거 (P1-12) — 헤더에 1개만 유지. UX 중복 + 푸터에서
+                  소셜 아이콘 라인과 섞여 의미 혼동되던 이슈 해소. */}
               <a
                 href="mailto:hello@conatusipsi.com"
                 aria-label="이메일 보내기"
