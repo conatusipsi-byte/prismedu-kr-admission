@@ -36,6 +36,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { HeroMockup } from "@/components/marketing/HeroMockup";
 import { MotionSection, MotionItem } from "@/components/marketing/MotionSection";
+import { QuickMatchDemo } from "@/components/marketing/QuickMatchDemo";
 import { LANDING_FAQS } from "@/lib/landing-faq";
 
 export const metadata: Metadata = {
@@ -215,6 +216,9 @@ export default function LandingPage(): React.ReactElement {
           </div>
         </div>
       </section>
+
+      {/* ═══ Quick match demo (UP-01) ═══ */}
+      <QuickMatchDemo />
 
       {/* ═══ Trust marquee ═══ */}
       <section className="border-y border-border/40 bg-background/60 backdrop-blur-sm">
