@@ -1,19 +1,15 @@
 /**
- * GET /api/health — 환경 진단 엔드포인트
+ * GET /api/health — 환경 진단 엔드포인트 (Supabase 버전).
  *
  * 운영자가 staging/production 환경의 외부 의존성 설정 상태를 한 번에 확인.
  * 민감 정보 노출 없이 "설정됨/누락" 만 표시.
  *
- * 인증 없이 접근 가능 — 다만 키 값 자체는 절대 응답에 포함하지 않음.
- * 첫 응답까지 약 2~3초 (Firebase Admin SDK ping 포함).
- *
- * 사용 예:
  *   curl https://conatusipsi.com/api/health
  *   → { ok: true, env: {...}, services: {...} }
  */
 
 import { NextResponse } from "next/server";
-import { getAdminAuth } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +17,7 @@ export async function GET(): Promise<NextResponse> {
   const env = checkEnv();
   const services = await checkServices();
 
-  const ok = env.firebase.complete && services.firebase.ok;
+  const ok = env.supabase.complete && services.supabase.ok;
 
   return NextResponse.json({
     ok,
@@ -36,27 +32,25 @@ export async function GET(): Promise<NextResponse> {
       tossMissing:
         !env.toss.set ? "결제 페이지는 503 (출시 직전 등록)" : undefined,
       kakaoMissing:
-        !env.kakao.set ? "카카오 로그인 비활성 (Google + 이메일만)" : undefined,
+        !env.kakao.set ? "카카오 로그인 Provider 별도 활성 필요 (Supabase Console)" : undefined,
       sentryMissing:
         !env.sentry.set
-          ? "Sentry DSN 미설정 — 에러 보고 비활성 (출시 전 NEXT_PUBLIC_SENTRY_DSN 등록 권장)"
+          ? "Sentry DSN 미설정 — 에러 보고 비활성"
           : undefined,
     },
   });
 }
 
 function checkEnv(): EnvStatus {
-  const firebase = {
-    apiKey: !!process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-    projectId: !!process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-    adminProjectId: !!process.env.FIREBASE_ADMIN_PROJECT_ID,
-    adminClientEmail: !!process.env.FIREBASE_ADMIN_CLIENT_EMAIL,
-    adminPrivateKey: !!process.env.FIREBASE_ADMIN_PRIVATE_KEY,
+  const supabase = {
+    url: hasMeaningfulKey(process.env.NEXT_PUBLIC_SUPABASE_URL),
+    anonKey: hasMeaningfulKey(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY),
+    serviceRoleKey: hasMeaningfulKey(process.env.SUPABASE_SERVICE_ROLE_KEY),
   };
-  const firebaseComplete = Object.values(firebase).every(Boolean);
+  const supabaseComplete = Object.values(supabase).every(Boolean);
 
   return {
-    firebase: { ...firebase, complete: firebaseComplete },
+    supabase: { ...supabase, complete: supabaseComplete },
     anthropic: { set: hasMeaningfulKey(process.env.ANTHROPIC_API_KEY) },
     toss: {
       set:
@@ -64,9 +58,7 @@ function checkEnv(): EnvStatus {
         hasMeaningfulKey(process.env.NEXT_PUBLIC_TOSS_CLIENT_KEY),
     },
     kakao: {
-      set:
-        hasMeaningfulKey(process.env.NEXT_PUBLIC_KAKAO_CLIENT_ID) &&
-        hasMeaningfulKey(process.env.KAKAO_CLIENT_SECRET),
+      set: hasMeaningfulKey(process.env.NEXT_PUBLIC_KAKAO_CLIENT_ID),
     },
     sentry: { set: hasMeaningfulKey(process.env.NEXT_PUBLIC_SENTRY_DSN) },
     masterEmails: {
@@ -87,15 +79,19 @@ function checkEnv(): EnvStatus {
 }
 
 async function checkServices(): Promise<ServicesStatus> {
-  const firebase = await pingFirebase();
-  return { firebase };
+  const supabase = await pingSupabase();
+  return { supabase };
 }
 
-async function pingFirebase(): Promise<{ ok: boolean; latencyMs?: number; error?: string }> {
+async function pingSupabase(): Promise<{ ok: boolean; latencyMs?: number; error?: string }> {
   const start = Date.now();
   try {
-    // Admin SDK ping — listUsers(1)이 가장 가벼움.
-    await getAdminAuth().listUsers(1);
+    const sb = getAdminSupabase();
+    // 가벼운 헬스 체크 — count head (실 데이터 fetch 없음)
+    const { error } = await sb
+      .from("universities")
+      .select("id", { count: "exact", head: true });
+    if (error) return { ok: false, error: error.message };
     return { ok: true, latencyMs: Date.now() - start };
   } catch (e) {
     return { ok: false, error: (e as Error).message };
@@ -111,12 +107,10 @@ function hasMeaningfulKey(v: string | undefined): boolean {
 }
 
 interface EnvStatus {
-  firebase: {
-    apiKey: boolean;
-    projectId: boolean;
-    adminProjectId: boolean;
-    adminClientEmail: boolean;
-    adminPrivateKey: boolean;
+  supabase: {
+    url: boolean;
+    anonKey: boolean;
+    serviceRoleKey: boolean;
     complete: boolean;
   };
   anthropic: { set: boolean };
@@ -128,5 +122,5 @@ interface EnvStatus {
 }
 
 interface ServicesStatus {
-  firebase: { ok: boolean; latencyMs?: number; error?: string };
+  supabase: { ok: boolean; latencyMs?: number; error?: string };
 }

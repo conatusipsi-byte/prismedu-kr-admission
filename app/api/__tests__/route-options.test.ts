@@ -57,24 +57,8 @@ interface RouteCase {
 }
 
 const ROUTES: RouteCase[] = [
-  // ── 학과·대학 (공개) ──────────────────────────────────────
-  // (admissions.search 는 실 구현으로 교체됨 — 카탈로그 제외)
-  { name: "GET  /api/admissions/[uid]/[did]",                     handler: detailGet,           expectedAuth: "public", schemaRefMustInclude: "P-001",   hasSchema: false },
-  { name: "POST /api/admissions/jaeoegukmin/eligibility-check",   handler: jaeoegukminPost,     expectedAuth: "public", schemaRefMustInclude: "P-013",   hasSchema: true },
-
-  // ── 분석 (인증) ──────────────────────────────────────────
-  // (match.post, match.byId 는 실 구현으로 교체됨 — 카탈로그 제외)
-  { name: "POST /api/admissions/analyze",                         handler: analyzePost,         expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
-  { name: "POST /api/admissions/similar",                         handler: similarPost,         expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
-  // (match.simulate 는 실 구현으로 교체됨 — 카탈로그 제외)
-  { name: "POST /api/intent/validate",                            handler: intentValidatePost,  expectedAuth: "user",   schemaRefMustInclude: "P-003",   hasSchema: true },
-
-  // ── 사용자 (인증) ────────────────────────────────────────
-  { name: "GET  /api/user/profile",                               handler: profileGet,          expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: false },
-  { name: "POST /api/user/profile",                               handler: profilePost,         expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
-  { name: "GET  /api/user/specs",                                 handler: specsGet,            expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: false },
-  { name: "POST /api/user/specs",                                 handler: specsPost,           expectedAuth: "user",   schemaRefMustInclude: "sitemap", hasSchema: true },
-  // (user.dashboard 는 실 구현으로 교체됨 — 카탈로그 제외)
+  // 모든 라우트가 실 구현으로 교체됨 — 카탈로그 비어있음.
+  // 본 테스트는 향후 새 stub 라우트 추가 시 검증 인프라로 활용.
 
   // ── 결제 (인증) ──────────────────────────────────────────
   // (payment.request, payment.confirm, payment.cancel, orders.list 는 실 구현으로 교체됨 — 카탈로그 제외)
@@ -95,9 +79,8 @@ describe("API 라우트 옵션 — 인증 레벨", () => {
   // 모든 admin 라우트가 실 구현으로 교체됨 (Day 11 sample-stats 마지막) — stub 카탈로그에서 admin 라우트 0건.
   // master 인증 보장은 각 실 구현 라우트의 자체 회귀가 담당.
 
-  it("공개 stub 라우트는 정확히 2개 (search 는 실 구현으로 별도 테스트)", () => {
-    const publicRoutes = ROUTES.filter((r) => r.expectedAuth === "public");
-    expect(publicRoutes).toHaveLength(2);
+  it("stub 라우트 0건 — 모든 라우트가 실 구현으로 전환됨", () => {
+    expect(ROUTES).toHaveLength(0);
   });
 });
 
@@ -157,7 +140,7 @@ describe("API 라우트 옵션 — routeId 명명 + 스키마 정의", () => {
    ═══════════════════════════════════════════════════════════════════════ */
 
 describe("API 라우트 카탈로그 카운트", () => {
-  it("총 stub 라우트 핸들러 9개 (실 구현 11건 제외 — search·sanitize-monitor·match×2·simulate·dashboard·payment×3·orders·etl-status·sample-stats)", () => {
-    expect(ROUTES).toHaveLength(9);
+  it("총 stub 라우트 핸들러 0건 — Supabase 마이그레이션 + Phase 4 완료 후 모든 라우트 실 구현", () => {
+    expect(ROUTES).toHaveLength(0);
   });
 });

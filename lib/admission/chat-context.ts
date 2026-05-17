@@ -1,33 +1,27 @@
 /**
- * 카운슬러 컨텍스트 서버 사이드 로더
+ * 카운슬러 컨텍스트 서버 사이드 로더 — Supabase 기반.
  *
- * `/chat` 진입 시 page (Server Component)와 `/api/chat` 라우트가 모두 호출하는 공통 로더.
- * Day 7 까지는 chat/route.ts 안에 인라인이었지만, Day 8 서버 hydrate 추가로 page에서도
- * 동일 로직 필요 → 모듈로 추출.
+ * `/chat` 진입 시 page (Server Component) + `/api/chat` 라우트 공통 로더.
  *
  * 모든 함수는:
  *   - 호출자 uid 강제 (matches 도큐먼트는 본인 것만 — 열거 차단)
  *   - 실패는 빈 배열 반환 (UI 진입 차단 X — 일반 모드로 폴백)
- *   - server-only — 클라 임포트 차단 (Firebase Admin SDK)
+ *   - server-only — 클라 임포트 차단
  */
 
 import "server-only";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "./sample-gate";
 import type {
   AdmissionIntent,
   AdmissionSampleStats,
-  Department,
-  University,
 } from "@/types/admission";
 
 export interface ChatContextSchool {
   universityId: string;
   departmentId: string;
   trackKind?: string;
-  /** 사용자 노출 라벨 (e.g., "연세대학교 경영학과") */
   displayName: string;
-  /** sample-gate 결과 */
   sampleSufficient: boolean;
 }
 
@@ -39,16 +33,20 @@ export async function loadMatchContextForUser(
   matchId: string,
   uid: string,
 ): Promise<ChatContextSchool[]> {
-  // matchId 형식 검증 — POST /api/match와 동일한 정규식 (열거 차단)
   if (!matchId || !/^match_[a-zA-Z0-9_]+$/.test(matchId)) return [];
 
   try {
-    const db = getAdminDb();
-    const snap = await db.collection("matches").doc(matchId).get();
-    if (!snap.exists) return [];
-    const data = snap.data() as {
-      userId?: string;
-      results?: Array<{
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("matches")
+      .select("user_id, results")
+      .eq("id", matchId)
+      .maybeSingle();
+    if (error || !data) return [];
+
+    const row = data as {
+      user_id: string;
+      results: Array<{
         universityId: string;
         departmentId: string;
         trackKind: string;
@@ -57,8 +55,9 @@ export async function loadMatchContextForUser(
         sampleSufficient: boolean;
       }>;
     };
-    if (data.userId !== uid) return []; // 본인 결과만
-    return (data.results ?? []).slice(0, 10).map((r) => ({
+    if (row.user_id !== uid) return [];
+
+    return (row.results ?? []).slice(0, 10).map((r) => ({
       universityId: r.universityId,
       departmentId: r.departmentId,
       trackKind: r.trackKind,
@@ -77,12 +76,11 @@ export async function loadMatchContextForUser(
 
 export async function loadSchoolsForFocus(
   pairs: Array<{ universityId: string; departmentId: string }>,
-  _uid: string, // 향후 사용자별 권한 체크 필요시 활용
+  _uid: string,
 ): Promise<ChatContextSchool[]> {
-  // 보안: pairs 형식 검증 (universityId/departmentId 영숫자)
   const safe = pairs
     .filter((p) => /^[a-zA-Z0-9_-]{1,50}$/.test(p.universityId) && /^[a-zA-Z0-9_-]{1,50}$/.test(p.departmentId))
-    .slice(0, 5); // 최대 5개
+    .slice(0, 5);
 
   const out: ChatContextSchool[] = [];
   for (const pair of safe) {
@@ -104,22 +102,21 @@ export async function loadSchoolsForFocus(
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   사용자 intent (specs.intent) 자동 추출 — fallback
+   사용자 intent (user_specs.intent) 자동 추출 — fallback
    ═══════════════════════════════════════════════════════════════════════ */
 
 export async function loadIntentContext(uid: string): Promise<ChatContextSchool[]> {
   try {
-    const db = getAdminDb();
-    const specSnap = await db
-      .collection("users").doc(uid)
-      .collection("specs")
-      .orderBy("updatedAt", "desc")
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("user_specs")
+      .select("intent")
+      .eq("user_id", uid)
+      .order("updated_at", { ascending: false })
       .limit(1)
-      .get();
-
-    if (specSnap.empty) return [];
-    const spec = specSnap.docs[0].data() as { intent?: AdmissionIntent };
-    const intent = spec.intent;
+      .maybeSingle();
+    if (error || !data) return [];
+    const intent = (data as { intent: AdmissionIntent | null }).intent;
     if (!intent) return [];
 
     const slots = [
@@ -133,8 +130,12 @@ export async function loadIntentContext(uid: string): Promise<ChatContextSchool[
       const display = await formatDepartmentDisplayName(slot.universityId, slot.departmentId);
       if (!display) continue;
       const statsId = `${slot.universityId}_${slot.departmentId}_${year}_${slot.trackKind}`;
-      const statsDoc = await db.collection("admissionSampleStats").doc(statsId).get();
-      const stats = statsDoc.exists ? (statsDoc.data() as AdmissionSampleStats) : undefined;
+      const { data: statsRow } = await sb
+        .from("admission_sample_stats")
+        .select("verified_count, weighted_count, accepted_count, stage1_passed_count, stage2_accepted_count")
+        .eq("id", statsId)
+        .maybeSingle();
+      const stats = statsRow ? mapSampleStats(statsRow, slot.universityId, slot.departmentId, year, slot.trackKind) : undefined;
       out.push({
         universityId: slot.universityId,
         departmentId: slot.departmentId,
@@ -151,9 +152,7 @@ export async function loadIntentContext(uid: string): Promise<ChatContextSchool[
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   자동 컨텍스트 결정 — page와 라우트가 동일하게 사용
-   ───────────────────────────────────────────────────────────────────────
-   우선순위: schoolFocus > matchId > intent fallback
+   자동 컨텍스트 결정 — page 와 라우트가 동일하게 사용
    ═══════════════════════════════════════════════════════════════════════ */
 
 export async function resolveChatContext(
@@ -182,18 +181,23 @@ async function isAnyTrackSampleSufficient(
   departmentId: string,
   year: number,
 ): Promise<boolean> {
-  const db = getAdminDb();
-  const admDoc = await db
-    .collection("universities").doc(universityId)
-    .collection("departments").doc(departmentId)
-    .collection("admissions").doc(String(year))
-    .get();
-  if (!admDoc.exists) return false;
-  const tracks = (admDoc.data() as { availableTrackKinds?: string[] }).availableTrackKinds ?? [];
+  const sb = getAdminSupabase();
+  const id = `${universityId}_${departmentId}_${year}`;
+  const { data: adm } = await sb
+    .from("department_admissions")
+    .select("available_track_kinds")
+    .eq("id", id)
+    .maybeSingle();
+  if (!adm) return false;
+  const tracks = (adm as { available_track_kinds: string[] }).available_track_kinds ?? [];
   for (const kind of tracks) {
     const statsId = `${universityId}_${departmentId}_${year}_${kind}`;
-    const statsDoc = await db.collection("admissionSampleStats").doc(statsId).get();
-    const stats = statsDoc.exists ? (statsDoc.data() as AdmissionSampleStats) : undefined;
+    const { data: statsRow } = await sb
+      .from("admission_sample_stats")
+      .select("verified_count, weighted_count, accepted_count, stage1_passed_count, stage2_accepted_count")
+      .eq("id", statsId)
+      .maybeSingle();
+    const stats = statsRow ? mapSampleStats(statsRow, universityId, departmentId, year, kind) : undefined;
     if (checkSampleSufficiency(stats).sufficient) return true;
   }
   return false;
@@ -204,16 +208,36 @@ async function formatDepartmentDisplayName(
   departmentId: string,
 ): Promise<string | null> {
   try {
-    const db = getAdminDb();
-    const [u, d] = await Promise.all([
-      db.collection("universities").doc(universityId).get(),
-      db.collection("universities").doc(universityId).collection("departments").doc(departmentId).get(),
+    const sb = getAdminSupabase();
+    const [{ data: univ }, { data: dept }] = await Promise.all([
+      sb.from("universities").select("n").eq("id", universityId).maybeSingle(),
+      sb.from("departments").select("name").eq("university_id", universityId).eq("id", departmentId).maybeSingle(),
     ]);
-    if (!u.exists || !d.exists) return null;
-    const univ = u.data() as Pick<University, "n">;
-    const dept = d.data() as Pick<Department, "name">;
-    return `${univ.n} ${dept.name}`;
+    if (!univ || !dept) return null;
+    return `${(univ as { n: string }).n} ${(dept as { name: string }).name}`;
   } catch {
     return null;
   }
+}
+
+function mapSampleStats(
+  row: Record<string, unknown>,
+  universityId: string,
+  departmentId: string,
+  year: number,
+  trackKind: string,
+): AdmissionSampleStats {
+  return {
+    id: `${universityId}_${departmentId}_${year}_${trackKind}`,
+    universityId,
+    departmentId,
+    year,
+    trackKind: trackKind as AdmissionSampleStats["trackKind"],
+    verifiedCount: (row.verified_count as number) ?? 0,
+    weightedCount: (row.weighted_count as number) ?? 0,
+    acceptedCount: (row.accepted_count as number) ?? 0,
+    stage1PassedCount: row.stage1_passed_count as number | undefined,
+    stage2AcceptedCount: row.stage2_accepted_count as number | undefined,
+    updatedAt: new Date().toISOString() as unknown as AdmissionSampleStats["updatedAt"],
+  };
 }

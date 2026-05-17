@@ -1,28 +1,21 @@
 /**
- * POST /api/payment/confirm — 토스 결제 승인 트랜잭션
+ * POST /api/payment/confirm — 토스 결제 승인 + 권한 부여 (Supabase 버전).
  *
- * prismedu.kr `app/api/payment/confirm/route.ts` 패턴을 한국 상품 카탈로그용으로 어댑트:
  *   1. requireAuth
- *   2. enforceRateLimit (1분 10회) — 브루트포스/중복 paymentKey 차단
+ *   2. enforceRateLimit (1분 10회)
  *   3. PaymentConfirmSchema 검증
  *   4. parseKrOrderId — orderId 형식 검증 + 분해
- *   5. uid 일치 검증 (남의 결제로 본인 권한 활성화 차단)
- *   6. timestamp 30분 창 검증 (replay 차단)
- *   7. 클라 amount가 PRODUCTS_KR.priceKrw와 일치 (서버 단일 소스)
- *   8. Idempotency — orders/{orderId} 이미 approved면 즉시 반환
- *   9. 토스 confirm API (Basic auth)
- *  10. 토스 응답 재검증 (orderId·totalAmount·status="DONE")
- *  11. 트랜잭션: orders update + users/{uid}/entitlements/current 갱신
- *
- * 보안:
- *   - paymentKey는 orders 도큐먼트에 저장 X (rules로 클라 read 차단해도 분쟁 추적엔
- *     orderId만으로 토스 콘솔 조회 가능 — 침해 시 paymentKey 노출 위험만 늘어남).
- *   - 트랜잭션 실패 시 silent X — 명확한 에러 + recoveryId로 운영팀 추적 가능하게.
+ *   5. uid 일치 검증
+ *   6. timestamp 30분 창
+ *   7. 클라 amount 가 PRODUCTS_KR.priceKrw 와 일치
+ *   8. Idempotency — orders.status 이미 approved 면 즉시 반환
+ *   9. 토스 confirm API
+ *  10. 토스 응답 재검증
+ *  11. orders + user_entitlements 갱신 (Postgres — atomic transaction 은 별도 RPC 로 보강 가능)
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { FieldValue } from "firebase-admin/firestore";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { PaymentConfirmSchema } from "@/lib/schemas/api/payment";
@@ -32,16 +25,14 @@ import {
   parseKrOrderId,
   validateOrderTimestamp,
 } from "@/lib/admission/order-id";
-import type { Order, ProductKind, UserEntitlement } from "@/types/admission";
+import type { UserEntitlement } from "@/types/admission";
 
 const TOSS_CONFIRM_URL = "https://api.tosspayments.com/v1/payments/confirm";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
-  // 1. 인증
   const auth = await requireAuth(req);
   if (!auth.ok) return auth.response;
 
-  // 2. Rate limit
   const rateErr = await enforceRateLimit({
     bucket: "payment_confirm",
     uid: auth.uid,
@@ -50,7 +41,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   });
   if (rateErr) return rateErr;
 
-  // 3. 입력 검증
   let body: unknown;
   try {
     body = await req.json();
@@ -61,7 +51,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   if (!parsed.success) return zodErrorResponse(parsed.error);
   const { paymentKey, orderId, amount } = parsed.data;
 
-  // 4. orderId 형식 검증 + 분해
   const order = parseKrOrderId(orderId);
   if (!order) {
     return NextResponse.json(
@@ -70,7 +59,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     );
   }
 
-  // 5. uid 일치
   if (order.uid !== auth.uid) {
     console.warn(`[payment/confirm] uid mismatch: session=${auth.uid} order=${order.uid}`);
     return NextResponse.json(
@@ -79,7 +67,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     );
   }
 
-  // 6. timestamp 창
   const tsValid = validateOrderTimestamp(order.timestamp);
   if (!tsValid.valid) {
     console.warn(`[payment/confirm] timestamp ${tsValid.reason}: orderId=${orderId}`);
@@ -89,7 +76,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     );
   }
 
-  // 7. 클라 amount가 PRODUCTS_KR.priceKrw와 일치 — 서버 단일 소스
   const product = getProductKr(order.productKind);
   if (!product) {
     return NextResponse.json(
@@ -107,22 +93,21 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     );
   }
 
+  const sb = getAdminSupabase();
+
   // 8. Idempotency
-  const db = getAdminDb();
-  const orderRef = db.collection("orders").doc(orderId);
-  const existing = await orderRef.get();
-  if (existing.exists) {
-    const data = existing.data() as Order | undefined;
-    if (data?.status === "approved") {
-      // 이미 처리됨 — 멱등 응답
-      return NextResponse.json({
-        success: true,
-        orderId,
-        productKind: order.productKind,
-        idempotent: true,
-      });
-    }
-    // pending/failed 상태는 계속 진행 (재시도 가능)
+  const { data: existing } = await sb
+    .from("orders")
+    .select("status")
+    .eq("id", orderId)
+    .maybeSingle();
+  if (existing && (existing as { status: string }).status === "approved") {
+    return NextResponse.json({
+      success: true,
+      orderId,
+      productKind: order.productKind,
+      idempotent: true,
+    });
   }
 
   // 9. 토스 confirm 호출
@@ -154,20 +139,17 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   }
 
   if (!tossRes.ok) {
-    // 실패 기록 — paymentKey는 저장 X (분쟁 추적은 orderId만으로 토스 콘솔에서 가능)
     try {
-      await orderRef.set(
-        {
+      await sb
+        .from("orders")
+        .update({
           status: "failed",
-          updatedAt: FieldValue.serverTimestamp(),
-          tossError: { code: tossData?.code ?? null, message: tossData?.message ?? "unknown" },
-        },
-        { merge: true },
-      );
+          payment: { tossError: { code: tossData?.code ?? null, message: tossData?.message ?? "unknown" } },
+        })
+        .eq("id", orderId);
     } catch (e) {
       console.error("[payment/confirm] failure log write failed:", e);
     }
-    // 토스 원문 메시지는 노출 안 함 — 정적 문구로 통일
     return NextResponse.json(
       { error: "결제 승인에 실패했어요. 잠시 후 다시 시도해주세요." },
       { status: tossRes.status },
@@ -192,75 +174,66 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     );
   }
 
-  // 11. 트랜잭션 — orders + entitlement 원자적 갱신
-  const entitlementRef = db.collection("users").doc(auth.uid).collection("entitlements").doc("current");
+  // 11. orders + user_entitlements 갱신 (순차)
+  //   ⚠️ Postgres transaction 으로 묶으려면 별도 RPC 필요. 본 PR 단계는 순차 — 결제 승인 후
+  //   entitlement 실패 시 운영자가 orderId 로 수동 복구 (CRITICAL 알림).
   const validFromMs = Date.now();
   const validUntilMs = validFromMs + product.durationDays * 24 * 60 * 60 * 1000;
+  const validUntilIso = new Date(validUntilMs).toISOString();
+  const validFromIso = new Date(validFromMs).toISOString();
 
   try {
-    await db.runTransaction(async (tx) => {
-      // 트랜잭션 내 재확인 (race condition 대비)
-      const recheck = await tx.get(orderRef);
-      if (recheck.exists && (recheck.data() as Order)?.status === "approved") {
-        return;
-      }
-
-      // orders/{orderId} update — paymentKey는 별도 서버 전용 필드로 저장
-      // (rules에서 본 도큐먼트 read는 본인 uid 허용, paymentKey 필드만 server-only)
-      tx.set(
-        orderRef,
-        {
-          id: orderId,
-          uid: auth.uid,
-          productKind: order.productKind,
-          productName: product.displayName,
-          amount: product.priceKrw,
-          status: "approved",
-          period: order.period,
-          validFrom: FieldValue.serverTimestamp(),
-          validUntil: validUntilMs,
-          payment: {
-            paymentKey, // ⚠️ 서버 전용 — Firestore rules로 클라 read 차단 필수
-            method: tossData.method ?? null,
-            approvedAt: tossData.approvedAt ?? null,
-          },
-          updatedAt: FieldValue.serverTimestamp(),
+    // orders update
+    const { error: orderErr } = await sb
+      .from("orders")
+      .update({
+        product_kind: order.productKind,
+        product_name: product.displayName,
+        amount: product.priceKrw,
+        status: "approved",
+        period: order.period,
+        valid_from: validFromIso,
+        valid_until: validUntilIso,
+        payment: {
+          paymentKey,
+          method: tossData.method ?? null,
+          approvedAt: tossData.approvedAt ?? null,
         },
-        { merge: true },
-      );
+      })
+      .eq("id", orderId);
+    if (orderErr) throw orderErr;
 
-      // users/{uid}/entitlements/current 갱신
-      const entSnap = await tx.get(entitlementRef);
-      const ent = entSnap.exists ? (entSnap.data() as UserEntitlement) : null;
+    // user_entitlements 갱신 — 기존 row 있으면 active 배열에 추가, 없으면 insert
+    const { data: entRow } = await sb
+      .from("user_entitlements")
+      .select("active, current_plan, plan_source")
+      .eq("user_id", auth.uid)
+      .maybeSingle();
 
-      const upgradedPlan = product.grants.upgradePlan ?? ent?.currentPlan ?? "free";
-      const planSource: UserEntitlement["planSource"] =
-        product.period === "once" ? "one_time" : "subscription";
+    const prevActive = entRow ? (entRow as { active: UserEntitlement["active"] }).active ?? [] : [];
+    const upgradedPlan = product.grants.upgradePlan ?? (entRow as { current_plan: string } | null)?.current_plan ?? "free";
+    const planSource: UserEntitlement["planSource"] =
+      product.period === "once" ? "one_time" : "subscription";
+    const newActive = [
+      ...prevActive,
+      {
+        orderId,
+        productKind: order.productKind,
+        validUntil: validUntilIso as unknown as UserEntitlement["active"][number]["validUntil"],
+        grantedAt: new Date().toISOString() as unknown as UserEntitlement["active"][number]["grantedAt"],
+      },
+    ];
 
-      const newActive = [
-        ...(ent?.active ?? []),
-        {
-          orderId,
-          productKind: order.productKind,
-          validUntil: validUntilMs,
-          grantedAt: FieldValue.serverTimestamp(),
-        },
-      ];
-
-      tx.set(
-        entitlementRef,
-        {
-          uid: auth.uid,
-          active: newActive,
-          currentPlan: upgradedPlan,
-          planSource,
-          updatedAt: FieldValue.serverTimestamp(),
-        },
-        { merge: true },
-      );
-    });
+    const { error: entErr } = await sb
+      .from("user_entitlements")
+      .upsert({
+        user_id: auth.uid,
+        active: newActive,
+        current_plan: upgradedPlan,
+        plan_source: planSource,
+      });
+    if (entErr) throw entErr;
   } catch (txError) {
-    // 토스에선 승인됐으나 DB 저장 실패 — CRITICAL. recoveryId 로 운영팀 추적.
     reportRouteError("api.payment.confirm.tx_failed", txError, {
       uid: auth.uid,
       orderId,
@@ -285,11 +258,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   });
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   토스 confirm 응답 타입 — 핵심 필드만
-   https://docs.tosspayments.com/reference#payment-객체
-   ═══════════════════════════════════════════════════════════════════════ */
-
 interface TossConfirmResponse {
   orderId?: string;
   totalAmount?: number;
@@ -297,10 +265,6 @@ interface TossConfirmResponse {
   method?: string;
   approvedAt?: string;
   paymentKey?: string;
-  /** 에러 응답 시 */
   code?: string;
   message?: string;
 }
-
-// 사용 보장 — TS unused import 회피
-void ({} as ProductKind);

@@ -1,19 +1,10 @@
 /**
- * GET /api/admin/sample-stats — 합격사례 표본 집계 (Day 11 실 구현)
- *
- * 마스터 전용. admissionSampleStats 컬렉션 조회 + sample-gate 분류.
- *
- * 응답: { items, summary, source: "firestore"|"mock", nextCursor? }
- *
- * 정직성 (P-002):
- *   - insufficient 카운트로 운영자가 "확률 비공개 학과" 비율 한눈에 파악
- *   - status="insufficient" 항목은 별도 강조 (UI에서 rose 톤)
- *   - 표본 부족 사유(no_data·below_threshold·weighted_below·no_accepted) 분포 노출
+ * GET /api/admin/sample-stats — 합격사례 표본 집계 (Supabase).
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireMasterAuth, zodErrorResponse } from "@/lib/api-auth";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { AdminSampleStatsQuerySchema } from "@/lib/schemas/api/admin";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
 import {
@@ -26,7 +17,7 @@ import type { AdmissionSampleStats } from "@/types/admission";
 interface ApiResponse {
   items: SampleStatsItem[];
   summary: SampleStatsSummary;
-  source: "firestore" | "mock";
+  source: "supabase" | "mock";
   nextCursor?: string;
 }
 
@@ -43,20 +34,21 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   const { year, trackKind, status, limit } = parsed.data;
 
   try {
-    const db = getAdminDb();
-    let q = db.collection("admissionSampleStats")
-      .where("year", "==", year)
-      .orderBy("acceptedCount", "asc") // 부족 학과 우선
+    const sb = getAdminSupabase();
+    let q = sb
+      .from("admission_sample_stats")
+      .select("*")
+      .eq("year", year)
+      .order("accepted_count", { ascending: true })
       .limit(limit);
 
     if (trackKind) {
-      q = q.where("trackKind", "==", trackKind);
+      q = q.eq("track_kind", trackKind);
     }
 
-    const snap = await q.get();
+    const { data, error } = await q;
 
-    // Firestore 비어있으면 mock 데이터 fallback
-    if (snap.empty) {
+    if (error || !data || data.length === 0) {
       const mockItems = buildMockItems(year, trackKind);
       const filtered = filterByStatus(mockItems, status);
       return NextResponse.json({
@@ -66,8 +58,20 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       } satisfies ApiResponse);
     }
 
-    const items: SampleStatsItem[] = snap.docs.map((d) => {
-      const stats = d.data() as AdmissionSampleStats;
+    const items: SampleStatsItem[] = (data as Array<Record<string, unknown>>).map((row) => {
+      const stats: AdmissionSampleStats = {
+        id: row.id as string,
+        universityId: row.university_id as string,
+        departmentId: row.department_id as string,
+        year: row.year as number,
+        trackKind: row.track_kind as AdmissionSampleStats["trackKind"],
+        verifiedCount: row.verified_count as number,
+        weightedCount: row.weighted_count as number,
+        acceptedCount: row.accepted_count as number,
+        stage1PassedCount: row.stage1_passed_count as number | undefined,
+        stage2AcceptedCount: row.stage2_accepted_count as number | undefined,
+        updatedAt: new Date(row.updated_at as string).toISOString() as unknown as AdmissionSampleStats["updatedAt"],
+      };
       return toStatsItem(stats);
     });
     const filtered = filterByStatus(items, status);
@@ -75,17 +79,13 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     return NextResponse.json({
       items: filtered,
       summary: summarizeSampleStats(filtered),
-      source: "firestore",
+      source: "supabase",
     } satisfies ApiResponse);
   } catch (e) {
     console.error("[/api/admin/sample-stats] error:", e);
     return NextResponse.json({ error: "조회 중 오류가 발생했어요." }, { status: 500 });
   }
 }
-
-/* ═══════════════════════════════════════════════════════════════════════
-   helpers
-   ═══════════════════════════════════════════════════════════════════════ */
 
 function toStatsItem(stats: AdmissionSampleStats): SampleStatsItem {
   const gate = checkSampleSufficiency(stats);
@@ -101,7 +101,9 @@ function toStatsItem(stats: AdmissionSampleStats): SampleStatsItem {
     stage1PassedCount: stats.stage1PassedCount,
     stage2AcceptedCount: stats.stage2AcceptedCount,
     gate,
-    updatedAtMs: stats.updatedAt?.toMillis?.() ?? Date.now(),
+    updatedAtMs: typeof stats.updatedAt === "string"
+      ? new Date(stats.updatedAt).getTime()
+      : (stats.updatedAt as unknown as { toMillis?: () => number })?.toMillis?.() ?? Date.now(),
   };
 }
 
@@ -116,54 +118,49 @@ function filterByStatus(
   });
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   Mock data — Firestore 비어있을 때 dev fallback
-   ═══════════════════════════════════════════════════════════════════════ */
-
 function buildMockItems(year: number, trackKind: string | undefined): SampleStatsItem[] {
-  const ts = { toMillis: () => Date.now() } as { toMillis: () => number };
+  const ts = new Date().toISOString();
   const mocks: AdmissionSampleStats[] = [
     {
       id: "snu_med_2027_jeongsi_na",
       universityId: "snu", departmentId: "med", year, trackKind: "jeongsi_na",
       verifiedCount: 1, weightedCount: 1.0, acceptedCount: 1,
-      updatedAt: ts as never,
+      updatedAt: ts as unknown as AdmissionSampleStats["updatedAt"],
     },
     {
       id: "yonsei_business_2027_susi_comprehensive",
       universityId: "yonsei", departmentId: "business", year, trackKind: "susi_comprehensive",
       verifiedCount: 12, weightedCount: 9.5, acceptedCount: 8,
       stage1PassedCount: 15, stage2AcceptedCount: 8,
-      updatedAt: ts as never,
+      updatedAt: ts as unknown as AdmissionSampleStats["updatedAt"],
     },
     {
       id: "yonsei_business_2027_jeongsi_na",
       universityId: "yonsei", departmentId: "business", year, trackKind: "jeongsi_na",
       verifiedCount: 18, weightedCount: 13.0, acceptedCount: 10,
-      updatedAt: ts as never,
+      updatedAt: ts as unknown as AdmissionSampleStats["updatedAt"],
     },
     {
       id: "pusan_info-comp_2027_jeongsi_ga",
       universityId: "pusan", departmentId: "info-comp", year, trackKind: "jeongsi_ga",
       verifiedCount: 14, weightedCount: 10.0, acceptedCount: 10,
-      updatedAt: ts as never,
+      updatedAt: ts as unknown as AdmissionSampleStats["updatedAt"],
     },
     {
       id: "korea_liberal_2027_susi_comprehensive",
       universityId: "korea", departmentId: "liberal", year, trackKind: "susi_comprehensive",
       verifiedCount: 2, weightedCount: 1.0, acceptedCount: 2,
       stage1PassedCount: 4, stage2AcceptedCount: 2,
-      updatedAt: ts as never,
+      updatedAt: ts as unknown as AdmissionSampleStats["updatedAt"],
     },
     {
       id: "knua_film_2027_susi_practical",
       universityId: "knua", departmentId: "film", year, trackKind: "susi_practical",
       verifiedCount: 8, weightedCount: 5.5, acceptedCount: 8,
-      updatedAt: ts as never,
+      updatedAt: ts as unknown as AdmissionSampleStats["updatedAt"],
     },
   ];
-  const items = mocks
+  return mocks
     .filter((m) => !trackKind || m.trackKind === trackKind)
     .map(toStatsItem);
-  return items;
 }

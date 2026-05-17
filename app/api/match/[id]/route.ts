@@ -1,33 +1,16 @@
 /**
- * GET /api/match/[id] — 분석 결과 단일 조회 (Day 2 실 구현)
+ * GET /api/match/[id] — 분석 결과 단일 조회 (Supabase).
  *
- * 처리 단계:
  *   1. 인증 (requireAuth)
- *   2. matches/{id} 조회
- *   3. doc.userId === auth.uid 검증 — 본인 결과만 노출 (그 외 404, "있다" 정보 미노출)
+ *   2. matches 테이블에서 id 조회
+ *   3. user_id === auth.uid 검증 — 본인 결과만 (그 외 404, 열거 차단)
  *   4. 응답 (저장 시점 결과 + preview 메타)
- *
- * 본인 외 접근에 대해 403 대신 404를 반환해 matchId 추측·열거를 차단.
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { requireAuth } from "@/lib/api-auth";
 import type { MatchResultItem } from "@/lib/schemas/api/match";
-
-interface MatchDocPayload {
-  id: string;
-  userId: string;
-  results: MatchResultItem[];
-  preview: {
-    plan: "free" | "pro" | "elite";
-    freePreviewQuota: number;
-    freePreviewUsed: number;
-    lockedCount: number;
-  };
-  globalCaveats: string[];
-  createdAt?: { toDate: () => Date };
-}
 
 export async function GET(
   req: NextRequest,
@@ -42,24 +25,39 @@ export async function GET(
   }
 
   try {
-    const db = getAdminDb();
-    const snap = await db.collection("matches").doc(id).get();
-    if (!snap.exists) {
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("matches")
+      .select("id, user_id, results, preview, global_caveats, created_at")
+      .eq("id", id)
+      .maybeSingle();
+    if (error || !data) {
       return NextResponse.json({ error: "분석 결과를 찾을 수 없습니다" }, { status: 404 });
     }
-    const data = snap.data() as MatchDocPayload;
+    const row = data as {
+      id: string;
+      user_id: string;
+      results: MatchResultItem[];
+      preview: {
+        plan: "free" | "pro" | "elite";
+        freePreviewQuota: number;
+        freePreviewUsed: number;
+        lockedCount: number;
+      };
+      global_caveats: string[];
+      created_at: string;
+    };
 
-    // 본인 결과만 노출 — 타인 ID로는 "찾을 수 없습니다" 응답 (열거 차단)
-    if (data.userId !== auth.uid) {
+    if (row.user_id !== auth.uid) {
       return NextResponse.json({ error: "분석 결과를 찾을 수 없습니다" }, { status: 404 });
     }
 
     return NextResponse.json({
-      matchId: data.id,
-      createdAt: data.createdAt?.toDate?.()?.toISOString() ?? new Date().toISOString(),
-      results: data.results,
-      preview: data.preview,
-      globalCaveats: data.globalCaveats,
+      matchId: row.id,
+      createdAt: row.created_at,
+      results: row.results,
+      preview: row.preview,
+      globalCaveats: row.global_caveats,
     });
   } catch (e) {
     console.error("[/api/match/[id]] error:", e);

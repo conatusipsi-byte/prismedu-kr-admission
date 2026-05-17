@@ -1,19 +1,12 @@
 /**
- * GET /api/admissions/search — 학과 검색 (공개)
+ * GET /api/admissions/search — 학과 검색 (공개, Supabase).
  *
  * P-001: 비로그인 접근 가능. 응답에 합격률·확률 미포함 (정형 정보만).
  * P-013: jaeoegukmin 트랙은 명시적 trackKind 필터일 때만 노출.
- *
- * ⚠️ 실제 동작 검증은 다음 후속 작업 필요:
- *   1. scripts/firestore/init-collections.ts 로 시드 데이터 생성
- *   2. firestore.indexes.json 의 collectionGroup 인덱스 deploy
- *   3. 통합 테스트 (Firebase Emulator 또는 staging 프로젝트)
- *
- * 본 환경(자격증명·인덱스 미설정)에서는 typecheck 통과까지만 보장.
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import {
   AdmissionsSearchQuerySchema,
   type AdmissionsSearchQuery,
@@ -26,7 +19,6 @@ import type {
   Department,
   University,
   AdmissionSampleStats,
-  DepartmentAdmissions,
 } from "@/types/admission";
 
 interface SearchResultItem {
@@ -43,21 +35,13 @@ interface SearchResponse {
 }
 
 const CACHE_HEADERS_PUBLIC = {
-  // 공개 검색은 10분 ISR + edge cache. 검색어 없는 기본 쿼리는 더 길게 (1시간).
-  // 검색어가 다양하면 캐시 키 분산 — Vercel 자동 처리.
   "Cache-Control": "public, s-maxage=600, stale-while-revalidate=1800",
 };
-
 const CACHE_HEADERS_DEFAULT = {
   "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=7200",
 };
 
-/* ═══════════════════════════════════════════════════════════════════════
-   GET handler
-   ═══════════════════════════════════════════════════════════════════════ */
-
 export async function GET(req: NextRequest): Promise<NextResponse> {
-  // 1. 입력 검증
   const params: Record<string, string> = {};
   req.nextUrl.searchParams.forEach((v, k) => {
     params[k] = v;
@@ -66,7 +50,6 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   if (!parsed.success) return zodErrorResponse(parsed.error);
   const query = parsed.data;
 
-  // 2. P-013 — 일반 검색에서는 jaeoegukmin 미혼입 (명시 필터 시에만 노출)
   const allowJaeoegukmin = query.trackKind === "jaeoegukmin";
 
   try {
@@ -85,110 +68,179 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   }
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   비즈니스 로직
-   ═══════════════════════════════════════════════════════════════════════ */
-
 async function searchDepartments(
   query: AdmissionsSearchQuery,
   allowJaeoegukmin: boolean,
 ): Promise<SearchResponse> {
-  const db = getAdminDb();
+  const sb = getAdminSupabase();
+  const year = new Date().getFullYear() + 1;
 
-  // 1. departments collectionGroup 쿼리 (active=true 만)
-  let depQuery = db
-    .collectionGroup("departments")
-    .where("active", "==", true)
-    .orderBy("updatedAt", "desc")
+  // 임베드 select — departments + universities + department_admissions
+  let q = sb
+    .from("departments")
+    .select(`
+      *,
+      universities!inner ( * ),
+      department_admissions ( year, available_track_kinds )
+    `)
+    .eq("active", true)
+    .eq("universities.active", true)
+    .order("updated_at", { ascending: false })
     .limit(query.limit);
 
   if (query.track) {
-    depQuery = depQuery.where("track", "==", query.track);
+    q = q.eq("track", query.track);
   }
-
   if (query.cursor) {
-    // cursor 는 마지막 도큐먼트 path 인코딩. 단순 구현 — 실 운영에선
-    // startAfter(snapshot) 패턴 사용 권장.
-    const cursorDoc = await db.doc(query.cursor).get();
-    if (cursorDoc.exists) {
-      depQuery = depQuery.startAfter(cursorDoc);
-    }
+    // cursor 는 마지막 row 의 updated_at ISO
+    q = q.lt("updated_at", query.cursor);
   }
 
-  const depsSnap = await depQuery.get();
-  if (depsSnap.empty) return { results: [] };
+  const { data, error } = await q;
+  if (error || !data) {
+    if (error) console.error("[/api/admissions/search] query error:", error.message);
+    return { results: [] };
+  }
 
-  // 2. 각 학과의 부모 university + 해당 연도 admissions + sampleStats 조회.
-  //    실 운영에서는 N+1 쿼리 회피를 위해 batch get 또는 캐시 활용.
-  const year = new Date().getFullYear() + 1; // 학년도 = 다음 입학연도
+  type Row = {
+    id: string;
+    university_id: string;
+    campus_id: string;
+    name: string;
+    name_en: string | null;
+    unit_type: Department["unitType"];
+    track: Department["track"];
+    total_quota: number;
+    sub_departments: string[] | null;
+    is_professional: boolean | null;
+    professional_type: Department["professionalType"] | null;
+    active: boolean;
+    updated_at: string;
+    universities: {
+      id: string;
+      n: string;
+      name_en: string | null;
+      short_name: string | null;
+      d: string | null;
+      category: University["category"];
+      campuses: University["campuses"];
+      rank_order: number | null;
+      admission_guide_url: string | null;
+      logo_url: string | null;
+      website_url: string | null;
+      active: boolean;
+    };
+    department_admissions: Array<{
+      year: number;
+      available_track_kinds: AdmissionTrackKind[];
+    }>;
+  };
+
   const items: SearchResultItem[] = [];
 
-  for (const depDoc of depsSnap.docs) {
-    const dep = depDoc.data() as Department;
-
-    // 부모 university
-    const univRef = depDoc.ref.parent.parent; // departments → university
-    if (!univRef) continue;
-    const univSnap = await univRef.get();
-    if (!univSnap.exists) continue;
-    const univ = univSnap.data() as University;
-    if (!univ.active) continue;
-
-    // 카테고리 필터 (UniversityCategory 또는 region)
+  for (const raw of data as unknown as Row[]) {
+    const univ = raw.universities;
     if (query.category && univ.category !== query.category) continue;
 
-    // 검색어 매칭 (한글 초성 + 부분 문자열)
     if (query.q) {
-      const targetText = `${univ.n} ${univ.shortName ?? ""} ${dep.name}`;
+      const targetText = `${univ.n} ${univ.short_name ?? ""} ${raw.name}`;
       if (!matchesSearchQuery(targetText, query.q)) continue;
     }
 
-    // admissions/{year} 의 availableTrackKinds + sampleStats 일괄 조회
-    const admissionsSnap = await depDoc.ref
-      .collection("admissions")
-      .doc(String(year))
-      .get();
-    const admissions = admissionsSnap.exists
-      ? (admissionsSnap.data() as DepartmentAdmissions)
-      : null;
-
-    let availableTracks: AdmissionTrackKind[] = admissions?.availableTrackKinds ?? [];
-
-    // P-013: jaeoegukmin 은 allowJaeoegukmin=true 일 때만 응답에 포함
+    // 해당 연도 admissions
+    const adm = raw.department_admissions.find((a) => a.year === year);
+    let availableTracks: AdmissionTrackKind[] = adm?.available_track_kinds ?? [];
     if (!allowJaeoegukmin) {
       availableTracks = availableTracks.filter((k) => k !== "jaeoegukmin");
     }
-
-    // trackKind 필터 — 해당 트랙 운영 학과만
     if (query.trackKind && !availableTracks.includes(query.trackKind)) continue;
 
-    // 표본 충족 — sample-gate 가 학과의 대표 트랙(jeongsi_na 등) 1개 기준 판정.
-    // 실 운영에서는 학과별 모든 트랙을 OR 평가하거나 사용자 의향 트랙 1개 기준.
     const primaryTrack: AdmissionTrackKind | undefined = availableTracks[0];
     let sampleSufficient = false;
     if (primaryTrack) {
-      const statsId = `${univ.id}_${dep.id}_${year}_${primaryTrack}`;
-      const statsSnap = await db.collection("admissionSampleStats").doc(statsId).get();
-      const stats = statsSnap.exists ? (statsSnap.data() as AdmissionSampleStats) : undefined;
-      sampleSufficient = checkSampleSufficiency(stats).sufficient;
+      const statsId = `${univ.id}_${raw.id}_${year}_${primaryTrack}`;
+      const { data: statsRow } = await sb
+        .from("admission_sample_stats")
+        .select("verified_count, weighted_count, accepted_count, stage1_passed_count, stage2_accepted_count")
+        .eq("id", statsId)
+        .maybeSingle();
+      if (statsRow) {
+        const stats: AdmissionSampleStats = {
+          id: statsId,
+          universityId: univ.id,
+          departmentId: raw.id,
+          year,
+          trackKind: primaryTrack,
+          verifiedCount: (statsRow as Record<string, unknown>).verified_count as number,
+          weightedCount: (statsRow as Record<string, unknown>).weighted_count as number,
+          acceptedCount: (statsRow as Record<string, unknown>).accepted_count as number,
+          stage1PassedCount: (statsRow as Record<string, unknown>).stage1_passed_count as number | undefined,
+          stage2AcceptedCount: (statsRow as Record<string, unknown>).stage2_accepted_count as number | undefined,
+          updatedAt: new Date().toISOString() as unknown as AdmissionSampleStats["updatedAt"],
+        };
+        sampleSufficient = checkSampleSufficiency(stats).sufficient;
+      }
     }
 
     items.push({
-      department: dep,
-      university: univ,
+      department: rowToDepartment(raw),
+      university: rowToUniversity(univ),
       sampleSufficient,
       availableTracks,
     });
   }
 
-  // 3. cursor — 마지막 도큐먼트 path
-  const lastDoc = depsSnap.docs[depsSnap.docs.length - 1];
-  const nextCursor =
-    depsSnap.size === query.limit ? lastDoc.ref.path : undefined;
+  const lastRow = (data as unknown as Row[])[(data as unknown as Row[]).length - 1];
+  const nextCursor = data.length === query.limit ? lastRow?.updated_at : undefined;
 
   return {
     results: items,
     nextCursor,
     totalEstimate: items.length,
+  };
+}
+
+function rowToDepartment(r: {
+  id: string; university_id: string; campus_id: string; name: string; name_en: string | null;
+  unit_type: Department["unitType"]; track: Department["track"]; total_quota: number;
+  sub_departments: string[] | null; is_professional: boolean | null;
+  professional_type: Department["professionalType"] | null; active: boolean; updated_at: string;
+}): Department {
+  return {
+    id: r.id,
+    universityId: r.university_id,
+    campusId: r.campus_id,
+    name: r.name,
+    nameEn: r.name_en ?? undefined,
+    unitType: r.unit_type,
+    track: r.track,
+    totalQuota: r.total_quota,
+    subDepartments: r.sub_departments ?? undefined,
+    isProfessional: r.is_professional ?? undefined,
+    professionalType: r.professional_type ?? undefined,
+    active: r.active,
+    updatedAt: new Date(r.updated_at).toISOString() as unknown as Department["updatedAt"],
+  };
+}
+
+function rowToUniversity(r: {
+  id: string; n: string; name_en: string | null; short_name: string | null; d: string | null;
+  category: University["category"]; campuses: University["campuses"]; rank_order: number | null;
+  admission_guide_url: string | null; logo_url: string | null; website_url: string | null; active: boolean;
+}): University {
+  return {
+    id: r.id,
+    n: r.n,
+    nameEn: r.name_en ?? undefined,
+    shortName: r.short_name ?? undefined,
+    d: r.d ?? undefined,
+    category: r.category,
+    campuses: r.campuses,
+    rankOrder: r.rank_order ?? undefined,
+    admissionGuideUrl: r.admission_guide_url ?? undefined,
+    logoUrl: r.logo_url ?? undefined,
+    websiteUrl: r.website_url ?? undefined,
+    active: r.active,
+    updatedAt: new Date().toISOString() as unknown as University["updatedAt"],
   };
 }

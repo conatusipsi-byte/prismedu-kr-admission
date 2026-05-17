@@ -1,21 +1,11 @@
 /**
- * GET /api/user/dashboard — 대시보드 단일 조회
- *
- * 응답: latest spec snapshot + intent 진행도(수시 6장 + 정시 가/나/다) + plan.
- * 대시보드 페이지가 한 번에 받아 슬롯/카드를 채움.
- *
- * Firestore 패턴:
- *   - users/{uid}/specs/{specId} (orderBy updatedAt desc, limit 1) — 최신 spec
- *   - spec.intent — AdmissionIntent
- *   - users/{uid}/entitlements/current — plan
- *
- * 정직성(P-002): spec 미작성·intent 미작성 모두 빈 배열로 응답 (가짜 진행도 X).
+ * GET /api/user/dashboard — 대시보드 단일 조회 (Supabase).
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth } from "@/lib/api-auth";
-import { getAdminDb } from "@/lib/firebase-admin";
-import type { AdmissionIntent, UserEntitlement } from "@/types/admission";
+import { getAdminSupabase } from "@/lib/supabase-server";
+import type { AdmissionIntent } from "@/types/admission";
 
 export const dynamic = "force-dynamic";
 
@@ -23,7 +13,6 @@ interface DashboardResponse {
   plan: "free" | "pro" | "elite";
   intent?: AdmissionIntent;
   specs: {
-    /** 최신 spec 메타 (페이지에서 hasSpec 판정에 사용). 본문은 미포함 — 별도 endpoint로 fetch. */
     latest?: {
       asOf: { schoolYear: number; semester: number };
       updatedAt: string;
@@ -37,8 +26,6 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   if (!auth.ok) return auth.response;
 
   try {
-    const db = getAdminDb();
-
     const [plan, latestSpec] = await Promise.all([
       loadPlan(auth.uid),
       loadLatestSpec(auth.uid),
@@ -70,16 +57,14 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
 async function loadPlan(uid: string): Promise<"free" | "pro" | "elite"> {
   try {
-    const db = getAdminDb();
-    const entSnap = await db
-      .collection("users")
-      .doc(uid)
-      .collection("entitlements")
-      .doc("current")
-      .get();
-    if (!entSnap.exists) return "free";
-    const ent = entSnap.data() as UserEntitlement;
-    return ent.currentPlan ?? "free";
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("user_entitlements")
+      .select("current_plan")
+      .eq("user_id", uid)
+      .maybeSingle();
+    if (error || !data) return "free";
+    return ((data as { current_plan: string }).current_plan as "free" | "pro" | "elite") ?? "free";
   } catch {
     return "free";
   }
@@ -94,37 +79,26 @@ async function loadLatestSpec(uid: string): Promise<
   | null
 > {
   try {
-    const db = getAdminDb();
-    const snap = await db
-      .collection("users")
-      .doc(uid)
-      .collection("specs")
-      .orderBy("updatedAt", "desc")
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("user_specs")
+      .select("as_of, intent, updated_at")
+      .eq("user_id", uid)
+      .order("updated_at", { ascending: false })
       .limit(1)
-      .get();
-    if (snap.empty) return null;
-    const doc = snap.docs[0].data() as {
-      asOf?: { schoolYear: number; semester: number };
-      updatedAt?: { toDate?: () => Date } | string;
-      intent?: AdmissionIntent;
+      .maybeSingle();
+    if (error || !data) return null;
+    const row = data as {
+      as_of: { schoolYear: number; semester: number } | null;
+      intent: AdmissionIntent | null;
+      updated_at: string;
     };
-
     return {
-      asOf: doc.asOf ?? { schoolYear: 3, semester: 1 },
-      updatedAt: normalizeTimestamp(doc.updatedAt),
-      intent: doc.intent,
+      asOf: row.as_of ?? { schoolYear: 3, semester: 1 },
+      updatedAt: row.updated_at,
+      intent: row.intent ?? undefined,
     };
   } catch {
     return null;
   }
-}
-
-function normalizeTimestamp(v: unknown): string {
-  if (!v) return new Date().toISOString();
-  if (typeof v === "string") return v;
-  if (typeof v === "object" && v !== null && "toDate" in v) {
-    const fn = (v as { toDate?: () => Date }).toDate;
-    if (typeof fn === "function") return fn.call(v).toISOString();
-  }
-  return new Date().toISOString();
 }

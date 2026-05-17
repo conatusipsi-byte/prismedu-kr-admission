@@ -162,8 +162,57 @@ curl https://prismedu-kr-admission-joonhyeon-s-projects.vercel.app/api/health | 
 
 ---
 
+## ⑤ SMTP 메일 발신 설정 (Resend) — 10분, 이메일 로그인 필수
+
+**왜 필요**: Supabase 기본 메일러는 시간당 3~4통 제한 + 도메인 검증 없음 → 거의 스팸함 직행. SMTP 안 붙이면 이메일 가입자가 인증 메일을 못 받아 로그인 불가.
+
+### Resend 가입
+
+1. https://resend.com/signup — 무료 플랜 (월 3,000통 / 일 100통, 출시 직후 충분)
+2. 가입 후 **Domains → Add Domain** → `conatusipsi.com` 입력
+3. 화면에 노출되는 DNS 레코드 3개 복사 (`MX`, `TXT` SPF, `TXT` DKIM)
+
+### 가비아 DNS 추가
+
+My가비아 → 서비스 관리 → conatusipsi.com → DNS 설정. Resend가 안내한 값 그대로:
+
+| 호스트 | 타입 | 값 |
+|---|---|---|
+| `send` | MX | `feedback-smtp.us-east-1.amazonses.com.` (우선순위 10) |
+| `send` | TXT | `v=spf1 include:amazonses.com ~all` |
+| `resend._domainkey` | TXT | (Resend가 안내한 긴 키 그대로) |
+
+> 호스트 입력 시 `.conatusipsi.com` 접미사가 자동 추가되는 가비아 UI 특성상 `send`만 입력하면 됨 (`send.conatusipsi.com`이 됨).
+
+### 검증
+
+1. Resend 대시보드 → Domains → **Verify** 버튼 (DNS 전파 10분~수시간 대기)
+2. 상태가 **Verified** 가 되면 → **API Keys → Create API Key** → 권한 `Sending access` → 키 복사
+
+### Supabase SMTP 등록
+
+https://supabase.com/dashboard/project/[PROJECT_REF]/auth/templates → **SMTP Settings** 또는 Auth → Email:
+
+| 항목 | 값 |
+|---|---|
+| Sender email | `no-reply@send.conatusipsi.com` (또는 `hello@conatusipsi.com`) |
+| Sender name | `conatusipsi` |
+| Host | `smtp.resend.com` |
+| Port | `465` |
+| Username | `resend` |
+| Password | (위 API Key 붙여넣기) |
+
+**Enable Custom SMTP** 토글 ON → Save. 즉시 반영.
+
+### 검증
+
+회원가입 시도 → 인증 메일 도착 확인 → 링크 클릭 → 로그인.
+
+---
+
 ## 문제 발생 시
 
 - Vercel env 등록했는데 안 잡힘 → 재배포 필수 (env는 build-time 주입). 빈 commit push 또는 대시보드 Redeploy.
 - `/api/health` 에서 `set: false` 인데 등록한 게 맞다 → 변수 이름 오타 가능성 (특히 `NEXT_PUBLIC_` 접두사 누락/추가).
 - 키 노출 의심 → 즉시 폐기 → 재발급 → Vercel env 갱신. 노출된 키는 절대 재사용 금지.
+- 이메일 인증 메일 안 옴 → ① SMTP 미설정(위 ⑤번 진행), ② 스팸함 확인, ③ Supabase rate limit (시간당 4통 — 같은 메일로 반복 가입 시 막힘).

@@ -1,20 +1,10 @@
 /**
- * GET /api/admin/etl-status — ETL 검수 대기 + 통계 (Day 10 실 구현)
- *
- * 마스터 전용. admissionsStaging 컬렉션 + summary 집계.
- *
- * 응답: { items: StagingEntry[], summary: EtlStatusSummary, nextCursor?, source: "firestore"|"mock" }
- *
- * Firestore 빈 컬렉션이거나 자격증명 부재 시 mock 데이터 fallback (개발 환경).
- *
- * 정직성 (P-002):
- *   - promoted=false 항목은 사이트 prod admissions에 노출 안 됨
- *   - trustLevel별 카운트로 운영자가 suspicious 비율 한눈에 파악
+ * GET /api/admin/etl-status — ETL 검수 대기 + 통계 (Supabase).
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireMasterAuth, zodErrorResponse } from "@/lib/api-auth";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { AdminEtlStatusListQuerySchema } from "@/lib/schemas/api/admin";
 import {
   listMockStaging,
@@ -36,27 +26,30 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   const { promoted, trustLevel, year, limit, cursor } = parsed.data;
 
   try {
-    const db = getAdminDb();
-    let q = db.collection("admissionsStaging").orderBy("createdAt", "desc").limit(limit);
+    const sb = getAdminSupabase();
+    let q = sb
+      .from("admissions_staging")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(limit);
 
     if (promoted !== "all") {
-      q = q.where("promoted", "==", promoted === "true");
+      q = q.eq("needs_review", promoted === "false");
     }
     if (trustLevel !== "all") {
-      q = q.where("trustLevel", "==", trustLevel);
+      q = q.eq("parser_trust_level", trustLevel);
     }
     if (year != null) {
-      q = q.where("year", "==", year);
+      q = q.eq("year", year);
     }
     if (cursor) {
-      const cursorDoc = await db.doc(cursor).get();
-      if (cursorDoc.exists) q = q.startAfter(cursorDoc);
+      q = q.lt("created_at", cursor);
     }
 
-    const snap = await q.get();
+    const { data, error } = await q;
 
-    // Firestore 비어있으면 dev mock fallback
-    if (snap.empty && !cursor) {
+    if (error || !data || (data.length === 0 && !cursor)) {
+      // dev mock fallback
       const mockItems = listMockStaging({
         promoted,
         trustLevel: trustLevel as ParserTrustLevel | "all",
@@ -69,32 +62,36 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       });
     }
 
-    const items = snap.docs.map((d) => stagingFromDoc(d.data()));
-    const summary = summarizeStaging(items);
-    const lastDoc = snap.docs[snap.docs.length - 1];
-    const nextCursor = snap.size === limit ? lastDoc?.ref.path : undefined;
+    const rows = data as Array<{
+      id: string;
+      university_id: string;
+      year: number;
+      parser_trust_level: ParserTrustLevel;
+      needs_review: boolean;
+      created_at: string;
+      tracks: unknown;
+      source: unknown;
+    }>;
 
-    return NextResponse.json({ items, summary, nextCursor, source: "firestore" });
+    const items: StagingEntry[] = rows.map((r) => ({
+      id: r.id,
+      universityId: r.university_id,
+      universityName: r.university_id, // 별도 컬럼 없음 — 추후 보강
+      year: r.year,
+      uploadedBy: "",
+      sourceFilename: "",
+      trustLevel: r.parser_trust_level,
+      toolChain: [],
+      parsed: r.tracks as StagingEntry["parsed"],
+      promoted: !r.needs_review,
+      createdAtMs: new Date(r.created_at).getTime(),
+    }));
+    const summary = summarizeStaging(items);
+    const nextCursor = rows.length === limit ? rows[rows.length - 1]?.created_at : undefined;
+
+    return NextResponse.json({ items, summary, nextCursor, source: "supabase" });
   } catch (e) {
     console.error("[/api/admin/etl-status] error:", e);
     return NextResponse.json({ error: "조회 중 오류가 발생했어요." }, { status: 500 });
   }
-}
-
-function stagingFromDoc(data: FirebaseFirestore.DocumentData): StagingEntry {
-  const ts = data.createdAt;
-  const createdAtMs = ts?.toMillis?.() ?? Date.now();
-  return {
-    id: data.id,
-    universityId: data.universityId,
-    universityName: data.universityName ?? data.universityId,
-    year: data.year,
-    uploadedBy: data.uploadedBy,
-    sourceFilename: data.sourceFilename,
-    trustLevel: data.trustLevel,
-    toolChain: data.toolChain ?? [],
-    parsed: data.parsed,
-    promoted: data.promoted ?? false,
-    createdAtMs,
-  };
 }

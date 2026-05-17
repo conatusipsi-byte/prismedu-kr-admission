@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-05-14T09:17:50.999Z",
+  "pdfDir": "/workspaces/prismedu-kr-admission/university",
+  "summary": [
+    {
+      "file": "1.2026학년도 대학 신입학생 정시모집 ('나'군) 안내.pdf",
+      "ok": true,
+      "trustLevel": "trusted",
+      "tool": "pdftotext-utf8",
+      "textLength": 179465,
+      "deptCount": 55,
+      "trackKindMatches": 3,
+      "csatMin": true,
+      "reflectionRatio": false,
+      "unparsedSections": 20,
+      "elapsedMs": 2463
+    },
+    {
+      "file": "2026학년도 고려대학교 서울캠퍼스 수시모집요강.pdf",
+      "ok": true,
+      "trustLevel": "trusted",
+      "tool": "pdftotext-utf8",
+      "textLength": 217304,
+      "deptCount": 56,
+      "trackKindMatches": 7,
+      "csatMin": true,
+      "reflectionRatio": false,
+      "unparsedSections": 20,
+      "elapsedMs": 234
+    },
+    {
+      "file": "2026학년도 고려대학교 정시모집 요강.pdf",
+      "ok": true,
+      "trustLevel": "trusted",
+      "tool": "pdftotext-utf8",
+      "textLength": 124166,
+      "deptCount": 56,
+      "trackKindMatches": 2,
+      "csatMin": true,
+      "reflectionRatio": false,
+      "unparsedSections": 20,
+      "elapsedMs": 1419
+    },
+    {
+      "file": "2026학년도 대학 신입학생 수시모집 안내_체교과수정반영.pdf",
+      "ok": true,
+      "trustLevel": "trusted",
+      "tool": "pdftotext-utf8",
+      "textLength": 140919,
+      "deptCount": 56,
+      "trackKindMatches": 3,
+      "csatMin": true,
+      "reflectionRatio": false,
+      "unparsedSections": 20,
+      "elapsedMs": 1863
+    },
+    {
+      "file": "2026학년도 정시모집 모집요강(수시 이월 인원 반영).pdf",
+      "ok": true,
+      "trustLevel": "trusted",
+      "tool": "pdftotext-utf8",
+      "textLength": 77300,
+      "deptCount": 48,
+      "trackKindMatches": 3,
+      "csatMin": false,
+      "reflectionRatio": true,
+      "unparsedSections": 20,
+      "elapsedMs": 662
+    },
+    {
+      "file": "2026학년도 한국외국어대학교 수시모집요강.pdf",
+      "ok": true,
+      "trustLevel": "trusted",
+      "tool": "pdftotext-utf8",
+      "textLength": 110472,
+      "deptCount": 18,
+      "trackKindMatches": 7,
+      "csatMin": true,
+      "reflectionRatio": false,
+      "unparsedSections": 20,
+      "elapsedMs": 733
+    }
+  ]
+}

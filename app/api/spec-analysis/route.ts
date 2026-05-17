@@ -18,7 +18,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { getAnthropicClient, createMessageWithTimeout } from "@/lib/anthropic";
 import { reportRouteError } from "@/lib/sentry-report";
 import { canUseFeature, type Plan } from "@/lib/plans";
@@ -27,7 +27,6 @@ import {
   type SpecAnalysisResponse,
 } from "@/lib/schemas/api/spec-analysis";
 import type { KrSpecsInput } from "@/lib/schemas/api/match";
-import type { UserEntitlement } from "@/types/admission";
 
 const MODEL = "claude-sonnet-4-6";
 const MAX_TOKENS = 1500;
@@ -435,14 +434,14 @@ function approxTokens(s: string): number {
 
 async function loadPlan(uid: string): Promise<Plan> {
   try {
-    const db = getAdminDb();
-    const snap = await db
-      .collection("users").doc(uid)
-      .collection("entitlements")
-      .doc("current")
-      .get();
-    if (!snap.exists) return "free";
-    return ((snap.data() as UserEntitlement).currentPlan ?? "free") as Plan;
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("user_entitlements")
+      .select("current_plan")
+      .eq("user_id", uid)
+      .maybeSingle();
+    if (error || !data) return "free";
+    return ((data as { current_plan: string }).current_plan as Plan) ?? "free";
   } catch {
     return "free";
   }

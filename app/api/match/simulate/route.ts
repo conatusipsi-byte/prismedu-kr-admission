@@ -1,18 +1,10 @@
 /**
- * POST /api/match/simulate — what-if 시뮬레이터 (Pro 전용)
- *
- * baseSpecId(이전 matchId)의 specsSnapshot을 로드 → override 적용 → matchKrAdmissions
- * 재호출 → 결과 반환. matches/* 에 저장 X (ephemeral — 시뮬레이션은 일회용).
- *
- * 정합성:
- *   - /api/match 의 loadCandidates·loadSampleStats·matchesUiTrack 로직과 동일
- *     (코드 중복 — 추후 lib/match/helpers.ts 로 추출 권장)
- *   - Pro 전용은 클라(/what-if)의 ProGate에서 1차 차단, 본 라우트도 plan 검사
+ * POST /api/match/simulate — what-if 시뮬레이터 (Pro/Elite, Supabase).
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { reportRouteError } from "@/lib/sentry-report";
 import {
   KrSpecsSchema,
@@ -29,17 +21,14 @@ import type {
   Department,
   DepartmentAdmissions,
   University,
-  UserEntitlement,
 } from "@/types/admission";
 
 const DEFAULT_CANDIDATE_LIMIT = 60;
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
-  // 1. 인증
   const auth = await requireAuth(req);
   if (!auth.ok) return auth.response;
 
-  // 2. 입력 검증
   let body: unknown;
   try {
     body = await req.json();
@@ -51,9 +40,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   const { baseSpecId, override } = parsed.data;
 
   try {
-    const db = getAdminDb();
-
-    // 3. plan 검사 — Pro/Elite 전용
     const plan = await loadPlan(auth.uid);
     if (plan === "free") {
       return NextResponse.json(
@@ -65,36 +51,33 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       );
     }
 
-    // 4. 기준 spec 로드 — matches/{baseSpecId} 의 specsSnapshot
-    const matchSnap = await db.collection("matches").doc(baseSpecId).get();
-    if (!matchSnap.exists) {
+    const sb = getAdminSupabase();
+    const { data: matchRow, error: matchErr } = await sb
+      .from("matches")
+      .select("user_id, specs_snapshot")
+      .eq("id", baseSpecId)
+      .maybeSingle();
+    if (matchErr || !matchRow) {
       return NextResponse.json(
         { error: "기준 분석 결과를 찾을 수 없습니다." },
         { status: 404 },
       );
     }
-    const matchData = matchSnap.data() as {
-      userId: string;
-      specsSnapshot?: KrSpecsInput;
-    };
-    if (matchData.userId !== auth.uid) {
-      // 본인 외 — 401/403 대신 404로 노출 (열거 차단)
+    const row = matchRow as { user_id: string; specs_snapshot: KrSpecsInput | null };
+    if (row.user_id !== auth.uid) {
       return NextResponse.json(
         { error: "기준 분석 결과를 찾을 수 없습니다." },
         { status: 404 },
       );
     }
-    if (!matchData.specsSnapshot) {
+    if (!row.specs_snapshot) {
       return NextResponse.json(
         { error: "기준 분석에 사용된 spec 데이터가 없습니다. 새 분석을 먼저 진행해주세요." },
         { status: 400 },
       );
     }
 
-    // 5. override 적용
-    const simulatedSpecs = applyOverride(matchData.specsSnapshot, override);
-
-    // 5b. KrSpecs 재검증 (override 적용 후도 schema 통과해야 매칭 가능)
+    const simulatedSpecs = applyOverride(row.specs_snapshot, override);
     const validated = KrSpecsSchema.safeParse(simulatedSpecs);
     if (!validated.success) {
       return NextResponse.json(
@@ -103,14 +86,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       );
     }
 
-    // 6. 후보 학과 조회 + 매칭
     const candidates = await loadCandidates(validated.data, DEFAULT_CANDIDATE_LIMIT);
     const { results, globalCaveats } = matchKrAdmissions({
       specs: validated.data,
       candidates,
     });
 
-    // 7. 응답 (저장 X)
     return NextResponse.json({
       simulated: true,
       baseSpecId,
@@ -129,23 +110,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   override 적용
+   override 적용 (순수)
    ═══════════════════════════════════════════════════════════════════════ */
 
-/**
- * override.csat / override.naesinGpa 를 spec snapshot에 덮어씌움.
- *
- * - csat 등급 변경: korean/math/english/grade 직접 교체
- * - investigationGradeAvg: 모든 investigation 항목의 grade를 균일 적용 (단순화)
- * - naesinGpa: 모든 학기 entry의 relativeGpa를 동일 값으로 덮어씌움 (단순화)
- *
- * 더 정교한 시뮬레이션(특정 학기만 조정 등)은 후속 PR에서 override 스키마 확장.
- */
 function applyOverride(
   base: KrSpecsInput,
   override: { csat?: { koreanGrade?: number; mathGrade?: number; englishGrade?: number; investigationGradeAvg?: number }; naesinGpa?: number },
 ): KrSpecsInput {
-  // deep clone 후 mutate (입력값 보호)
   const next: KrSpecsInput = JSON.parse(JSON.stringify(base));
 
   if (override.csat) {
@@ -184,21 +155,19 @@ function clampGrade(g: number): 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   매칭 헬퍼 — /api/match/route.ts 와 동일 로직 (추후 lib로 추출)
+   매칭 헬퍼 — /api/match 와 동일 로직 (추후 lib 로 통합 권장)
    ═══════════════════════════════════════════════════════════════════════ */
 
 async function loadPlan(uid: string): Promise<"free" | "pro" | "elite"> {
   try {
-    const db = getAdminDb();
-    const entSnap = await db
-      .collection("users")
-      .doc(uid)
-      .collection("entitlements")
-      .doc("current")
-      .get();
-    if (!entSnap.exists) return "free";
-    const ent = entSnap.data() as UserEntitlement;
-    return ent.currentPlan ?? "free";
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("user_entitlements")
+      .select("current_plan")
+      .eq("user_id", uid)
+      .maybeSingle();
+    if (error || !data) return "free";
+    return ((data as { current_plan: string }).current_plan as "free" | "pro" | "elite") ?? "free";
   } catch {
     return "free";
   }
@@ -208,66 +177,71 @@ async function loadCandidates(
   specs: KrSpecsInput,
   limit: number,
 ): Promise<MatchCandidate[]> {
-  const db = getAdminDb();
+  const sb = getAdminSupabase();
   const year = new Date().getFullYear() + 1;
 
-  const depQuery = db
-    .collectionGroup("departments")
-    .where("active", "==", true)
-    .orderBy("updatedAt", "desc")
+  const { data, error } = await sb
+    .from("departments")
+    .select(`
+      id, university_id, name, track, active, updated_at,
+      universities!inner ( id, n, category, campuses, active ),
+      department_admissions!inner ( year, tracks, available_track_kinds, prev_year_result )
+    `)
+    .eq("active", true)
+    .eq("universities.active", true)
+    .eq("department_admissions.year", year)
+    .order("updated_at", { ascending: false })
     .limit(limit);
 
-  const depsSnap = await depQuery.get();
-  if (depsSnap.empty) return [];
+  if (error || !data) return [];
+
+  type Row = {
+    id: string;
+    university_id: string;
+    name: string;
+    track: Department["track"];
+    universities: { id: string; n: string; category: University["category"]; campuses: University["campuses"]; active: boolean };
+    department_admissions: Array<{
+      year: number;
+      tracks: DepartmentAdmissions["tracks"];
+      available_track_kinds: AdmissionTrackKind[];
+      prev_year_result: DepartmentAdmissions["prevYearResult"];
+    }>;
+  };
 
   const candidates: MatchCandidate[] = [];
 
-  for (const depDoc of depsSnap.docs) {
-    const dep = depDoc.data() as Department;
-    if (!matchesUiTrack(specs.basic.track, dep.track)) continue;
+  for (const raw of data as unknown as Row[]) {
+    const univ = raw.universities;
+    const admissions = raw.department_admissions[0];
+    if (!admissions) continue;
 
-    const univRef = depDoc.ref.parent.parent;
-    if (!univRef) continue;
-    const univSnap = await univRef.get();
-    if (!univSnap.exists) continue;
-    const univ = univSnap.data() as University;
-    if (!univ.active) continue;
-
+    if (!matchesUiTrack(specs.basic.track, raw.track)) continue;
     if (specs.filter?.category && univ.category !== specs.filter.category) continue;
     if (
       specs.filter?.region &&
       !univ.campuses.some((c) => c.region === specs.filter!.region)
-    ) {
-      continue;
-    }
+    ) continue;
 
-    const admissionsSnap = await depDoc.ref
-      .collection("admissions")
-      .doc(String(year))
-      .get();
-    if (!admissionsSnap.exists) continue;
-    const admissions = admissionsSnap.data() as DepartmentAdmissions;
-
-    for (const trackKind of admissions.availableTrackKinds) {
+    for (const trackKind of admissions.available_track_kinds) {
       if (trackKind === "jaeoegukmin") continue;
       const trackList = admissions.tracks[trackKind] ?? [];
       for (const track of trackList) {
-        const sampleStats = await loadSampleStats(univ.id, dep.id, year, trackKind);
+        const sampleStats = await loadSampleStats(univ.id, raw.id, year, trackKind);
         candidates.push({
           universityId: univ.id,
           universityName: univ.n,
-          departmentId: dep.id,
-          departmentName: dep.name,
+          departmentId: raw.id,
+          departmentName: raw.name,
           trackKind,
           trackName: track.name,
           track,
-          prevYearResult: admissions.prevYearResult,
+          prevYearResult: admissions.prev_year_result,
           sampleStats,
         });
       }
     }
   }
-
   return candidates;
 }
 
@@ -278,10 +252,28 @@ async function loadSampleStats(
   trackKind: AdmissionTrackKind,
 ): Promise<AdmissionSampleStats | undefined> {
   try {
-    const db = getAdminDb();
+    const sb = getAdminSupabase();
     const id = `${universityId}_${departmentId}_${year}_${trackKind}`;
-    const snap = await db.collection("admissionSampleStats").doc(id).get();
-    return snap.exists ? (snap.data() as AdmissionSampleStats) : undefined;
+    const { data } = await sb
+      .from("admission_sample_stats")
+      .select("verified_count, weighted_count, accepted_count, stage1_passed_count, stage2_accepted_count")
+      .eq("id", id)
+      .maybeSingle();
+    if (!data) return undefined;
+    const row = data as Record<string, unknown>;
+    return {
+      id,
+      universityId,
+      departmentId,
+      year,
+      trackKind,
+      verifiedCount: row.verified_count as number,
+      weightedCount: row.weighted_count as number,
+      acceptedCount: row.accepted_count as number,
+      stage1PassedCount: row.stage1_passed_count as number | undefined,
+      stage2AcceptedCount: row.stage2_accepted_count as number | undefined,
+      updatedAt: new Date().toISOString() as unknown as AdmissionSampleStats["updatedAt"],
+    };
   } catch {
     return undefined;
   }

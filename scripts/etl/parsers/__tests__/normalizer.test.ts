@@ -14,7 +14,14 @@ import { describe, it, expect } from "vitest";
 import { normalizeAdmissionText, __test__ } from "../normalizer";
 import { combineTrustLevel } from "../types";
 
-const { extractDepartmentNames, extractTrackKinds, extractCsatMinimum, detectInvestigationRule } = __test__;
+const {
+  extractDepartmentNames,
+  extractTrackKinds,
+  extractCsatMinimum,
+  extractReflectionRatio,
+  detectInvestigationRule,
+  isValidReflectionRatio,
+} = __test__;
 
 /* ═══════════════════════════════════════════════════════════════════════
    학과명 추출 + 노이즈 필터
@@ -161,6 +168,114 @@ describe("수능최저 추출", () => {
     // "국·수·영·탐 중 0개 합 5" 같은 비현실 값
     const result = extractCsatMinimum("국·수·영·탐 중 0개 합 5", "trusted");
     expect(result).toBeUndefined();
+  });
+});
+
+/* ═══════════════════════════════════════════════════════════════════════
+   수능최저 — 실제 2026 모집요강 PDF 채굴 변형 (Pattern A/B/C 회귀 가드)
+   ═══════════════════════════════════════════════════════════════════════ */
+
+describe("수능최저 — 풀네임 변형 (Pattern A·B·C)", () => {
+  it("Pattern A 메인형: '국어, 수학, 영어, 탐구 4개 영역 중 3개 영역 등급의 합이 7 이내' (고대 수시)", () => {
+    const text = "국어, 수학, 영어, 탐구 4개 영역 중 3개 영역 등급의 합이 7 이내";
+    const r = extractCsatMinimum(text, "trusted");
+    expect(r).toBeDefined();
+    expect(r!.requiredCount).toBe(3);
+    expect(r!.sumGradeMax).toBe(7);
+  });
+
+  it("Pattern A 전체영역(M 미명시): '국어, 수학, 영어, 탐구 4개 영역 등급의 합이 5 이내' → requiredCount=4 기본", () => {
+    const text = "국어, 수학, 영어, 탐구 4개 영역 등급의 합이 5 이내";
+    const r = extractCsatMinimum(text, "trusted");
+    expect(r).toBeDefined();
+    expect(r!.requiredCount).toBe(4);
+    expect(r!.sumGradeMax).toBe(5);
+  });
+
+  it("Pattern A 탐구 한정자: '탐구(상위 1과목) 4개 영역 등급의 합이 8 이내' (고대 정시)", () => {
+    const text = "국어, 수학, 영어, 탐구(상위 1과목) 4개 영역 등급의 합이 8 이내";
+    const r = extractCsatMinimum(text, "trusted");
+    expect(r).toBeDefined();
+    expect(r!.requiredCount).toBe(4);
+    expect(r!.sumGradeMax).toBe(8);
+  });
+
+  it("Pattern B 괄호 앞: '4개 영역(국어, 수학, 영어, 탐구) 중 3개 영역 등급 합이 7등급 이내' (대교협 통합)", () => {
+    const text = "전 모집단위 4개 영역(국어, 수학, 영어, 탐구) 중 3개 영역 등급 합이 7등급 이내";
+    const r = extractCsatMinimum(text, "trusted");
+    expect(r).toBeDefined();
+    expect(r!.requiredCount).toBe(3);
+    expect(r!.sumGradeMax).toBe(7);
+  });
+
+  it("Pattern C 단일 영역: '중 1개 영역 등급이 3 이내' + 한국사 (한외대 글로벌)", () => {
+    const text = "국어, 수학, 영어, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역 등급이 3 이내이고, 한국사 영역 4등급 이내";
+    const r = extractCsatMinimum(text, "trusted");
+    expect(r).toBeDefined();
+    expect(r!.requiredCount).toBe(1);
+    expect(r!.sumGradeMax).toBe(3);
+    expect(r!.historyGradeMax).toBe(4);
+  });
+
+  it("한국사 자격 — 본 패턴 뒤 별도 문장으로 등장해도 인근 ±200자 컨텍스트로 인식", () => {
+    const text = "국어, 수학, 영어, 탐구 4개 영역 중 3개 영역 등급의 합이 7 이내 (의과대학 제외) 및 한국사 4등급 이내";
+    const r = extractCsatMinimum(text, "trusted");
+    expect(r?.historyGradeMax).toBe(4);
+  });
+});
+
+/* ═══════════════════════════════════════════════════════════════════════
+   반영비율 — 표 행 패턴 + 합 100 ± 5 검증
+   ═══════════════════════════════════════════════════════════════════════ */
+
+describe("반영비율 추출", () => {
+  it("표 행 형식: '30%  30%  20%  20%  100%' 추출 (정시 모집요강)", () => {
+    const text = "30%     30%           20%      20%         100%";
+    const r = extractReflectionRatio(text, "trusted");
+    expect(r).toBeDefined();
+    expect(r!.korean).toBe(30);
+    expect(r!.math).toBe(30);
+    expect(r!.english).toBe(20);
+    expect(r!.investigation).toBe(20);
+  });
+
+  it("인라인: '국어 30%, 수학 35%, 영어 15%, 탐구 20%'", () => {
+    const text = "국어 30%, 수학 35%, 영어 15%, 탐구 20%";
+    const r = extractReflectionRatio(text, "trusted");
+    expect(r).toBeDefined();
+    expect(r!.korean).toBe(30);
+    expect(r!.math).toBe(35);
+    expect(r!.english).toBe(15);
+    expect(r!.investigation).toBe(20);
+  });
+
+  it("합이 100 ± 5 벗어남 → 거부 (false positive 차단)", () => {
+    // 50+50+50+50=200, 잘못 잡힐 위험 있는 표 행
+    const text = "50%     50%           50%      50%         100%";
+    const r = extractReflectionRatio(text, "trusted");
+    expect(r).toBeUndefined();
+  });
+
+  it("각 값이 5~60 범위 벗어남 → 거부", () => {
+    // 가산점 표 등에서 등장 가능한 비정상 값
+    const text = "5%     5%           5%      85%         100%";
+    expect(isValidReflectionRatio({ korean: 5, math: 5, english: 5, investigation: 85 })).toBe(false);
+    const r = extractReflectionRatio(text, "trusted");
+    expect(r).toBeUndefined();
+  });
+
+  it("isValidReflectionRatio — 정상 케이스 (합 100, 각 값 20~40)", () => {
+    expect(isValidReflectionRatio({ korean: 30, math: 30, english: 20, investigation: 20 })).toBe(true);
+  });
+
+  it("isValidReflectionRatio — 한 값이 0% 거부 (영역별 반영비는 0 안 됨)", () => {
+    expect(isValidReflectionRatio({ korean: 50, math: 50, english: 0, investigation: 0 })).toBe(false);
+  });
+
+  it("trustLevel='suspicious' 입력 → 그대로 전파", () => {
+    const text = "30%     30%           20%      20%         100%";
+    const r = extractReflectionRatio(text, "suspicious");
+    expect(r?.trustLevel).toBe("suspicious");
   });
 });
 

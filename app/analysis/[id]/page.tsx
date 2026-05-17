@@ -11,57 +11,56 @@
  */
 
 import type { Metadata } from "next";
-import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
-import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
-import { SESSION_COOKIE_NAME } from "@/lib/api-auth";
+import { getRouteSupabase, getAdminSupabase } from "@/lib/supabase-server";
 import { AnalysisResultView } from "@/components/analysis/AnalysisResultView";
 import type { MatchResponse, MatchResultItem } from "@/lib/schemas/api/match";
-
-interface MatchDocPayload {
-  id: string;
-  userId: string;
-  results: MatchResultItem[];
-  preview: MatchResponse["preview"];
-  globalCaveats: string[];
-  createdAt?: { toDate?: () => Date };
-}
 
 export const dynamic = "force-dynamic";
 
 async function loadMatch(matchId: string): Promise<MatchResponse | null> {
-  // matchId 형식 검증 — POST /api/match와 동일한 정규식 (열거 차단)
   if (!matchId || !/^match_[a-zA-Z0-9_]+$/.test(matchId)) return null;
 
-  // 1. 세션 쿠키 → uid
-  const cookieStore = await cookies();
-  const session = cookieStore.get(SESSION_COOKIE_NAME)?.value;
-  if (!session) return null;
-
+  // 1. Supabase 세션 → uid
   let uid: string;
   try {
-    const decoded = await getAdminAuth().verifySessionCookie(session, true);
-    uid = decoded.uid;
+    const sb = await getRouteSupabase();
+    const { data: { user }, error } = await sb.auth.getUser();
+    if (error || !user) return null;
+    uid = user.id;
   } catch {
     return null;
   }
 
-  // 2. Firestore 조회 + 본인 검증
+  // 2. matches 조회 + 본인 검증
   try {
-    const snap = await getAdminDb().collection("matches").doc(matchId).get();
-    if (!snap.exists) return null;
-    const data = snap.data() as MatchDocPayload;
-    if (data.userId !== uid) return null;
-
-    return {
-      matchId: data.id,
-      createdAt: data.createdAt?.toDate?.()?.toISOString() ?? new Date().toISOString(),
-      results: data.results,
-      preview: data.preview,
-      globalCaveats: data.globalCaveats,
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("matches")
+      .select("id, user_id, results, preview, global_caveats, created_at")
+      .eq("id", matchId)
+      .maybeSingle();
+    if (error || !data) return null;
+    const row = data as unknown as {
+      id: string;
+      user_id: string;
+      results: MatchResultItem[];
+      preview: MatchResponse["preview"];
+      global_caveats: string[];
+      created_at: string;
     };
+    if (row.user_id !== uid) return null;
+
+    const response: MatchResponse = {
+      matchId: row.id,
+      createdAt: row.created_at,
+      results: row.results,
+      preview: row.preview,
+      globalCaveats: row.global_caveats,
+    };
+    return response;
   } catch (e) {
-    console.error("[/analysis/[id]] firestore error:", e);
+    console.error("[/analysis/[id]] DB error:", e);
     return null;
   }
 }

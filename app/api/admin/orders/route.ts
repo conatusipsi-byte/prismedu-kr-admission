@@ -1,24 +1,16 @@
 /**
- * GET /api/admin/orders — 주문 목록 (운영자)
+ * GET /api/admin/orders — 주문 목록 (운영자, Supabase).
  *
- * 마스터 전용. orders 컬렉션 + uid join (email/name).
- *
- * 응답: { items, summary, source: "firestore"|"mock", nextCursor? }
- *
- * 정직성:
- *   - paymentKey 는 응답에서 항상 제거 (서버 전용 — rules + 본 라우트 양쪽 가드)
- *   - 결제 시스템 미가동(Toss 키 미등록) 시 orders 컬렉션 비어있음 → mock 모드 fallback
- *
- * 페이지네이션: createdAt desc + limit 기반 cursor (마지막 도큐먼트 path).
+ * paymentKey 는 응답에서 항상 제거.
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireMasterAuth, zodErrorResponse } from "@/lib/api-auth";
-import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { AdminOrdersListQuerySchema } from "@/lib/schemas/api/admin";
 import { getProductKr } from "@/lib/plans";
 import { reportRouteError } from "@/lib/sentry-report";
-import type { Order, OrderStatus, ProductKind } from "@/types/admission";
+import type { OrderStatus, ProductKind } from "@/types/admission";
 
 interface AdminOrderItem {
   orderId: string;
@@ -35,7 +27,6 @@ interface AdminOrderItem {
   refundedAtMs?: number;
   refundAmount?: number;
   refundReason?: string;
-  /** 결제 수단 — paymentKey 는 절대 노출 X */
   method?: string;
   idempotencyKey?: string;
 }
@@ -43,16 +34,14 @@ interface AdminOrderItem {
 interface AdminOrdersSummary {
   total: number;
   byStatus: Record<OrderStatus, number>;
-  /** 오늘(KST) 승인된 주문 합산 KRW */
   todayApprovedRevenue: number;
-  /** 환불 대기 (status=cancelled) — 운영자가 처리해야 할 카운트 */
   refundPending: number;
 }
 
 interface ApiResponse {
   items: AdminOrderItem[];
   summary: AdminOrdersSummary;
-  source: "firestore" | "mock";
+  source: "supabase" | "mock";
   nextCursor?: string;
 }
 
@@ -69,29 +58,33 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   const { status, q, from, to, limit, cursor } = parsed.data;
 
   try {
-    const db = getAdminDb();
-    let firestoreQ = db
-      .collection("orders")
-      .orderBy("createdAt", "desc")
+    const sb = getAdminSupabase();
+    let query = sb
+      .from("orders")
+      .select(`
+        id, user_id, product_kind, product_name, amount, status, period,
+        payment, refund, idempotency_key, created_at,
+        profiles!inner ( email, name )
+      `)
+      .order("created_at", { ascending: false })
       .limit(limit);
 
     if (status !== "all") {
-      firestoreQ = firestoreQ.where("status", "==", status);
+      query = query.eq("status", status);
     }
     if (from) {
-      firestoreQ = firestoreQ.where("createdAt", ">=", kstStartOfDay(from));
+      query = query.gte("created_at", kstStartOfDay(from).toISOString());
     }
     if (to) {
-      firestoreQ = firestoreQ.where("createdAt", "<", kstStartOfDay(addDays(to, 1)));
+      query = query.lt("created_at", kstStartOfDay(addDays(to, 1)).toISOString());
     }
     if (cursor) {
-      const cursorDoc = await db.doc(cursor).get();
-      if (cursorDoc.exists) firestoreQ = firestoreQ.startAfter(cursorDoc);
+      query = query.lt("created_at", cursor);
     }
 
-    const snap = await firestoreQ.get();
+    const { data, error } = await query;
 
-    if (snap.empty && !cursor) {
+    if (error || !data || (data.length === 0 && !cursor)) {
       const mockItems = listMockOrders();
       const filtered = filterOrdersInMemory(mockItems, { status, q, from, to });
       return NextResponse.json({
@@ -101,46 +94,54 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       } satisfies ApiResponse);
     }
 
-    const items: AdminOrderItem[] = [];
-    const adminAuth = getAdminAuth();
-    for (const d of snap.docs) {
-      const order = d.data() as Order;
-      // 검색 필터 (Firestore 텍스트 검색 어려워 메모리 필터)
+    const rows = data as unknown as Array<{
+      id: string;
+      user_id: string;
+      product_kind: ProductKind;
+      product_name: string;
+      amount: number;
+      status: OrderStatus;
+      period: "once" | "monthly" | "yearly";
+      payment: { method?: string; approvedAt?: string } | null;
+      refund: { amount?: number; reason?: string; refundedAt?: string } | null;
+      idempotency_key: string | null;
+      created_at: string;
+      // PostgREST 임베드는 1:N 가정으로 array 반환 — 1:1 인 경우 [0] 접근
+      profiles: Array<{ email: string | null; name: string }> | { email: string | null; name: string } | null;
+    }>;
+
+    const items: AdminOrderItem[] = rows.flatMap((r) => {
       if (q) {
-        const target = `${order.id} ${order.uid} ${order.productName}`.toLowerCase();
-        if (!target.includes(q.toLowerCase())) continue;
+        const target = `${r.id} ${r.user_id} ${r.product_name}`.toLowerCase();
+        if (!target.includes(q.toLowerCase())) return [];
       }
+      const profile = Array.isArray(r.profiles) ? r.profiles[0] : r.profiles;
+      return [{
+        orderId: r.id,
+        uid: r.user_id,
+        email: profile?.email ?? null,
+        name: profile?.name ?? null,
+        productKind: r.product_kind,
+        productName: r.product_name,
+        amount: r.amount,
+        status: r.status,
+        period: r.period,
+        createdAtMs: new Date(r.created_at).getTime(),
+        approvedAt: r.payment?.approvedAt,
+        method: r.payment?.method,
+        refundedAtMs: r.refund?.refundedAt ? new Date(r.refund.refundedAt).getTime() : undefined,
+        refundAmount: r.refund?.amount,
+        refundReason: r.refund?.reason,
+        idempotencyKey: r.idempotency_key ?? undefined,
+      }];
+    });
 
-      let email: string | null = null;
-      let name: string | null = null;
-      try {
-        const authUser = await adminAuth.getUser(order.uid);
-        email = authUser.email ?? null;
-        name = authUser.displayName ?? null;
-      } catch {
-        /* Auth user 없음 — 그대로 진행 (orphan order — Sentry 후보) */
-      }
-      if (!name) {
-        try {
-          const userDoc = await db.collection("users").doc(order.uid).get();
-          if (userDoc.exists) {
-            name = (userDoc.data() as { name?: string }).name ?? null;
-          }
-        } catch {
-          /* skip */
-        }
-      }
-
-      items.push(toItem(order, email, name));
-    }
-
-    const lastDoc = snap.docs[snap.docs.length - 1];
-    const nextCursor = snap.size === limit ? lastDoc?.ref.path : undefined;
+    const nextCursor = rows.length === limit ? rows[rows.length - 1]?.created_at : undefined;
 
     return NextResponse.json({
       items,
       summary: summarizeOrders(items),
-      source: "firestore",
+      source: "supabase",
       nextCursor,
     } satisfies ApiResponse);
   } catch (e) {
@@ -149,46 +150,12 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   }
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   변환 + 요약
-   ═══════════════════════════════════════════════════════════════════════ */
-
-function toItem(order: Order, email: string | null, name: string | null): AdminOrderItem {
-  const createdAtMs = (order.createdAt as unknown as { toMillis?: () => number })?.toMillis?.() ?? 0;
-  const refundedAtMs = order.refund
-    ? (order.refund.refundedAt as unknown as { toMillis?: () => number })?.toMillis?.() ?? undefined
-    : undefined;
-  return {
-    orderId: order.id,
-    uid: order.uid,
-    email,
-    name,
-    productKind: order.productKind,
-    productName: order.productName,
-    amount: order.amount,
-    status: order.status,
-    period: order.period,
-    createdAtMs,
-    approvedAt: order.payment?.approvedAt,
-    method: order.payment?.method,
-    refundedAtMs,
-    refundAmount: order.refund?.amount,
-    refundReason: order.refund?.reason,
-    idempotencyKey: order.idempotencyKey,
-  };
-}
-
 function summarizeOrders(items: AdminOrderItem[]): AdminOrdersSummary {
   const byStatus: Record<OrderStatus, number> = {
-    pending: 0,
-    approved: 0,
-    failed: 0,
-    refunded: 0,
-    cancelled: 0,
+    pending: 0, approved: 0, failed: 0, refunded: 0, cancelled: 0,
   };
   let todayApprovedRevenue = 0;
-  const todayStart = kstStartOfDay(formatKstDate(new Date()));
-  const todayStartMs = todayStart.getTime();
+  const todayStartMs = kstStartOfDay(formatKstDate(new Date())).getTime();
 
   for (const it of items) {
     byStatus[it.status] = (byStatus[it.status] ?? 0) + 1;
@@ -203,10 +170,6 @@ function summarizeOrders(items: AdminOrderItem[]): AdminOrdersSummary {
     refundPending: byStatus.cancelled,
   };
 }
-
-/* ═══════════════════════════════════════════════════════════════════════
-   Mock fallback — 결제 시스템 가동 전 staging 노출용
-   ═══════════════════════════════════════════════════════════════════════ */
 
 function listMockOrders(): AdminOrderItem[] {
   const now = Date.now();
@@ -241,9 +204,7 @@ function filterOrdersInMemory(
   filter: { status: string; q?: string; from?: string; to?: string },
 ): AdminOrderItem[] {
   let out = items;
-  if (filter.status !== "all") {
-    out = out.filter((i) => i.status === filter.status);
-  }
+  if (filter.status !== "all") out = out.filter((i) => i.status === filter.status);
   if (filter.q) {
     const needle = filter.q.toLowerCase();
     out = out.filter((i) =>
@@ -261,21 +222,14 @@ function filterOrdersInMemory(
   return out;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   날짜 유틸 — KST 기준 (모든 운영 통계의 일자 분할은 KST)
-   ═══════════════════════════════════════════════════════════════════════ */
-
 function kstStartOfDay(yyyymmdd: string): Date {
-  // YYYY-MM-DD KST → UTC ISO. KST는 UTC+9 라 KST 00:00 = UTC 전날 15:00.
   return new Date(`${yyyymmdd}T00:00:00+09:00`);
 }
-
 function addDays(yyyymmdd: string, days: number): string {
   const d = new Date(`${yyyymmdd}T00:00:00+09:00`);
   d.setUTCDate(d.getUTCDate() + days);
   return formatKstDate(d);
 }
-
 function formatKstDate(d: Date): string {
   const kst = new Date(d.getTime() + 9 * 60 * 60 * 1000);
   return kst.toISOString().slice(0, 10);

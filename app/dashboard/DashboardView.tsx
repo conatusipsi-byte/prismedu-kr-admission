@@ -118,7 +118,7 @@ export function DashboardView(): React.ReactElement {
     return <DashboardSkeleton />;
   }
 
-  const displayName = profile?.name || user.displayName || "학생";
+  const displayName = profile?.name || (user.user_metadata?.name as string | undefined) || "학생";
   const susiCount = data?.intent?.susi?.length ?? 0;
   const jeongsiFilled = {
     ga: !!data?.intent?.jeongsi?.ga,

@@ -11,7 +11,13 @@
 
 import { describe, it, expect } from "vitest";
 import { NextRequest } from "next/server";
-import { middleware, SESSION_COOKIE_NAME } from "@/middleware";
+import { middleware } from "@/middleware";
+
+/**
+ * Supabase Auth 가 자동 설정하는 쿠키 이름 패턴.
+ * middleware 는 `sb-*-auth-token` 패턴 cookie 존재만 검사.
+ */
+const SUPABASE_AUTH_COOKIE_NAME = "sb-bqmccfeglxzzrmgdirxe-auth-token";
 
 function makeReq(
   pathname: string,
@@ -20,7 +26,7 @@ function makeReq(
   const url = new URL(`https://prismedu.kr${pathname}`);
   const headers = new Headers();
   if (opts.host) headers.set("host", opts.host);
-  if (opts.cookie) headers.set("cookie", `${SESSION_COOKIE_NAME}=${opts.cookie}`);
+  if (opts.cookie) headers.set("cookie", `${SUPABASE_AUTH_COOKIE_NAME}=${opts.cookie}`);
   return new NextRequest(url, { headers });
 }
 

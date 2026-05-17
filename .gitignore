@@ -66,6 +66,9 @@ serviceAccountKey.json
 # Claude Code local session state
 /.claude/
 
+# Supabase CLI local temp/link state
+/supabase/.temp/
+
 # OS
 Thumbs.db
 desktop.ini

@@ -18,8 +18,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { FieldValue } from "firebase-admin/firestore";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { PaymentRequestSchema } from "@/lib/schemas/api/payment";
@@ -110,23 +109,29 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     return NextResponse.json({ error: "결제 준비 실패 (uid 형식 오류)" }, { status: 500 });
   }
 
-  // 7. Firestore에 orders/{orderId} pending 도큐먼트
+  // 7. orders 테이블에 pending row 작성
   const amountKrw = product.priceKrw;
   try {
-    const db = getAdminDb();
-    await db.collection("orders").doc(orderId).set({
+    const sb = getAdminSupabase();
+    const { error } = await sb.from("orders").insert({
       id: orderId,
-      uid: auth.uid,
-      productKind,
-      productName: product.displayName,
+      user_id: auth.uid,
+      product_kind: productKind,
+      product_name: product.displayName,
       amount: amountKrw,
       status: "pending",
       period,
-      createdAt: FieldValue.serverTimestamp(),
-      updatedAt: FieldValue.serverTimestamp(),
+      // created_at / updated_at 은 Postgres default now() 가 채움
     });
+    if (error) {
+      reportRouteError("api.payment.request.db", error, { uid: auth.uid, orderId });
+      return NextResponse.json(
+        { error: "결제 준비에 실패했어요. 잠시 후 다시 시도해주세요." },
+        { status: 503 },
+      );
+    }
   } catch (e) {
-    reportRouteError("api.payment.request.firestore", e, { uid: auth.uid, orderId });
+    reportRouteError("api.payment.request.db", e, { uid: auth.uid, orderId });
     return NextResponse.json(
       { error: "결제 준비에 실패했어요. 잠시 후 다시 시도해주세요." },
       { status: 503 },

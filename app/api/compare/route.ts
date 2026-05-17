@@ -1,19 +1,10 @@
 /**
- * POST /api/compare — 학과 비교 (Pro/Elite 전용)
- *
- * 2~4개 (학과,트랙) 페어를 받아 모집인원·전년 컷·반영비·표본통계를 한 번에 반환.
- * baseSpecId 가 있으면 matchKrAdmissions 로 각 페어의 합격률·카테고리도 산출.
- *
- * 정책:
- *   - Pro 전용 (free 403)
- *   - 본인 외 baseSpecId 접근은 404 (열거 차단)
- *   - jaeoegukmin 트랙은 본 라우트로 비교 불가 (P-013) — 400
- *   - 표본 부족 학과는 probability=null + sampleSufficient=false (P-001 정직성 유지)
+ * POST /api/compare — 학과 비교 (Pro/Elite 전용, Supabase).
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { reportRouteError } from "@/lib/sentry-report";
 import { CompareRequestSchema } from "@/lib/schemas/api/compare";
 import { KrSpecsSchema, type KrSpecsInput } from "@/lib/schemas/api/match";
@@ -29,7 +20,6 @@ import type {
   Department,
   DepartmentAdmissions,
   University,
-  UserEntitlement,
 } from "@/types/admission";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
@@ -54,7 +44,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   }
 
   try {
-    const db = getAdminDb();
+    const sb = getAdminSupabase();
 
     const plan = await loadPlan(auth.uid);
     if (plan === "free") {
@@ -66,39 +56,36 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
     const year = new Date().getFullYear() + 1;
 
-    // baseSpec 로드 (선택) — 본인 검증 + specsSnapshot 추출
     let baseSpecs: KrSpecsInput | null = null;
     if (baseSpecId) {
-      const matchSnap = await db.collection("matches").doc(baseSpecId).get();
-      if (!matchSnap.exists) {
+      const { data: matchRow, error: matchErr } = await sb
+        .from("matches")
+        .select("user_id, specs_snapshot")
+        .eq("id", baseSpecId)
+        .maybeSingle();
+      if (matchErr || !matchRow) {
         return NextResponse.json(
           { error: "기준 분석 결과를 찾을 수 없습니다." },
           { status: 404 },
         );
       }
-      const matchData = matchSnap.data() as {
-        userId: string;
-        specsSnapshot?: KrSpecsInput;
-      };
-      if (matchData.userId !== auth.uid) {
+      const row = matchRow as { user_id: string; specs_snapshot: KrSpecsInput | null };
+      if (row.user_id !== auth.uid) {
         return NextResponse.json(
           { error: "기준 분석 결과를 찾을 수 없습니다." },
           { status: 404 },
         );
       }
-      if (matchData.specsSnapshot) {
-        const validated = KrSpecsSchema.safeParse(matchData.specsSnapshot);
+      if (row.specs_snapshot) {
+        const validated = KrSpecsSchema.safeParse(row.specs_snapshot);
         if (validated.success) baseSpecs = validated.data;
       }
     }
 
-    // 각 페어 enrich — 병렬 fetch (4개 이내라 부담 적음)
     const enriched = await Promise.all(
       items.map((item) => loadCompareItem(item, year)),
     );
 
-    // 누락 페어 (학과 또는 트랙 부재) → 응답에 reason 명시
-    // matchKrAdmissions 는 정상 페어만 통과
     const validCandidates: MatchCandidate[] = [];
     for (const e of enriched) {
       if (e.kind === "ok") validCandidates.push(e.candidate);
@@ -139,7 +126,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   item 로드
+   item 로드 — Supabase 임베드 select 로 한 번에
    ═══════════════════════════════════════════════════════════════════════ */
 
 interface LoadOk {
@@ -168,31 +155,32 @@ async function loadCompareItem(
   item: { universityId: string; departmentId: string; trackKind: AdmissionTrackKind; trackName?: string },
   year: number,
 ): Promise<LoadOk | LoadFail> {
-  const db = getAdminDb();
+  const sb = getAdminSupabase();
 
-  const [univSnap, depSnap, admSnap] = await Promise.all([
-    db.collection("universities").doc(item.universityId).get(),
-    db
-      .collection("universities").doc(item.universityId)
-      .collection("departments").doc(item.departmentId)
-      .get(),
-    db
-      .collection("universities").doc(item.universityId)
-      .collection("departments").doc(item.departmentId)
-      .collection("admissions").doc(String(year))
-      .get(),
+  const admId = `${item.universityId}_${item.departmentId}_${year}`;
+  const statsId = `${item.universityId}_${item.departmentId}_${year}_${item.trackKind}`;
+
+  const [univR, depR, admR, statsR] = await Promise.all([
+    sb.from("universities").select("id, n, category, campuses").eq("id", item.universityId).maybeSingle(),
+    sb.from("departments").select("id, name, track").eq("university_id", item.universityId).eq("id", item.departmentId).maybeSingle(),
+    sb.from("department_admissions").select("tracks, prev_year_result, available_track_kinds").eq("id", admId).maybeSingle(),
+    sb.from("admission_sample_stats").select("verified_count, weighted_count, accepted_count, stage1_passed_count, stage2_accepted_count").eq("id", statsId).maybeSingle(),
   ]);
 
-  if (!univSnap.exists || !depSnap.exists) {
+  if (!univR.data || !depR.data) {
     return failItem(item, "학과 또는 대학 정보를 찾을 수 없습니다.");
   }
-  if (!admSnap.exists) {
+  if (!admR.data) {
     return failItem(item, `${year}학년도 모집요강이 등록되지 않았습니다.`);
   }
 
-  const univ = univSnap.data() as University;
-  const dep = depSnap.data() as Department;
-  const adm = admSnap.data() as DepartmentAdmissions;
+  const univ = univR.data as { id: string; n: string; category: University["category"]; campuses: University["campuses"] };
+  const dep = depR.data as { id: string; name: string; track: Department["track"] };
+  const adm = admR.data as {
+    tracks: DepartmentAdmissions["tracks"];
+    prev_year_result: DepartmentAdmissions["prevYearResult"];
+    available_track_kinds: AdmissionTrackKind[];
+  };
 
   const trackList = adm.tracks[item.trackKind] ?? [];
   if (trackList.length === 0) {
@@ -202,18 +190,41 @@ async function loadCompareItem(
     (item.trackName && trackList.find((t) => t.name === item.trackName)) ||
     trackList[0];
 
-  const statsId = `${item.universityId}_${item.departmentId}_${year}_${item.trackKind}`;
-  const statsSnap = await db.collection("admissionSampleStats").doc(statsId).get();
-  const sampleStats = statsSnap.exists
-    ? (statsSnap.data() as AdmissionSampleStats)
+  const sampleStats: AdmissionSampleStats | undefined = statsR.data
+    ? {
+        id: statsId,
+        universityId: item.universityId,
+        departmentId: item.departmentId,
+        year,
+        trackKind: item.trackKind,
+        verifiedCount: (statsR.data as Record<string, unknown>).verified_count as number,
+        weightedCount: (statsR.data as Record<string, unknown>).weighted_count as number,
+        acceptedCount: (statsR.data as Record<string, unknown>).accepted_count as number,
+        stage1PassedCount: (statsR.data as Record<string, unknown>).stage1_passed_count as number | undefined,
+        stage2AcceptedCount: (statsR.data as Record<string, unknown>).stage2_accepted_count as number | undefined,
+        updatedAt: new Date().toISOString() as unknown as AdmissionSampleStats["updatedAt"],
+      }
     : undefined;
+
+  // 부분 DepartmentAdmissions — buildItemResponse 가 prevYearResult / tracks 만 사용
+  const admissionsView: DepartmentAdmissions = {
+    id: admId,
+    universityId: item.universityId,
+    departmentId: item.departmentId,
+    year,
+    tracks: adm.tracks,
+    availableTrackKinds: adm.available_track_kinds,
+    prevYearResult: adm.prev_year_result,
+    source: { parsedAt: new Date().toISOString() as unknown as DepartmentAdmissions["source"]["parsedAt"], parserVersion: "supabase-v1" },
+    updatedAt: new Date().toISOString() as unknown as DepartmentAdmissions["updatedAt"],
+  };
 
   return {
     kind: "ok",
     input: item,
-    university: { id: univ.id, n: univ.n, category: univ.category, campuses: univ.campuses },
-    department: { id: dep.id, name: dep.name, track: dep.track },
-    admissions: adm,
+    university: univ,
+    department: dep,
+    admissions: admissionsView,
     track,
     sampleStats,
     candidate: {
@@ -224,7 +235,7 @@ async function loadCompareItem(
       trackKind: item.trackKind,
       trackName: track.name,
       track,
-      prevYearResult: adm.prevYearResult,
+      prevYearResult: adm.prev_year_result,
       sampleStats,
     },
   };
@@ -245,10 +256,6 @@ function failItem(
     },
   };
 }
-
-/* ═══════════════════════════════════════════════════════════════════════
-   응답 빌드
-   ═══════════════════════════════════════════════════════════════════════ */
 
 function buildItemResponse(e: LoadOk, prob: CandidateProbability | undefined) {
   const t = e.track;
@@ -276,7 +283,6 @@ function buildItemResponse(e: LoadOk, prob: CandidateProbability | undefined) {
           stage2AcceptedCount: e.sampleStats.stage2AcceptedCount ?? null,
         }
       : null,
-    // baseSpec 가 있을 때만 — 정직성 원칙 그대로 (표본 부족이면 probability null)
     probability: prob
       ? {
           category: prob.probability.category,
@@ -293,21 +299,16 @@ function buildItemResponse(e: LoadOk, prob: CandidateProbability | undefined) {
   };
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   plan
-   ═══════════════════════════════════════════════════════════════════════ */
-
 async function loadPlan(uid: string): Promise<"free" | "pro" | "elite"> {
   try {
-    const db = getAdminDb();
-    const snap = await db
-      .collection("users").doc(uid)
-      .collection("entitlements")
-      .doc("current")
-      .get();
-    if (!snap.exists) return "free";
-    const ent = snap.data() as UserEntitlement;
-    return ent.currentPlan ?? "free";
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("user_entitlements")
+      .select("current_plan")
+      .eq("user_id", uid)
+      .maybeSingle();
+    if (error || !data) return "free";
+    return ((data as { current_plan: string }).current_plan as "free" | "pro" | "elite") ?? "free";
   } catch {
     return "free";
   }

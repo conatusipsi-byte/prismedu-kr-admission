@@ -12,9 +12,7 @@
 
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { cookies } from "next/headers";
-import { getAdminAuth } from "@/lib/firebase-admin";
-import { SESSION_COOKIE_NAME } from "@/lib/api-auth";
+import { getRouteSupabase } from "@/lib/supabase-server";
 import { resolveChatContext, type ChatContextSchool } from "@/lib/admission/chat-context";
 import { ChatPageView } from "./ChatPageView";
 
@@ -35,24 +33,20 @@ async function loadInitialContext(searchParams: ChatPageSearchParams): Promise<{
   contextSchools: ChatContextSchool[];
   authenticated: boolean;
 }> {
-  // 1. 세션 쿠키 → uid (미인증이면 빈 컨텍스트)
-  const cookieStore = await cookies();
-  const session = cookieStore.get(SESSION_COOKIE_NAME)?.value;
-  if (!session) return { contextSchools: [], authenticated: false };
-
+  // 1. Supabase 세션 cookie → uid (미인증이면 빈 컨텍스트)
   let uid: string;
   try {
-    const decoded = await getAdminAuth().verifySessionCookie(session, true);
-    uid = decoded.uid;
+    const sb = await getRouteSupabase();
+    const { data: { user }, error } = await sb.auth.getUser();
+    if (error || !user) return { contextSchools: [], authenticated: false };
+    uid = user.id;
   } catch {
     return { contextSchools: [], authenticated: false };
   }
 
-  // 2. searchParams → matchId / schoolFocus 추출
   const matchId = typeof searchParams.matchId === "string" ? searchParams.matchId : undefined;
   const schoolFocus = parseSchoolFocusParam(searchParams.schoolFocus);
 
-  // 3. 컨텍스트 조회 (resolveChatContext 우선순위: schoolFocus > matchId > intent)
   const contextSchools = await resolveChatContext(uid, { matchId, schoolFocus });
   return { contextSchools, authenticated: true };
 }

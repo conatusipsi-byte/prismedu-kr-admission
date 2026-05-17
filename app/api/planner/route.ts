@@ -1,23 +1,10 @@
 /**
- * /api/planner — 입시 자동 플래너 (Pro/Elite 전용)
- *
- * GET: 사용자 specs.intent + 표준 입시 일정 기반 task 자동 생성. 완료 상태는
- *      users/{uid}/plannerCompletions/{taskId} 와 머지.
- * PATCH: taskId 의 completed 토글 — Firestore 에 저장.
- *
- * 정직성:
- *   - intent 미작성 시 빈 배열 (가짜 task X)
- *   - 학과별 일정은 표준 일정 (모집요강 일정이 등록되면 그걸 우선 사용 — 후속 PR)
- *
- * 결정성:
- *   - task ID 는 (학년도 + slot.universityId + slot.departmentId + trackKind + category)
- *     해시. 같은 intent 면 매번 같은 ID 가 생성되어 completion 머지가 안정적.
+ * /api/planner — 입시 자동 플래너 (Pro/Elite 전용, Supabase).
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { FieldValue } from "firebase-admin/firestore";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { reportRouteError } from "@/lib/sentry-report";
 import { canUseFeature, type Plan } from "@/lib/plans";
 import {
@@ -30,14 +17,9 @@ import type {
   AdmissionIntent,
   AdmissionSlot,
   AdmissionTrackKind,
-  UserEntitlement,
 } from "@/types/admission";
 
 export const dynamic = "force-dynamic";
-
-/* ═══════════════════════════════════════════════════════════════════════
-   GET — task 자동 생성
-   ═══════════════════════════════════════════════════════════════════════ */
 
 export async function GET(req: NextRequest): Promise<NextResponse> {
   const auth = await requireAuth(req);
@@ -71,24 +53,18 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       completed: completions.has(t.id),
     }));
 
-    // 마감 임박 우선 — dueDate ASC
     tasks.sort((a, b) => a.dueDate.localeCompare(b.dueDate));
 
-    const response: PlannerGetResponse = {
+    return NextResponse.json({
       tasks,
       generatedAt: new Date().toISOString(),
       empty: false,
-    };
-    return NextResponse.json(response);
+    } as PlannerGetResponse);
   } catch (e) {
     reportRouteError("api.planner.GET", e, { uid: auth.uid });
     return NextResponse.json({ error: "플래너 조회 실패" }, { status: 500 });
   }
 }
-
-/* ═══════════════════════════════════════════════════════════════════════
-   PATCH — task 완료 토글
-   ═══════════════════════════════════════════════════════════════════════ */
 
 export async function PATCH(req: NextRequest): Promise<NextResponse> {
   const auth = await requireAuth(req);
@@ -113,25 +89,20 @@ export async function PATCH(req: NextRequest): Promise<NextResponse> {
   const { taskId, completed } = parsed.data;
 
   try {
-    const db = getAdminDb();
-    const ref = db
-      .collection("users").doc(auth.uid)
-      .collection("plannerCompletions").doc(taskId);
-
+    const sb = getAdminSupabase();
     if (completed) {
-      await ref.set(
-        {
-          taskId,
-          completed: true,
-          completedAt: FieldValue.serverTimestamp(),
-        },
-        { merge: true },
-      );
+      const { error } = await sb
+        .from("planner_completions")
+        .upsert({ user_id: auth.uid, task_id: taskId });
+      if (error) throw error;
     } else {
-      // 미완료로 되돌리기 — 도큐먼트 자체 삭제 (스토리지 절약)
-      await ref.delete();
+      const { error } = await sb
+        .from("planner_completions")
+        .delete()
+        .eq("user_id", auth.uid)
+        .eq("task_id", taskId);
+      if (error) throw error;
     }
-
     return NextResponse.json({ ok: true, taskId, completed });
   } catch (e) {
     reportRouteError("api.planner.PATCH", e, { uid: auth.uid, taskId });
@@ -140,28 +111,10 @@ export async function PATCH(req: NextRequest): Promise<NextResponse> {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   생성 로직
+   생성 로직 (Firestore 와 동일 — 순수 함수)
    ═══════════════════════════════════════════════════════════════════════ */
 
-/**
- * 표준 입시 일정 — targetYear 학년도 기준.
- * 실제 모집요강 일정이 admissions/{year} 에 등록되면 슬롯별로 override (후속 PR).
- *
- * 출처: 한국 입시 평년 일정. 정확한 날짜는 매년 한국대학교육협의회·평가원이 확정.
- */
-function buildStandardCalendar(targetYear: number): {
-  susiApplicationStart: string;
-  susiApplicationEnd: string;
-  documentDeadline: string;
-  hakjongStage1Result: string;
-  interviewWindow: { start: string; end: string };
-  essayDate: string;
-  practicalDate: string;
-  csatDate: string;
-  jeongsiApplicationStart: string;
-  jeongsiApplicationEnd: string;
-} {
-  // targetYear 가 2027학년도면 입시 진행은 2026 가을 ~ 2027 봄
+function buildStandardCalendar(targetYear: number) {
   const prev = targetYear - 1;
   return {
     susiApplicationStart: `${prev}-09-09`,
@@ -195,7 +148,6 @@ function generatePlannerTasks(
   const cal = buildStandardCalendar(targetYear);
   const out: GeneratedTask[] = [];
 
-  // 공통 — 수능 (intent 가 1개라도 있을 때만 노출)
   const hasAnySlot = intent.susi.length > 0 || hasAnyJeongsi(intent);
   if (hasAnySlot) {
     out.push({
@@ -207,12 +159,9 @@ function generatePlannerTasks(
     });
   }
 
-  // 수시 슬롯
   for (const slot of intent.susi) {
     out.push(...buildSusiTasks(slot, cal, targetYear));
   }
-
-  // 정시 슬롯
   if (intent.jeongsi.ga) out.push(...buildJeongsiTasks("ga", intent.jeongsi.ga, cal, targetYear));
   if (intent.jeongsi.na) out.push(...buildJeongsiTasks("na", intent.jeongsi.na, cal, targetYear));
   if (intent.jeongsi.da) out.push(...buildJeongsiTasks("da", intent.jeongsi.da, cal, targetYear));
@@ -238,32 +187,28 @@ function buildSusiTasks(
   };
   const labelTrack = trackKindLabel(slot.trackKind);
 
-  // 공통: 원서접수
   tasks.push({
     id: `${base}_application`,
     title: `${slot.universityId} ${slot.departmentId} (${labelTrack}) 원서접수`,
-    description: `수시 원서접수 마감: ${cal.susiApplicationEnd}. 자기소개서 폐지 이후이므로 모집요강·제출서류 위주 점검.`,
+    description: `수시 원서접수 마감: ${cal.susiApplicationEnd}.`,
     category: "application",
     dueDate: cal.susiApplicationEnd,
     sourceSlot: slotMeta,
   });
-
-  // 공통: 자료준비 (수시 모든 트랙)
   tasks.push({
     id: `${base}_documents`,
     title: `${slot.universityId} 제출서류 준비 (${labelTrack})`,
-    description: "학교 추천 필요 여부, 추가 제출서류(자격증·실적물 등) 확인.",
+    description: "학교 추천 필요 여부, 추가 제출서류 확인.",
     category: "documents",
     dueDate: cal.documentDeadline,
     sourceSlot: slotMeta,
   });
 
-  // 트랙별 분기
   if (slot.trackKind === "susi_comprehensive") {
     tasks.push({
       id: `${base}_interview`,
       title: `${slot.universityId} 학종 면접 준비`,
-      description: `면접 시기: ${cal.interviewWindow.start} ~ ${cal.interviewWindow.end}. 1단계 통과 발표(${cal.hakjongStage1Result}) 후 본격 대비.`,
+      description: `면접 시기: ${cal.interviewWindow.start} ~ ${cal.interviewWindow.end}. 1단계 발표 (${cal.hakjongStage1Result}) 후 대비.`,
       category: "interview",
       dueDate: cal.interviewWindow.end,
       sourceSlot: slotMeta,
@@ -273,7 +218,7 @@ function buildSusiTasks(
     tasks.push({
       id: `${base}_essay`,
       title: `${slot.universityId} 논술 시험`,
-      description: `논술 시험일: ${cal.essayDate} (평년). 기출 + 학교별 출제 경향 파악.`,
+      description: `논술 시험일: ${cal.essayDate} (평년). 기출 + 출제 경향 파악.`,
       category: "essay",
       dueDate: cal.essayDate,
       sourceSlot: slotMeta,
@@ -283,13 +228,12 @@ function buildSusiTasks(
     tasks.push({
       id: `${base}_practical`,
       title: `${slot.universityId} 실기 시험`,
-      description: `실기 시험일: ${cal.practicalDate} (평년). 학과별 실기 종목 확인.`,
+      description: `실기 시험일: ${cal.practicalDate} (평년). 실기 종목 확인.`,
       category: "practical",
       dueDate: cal.practicalDate,
       sourceSlot: slotMeta,
     });
   }
-
   return tasks;
 }
 
@@ -317,7 +261,7 @@ function buildJeongsiTasks(
     {
       id: `${base}_documents`,
       title: `정시 ${group.toUpperCase()}군 ${slot.universityId} 변환점수 확인`,
-      description: "수능 후 발표되는 대학별 변환점수표 발표 즉시 확인 (P-012 preliminary 변환점수 주의).",
+      description: "수능 후 발표되는 대학별 변환점수표 발표 즉시 확인.",
       category: "documents",
       dueDate: `${targetYear - 1}-11-26`,
       sourceSlot: slotMeta,
@@ -340,19 +284,19 @@ function trackKindLabel(k: AdmissionTrackKind): string {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   Firestore I/O
+   Supabase I/O
    ═══════════════════════════════════════════════════════════════════════ */
 
 async function loadPlan(uid: string): Promise<Plan> {
   try {
-    const db = getAdminDb();
-    const snap = await db
-      .collection("users").doc(uid)
-      .collection("entitlements")
-      .doc("current")
-      .get();
-    if (!snap.exists) return "free";
-    return ((snap.data() as UserEntitlement).currentPlan ?? "free") as Plan;
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("user_entitlements")
+      .select("current_plan")
+      .eq("user_id", uid)
+      .maybeSingle();
+    if (error || !data) return "free";
+    return ((data as { current_plan: string }).current_plan as Plan) ?? "free";
   } catch {
     return "free";
   }
@@ -360,16 +304,16 @@ async function loadPlan(uid: string): Promise<Plan> {
 
 async function loadLatestIntent(uid: string): Promise<AdmissionIntent | null> {
   try {
-    const db = getAdminDb();
-    const snap = await db
-      .collection("users").doc(uid)
-      .collection("specs")
-      .orderBy("updatedAt", "desc")
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("user_specs")
+      .select("intent")
+      .eq("user_id", uid)
+      .order("updated_at", { ascending: false })
       .limit(1)
-      .get();
-    if (snap.empty) return null;
-    const spec = snap.docs[0].data() as { intent?: AdmissionIntent };
-    return spec.intent ?? null;
+      .maybeSingle();
+    if (error || !data) return null;
+    return (data as { intent: AdmissionIntent | null }).intent ?? null;
   } catch {
     return null;
   }
@@ -377,12 +321,13 @@ async function loadLatestIntent(uid: string): Promise<AdmissionIntent | null> {
 
 async function loadCompletions(uid: string): Promise<Set<string>> {
   try {
-    const db = getAdminDb();
-    const snap = await db
-      .collection("users").doc(uid)
-      .collection("plannerCompletions")
-      .get();
-    return new Set(snap.docs.map((d) => d.id));
+    const sb = getAdminSupabase();
+    const { data, error } = await sb
+      .from("planner_completions")
+      .select("task_id")
+      .eq("user_id", uid);
+    if (error || !data) return new Set();
+    return new Set((data as Array<{ task_id: string }>).map((r) => r.task_id));
   } catch {
     return new Set();
   }

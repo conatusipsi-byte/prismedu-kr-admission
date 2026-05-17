@@ -1,46 +1,35 @@
 /**
- * POST /api/admin/etl-promote — admissionsStaging → admissions(live) 승격
- *
- * 마스터 전용. 운영자가 검수 modal에서 호출.
- *
- * 흐름:
- *   1. requireMasterAuth + Rate limit
- *   2. AdminEtlPromoteSchema 검증 — stagingId + 운영자 보강 메타
- *   3. admissionsStaging/{stagingId} 조회 + 이미 promoted면 409
- *   4. 트랜잭션:
- *      - admissionsStaging.promoted = true (멱등 가드)
- *      - universities/{uid}/departments/{did}/admissions/{year} 적재 (merge)
- *      - tracks[trackKind]에 새 트랙 push 또는 기존 trackName과 일치 시 갱신
- *   5. 응답
- *
- * 정직성 (P-002):
- *   - 자동 승격 절대 X — 본 라우트는 운영자 explicit 호출만 처리
- *   - 필수 필드(quotaInitial 등) 미입력 시 400
- *   - 트랜잭션 실패 시 silent X — recoveryId 반환
+ * POST /api/admin/etl-promote — admissions_staging → department_admissions(live) 승격 (Supabase).
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { FieldValue } from "firebase-admin/firestore";
 import { requireMasterAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 import { AdminEtlPromoteSchema } from "@/lib/schemas/api/admin";
-import type { CsatMinimum, ReflectionRatio } from "@/types/admission";
+import type {
+  AdmissionTrack,
+  AdmissionTrackKind,
+  CsatMinimum,
+  DepartmentAdmissions,
+  ReflectionRatio,
+} from "@/types/admission";
 
-interface StagingDocPayload {
+interface StagingPayload {
   id: string;
-  universityId: string;
+  university_id: string;
   year: number;
-  promoted?: boolean;
-  csatMinimumFinalized?: CsatMinimum | null;
-  parsed?: {
-    departmentNameCandidates?: string[];
-    reflectionRatioPartial?: {
-      korean?: number;
-      math?: number;
-      english?: number;
-      investigation?: number;
+  needs_review: boolean;
+  tracks?: {
+    parsed?: {
+      reflectionRatioPartial?: {
+        korean?: number;
+        math?: number;
+        english?: number;
+        investigation?: number;
+      };
     };
+    csatMinimumFinalized?: CsatMinimum | null;
   };
 }
 
@@ -66,82 +55,97 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   if (!parsed.success) return zodErrorResponse(parsed.error);
   const { stagingId, departmentId, trackKind, trackName, quotaInitial, reviewerNotes } = parsed.data;
 
-  const db = getAdminDb();
-  const stagingRef = db.collection("admissionsStaging").doc(stagingId);
+  const sb = getAdminSupabase();
 
   try {
-    const stagingSnap = await stagingRef.get();
-    if (!stagingSnap.exists) {
+    // staging 조회
+    const { data: stagingData, error: stagingErr } = await sb
+      .from("admissions_staging")
+      .select("id, university_id, year, needs_review, tracks")
+      .eq("id", stagingId)
+      .maybeSingle();
+    if (stagingErr || !stagingData) {
       return NextResponse.json({ error: "승격할 staging 항목을 찾을 수 없어요." }, { status: 404 });
     }
-    const staging = stagingSnap.data() as StagingDocPayload;
-    if (staging.promoted) {
+    const staging = stagingData as StagingPayload;
+    if (!staging.needs_review) {
       return NextResponse.json({ error: "이미 승격된 항목입니다." }, { status: 409 });
     }
 
-    // 트랜잭션 — staging.promoted=true + admissions/{year} 적재
-    const admissionsRef = db
-      .collection("universities").doc(staging.universityId)
-      .collection("departments").doc(departmentId)
-      .collection("admissions").doc(String(staging.year));
+    const admId = `${staging.university_id}_${departmentId}_${staging.year}`;
+    const reflectionRatio = buildReflectionRatio(staging.tracks?.parsed?.reflectionRatioPartial);
 
-    await db.runTransaction(async (tx) => {
-      const recheck = await tx.get(stagingRef);
-      if (!recheck.exists || (recheck.data() as StagingDocPayload).promoted) {
-        // race — 다른 호출이 이미 처리. 멱등 종료.
-        return;
-      }
-
-      const reflectionRatio = buildReflectionRatio(staging.parsed?.reflectionRatioPartial);
-
-      // 기존 admissions 도큐먼트와 merge — 같은 trackKind에 새 트랙 추가
-      // 단순 set + merge: 운영자가 같은 학과의 다른 트랙을 별도로 승격 시 누적.
-      // 같은 trackName 중복 방지는 운영자 검수 책임 (UI에서 기존 트랙 표시).
-      const newTrack = {
-        name: trackName,
-        kind: trackKind,
-        specialType: "general",
-        quotaInitial,
-        stages: [{ step: 1, components: trackKind.startsWith("jeongsi_") ? { csat: 100 } : { document: 100 } }],
-        csatMinimum: staging.csatMinimumFinalized ?? null,
-        reflectionRatio,
-        notes: reviewerNotes ?? null,
-      };
-
-      tx.set(
-        admissionsRef,
+    const newTrack: AdmissionTrack = {
+      name: trackName,
+      kind: trackKind as AdmissionTrackKind,
+      specialType: "general",
+      quotaInitial,
+      stages: [
         {
-          universityId: staging.universityId,
-          departmentId,
-          year: staging.year,
-          tracks: { [trackKind]: FieldValue.arrayUnion(newTrack) },
-          availableTrackKinds: FieldValue.arrayUnion(trackKind),
-          source: {
-            promotedFromStagingId: stagingId,
-            promotedBy: auth.uid,
-            promotedAt: FieldValue.serverTimestamp(),
-          },
-          updatedAt: FieldValue.serverTimestamp(),
+          step: 1,
+          components: (trackKind as string).startsWith("jeongsi_")
+            ? { csat: 100 }
+            : { document: 100 },
         },
-        { merge: true },
-      );
+      ],
+      csatMinimum: staging.tracks?.csatMinimumFinalized ?? undefined,
+      reflectionRatio,
+      notes: reviewerNotes ?? undefined,
+    };
 
-      tx.set(
-        stagingRef,
-        {
-          promoted: true,
-          promotedAt: FieldValue.serverTimestamp(),
-          promotedBy: auth.uid,
-          reviewerNotes: reviewerNotes ?? null,
-        },
-        { merge: true },
-      );
+    // 기존 admissions row 조회 후 merge
+    const { data: existing } = await sb
+      .from("department_admissions")
+      .select("tracks, available_track_kinds")
+      .eq("id", admId)
+      .maybeSingle();
+
+    const existingTracks =
+      (existing as { tracks: DepartmentAdmissions["tracks"] } | null)?.tracks ?? {};
+    const existingKinds =
+      (existing as { available_track_kinds: AdmissionTrackKind[] } | null)?.available_track_kinds ?? [];
+    const trackList = existingTracks[trackKind as AdmissionTrackKind] ?? [];
+
+    const mergedTracks = {
+      ...existingTracks,
+      [trackKind]: [...trackList, newTrack],
+    };
+    const mergedKinds = existingKinds.includes(trackKind as AdmissionTrackKind)
+      ? existingKinds
+      : [...existingKinds, trackKind as AdmissionTrackKind];
+
+    // upsert department_admissions
+    const { error: admErr } = await sb.from("department_admissions").upsert({
+      id: admId,
+      university_id: staging.university_id,
+      department_id: departmentId,
+      year: staging.year,
+      tracks: mergedTracks,
+      available_track_kinds: mergedKinds,
+      source: {
+        promotedFromStagingId: stagingId,
+        promotedBy: auth.uid,
+        promotedAt: new Date().toISOString(),
+        parsedAt: new Date().toISOString(),
+        parserVersion: "supabase-v1",
+      },
     });
+    if (admErr) throw admErr;
+
+    // staging.needs_review = false (멱등 가드)
+    const { error: stagingUpdErr } = await sb
+      .from("admissions_staging")
+      .update({
+        needs_review: false,
+        reviewer_notes: reviewerNotes ?? null,
+      })
+      .eq("id", stagingId);
+    if (stagingUpdErr) throw stagingUpdErr;
 
     return NextResponse.json({
       success: true,
       stagingId,
-      universityId: staging.universityId,
+      universityId: staging.university_id,
       departmentId,
       year: staging.year,
       trackKind,

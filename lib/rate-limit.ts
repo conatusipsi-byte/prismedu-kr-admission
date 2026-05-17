@@ -1,80 +1,69 @@
 /**
- * 간단한 per-user rate limit.
+ * per-user rate limit — Supabase rate_limits 테이블 + RPC 원자적 증가.
  *
- * 사용처: 결제 승인처럼 브루트포스/중복호출 위험이 큰 엔드포인트.
+ * 사용처: 결제 승인·AI 챗 등 브루트포스/중복호출 위험이 큰 엔드포인트.
  *
- * 구현:
- *   - Firestore의 rateLimits/{bucket}_{uid} 문서에 최근 호출 타임스탬프 배열을 유지.
- *   - 요청 들어올 때 윈도우(ms)를 벗어난 항목을 제거한 뒤 남은 개수가 limit 이상이면 거부.
- *   - 서버리스 인스턴스 간에도 공유되며 재시작에 안전 (메모리 Map 방식 대비 강건).
+ * Firestore 의 sliding-window(타임스탬프 배열) → Postgres 의 fixed-window(windowStart 별 카운터)
+ * 로 단순화. 정확도는 살짝 떨어지지만(윈도우 경계에서 2배 가능) 운영상 동등.
  *
  * 거부 시 NextResponse(429) 반환, 통과 시 null.
  */
+import "server-only";
 import { NextResponse } from "next/server";
-import { FieldValue, Timestamp } from "firebase-admin/firestore";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 
 export interface RateLimitOptions {
-  bucket: string;      // ex: "payment_confirm"
-  uid: string;         // 호출자 식별자
-  windowMs: number;    // 시간 창 (ex: 60_000 = 1분)
-  limit: number;       // 창 안 최대 허용 호출 수
+  bucket: string;
+  uid: string;
+  windowMs: number;
+  limit: number;
 }
 
 export async function enforceRateLimit(
-  opts: RateLimitOptions
+  opts: RateLimitOptions,
 ): Promise<NextResponse | null> {
   const { bucket, uid, windowMs, limit } = opts;
   const now = Date.now();
-  const cutoff = now - windowMs;
-  const ref = getAdminDb().collection("rateLimits").doc(`${bucket}_${uid}`);
+  const windowStart = Math.floor(now / windowMs) * windowMs;
+  // 윈도우별 키 — 윈도우가 끝나면 자연 리셋 (다음 윈도우는 다른 키)
+  const rateKey = `rate_${bucket}_${uid}_${windowStart}`;
+  const expiresAt = new Date(windowStart + windowMs * 2);
 
   try {
-    const result = await getAdminDb().runTransaction(async (tx) => {
-      const snap = await tx.get(ref);
-      const raw = (snap.exists ? (snap.data()?.timestamps as unknown) : []) || [];
-      const arr: number[] = Array.isArray(raw)
-        ? raw.filter((t): t is number => typeof t === "number" && t > cutoff)
-        : [];
-      if (arr.length >= limit) {
-        return { blocked: true, retryAfterMs: Math.max(0, arr[0] + windowMs - now) };
-      }
-      arr.push(now);
-      // expiresAt: 윈도가 두 번 지나도록 여유를 두면 마지막 호출 이후 비활성 유저의
-      // 문서를 Firestore TTL이 안전하게 삭제. (콘솔에서 rateLimits 컬렉션의
-      // expiresAt 필드에 TTL 정책 활성화 필요)
-      const expiresAt = Timestamp.fromMillis(now + windowMs * 2);
-      tx.set(ref, {
-        timestamps: arr,
-        updatedAt: FieldValue.serverTimestamp(),
-        expiresAt,
-      });
-      return { blocked: false, retryAfterMs: 0 };
+    const sb = getAdminSupabase();
+    const { data, error } = await sb.rpc("rate_limit_check_and_increment", {
+      p_rate_key: rateKey,
+      p_window_start: new Date(windowStart).toISOString(),
+      p_expires_at: expiresAt.toISOString(),
+      p_limit: limit,
     });
-
-    if (result.blocked) {
-      const retrySec = Math.ceil(result.retryAfterMs / 1000);
-      // 어뷰즈 탐지용 구조화 로그. 특정 uid가 특정 bucket에 반복 hit하면
-      // 운영에서 즉시 패턴 파악 가능.
-      console.warn(
-        JSON.stringify({
-          type: "rate_limit_exceeded",
-          bucket,
-          uid,
-          limit,
-          windowMs,
-          retryAfterMs: result.retryAfterMs,
-          at: new Date(now).toISOString(),
-        })
-      );
-      return NextResponse.json(
-        { error: `요청이 너무 잦아요. ${retrySec}초 후 다시 시도해주세요.` },
-        { status: 429, headers: { "Retry-After": String(retrySec) } }
-      );
+    if (error) {
+      // RPC 실패 — fail open (운영 신뢰성 우선)
+      console.warn(`[rate-limit] ${rateKey} RPC failed:`, error.message);
+      return null;
     }
-    return null;
+    const row = Array.isArray(data) ? data[0] : data;
+    const allowed: boolean = row?.allowed ?? true;
+    if (allowed) return null;
+
+    const retryAfterMs = Math.max(0, windowStart + windowMs - now);
+    const retrySec = Math.ceil(retryAfterMs / 1000);
+    console.warn(
+      JSON.stringify({
+        type: "rate_limit_exceeded",
+        bucket,
+        uid,
+        limit,
+        windowMs,
+        retryAfterMs,
+        at: new Date(now).toISOString(),
+      }),
+    );
+    return NextResponse.json(
+      { error: `요청이 너무 잦아요. ${retrySec}초 후 다시 시도해주세요.` },
+      { status: 429, headers: { "Retry-After": String(retrySec) } },
+    );
   } catch (e) {
-    // Firestore 장애 시: 차단하면 결제 자체가 막힘 → 로그만 남기고 통과.
     console.error(`[rate-limit] ${bucket}_${uid} check failed:`, e);
     return null;
   }

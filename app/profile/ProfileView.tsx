@@ -79,8 +79,11 @@ export function ProfileView(): React.ReactElement {
       </header>
 
       <AccountSection
-        user={user}
-        currentName={profile?.name ?? user.displayName ?? ""}
+        user={{
+          email: user.email ?? null,
+          provider: (user.app_metadata?.provider as string | undefined) ?? "email",
+        }}
+        currentName={profile?.name ?? (user.user_metadata?.name as string | undefined) ?? ""}
         onSave={(name) => saveProfile({ name })}
       />
 
@@ -105,7 +108,7 @@ function AccountSection({
   currentName,
   onSave,
 }: {
-  user: { email: string | null; providerData: Array<{ providerId: string }> };
+  user: { email: string | null; provider: string };
   currentName: string;
   onSave: (name: string) => Promise<void>;
 }): React.ReactElement {
@@ -120,7 +123,7 @@ function AccountSection({
   }, [currentName]);
 
   const dirty = name.trim() !== currentName.trim();
-  const provider = user.providerData[0]?.providerId ?? "password";
+  const provider = user.provider;
   const providerLabel = formatProvider(provider);
 
   async function handleSave(): Promise<void> {

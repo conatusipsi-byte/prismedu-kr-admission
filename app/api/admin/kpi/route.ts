@@ -1,25 +1,16 @@
 /**
- * GET /api/admin/kpi — 운영자 대시보드 KPI
+ * GET /api/admin/kpi — 운영자 대시보드 KPI (Supabase).
  *
- * 4개 카운트:
- *   - 오늘 가입자 (users.createdAt >= 오늘 0시)
- *   - 오늘 분석 요청 (matches.createdAt >= 오늘 0시)
- *   - 오늘 결제 (orders.status='paid' AND createdAt >= 오늘 0시)
- *   - 표본 부족 학과 비율 (admissionSampleStats.verifiedCount < 5 비율)
- *
- * count() aggregation 사용 — 도큐먼트 fetch 없이 카운트만 받아 비용 절감.
- *
- * 인덱스 요구:
- *   - users.createdAt: 단일 필드 (자동)
- *   - matches.createdAt: 단일 필드 (자동)
- *   - orders.status + createdAt: composite (firestore.indexes.json 등록)
- *   - admissionSampleStats: 단일 필드 (자동, 또는 전체 카운트)
+ * 카운트:
+ *   - 오늘 가입자 (profiles.created_at >= 오늘 0시)
+ *   - 오늘 분석 요청 (matches.created_at >= 오늘 0시)
+ *   - 오늘 결제 (orders.status='approved' AND created_at >= 오늘 0시)
+ *   - 표본 부족 학과 비율 (admission_sample_stats.verified_count < 5 비율)
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { Timestamp } from "firebase-admin/firestore";
 import { requireMasterAuth } from "@/lib/api-auth";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminSupabase } from "@/lib/supabase-server";
 
 export const dynamic = "force-dynamic";
 
@@ -28,15 +19,14 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   if (!auth.ok) return auth.response;
 
   try {
-    const db = getAdminDb();
     const todayStart = startOfTodayKst();
-    const todayTs = Timestamp.fromDate(todayStart);
+    const sinceIso = todayStart.toISOString();
 
     const [signups, matches, paidOrders, sampleStats] = await Promise.all([
-      countQuery(db, "users", todayTs).catch(() => null),
-      countQuery(db, "matches", todayTs).catch(() => null),
-      paidOrdersToday(db, todayTs).catch(() => null),
-      sampleInsufficientRatio(db).catch(() => null),
+      countSince("profiles", sinceIso).catch(() => null),
+      countSince("matches", sinceIso).catch(() => null),
+      paidOrdersToday(sinceIso).catch(() => null),
+      sampleInsufficientRatio().catch(() => null),
     ]);
 
     return NextResponse.json({
@@ -49,14 +39,10 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     });
   } catch (e) {
     console.error("[/api/admin/kpi] error:", e);
-    return NextResponse.json(
-      { error: "KPI 집계 실패" },
-      { status: 500 },
-    );
+    return NextResponse.json({ error: "KPI 집계 실패" }, { status: 500 });
   }
 }
 
-/** 오늘(KST 자정 기준) 0시 Date 반환. KST=UTC+9. */
 function startOfTodayKst(): Date {
   const now = new Date();
   const kstNow = new Date(now.getTime() + 9 * 60 * 60 * 1000);
@@ -64,48 +50,36 @@ function startOfTodayKst(): Date {
   return new Date(kstNow.getTime() - 9 * 60 * 60 * 1000);
 }
 
-async function countQuery(
-  db: FirebaseFirestore.Firestore,
-  collection: string,
-  since: Timestamp,
-): Promise<number> {
-  const snap = await db
-    .collection(collection)
-    .where("createdAt", ">=", since)
-    .count()
-    .get();
-  return snap.data().count;
+async function countSince(table: string, sinceIso: string): Promise<number> {
+  const sb = getAdminSupabase();
+  const { count, error } = await sb
+    .from(table)
+    .select("*", { count: "exact", head: true })
+    .gte("created_at", sinceIso);
+  if (error) throw error;
+  return count ?? 0;
 }
 
-async function paidOrdersToday(
-  db: FirebaseFirestore.Firestore,
-  since: Timestamp,
-): Promise<number> {
-  const snap = await db
-    .collection("orders")
-    .where("status", "==", "paid")
-    .where("createdAt", ">=", since)
-    .count()
-    .get();
-  return snap.data().count;
+async function paidOrdersToday(sinceIso: string): Promise<number> {
+  const sb = getAdminSupabase();
+  const { count, error } = await sb
+    .from("orders")
+    .select("*", { count: "exact", head: true })
+    .eq("status", "approved")
+    .gte("created_at", sinceIso);
+  if (error) throw error;
+  return count ?? 0;
 }
 
-/** 전체 sampleStats 중 verifiedCount<5 비율 (%). 학과 합격률 노출 가능 정도 지표. */
-async function sampleInsufficientRatio(
-  db: FirebaseFirestore.Firestore,
-): Promise<number | null> {
-  const totalSnap = await db
-    .collection("admissionSampleStats")
-    .count()
-    .get();
-  const total = totalSnap.data().count;
-  if (total === 0) return null;
-
-  const insufficientSnap = await db
-    .collection("admissionSampleStats")
-    .where("verifiedCount", "<", 5)
-    .count()
-    .get();
-  const insufficient = insufficientSnap.data().count;
-  return Math.round((insufficient / total) * 100);
+async function sampleInsufficientRatio(): Promise<number | null> {
+  const sb = getAdminSupabase();
+  const { count: total } = await sb
+    .from("admission_sample_stats")
+    .select("*", { count: "exact", head: true });
+  if (!total || total === 0) return null;
+  const { count: insufficient } = await sb
+    .from("admission_sample_stats")
+    .select("*", { count: "exact", head: true })
+    .lt("verified_count", 5);
+  return Math.round(((insufficient ?? 0) / total) * 100);
 }

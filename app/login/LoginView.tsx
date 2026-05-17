@@ -12,7 +12,7 @@
  * 정책:
  *   - returnUrl은 동일 출처만 허용 (open redirect 차단)
  *   - 회원가입 시 약관·개인정보 동의 체크 필수 (출시 직전 약관 페이지 추가 시 활성화)
- *   - Firebase Auth가 비밀번호 강도·이메일 형식 검증
+ *   - Supabase Auth가 비밀번호 강도·이메일 형식 검증
  */
 
 import * as React from "react";
@@ -312,15 +312,19 @@ function sanitizeReturnUrl(raw: string): string {
   return "/";
 }
 
-/** Firebase Auth 에러 메시지 한국어 친화 변환 */
+/** Supabase Auth 에러 메시지 한국어 친화 변환 */
 function humanizeAuthError(msg: string): string {
-  if (/wrong-password|invalid-credential/.test(msg)) return "이메일 또는 비밀번호가 일치하지 않아요.";
-  if (/user-not-found/.test(msg)) return "등록된 사용자가 없어요. 회원가입을 먼저 해주세요.";
-  if (/email-already-in-use/.test(msg)) return "이미 가입된 이메일이에요. 로그인을 시도해주세요.";
-  if (/weak-password/.test(msg)) return "비밀번호가 너무 약해요. 8자 이상으로 입력해주세요.";
-  if (/invalid-email/.test(msg)) return "이메일 형식이 올바르지 않아요.";
-  if (/too-many-requests/.test(msg)) return "요청이 너무 잦아요. 잠시 후 다시 시도해주세요.";
-  if (/popup-closed/.test(msg)) return "로그인 창을 닫으셨어요. 다시 시도해주세요.";
+  // Supabase 메시지
+  if (/Invalid login credentials/i.test(msg)) return "이메일 또는 비밀번호가 일치하지 않아요.";
+  if (/Email not confirmed/i.test(msg)) return "이메일 인증이 아직 안 됐어요. 받으신 메일의 확인 링크를 눌러주세요.";
+  if (/User already registered|already.*registered/i.test(msg)) return "이미 가입된 이메일이에요. 로그인을 시도해주세요.";
+  if (/Password should be at least|weak.*password/i.test(msg)) return "비밀번호가 너무 약해요. 8자 이상으로 입력해주세요.";
+  if (/Unable to validate email address|invalid.*email/i.test(msg)) return "이메일 형식이 올바르지 않아요.";
+  if (/rate limit|too many|For security purposes/i.test(msg)) return "요청이 너무 잦아요. 잠시 후 다시 시도해주세요.";
+  if (/User not found|not.*found/i.test(msg)) return "등록된 사용자가 없어요. 회원가입을 먼저 해주세요.";
+  if (/signup.*disabled|signups not allowed/i.test(msg)) return "현재 회원가입이 일시 중단됐어요.";
+  // 소셜 로그인
+  if (/popup.*closed|window.*closed/i.test(msg)) return "로그인 창을 닫으셨어요. 다시 시도해주세요.";
   if (/팝업이 차단/.test(msg)) return msg;
   if (/카카오/.test(msg)) return msg;
   return "로그인에 실패했어요. 잠시 후 다시 시도해주세요.";

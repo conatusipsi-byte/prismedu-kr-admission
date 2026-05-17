@@ -15,8 +15,26 @@ import { NextRequest, NextResponse } from "next/server";
 
 const CANONICAL_HOST = "conatusipsi.com";
 
-// `lib/api-auth.ts`의 SESSION_COOKIE_NAME과 정확히 일치
-export const SESSION_COOKIE_NAME = "__session";
+/**
+ * Supabase Auth 가 자동 관리하는 쿠키 prefix.
+ * 단일 또는 split 쿠키 — `sb-{ref}-auth-token`, `sb-{ref}-auth-token.0/.1` 등.
+ * Edge runtime 에선 presence 만 확인 (verify 는 라우트·서버 컴포넌트가 담당).
+ */
+const SUPABASE_AUTH_COOKIE_PREFIX = "sb-";
+const SUPABASE_AUTH_COOKIE_SUFFIX = "auth-token";
+
+function hasSupabaseSessionCookie(req: NextRequest): boolean {
+  for (const cookie of req.cookies.getAll()) {
+    if (
+      cookie.name.startsWith(SUPABASE_AUTH_COOKIE_PREFIX) &&
+      cookie.name.includes(SUPABASE_AUTH_COOKIE_SUFFIX) &&
+      cookie.value
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
 
 const ADMIN_REDIRECT_PATH = "/";
 const ADMIN_REDIRECT_QUERY = "reason=admin_login_required";
@@ -49,7 +67,7 @@ function isProtectedPath(pathname: string): boolean {
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
-  const hasSession = req.cookies.get(SESSION_COOKIE_NAME)?.value;
+  const hasSession = hasSupabaseSessionCookie(req);
 
   // /admin/* 가드
   if (pathname.startsWith("/admin")) {
