@@ -54,6 +54,12 @@ const PROTECTED_PATH_PREFIXES = [
   "/orders",
   "/chat",
   "/profile",
+  "/onboarding",  // audit 2026-05-17 P1-05: 비로그인 접근 차단
+  "/dashboard",   // audit P1-05 보강: 대시보드도 인증 필수
+  "/planner",
+  "/compare",
+  "/what-if",
+  "/spec-analysis",
 ] as const;
 
 const LOGIN_PATH = "/login";

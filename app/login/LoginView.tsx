@@ -156,14 +156,16 @@ export function LoginView({ initialMode = "login" }: LoginViewProps = {}): React
       >
         {mode === "signup" && (
           <div className="flex flex-col gap-1">
-            <Label htmlFor="login-name" className="text-xs">이름</Label>
+            <Label htmlFor="signup-name" className="text-xs">이름</Label>
             <Input
-              id="login-name"
+              id="signup-name"
+              name="name"
               type="text"
               autoComplete="name"
               required
               minLength={1}
               maxLength={50}
+              placeholder="홍길동"
               value={name}
               onChange={(e) => setName(e.target.value)}
               disabled={!!pending}
@@ -171,31 +173,35 @@ export function LoginView({ initialMode = "login" }: LoginViewProps = {}): React
           </div>
         )}
         <div className="flex flex-col gap-1">
-          <Label htmlFor="login-email" className="text-xs">이메일</Label>
+          <Label htmlFor={`${mode}-email`} className="text-xs">이메일</Label>
           <Input
-            id="login-email"
+            id={`${mode}-email`}
+            name="email"
             type="email"
-            autoComplete={mode === "login" ? "email" : "new-email"}
+            autoComplete={mode === "login" ? "email" : "email"}
             required
+            placeholder="hello@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={!!pending}
           />
         </div>
         <div className="flex flex-col gap-1">
-          <Label htmlFor="login-password" className="text-xs">비밀번호</Label>
+          <Label htmlFor={`${mode}-password`} className="text-xs">비밀번호</Label>
           <Input
-            id="login-password"
+            id={`${mode}-password`}
+            name="password"
             type="password"
             autoComplete={mode === "login" ? "current-password" : "new-password"}
             required
             minLength={mode === "signup" ? 8 : 6}
+            placeholder={mode === "signup" ? "영문·숫자 포함 8자 이상" : "비밀번호 입력"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             disabled={!!pending}
           />
           {mode === "signup" && (
-            <p className="text-2xs text-muted-foreground">8자 이상</p>
+            <p className="text-2xs text-muted-foreground">영문·숫자 포함 8자 이상</p>
           )}
         </div>
 
@@ -203,16 +209,19 @@ export function LoginView({ initialMode = "login" }: LoginViewProps = {}): React
           <label className="flex items-start gap-2 text-2xs text-muted-foreground">
             <input
               type="checkbox"
+              name="agreeTos"
+              required
+              aria-required="true"
               checked={agreeTos}
               onChange={(e) => setAgreeTos(e.target.checked)}
               data-testid="agree-tos"
-              className="mt-0.5"
+              className="mt-0.5 accent-brand-600"
             />
             <span>
               <Link href="/terms" className="underline">서비스 이용약관</Link>과
               {" "}
               <Link href="/privacy" className="underline">개인정보 처리방침</Link>에
-              동의합니다.
+              동의합니다. <span className="text-rose-600 dark:text-rose-400">(필수)</span>
             </span>
           </label>
         )}
