@@ -1,3 +1,8 @@
+/* Pretendard Variable — 한글 본문 표준. npm pretendard 패키지 제공.
+   variable axis: weight 100-900 (woff2), 약 200KB subset. */
+@import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
+/* Inter Variable — 영문/숫자. Pretendard 라틴 글리프와 미세 차이 보완용. */
+@import "@fontsource-variable/inter/index.css";
 
 @tailwind base;
 @tailwind components;
@@ -110,22 +115,22 @@ html {
 
 @layer base {
   :root {
-    /* Cool off-white — mint 브랜드와 톤 일치 (#fafaf9 살짝 차갑게) */
-    --background: 180 6% 97%;
-    --foreground: 180 25% 8%;
+    /* Cool off-white — ink-50 계열. emerald brand 와 잘 어울리는 차가운 그레이. */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 180 25% 8%;
+    --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 180 25% 8%;
-    /* Brand mint #00C9A7 = HSL(170 100% 39%). CLAUDE.md 디자인 가이드 일치. */
-    --primary: 170 100% 39%;
+    --popover-foreground: 222 47% 11%;
+    /* Brand emerald #10B981 = HSL(160 84% 39%). 2026-05 rebrand. */
+    --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 170 25% 92%;
-    --secondary-foreground: 180 25% 8%;
-    --muted: 180 8% 90%;
-    --muted-foreground: 180 12% 38%;
-    --accent: 170 80% 95%;
-    --accent-foreground: 170 100% 28%;
+    --secondary: 160 30% 92%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 20% 92%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 160 70% 95%;
+    --accent-foreground: 160 84% 28%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --success: 142 71% 36%;
@@ -139,10 +144,10 @@ html {
     --info: 217 71% 48%;
     --info-foreground: 0 0% 98%;
     --info-soft: 217 70% 95%;
-    --border: 180 8% 88%;
-    --input: 180 8% 88%;
-    --ring: 170 100% 39%;
-    /* shadcn radius base — lg=var(--radius), md=lg-2, sm=lg-4. xl/2xl는 Tailwind 기본(12/16). */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 160 84% 39%;
+    /* shadcn radius base — lg=var(--radius), md=lg-2, sm=lg-4. xl/2xl/3xl는 Tailwind 기본. */
     --radius: 12px;
 
     /* Hero card — 어두운 배경 위 텍스트 토큰 */
@@ -183,21 +188,22 @@ html {
   }
 
   .dark {
-    --background: 180 15% 6%;
-    --foreground: 180 12% 95%;
-    --card: 180 15% 11%;
-    --card-foreground: 180 12% 95%;
-    --popover: 180 15% 11%;
-    --popover-foreground: 180 12% 95%;
-    /* mint #00C9A7 다크에선 살짝 밝게(50%) 가독성 ↑ */
-    --primary: 170 75% 50%;
-    --primary-foreground: 180 25% 8%;
-    --secondary: 180 12% 16%;
-    --secondary-foreground: 180 12% 92%;
-    --muted: 180 12% 18%;
-    --muted-foreground: 180 8% 65%;
-    --accent: 170 50% 14%;
-    --accent-foreground: 170 70% 65%;
+    /* ink-950 #020617 = HSL(222 47% 4%). Linear-style deep cool ink. */
+    --background: 222 47% 4%;
+    --foreground: 210 40% 98%;
+    --card: 222 40% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 40% 8%;
+    --popover-foreground: 210 40% 98%;
+    /* emerald 다크에선 brand-300 (#6EE7B7) 톤 = HSL(156 72% 67%) — 가독성 ↑ */
+    --primary: 156 72% 67%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 160 50% 14%;
+    --accent-foreground: 156 72% 75%;
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
     --success: 142 60% 50%;
@@ -210,9 +216,9 @@ html {
     --info: 217 80% 60%;
     --info-foreground: 0 0% 98%;
     --info-soft: 217 50% 14%;
-    --border: 180 12% 22%;
-    --input: 180 12% 22%;
-    --ring: 170 75% 50%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 156 72% 67%;
 
     /* Dark mode: soft 배경은 더 깊고 채도 낮게, fg는 더 밝게 */
     --cat-safety: 160 60% 50%;

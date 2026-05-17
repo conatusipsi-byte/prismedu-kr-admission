@@ -9,6 +9,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 import { PublicNav } from "@/components/nav/PublicNav";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://conatusipsi.com"),
@@ -44,8 +45,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#00C9A7" },
-    { media: "(prefers-color-scheme: dark)", color: "#002218" },
+    { media: "(prefers-color-scheme: light)", color: "#10B981" },
+    { media: "(prefers-color-scheme: dark)", color: "#020617" },
   ],
 };
 
@@ -57,16 +58,18 @@ export default function RootLayout({
       <body className="font-body antialiased min-h-dvh">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-mint-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-xl focus:shadow-lg"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-brand-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-xl focus:shadow-lg"
         >
           메인 콘텐츠로 건너뛰기
         </a>
-        <AuthProvider>
-          <PublicNav />
-          <main id="main-content" className="min-h-dvh bg-background">
-            {children}
-          </main>
-        </AuthProvider>
+        <ThemeProvider>
+          <AuthProvider>
+            <PublicNav />
+            <main id="main-content" className="min-h-dvh bg-background">
+              {children}
+            </main>
+          </AuthProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
