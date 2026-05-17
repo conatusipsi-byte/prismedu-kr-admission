@@ -495,6 +495,32 @@ html {
   box-shadow: 0 0 0 4px hsl(var(--primary) / 0.18);
 }
 
+/* P2-05 audit: 카드 hover/focus 상태 페이지별 제각각이라 디자인 시스템 일관성 ↓.
+   본 클래스 하나로 통일: hover translateY + shadow, focus-visible ring 2px brand.
+   사용: <article className="card-interactive ..."> 또는 <Link className="card-interactive ...">. */
+.card-interactive {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+@media (hover: hover) {
+  .card-interactive:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 8px 20px -6px hsl(var(--foreground) / 0.08),
+      0 3px 6px -3px hsl(var(--foreground) / 0.05);
+  }
+}
+.card-interactive:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+.card-interactive:active {
+  transform: translateY(0) scale(0.985);
+  transition-duration: 0.1s;
+}
+
 /* Stagger entry — CSS variable로 delay 조절. inline style로 --i 설정.
    사용: <div className="animate-stagger" style={{"--i": index}} /> */
 .animate-stagger {
@@ -554,9 +580,10 @@ html {
 .illust-write    { animation: illust-write 4s ease-in-out infinite; transform-origin: 50% 100%; }
 .illust-ping     { animation: illust-ping 2.4s ease-out infinite; transform-origin: center; }
 
-/* Brand shimmer — skeleton/loading 표면에 brand-tinted sweep.
-   기본 muted 배경 위에 70deg primary 그라디언트가 좌→우로 흐름.
-   animate-pulse보다 "premium loading" 느낌. */
+/* Neutral shimmer — skeleton/loading 표면.
+   P2-03 audit: 이전엔 primary(brand emerald) 가 sweep 컬러 였으나, 로딩 상태와
+   실제 콘텐츠(브랜드 강조)의 시각 위계가 분리되지 않아 "이미 로드 끝"으로 오인.
+   → neutral muted-foreground 의 옅은 alpha 로 변경. brand 컬러는 CTA·뱃지 강조용으로 보존. */
 @keyframes shimmer-sweep {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
@@ -566,7 +593,7 @@ html {
     90deg,
     hsl(var(--muted)) 0%,
     hsl(var(--muted)) 40%,
-    hsl(var(--primary) / 0.12) 50%,
+    hsl(var(--muted-foreground) / 0.10) 50%,
     hsl(var(--muted)) 60%,
     hsl(var(--muted)) 100%
   );
@@ -578,7 +605,7 @@ html {
     90deg,
     hsl(var(--muted)) 0%,
     hsl(var(--muted)) 40%,
-    hsl(var(--primary) / 0.20) 50%,
+    hsl(var(--muted-foreground) / 0.18) 50%,
     hsl(var(--muted)) 60%,
     hsl(var(--muted)) 100%
   );

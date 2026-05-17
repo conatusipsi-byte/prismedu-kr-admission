@@ -32,19 +32,23 @@ export default {
         '2xl':['1.5rem',   { lineHeight: '1.9rem' }],
         '3xl':['1.875rem', { lineHeight: '2.25rem' }],
         '4xl':['2.25rem',  { lineHeight: '2.5rem' }],
-        '5xl':['3rem',     { lineHeight: '1.05' }],
-        // Display tier — hero headlines. tight tracking, near-1 leading.
-        '6xl':['3.75rem',  { lineHeight: '1.05', letterSpacing: '-0.035em' }],
-        '7xl':['4.5rem',   { lineHeight: '1.02', letterSpacing: '-0.04em' }],
-        '8xl':['5.5rem',   { lineHeight: '1.0',  letterSpacing: '-0.045em' }],
+        '5xl':['3rem',     { lineHeight: '1.12' }],
+        // Display tier — hero headlines.
+        // P2-04 audit: 이전 line-height 1.02 는 한글 받침↔다음 줄 자음 충돌 위험.
+        //   → 1.10~1.15 범위로 완화 (한글 본문 호흡).
+        // P2-02 audit: 이전 letter-spacing -0.04em 은 한글에서 빡빡함.
+        //   → -0.02~-0.03em 으로 완화.
+        '6xl':['3.75rem',  { lineHeight: '1.10', letterSpacing: '-0.020em' }],
+        '7xl':['4.5rem',   { lineHeight: '1.08', letterSpacing: '-0.025em' }],
+        '8xl':['5.5rem',   { lineHeight: '1.06', letterSpacing: '-0.030em' }],
       },
       letterSpacing: {
         // Pretendard 한글 본문 — 자연스러운 호흡.
         body: '-0.011em',
-        // Display headlines — Linear/Vercel 스타일 빡빡한 트래킹.
-        tight: '-0.025em',
-        tighter: '-0.035em',
-        tightest: '-0.045em',
+        // Display headlines — 한글 친화 (P2-02 audit: -0.04em 너무 빡빡).
+        tight: '-0.018em',
+        tighter: '-0.025em',
+        tightest: '-0.030em',
       },
       colors: {
         // ─────────────────────────────────────────────────────────────
