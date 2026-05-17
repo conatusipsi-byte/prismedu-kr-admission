@@ -6,15 +6,18 @@ import { Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-[colors,box-shadow,transform,opacity] duration-200 ease-toss focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  // 우측 SVG(아이콘)에 hover 시 미세 translate-x — Linear/Stripe 스타일 마이크로 모션.
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-[colors,box-shadow,transform,opacity] duration-200 ease-toss focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 [&>svg:last-child]:transition-transform [&>svg:last-child]:duration-200 hover:[&>svg:last-child]:translate-x-0.5",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        // primary === default (의미적 alias). spec 명세 정렬용.
+        default: "bg-brand-600 text-white shadow-sm hover:bg-brand-700 active:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-400 dark:text-brand-950",
+        primary: "bg-brand-600 text-white shadow-sm hover:bg-brand-700 active:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-400 dark:text-brand-950",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground hover:border-foreground/20",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
