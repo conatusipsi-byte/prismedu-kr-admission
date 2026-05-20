@@ -328,7 +328,15 @@ function sanitizeReturnUrl(raw: string): string {
 
 /** Supabase Auth 에러 메시지 한국어 친화 변환 */
 function humanizeAuthError(msg: string): string {
-  // Supabase 메시지
+  // 개발자 디버깅 — raw msg 를 콘솔에 노출 (사용자에겐 친화 메시지만 표시)
+  if (typeof window !== "undefined") {
+    console.error("[auth] raw error:", msg);
+  }
+  // OAuth provider 비활성 — Supabase Console 에서 Google/Kakao provider 활성화 필요
+  if (/Unsupported provider|provider is not enabled/i.test(msg)) {
+    return "소셜 로그인은 곧 활성화 예정이에요. 잠시만 이메일로 가입해주세요.";
+  }
+  // Supabase 일반
   if (/Invalid login credentials/i.test(msg)) return "이메일 또는 비밀번호가 일치하지 않아요.";
   if (/Email not confirmed/i.test(msg)) return "이메일 인증이 아직 안 됐어요. 받으신 메일의 확인 링크를 눌러주세요.";
   if (/User already registered|already.*registered/i.test(msg)) return "이미 가입된 이메일이에요. 로그인을 시도해주세요.";
@@ -337,11 +345,16 @@ function humanizeAuthError(msg: string): string {
   if (/rate limit|too many|For security purposes/i.test(msg)) return "요청이 너무 잦아요. 잠시 후 다시 시도해주세요.";
   if (/User not found|not.*found/i.test(msg)) return "등록된 사용자가 없어요. 회원가입을 먼저 해주세요.";
   if (/signup.*disabled|signups not allowed/i.test(msg)) return "현재 회원가입이 일시 중단됐어요.";
+  // 이메일 SMTP 미설정 — Supabase 가 confirmation mail 보내려다 실패 (Resend 미등록 시)
+  if (/error sending|smtp|email rate limit|email.*provider/i.test(msg)) {
+    return "인증 메일 발송에 일시적 문제가 있어요. 잠시 후 다시 시도해주세요.";
+  }
   // 소셜 로그인
   if (/popup.*closed|window.*closed/i.test(msg)) return "로그인 창을 닫으셨어요. 다시 시도해주세요.";
   if (/팝업이 차단/.test(msg)) return msg;
   if (/카카오/.test(msg)) return msg;
-  return "로그인에 실패했어요. 잠시 후 다시 시도해주세요.";
+  // fallback — raw msg 첫 80자를 함께 노출 (사용자가 스크린샷 보낼 때 진단 가능)
+  return `로그인에 실패했어요. (참고: ${msg.slice(0, 80)})`;
 }
 
 /* ═══ 아이콘 ═══ */
