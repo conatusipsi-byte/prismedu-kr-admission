@@ -276,10 +276,10 @@ export default function LandingPage(): React.ReactElement {
 
       {/* ═══ 3-step timeline ═══ */}
       <MotionSection
-        className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-20 lg:py-28"
+        className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg pt-16 pb-10 lg:pt-24 lg:pb-14"
         stagger={120}
       >
-        <MotionItem className="mb-12 lg:mb-16 flex flex-col items-center text-center gap-3">
+        <MotionItem className="mb-10 lg:mb-14 flex flex-col items-center text-center gap-3">
           <Badge variant="pill-iris" size="md">How it works</Badge>
           <h2 className="font-display text-3xl lg:text-5xl font-extrabold tracking-tighter">
             3단계로 시작해요
@@ -340,7 +340,7 @@ export default function LandingPage(): React.ReactElement {
       </MotionSection>
 
       {/* ═══ Quote ═══ */}
-      <MotionSection className="mx-auto w-full max-w-content px-gutter-sm md:px-gutter lg:px-gutter-lg py-16 lg:py-24">
+      <MotionSection className="mx-auto w-full max-w-content px-gutter-sm md:px-gutter lg:px-gutter-lg pt-10 pb-16 lg:pt-14 lg:pb-24">
         <MotionItem
           as="article"
           className="relative overflow-hidden rounded-[2rem] border-2 border-dashed border-brand-300/60 dark:border-brand-700/60 bg-brand-50/30 dark:bg-brand-950/30 px-8 py-10 md:px-12 md:py-14 backdrop-blur-sm"

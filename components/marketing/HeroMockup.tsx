@@ -91,9 +91,9 @@ export function HeroMockup({ className }: { className?: string }): React.ReactEl
                 <TrendingUp className="h-4 w-4 text-brand-600" />
                 <span>분석 결과 · 3개 학과</span>
               </div>
-              <span className="inline-flex items-center gap-1 rounded-full border border-brand-200 bg-brand-50 px-2 py-0.5 text-2xs font-semibold text-brand-700 dark:border-brand-500/30 dark:bg-brand-500/10 dark:text-brand-300">
-                <Sparkles className="h-3 w-3" />
-                AI 분석
+              {/* 정직성 원칙(P-002): 실제 분석이 아닌 시각용 더미라는 점 명시 */}
+              <span className="inline-flex items-center gap-1 rounded-full border border-amber-300/60 bg-amber-50 px-2 py-0.5 text-2xs font-semibold text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-200">
+                예시 화면
               </span>
             </div>
 

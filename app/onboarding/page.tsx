@@ -25,7 +25,7 @@ const STEP_PREVIEW = [
   { icon: Compass,  label: "1. 기본 정보", desc: "학년·계열" },
   { icon: ChartBar, label: "2. 성적",       desc: "내신·수능/모의" },
   { icon: Sparkles, label: "3. 비교과",     desc: "세특·동아리·수상" },
-  { icon: Trophy,   label: "4. 결과 확인",  desc: "맞춤 추천 + 시뮬레이션" },
+  { icon: Trophy,   label: "4. 저장·완료",  desc: "분석·시뮬레이션 진입" },
 ] as const;
 
 export default function OnboardingPage(): React.ReactElement {
