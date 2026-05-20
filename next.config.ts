@@ -17,14 +17,14 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      // Next.js 인라인 스크립트, Firebase/Toss SDK 허용
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.tosspayments.com https://*.googleapis.com https://*.gstatic.com https://apis.google.com",
+      // Next.js 인라인 + Toss SDK + Google OAuth + Kakao OAuth
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.tosspayments.com https://*.googleapis.com https://*.gstatic.com https://apis.google.com https://accounts.google.com https://t1.kakaocdn.net https://developers.kakao.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
       "font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net",
       "img-src 'self' data: blob: https:",
-      // Firebase Auth/Firestore, Toss, Anthropic(서버 경유지만 혹시 대비)
-      "connect-src 'self' https://*.googleapis.com https://*.firebaseio.com https://*.cloudfunctions.net wss://*.firebaseio.com https://api.tosspayments.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://*.sentry.io https://*.ingest.sentry.io",
-      "frame-src 'self' https://*.tosspayments.com https://*.firebaseapp.com",
+      // Supabase Auth/REST/Realtime (wss) · Toss · Google/Kakao OAuth · Sentry
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.googleapis.com https://api.tosspayments.com https://accounts.google.com https://kauth.kakao.com https://kapi.kakao.com https://*.sentry.io https://*.ingest.sentry.io",
+      "frame-src 'self' https://*.tosspayments.com https://accounts.google.com https://kauth.kakao.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
