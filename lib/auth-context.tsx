@@ -280,10 +280,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const { error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { name } },
+      options: {
+        data: { name },
+        // 인증 완료 후 메인 페이지로 (사용자 요청 — 온보딩은 자율 진입)
+        emailRedirectTo: `${window.location.origin}/auth/callback?next=/`,
+      },
     });
     if (error) throw error;
-    // profiles 자동 생성 트리거가 동작. 이후 onAuthStateChange 가 SIGNED_IN 이벤트 발사.
+    // profiles 자동 생성 트리거가 동작. 이메일 확인 후 onAuthStateChange SIGNED_IN.
   };
 
   const loginWithEmail = async (email: string, password: string) => {

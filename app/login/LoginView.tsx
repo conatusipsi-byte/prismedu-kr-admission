@@ -56,13 +56,26 @@ export function LoginView({ initialMode = "login" }: LoginViewProps = {}): React
     }
   }, [auth.user, auth.loading, returnUrlRaw, router]);
 
+  // URL ?error=... 쿼리 (auth/callback 에서 verify 실패 시 redirect) → 사용자에게 노출
+  React.useEffect(() => {
+    const errParam = params.get("error");
+    if (errParam) {
+      setError(humanizeAuthError(decodeURIComponent(errParam)));
+    }
+  }, [params]);
+
   async function handle(method: string, fn: () => Promise<void>) {
     setError(null);
     setPending(method);
     try {
       await fn();
-      // session 쿠키 발급 — middleware/server component 인증 신호.
-      // 실패해도 클라 onAuthStateChanged는 동작 — 다음 호출에서 재시도.
+      // 가입 흐름: 이메일 confirm 대기 → 전용 안내 페이지로 즉시 이동.
+      // session 쿠키 발급은 confirm 후 /auth/callback 에서 수행되므로 여기선 생략.
+      if (method === "email-signup") {
+        router.push(`/signup/verify-email?email=${encodeURIComponent(email)}`);
+        return;
+      }
+      // 로그인/OAuth 흐름: session 쿠키 발급 — middleware/server component 인증 신호.
       try {
         const { fetchWithAuth } = await import("@/lib/api-client");
         await fetchWithAuth("/api/auth/session");
@@ -71,6 +84,7 @@ export function LoginView({ initialMode = "login" }: LoginViewProps = {}): React
       }
     } catch (e) {
       setError(humanizeAuthError((e as Error).message));
+    } finally {
       setPending(null);
     }
   }
@@ -335,6 +349,14 @@ function humanizeAuthError(msg: string): string {
   // OAuth provider 비활성 — Supabase Console 에서 Google/Kakao provider 활성화 필요
   if (/Unsupported provider|provider is not enabled/i.test(msg)) {
     return "소셜 로그인은 곧 활성화 예정이에요. 잠시만 이메일로 가입해주세요.";
+  }
+  // callback 경로 에러 (auth/callback route.ts)
+  if (msg === "missing_code" || msg === "missing_code_or_token") {
+    return "인증 링크가 만료됐거나 잘못됐어요. 다시 가입 또는 메일 재발송을 시도해주세요.";
+  }
+  // OTP / token 만료 (이메일 인증 링크가 24시간 등 만료된 경우)
+  if (/token.*expired|otp.*expired|invalid.*token/i.test(msg)) {
+    return "인증 링크가 만료됐어요. 가입을 다시 시도하면 새 메일이 발송돼요.";
   }
   // Supabase 일반
   if (/Invalid login credentials/i.test(msg)) return "이메일 또는 비밀번호가 일치하지 않아요.";
