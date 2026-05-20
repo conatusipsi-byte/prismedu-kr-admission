@@ -9,7 +9,7 @@
 
 import type { Metadata } from "next";
 import { Sparkles, Compass, ChartBar, Trophy } from "lucide-react";
-import { OnboardingWizard } from "@/components/analysis/OnboardingWizard";
+import { OnboardingWizardLoader } from "@/components/analysis/OnboardingWizardLoader";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
@@ -74,7 +74,7 @@ export default function OnboardingPage(): React.ReactElement {
           ))}
         </ol>
 
-        <OnboardingWizard />
+        <OnboardingWizardLoader />
       </div>
     </div>
   );

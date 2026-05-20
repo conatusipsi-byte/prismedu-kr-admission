@@ -17,11 +17,19 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { LayoutDashboard, LogOut, Menu, User as UserIcon, X } from "lucide-react";
 import { useAuth } from "@/lib/auth-context";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Logo } from "@/components/brand/Logo";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
@@ -32,7 +40,7 @@ const NAV_ITEMS = [
 ] as const;
 
 export function PublicNav(): React.ReactElement | null {
-  const { user, loading } = useAuth();
+  const { user, profile, loading, logout } = useAuth();
   const pathname = usePathname();
   const [open, setOpen] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
@@ -105,9 +113,17 @@ export function PublicNav(): React.ReactElement | null {
             {!loading && (
               <>
                 {user ? (
-                  <Button asChild size="sm" variant="primary">
-                    <Link href="/dashboard">대시보드</Link>
-                  </Button>
+                  <>
+                    <Button asChild size="sm" variant="outline">
+                      <Link href="/dashboard">대시보드</Link>
+                    </Button>
+                    <UserMenu
+                      name={profile?.name ?? (user.user_metadata?.name as string | undefined) ?? "내 계정"}
+                      email={user.email ?? null}
+                      plan={profile?.plan}
+                      onLogout={logout}
+                    />
+                  </>
                 ) : (
                   <>
                     <Button asChild size="sm" variant="outline">
@@ -188,9 +204,24 @@ export function PublicNav(): React.ReactElement | null {
                 {!loading && (
                   <div className="flex flex-col gap-2">
                     {user ? (
-                      <Button asChild size="xl" variant="primary" className="w-full">
-                        <Link href="/dashboard">대시보드</Link>
-                      </Button>
+                      <>
+                        <Button asChild size="xl" variant="primary" className="w-full">
+                          <Link href="/dashboard">대시보드</Link>
+                        </Button>
+                        <Button asChild size="xl" variant="outline" className="w-full">
+                          <Link href="/profile">프로필</Link>
+                        </Button>
+                        <Button
+                          type="button"
+                          size="xl"
+                          variant="ghost"
+                          className="w-full"
+                          onClick={() => logout()}
+                        >
+                          <LogOut className="h-4 w-4" />
+                          로그아웃
+                        </Button>
+                      </>
                     ) : (
                       <>
                         <Button asChild size="xl" variant="outline" className="w-full">
@@ -209,5 +240,69 @@ export function PublicNav(): React.ReactElement | null {
         )}
       </AnimatePresence>
     </>
+  );
+}
+
+/**
+ * UserMenu — 로그인 상태 우상단 아바타·드롭다운.
+ *
+ * 진입점: 프로필 / (마스터 시) 운영자 대시보드 / 로그아웃.
+ * 발견성 개선 — 이전엔 로그아웃 진입이 /profile 안에 묻혀 있었음.
+ */
+function UserMenu({
+  name,
+  email,
+  plan,
+  onLogout,
+}: {
+  name: string;
+  email: string | null;
+  plan?: string;
+  onLogout: () => void;
+}): React.ReactElement {
+  const initial = (name?.[0] ?? "?").toUpperCase();
+  const planLabel = plan === "elite" ? "Elite" : plan === "pro" ? "Pro" : "Free";
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <button
+          type="button"
+          aria-label="사용자 메뉴"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-iris text-white text-xs font-bold shadow-sm hover:opacity-90 transition-opacity"
+        >
+          {initial}
+        </button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-56">
+        <DropdownMenuLabel>
+          <div className="flex flex-col gap-0.5">
+            <span className="font-semibold">{name}</span>
+            {email && <span className="text-2xs text-muted-foreground truncate">{email}</span>}
+            <span className="text-2xs text-brand-700 dark:text-brand-300 font-medium">
+              {planLabel} 플랜
+            </span>
+          </div>
+        </DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem asChild>
+          <Link href="/dashboard">
+            <LayoutDashboard className="h-4 w-4" />
+            <span>대시보드</span>
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Link href="/profile">
+            <UserIcon className="h-4 w-4" />
+            <span>프로필</span>
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem onClick={() => onLogout()} className="text-destructive focus:text-destructive">
+          <LogOut className="h-4 w-4" />
+          <span>로그아웃</span>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

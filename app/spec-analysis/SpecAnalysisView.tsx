@@ -30,10 +30,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  AnalysisFormWizard,
-  type AnalysisFormPayload,
-} from "@/components/analysis/AnalysisFormWizard";
+import { AnalysisFormWizardLoader } from "@/components/analysis/AnalysisFormWizardLoader";
+import { type AnalysisFormPayload } from "@/components/analysis/AnalysisFormWizard";
 import type { SpecAnalysisResponse } from "@/lib/schemas/api/spec-analysis";
 
 const AREA_LABEL: Record<string, string> = {
@@ -120,7 +118,7 @@ export function SpecAnalysisView(): React.ReactElement {
         </p>
       </Card>
 
-      <AnalysisFormWizard onSubmit={handleSubmit} />
+      <AnalysisFormWizardLoader onSubmit={handleSubmit} />
 
       {error && (
         <Card className="p-card-lg border-destructive/30 bg-destructive/5">

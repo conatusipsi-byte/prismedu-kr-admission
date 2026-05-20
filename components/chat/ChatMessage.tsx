@@ -20,6 +20,8 @@
 
 import * as React from "react";
 import { Bot, ShieldCheck, User } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
@@ -74,13 +76,21 @@ export function ChatMessage({ message, className }: ChatMessageProps): React.Rea
       <div className={cn("flex max-w-[85%] flex-col gap-1", isUser ? "items-end" : "items-start")}>
         <div
           className={cn(
-            "rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed whitespace-pre-wrap break-words",
+            "rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed break-words",
             isUser
-              ? "bg-brand-600 text-white"
+              ? "bg-brand-600 text-white whitespace-pre-wrap"
               : "bg-zinc-50 text-zinc-900 dark:bg-zinc-900/50 dark:text-zinc-100",
           )}
         >
-          {message.content}
+          {isUser ? (
+            message.content
+          ) : (
+            // AI 응답은 마크다운 — 헤딩·리스트·테이블·강조 렌더링.
+            // @tailwindcss/typography 미설치 환경이라 components prop 으로 인라인 스타일.
+            <div className="space-y-1.5">
+              <ReactMarkdown remarkPlugins={[remarkGfm]} components={MARKDOWN_COMPONENTS}>{message.content}</ReactMarkdown>
+            </div>
+          )}
         </div>
 
         {!isUser && message.sanitized && (
@@ -153,3 +163,65 @@ function SanitizeNotice({ patterns }: { patterns: string[] }): React.ReactElemen
 function formatTime(ms: number): string {
   return new Date(ms).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" });
 }
+
+/**
+ * react-markdown 컴포넌트 매핑 — Tailwind 인라인 클래스.
+ *
+ * @tailwindcss/typography 가 없는 환경에서 prose-* 대용. 채팅 말풍선 안에
+ * 들어가는 좁은 폭을 가정하고 여백·폰트 크기를 챗 톤에 맞춤.
+ */
+const MARKDOWN_COMPONENTS = {
+  h1: ({ children }: { children?: React.ReactNode }) => (
+    <h1 className="mt-2 mb-1 text-base font-bold">{children}</h1>
+  ),
+  h2: ({ children }: { children?: React.ReactNode }) => (
+    <h2 className="mt-2 mb-1 text-sm font-bold">{children}</h2>
+  ),
+  h3: ({ children }: { children?: React.ReactNode }) => (
+    <h3 className="mt-2 mb-1 text-sm font-semibold">{children}</h3>
+  ),
+  h4: ({ children }: { children?: React.ReactNode }) => (
+    <h4 className="mt-1.5 mb-0.5 text-sm font-semibold">{children}</h4>
+  ),
+  p: ({ children }: { children?: React.ReactNode }) => (
+    <p className="leading-relaxed">{children}</p>
+  ),
+  ul: ({ children }: { children?: React.ReactNode }) => (
+    <ul className="ml-4 list-disc space-y-0.5">{children}</ul>
+  ),
+  ol: ({ children }: { children?: React.ReactNode }) => (
+    <ol className="ml-4 list-decimal space-y-0.5">{children}</ol>
+  ),
+  li: ({ children }: { children?: React.ReactNode }) => (
+    <li className="leading-relaxed">{children}</li>
+  ),
+  strong: ({ children }: { children?: React.ReactNode }) => (
+    <strong className="font-semibold">{children}</strong>
+  ),
+  em: ({ children }: { children?: React.ReactNode }) => (
+    <em className="italic">{children}</em>
+  ),
+  code: ({ children }: { children?: React.ReactNode }) => (
+    <code className="rounded bg-zinc-200/70 px-1 py-0.5 text-2xs font-mono dark:bg-zinc-700/70">{children}</code>
+  ),
+  pre: ({ children }: { children?: React.ReactNode }) => (
+    <pre className="overflow-x-auto rounded-lg bg-zinc-200/70 p-2 text-2xs dark:bg-zinc-800/70">{children}</pre>
+  ),
+  blockquote: ({ children }: { children?: React.ReactNode }) => (
+    <blockquote className="border-l-2 border-brand-400 pl-2 text-muted-foreground">{children}</blockquote>
+  ),
+  table: ({ children }: { children?: React.ReactNode }) => (
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse text-2xs">{children}</table>
+    </div>
+  ),
+  th: ({ children }: { children?: React.ReactNode }) => (
+    <th className="border border-zinc-300/70 px-2 py-1 text-left font-semibold dark:border-zinc-700/70">{children}</th>
+  ),
+  td: ({ children }: { children?: React.ReactNode }) => (
+    <td className="border border-zinc-300/70 px-2 py-1 dark:border-zinc-700/70">{children}</td>
+  ),
+  a: ({ children, href }: { children?: React.ReactNode; href?: string }) => (
+    <a href={href} className="text-brand-600 underline" target="_blank" rel="noopener noreferrer">{children}</a>
+  ),
+};

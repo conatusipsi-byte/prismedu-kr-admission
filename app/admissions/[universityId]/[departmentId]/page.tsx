@@ -14,16 +14,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { ChevronRight, Lock } from "lucide-react";
 import { AdmissionDetailHero } from "@/components/admissions/AdmissionDetailHero";
 import { TrackDetailCard } from "@/components/admissions/TrackDetailCard";
 import { PrevYearResultCard } from "@/components/admissions/PrevYearResultCard";
-import { ProbabilityTab } from "@/components/admissions/ProbabilityTab";
+import { ProbabilitySection } from "@/components/admissions/ProbabilitySection";
 import { AnalysisCtaBox } from "@/components/admissions/AnalysisCtaBox";
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { fetchDepartmentDetail } from "@/lib/admission/fetch-detail";
 import type { AdmissionTrackKind, AdmissionTrack } from "@/types/admission";
 
@@ -168,26 +165,11 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
               )}
             </section>
 
-            {/* 합격률 분석 (Gated) */}
-            <section id="probability" data-section="probability" className="flex flex-col gap-3">
-              <div className="flex items-center justify-between">
-                <h2 className="text-base font-bold tracking-tight inline-flex items-center gap-2">
-                  <Lock className="h-3.5 w-3.5 text-muted-foreground" />
-                  합격률 분석
-                </h2>
-                <Badge variant="pill-iris" size="sm">로그인 필요</Badge>
-              </div>
-              <Suspense fallback={<Card><CardContent className="h-32" /></Card>}>
-                <ProbabilityTab
-                  trackKind={primaryTrackKind}
-                  sampleSufficient={sampleSufficient}
-                  lockReason={undefined}
-                  probability={null}
-                  hakjong={null}
-                  isAuthenticated={false}
-                />
-              </Suspense>
-            </section>
+            {/* 합격률 분석 (Gated) — 클라이언트 wrapper 가 로그인 상태 판정 */}
+            <ProbabilitySection
+              trackKind={primaryTrackKind}
+              sampleSufficient={sampleSufficient}
+            />
 
             {/* 경쟁률 추이 — placeholder (UP-07 audit: 콘텐츠 골격 정의) */}
             <section id="prev-trend" data-section="prev-trend" className="rounded-3xl border border-border bg-card p-6 lg:p-7">

@@ -59,16 +59,23 @@ export function PlannerView(): React.ReactElement {
   const [data, setData] = React.useState<ApiResponse | null>(null);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState<string | null>(null);
+  const [errorStatus, setErrorStatus] = React.useState<number | null>(null);
   const [pending, setPending] = React.useState<Set<string>>(new Set());
 
   const fetchData = React.useCallback(async () => {
     setLoading(true);
     setError(null);
+    setErrorStatus(null);
     try {
       const res = await fetchWithAuth<ApiResponse>("/api/planner");
       setData(res);
     } catch (e) {
-      setError(e instanceof ApiError ? e.message : (e as Error).message);
+      if (e instanceof ApiError) {
+        setError(e.message);
+        setErrorStatus(e.status);
+      } else {
+        setError((e as Error).message);
+      }
     } finally {
       setLoading(false);
     }
@@ -126,6 +133,11 @@ export function PlannerView(): React.ReactElement {
         <Loader2 className="h-4 w-4 animate-spin" /> 플래너 로드 중…
       </div>
     );
+  }
+
+  // 403 — Pro/Elite 미가입 → 페이월 카드 (빨간 에러 아님)
+  if (error && errorStatus === 403) {
+    return <PaywallCard reason={error} />;
   }
 
   if (error) {
@@ -293,6 +305,40 @@ function TaskRow({
         )}
       </div>
     </li>
+  );
+}
+
+/**
+ * 403 (Pro/Elite 미가입) — 빨간 "조회 실패" 대신 ProGate 와 같은 톤의 페이월 카드.
+ * 서버가 보낸 reason 메시지("자동 플래너는 Pro 전용 기능입니다") 를 그대로 안내문구로.
+ */
+function PaywallCard({ reason }: { reason: string }): React.ReactElement {
+  return (
+    <Card className="p-card-lg border-brand-300 dark:border-brand-700 bg-brand-50/40 dark:bg-brand-950/30">
+      <div className="flex flex-col items-center text-center gap-3 py-8 max-w-md mx-auto">
+        <div className="w-14 h-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center">
+          <CheckCircle2 className="h-6 w-6" />
+        </div>
+        <h2 className="text-lg font-bold text-foreground">자동 플래너는 Pro 전용 기능이에요</h2>
+        <p className="text-sm text-muted-foreground break-keep-all leading-relaxed">
+          {reason}
+        </p>
+        <p className="text-xs text-muted-foreground break-keep-all leading-relaxed">
+          요금제를 업그레이드하면 수시 6장·정시 가나다군 일정에 맞춰 task 가 자동 생성됩니다.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-2 pt-2">
+          <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
+            <Link href="/pricing">
+              요금제 보기
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </Button>
+          <Button asChild size="lg" variant="outline">
+            <Link href="/payment">시즌권 결제</Link>
+          </Button>
+        </div>
+      </div>
+    </Card>
   );
 }
 

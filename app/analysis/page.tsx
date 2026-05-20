@@ -12,7 +12,7 @@
  */
 
 import type { Metadata } from "next";
-import { AnalysisFormWizard } from "@/components/analysis/AnalysisFormWizard";
+import { AnalysisFormWizardLoader } from "@/components/analysis/AnalysisFormWizardLoader";
 
 export const metadata: Metadata = {
   title: "합격률 분석 — Conatus",
@@ -41,7 +41,7 @@ export default function AnalysisPage(): React.ReactElement {
           입력은 언제든 수정·재분석 가능합니다.
         </p>
       </header>
-      <AnalysisFormWizard />
+      <AnalysisFormWizardLoader />
     </div>
   );
 }

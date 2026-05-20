@@ -198,9 +198,22 @@ function AccountSection({
   );
 }
 
+interface SpecSummary {
+  schoolYear: 1 | 2 | 3;
+  gpaCount: number;
+  gpaAverage: number | null;
+  hasCsat: boolean;
+  csatGrades?: {
+    korean: number;
+    math: number;
+    english: number;
+    history: number;
+  };
+  updatedAt?: string;
+}
+
 function SpecSection({ uid, fallbackHasSpec }: { uid: string; fallbackHasSpec: boolean }): React.ReactElement {
-  // /api/user/specs GET 으로 실제 user_specs 테이블에 1건 이상 있는지 확인.
-  // 미응답·에러 시엔 profile 컨텍스트의 fallback 사용.
+  const [summary, setSummary] = React.useState<SpecSummary | null>(null);
   const [hasSpec, setHasSpec] = React.useState(fallbackHasSpec);
   const [checked, setChecked] = React.useState(false);
 
@@ -209,9 +222,48 @@ function SpecSection({ uid, fallbackHasSpec }: { uid: string; fallbackHasSpec: b
     (async () => {
       try {
         const { fetchWithAuth } = await import("@/lib/api-client");
-        const data = await fetchWithAuth<{ items: unknown[] }>("/api/user/specs");
+        const data = await fetchWithAuth<{
+          items: Array<{
+            id: string;
+            as_of: { schoolYear: 1 | 2 | 3; semester: 1 | 2 };
+            school_record: { gpaByTerm: Array<{ relativeGpa: number; totalUnits?: number }> };
+            csat: null | {
+              korean: { grade: number };
+              math: { grade: number };
+              english: { grade: number };
+              history: { grade: number };
+            };
+            updated_at?: string;
+          }>;
+        }>("/api/user/specs");
         if (cancelled) return;
-        setHasSpec((data.items?.length ?? 0) > 0);
+        const latest = data.items?.[0];
+        if (latest) {
+          const terms = latest.school_record?.gpaByTerm ?? [];
+          const totalUnits = terms.reduce((s, t) => s + (t.totalUnits ?? 0), 0);
+          const weightedSum = terms.reduce((s, t) => s + t.relativeGpa * (t.totalUnits ?? 1), 0);
+          const totalWeight = terms.reduce((s, t) => s + (t.totalUnits ?? 1), 0);
+          const gpaAverage = totalWeight > 0 ? weightedSum / totalWeight : null;
+          setSummary({
+            schoolYear: latest.as_of.schoolYear,
+            gpaCount: terms.length,
+            gpaAverage,
+            hasCsat: !!latest.csat,
+            csatGrades: latest.csat
+              ? {
+                  korean: latest.csat.korean.grade,
+                  math: latest.csat.math.grade,
+                  english: latest.csat.english.grade,
+                  history: latest.csat.history.grade,
+                }
+              : undefined,
+            updatedAt: latest.updated_at,
+          });
+          setHasSpec(true);
+          void totalUnits;
+        } else {
+          setHasSpec(false);
+        }
       } catch {
         /* 401·네트워크 등 — fallback 유지 */
       } finally {
@@ -223,6 +275,10 @@ function SpecSection({ uid, fallbackHasSpec }: { uid: string; fallbackHasSpec: b
     };
   }, [uid]);
 
+  const yearLabel = summary
+    ? summary.schoolYear === 1 ? "고1" : summary.schoolYear === 2 ? "고2" : "고3·N수"
+    : "";
+
   return (
     <SectionCard
       icon={<Pencil className="h-4 w-4" />}
@@ -230,13 +286,43 @@ function SpecSection({ uid, fallbackHasSpec }: { uid: string; fallbackHasSpec: b
       description="내신·수능·생기부 비교과 입력값"
     >
       <div className="space-y-3">
-        <p className="text-sm text-muted-foreground break-keep-all leading-relaxed">
-          {hasSpec
-            ? "현재 저장된 프로필을 기반으로 분석·시뮬레이션이 동작합니다. 학기가 바뀌면 새로 입력해주세요."
-            : checked
+        {hasSpec && summary ? (
+          <>
+            <p className="text-sm text-muted-foreground break-keep-all leading-relaxed">
+              현재 저장된 프로필을 기반으로 분석·시뮬레이션이 동작합니다. 학기가 바뀌면 새로 입력해주세요.
+            </p>
+            <dl className="grid grid-cols-2 gap-3 rounded-lg border border-border bg-muted/30 p-3 text-xs">
+              <div>
+                <dt className="text-muted-foreground">학년</dt>
+                <dd className="font-medium tabular-nums">{yearLabel}</dd>
+              </div>
+              <div>
+                <dt className="text-muted-foreground">내신 기록</dt>
+                <dd className="font-medium tabular-nums">
+                  {summary.gpaCount}학기
+                  {summary.gpaAverage != null && (
+                    <span className="text-muted-foreground"> · 평균 {summary.gpaAverage.toFixed(2)}등급</span>
+                  )}
+                </dd>
+              </div>
+              {summary.hasCsat && summary.csatGrades && (
+                <div className="col-span-2">
+                  <dt className="text-muted-foreground">수능/모의 등급</dt>
+                  <dd className="font-medium tabular-nums">
+                    국 {summary.csatGrades.korean} · 수 {summary.csatGrades.math} ·
+                    영 {summary.csatGrades.english} · 한 {summary.csatGrades.history}
+                  </dd>
+                </div>
+              )}
+            </dl>
+          </>
+        ) : (
+          <p className="text-sm text-muted-foreground break-keep-all leading-relaxed">
+            {checked
               ? "아직 저장된 입시 프로필이 없어요. 한 번 입력하면 분석·What-if·카운슬러가 같은 데이터로 동작합니다."
               : "저장된 프로필을 불러오는 중이에요…"}
-        </p>
+          </p>
+        )}
         <Button asChild size="default" variant={hasSpec ? "outline" : "default"} className={hasSpec ? "" : "bg-brand-600 hover:bg-brand-700"}>
           <Link href="/onboarding">
             {hasSpec ? "프로필 수정하기" : "프로필 만들기"}
