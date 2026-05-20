@@ -43,7 +43,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
             <ShieldAlert aria-hidden className="h-3 w-3" />
             ADMIN
           </span>
-          <h1 className="text-sm font-semibold">conatusipsi 운영 콘솔</h1>
+          <h1 className="text-sm font-semibold">Conatus 운영 콘솔</h1>
           <Link
             href="/"
             className="ml-auto text-xs text-muted-foreground hover:underline"

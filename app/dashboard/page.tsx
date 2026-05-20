@@ -13,7 +13,7 @@ import type { Metadata } from "next";
 import { DashboardView } from "./DashboardView";
 
 export const metadata: Metadata = {
-  title: "대시보드 — conatusipsi",
+  title: "대시보드 — Conatus",
   description: "수능·원서접수 D-Day와 수시 6장·정시 가나다군 진행 상황을 한눈에.",
   robots: { index: false, follow: false },
   alternates: { canonical: "/dashboard" },

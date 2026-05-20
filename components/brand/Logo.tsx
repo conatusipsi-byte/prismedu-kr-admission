@@ -2,7 +2,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Logo — conatusipsi 모노그램.
+ * Logo — Conatus 모노그램.
  *
  * 'c' 곡선 안쪽에 학사모(graduation cap) 미니 모티프.
  * brand-500 → iris 그라디언트로 칠해진 squircle 배경.

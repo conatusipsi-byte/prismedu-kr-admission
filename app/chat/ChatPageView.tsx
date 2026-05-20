@@ -14,7 +14,7 @@ import { ChatInterface } from "@/components/chat/ChatInterface";
 import type { ChatContextSchool } from "@/lib/admission/chat-context";
 
 const WELCOME_GENERAL =
-  "안녕하세요! 한국 대학 입시 AI 카운슬러입니다. 수시·정시·전형·전략 등 무엇이든 물어보세요.\n\n표본 부족 학과는 합격률을 정확히 답변드릴 수 없지만, 모집요강·전형 정보는 자유롭게 안내해드려요.";
+  "안녕하세요! Conatus의 한국 대학 입시 AI 카운슬러입니다. 수시·정시·전형·전략 등 무엇이든 물어보세요.\n\n표본 부족 학과는 합격률을 정확히 답변드릴 수 없지만, 모집요강·전형 정보는 자유롭게 안내해드려요.";
 
 const WELCOME_FROM_MATCH =
   "분석 결과를 기반으로 상담을 시작합니다. 결과 페이지의 학과별로 추가 질문을 해주시면, 컨텍스트에 맞춘 답변을 드릴게요.";
@@ -23,7 +23,7 @@ const WELCOME_FROM_FOCUS =
   "선택하신 학과를 기준으로 상담을 시작합니다. 학과 추가/제거는 컨텍스트 카드의 '변경' 버튼에서 가능해요.";
 
 const WELCOME_UNAUTHENTICATED =
-  "안녕하세요! 한국 대학 입시 AI 카운슬러입니다. 메시지를 보내려면 로그인이 필요해요.";
+  "안녕하세요! Conatus의 한국 대학 입시 AI 카운슬러입니다. 메시지를 보내려면 로그인이 필요해요.";
 
 export interface ChatPageViewProps {
   initialContextSchools: ChatContextSchool[];

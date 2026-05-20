@@ -43,6 +43,8 @@ export function AdmissionsSearchView(): React.ReactElement {
   const [tracks, setTracks] = React.useState<AdmissionTrackKind[]>([]);
   const [category, setCategory] = React.useState<DepartmentCategory>("all");
   const [filterDrawerOpen, setFilterDrawerOpen] = React.useState(false);
+  // 학과 표시 범위 — 기본 학사·주간만 (입시 추천 도메인 한정). 야간 토글로 확장.
+  const [includeNight, setIncludeNight] = React.useState(false);
 
   // 결과
   const [items, setItems] = React.useState<SearchResultItem[]>([]);
@@ -58,7 +60,7 @@ export function AdmissionsSearchView(): React.ReactElement {
     setHasMore(true);
     void fetchPage(undefined, true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query, regions.join(","), tracks.join(","), category]);
+  }, [query, regions.join(","), tracks.join(","), category, includeNight]);
 
   async function fetchPage(nextCursor: string | undefined, replace: boolean): Promise<void> {
     if (loading) return;
@@ -73,6 +75,7 @@ export function AdmissionsSearchView(): React.ReactElement {
       if (tracks.length > 0) params.set("trackKind", tracks[0]);
       if (nextCursor) params.set("cursor", nextCursor);
       params.set("limit", "20");
+      if (includeNight) params.set("includeNight", "true");
 
       const res = await fetch(`/api/admissions/search?${params.toString()}`);
       if (!res.ok) {
@@ -136,6 +139,18 @@ export function AdmissionsSearchView(): React.ReactElement {
       <section className="flex flex-col gap-3">
         <h2 className="text-2xs font-bold uppercase tracking-wider text-muted-foreground">계열</h2>
         <UniversityCategoryFilter selected={category} onChange={setCategory} />
+      </section>
+      <section className="flex flex-col gap-2">
+        <h2 className="text-2xs font-bold uppercase tracking-wider text-muted-foreground">표시 범위</h2>
+        <label className="flex items-center gap-2 cursor-pointer text-sm">
+          <input
+            type="checkbox"
+            checked={includeNight}
+            onChange={(e) => setIncludeNight(e.target.checked)}
+            className="h-4 w-4 rounded border-border accent-brand-600"
+          />
+          야간대 포함 <span className="text-xs text-muted-foreground">(기본 주간만)</span>
+        </label>
       </section>
       {hasActiveFilters && (
         <Button variant="ghost" size="sm" onClick={clearAllFilters} className="self-start text-xs">

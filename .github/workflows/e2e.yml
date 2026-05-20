@@ -53,7 +53,7 @@ jobs:
           NEXT_PUBLIC_USE_EMULATOR: 'true'
           NEXT_PUBLIC_FIREBASE_API_KEY: 'emulator-placeholder'
           NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: 'demo-conatusipsi.firebaseapp.com'
-          NEXT_PUBLIC_FIREBASE_PROJECT_ID: 'demo-conatusipsi'
+          NEXT_PUBLIC_FIREBASE_PROJECT_ID: 'demo-Conatus'
           NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: 'demo-conatusipsi.firebasestorage.app'
           NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: '0'
           NEXT_PUBLIC_FIREBASE_APP_ID: '0:0:web:e2e'
@@ -61,12 +61,12 @@ jobs:
           # firebase-admin.ts 가 ADC 폴백 → 결국 bare initializeApp({projectId}) 진입.
           # FIREBASE_AUTH_EMULATOR_HOST + FIRESTORE_EMULATOR_HOST 가 있으면 SDK 가
           # 자동으로 emulator 호출 (인증 검사 우회).
-          FIREBASE_ADMIN_PROJECT_ID: 'demo-conatusipsi'
+          FIREBASE_ADMIN_PROJECT_ID: 'demo-Conatus'
           MASTER_EMAILS: 'admin@example.com'
           # Auth Emulator 호스트 — Admin SDK 가 자동 인지
           FIRESTORE_EMULATOR_HOST: 'localhost:8080'
           FIREBASE_AUTH_EMULATOR_HOST: 'localhost:9099'
-          GCLOUD_PROJECT: 'demo-conatusipsi'
+          GCLOUD_PROJECT: 'demo-Conatus'
         # webServer 가 자동으로 dev:emu (linux 에선 bash ./scripts/dev-with-emulator.sh) 실행
         run: npm run test:e2e
 

@@ -13,7 +13,7 @@ import type { Metadata } from "next";
 import { PaymentCatalogView } from "./PaymentCatalogView";
 
 export const metadata: Metadata = {
-  title: "결제 — conatusipsi",
+  title: "결제 — Conatus",
   description: "분석 리포트·시즌권·AI 카운슬러 — 토스페이먼츠 안전 결제",
   alternates: { canonical: "/payment" },
   // 임시 가격 단계라 검색 색인 차단 (출시 시 P-014 확정 후 해제)

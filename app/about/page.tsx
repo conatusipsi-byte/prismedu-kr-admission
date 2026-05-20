@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "회사 소개 — conatusipsi",
+  title: "회사 소개 — Conatus",
   description: "정직한 데이터로 한국 대학 입시를 설계합니다.",
   alternates: { canonical: "/about" },
 };
@@ -45,7 +45,7 @@ export default function AboutPage(): React.ReactElement {
             정직한 데이터로<br/>입시를 설계합니다
           </h1>
           <p className="text-base lg:text-lg text-muted-foreground leading-relaxed break-keep-all max-w-2xl">
-            conatusipsi는 1,000여 한국 대학 학과의 모집요강·합격 사례를 학습한 AI가 학생 개인의 내신·수능·생기부에 맞는 입시 전략을 정리해드리는 서비스입니다.
+            Conatus는 1,000여 한국 대학 학과의 모집요강·합격 사례를 학습한 AI가 학생 개인의 내신·수능·생기부에 맞는 입시 전략을 정리해드리는 서비스입니다.
           </p>
         </header>
 

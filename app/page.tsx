@@ -41,21 +41,21 @@ import { TrustSignals } from "@/components/marketing/TrustSignals";
 import { LANDING_FAQS } from "@/lib/landing-faq";
 
 export const metadata: Metadata = {
-  title: "conatusipsi — 한국 대학 입시 AI 추천",
+  title: "Conatus — 한국 대학 입시 AI 추천",
   description:
     "전국 1,000여 학과 모집요강·전형 정보를 한곳에서. 내 내신·수능·생기부로 합격 가능성을 AI가 학과 단위로 분석합니다.",
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    siteName: "conatusipsi",
-    title: "conatusipsi — 한국 대학 입시 AI 추천",
+    siteName: "Conatus",
+    title: "Conatus — 한국 대학 입시 AI 추천",
     description:
-      "내 성적으로 갈 수 있는 학과, 3초면 알 수 있어요. 수시·정시·재외국민 전형 모두 지원.",
+      "내 성적에 맞는 최적의 지원 전략을 알려드려요. 수시·정시·재외국민 전형 모두 지원.",
     url: "https://conatusipsi.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "conatusipsi — 한국 대학 입시 AI 추천",
+    title: "Conatus — 한국 대학 입시 AI 추천",
     description: "전국 1,000여 학과 합격률 분석",
   },
   alternates: { canonical: "https://conatusipsi.com" },
@@ -67,7 +67,7 @@ const jsonLd = {
     {
       "@type": "Organization",
       "@id": "https://conatusipsi.com/#organization",
-      name: "conatusipsi",
+      name: "Conatus",
       url: "https://conatusipsi.com",
       logo: "https://conatusipsi.com/icon.svg",
       description: "한국 대학 입시 AI 추천 서비스. 학과 단위 합격률 분석과 맞춤 카운슬러.",
@@ -77,7 +77,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://conatusipsi.com/#website",
       url: "https://conatusipsi.com",
-      name: "conatusipsi",
+      name: "Conatus",
       description: "AI가 분석하는 1,000여 한국 대학 학과 합격 확률.",
       publisher: { "@id": "https://conatusipsi.com/#organization" },
       inLanguage: "ko-KR",
@@ -142,8 +142,8 @@ export default function LandingPage(): React.ReactElement {
       </div>
 
       {/* SEO 본문 */}
-      <section className="sr-only" aria-label="conatusipsi 서비스 소개">
-        <h2>conatusipsi — 한국 대학 입시 AI 추천</h2>
+      <section className="sr-only" aria-label="Conatus 서비스 소개">
+        <h2>Conatus — 한국 대학 입시 AI 추천</h2>
         <p>
           내신·수능·생기부 정보를 입력하면 1,000여 한국 대학 학과의 합격 가능성을 AI가
           분석합니다. 수시(학생부종합·학생부교과·논술·실기)·정시(가/나/다군)·재외국민
@@ -165,7 +165,7 @@ export default function LandingPage(): React.ReactElement {
               className="animate-fade-up font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tightest text-foreground text-balance break-keep-all leading-[1.04]"
               style={{ animationDelay: "0.1s" }}
             >
-              내 성적으로 갈 수 있는 학과,
+              내 성적에 맞는
               <br className="hidden sm:block" />
               <span
                 className="bg-clip-text text-transparent animate-text-shimmer"
@@ -175,9 +175,9 @@ export default function LandingPage(): React.ReactElement {
                   backgroundSize: "200% auto",
                 }}
               >
-                3초면
-              </span>{" "}
-              알 수 있어요
+                최적의 지원 전략
+              </span>
+              을 알려드려요
             </h1>
 
             <p
@@ -243,7 +243,7 @@ export default function LandingPage(): React.ReactElement {
         <MotionItem className="mb-12 lg:mb-16 flex flex-col items-center text-center gap-3">
           <Badge variant="pill-iris" size="md">데이터 · 분류 · 정직</Badge>
           <h2 className="font-display text-3xl lg:text-5xl font-extrabold tracking-tighter">
-            왜 conatusipsi 인가
+            왜 Conatus 인가
           </h2>
         </MotionItem>
 

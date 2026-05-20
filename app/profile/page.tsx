@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 import { ProfileView } from "./ProfileView";
 
 export const metadata: Metadata = {
-  title: "프로필 — conatusipsi",
+  title: "프로필 — Conatus",
   description: "계정·성적·생기부 정보 수정 및 알림 설정",
   robots: { index: false, follow: false },
   alternates: { canonical: "/profile" },

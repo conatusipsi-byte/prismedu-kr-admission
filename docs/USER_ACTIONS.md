@@ -26,7 +26,7 @@
 ### Sentry 프로젝트 생성
 
 1. https://sentry.io/signup/ — 무료 플랜 (월 5K 에러 / 5K replays) 충분
-2. 조직 생성 시 이름은 **자유** (예: `conatusipsi`)
+2. 조직 생성 시 이름은 **자유** (예: `Conatus`)
 3. **Create Project** → Platform = **Next.js**
 4. 프로젝트 이름 = `kr-admission` (또는 자유)
 5. 생성 후 노출되는 DSN 복사:
@@ -95,7 +95,7 @@ https://prismedu-kr-admission-joonhyeon-s-projects.vercel.app/api/health
 
 1. https://developers.kakao.com/console/app 접속 → 카카오 계정 로그인
 2. **애플리케이션 추가하기**:
-   - 앱 이름: `conatusipsi`
+   - 앱 이름: `Conatus`
    - 사업자명: 사업자등록 후 본명 또는 사업자명 (지금은 본명 가능)
 3. 생성된 앱 → 좌측 **앱 키** 메뉴
    - **REST API 키** 복사 → `KAKAO_CLIENT_SECRET` 가 아니라 `NEXT_PUBLIC_KAKAO_CLIENT_ID` 에 들어감 (네이밍 헷갈림 주의)
@@ -196,7 +196,7 @@ https://supabase.com/dashboard/project/[PROJECT_REF]/auth/templates → **SMTP S
 | 항목 | 값 |
 |---|---|
 | Sender email | `no-reply@send.conatusipsi.com` (또는 `hello@conatusipsi.com`) |
-| Sender name | `conatusipsi` |
+| Sender name | `Conatus` |
 | Host | `smtp.resend.com` |
 | Port | `465` |
 | Username | `resend` |

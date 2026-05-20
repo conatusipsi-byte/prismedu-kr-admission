@@ -15,26 +15,26 @@ import { ThemeProvider } from "@/components/theme-provider";
 export const metadata: Metadata = {
   metadataBase: new URL("https://conatusipsi.com"),
   title: {
-    default: "conatusipsi — 한국 대학 입시 AI 추천",
-    template: "%s | conatusipsi",
+    default: "Conatus — 한국 대학 입시 AI 추천",
+    template: "%s | Conatus",
   },
   description:
     "전국 1,000여 학과의 모집요강·전형 정보를 한곳에서. AI가 분석하는 합격 가능성과 맞춤 입시 전략.",
   keywords: [
     "대학 입시", "수시", "정시", "학생부종합", "학생부교과", "논술", "수능", "내신",
-    "합격 예측", "학과 추천", "conatusipsi",
+    "합격 예측", "학과 추천", "Conatus",
   ],
   openGraph: {
     type: "website",
     locale: "ko_KR",
     url: "https://conatusipsi.com",
-    title: "conatusipsi — 한국 대학 입시 AI 추천",
+    title: "Conatus — 한국 대학 입시 AI 추천",
     description: "전국 1,000여 학과 모집요강·합격률 분석",
-    siteName: "conatusipsi",
+    siteName: "Conatus",
   },
   twitter: {
     card: "summary_large_image",
-    title: "conatusipsi — 한국 대학 입시 AI 추천",
+    title: "Conatus — 한국 대학 입시 AI 추천",
     description: "전국 1,000여 학과 모집요강·합격률 분석",
   },
   robots: { index: true, follow: true },

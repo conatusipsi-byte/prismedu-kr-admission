@@ -18,14 +18,14 @@ import { test, expect } from "@playwright/test";
 const BASE_URL = process.env.E2E_BASE_URL ?? "http://localhost:9002";
 
 const PUBLIC_PAGES: Array<{ path: string; expectInTitle: RegExp; expectOnPage: RegExp }> = [
-  { path: "/", expectInTitle: /conatusipsi/, expectOnPage: /합격|학과|입시/ },
-  { path: "/admissions", expectInTitle: /학과 검색|conatusipsi/, expectOnPage: /학과/ },
-  { path: "/admissions/jaeoegukmin", expectInTitle: /재외국민|conatusipsi/, expectOnPage: /재외국민|외국인/ },
-  { path: "/pricing", expectInTitle: /요금제|conatusipsi/, expectOnPage: /단건권|시즌권|결제/ },
-  { path: "/privacy", expectInTitle: /개인정보|conatusipsi/, expectOnPage: /개인정보/ },
-  { path: "/terms", expectInTitle: /이용약관|conatusipsi/, expectOnPage: /약관/ },
-  { path: "/refund", expectInTitle: /환불|conatusipsi/, expectOnPage: /환불/ },
-  { path: "/help", expectInTitle: /고객센터|conatusipsi/, expectOnPage: /문의|고객/ },
+  { path: "/", expectInTitle: /Conatus/, expectOnPage: /합격|학과|입시/ },
+  { path: "/admissions", expectInTitle: /학과 검색|Conatus/, expectOnPage: /학과/ },
+  { path: "/admissions/jaeoegukmin", expectInTitle: /재외국민|Conatus/, expectOnPage: /재외국민|외국인/ },
+  { path: "/pricing", expectInTitle: /요금제|Conatus/, expectOnPage: /단건권|시즌권|결제/ },
+  { path: "/privacy", expectInTitle: /개인정보|Conatus/, expectOnPage: /개인정보/ },
+  { path: "/terms", expectInTitle: /이용약관|Conatus/, expectOnPage: /약관/ },
+  { path: "/refund", expectInTitle: /환불|Conatus/, expectOnPage: /환불/ },
+  { path: "/help", expectInTitle: /고객센터|Conatus/, expectOnPage: /문의|고객/ },
 ];
 
 test.describe("공개 페이지 SEO 흐름", () => {

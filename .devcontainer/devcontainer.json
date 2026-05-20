@@ -1,5 +1,5 @@
 {
-  "name": "conatusipsi (Next.js + Firebase)",
+  "name": "Conatus (Next.js + Firebase)",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {

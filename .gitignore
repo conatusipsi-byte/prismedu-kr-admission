@@ -63,6 +63,13 @@ serviceAccountKey.json
 # prismedu.kr 참고 코드 — 로컬 참조용, deploy 대상 아님
 /_prism_reference/
 
+# KCUE API probe 결과 (로컬 dev 전용 — 깨끗한 fixture 는 __tests__/__fixtures__ 에 별도 보관)
+/_kcue-samples/
+
+# 원본 입력 데이터 (모집요강 PDF · KICE 통계 CSV · HWPX) — 로컬 dev 전용
+# 파싱 산출물은 data/parsed-admissions/ 또는 Supabase 에 적재됨.
+/university/
+
 # Claude Code local session state
 /.claude/
 

@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { PaymentSuccessView } from "./PaymentSuccessView";
 
 export const metadata: Metadata = {
-  title: "결제 완료 — conatusipsi",
+  title: "결제 완료 — Conatus",
   robots: { index: false, follow: false },
 };
 

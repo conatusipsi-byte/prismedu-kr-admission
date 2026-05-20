@@ -10,7 +10,7 @@ import { ProGate } from "@/components/access/ProGate";
 import { PlannerView } from "./PlannerView";
 
 export const metadata: Metadata = {
-  title: "입시 플래너 — conatusipsi",
+  title: "입시 플래너 — Conatus",
   description: "원서접수·면접·논술·수능까지 카테고리별 task 자동 생성",
   robots: { index: false, follow: false },
   alternates: { canonical: "/planner" },

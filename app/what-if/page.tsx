@@ -13,7 +13,7 @@ import { ProGate } from "@/components/access/ProGate";
 import { WhatIfView } from "./WhatIfView";
 
 export const metadata: Metadata = {
-  title: "What-if 시뮬레이터 — conatusipsi",
+  title: "What-if 시뮬레이터 — Conatus",
   description: "수능·내신 가정 변경에 따른 합격률 실시간 변화 시뮬레이션",
   robots: { index: false, follow: false },
   alternates: { canonical: "/what-if" },

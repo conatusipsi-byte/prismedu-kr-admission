@@ -20,13 +20,13 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "요금제 — conatusipsi",
+  title: "요금제 — Conatus",
   description:
     "단건 분석 리포트, AI 카운슬러 1회권, 시즌권. 한국 입시 시즌(7~11월) 전용 요금제.",
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    title: "요금제 — conatusipsi",
+    title: "요금제 — Conatus",
     description: "단건·시즌권 한국 대학 입시 분석 요금제",
     url: "https://conatusipsi.com/pricing",
   },

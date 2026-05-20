@@ -74,7 +74,7 @@ export function PublicNav(): React.ReactElement | null {
             className="group flex items-center gap-2.5 text-base font-bold text-foreground transition-opacity hover:opacity-90"
           >
             <Logo className="h-8 w-8" />
-            <span className="font-display text-[15px] tracking-tight">conatusipsi</span>
+            <span className="font-display text-[15px] tracking-tight">Conatus</span>
           </Link>
 
           {/* Desktop nav */}

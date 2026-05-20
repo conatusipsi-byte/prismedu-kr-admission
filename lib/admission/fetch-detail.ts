@@ -46,6 +46,14 @@ export async function fetchDepartmentDetail(
   const sb = getAdminSupabase();
   const year = new Date().getFullYear() + 1;
 
+  // URL param 은 id 또는 slug. slug 우선 → 못 찾으면 id로. canonical 한 id 만 후속 쿼리에 사용.
+  const { data: uniRow } = await sb
+    .from("universities")
+    .select("id")
+    .or(`id.eq.${universityId},slug.eq.${universityId}`)
+    .maybeSingle();
+  const resolvedUniversityId = uniRow?.id ?? universityId;
+
   const { data, error } = await sb
     .from("departments")
     .select(`
@@ -53,7 +61,7 @@ export async function fetchDepartmentDetail(
       universities!inner ( * ),
       department_admissions!inner ( * )
     `)
-    .eq("university_id", universityId)
+    .eq("university_id", resolvedUniversityId)
     .eq("id", departmentId)
     .eq("department_admissions.year", year)
     .maybeSingle();

@@ -215,7 +215,8 @@ describe("Gated — free_plan_over_preview_quota (락 카드)", () => {
    ═══════════════════════════════════════════════════════════════════════ */
 
 describe("Gated — 시각 토큰 분리 검증", () => {
-  it("insufficient_sample 카드는 zinc(회색) 토큰 사용 (mint 미사용)", () => {
+  // Stage 1 리브랜드 — mint 토큰은 brand 로 일괄 전환됨. 의도는 동일(회색 vs 브랜드 컬러 분리).
+  it("insufficient_sample 카드는 zinc(회색) 토큰 사용 (brand 미사용)", () => {
     const { container } = render(
       <Gated feature="analysis" reason="insufficient_sample" />,
     );
@@ -224,10 +225,10 @@ describe("Gated — 시각 토큰 분리 검증", () => {
 
     const className = root?.className ?? "";
     expect(/zinc-/.test(className)).toBe(true);
-    expect(/\bmint-/.test(className)).toBe(false);
+    expect(/\bbrand-/.test(className)).toBe(false);
   });
 
-  it("locked 카드는 mint 토큰 사용 (zinc 미사용)", () => {
+  it("locked 카드는 brand 토큰 사용 (zinc 미사용)", () => {
     const { container } = render(
       <Gated feature="analysis" reason="free_plan_over_preview_quota" />,
     );
@@ -235,8 +236,8 @@ describe("Gated — 시각 토큰 분리 검증", () => {
     expect(root).not.toBeNull();
 
     const className = root?.className ?? "";
-    expect(/mint-/.test(className)).toBe(true);
-    // border가 zinc 가 아님 (락 카드는 mint 일관)
+    expect(/brand-/.test(className)).toBe(true);
+    // border 가 zinc 가 아님 (락 카드는 brand 일관)
     expect(/border-zinc-/.test(className)).toBe(false);
   });
 

@@ -15,7 +15,7 @@ import { Card } from "@/components/ui/card";
 import { StagingPendingCard } from "./StagingPendingCard";
 
 export const metadata: Metadata = {
-  title: "모집요강 관리 — conatusipsi 운영",
+  title: "모집요강 관리 — Conatus 운영",
   robots: { index: false, follow: false },
 };
 

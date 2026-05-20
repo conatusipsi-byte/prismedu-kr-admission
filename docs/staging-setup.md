@@ -71,7 +71,7 @@
 ### 2.1 프로젝트 생성
 
 1. https://console.firebase.google.com 접속, 운영팀 Google 계정으로 로그인
-2. **프로젝트 추가** → 프로젝트 이름: `conatusipsi`
+2. **프로젝트 추가** → 프로젝트 이름: `Conatus`
 3. Google Analytics: **사용 안 함** (개인정보 우려)
 4. 생성 대기 약 30초
 
@@ -110,7 +110,7 @@
    const firebaseConfig = {
      apiKey: "AIza...",
      authDomain: "conatusipsi.firebaseapp.com",
-     projectId: "conatusipsi",
+     projectId: "Conatus",
      ...
    };
    ```
@@ -130,7 +130,7 @@
 ```bash
 npm install -g firebase-tools
 firebase login           # 운영팀 계정으로
-firebase use --add       # conatusipsi 프로젝트 선택
+firebase use --add       # Conatus 프로젝트 선택
 firebase deploy --only firestore:rules,firestore:indexes,storage:rules
 ```
 

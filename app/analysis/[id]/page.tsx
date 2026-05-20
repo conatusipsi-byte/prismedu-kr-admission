@@ -72,7 +72,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   return {
-    title: `분석 결과 — conatusipsi`,
+    title: `분석 결과 — Conatus`,
     description: "내신·수능·비교과 입력 기반 학과별 합격 가능성 분석 결과",
     // 본인 결과 페이지 — 검색 색인 차단
     robots: { index: false, follow: false },

@@ -9,8 +9,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "개인정보처리방침 — conatusipsi",
-  description: "conatusipsi의 개인정보 수집·이용·보관·파기 방침",
+  title: "개인정보처리방침 — Conatus",
+  description: "Conatus의 개인정보 수집·이용·보관·파기 방침",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };
@@ -35,7 +35,7 @@ export default function PrivacyPage(): React.ReactElement {
         <List>
           <li><strong>회원가입 시</strong>: 이메일, 비밀번호 또는 카카오/구글 OAuth 식별자, 이름</li>
           <li><strong>온보딩·프로필</strong>: 학년·계열, 내신 등급(학년·학기별), 수능/모의 점수, 비교과 활동 정량(시간·횟수), 희망 학과·전형 의향</li>
-          <li><strong>결제 시</strong>: 토스페이먼츠가 처리하는 결제 정보(카드번호 등은 conatusipsi 서버 미저장), 영수증 발송용 이메일, 결제 이력</li>
+          <li><strong>결제 시</strong>: 토스페이먼츠가 처리하는 결제 정보(카드번호 등은 Conatus 서버 미저장), 영수증 발송용 이메일, 결제 이력</li>
           <li><strong>서비스 이용 기록</strong>: 분석 요청 로그, AI 카운슬러 대화 내용, 접속 IP·기기 정보·로그 시각</li>
         </List>
       </Section>
@@ -63,7 +63,7 @@ export default function PrivacyPage(): React.ReactElement {
       </Section>
 
       <Section title="4. 제3자 제공 및 처리 위탁">
-        <p>conatusipsi는 다음의 제3자에게 처리 업무를 위탁합니다.</p>
+        <p>Conatus는 다음의 제3자에게 처리 업무를 위탁합니다.</p>
         <List>
           <li><strong>Google Firebase</strong>: 인증·데이터베이스·파일 저장 (서울 region)</li>
           <li><strong>토스페이먼츠</strong>: 결제 처리 및 영수증 발급</li>

@@ -44,7 +44,7 @@ export function SplitScreenAuth({
           {/* Logo */}
           <Link href="/" className="inline-flex items-center gap-2.5 self-start">
             <Logo className="h-9 w-9" />
-            <span className="font-display text-base font-bold tracking-tight text-white">conatusipsi</span>
+            <span className="font-display text-base font-bold tracking-tight text-white">Conatus</span>
           </Link>
 
           {/* Copy */}
@@ -91,7 +91,7 @@ export function SplitScreenAuth({
         <div className="lg:hidden w-full max-w-md mb-6 flex flex-col items-center gap-3 text-center">
           <Link href="/" className="inline-flex items-center gap-2">
             <Logo className="h-8 w-8" />
-            <span className="font-display text-sm font-bold tracking-tight">conatusipsi</span>
+            <span className="font-display text-sm font-bold tracking-tight">Conatus</span>
           </Link>
           <Badge variant="pill-brand" size="sm">
             {mode === "signup" ? "30초 가입" : "다시 만나서 반가워요"}

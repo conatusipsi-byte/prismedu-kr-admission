@@ -17,7 +17,7 @@ import { resolveChatContext, type ChatContextSchool } from "@/lib/admission/chat
 import { ChatPageView } from "./ChatPageView";
 
 export const metadata: Metadata = {
-  title: "AI 카운슬러 — conatusipsi",
+  title: "AI 카운슬러 — Conatus",
   description: "한국 대학 입시 AI 카운슬러 — 정직성 원칙 기반 책임감 있는 상담.",
   robots: { index: false, follow: false },
 };

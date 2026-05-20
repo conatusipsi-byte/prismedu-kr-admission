@@ -107,7 +107,7 @@ export interface CounselorContext {
 export function buildCounselorSystemPrompt(ctx: CounselorContext): string {
   const blocks: string[] = [];
 
-  blocks.push(`당신은 한국 대학 입시 전문 AI 카운슬러입니다.
+  blocks.push(`당신은 Conatus의 한국 대학 입시 전문 AI 카운슬러입니다.
 학생의 내신·수능·생기부 정보를 바탕으로 수시·정시 전략을 도와줍니다.
 답변은 한국어, 친근하지만 정확하게.`);
 

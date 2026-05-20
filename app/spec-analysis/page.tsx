@@ -10,7 +10,7 @@ import { ProGate } from "@/components/access/ProGate";
 import { SpecAnalysisView } from "./SpecAnalysisView";
 
 export const metadata: Metadata = {
-  title: "스펙 분석 — conatusipsi",
+  title: "스펙 분석 — Conatus",
   description: "생기부 비교과 정량 입력 → 학종 적합도 정성 분석",
   robots: { index: false, follow: false },
   alternates: { canonical: "/spec-analysis" },

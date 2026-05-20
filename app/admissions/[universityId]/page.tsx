@@ -50,7 +50,7 @@ export async function generateMetadata({
   const title = university.n;
   const description = `${title} 학과별 모집요강·전형·일정. 비로그인 무료 조회.`;
   return {
-    title: `${title} — conatusipsi`,
+    title: `${title} — Conatus`,
     description,
     openGraph: {
       type: "article",

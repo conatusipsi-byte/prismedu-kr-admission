@@ -13,7 +13,7 @@ import { ProGate } from "@/components/access/ProGate";
 import { CompareView } from "./CompareView";
 
 export const metadata: Metadata = {
-  title: "학과 비교 — conatusipsi",
+  title: "학과 비교 — Conatus",
   description: "여러 학과의 모집요강·합격률을 한눈에 비교하는 Pro 기능",
   robots: { index: false, follow: false },
   alternates: { canonical: "/compare" },

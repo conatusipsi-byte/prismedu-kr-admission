@@ -15,13 +15,13 @@ import type { Metadata } from "next";
 import { AnalysisFormWizard } from "@/components/analysis/AnalysisFormWizard";
 
 export const metadata: Metadata = {
-  title: "합격률 분석 — conatusipsi",
+  title: "합격률 분석 — Conatus",
   description:
     "성적과 비교과를 입력하면 AI가 학과별 합격 가능성을 산출합니다. 표본이 부족한 학과는 임의 수치를 만들지 않습니다.",
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    title: "합격률 분석 — conatusipsi",
+    title: "합격률 분석 — Conatus",
     description: "내신·수능·비교과 입력으로 학과별 합격 가능성 산출",
   },
   alternates: { canonical: "/analysis" },

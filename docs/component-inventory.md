@@ -189,7 +189,7 @@ prismedu.kr 의 학부모 리포트 기능. 한국 입시에 적용 여부는 �
 
 | 파일 | 분류 | 작업 |
 |---|---|---|
-| PrismLogo.tsx | 🔧 | 브랜드 로고 — 새 도메인 conatusipsi 로고로 |
+| PrismLogo.tsx | 🔧 | 브랜드 로고 — 새 도메인 Conatus 로고로 |
 
 ### 3.10 `components/ia/` (1개)
 

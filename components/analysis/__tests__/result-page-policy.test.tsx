@@ -283,7 +283,7 @@ describe("P-002 — 정직성 안내 + '확정 합격' 차단", () => {
    ═══════════════════════════════════════════════════════════════════════ */
 
 describe("시각 분리 — 카테고리 톤 + 표본 부족 회색", () => {
-  it("카테고리별 섹션 border 색상 분리 (rose/amber/mint/emerald/zinc)", () => {
+  it("카테고리별 섹션 border 색상 분리 (rose/brand/emerald/zinc)", () => {
     const data = response([
       item({ category: "reach", departmentId: "d1", departmentName: "도전학과" }),
       item({ category: "target", departmentId: "d2", departmentName: "적정학과" }),
@@ -302,7 +302,8 @@ describe("시각 분리 — 카테고리 톤 + 표본 부족 회색", () => {
     const insufficientSec = container.querySelector('[data-section="insufficient-sample"]') as HTMLElement;
 
     expect(reachSec.className).toMatch(/rose/);
-    expect(targetSec.className).toMatch(/mint/);
+    // Stage 1 리브랜드 — target 카테고리가 mint → brand 토큰으로 전환됨.
+    expect(targetSec.className).toMatch(/brand/);
     expect(safetySec.className).toMatch(/emerald/);
     expect(insufficientSec.className).toMatch(/zinc/);
   });

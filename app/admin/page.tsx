@@ -23,7 +23,7 @@ import { Card } from "@/components/ui/card";
 import { AdminKpiCards } from "./AdminKpiCards";
 
 export const metadata: Metadata = {
-  title: "운영자 대시보드 — conatusipsi",
+  title: "운영자 대시보드 — Conatus",
   robots: { index: false, follow: false },
 };
 

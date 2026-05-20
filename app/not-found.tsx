@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
-  title: "페이지를 찾을 수 없어요 — conatusipsi",
+  title: "페이지를 찾을 수 없어요 — Conatus",
   robots: { index: false, follow: false },
 };
 

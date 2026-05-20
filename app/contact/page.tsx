@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "문의 — conatusipsi",
+  title: "문의 — Conatus",
   description: "기능 제안·버그 신고·일반 문의는 이메일로 연락 주세요.",
   alternates: { canonical: "/contact" },
 };

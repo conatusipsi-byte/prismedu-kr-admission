@@ -12,7 +12,7 @@ import { JaeoegukminEntryHero } from "@/components/admissions/JaeoegukminEntryHe
 import { JaeoegukminPageView } from "./JaeoegukminPageView";
 
 export const metadata: Metadata = {
-  title: "재외국민·외국인 입시 자격 진단 — conatusipsi",
+  title: "재외국민·외국인 입시 자격 진단 — Conatus",
   description:
     "외국 고교 출신 학생을 위한 재외국민·외국인·12년 외국교육이수자 전형 자가진단. 자격 분류 후 적합한 대학 안내.",
   openGraph: {

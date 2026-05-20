@@ -88,6 +88,16 @@ async function searchDepartments(
     .order("updated_at", { ascending: false })
     .limit(query.limit);
 
+  // 학위과정 필터 — 'all' 이면 미적용, default '학사'
+  if (query.degreeCourse !== "all") {
+    // NULL 인 legacy row 도 학사로 간주 — 마이그레이션에서 backfill 완료
+    q = q.or(`degree_course.eq.${query.degreeCourse},degree_course.is.null`);
+  }
+  // 주야 필터 — includeNight=false 일 때 주간만 + legacy NULL 허용
+  if (!query.includeNight) {
+    q = q.or("daytime.eq.주간,daytime.is.null");
+  }
+
   if (query.track) {
     q = q.eq("track", query.track);
   }
@@ -116,6 +126,7 @@ async function searchDepartments(
     professional_type: Department["professionalType"] | null;
     active: boolean;
     updated_at: string;
+    kedi_mjr_id: string | null;
     universities: {
       id: string;
       n: string;
@@ -137,8 +148,28 @@ async function searchDepartments(
   };
 
   const items: SearchResultItem[] = [];
+  // (university_id, kedi_mjr_id) 중복 차단 — legacy row 우선.
+  // KCUE-imported row 의 id 는 `<lowercase>-ba-d` 패턴 (긴 hex+suffix), legacy 는 짧은 slug.
+  // 같은 (univ, kediMjrId) 의 row 가 multiple 등장하면 KCUE 패턴 row 들을 skip.
+  const isKcueImportedId = (id: string): boolean => /^u\d{8,}-(ba|ma|phd|ass)-[dnx]$/.test(id);
+  const rawRows = data as unknown as Row[];
+  // (univ, kediMjrId) 중 legacy(=KCUE 패턴 아닌 id) row 가 존재하는 키 집합 미리 산출
+  const legacyOwned = new Set<string>();
+  for (const raw of rawRows) {
+    if (raw.kedi_mjr_id && !isKcueImportedId(raw.id)) {
+      legacyOwned.add(`${raw.university_id}/${raw.kedi_mjr_id}`);
+    }
+  }
+  const dedupSeen = new Set<string>();
 
-  for (const raw of data as unknown as Row[]) {
+  for (const raw of rawRows) {
+    if (raw.kedi_mjr_id) {
+      const dedupKey = `${raw.university_id}/${raw.kedi_mjr_id}`;
+      // legacy 가 이 키를 소유하는데 현재 row 가 KCUE 패턴이면 skip
+      if (isKcueImportedId(raw.id) && legacyOwned.has(dedupKey)) continue;
+      if (dedupSeen.has(dedupKey)) continue;
+      dedupSeen.add(dedupKey);
+    }
     const univ = raw.universities;
     if (query.category && univ.category !== query.category) continue;
 

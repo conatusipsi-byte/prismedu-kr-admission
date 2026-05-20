@@ -26,6 +26,13 @@ export const AdmissionsSearchQuerySchema = z.object({
   ]).optional(),
   limit: z.coerce.number().int().min(1).max(100).default(20),
   cursor: z.string().optional(),
+  /**
+   * 학과 표시 필터 — 기본: 학사 + 주간만. 야간 포함 시 true 로.
+   * 대학원·전문대학원·박사과정은 기본 노출 X (입시 추천 서비스 도메인 외).
+   */
+  includeNight: z.coerce.boolean().optional().default(false),
+  /** 학위과정 필터 — default '학사'. 전체는 'all' (대학원 포함). */
+  degreeCourse: z.enum(["학사", "석사", "박사", "전문학사", "all"]).optional().default("학사"),
 });
 
 export type AdmissionsSearchQuery = z.infer<typeof AdmissionsSearchQuerySchema>;

@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
   title: "변경 사항",
-  description: "conatusipsi 제품 업데이트 히스토리.",
+  description: "Conatus 제품 업데이트 히스토리.",
 };
 
 type Entry = {
@@ -52,7 +52,7 @@ export default function ChangelogPage(): React.ReactElement {
           제품 업데이트 히스토리
         </h1>
         <p className="text-base text-muted-foreground">
-          conatusipsi 가 어떻게 좋아지고 있는지 — 기능, 개선, 데이터 갱신을 시간순으로 정리합니다.
+          Conatus 가 어떻게 좋아지고 있는지 — 기능, 개선, 데이터 갱신을 시간순으로 정리합니다.
         </p>
       </header>
 

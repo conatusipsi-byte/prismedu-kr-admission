@@ -1,6 +1,6 @@
 # 종합 진행 보고서 — 2026-05-09 (v2 — 디자인 업그레이드 추가)
 
-방준현 클라이언트 / conatusipsi 프로젝트 / Claude Opus 4.7 (1M context) 작업 완료 시점.
+방준현 클라이언트 / Conatus 프로젝트 / Claude Opus 4.7 (1M context) 작업 완료 시점.
 
 ---
 

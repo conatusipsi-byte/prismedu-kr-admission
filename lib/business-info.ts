@@ -27,7 +27,7 @@ export interface BusinessInfo {
 }
 
 const PLACEHOLDER: BusinessInfo = {
-  name: "conatusipsi (사업자명 미정)",
+  name: "Conatus (사업자명 미정)",
   representative: "대표자명",
   registrationNumber: "000-00-00000",
   telecomNumber: "0000-서울-00000",

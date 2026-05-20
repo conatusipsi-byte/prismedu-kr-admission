@@ -21,7 +21,7 @@ import { Button } from "@/components/ui/button";
 import { LANDING_FAQS } from "@/lib/landing-faq";
 
 export const metadata: Metadata = {
-  title: "고객센터 — conatusipsi",
+  title: "고객센터 — Conatus",
   description: "자주 묻는 질문, 시작 가이드, 결제 문의, 기술 지원",
   alternates: { canonical: "/help" },
   robots: { index: true, follow: true },

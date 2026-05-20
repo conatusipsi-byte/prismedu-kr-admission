@@ -48,7 +48,7 @@ export function Footer(): React.ReactElement | null {
           <div className="col-span-2 md:col-span-5 flex flex-col gap-5">
             <Link href="/" className="inline-flex items-center gap-2.5">
               <Logo className="h-9 w-9" />
-              <span className="font-display text-base font-bold tracking-tight">conatusipsi</span>
+              <span className="font-display text-base font-bold tracking-tight">Conatus</span>
             </Link>
             <p className="text-sm leading-relaxed text-muted-foreground max-w-xs">
               정직한 데이터로 입시를 설계합니다. 표본이 부족한 학과는 추측 수치를 보여드리지 않아요.
@@ -64,7 +64,7 @@ export function Footer(): React.ReactElement | null {
                 <Mail className="h-4 w-4" />
               </a>
               <a
-                href="https://x.com/conatusipsi"
+                href="https://x.com/Conatus"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X (Twitter)"
@@ -97,7 +97,7 @@ export function Footer(): React.ReactElement | null {
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-border/60 pt-6 text-2xs text-muted-foreground md:flex-row md:items-center md:justify-between">
-          <p>ⓒ {year} conatusipsi. All rights reserved.</p>
+          <p>ⓒ {year} Conatus. All rights reserved.</p>
           {/* 사업자등록번호 · 통신판매신고 — 클라이언트(방준현) 등록 완료 후
               env 또는 인라인 텍스트로 노출. 미등록 상태에서 "출시 직전 등록 예정"
               문구를 그대로 노출하면 신뢰도 하락 + 통신판매업 미신고로 결제 CTA

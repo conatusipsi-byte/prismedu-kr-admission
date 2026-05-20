@@ -9,8 +9,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "이용약관 — conatusipsi",
-  description: "conatusipsi 서비스 이용약관",
+  title: "이용약관 — Conatus",
+  description: "Conatus 서비스 이용약관",
   alternates: { canonical: "/terms" },
   robots: { index: true, follow: true },
 };
@@ -30,7 +30,7 @@ export default function TermsPage(): React.ReactElement {
 
       <Section title="제1조 (목적)">
         <p>
-          본 약관은 conatusipsi(이하 &ldquo;회사&rdquo;)가 제공하는 한국 대학 입시
+          본 약관은 Conatus(이하 &ldquo;회사&rdquo;)가 제공하는 한국 대학 입시
           AI 추천 서비스(이하 &ldquo;서비스&rdquo;)의 이용에 관한 회사와 이용자(이하
           &ldquo;회원&rdquo;)의 권리·의무·책임 사항을 규정합니다.
         </p>
@@ -38,7 +38,7 @@ export default function TermsPage(): React.ReactElement {
 
       <Section title="제2조 (정의)">
         <List>
-          <li><strong>서비스</strong>: 합격 가능성 분석, AI 입시 카운슬러, 모집요강 조회 등 conatusipsi가 제공하는 모든 기능</li>
+          <li><strong>서비스</strong>: 합격 가능성 분석, AI 입시 카운슬러, 모집요강 조회 등 Conatus가 제공하는 모든 기능</li>
           <li><strong>회원</strong>: 본 약관에 동의하고 회사가 제공하는 서비스를 이용하는 자</li>
           <li><strong>유료 권한</strong>: 단건권(분석 리포트 1회, 카운슬러 1회) 또는 시즌권 결제로 부여되는 사용 권한</li>
           <li><strong>분석 결과</strong>: 회원이 입력한 성적·비교과 데이터를 기반으로 AI가 산출한 학과별 합격 가능성</li>

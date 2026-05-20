@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { PaymentFailView } from "./PaymentFailView";
 
 export const metadata: Metadata = {
-  title: "결제 실패 — conatusipsi",
+  title: "결제 실패 — Conatus",
   robots: { index: false, follow: false },
 };
 

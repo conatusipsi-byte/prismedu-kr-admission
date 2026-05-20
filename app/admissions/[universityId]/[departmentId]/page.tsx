@@ -52,7 +52,7 @@ export async function generateMetadata({
   if (!detail) return { title: "학과를 찾을 수 없습니다" };
   const title = `${detail.university.n} ${detail.department.name}`;
   return {
-    title: `${title} — conatusipsi`,
+    title: `${title} — Conatus`,
     description: `${title} 모집요강·전형·일정. 비로그인 무료 조회.`,
     openGraph: { type: "article", locale: "ko_KR", title, description: `${title} 모집요강·전형·일정` },
     alternates: { canonical: `/admissions/${universityId}/${departmentId}` },

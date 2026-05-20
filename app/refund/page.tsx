@@ -14,7 +14,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "환불 정책 — conatusipsi",
+  title: "환불 정책 — Conatus",
   description: "단건권·시즌권 환불 기준과 절차",
   alternates: { canonical: "/refund" },
   robots: { index: true, follow: true },

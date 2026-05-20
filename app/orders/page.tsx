@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { OrdersListView } from "./OrdersListView";
 
 export const metadata: Metadata = {
-  title: "결제 이력 — conatusipsi",
+  title: "결제 이력 — Conatus",
   robots: { index: false, follow: false },
 };
 

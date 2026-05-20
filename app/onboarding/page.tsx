@@ -13,7 +13,7 @@ import { OnboardingWizard } from "@/components/analysis/OnboardingWizard";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
-  title: "프로필 입력 — conatusipsi",
+  title: "프로필 입력 — Conatus",
   description: "내신·수능·생기부 비교과를 한 번 입력하면 모든 분석에 그대로 사용됩니다.",
   robots: { index: false, follow: false },
   alternates: { canonical: "/onboarding" },

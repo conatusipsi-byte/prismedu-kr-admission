@@ -11,7 +11,7 @@ import { LoginView } from "./LoginView";
 import { SplitScreenAuth } from "@/components/auth/SplitScreenAuth";
 
 export const metadata: Metadata = {
-  title: "로그인 — conatusipsi",
+  title: "로그인 — Conatus",
   description: "한국 대학 입시 AI 추천 서비스 로그인",
   robots: { index: false, follow: false },
 };

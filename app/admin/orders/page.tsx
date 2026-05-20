@@ -11,7 +11,7 @@ import type { Metadata } from "next";
 import { OrdersView } from "./OrdersView";
 
 export const metadata: Metadata = {
-  title: "주문 관리 — conatusipsi 운영",
+  title: "주문 관리 — Conatus 운영",
   robots: { index: false, follow: false },
 };
 
