@@ -27,7 +27,7 @@ import type { ProductKind } from "@/types/admission";
  * - kr 접두사로 prismedu.kr `PRISM_*` 와 시각 분리
  * - productKind: 5종 enum 그대로 (report_one, season_pass, consult_one, subscription_pro, subscription_elite)
  * - period: once / monthly / yearly
- * - uid: Firebase Auth uid — 영숫자 20~40자 (28자 표준이지만 여유)
+ * - uid: Supabase Auth UUID (영숫자 + 하이픈, 36자 표준) 또는 레거시 Firebase uid (영숫자 28자)
  * - timestamp: ms 13~16자
  * - nonce: 6자 영숫자
  *
@@ -35,7 +35,7 @@ import type { ProductKind } from "@/types/admission";
  * named capture group으로 분해.
  */
 const KR_ORDER_ID_REGEX =
-  /^kr_(report_one|season_pass|consult_one|subscription_pro|subscription_elite)_(once|monthly|yearly)_([A-Za-z0-9]{20,40})_(\d{13,16})_([A-Za-z0-9]{6})$/;
+  /^kr_(report_one|season_pass|consult_one|subscription_pro|subscription_elite)_(once|monthly|yearly)_([A-Za-z0-9-]{20,40})_(\d{13,16})_([A-Za-z0-9]{6})$/;
 
 export type OrderPeriod = "once" | "monthly" | "yearly";
 
@@ -80,7 +80,8 @@ export function buildKrOrderId(
   productKind: ProductKind,
   period: OrderPeriod,
 ): string {
-  if (!/^[A-Za-z0-9]{20,40}$/.test(uid)) {
+  // Supabase UUID(하이픈 포함 36자) + 레거시 Firebase uid(영숫자 20~40자) 모두 허용
+  if (!/^[A-Za-z0-9-]{20,40}$/.test(uid)) {
     throw new Error(`buildKrOrderId: 유효하지 않은 uid 형식 (${uid.length}자)`);
   }
   const timestamp = Date.now();

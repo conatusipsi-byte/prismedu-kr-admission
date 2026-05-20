@@ -101,37 +101,37 @@ export function PrevYearResultCard({
             </div>
           )}
 
-          {/* 정시 — 환산점수 컷 */}
+          {/* 정시 — 환산점수 컷 (소수 첫째 자리까지) */}
           {r.cutoff70 != null && (
             <div>
               <dt className="text-xs text-muted-foreground">70%컷</dt>
-              <dd className="font-medium tabular-nums">{r.cutoff70}점</dd>
+              <dd className="font-medium tabular-nums">{r.cutoff70.toFixed(1)}점</dd>
             </div>
           )}
           {r.cutoff50 != null && (
             <div>
               <dt className="text-xs text-muted-foreground">50%컷</dt>
-              <dd className="font-medium tabular-nums">{r.cutoff50}점</dd>
+              <dd className="font-medium tabular-nums">{r.cutoff50.toFixed(1)}점</dd>
             </div>
           )}
           {r.cutoffAvg != null && (
             <div>
               <dt className="text-xs text-muted-foreground">평균</dt>
-              <dd className="font-medium tabular-nums">{r.cutoffAvg}점</dd>
+              <dd className="font-medium tabular-nums">{r.cutoffAvg.toFixed(1)}점</dd>
             </div>
           )}
 
-          {/* 학종·교과 — 등급 컷 */}
+          {/* 학종·교과 — 등급 컷 (1~9 범위, 소수 둘째 자리까지) */}
           {r.gradeCutoffAvg != null && (
             <div>
               <dt className="text-xs text-muted-foreground">평균 등급</dt>
-              <dd className="font-medium tabular-nums">{r.gradeCutoffAvg}</dd>
+              <dd className="font-medium tabular-nums">{r.gradeCutoffAvg.toFixed(2)}</dd>
             </div>
           )}
           {r.gradeCutoff70 != null && (
             <div>
               <dt className="text-xs text-muted-foreground">70%컷 등급</dt>
-              <dd className="font-medium tabular-nums">{r.gradeCutoff70}</dd>
+              <dd className="font-medium tabular-nums">{r.gradeCutoff70.toFixed(2)}</dd>
             </div>
           )}
         </dl>
@@ -145,10 +145,10 @@ export function PrevYearResultCard({
             <p className="mb-1.5 font-medium">학종 단계별 — 1단계 vs 최종</p>
             <ul className="space-y-1 text-muted-foreground">
               {r.stage1Cutoff != null && (
-                <li>· 1단계 통과 컷: <span className="tabular-nums">{r.stage1Cutoff}</span></li>
+                <li>· 1단계 통과 컷: <span className="tabular-nums">{r.stage1Cutoff.toFixed(1)}</span></li>
               )}
               {r.stage1GradeCutoff != null && (
-                <li>· 1단계 통과 등급: <span className="tabular-nums">{r.stage1GradeCutoff}</span></li>
+                <li>· 1단계 통과 등급: <span className="tabular-nums">{r.stage1GradeCutoff.toFixed(2)}</span></li>
               )}
               {r.stage2PassRate != null && (
                 <li>

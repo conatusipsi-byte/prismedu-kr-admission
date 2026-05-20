@@ -24,6 +24,7 @@ import { buildCounselorSystemPrompt } from "@/lib/prompts/counselor-guards";
 import { recordSanitizeMetric } from "@/lib/admission/counselor-metric";
 import { resolveChatContext } from "@/lib/admission/chat-context";
 import { featureLimit, type Plan } from "@/lib/plans";
+import { isMasterEmail } from "@/lib/master";
 
 const QUOTA_BUCKET = "aiChatDailyLimit";
 
@@ -40,8 +41,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   });
   if (rateErr) return rateErr;
 
-  // 2. plan 조회 + 일별 quota 검사·증가
-  const plan = await loadPlan(auth.uid);
+  // 2. plan 조회 + 일별 quota 검사·증가 (마스터는 elite 자동 부여)
+  const plan: Plan = isMasterEmail(auth.email) ? "elite" : await loadPlan(auth.uid);
   const dailyLimit = featureLimit(plan, "aiChatDailyLimit"); // free: 5, pro/elite: Infinity
   const quotaResult = await enforceChatQuota(auth.uid, dailyLimit);
   if (!quotaResult.ok) {

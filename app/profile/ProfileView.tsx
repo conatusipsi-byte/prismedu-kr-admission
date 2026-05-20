@@ -87,7 +87,7 @@ export function ProfileView(): React.ReactElement {
         onSave={(name) => saveProfile({ name })}
       />
 
-      <SpecSection hasSpec={!!profile?.specs || !!profile?.specLastUpdated} />
+      <SpecSection uid={user.id} fallbackHasSpec={!!profile?.specs || !!profile?.specLastUpdated} />
 
       <NotificationSection
         currentValue={profile?.notificationOptIn ?? false}
@@ -198,7 +198,31 @@ function AccountSection({
   );
 }
 
-function SpecSection({ hasSpec }: { hasSpec: boolean }): React.ReactElement {
+function SpecSection({ uid, fallbackHasSpec }: { uid: string; fallbackHasSpec: boolean }): React.ReactElement {
+  // /api/user/specs GET 으로 실제 user_specs 테이블에 1건 이상 있는지 확인.
+  // 미응답·에러 시엔 profile 컨텍스트의 fallback 사용.
+  const [hasSpec, setHasSpec] = React.useState(fallbackHasSpec);
+  const [checked, setChecked] = React.useState(false);
+
+  React.useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const { fetchWithAuth } = await import("@/lib/api-client");
+        const data = await fetchWithAuth<{ items: unknown[] }>("/api/user/specs");
+        if (cancelled) return;
+        setHasSpec((data.items?.length ?? 0) > 0);
+      } catch {
+        /* 401·네트워크 등 — fallback 유지 */
+      } finally {
+        if (!cancelled) setChecked(true);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [uid]);
+
   return (
     <SectionCard
       icon={<Pencil className="h-4 w-4" />}
@@ -209,7 +233,9 @@ function SpecSection({ hasSpec }: { hasSpec: boolean }): React.ReactElement {
         <p className="text-sm text-muted-foreground break-keep-all leading-relaxed">
           {hasSpec
             ? "현재 저장된 프로필을 기반으로 분석·시뮬레이션이 동작합니다. 학기가 바뀌면 새로 입력해주세요."
-            : "아직 저장된 입시 프로필이 없어요. 한 번 입력하면 분석·What-if·카운슬러가 같은 데이터로 동작합니다."}
+            : checked
+              ? "아직 저장된 입시 프로필이 없어요. 한 번 입력하면 분석·What-if·카운슬러가 같은 데이터로 동작합니다."
+              : "저장된 프로필을 불러오는 중이에요…"}
         </p>
         <Button asChild size="default" variant={hasSpec ? "outline" : "default"} className={hasSpec ? "" : "bg-brand-600 hover:bg-brand-700"}>
           <Link href="/onboarding">
@@ -217,10 +243,6 @@ function SpecSection({ hasSpec }: { hasSpec: boolean }): React.ReactElement {
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </Button>
-        <p className="text-2xs text-muted-foreground">
-          ⚠️ 현재 단계에선 수정 시 빈 폼에서 다시 입력합니다. 자동 미리채움은
-          GET /api/user/specs 라우트 본체 PR 후 활성화됩니다.
-        </p>
       </div>
     </SectionCard>
   );

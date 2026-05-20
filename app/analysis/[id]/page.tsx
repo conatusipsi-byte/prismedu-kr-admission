@@ -19,7 +19,8 @@ import type { MatchResponse, MatchResultItem } from "@/lib/schemas/api/match";
 export const dynamic = "force-dynamic";
 
 async function loadMatch(matchId: string): Promise<MatchResponse | null> {
-  if (!matchId || !/^match_[a-zA-Z0-9_]+$/.test(matchId)) return null;
+  // Supabase UUID 는 하이픈 포함 — matchId = `match_<uuid>_<timestamp>` 형식이라 하이픈 허용 필수
+  if (!matchId || !/^match_[a-zA-Z0-9_-]+$/.test(matchId)) return null;
 
   // 1. Supabase 세션 → uid
   let uid: string;

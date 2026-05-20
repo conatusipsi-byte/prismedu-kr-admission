@@ -91,8 +91,14 @@ describe("parseKrOrderId — 잘못된 입력 거부", () => {
     const long = "a".repeat(41);
     expect(parseKrOrderId(`kr_report_one_once_${long}_1730000000000_a1B2c3`)).toBeNull();
   });
-  it("uid에 특수문자", () => {
-    expect(parseKrOrderId(`kr_report_one_once_abc-123-XYZ456abc123XYZ456_1730000000000_a1B2c3`)).toBeNull();
+  it("uid 에 허용되지 않은 특수문자 (underscore)", () => {
+    // Supabase UUID 는 하이픈 허용. underscore 는 orderId 구분자라 uid 에 포함되면 분해 실패.
+    expect(parseKrOrderId(`kr_report_one_once_abc_123_XYZ456abc123XYZ456_1730000000000_a1B2c3`)).toBeNull();
+  });
+  it("uid 에 Supabase UUID 형식 (하이픈 포함 36자) — 통과", () => {
+    const uuid = "7c9e6679-7425-40de-944b-e07fc1f90ae7";
+    const parsed = parseKrOrderId(`kr_report_one_once_${uuid}_1730000000000_a1B2c3`);
+    expect(parsed?.uid).toBe(uuid);
   });
   it("timestamp 너무 짧음", () => {
     expect(parseKrOrderId(`kr_report_one_once_${VALID_UID}_123_a1B2c3`)).toBeNull();
@@ -116,8 +122,13 @@ describe("buildKrOrderId — uid 형식 강제", () => {
   it("19자 uid → throw", () => {
     expect(() => buildKrOrderId("short_uid_too_short", "report_one", "once")).toThrow(/uid/);
   });
-  it("특수문자 포함 uid → throw", () => {
-    expect(() => buildKrOrderId("abc-123-with-dashes-here-12345", "report_one", "once")).toThrow();
+  it("Supabase UUID (하이픈 포함 36자) — 통과", () => {
+    const uuid = "7c9e6679-7425-40de-944b-e07fc1f90ae7";
+    expect(() => buildKrOrderId(uuid, "report_one", "once")).not.toThrow();
+  });
+  it("orderId 구분자 underscore 포함 uid → throw", () => {
+    // underscore 는 buildKrOrderId 결과를 다시 parse 할 때 분해 실패시킴 → 차단.
+    expect(() => buildKrOrderId("abc_with_under_score_12345678", "report_one", "once")).toThrow();
   });
   it("빈 uid → throw", () => {
     expect(() => buildKrOrderId("", "report_one", "once")).toThrow();

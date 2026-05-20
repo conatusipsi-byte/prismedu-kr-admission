@@ -35,6 +35,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { HeroMockup } from "@/components/marketing/HeroMockup";
+import { HeroCta, FinalCta } from "@/components/marketing/HeroCta";
 import { MotionSection, MotionItem } from "@/components/marketing/MotionSection";
 import { QuickMatchDemo } from "@/components/marketing/QuickMatchDemo";
 import { TrustSignals } from "@/components/marketing/TrustSignals";
@@ -188,20 +189,7 @@ export default function LandingPage(): React.ReactElement {
               내신·수능·생기부에 맞는 <span className="font-semibold text-foreground/90">수시 6장 + 정시 가나다군</span> 전략을 정리해드려요.
             </p>
 
-            <div
-              className="animate-fade-up flex flex-col sm:flex-row gap-3 w-full sm:w-auto"
-              style={{ animationDelay: "0.3s" }}
-            >
-              <Button asChild size="2xl" variant="primary" className="shadow-glow-brand">
-                <Link href="/signup?returnUrl=/onboarding">
-                  무료 가입하고 분석 받기
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild size="2xl" variant="outline">
-                <Link href="/admissions">학과 둘러보기</Link>
-              </Button>
-            </div>
+            <HeroCta />
 
             <p
               className="animate-fade-up text-2xs text-muted-foreground"
@@ -557,24 +545,7 @@ export default function LandingPage(): React.ReactElement {
             <p className="text-base lg:text-lg text-white/70 max-w-xl break-keep-all leading-relaxed">
               가입 즉시 무료 분석 + AI 카운슬러 사용 가능. 결제는 분석을 먼저 보고 결정하세요.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 mt-2 w-full sm:w-auto">
-              {/* variant=ghost 로 default bg-brand-600 클래스 충돌 차단 후 dark-bg 위 white 토큰 명시.
-                  P0-06 audit: 이전엔 default variant 의 dark:bg-brand-500 와 className 의 bg-white 가 동시 적용. */}
-              <Button
-                asChild
-                size="2xl"
-                variant="ghost"
-                className="bg-white text-ink-950 hover:bg-white/90 shadow-xl focus-visible:ring-white"
-              >
-                <Link href="/signup?returnUrl=/onboarding">
-                  무료 가입하고 분석 받기
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild size="2xl" variant="ghost" className="text-white hover:bg-white/10 border border-white/20">
-                <Link href="/pricing">요금제 보기</Link>
-              </Button>
-            </div>
+            <FinalCta />
 
             {/* Floating mini-cards (decorative) */}
             <div className="hidden lg:block absolute -left-4 top-1/3 -rotate-6 animate-float-sm">

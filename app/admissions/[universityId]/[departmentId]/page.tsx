@@ -20,6 +20,7 @@ import { AdmissionDetailHero } from "@/components/admissions/AdmissionDetailHero
 import { TrackDetailCard } from "@/components/admissions/TrackDetailCard";
 import { PrevYearResultCard } from "@/components/admissions/PrevYearResultCard";
 import { ProbabilityTab } from "@/components/admissions/ProbabilityTab";
+import { AnalysisCtaBox } from "@/components/admissions/AnalysisCtaBox";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -249,23 +250,8 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
           {/* 사이드바 30% — sticky */}
           <aside className="hidden lg:block">
             <div className="sticky top-24 flex flex-col gap-4">
-              {/* CTA — 이 학과 분석 시작 */}
-              <div className="rounded-3xl border border-brand-200 bg-gradient-to-br from-brand-50 via-brand-50/30 to-iris/10 dark:from-brand-950/50 dark:via-brand-950/20 dark:to-iris/8 dark:border-brand-800/60 p-6">
-                <Badge variant="pill-brand" size="sm" className="mb-3">
-                  AI 분석
-                </Badge>
-                <h3 className="text-lg font-bold tracking-tight mb-2 break-keep-all">
-                  이 학과 내 합격 가능성
-                </h3>
-                <p className="text-xs text-muted-foreground mb-5 break-keep-all leading-relaxed">
-                  내신·수능·생기부 입력 시 Safety/Match/Reach 분류를 즉시 받아볼 수 있어요.
-                </p>
-                <Button asChild size="lg" variant="primary" className="w-full shadow-glow-brand">
-                  <Link href={`/login?returnUrl=${encodeURIComponent(`/admissions/${universityId}/${departmentId}`)}`}>
-                    무료로 분석 시작
-                  </Link>
-                </Button>
-              </div>
+              {/* CTA — 로그인 여부에 따라 라벨/링크 분기 (클라 컴포넌트) */}
+              <AnalysisCtaBox universityId={universityId} departmentId={departmentId} />
 
               {/* 이전 입결 — 데스크톱 사이드바 */}
               <PrevYearResultCard

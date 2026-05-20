@@ -257,7 +257,7 @@ export function OnboardingWizard({
               이전
             </Button>
             <span className="text-xs text-muted-foreground">
-              {step} / {STEPS.length - 1}
+              {step} / {STEPS.length}
             </span>
             <Button
               type="button"

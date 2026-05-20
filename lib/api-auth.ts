@@ -162,6 +162,14 @@ export async function requireMasterAuthFromHeaders(): Promise<AuthResult> {
 }
 
 async function assertMaster(auth: AuthSuccess): Promise<AuthResult> {
+  // 1단계 — MASTER_EMAILS env (bootstrap 채널). admins 테이블이 비어있어도
+  //   환경변수의 이메일은 즉시 master 권한 부여. 운영자 첫 진입을 위한 안전망.
+  const { isMasterEmail } = await import("./master");
+  if (isMasterEmail(auth.email)) {
+    return { ...auth, isMaster: true };
+  }
+
+  // 2단계 — admins 테이블 active=true. 운영 중 추가/제거가 잦은 일반 운영자.
   try {
     const sb = getAdminSupabase();
     const { data, error } = await sb
