@@ -103,10 +103,10 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
           year={admissions.year}
         />
 
-        {/* Section anchor nav (section-jump) */}
+        {/* Section anchor nav (section-jump) — 위·아래 대칭 (border-y + py-3, my-6) */}
         <nav
           aria-label="섹션 이동"
-          className="mt-6 mb-8 flex flex-wrap items-center gap-1.5 border-b border-border/60 pb-3"
+          className="my-6 flex flex-wrap items-center gap-1.5 border-y border-border/60 py-3"
         >
           {[
             { href: "#overview",    label: "개요" },
