@@ -1,5 +1,11 @@
 name: e2e
 
+# ⚠️ 임시 비활성화 (2026-05-21)
+# Stage 0 (Firebase → Supabase) 마이그레이션 시 dev-with-emulator.sh 삭제
+# 후속 작업: playwright.config.ts webServer 설정을 Supabase 환경에 맞게 갱신
+# 출시 전 반드시 복구
+# 상세: docs/decisions/2026-05-21-e2e-disabled.md
+
 # main push + 모든 PR마다 Playwright e2e 실행. ci.yml 과 분리 — e2e 는 ~5분 걸려
 # 빠른 피드백을 막지 않도록 병렬 워크플로로 운영.
 #
@@ -20,6 +26,7 @@ concurrency:
 
 jobs:
   e2e:
+    if: false # ⚠️ 임시 비활성화 — Stage 0 Supabase 마이그레이션 후 복구 필요
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
