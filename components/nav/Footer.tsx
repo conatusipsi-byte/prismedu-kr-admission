@@ -46,9 +46,9 @@ export function Footer(): React.ReactElement | null {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-12 md:gap-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-5 flex flex-col gap-5">
-            <Link href="/" className="inline-flex items-center gap-2.5">
-              <Logo className="h-9 w-9" />
-              <span className="font-display text-base font-bold tracking-tight">Conatus</span>
+            <Link href="/" aria-label="Conatus 홈" className="inline-flex items-center">
+              {/* 워드마크가 이미지에 포함됨 — 별도 텍스트 X. h-14 (56px). */}
+              <Logo className="h-14" />
             </Link>
             <p className="text-sm leading-relaxed text-muted-foreground max-w-xs">
               정직한 데이터로 입시를 설계합니다. 표본이 부족한 학과는 추측 수치를 보여드리지 않아요.

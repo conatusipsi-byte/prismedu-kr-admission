@@ -1,72 +1,76 @@
-import * as React from "react";
-import { cn } from "@/lib/utils";
+"use client";
 
 /**
- * Logo — Conatus 모노그램.
+ * Logo — Conatus 브랜드 로고 (다크/라이트 자동 분기).
  *
- * 'c' 곡선 안쪽에 학사모(graduation cap) 미니 모티프.
- * brand-500 → iris 그라디언트로 칠해진 squircle 배경.
+ * 자산:
+ *   - public/brand/logo-dark.webp   다크 배경 위 노출용
+ *   - public/brand/logo-light.webp  화이트 배경 위 노출용
  *
- * size는 컨테이너의 className으로 제어 (h-8 w-8 등). 내부 SVG는 100% 채움.
- * 단색 모드(`solid` prop)는 다크모드 카드 위 그림자 표현용.
+ * 로고 이미지에 "Conatus" 워드마크가 이미 포함됨 → 호출 측에서 별도 텍스트 X.
+ *
+ * SSR 안전성:
+ *   - next-themes 의 resolvedTheme 은 hydration 전 undefined.
+ *   - mount 전엔 light 자산을 placeholder 로 (CLS 방지 + 깜빡임 최소화).
+ *   - hidden alt 텍스트로 스크린리더 호환.
+ *
+ * 사용 예:
+ *   <Logo className="h-10" />   // Navbar
+ *   <Logo className="h-14" />   // Footer
+ *
+ * ⚠️ PNG/WEBP 자산이라 SVG 대비 무거움 (각 ≈42 KB).
+ *    출시 후 SVG 또는 React 컴포넌트로 전환 검토 (TODO: post-launch).
+ *    현재는 Next.js Image 로 자동 최적화(브라우저별 webp/avif 변환 + lazy/priority).
  */
+
+import * as React from "react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
+import { cn } from "@/lib/utils";
+
 type LogoProps = {
   className?: string;
-  solid?: boolean;
+  /** LCP 최적화 — Navbar 처럼 above-the-fold 노출 시 true. 기본 false. */
+  priority?: boolean;
+  /** 시각 노출용 alt — 텍스트 워드마크가 이미 이미지에 포함되므로 비워두면 "Conatus" 자동. */
+  alt?: string;
 };
 
-export function Logo({ className, solid = false }: LogoProps): React.ReactElement {
-  const gradId = React.useId();
+const LIGHT_SRC = "/brand/logo-light.webp";
+const DARK_SRC = "/brand/logo-dark.webp";
+/** 원본 자산 정사각 (1092 × 1092). aspect-square 유지. */
+const NATIVE_DIM = 1092;
+
+export function Logo({ className, priority = false, alt = "Conatus" }: LogoProps): React.ReactElement {
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
+
+  // mount 전: light 자산을 default — CLS·hydration mismatch 방지.
+  // mount 후: theme 에 따라 swap.
+  const src = mounted && resolvedTheme === "dark" ? DARK_SRC : LIGHT_SRC;
+
   return (
     <span
-      aria-hidden
       className={cn(
-        "relative inline-flex items-center justify-center overflow-hidden",
-        // squircle ≈ rounded-2xl 가까운 ratio (24/32 px = 0.75)
-        "rounded-[10px]",
-        solid && "bg-brand-600",
+        // 정사각 비율 강제 + 부모 height 따라감.
+        "relative inline-block aspect-square shrink-0",
         className,
       )}
+      data-component="brand-logo"
+      data-theme={mounted ? resolvedTheme : "light"}
     >
-      {!solid && (
-        <span
-          className="absolute inset-0 rounded-[10px]"
-          style={{
-            background: `linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(243 91% 73%) 100%)`,
-          }}
-        />
-      )}
-      <svg
-        viewBox="0 0 32 32"
-        fill="none"
-        className="relative h-full w-full p-[18%] text-white"
-      >
-        <defs>
-          <linearGradient id={`${gradId}-c`} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="rgba(255,255,255,0.95)" />
-            <stop offset="100%" stopColor="rgba(255,255,255,0.7)" />
-          </linearGradient>
-        </defs>
-        {/* 외곽 'c' arc — 좌측이 열린 형태, 학사모와 시각 균형 */}
-        <path
-          d="M22 7.2c-2.2-1.8-5-2.7-7.8-2.5C8.6 5.1 4.6 9.4 4.6 14.7c0 5.5 4.3 9.9 9.8 10 2.7 0 5.2-1 7-2.7"
-          stroke={`url(#${gradId}-c)`}
-          strokeWidth="3"
-          strokeLinecap="round"
-          fill="none"
-        />
-        {/* 학사모 — 'c' 내부 우상단에 컴팩트하게 */}
-        <g transform="translate(15.5 9.5)">
-          {/* 모자 윗판 */}
-          <path
-            d="M0 2 L6 0 L12 2 L6 4 Z"
-            fill="white"
-          />
-          {/* 술 띠 */}
-          <line x1="11" y1="2.5" x2="11" y2="5.5" stroke="white" strokeWidth="0.6" strokeLinecap="round" />
-          <circle cx="11" cy="6" r="0.7" fill="white" />
-        </g>
-      </svg>
+      <Image
+        src={src}
+        alt={alt}
+        width={NATIVE_DIM}
+        height={NATIVE_DIM}
+        priority={priority}
+        // h-* 클래스로 컨테이너 사이즈가 정해지므로 fill 대신 width/height + sizes.
+        sizes="(max-width: 768px) 56px, 56px"
+        className="h-full w-full object-contain"
+      />
     </span>
   );
 }

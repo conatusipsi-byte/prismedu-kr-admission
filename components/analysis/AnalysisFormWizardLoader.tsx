@@ -147,6 +147,7 @@ function specRowToPayload(row: SpecRow): AnalysisFormPayload {
       gradeLevel,
       track: null,
       abroadHighSchool: null,
+      highSchool: null,
     },
     score: { naesin, csat },
     extra: EMPTY_ANALYSIS_FORM.extra,

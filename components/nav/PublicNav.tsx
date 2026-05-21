@@ -79,10 +79,11 @@ export function PublicNav(): React.ReactElement | null {
           {/* Logo */}
           <Link
             href="/"
-            className="group flex items-center gap-2.5 text-base font-bold text-foreground transition-opacity hover:opacity-90"
+            aria-label="Conatus 홈"
+            className="group flex items-center transition-opacity hover:opacity-90"
           >
-            <Logo className="h-8 w-8" />
-            <span className="font-display text-[15px] tracking-tight">Conatus</span>
+            {/* 워드마크가 이미지에 포함됨 — 별도 텍스트 X. h-10 (40px). */}
+            <Logo className="h-10" priority />
           </Link>
 
           {/* Desktop nav */}

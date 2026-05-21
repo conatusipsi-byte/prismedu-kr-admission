@@ -25,21 +25,32 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { HighSchoolAutocomplete } from "@/components/forms/HighSchoolAutocomplete";
 
 export type GradeLevel = "high1" | "high2" | "high3" | "n_repeat";
 export type AnalysisTrack = "humanities" | "natural" | "arts";
 export type AbroadHighSchool = "yes" | "no" | null;
 
+/** NEIS 자동완성에서 선택한 고등학교 스냅샷 (옵셔널). */
+export interface HighSchoolRef {
+  code: string;
+  name: string;
+  region: string;
+}
+
 export interface BasicInfoStepValue {
   gradeLevel: GradeLevel | null;
   track: AnalysisTrack | null;
   abroadHighSchool: AbroadHighSchool;
+  /** 출신/재학 고등학교 (선택 입력) — NEIS 자동완성으로 채움. abroadHighSchool='no' 일 때만 의미 있음. */
+  highSchool: HighSchoolRef | null;
 }
 
 export const EMPTY_BASIC_INFO: BasicInfoStepValue = {
   gradeLevel: null,
   track: null,
   abroadHighSchool: null,
+  highSchool: null,
 };
 
 export interface BasicInfoStepProps {
@@ -134,6 +145,35 @@ export function BasicInfoStep({ value, onChange }: BasicInfoStepProps): React.Re
           </p>
         )}
       </div>
+
+      {/* 출신/재학 고등학교 — NEIS 자동완성 (선택 입력, 한국 고교일 때만 노출) */}
+      {value.abroadHighSchool === "no" && (
+        <div className="flex flex-col gap-2">
+          <Label htmlFor="basic-highschool" className="text-sm font-medium">
+            출신/재학 고등학교 <span className="text-muted-foreground font-normal text-xs">(선택)</span>
+          </Label>
+          <HighSchoolAutocomplete
+            inputId="basic-highschool"
+            ariaLabel="출신 고등학교"
+            value={value.highSchool?.name ?? ""}
+            onSelect={(s) =>
+              onChange({
+                ...value,
+                highSchool: { code: s.code, name: s.name, region: s.region },
+              })
+            }
+            onChange={(text) => {
+              // 자유 입력 도중엔 highSchool 객체 제거 — 미선택 상태 표시.
+              if (value.highSchool && text !== value.highSchool.name) {
+                onChange({ ...value, highSchool: null });
+              }
+            }}
+          />
+          <p className="text-2xs text-muted-foreground">
+            학교 검색 데이터는 NEIS 공공데이터를 사용해요. 비워두셔도 분석에는 영향 없습니다.
+          </p>
+        </div>
+      )}
     </div>
   );
 }

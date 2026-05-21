@@ -141,6 +141,7 @@ function specRowToPayload(row: SpecRow): OnboardingPayload {
       gradeLevel,
       track: null, // user_specs 에 미저장 — 사용자 재선택
       abroadHighSchool: null,
+      highSchool: null,
     },
     score: { naesin, csat },
     extra: EMPTY_ONBOARDING.extra,
