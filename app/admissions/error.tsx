@@ -11,7 +11,7 @@ export default function AdmissionsError({
   reset: () => void;
 }): React.ReactElement {
   React.useEffect(() => {
-    // Sentry 자동 캡처 (sentry.client.config.ts 의 기본 동작)
+    // Sentry 자동 캡처 (instrumentation-client.ts 의 기본 동작)
     console.error("[/admissions] error:", error);
   }, [error]);
 

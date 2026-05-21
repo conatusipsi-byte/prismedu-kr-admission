@@ -90,17 +90,24 @@ const nextConfig: NextConfig = {
 
 // Sentry wrapper — DSN이 설정된 경우에만 활성화.
 // 소스맵 업로드는 SENTRY_AUTH_TOKEN + org/project가 모두 있을 때만 수행 — 미설정 시 빌드 실패 방지.
+//
+// disableLogger 는 v10 부터 deprecated — webpack treeshake 옵션으로 이전:
+//   webpack.treeshake.removeDebugLogging 로 SDK 의 console.* debug 호출을 빌드 시 제거.
 const sentryBuildOptions = {
   org: process.env.SENTRY_ORG,
   project: process.env.SENTRY_PROJECT,
   authToken: process.env.SENTRY_AUTH_TOKEN,
   silent: !process.env.CI,
-  disableLogger: true,
   telemetry: false,
   hideSourceMaps: true,
   widenClientFileUpload: true,
   sourcemaps: {
     disable: !process.env.SENTRY_AUTH_TOKEN,
+  },
+  webpack: {
+    treeshake: {
+      removeDebugLogging: true,
+    },
   },
 };
 
