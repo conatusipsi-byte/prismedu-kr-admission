@@ -3,34 +3,45 @@
  *
  * DSN 미설정(env 없음) 시 init을 건너뛰어 silent no-op.
  * 회사 DSN이 새지 않도록 NEXT_PUBLIC_SENTRY_DSN로만 주입 — SENTRY_DSN(서버 전용)과 분리.
+ *
+ * 환경 구분:
+ *   - VERCEL_ENV: production / preview / development (Vercel 빌드 자동 주입)
+ *   - 로컬 dev/build: development 폴백
+ *
+ * Replay 정책:
+ *   - 정상 세션 녹화 X (replaysSessionSampleRate = 0)
+ *   - 에러 발생 시에만 100% 녹화 (replaysOnErrorSampleRate = 1.0)
+ *   - production 외 환경(preview·dev) 은 0 — 노이즈 감소
  */
 
 import * as Sentry from "@sentry/nextjs";
+import { sentryBeforeSend } from "@/lib/sentry-pii-filter";
 
 const DSN = process.env.NEXT_PUBLIC_SENTRY_DSN;
+const ENV =
+  process.env.NEXT_PUBLIC_VERCEL_ENV ||
+  process.env.VERCEL_ENV ||
+  process.env.NODE_ENV ||
+  "development";
+const IS_PROD = ENV === "production";
 
 if (DSN) {
   Sentry.init({
     dsn: DSN,
-    environment: process.env.NEXT_PUBLIC_SENTRY_ENV || process.env.NODE_ENV,
-    tracesSampleRate: process.env.NODE_ENV === "production" ? 0.1 : 0,
-    replaysSessionSampleRate: 0,
-    replaysOnErrorSampleRate: process.env.NODE_ENV === "production" ? 1.0 : 0,
-    // 개인정보 보호 — 네트워크 바디/URL의 민감 토큰 제거는 Sentry SDK 기본 scrubber가 처리.
-    // 추가로 profile/email을 event에 싣지 않도록 beforeSend에서 삭제.
-    beforeSend(event) {
-      if (event.user) {
-        delete event.user.email;
-        delete event.user.username;
-      }
-      return event;
-    },
+    environment: ENV,
+    tracesSampleRate: IS_PROD ? 0.1 : 0,
+    replaysSessionSampleRate: 0, // 정상 세션 녹화 X (개인정보 보호 + 비용)
+    replaysOnErrorSampleRate: IS_PROD ? 1.0 : 0, // 에러 시 100% 녹화
+    // PII 마스킹 — lib/sentry-pii-filter 의 공용 hook 사용.
+    // 한국 입시 도메인 민감 필드(내신·등급·합격확률·학생부 등) 도 함께 redact.
+    beforeSend: sentryBeforeSend,
     // Next.js Turbopack/HMR에서 발생하는 ChunkLoadError 등은 리포팅 제외
     ignoreErrors: [
       "ChunkLoadError",
       "Loading chunk",
       "Loading CSS chunk",
       "ResizeObserver loop",
+      "Non-Error promise rejection captured",
     ],
   });
 }

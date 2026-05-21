@@ -155,6 +155,7 @@ function stripAllowedConatusipsi(s: string): string {
     .replace(/conatusipsi-staging/g, "")
     .replace(/conatusipsi-web/g, "")
     .replace(/conatusipsi-firebase-adminsdk/g, "")
+    .replace(/conatusipsi-e5/g, "") // Sentry organization slug
     .replace(/x\.com\/conatusipsi/g, "")
     .replace(/conatusipsi\.quickMatchDemo[\w.]*/g, "");
 }
