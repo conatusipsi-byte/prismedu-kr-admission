@@ -28,7 +28,7 @@ const SNU: University = {
   id: "snu",
   n: "서울대학교",
   shortName: "서울대",
-  category: "seoul_top",
+  category: "seoul",
   campuses: [
     { id: "main", name: "관악캠퍼스", address: "서울특별시 관악구", region: "seoul", isMain: true },
   ],

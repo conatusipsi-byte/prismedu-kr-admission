@@ -35,7 +35,7 @@ const SNU_UNIVERSITY: University = {
   nameEn: "Seoul National University",
   shortName: "서울대",
   d: "snu.ac.kr",
-  category: "seoul_top",
+  category: "seoul",
   campuses: [
     {
       id: "main",

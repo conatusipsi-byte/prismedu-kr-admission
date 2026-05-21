@@ -92,23 +92,39 @@ describe("RegionFilter", () => {
   it("선택된 region 만 aria-checked=true", () => {
     render(<RegionFilter selected={["seoul"]} onChange={() => {}} />);
     const seoulBtn = screen.getByRole("checkbox", { name: "서울권" });
-    const flagBtn = screen.getByRole("checkbox", { name: "거점국립" });
+    const nationalBtn = screen.getByRole("checkbox", { name: "지방국립" });
     expect(seoulBtn.getAttribute("aria-checked")).toBe("true");
-    expect(flagBtn.getAttribute("aria-checked")).toBe("false");
+    expect(nationalBtn.getAttribute("aria-checked")).toBe("false");
   });
 
   it("토글 시 onChange 가 신규 배열로 호출", () => {
     const onChange = vi.fn();
     render(<RegionFilter selected={["seoul"]} onChange={onChange} />);
-    fireEvent.click(screen.getByRole("checkbox", { name: "거점국립" }));
-    expect(onChange).toHaveBeenCalledWith(["seoul", "national_flag"]);
+    fireEvent.click(screen.getByRole("checkbox", { name: "지방국립" }));
+    expect(onChange).toHaveBeenCalledWith(["seoul", "national"]);
   });
 
   it("이미 선택된 region 클릭 시 제거", () => {
     const onChange = vi.fn();
-    render(<RegionFilter selected={["seoul", "national_flag"]} onChange={onChange} />);
+    render(<RegionFilter selected={["seoul", "national"]} onChange={onChange} />);
     fireEvent.click(screen.getByRole("checkbox", { name: "서울권" }));
-    expect(onChange).toHaveBeenCalledWith(["national_flag"]);
+    expect(onChange).toHaveBeenCalledWith(["national"]);
+  });
+
+  it("v2: 지방사립 필터에 서울권·과기원·경기권이 노출되지 않는다 (REGION_GROUP_TO_CATEGORIES 매핑 검증)", async () => {
+    // private_local 그룹 = ["private_local"] 단일 매핑이어야 함.
+    // 만약 ["seoul"] / ["special"] / ["gyeonggi"] 가 섞이면 회귀.
+    const { REGION_GROUP_TO_CATEGORIES } = await import("@/lib/admission/labels");
+    expect(REGION_GROUP_TO_CATEGORIES.private_local).toEqual(["private_local"]);
+    expect(REGION_GROUP_TO_CATEGORIES.special).toEqual(["special"]);
+    expect(REGION_GROUP_TO_CATEGORIES.seoul).toEqual(["seoul"]);
+    expect(REGION_GROUP_TO_CATEGORIES.gyeonggi).toEqual(["gyeonggi"]);
+    expect(REGION_GROUP_TO_CATEGORIES.national).toEqual(["national"]);
+  });
+
+  it("v2: military 카테고리는 RegionFilter 에 노출되지 않는다 (UI 숨김)", () => {
+    render(<RegionFilter selected={[]} onChange={() => {}} />);
+    expect(screen.queryByRole("checkbox", { name: "사관학교" })).toBeNull();
   });
 });
 
@@ -145,17 +161,67 @@ describe("TrackFilter", () => {
    UniversityCategoryFilter — 단일 선택
    ═══════════════════════════════════════════════════════════════════════ */
 
-describe("UniversityCategoryFilter", () => {
-  it("초기 'all' 선택 표시", () => {
-    render(<UniversityCategoryFilter selected="all" onChange={() => {}} />);
-    expect(screen.getByRole("radio", { name: "전체" }).getAttribute("aria-checked")).toBe("true");
+describe("UniversityCategoryFilter (v2 multi-select 그룹 칩)", () => {
+  it("초기 빈 배열 = 전체 선택 표시", () => {
+    render(<UniversityCategoryFilter selected={[]} onChange={() => {}} />);
+    expect(screen.getByRole("checkbox", { name: "전체" }).getAttribute("aria-checked")).toBe("true");
   });
 
-  it("다른 카테고리 클릭 시 onChange 호출 (단일 선택 — 배열 X)", () => {
+  it("개별 옵션 클릭 시 multi-select 토글", () => {
     const onChange = vi.fn();
-    render(<UniversityCategoryFilter selected="all" onChange={onChange} />);
-    fireEvent.click(screen.getByRole("radio", { name: "의약" }));
-    expect(onChange).toHaveBeenCalledWith("medical");
-    expect(onChange).toHaveBeenCalledTimes(1);
+    render(<UniversityCategoryFilter selected={[]} onChange={onChange} />);
+    fireEvent.click(screen.getByRole("checkbox", { name: "인문" }));
+    expect(onChange).toHaveBeenCalledWith(["humanities"]);
+  });
+
+  it("그룹 헤더 클릭 시 그룹 내 모든 옵션 토글", () => {
+    const onChange = vi.fn();
+    render(<UniversityCategoryFilter selected={[]} onChange={onChange} />);
+    fireEvent.click(screen.getByRole("checkbox", { name: "인문·사회·어문·상경" }));
+    // 그룹 헤더 = humanities/social/language/business 4개 일괄 활성
+    const calledWith = onChange.mock.calls[0][0] as string[];
+    expect(new Set(calledWith)).toEqual(new Set(["humanities", "social", "language", "business"]));
+  });
+
+  it("의치한약수 그룹: 5개 칩 표시 (의예/치의예/한의예/약학/수의예)", () => {
+    render(<UniversityCategoryFilter selected={[]} onChange={() => {}} />);
+    expect(screen.getByRole("checkbox", { name: "의예" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "치의예" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "한의예" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "약학" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "수의예" })).toBeInTheDocument();
+  });
+
+  it("'전체' 클릭 시 모든 카테고리 해제 (빈 배열)", () => {
+    const onChange = vi.fn();
+    render(<UniversityCategoryFilter selected={["humanities", "social"]} onChange={onChange} />);
+    fireEvent.click(screen.getByRole("checkbox", { name: "전체" }));
+    expect(onChange).toHaveBeenCalledWith([]);
+  });
+});
+
+/* ═══════════════════════════════════════════════════════════════════════
+   TrackFilter — 3그룹 레이아웃 (주요·정시·기타)
+   ═══════════════════════════════════════════════════════════════════════ */
+
+describe("TrackFilter (v2 그룹 레이아웃)", () => {
+  it("주요 그룹: 학생부교과·학생부종합·논술 노출", () => {
+    render(<TrackFilter selected={[]} onChange={() => {}} />);
+    expect(screen.getByRole("checkbox", { name: "학생부교과" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "학생부종합" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "논술" })).toBeInTheDocument();
+  });
+
+  it("정시 그룹: 가군·나군·다군 노출", () => {
+    render(<TrackFilter selected={[]} onChange={() => {}} />);
+    expect(screen.getByRole("checkbox", { name: "가군" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "나군" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "다군" })).toBeInTheDocument();
+  });
+
+  it("기타 그룹: 실기·추가모집 노출", () => {
+    render(<TrackFilter selected={[]} onChange={() => {}} />);
+    expect(screen.getByRole("checkbox", { name: "실기" })).toBeInTheDocument();
+    expect(screen.getByRole("checkbox", { name: "추가모집" })).toBeInTheDocument();
   });
 });

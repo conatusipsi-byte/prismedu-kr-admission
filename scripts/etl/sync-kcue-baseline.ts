@@ -99,13 +99,16 @@ function readEnv(key: string): string {
 
 /**
  * KCUE 의 (schlDivNm, schlEstbNm) 조합을 안전한 default 로 categorize.
- * 정확한 categorization (seoul_top/seoul/national_flag 등) 은 admin 이 후처리.
+ * 정확한 categorization (seoul/gyeonggi/special 등) 은 별도 마이그레이션
+ * (20260520143000_university_categories / 20260521150000_university_categories_v2)
+ * 에서 도메인 지식 기반으로 후처리.
  */
 function mapCategory(schlDivNm: string, schlEstbNm: string): string {
   // 'special' enum 의도: 과학기술원·연구중심 (KAIST/POSTECH/UNIST/GIST/DGIST).
   // 전문대학·대학원은 본 schema 에 별도 enum 이 없어 설립유형 default 로 fallback.
+  void schlDivNm;
   if (schlEstbNm === "국립" || schlEstbNm === "공립" || schlEstbNm === "국립대법인")
-    return "national_local";
+    return "national";
   return "private_local";
 }
 
@@ -274,6 +277,21 @@ async function syncDepartments(
   });
   console.log(`  · legacy 매핑 보호: ${legacyMapped.size} 학과 (재생성 차단)`);
 
+  // active_override 보호 — admin 이 KCUE 폐과 마킹 오류를 수동 보정한 row 는
+  // active 컬럼을 KCUE 값으로 덮어쓰지 않는다 (active_override IS NOT NULL → 보호).
+  // 20260521120000_legacy_dept_active_override.sql 마이그레이션 참조.
+  const activeOverrideKeys = new Set<string>();
+  const { data: overrideRows } = await sb
+    .from("departments")
+    .select("university_id, id")
+    .not("active_override", "is", null);
+  overrideRows?.forEach((r) => {
+    activeOverrideKeys.add(`${r.university_id}/${r.id}`);
+  });
+  if (activeOverrideKeys.size > 0) {
+    console.log(`  · active_override 보호: ${activeOverrideKeys.size} 학과 (active 갱신 차단)`);
+  }
+
   for (let i = 0; i < universities.length; i += 1) {
     const u = universities[i];
     let majors: KcueSchoolMajor[] = [];
@@ -324,6 +342,12 @@ async function syncDepartments(
       // 학사·주간 + legacy 매핑 존재 시 row 생성 X (legacy 가 정본)
       const isUndergradDay = row.id.endsWith("-ba-d");
       if (isUndergradDay && legacyMapped.has(`${row.university_id}/${row.kedi_mjr_id}`)) {
+        continue;
+      }
+      // active_override 보호 — KCUE 의 active 값을 무시. row 자체는 upsert 하되 active 컬럼은 제거.
+      if (activeOverrideKeys.has(`${row.university_id}/${row.id}`)) {
+        const { active: _ignored, ...rest } = row;
+        byId.set(row.id, rest as typeof row);
         continue;
       }
       byId.set(row.id, row); // 마지막 wins — KCUE 가 같은 학과를 여러 행으로 줘도 안전

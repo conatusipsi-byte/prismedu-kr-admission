@@ -59,17 +59,17 @@ export type Semester = 1 | 2;
    ═══════════════════════════════════════════════════════════════════════ */
 
 /**
- * 대학 분류 — UI 필터·매칭 가중치 기준
+ * 대학 분류 v2 (2026-05-21~) — UI 필터·매칭 가중치 기준
  *
- * - seoul_top: SKY·서성한·중경외시·건동홍 등 인서울 상위권
- * - seoul: 그 외 서울권 4년제
- * - national_flag: 거점국립대 (부산·경북·전남·충남·충북·전북·강원·제주, 서울대 별도)
- * - national_local: 그 외 지방국립
- * - private_local: 지방사립
- * - special: KAIST/POSTECH/GIST/UNIST/DGIST·사관학교 등 특수목적
+ * - seoul: 서울권 (서울 소재 4년제 + 서울교대)
+ * - gyeonggi: 경기권 (경기·인천 소재)
+ * - national: 지방국립 (거점국립 + 그 외 국립·교대, 서울 소재 외)
+ * - private_local: 지방사립 (비서울·비경기 사립)
+ * - special: 특수대학 (KAIST·POSTECH·UNIST·GIST·DGIST 5곳)
+ * - military: 사관학교 (UI 필터 미노출 / DB 보존)
  */
 export type UniversityCategory =
-  | "seoul_top" | "seoul" | "national_flag" | "national_local" | "private_local" | "special";
+  | "seoul" | "gyeonggi" | "national" | "private_local" | "special" | "military";
 
 export interface Campus {
   /** 캠퍼스 슬러그 (e.g., "main", "sejong") */

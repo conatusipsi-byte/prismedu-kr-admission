@@ -17,8 +17,8 @@ export interface RegionFilterProps {
 
 const ORDER: RegionGroup[] = [
   "seoul",
-  "national_flag",
-  "national_local",
+  "gyeonggi",
+  "national",
   "private_local",
   "special",
 ];

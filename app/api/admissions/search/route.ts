@@ -9,6 +9,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import {
   AdmissionsSearchQuerySchema,
+  ADMISSIONS_SEARCH_EXCLUDE_NIGHT,
   type AdmissionsSearchQuery,
 } from "@/lib/schemas/api/admissions";
 import { matchesSearchQuery } from "@/lib/admission/labels";
@@ -93,13 +94,24 @@ async function searchDepartments(
     // NULL 인 legacy row 도 학사로 간주 — 마이그레이션에서 backfill 완료
     q = q.or(`degree_course.eq.${query.degreeCourse},degree_course.is.null`);
   }
-  // 주야 필터 — includeNight=false 일 때 주간만 + legacy NULL 허용
-  if (!query.includeNight) {
+  // 주야 필터 — 야간 학과는 항상 제외 (입시 추천 도메인 외).
+  // DB 에는 보존되지만 검색 결과 노출 X. 정책: ADMISSIONS_SEARCH_EXCLUDE_NIGHT.
+  if (ADMISSIONS_SEARCH_EXCLUDE_NIGHT) {
     q = q.or("daytime.eq.주간,daytime.is.null");
   }
 
   if (query.track) {
     q = q.eq("track", query.track);
+  }
+  // 계열 다중 필터 — trackCategory (콤마 구분) 가 있으면 departments.track 의 OR 매칭.
+  // 'business'/'language' 는 직접 매칭 안 되므로 제외 (후속 PR 에서 메타데이터 분리).
+  if (query.trackCategory && query.trackCategory.length > 0) {
+    const validTracks = query.trackCategory.filter((c) =>
+      ["humanities", "social", "natural", "engineering", "medical", "arts", "interdisciplinary"].includes(c),
+    );
+    if (validTracks.length > 0) {
+      q = q.in("track", validTracks);
+    }
   }
   if (query.cursor) {
     // cursor 는 마지막 row 의 updated_at ISO

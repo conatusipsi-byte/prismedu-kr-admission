@@ -35,7 +35,7 @@ interface Univ {
   id: string;
   n: string;
   shortName: string;
-  category: "seoul_top" | "seoul" | "national_flag" | "national_local" | "private_local" | "special";
+  category: "seoul" | "gyeonggi" | "national" | "private_local" | "special" | "military";
   rankOrder: number;
   region: string;
   depts: Array<{
@@ -56,7 +56,7 @@ interface Univ {
 
 const UNIVERSITIES: Univ[] = [
   {
-    id: "snu", n: "서울대학교", shortName: "서울대", category: "seoul_top", rankOrder: 1, region: "seoul",
+    id: "snu", n: "서울대학교", shortName: "서울대", category: "seoul", rankOrder: 1, region: "seoul",
     depts: [
       { id: "computer-science", name: "컴퓨터공학부", track: "engineering", totalQuota: 55,
         tracks: [
@@ -73,7 +73,7 @@ const UNIVERSITIES: Univ[] = [
     ],
   },
   {
-    id: "yonsei", n: "연세대학교", shortName: "연세대", category: "seoul_top", rankOrder: 2, region: "seoul",
+    id: "yonsei", n: "연세대학교", shortName: "연세대", category: "seoul", rankOrder: 2, region: "seoul",
     depts: [
       { id: "computer-science", name: "컴퓨터과학과", track: "engineering", totalQuota: 60,
         tracks: [
@@ -88,7 +88,7 @@ const UNIVERSITIES: Univ[] = [
     ],
   },
   {
-    id: "korea", n: "고려대학교", shortName: "고려대", category: "seoul_top", rankOrder: 3, region: "seoul",
+    id: "korea", n: "고려대학교", shortName: "고려대", category: "seoul", rankOrder: 3, region: "seoul",
     depts: [
       { id: "computer-science", name: "컴퓨터학과", track: "engineering", totalQuota: 55,
         tracks: [
@@ -103,7 +103,7 @@ const UNIVERSITIES: Univ[] = [
     ],
   },
   {
-    id: "hanyang", n: "한양대학교", shortName: "한양대", category: "seoul_top", rankOrder: 5, region: "seoul",
+    id: "hanyang", n: "한양대학교", shortName: "한양대", category: "seoul", rankOrder: 5, region: "seoul",
     depts: [
       { id: "mechanical", name: "기계공학부", track: "engineering", totalQuota: 70,
         tracks: [
@@ -113,7 +113,7 @@ const UNIVERSITIES: Univ[] = [
     ],
   },
   {
-    id: "sungkyunkwan", n: "성균관대학교", shortName: "성균관대", category: "seoul_top", rankOrder: 4, region: "seoul",
+    id: "sungkyunkwan", n: "성균관대학교", shortName: "성균관대", category: "seoul", rankOrder: 4, region: "seoul",
     depts: [
       { id: "software", name: "소프트웨어학과", track: "engineering", totalQuota: 65,
         tracks: [
@@ -125,7 +125,7 @@ const UNIVERSITIES: Univ[] = [
     ],
   },
   {
-    id: "sogang", n: "서강대학교", shortName: "서강대", category: "seoul_top", rankOrder: 6, region: "seoul",
+    id: "sogang", n: "서강대학교", shortName: "서강대", category: "seoul", rankOrder: 6, region: "seoul",
     depts: [
       { id: "computer-science", name: "컴퓨터공학과", track: "engineering", totalQuota: 50,
         tracks: [{ kind: "susi_essay", name: "논술전형", quotaInitial: 25 }], hasSamples: true },
@@ -156,7 +156,7 @@ const UNIVERSITIES: Univ[] = [
     ],
   },
   {
-    id: "pusan", n: "부산대학교", shortName: "부산대", category: "national_flag", rankOrder: 10, region: "busan",
+    id: "pusan", n: "부산대학교", shortName: "부산대", category: "national", rankOrder: 10, region: "busan",
     depts: [
       { id: "info-comp", name: "정보컴퓨터공학부", track: "engineering", totalQuota: 100,
         tracks: [

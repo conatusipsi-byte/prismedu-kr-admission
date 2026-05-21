@@ -20,7 +20,12 @@ import { TrackFilter } from "@/components/admissions/TrackFilter";
 import { UniversityCategoryFilter } from "@/components/admissions/UniversityCategoryFilter";
 import { DepartmentCard } from "@/components/admissions/DepartmentCard";
 import type { AdmissionTrackKind, Department, University } from "@/types/admission";
-import type { RegionGroup, DepartmentCategory } from "@/lib/admission/labels";
+import {
+  type RegionGroup,
+  type DepartmentCategory,
+  DEPARTMENT_CATEGORY_TO_SEARCH,
+  DEPARTMENT_CATEGORY_LABELS,
+} from "@/lib/admission/labels";
 import { cn } from "@/lib/utils";
 
 interface SearchResultItem {
@@ -41,10 +46,10 @@ export function AdmissionsSearchView(): React.ReactElement {
   const [query, setQuery] = React.useState("");
   const [regions, setRegions] = React.useState<RegionGroup[]>([]);
   const [tracks, setTracks] = React.useState<AdmissionTrackKind[]>([]);
-  const [category, setCategory] = React.useState<DepartmentCategory>("all");
+  const [categories, setCategories] = React.useState<DepartmentCategory[]>([]);
   const [filterDrawerOpen, setFilterDrawerOpen] = React.useState(false);
-  // 학과 표시 범위 — 기본 학사·주간만 (입시 추천 도메인 한정). 야간 토글로 확장.
-  const [includeNight, setIncludeNight] = React.useState(false);
+  // 야간대는 입시 추천 도메인 외 — 검색 결과에서 항상 제외 (DB 보존, UI 미노출).
+  // 클라이언트 요청 ⑦ (2026-05-21): 사용자가 켜고 끄는 옵션 자체 제거.
 
   // 결과
   const [items, setItems] = React.useState<SearchResultItem[]>([]);
@@ -60,7 +65,7 @@ export function AdmissionsSearchView(): React.ReactElement {
     setHasMore(true);
     void fetchPage(undefined, true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query, regions.join(","), tracks.join(","), category, includeNight]);
+  }, [query, regions.join(","), tracks.join(","), categories.join(",")]);
 
   async function fetchPage(nextCursor: string | undefined, replace: boolean): Promise<void> {
     if (loading) return;
@@ -69,13 +74,19 @@ export function AdmissionsSearchView(): React.ReactElement {
     try {
       const params = new URLSearchParams();
       if (query) params.set("q", query);
-      if (category !== "all") params.set("category", category);
+      // 다중 카테고리 — 의치한약수 5종은 모두 medical 로 매핑 후 중복 제거.
+      if (categories.length > 0) {
+        const searchCats = Array.from(
+          new Set(categories.map((c) => DEPARTMENT_CATEGORY_TO_SEARCH[c])),
+        );
+        params.set("trackCategory", searchCats.join(","));
+      }
       // 다중 필터 — 첫 항목만 stub 라우트에 전달 (실제 구현 시 다중 처리)
       if (regions.length > 0) params.set("region", regions[0]);
       if (tracks.length > 0) params.set("trackKind", tracks[0]);
       if (nextCursor) params.set("cursor", nextCursor);
       params.set("limit", "20");
-      if (includeNight) params.set("includeNight", "true");
+      // includeNight 는 서버 default(false) 사용 — 야간대 검색 비노출 정책.
 
       const res = await fetch(`/api/admissions/search?${params.toString()}`);
       if (!res.ok) {
@@ -118,12 +129,12 @@ export function AdmissionsSearchView(): React.ReactElement {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cursor, hasMore, loading]);
 
-  const hasActiveFilters = query.length > 0 || regions.length > 0 || tracks.length > 0 || category !== "all";
+  const hasActiveFilters = query.length > 0 || regions.length > 0 || tracks.length > 0 || categories.length > 0;
   const clearAllFilters = () => {
     setQuery("");
     setRegions([]);
     setTracks([]);
-    setCategory("all");
+    setCategories([]);
   };
 
   const filtersJsx = (
@@ -138,19 +149,7 @@ export function AdmissionsSearchView(): React.ReactElement {
       </section>
       <section className="flex flex-col gap-3">
         <h2 className="text-2xs font-bold uppercase tracking-wider text-muted-foreground">계열</h2>
-        <UniversityCategoryFilter selected={category} onChange={setCategory} />
-      </section>
-      <section className="flex flex-col gap-2">
-        <h2 className="text-2xs font-bold uppercase tracking-wider text-muted-foreground">표시 범위</h2>
-        <label className="flex items-center gap-2 cursor-pointer text-sm">
-          <input
-            type="checkbox"
-            checked={includeNight}
-            onChange={(e) => setIncludeNight(e.target.checked)}
-            className="h-4 w-4 rounded border-border accent-brand-600"
-          />
-          야간대 포함 <span className="text-xs text-muted-foreground">(기본 주간만)</span>
-        </label>
+        <UniversityCategoryFilter selected={categories} onChange={setCategories} />
       </section>
       {hasActiveFilters && (
         <Button variant="ghost" size="sm" onClick={clearAllFilters} className="self-start text-xs">
@@ -203,7 +202,7 @@ export function AdmissionsSearchView(): React.ReactElement {
                 필터
                 {hasActiveFilters && (
                   <Badge variant="pill-brand" size="sm" className="ml-1 -mr-1 h-4 px-1.5 text-2xs">
-                    {(regions.length + tracks.length + (category !== "all" ? 1 : 0))}
+                    {regions.length + tracks.length + categories.length}
                   </Badge>
                 )}
               </Button>
@@ -234,16 +233,17 @@ export function AdmissionsSearchView(): React.ReactElement {
                     <X className="h-3 w-3" />
                   </button>
                 ))}
-                {category !== "all" && (
+                {categories.map((c) => (
                   <button
+                    key={`c-${c}`}
                     type="button"
-                    onClick={() => setCategory("all")}
+                    onClick={() => setCategories(categories.filter((x) => x !== c))}
                     className="inline-flex shrink-0 items-center gap-1 rounded-full border border-violet-300 bg-violet-50 dark:bg-violet-950/30 dark:border-violet-700 text-violet-700 dark:text-violet-300 px-2.5 py-1 text-2xs font-semibold"
                   >
-                    {category}
+                    {DEPARTMENT_CATEGORY_LABELS[c]}
                     <X className="h-3 w-3" />
                   </button>
-                )}
+                ))}
                 <button
                   type="button"
                   onClick={clearAllFilters}

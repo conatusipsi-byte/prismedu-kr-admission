@@ -63,39 +63,42 @@ export const TRACK_KIND_DEFAULT_VISIBLE: Record<AdmissionTrackKind, boolean> = {
 };
 
 /* ═══════════════════════════════════════════════════════════════════════
-   UniversityCategory — 5종 (지역·운영주체)
+   UniversityCategory v2 — 5+1종 (military 는 UI 미노출)
    ═══════════════════════════════════════════════════════════════════════ */
 
 export const UNIVERSITY_CATEGORY_LABELS: Record<UniversityCategory, string> = {
-  seoul_top: "서울 상위권",
   seoul: "서울권",
-  national_flag: "거점국립",
-  national_local: "지방국립",
+  gyeonggi: "경기권",
+  national: "지방국립",
   private_local: "지방사립",
   special: "특수대학",
+  military: "사관학교",
 };
 
-/** RegionFilter 가 사용하는 5분류 그룹 */
+/**
+ * RegionFilter 가 노출하는 5분류 — military 제외.
+ * military 카테고리 학교는 DB 에 보존되지만 본 필터로 검색 불가.
+ */
 export type RegionGroup =
   | "seoul"
-  | "national_flag"
-  | "national_local"
+  | "gyeonggi"
+  | "national"
   | "private_local"
   | "special";
 
 export const REGION_GROUP_LABELS: Record<RegionGroup, string> = {
   seoul: "서울권",
-  national_flag: "거점국립",
-  national_local: "지방거점",
+  gyeonggi: "경기권",
+  national: "지방국립",
   private_local: "지방사립",
   special: "특수대학",
 };
 
-/** RegionFilter 그룹 → UniversityCategory 매핑 */
+/** RegionFilter 그룹 → UniversityCategory 매핑 (v2 는 1:1 매핑) */
 export const REGION_GROUP_TO_CATEGORIES: Record<RegionGroup, UniversityCategory[]> = {
-  seoul: ["seoul_top", "seoul"],
-  national_flag: ["national_flag"],
-  national_local: ["national_local"],
+  seoul: ["seoul"],
+  gyeonggi: ["gyeonggi"],
+  national: ["national"],
   private_local: ["private_local"],
   special: ["special"],
 };
@@ -115,14 +118,19 @@ export const TRACK_LABELS: Record<Track, string> = {
 };
 
 /**
- * UniversityCategoryFilter 가 사용하는 단일 선택 카테고리.
- * Track + 별도 그룹 ("상경", "어문") + "all".
+ * UniversityCategoryFilter 가 사용하는 다중 선택 카테고리.
+ * Track + 별도 그룹 ("상경", "어문") + 의치한약수 5종 분리.
+ *
+ * v2 (2026-05-21~):
+ *   - multi-select 로 변경 (그룹 헤더 클릭 시 그룹 내 모든 옵션 토글)
+ *   - 의치한약수 5종 (의예/치의예/한의예/약학/수의예) 시각적 분리
+ *     ※ 정직성(P-002): 5종 칩은 UI 표시만 분리. 검색 매핑은 모두 medical
+ *       카테고리 단일. departments.professional_type 기반 정밀 분리는 후속 PR.
  *
  * "상경"·"어문" 은 Track 안에 명시적 매핑 X — 사용자 검색 편의 위한 별도 카테고리.
  * 매칭은 기본 Track 들(humanities, social) 에서 추출하거나 후속 PR 로 메타데이터 추가.
  */
 export type DepartmentCategory =
-  | "all"
   | "humanities"
   | "social"
   | "natural"
@@ -130,10 +138,14 @@ export type DepartmentCategory =
   | "medical"
   | "arts"
   | "business"
-  | "language";
+  | "language"
+  | "medicine"        // 의예 (시각만 분리, 실제 'medical' 매핑)
+  | "dental"          // 치의예
+  | "korean_medicine" // 한의예
+  | "pharmacy"        // 약학
+  | "veterinary";     // 수의예
 
 export const DEPARTMENT_CATEGORY_LABELS: Record<DepartmentCategory, string> = {
-  all: "전체",
   humanities: "인문",
   social: "사회",
   natural: "자연",
@@ -142,6 +154,50 @@ export const DEPARTMENT_CATEGORY_LABELS: Record<DepartmentCategory, string> = {
   arts: "예체능",
   business: "상경",
   language: "어문",
+  medicine: "의예",
+  dental: "치의예",
+  korean_medicine: "한의예",
+  pharmacy: "약학",
+  veterinary: "수의예",
+};
+
+/**
+ * UniversityCategoryFilter 4 그룹 정의 (클라이언트 요청 ⑥, 2026-05-21).
+ *   - liberal: 인문·사회·어문·상경
+ *   - science: 자연·공학
+ *   - medical_group: 의치한약수 (5개 칩, 모두 medical 매핑)
+ *   ※ arts (예체능) 는 별도 단일 — 그룹에 묶지 않음
+ */
+export interface DepartmentCategoryGroup {
+  id: "liberal" | "science" | "medical_group";
+  label: string;
+  options: DepartmentCategory[];
+}
+
+export const DEPARTMENT_CATEGORY_GROUPS: DepartmentCategoryGroup[] = [
+  { id: "liberal",       label: "인문·사회·어문·상경", options: ["humanities", "social", "language", "business"] },
+  { id: "science",       label: "자연·공학",         options: ["natural", "engineering"] },
+  { id: "medical_group", label: "의치한약수",         options: ["medicine", "dental", "korean_medicine", "pharmacy", "veterinary"] },
+];
+
+/**
+ * 의치한약수 5종 → 실제 검색에서 사용할 카테고리(medical) 매핑.
+ * 향후 professional_type 분리 시 본 매핑 확장.
+ */
+export const DEPARTMENT_CATEGORY_TO_SEARCH: Record<DepartmentCategory, DepartmentCategory> = {
+  humanities: "humanities",
+  social: "social",
+  natural: "natural",
+  engineering: "engineering",
+  medical: "medical",
+  arts: "arts",
+  business: "business",
+  language: "language",
+  medicine: "medical",
+  dental: "medical",
+  korean_medicine: "medical",
+  pharmacy: "medical",
+  veterinary: "medical",
 };
 
 /* ═══════════════════════════════════════════════════════════════════════
