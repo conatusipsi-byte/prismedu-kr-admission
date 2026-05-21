@@ -58,7 +58,7 @@ function shell(args: {
       </div>
       <p style="margin:20px 4px 0;font-size:12px;line-height:1.6;color:#7a8694;">
         본 메일은 Conatus에서 발송되었습니다. 문제가 있으시면
-        <a href="mailto:hjan040507@gmail.com" style="color:#00C9A7;text-decoration:none;">hjan040507@gmail.com</a>
+        <a href="mailto:conatusipsi@gmail.com" style="color:#00C9A7;text-decoration:none;">conatusipsi@gmail.com</a>
         으로 문의해 주세요.
       </p>
     </div>
