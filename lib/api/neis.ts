@@ -162,12 +162,25 @@ export async function searchHighSchools(
   let raw: unknown;
   try {
     const res = await fetchImpl(url, {
-      // NEIS 는 ETag 없음. Node 의 cache 옵션은 무의미하지만 명시.
       method: "GET",
-      headers: { Accept: "application/json" },
+      headers: {
+        // NEIS 는 ETag 없음. Node 의 cache 옵션은 무의미하지만 명시.
+        Accept: "application/json",
+        // Vercel edge runtime의 기본 UA 가 일부 정부 API 에서 차단·500 응답 유발.
+        // 일반 브라우저-like UA 로 명시.
+        "User-Agent":
+          "Mozilla/5.0 (compatible; Conatus/1.0; +https://conatusipsi.com)",
+      },
     });
     if (!res.ok) {
-      console.warn(`[neis] HTTP ${res.status} — 빈 결과 반환`);
+      // 디버깅 — 500 응답 시 body 일부 노출 (Vercel logs 에서 확인)
+      let bodySnippet = "";
+      try {
+        bodySnippet = (await res.text()).slice(0, 200);
+      } catch {
+        /* ignore */
+      }
+      console.warn(`[neis] HTTP ${res.status} (${bodySnippet}) — 빈 결과 반환`);
       return [];
     }
     raw = await res.json();
