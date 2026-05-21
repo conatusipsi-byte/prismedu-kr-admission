@@ -193,7 +193,7 @@ export interface ProductDefKr {
     upgradePlan?: Plan;
     /** 학과 분석 권한 — Free preview 컷 해제 여부 */
     unlocksAnalysis?: boolean;
-    /** 카운슬링 1회 사용권 */
+    /** 1:1 컨설팅 1회 사용권 (consult_one 한정) */
     consultCredits?: number;
   };
   /**
@@ -207,6 +207,15 @@ export interface ProductDefKr {
   highlights: string[];
   /** placeholder 표기 사유 — UI 가격 라벨에 ⚠️ 마커로 노출 (P-002 정직성) */
   isPricePlaceholder: boolean;
+  /**
+   * 상품 카테고리 — UI 분류·라우팅·결제 흐름 분기에 사용.
+   *   - 'analysis': 분석 단건/시즌권
+   *   - 'subscription': 정기 구독
+   *   - 'consulting': 1:1 컨설팅 (예약 캘린더 → /consulting 으로 이동)
+   */
+  type: "analysis" | "subscription" | "consulting";
+  /** 컨설팅 상품 전용 — 세션 길이 (분). 그 외 상품은 undefined. */
+  durationMinutes?: number;
 }
 
 /**
@@ -218,6 +227,7 @@ export interface ProductDefKr {
 export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
   report_one: {
     kind: "report_one",
+    type: "analysis",
     displayName: "분석 리포트 1회",
     shortDescription: "성적·비교과 입력 후 학과별 합격 가능성 1회 분석",
     priceKrw: 9900,
@@ -235,6 +245,7 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
   },
   season_pass: {
     kind: "season_pass",
+    type: "analysis",
     displayName: "시즌권 (수시·정시 통합)",
     shortDescription: "시즌 전체 분석·재분석 무제한 (수시·정시 한 사이클)",
     priceKrw: 99000,
@@ -250,24 +261,31 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
       "AI 카운슬러 무제한",
     ],
   },
+  // 컨설팅 모듈 (2026-05-21 추가 계약 +70만원) — ProductKind 'consult_one' 의미 재정의.
+  //   기존: AI 카운슬러 1회 → 신규: 1:1 입시 컨설팅 60분 (방준현 대표).
+  //   가격 placeholder + enabled=false → /pricing 카드 노출되지만 결제 버튼 비활성화 (P-014).
   consult_one: {
     kind: "consult_one",
-    displayName: "AI 카운슬러 1회 상담",
-    shortDescription: "프로필 기반 1회 상담 세션 (1주일 내 사용)",
-    priceKrw: 4900,
+    type: "consulting",
+    displayName: "1:1 입시 컨설팅 (60분)",
+    shortDescription: "방준현 대표와 1:1 입시 상담 (60분, 화상 또는 대면)",
+    priceKrw: 0, // ⚠️ TODO P-014: 클라이언트 가격 결정 후 변경 (현재 placeholder)
     period: "once",
-    durationDays: 7,
+    durationDays: 60, // 결제일 ~60일 내 예약 사용
+    durationMinutes: 60,
     grants: { consultCredits: 1 },
     blocksOnInsufficientSample: false,
-    enabled: true,
+    enabled: false, // ⚠️ placeholder — 가격 확정 시 true 로 전환
     isPricePlaceholder: true,
     highlights: [
-      "사용자 스펙 기반 맞춤 답변",
-      "분석 결과와 연동된 추천 질문 안내",
+      "방준현 대표와 1:1 60분 상담",
+      "신청서 기반 맞춤 진단",
+      "정시·수시·학종 전략 통합",
     ],
   },
   subscription_pro: {
     kind: "subscription_pro",
+    type: "subscription",
     displayName: "Pro 월간 구독",
     shortDescription: "분석·상담·시뮬레이션 무제한 — 월 단위",
     priceKrw: 29000,
@@ -285,6 +303,7 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
   },
   subscription_elite: {
     kind: "subscription_elite",
+    type: "subscription",
     displayName: "Elite 월간 구독",
     shortDescription: "Pro의 모든 기능 + 우선 응답 + 학부모 리포트",
     priceKrw: 79000,

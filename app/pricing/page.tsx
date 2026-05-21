@@ -36,10 +36,12 @@ export const metadata: Metadata = {
 
 /* ───────────────────────── 비교 테이블 데이터 ───────────────────────── */
 
+// consult_one 의 의미가 2026-05-21 자로 "AI 카운슬러 1회" → "1:1 입시 컨설팅 60분"
+// 으로 재정의됨 (Day 1 of consulting 계약). 비교표 라벨·값도 함께 갱신.
 const COMPARE_PLANS = [
   { kind: "report_one",   label: "단건 리포트", featured: false },
   { kind: "season_pass",  label: "시즌권",       featured: true  },
-  { kind: "consult_one",  label: "단건 상담",   featured: false },
+  { kind: "consult_one",  label: "1:1 컨설팅",   featured: false },
 ] as const;
 
 type Feature = {
@@ -52,8 +54,8 @@ const FEATURES: readonly Feature[] = [
   { group: "분석",   name: "학과별 합격 가능성 분석",     values: { report_one: "1회", season_pass: "무제한", consult_one: "—" } },
   { group: "분석",   name: "전형별 분리 (수시·정시·논술)", values: { report_one: true,  season_pass: true,    consult_one: false } },
   { group: "분석",   name: "재분석·시뮬레이션",            values: { report_one: false, season_pass: true,    consult_one: false } },
-  { group: "상담",   name: "AI 카운슬러 채팅",             values: { report_one: "5턴", season_pass: "무제한", consult_one: "1회 세션" } },
-  { group: "상담",   name: "프로필 기반 맞춤 답변",        values: { report_one: true,  season_pass: true,    consult_one: true  } },
+  { group: "상담",   name: "AI 카운슬러 채팅",             values: { report_one: "5턴", season_pass: "무제한", consult_one: "—" } },
+  { group: "상담",   name: "1:1 컨설팅 (60분)",            values: { report_one: false, season_pass: false,   consult_one: "1회" } },
   { group: "시즌",   name: "모집요강 자동 갱신",           values: { report_one: false, season_pass: true,    consult_one: false } },
   { group: "시즌",   name: "수시·정시 한 사이클",          values: { report_one: false, season_pass: true,    consult_one: false } },
   { group: "지원",   name: "이메일 문의",                  values: { report_one: true,  season_pass: true,    consult_one: true  } },
