@@ -21,6 +21,14 @@ import { z } from "zod";
 import { searchHighSchools } from "@/lib/api/neis";
 import { zodErrorResponse } from "@/lib/api-auth";
 
+/**
+ * Region — Seoul (icn1).
+ *
+ * NEIS (open.neis.go.kr) 는 외국 IP egress 차단 → 미국 region (iad1) 에서
+ * 호출 시 HTTP 500 응답. icn1 강제로 한국 내부에서 호출되도록 한다.
+ */
+export const preferredRegion = "icn1";
+
 const QuerySchema = z.object({
   q: z.string().min(1).max(50),
 });
