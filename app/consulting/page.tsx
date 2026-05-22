@@ -1,9 +1,8 @@
 /**
  * /consulting — 1:1 입시 컨설팅 예약 페이지.
  *
- * Day 2 of consulting 계약 — 페이지 구조 + 캘린더 + 신청서 skeleton.
- * 좌측: ConsultantProfile (placeholder), 우측: BookingCalendar.
- * 하단: 신청서 폼 자리 — Day 3 에서 구현.
+ * Day 3 (현재): 좌측 컨설턴트 프로필, 우측 캘린더 + 신청서 (슬롯 선택 시 펼침).
+ * Day 4 (예정): 신청서 제출 후 예약 확정 (POST /api/consulting/bookings) — 슬롯 점유 + entitlement 차감.
  *
  * 권한 검증은 app/consulting/layout.tsx 가 처리:
  *   - 미로그인 → /login?returnUrl=/consulting (middleware)
@@ -43,21 +42,6 @@ export default function ConsultingPage() {
           <ConsultingBookingSection />
         </Card>
       </div>
-
-      <Card className="p-card-lg" aria-label="컨설팅 신청서 (Day 3 에서 구현)">
-        <div className="flex flex-col gap-2">
-          <h2 className="text-base font-semibold text-foreground">컨설팅 신청서</h2>
-          <p className="text-sm text-muted-foreground break-keep-all">
-            예약 시간을 먼저 선택한 뒤, 학생 정보·상담 주제·질문을 입력하면 컨설턴트에게 사전 공유됩니다.
-          </p>
-          <div
-            role="note"
-            className="rounded-lg border border-dashed border-border/80 bg-muted/40 px-4 py-6 text-center text-2xs text-muted-foreground"
-          >
-            신청서 폼은 곧 추가됩니다 — 우선 위에서 예약 시간을 선택해주세요.
-          </div>
-        </div>
-      </Card>
     </div>
   );
 }
