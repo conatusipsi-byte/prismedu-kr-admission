@@ -60,6 +60,7 @@ const PROTECTED_PATH_PREFIXES = [
   "/compare",
   "/what-if",
   "/spec-analysis",
+  "/consulting",  // Day 2 of consulting 계약 — entitlement 추가 검증은 app/consulting/layout.tsx
 ] as const;
 
 const LOGIN_PATH = "/login";
