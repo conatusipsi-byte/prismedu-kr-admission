@@ -25,6 +25,7 @@ import {
   type DepartmentCategory,
   DEPARTMENT_CATEGORY_TO_SEARCH,
   DEPARTMENT_CATEGORY_LABELS,
+  REGION_GROUP_TO_CATEGORIES,
 } from "@/lib/admission/labels";
 import { cn } from "@/lib/utils";
 
@@ -81,8 +82,15 @@ export function AdmissionsSearchView(): React.ReactElement {
         );
         params.set("trackCategory", searchCats.join(","));
       }
-      // 다중 필터 — 첫 항목만 stub 라우트에 전달 (실제 구현 시 다중 처리)
-      if (regions.length > 0) params.set("region", regions[0]);
+      // 지역 다중 필터 — RegionGroup[] 을 REGION_GROUP_TO_CATEGORIES 로 UniversityCategory[]
+      // 로 변환 후 콤마 구분 `category` 로 전달. v2 매핑은 1:1 이지만 추후 1:N 확장 대비.
+      if (regions.length > 0) {
+        const cats = Array.from(
+          new Set(regions.flatMap((r) => REGION_GROUP_TO_CATEGORIES[r])),
+        );
+        params.set("category", cats.join(","));
+      }
+      // 전형 다중 필터 — 첫 항목만 stub 라우트에 전달 (실제 구현 시 다중 처리)
       if (tracks.length > 0) params.set("trackKind", tracks[0]);
       if (nextCursor) params.set("cursor", nextCursor);
       params.set("limit", "20");

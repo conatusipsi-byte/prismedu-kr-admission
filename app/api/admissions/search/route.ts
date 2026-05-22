@@ -56,7 +56,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   try {
     const result = await searchDepartments(query, allowJaeoegukmin);
     const cacheHeaders =
-      query.q || query.region || query.trackKind || query.category
+      query.q || query.category || query.trackKind || query.trackCategory
         ? CACHE_HEADERS_PUBLIC
         : CACHE_HEADERS_DEFAULT;
     return NextResponse.json(result, { headers: cacheHeaders });
@@ -100,6 +100,14 @@ async function searchDepartments(
     q = q.or("daytime.eq.주간,daytime.is.null");
   }
 
+  // 대학 카테고리 필터 — RegionFilter (서울권/경기권/지방국립/지방사립/특수대학) UI 에서
+  // REGION_GROUP_TO_CATEGORIES 매핑을 거쳐 들어온 UniversityCategory 배열.
+  // 임베드된 universities 테이블 컬럼에 대해 PostgREST `universities.category` 문법으로 IN 필터.
+  // 한도 적용(limit) 이전에 DB 단계에서 거르므로, "특수대학 5곳" 같은 좁은 카테고리도
+  // 결과가 빈 채로 도착하지 않는다 (이전 post-filter 방식의 잠재 결함 동시 수정).
+  if (query.category && query.category.length > 0) {
+    q = q.in("universities.category", query.category);
+  }
   if (query.track) {
     q = q.eq("track", query.track);
   }
@@ -183,7 +191,6 @@ async function searchDepartments(
       dedupSeen.add(dedupKey);
     }
     const univ = raw.universities;
-    if (query.category && univ.category !== query.category) continue;
 
     if (query.q) {
       const targetText = `${univ.n} ${univ.short_name ?? ""} ${raw.name}`;

@@ -8,12 +8,33 @@ import { z } from "zod";
    GET /api/admissions/search
    ═══════════════════════════════════════════════════════════════════════ */
 
+/**
+ * UniversityCategory v2 — 5+1 enum. RegionFilter (UI) 의 RegionGroup 과 1:1 매핑.
+ * View 가 REGION_GROUP_TO_CATEGORIES 로 변환 후 `category=seoul,special` 형태로 전달.
+ */
+const VALID_UNIVERSITY_CATEGORIES = [
+  "seoul", "gyeonggi", "national", "private_local", "special", "military",
+] as const;
+
 export const AdmissionsSearchQuerySchema = z.object({
   q: z.string().max(100).optional(),
-  category: z.enum([
-    "seoul", "gyeonggi", "national", "private_local", "special", "military",
-  ]).optional(),
-  region: z.string().max(20).optional(),
+  /**
+   * 대학 카테고리 다중 필터 — 콤마 구분 (예: "seoul,gyeonggi").
+   * RegionFilter UI 5분류(서울권/경기권/지방국립/지방사립/특수대학) → REGION_GROUP_TO_CATEGORIES
+   * 매핑으로 변환된 UniversityCategory 들이 들어옴. 유효하지 않은 값은 서버에서 필터 제외.
+   */
+  category: z
+    .string()
+    .max(200)
+    .optional()
+    .transform((v) => {
+      if (!v) return undefined;
+      const parts = v.split(",").map((s) => s.trim()).filter(Boolean);
+      const valid = parts.filter((p) =>
+        (VALID_UNIVERSITY_CATEGORIES as readonly string[]).includes(p),
+      );
+      return valid.length > 0 ? valid : undefined;
+    }),
   track: z.enum([
     "humanities", "social", "natural", "engineering",
     "medical", "arts", "interdisciplinary",
