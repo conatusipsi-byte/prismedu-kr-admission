@@ -22,6 +22,15 @@ import { AlertCircle } from "lucide-react";
 import { listEnabledProductsKr, type ProductDefKr } from "@/lib/plans";
 import { ProductCard } from "@/components/payment/ProductCard";
 
+/**
+ * BUG-005: 결제 인프라(토스 client key + 사업자 등록) 미완료 상태에선
+ * 결제 버튼을 클릭 가능한 상태로 두지 않는다 (P-002 정직성).
+ * NEXT_PUBLIC_TOSS_CLIENT_KEY 는 빌드 타임에 클라 번들로 인라인됨 — 부재 시 카탈로그
+ * 카드 전체를 disabled + 사유 안내로 표시.
+ */
+const PAYMENT_CONFIGURED = Boolean(process.env.NEXT_PUBLIC_TOSS_CLIENT_KEY);
+const NOT_CONFIGURED_REASON = "사업자 등록 완료 후 활성화됩니다 (출시 준비 중)";
+
 export function PaymentCatalogView(): React.ReactElement {
   const products = React.useMemo(() => listEnabledProductsKr(), []);
   const [pendingKind, setPendingKind] = React.useState<ProductDefKr["kind"] | null>(null);
@@ -119,6 +128,7 @@ export function PaymentCatalogView(): React.ReactElement {
             key={p.kind}
             product={p}
             pending={pendingKind === p.kind}
+            disabledReason={PAYMENT_CONFIGURED ? null : NOT_CONFIGURED_REASON}
             onPurchase={handlePurchase}
           />
         ))}

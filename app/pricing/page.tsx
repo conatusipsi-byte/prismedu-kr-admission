@@ -14,7 +14,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Check, Sparkles, ShieldCheck, RefreshCw } from "lucide-react";
-import { listEnabledProductsKr, type ProductDefKr } from "@/lib/plans";
+import { listEnabledProductsKr, getProductKr, type ProductDefKr } from "@/lib/plans";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
@@ -89,10 +89,13 @@ const TESTIMONIALS = [
 
 export default function PricingPage(): React.ReactElement {
   const allProducts = listEnabledProductsKr();
-  // primary 3-card grid 에 노출할 핵심 상품
+  // BUG-006: 비교표에 1:1 컨설팅 컬럼이 있는데 상단 카드가 없어 구매 경로가 끊김 (QA 1차).
+  // consult_one 은 lib/plans.ts 에서 enabled=false (placeholder) — 그래서 listEnabledProductsKr
+  // 결과에서 빠진다. 상단 3-card 그리드는 "출시 예정" 카드로라도 노출해 사용자 인지·기대를 형성.
+  // PRIMARY_KINDS 는 enabled 와 무관하게 직접 PRODUCTS_KR 에서 조회.
   const PRIMARY_KINDS = ["report_one", "season_pass", "consult_one"] as const;
   const primary = PRIMARY_KINDS
-    .map((k) => allProducts.find((p) => p.kind === k))
+    .map((k) => getProductKr(k))
     .filter((p): p is ProductDefKr => Boolean(p));
   const subscription = allProducts.filter((p) => p.kind === "subscription_pro" || p.kind === "subscription_elite");
 
@@ -313,6 +316,18 @@ export default function PricingPage(): React.ReactElement {
 
 /* ───────────────────────── PricingCard ───────────────────────── */
 
+/**
+ * BUG-006: 상품의 `enabled=false` 면 "출시 예정" 카드로 표시.
+ * - 가격 자리에 "준비 중" 텍스트 (₩0 같은 임의 숫자 X)
+ * - 헤더 옆에 출시일 배지 ("5/28 출시 예정" — consult_one 한정)
+ * - 결제 버튼 disabled
+ *
+ * 일자 컨벤션 (출시 일자가 카드별로 다를 수 있음): COMING_SOON_DATES 룩업.
+ */
+const COMING_SOON_DATES: Partial<Record<ProductDefKr["kind"], string>> = {
+  consult_one: "5/28 출시 예정",
+};
+
 function PricingCard({
   product,
   featured = false,
@@ -322,6 +337,8 @@ function PricingCard({
   featured?: boolean;
   compact?: boolean;
 }): React.ReactElement {
+  const comingSoon = !product.enabled;
+  const comingSoonLabel = COMING_SOON_DATES[product.kind] ?? "출시 예정";
   const periodLabel =
     product.period === "once"
       ? product.durationDays
@@ -331,11 +348,16 @@ function PricingCard({
 
   return (
     <article
+      data-component="pricing-card"
+      data-product-kind={product.kind}
+      data-coming-soon={comingSoon}
       className={cn(
         "group relative flex flex-col gap-5 rounded-3xl bg-card border transition-all overflow-hidden",
         featured
           ? "border-brand-500/60 dark:border-brand-400/60 shadow-xl shadow-brand-500/15 md:scale-[1.03] md:-mt-3 ring-1 ring-brand-500/10"
-          : "border-border hover:border-foreground/15 hover:-translate-y-0.5 hover:shadow-md",
+          : comingSoon
+            ? "border-dashed border-zinc-300 dark:border-zinc-700"
+            : "border-border hover:border-foreground/15 hover:-translate-y-0.5 hover:shadow-md",
         compact ? "p-6" : "p-7 lg:p-8",
       )}
     >
@@ -347,7 +369,14 @@ function PricingCard({
       )}
 
       <header className={cn("flex flex-col gap-1", featured && "mt-6")}>
-        <h2 className="text-base font-bold text-foreground">{product.displayName}</h2>
+        <div className="flex items-center justify-between gap-2">
+          <h2 className="text-base font-bold text-foreground">{product.displayName}</h2>
+          {comingSoon && (
+            <Badge variant="pill-amber" size="sm" data-element="coming-soon-badge">
+              {comingSoonLabel}
+            </Badge>
+          )}
+        </div>
         <p className="text-xs text-muted-foreground break-keep-all leading-relaxed">
           {product.shortDescription}
         </p>
@@ -355,17 +384,30 @@ function PricingCard({
 
       {/* Price */}
       <div className="flex flex-col gap-1.5">
-        {product.isPricePlaceholder && (
+        {!comingSoon && product.isPricePlaceholder && (
           <Badge variant="pill-amber" size="sm" className="self-start">베타 임시 가격</Badge>
         )}
         <div className="flex items-baseline gap-2">
-          <span className="font-numeric tabular-nums text-5xl font-extrabold tracking-tightest text-foreground leading-none">
-            ₩{product.priceKrw.toLocaleString("ko-KR")}
-          </span>
-          <span className="text-xs font-medium text-muted-foreground">{periodLabel}</span>
+          {comingSoon ? (
+            <span className="text-3xl font-extrabold tracking-tight text-muted-foreground/80 leading-none">
+              준비 중
+            </span>
+          ) : (
+            <>
+              <span className="font-numeric tabular-nums text-5xl font-extrabold tracking-tightest text-foreground leading-none">
+                ₩{product.priceKrw.toLocaleString("ko-KR")}
+              </span>
+              <span className="text-xs font-medium text-muted-foreground">{periodLabel}</span>
+            </>
+          )}
         </div>
-        {product.isPricePlaceholder && (
+        {!comingSoon && product.isPricePlaceholder && (
           <p className="text-2xs text-muted-foreground">정식 출시(2026.09) 전 변경될 수 있어요.</p>
+        )}
+        {comingSoon && (
+          <p className="text-2xs text-muted-foreground break-keep-all">
+            상품 안내·가격은 출시일에 맞춰 공개됩니다.
+          </p>
         )}
       </div>
 
@@ -373,7 +415,12 @@ function PricingCard({
       <ul className="flex flex-col gap-2.5 flex-1">
         {product.highlights.map((h) => (
           <li key={h} className="flex items-start gap-2.5 text-sm">
-            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white shadow-sm shadow-brand-500/30 mt-0.5">
+            <span
+              className={cn(
+                "flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white shadow-sm mt-0.5",
+                comingSoon ? "bg-zinc-400 shadow-zinc-400/20" : "bg-brand-500 shadow-brand-500/30",
+              )}
+            >
               <Check className="h-3 w-3" strokeWidth={3} />
             </span>
             <span className="text-foreground/90 break-keep-all leading-relaxed">{h}</span>
@@ -381,17 +428,30 @@ function PricingCard({
         ))}
       </ul>
 
-      <Button
-        asChild
-        size="xl"
-        variant={featured ? "primary" : "outline"}
-        className={cn("w-full", featured && "shadow-glow-brand")}
-      >
-        <Link href="/payment">
-          결제하러 가기
-          <ArrowRight className="h-4 w-4" />
-        </Link>
-      </Button>
+      {comingSoon ? (
+        <Button
+          type="button"
+          size="xl"
+          variant="outline"
+          disabled
+          aria-disabled="true"
+          className="w-full cursor-not-allowed opacity-70"
+        >
+          출시 예정
+        </Button>
+      ) : (
+        <Button
+          asChild
+          size="xl"
+          variant={featured ? "primary" : "outline"}
+          className={cn("w-full", featured && "shadow-glow-brand")}
+        >
+          <Link href="/payment">
+            결제하러 가기
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </Button>
+      )}
     </article>
   );
 }

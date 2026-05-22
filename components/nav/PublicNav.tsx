@@ -67,8 +67,11 @@ export function PublicNav(): React.ReactElement | null {
       <header
         className={cn(
           "sticky top-0 z-40 w-full transition-[background-color,border-color,backdrop-filter] duration-200 ease-toss",
+          // BUG-004: scrolled opacity 55/70% 였을 때 Final CTA 의 brand→cyan→iris 밝은 그라디언트
+          // 헤딩이 헤더 backdrop-blur 사이로 새어 보여 시각적으로 잘리는 결함. 95/85% 로 상향해
+          // 어떤 밝은 콘텐츠도 통과하지 않게 함 (subtle blur 깊이는 유지).
           scrolled
-            ? "border-b border-border/60 bg-background/70 backdrop-blur-xl supports-[backdrop-filter]:bg-background/55"
+            ? "border-b border-border/60 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/85"
             : "border-b border-transparent bg-background/0",
         )}
       >

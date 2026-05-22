@@ -502,7 +502,11 @@ export default function LandingPage(): React.ReactElement {
       </MotionSection>
 
       {/* ═══ Final CTA — dark ink ═══ */}
-      <MotionSection className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-20 lg:py-28">
+      {/* BUG-004: 헤더(h-16=64px) 가 sticky 라 스크롤 중 이 섹션 헤딩과 시각 겹침이 발생.
+          헤더 자체의 opacity 를 85/95% 로 올린 게 1차 처리 (PublicNav.tsx). 본 섹션은
+          padding-top 을 추가로 늘려 헤딩이 헤더 zone 에 너무 가까이 도달하기 전에 충분한
+          breathing room 을 확보. */}
+      <MotionSection className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg pt-28 pb-20 lg:pt-36 lg:pb-28">
         <MotionItem
           className="relative overflow-hidden rounded-[2.5rem] bg-ink-950 dark:bg-ink-900 text-white p-10 md:p-16 lg:p-20"
         >

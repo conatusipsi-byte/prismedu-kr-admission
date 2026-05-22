@@ -117,14 +117,22 @@ export function ProductCard({
           <Button
             type="button"
             disabled={disabled}
+            aria-disabled={disabled}
             onClick={() => onPurchase?.(product.kind)}
-            className="w-full bg-brand-600 hover:bg-brand-700"
+            // BUG-005: disabled 상태에서도 시각이 명확히 죽도록 cursor·hover 무효화.
+            // disabledReason 이 있을 때만 라벨을 "(준비 중)" 으로 변경 — pending(=결제 중) 과 구분.
+            className={cn(
+              "w-full bg-brand-600 hover:bg-brand-700",
+              disabledReason && !pending && "cursor-not-allowed opacity-60 hover:bg-brand-600",
+            )}
           >
             {pending ? (
               <>
                 <Loader2 className="mr-1 h-4 w-4 animate-spin" />
                 결제창 여는 중…
               </>
+            ) : disabledReason ? (
+              "결제하기 (준비 중)"
             ) : (
               "결제하기"
             )}
