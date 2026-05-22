@@ -57,7 +57,8 @@ export function RegionFilter({
             onClick={() => toggle(region)}
             className={cn(
               "rounded-full transition",
-              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+              // BUG-008 (WCAG 2.1 SC 2.4.7): focus indicator 강화. 알파 + offset + 다크모드 변형.
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-brand-400/70",
             )}
           >
             <Badge

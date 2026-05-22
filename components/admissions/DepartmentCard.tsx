@@ -58,7 +58,7 @@ export function DepartmentCard({
       data-sample-sufficient={sampleSufficient}
       data-university-id={university.id}
       data-department-id={department.id}
-      className="block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
+      className="block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-brand-400/70"
     >
       <article
         className={cn(

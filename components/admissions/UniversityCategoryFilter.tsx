@@ -82,7 +82,8 @@ export function UniversityCategoryFilter({
         onClick={() => onChange([])}
         className={cn(
           "self-start rounded-md px-3 py-1 text-sm font-medium transition",
-          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+          // BUG-008 (WCAG 2.1 SC 2.4.7): focus indicator 강화.
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-brand-400/70",
           isAllCleared
             ? "bg-brand-600 text-white hover:bg-brand-700"
             : "bg-transparent text-muted-foreground hover:bg-muted hover:text-foreground border border-border",
@@ -106,7 +107,8 @@ export function UniversityCategoryFilter({
               onClick={() => toggleGroup(group.options)}
               className={cn(
                 "self-start text-2xs font-bold uppercase tracking-wider transition",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded-sm px-1 py-0.5",
+                // BUG-008 (WCAG 2.1 SC 2.4.7): focus indicator 강화.
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-brand-400/70 rounded-sm px-1 py-0.5",
                 allOn
                   ? "text-brand-700 dark:text-brand-300"
                   : someOn
@@ -130,7 +132,8 @@ export function UniversityCategoryFilter({
                     onClick={() => toggleOne(cat)}
                     className={cn(
                       "rounded-md px-2.5 py-0.5 text-xs transition border",
-                      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+                      // BUG-008 (WCAG 2.1 SC 2.4.7): focus indicator 강화.
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-brand-400/70",
                       isOn
                         ? "bg-brand-600 text-white border-brand-600 hover:bg-brand-700"
                         : "bg-transparent text-muted-foreground border-border hover:bg-muted hover:text-foreground",
@@ -174,7 +177,8 @@ function SingleChip({
       onClick={onClick}
       className={cn(
         "self-start rounded-md px-3 py-1 text-sm transition border",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+        // BUG-008 (WCAG 2.1 SC 2.4.7): focus indicator 강화.
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-brand-400/70",
         on
           ? "bg-brand-600 text-white border-brand-600 hover:bg-brand-700"
           : "bg-transparent text-muted-foreground border-border hover:bg-muted hover:text-foreground",

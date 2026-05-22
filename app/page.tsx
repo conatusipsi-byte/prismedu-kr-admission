@@ -40,6 +40,7 @@ import { MotionSection, MotionItem } from "@/components/marketing/MotionSection"
 import { QuickMatchDemo } from "@/components/marketing/QuickMatchDemo";
 import { TrustSignals } from "@/components/marketing/TrustSignals";
 import { LANDING_FAQS } from "@/lib/landing-faq";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Conatus — 한국 대학 입시 AI 추천",
@@ -168,13 +169,15 @@ export default function LandingPage(): React.ReactElement {
             >
               내 성적에 맞는
               <br className="hidden sm:block" />
+              {/*
+                BUG-009: 다크모드에서 hero 그라디언트가 너무 밝아져 한 어절(예: "지원")이 흰색과
+                구분 어려움 — 라이트 그라디언트의 마지막 stop(이리스 l73%) 와 첫 stop(녹색 l39%)
+                사이 interpolation 이 다크 배경에서 wash 효과. 해법은 Final CTA P0-06 와 동일:
+                중간에 cyan stop 을 끼워 hue 가 그린→시안→이리스 로 흐르게 해 채도 유지.
+                5-stop seamless loop 유지로 shimmer 애니메이션 호환.
+              */}
               <span
-                className="bg-clip-text text-transparent animate-text-shimmer"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, hsl(160 84% 39%), hsl(243 91% 73%), hsl(160 84% 39%))",
-                  backgroundSize: "200% auto",
-                }}
+                className="bg-clip-text text-transparent animate-text-shimmer bg-[length:200%_auto] [background-image:linear-gradient(90deg,hsl(160_84%_39%),hsl(243_91%_73%),hsl(160_84%_39%))] dark:[background-image:linear-gradient(90deg,hsl(156_72%_70%),hsl(180_80%_72%),hsl(243_91%_78%),hsl(180_80%_72%),hsl(156_72%_70%))]"
               >
                 최적의 지원 전략
               </span>
@@ -235,42 +238,44 @@ export default function LandingPage(): React.ReactElement {
           </h2>
         </MotionItem>
 
+        {/*
+          BUG-007: 이전엔 3개 카드의 hover 상태가 카드별로 다른 톤(brand/iris/amber+violet)
+          으로 분기 — QA 1차에서 "첫 카드만 그린 ring"으로 인식돼 일관성 결여 신고.
+          첫 카드만 강조할 명시적 의도(코어 라벨 등)가 없으므로 hover 톤을 통일.
+          시각적 정체성은 카드 안 아이콘·decoration 색에서 자연스럽게 유지됨.
+        */}
         <div className="grid gap-5 md:grid-cols-3">
-          <MotionItem
-            as="article"
-            className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-glow-brand dark:hover:border-brand-700"
-          >
-            <Database className="h-10 w-10 text-brand-600 dark:text-brand-300 mb-6" strokeWidth={1.5} />
-            <h3 className="text-lg font-bold mb-2">1,000+ 학과 데이터</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed break-keep-all">
-              전국 주요 대학의 모집요강·전형별 등급·합격 사례를 학과 단위로 분리해 학습했어요.
-            </p>
-            <SparkBar className="mt-6" values={[2, 3, 5, 4, 7, 6, 9]} tone="brand" />
-          </MotionItem>
-
-          <MotionItem
-            as="article"
-            className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-iris-300 hover:shadow-glow-iris"
-          >
-            <LineChart className="h-10 w-10 text-iris-500 mb-6" strokeWidth={1.5} />
-            <h3 className="text-lg font-bold mb-2">전형별 분리 분석</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed break-keep-all">
-              학생부종합·교과·논술·실기·정시 가나다군까지 — 같은 학과여도 전형별로 분리해 비교해드려요.
-            </p>
-            <CategoryDots className="mt-6" />
-          </MotionItem>
-
-          <MotionItem
-            as="article"
-            className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-glow-violet"
-          >
-            <ShieldCheck className="h-10 w-10 text-amber-500 mb-6" strokeWidth={1.5} />
-            <h3 className="text-lg font-bold mb-2">정직한 비공개</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed break-keep-all">
-              표본이 부족한 학과는 합격 확률을 임의로 만들지 않고 비공개로 표시해요.
-            </p>
-            <HonestyHint className="mt-6" />
-          </MotionItem>
+          {[
+            {
+              icon: Database, iconCls: "text-brand-600 dark:text-brand-300",
+              title: "1,000+ 학과 데이터",
+              body: "전국 주요 대학의 모집요강·전형별 등급·합격 사례를 학과 단위로 분리해 학습했어요.",
+              deco: <SparkBar className="mt-6" values={[2, 3, 5, 4, 7, 6, 9]} tone="brand" />,
+            },
+            {
+              icon: LineChart, iconCls: "text-iris-500",
+              title: "전형별 분리 분석",
+              body: "학생부종합·교과·논술·실기·정시 가나다군까지 — 같은 학과여도 전형별로 분리해 비교해드려요.",
+              deco: <CategoryDots className="mt-6" />,
+            },
+            {
+              icon: ShieldCheck, iconCls: "text-amber-500",
+              title: "정직한 비공개",
+              body: "표본이 부족한 학과는 합격 확률을 임의로 만들지 않고 비공개로 표시해요.",
+              deco: <HonestyHint className="mt-6" />,
+            },
+          ].map(({ icon: Icon, iconCls, title, body, deco }) => (
+            <MotionItem
+              key={title}
+              as="article"
+              className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-foreground/15 hover:shadow-lg dark:hover:border-foreground/25"
+            >
+              <Icon className={cn("h-10 w-10 mb-6", iconCls)} strokeWidth={1.5} />
+              <h3 className="text-lg font-bold mb-2">{title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed break-keep-all">{body}</p>
+              {deco}
+            </MotionItem>
+          ))}
         </div>
       </MotionSection>
 

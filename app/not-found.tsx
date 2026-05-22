@@ -40,11 +40,9 @@ export default function NotFound(): React.ReactElement {
 
         {/* 글리치 404 */}
         <div className="relative inline-block mb-6">
+          {/* BUG-009: hero gradient 와 동일한 다크모드 wash 방지 — 다크 variant 에 cyan stop 으로 흐름 유지. */}
           <span
-            className="font-display text-[8rem] sm:text-[10rem] lg:text-[12rem] font-extrabold tracking-tightest leading-none bg-clip-text text-transparent select-none"
-            style={{
-              backgroundImage: "linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(243 91% 73%) 50%, hsl(265 84% 65%) 100%)",
-            }}
+            className="font-display text-[8rem] sm:text-[10rem] lg:text-[12rem] font-extrabold tracking-tightest leading-none bg-clip-text text-transparent select-none [background-image:linear-gradient(135deg,hsl(160_84%_39%)_0%,hsl(243_91%_73%)_50%,hsl(265_84%_65%)_100%)] dark:[background-image:linear-gradient(135deg,hsl(156_72%_70%)_0%,hsl(180_80%_72%)_45%,hsl(243_91%_78%)_75%,hsl(265_84%_72%)_100%)]"
             aria-hidden
           >
             404
