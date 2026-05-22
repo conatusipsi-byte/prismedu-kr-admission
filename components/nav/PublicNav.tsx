@@ -82,8 +82,9 @@ export function PublicNav(): React.ReactElement | null {
             aria-label="Conatus 홈"
             className="group flex items-center transition-opacity hover:opacity-90"
           >
-            {/* 워드마크가 이미지에 포함됨 — 별도 텍스트 X. h-10 (40px). */}
-            <Logo className="h-10" priority />
+            {/* 아이콘만 PNG 에서 크롭 + "Conatus" 워드마크는 HTML 텍스트 — 작은 사이즈에서 PNG
+                안의 워드마크가 흐릿해지는 문제 해소. 아이콘 자체는 h-10 (40px) 유지. */}
+            <Logo variant="icon-with-text" className="h-10" priority />
           </Link>
 
           {/* Desktop nav */}
