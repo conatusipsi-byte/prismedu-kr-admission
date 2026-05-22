@@ -3,9 +3,9 @@
 /**
  * Logo — Conatus 브랜드 로고 (다크/라이트 자동 분기).
  *
- * 자산:
- *   - public/brand/logo-dark.webp   다크 배경 위 노출용
- *   - public/brand/logo-light.webp  화이트 배경 위 노출용
+ * 자산 (BUG-003 fix, 2026-05-22 — 베이크인 배경 WEBP 를 투명 PNG 로 교체):
+ *   - public/brand/logo-dark.png   다크 배경용 (1092×1092, RGBA alpha)
+ *   - public/brand/logo-light.png  라이트 배경용 (500×500, RGBA alpha)
  *
  * 로고 이미지에 "Conatus" 워드마크가 이미 포함됨 → 호출 측에서 별도 텍스트 X.
  *
@@ -18,9 +18,13 @@
  *   <Logo className="h-10" />   // Navbar
  *   <Logo className="h-14" />   // Footer
  *
- * ⚠️ PNG/WEBP 자산이라 SVG 대비 무거움 (각 ≈42 KB).
- *    출시 후 SVG 또는 React 컴포넌트로 전환 검토 (TODO: post-launch).
- *    현재는 Next.js Image 로 자동 최적화(브라우저별 webp/avif 변환 + lazy/priority).
+ * ⚠️ 자산 크기: light ≈124 KB, dark ≈360 KB (PNG 무압축 그라디언트).
+ *    Next.js Image 가 브라우저별로 webp/avif 변환·lazy/priority 처리하므로 실제 전송량은 더 작음.
+ *    출시 후 SVG 전환 검토 (TODO: post-launch — 추가 ~80% 절감 가능).
+ *
+ * ⚠️ 두 자산의 intrinsic 해상도가 다름 (light 500, dark 1092). NATIVE_DIM 은
+ *    aspect ratio 보존용 — 둘 다 1:1 정사각이므로 표시상 문제 없음. 향후 자산 갱신 시
+ *    light 도 1092 로 맞춰주면 srcset 계산이 더 일관됨.
  */
 
 import * as React from "react";
@@ -36,8 +40,8 @@ type LogoProps = {
   alt?: string;
 };
 
-const LIGHT_SRC = "/brand/logo-light.webp";
-const DARK_SRC = "/brand/logo-dark.webp";
+const LIGHT_SRC = "/brand/logo-light.png";
+const DARK_SRC = "/brand/logo-dark.png";
 /** 원본 자산 정사각 (1092 × 1092). aspect-square 유지. */
 const NATIVE_DIM = 1092;
 
