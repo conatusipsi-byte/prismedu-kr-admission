@@ -51,7 +51,8 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   if (!parsed.success) return zodErrorResponse(parsed.error);
   const query = parsed.data;
 
-  const allowJaeoegukmin = query.trackKind === "jaeoegukmin";
+  // P-013 진입점 분리 — 호출자가 trackKind 목록에 jaeoegukmin 을 명시했을 때만 노출.
+  const allowJaeoegukmin = query.trackKind?.includes("jaeoegukmin") ?? false;
 
   try {
     const result = await searchDepartments(query, allowJaeoegukmin);
@@ -203,7 +204,11 @@ async function searchDepartments(
     if (!allowJaeoegukmin) {
       availableTracks = availableTracks.filter((k) => k !== "jaeoegukmin");
     }
-    if (query.trackKind && !availableTracks.includes(query.trackKind)) continue;
+    // 다중 trackKind — OR 매칭 (1개라도 학과 트랙에 포함되면 통과).
+    if (query.trackKind && query.trackKind.length > 0) {
+      const anyMatch = query.trackKind.some((tk) => availableTracks.includes(tk));
+      if (!anyMatch) continue;
+    }
 
     const primaryTrack: AdmissionTrackKind | undefined = availableTracks[0];
     let sampleSufficient = false;

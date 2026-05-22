@@ -16,6 +16,17 @@ const VALID_UNIVERSITY_CATEGORIES = [
   "seoul", "gyeonggi", "national", "private_local", "special", "military",
 ] as const;
 
+/**
+ * AdmissionTrackKind 7+1+1종. TrackFilter (UI) 가 multi-select 로 전송.
+ * 단일 토글 → "susi_subject" / 다중 → "susi_subject,susi_comprehensive".
+ */
+const VALID_TRACK_KINDS = [
+  "susi_subject", "susi_comprehensive", "susi_essay", "susi_practical",
+  "jeongsi_ga", "jeongsi_na", "jeongsi_da",
+  "additional", "jaeoegukmin",
+] as const;
+type ValidTrackKind = (typeof VALID_TRACK_KINDS)[number];
+
 export const AdmissionsSearchQuerySchema = z.object({
   q: z.string().max(100).optional(),
   /**
@@ -49,11 +60,24 @@ export const AdmissionsSearchQuerySchema = z.object({
     .max(200)
     .optional()
     .transform((v) => (v ? v.split(",").map((s) => s.trim()).filter(Boolean) : undefined)),
-  trackKind: z.enum([
-    "susi_subject", "susi_comprehensive", "susi_essay", "susi_practical",
-    "jeongsi_ga", "jeongsi_na", "jeongsi_da",
-    "additional", "jaeoegukmin",
-  ]).optional(),
+  /**
+   * 전형 다중 필터 — 콤마 구분 (예: "susi_subject,susi_comprehensive").
+   * TrackFilter UI 가 매번 토글된 AdmissionTrackKind[] 를 .join(",") 으로 전달.
+   * 유효하지 않은 값은 transform 단계에서 필터 아웃. 매칭 의미는 OR (학과의
+   * department_admissions.available_track_kinds 와 1개 이상 겹치면 통과).
+   */
+  trackKind: z
+    .string()
+    .max(200)
+    .optional()
+    .transform((v) => {
+      if (!v) return undefined;
+      const parts = v.split(",").map((s) => s.trim()).filter(Boolean);
+      const valid = parts.filter((p) =>
+        (VALID_TRACK_KINDS as readonly string[]).includes(p),
+      ) as ValidTrackKind[];
+      return valid.length > 0 ? valid : undefined;
+    }),
   limit: z.coerce.number().int().min(1).max(100).default(20),
   cursor: z.string().optional(),
   /** 학위과정 필터 — default '학사'. 전체는 'all' (대학원 포함). */

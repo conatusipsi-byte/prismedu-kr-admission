@@ -90,8 +90,9 @@ export function AdmissionsSearchView(): React.ReactElement {
         );
         params.set("category", cats.join(","));
       }
-      // 전형 다중 필터 — 첫 항목만 stub 라우트에 전달 (실제 구현 시 다중 처리)
-      if (tracks.length > 0) params.set("trackKind", tracks[0]);
+      // 전형 다중 필터 — AdmissionTrackKind[] 를 콤마 구분 trackKind 로 전달.
+      // 서버는 transform → array → OR 매칭 (available_track_kinds 와 겹치면 통과).
+      if (tracks.length > 0) params.set("trackKind", tracks.join(","));
       if (nextCursor) params.set("cursor", nextCursor);
       params.set("limit", "20");
       // includeNight 는 서버 default(false) 사용 — 야간대 검색 비노출 정책.
