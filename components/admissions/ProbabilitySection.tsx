@@ -9,9 +9,7 @@
  * 상단의 "로그인 필요" 배지도 로그인 시 숨김 처리.
  */
 
-import * as React from "react";
 import { Lock } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useAuth } from "@/lib/auth-context";
 import { ProbabilityTab } from "./ProbabilityTab";
@@ -42,16 +40,20 @@ export function ProbabilitySection({
           </Badge>
         )}
       </div>
-      <React.Suspense fallback={<Card><CardContent className="h-32" /></Card>}>
-        <ProbabilityTab
-          trackKind={trackKind}
-          sampleSufficient={sampleSufficient}
-          lockReason={undefined}
-          probability={null}
-          hakjong={null}
-          isAuthenticated={isAuthenticated}
-        />
-      </React.Suspense>
+      {/* BUG-002: 이전 <React.Suspense fallback={<Card><CardContent h-32/></Card>}> 제거.
+          ProbabilityTab 안에서 promise 를 throw 하는 코드가 전혀 없는데 Suspense 가 있으면
+          React 18 streaming SSR 이 임의 페이지에서 클라이언트 컴포넌트를 deferred chunk 로
+          분리해 빈 h-32(128px) fallback 을 잠깐 또는 영구히 노출 — QA 1차에서 pusan/info-comp
+          에 명시 관찰. 원인은 Suspense boundary 자체이므로 wrapper 제거가 정공법.
+          (회귀 방지: probability-section.test.tsx 가 빈 fallback DOM 미노출 강제.) */}
+      <ProbabilityTab
+        trackKind={trackKind}
+        sampleSufficient={sampleSufficient}
+        lockReason={undefined}
+        probability={null}
+        hakjong={null}
+        isAuthenticated={isAuthenticated}
+      />
     </section>
   );
 }
