@@ -25,6 +25,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { BundlePackageVisualizer } from "@/components/pricing/BundlePackageVisualizer";
 
 export const metadata: Metadata = {
   title: "요금제 — Conatus",
@@ -177,7 +178,7 @@ export default function PricingPage(): React.ReactElement {
               어떤 게 나에게 맞을까요
             </h2>
             <p className="text-sm text-muted-foreground break-keep-all">
-              번들 패키지는 시즌권 + 컨설팅 행이 모두 포함됩니다.
+              핵심 3종 (단건 / 시즌권 / 컨설팅) 기준 비교. 번들 패키지 구성은 아래 카드에서 확인하세요.
             </p>
           </div>
 
@@ -243,6 +244,9 @@ export default function PricingPage(): React.ReactElement {
             </table>
           </div>
         </section>
+
+        {/* Bundle 시각화 — BUG-021: 비교표 3컬럼과 카드 5개 갭 해소. 단건 합산 vs 패키지 가격. */}
+        <BundlePackageVisualizer />
 
         {/* Payment + trust card */}
         <section className="mt-20 lg:mt-28 max-w-5xl mx-auto">
