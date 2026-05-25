@@ -5,7 +5,7 @@
  *
  * - 스크롤 ≥ 16px 에서 blur·border 강화 (Linear/Vercel 스타일)
  * - 로고: 모노그램 'c' + 미니 학사모, brand→iris 그라디언트
- * - 메뉴: 학과 검색 · 요금제 · 도움말 · 변경 사항
+ * - 메뉴: 학과 검색 · 요금제 · 도움말 (변경 사항은 Footer 로 이동, BUG-028)
  * - CTA: outline(로그인) + filled(무료로 시작)
  * - 다크모드 토글: 우측 ThemeToggle
  * - 모바일: 햄버거 → 풀스크린 시트 (framer-motion)
@@ -32,10 +32,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 
+// BUG-028 (QA round 3): "변경 사항" 헤더에서 제거 — 일반 사용자 (고등학생·학부모) 우선순위에
+// 맞춤. Footer 의 RESOURCES 링크에 changelog 보존 (운영 투명성 유지).
 const NAV_ITEMS = [
   { href: "/admissions", label: "학과 검색" },
   { href: "/pricing", label: "요금제" },
-  { href: "/changelog", label: "변경 사항" },
   { href: "/help", label: "도움말" },
 ] as const;
 

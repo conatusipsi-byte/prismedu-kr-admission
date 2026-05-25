@@ -56,7 +56,8 @@ export default function HelpPage(): React.ReactElement {
             자주 묻는 질문을 먼저 확인하시고, 답을 찾지 못하셨다면 아래 이메일로 연락 주세요.
           </p>
 
-          {/* Algolia-style big search bar (시각 placeholder — 실 검색은 출시 직전 활성화) */}
+          {/* BUG-027 (QA round 3): 검색바 placeholder 카피 다듬기 — "출시 직전 활성화" 표현이
+              미완성 인상 → 부드러운 "곧 추가됩니다". 검색바 자체는 시각 유지 (FAQ 검색은 별도 PR). */}
           <div
             aria-label="도움말 검색 (준비 중)"
             className="mt-4 w-full max-w-xl flex items-center gap-2 rounded-2xl border border-border bg-card pl-5 pr-2 py-2 shadow-sm focus-within:shadow-glow-brand focus-within:border-brand-400 transition-all"
@@ -65,7 +66,7 @@ export default function HelpPage(): React.ReactElement {
             <input
               type="search"
               placeholder="어떤 도움이 필요하세요?"
-              aria-label="도움말 검색 — 출시 직전 활성화 예정"
+              aria-label="도움말 검색 — 곧 추가됩니다"
               disabled
               className="flex-1 bg-transparent text-base placeholder:text-muted-foreground outline-none py-2 cursor-not-allowed"
             />
@@ -73,7 +74,12 @@ export default function HelpPage(): React.ReactElement {
               ⌘ K
             </span>
           </div>
-          <p className="text-2xs text-muted-foreground">검색 기능은 출시 직전 활성화 — 지금은 아래 카테고리·FAQ를 이용해주세요.</p>
+          <p
+            data-element="help-search-note"
+            className="text-2xs text-muted-foreground"
+          >
+            FAQ 검색은 곧 추가됩니다. 아래 카테고리에서 빠르게 찾아보세요.
+          </p>
         </header>
 
         {/* Quick links 4-card grid */}
@@ -167,18 +173,16 @@ export default function HelpPage(): React.ReactElement {
                 답을 찾지 못하셨나요?
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed break-keep-all">
-                <span className="font-mono text-foreground font-semibold">support@conatusipsi.com</span>{" "}
+                <span className="font-mono text-foreground font-semibold">conatusipsi@gmail.com</span>{" "}
                 으로 문의해주세요. 영업일 기준 3일 이내 답변드립니다.
               </p>
               <div className="flex flex-col gap-1.5 text-xs text-muted-foreground border-l-2 border-brand-300 pl-3">
                 <span><span className="font-semibold text-foreground">운영 시간</span> · 평일 10:00 ~ 18:00 (KST)</span>
                 <span><span className="font-semibold text-foreground">주말·공휴일</span> · 다음 영업일 처리</span>
               </div>
-              <p className="text-2xs text-amber-700 dark:text-amber-400">
-                ⚠️ 이메일 주소는 출시 전 임시입니다.
-              </p>
+              {/* BUG-027: "임시 이메일" 경고 제거 — conatusipsi@gmail.com 운영 이메일 확정 상태. */}
               <Button asChild variant="primary" size="lg" className="self-start mt-2">
-                <a href="mailto:support@conatusipsi.com">
+                <a href="mailto:conatusipsi@gmail.com">
                   이메일 보내기
                   <ArrowRight className="h-4 w-4" />
                 </a>

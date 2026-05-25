@@ -154,7 +154,8 @@ export default function LandingPage(): React.ReactElement {
       </section>
 
       {/* ═══ Hero ═══ */}
-      <section className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg pt-12 pb-20 lg:pt-20 lg:pb-32">
+      {/* BUG-025: Hero ↔ "왜 Conatus" 빈 공백 700px 신고 — pb 축소 (32→16, 20→10) */}
+      <section className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg pt-12 pb-10 lg:pt-20 lg:pb-16">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-10">
           {/* Left — copy */}
           <header className="lg:col-span-6 flex flex-col items-start gap-5 lg:gap-7">
@@ -227,8 +228,9 @@ export default function LandingPage(): React.ReactElement {
       </section>
 
       {/* ═══ 3 Pillar Bento ═══ */}
+      {/* BUG-025: Hero pb 축소와 함께 본 섹션 pt 도 축소 (py-20→12, py-28→20) */}
       <MotionSection
-        className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-20 lg:py-28"
+        className="mx-auto w-full max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-12 lg:py-20"
         stagger={80}
       >
         <MotionItem className="mb-12 lg:mb-16 flex flex-col items-center text-center gap-3">
@@ -599,16 +601,25 @@ function SparkBar({ values, tone, className }: { values: number[]; tone: "brand"
 }
 
 function CategoryDots({ className }: { className?: string }): React.ReactElement {
+  // BUG-026 (QA round 3, 2026-05-25): "전형별 분리 분석" 카드의 deco —
+  // 기존 Safety/Match/Hard/Reach (분석 출력 카테고리) 는 카드 제목과 의미 mismatch.
+  // 카드 제목 의미에 맞춰 전형 (학종/교과/논술/정시) chip 으로 교체.
   return (
-    <div className={`flex items-center gap-2 ${className ?? ""}`} aria-hidden>
+    <div
+      data-element="track-chips"
+      className={`flex flex-wrap items-center gap-1.5 ${className ?? ""}`}
+      aria-hidden
+    >
       {([
-        ["bg-cat-safety", "Safety"],
-        ["bg-cat-target", "Match"],
-        ["bg-cat-hard",   "Hard"],
-        ["bg-cat-reach",  "Reach"],
-      ] as const).map(([bg, label]) => (
-        <span key={label} className="flex items-center gap-1.5 text-2xs text-muted-foreground">
-          <span className={`h-2 w-2 rounded-full ${bg}`} />
+        ["bg-indigo-500/15 text-indigo-700 dark:text-indigo-300", "학종"],
+        ["bg-blue-500/15 text-blue-700 dark:text-blue-300", "교과"],
+        ["bg-amber-500/15 text-amber-700 dark:text-amber-300", "논술"],
+        ["bg-emerald-500/15 text-emerald-700 dark:text-emerald-300", "정시"],
+      ] as const).map(([cls, label]) => (
+        <span
+          key={label}
+          className={`inline-flex items-center rounded-full px-2 py-0.5 text-2xs font-medium ${cls}`}
+        >
           {label}
         </span>
       ))}

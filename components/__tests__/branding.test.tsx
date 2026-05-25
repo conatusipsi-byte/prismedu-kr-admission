@@ -150,6 +150,7 @@ function stripAllowedConatusipsi(s: string): string {
     .replace(/conatusipsi\.firebasestorage(\.\w+)?/g, "")
     .replace(/conatusipsi\.example/g, "")
     .replace(/@conatusipsi(\.com)?/g, "")
+    .replace(/conatusipsi@gmail\.com/g, "")
     .replace(/conatusipsi-byte/g, "")
     .replace(/conatusipsi-f8e1d/g, "")
     .replace(/conatusipsi-staging/g, "")
