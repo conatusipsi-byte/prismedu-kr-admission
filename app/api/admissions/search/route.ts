@@ -162,6 +162,11 @@ async function searchDepartments(
     `)
     .eq("active", true)
     .eq("universities.active", true)
+    // BUG-019 (QA round 3, 2026-05-25): KCUE 메타 분류 학과 제외.
+    // "기타(소속학과없음)" (315건) + "기타모집단위" (140+건) — 사용자에게 무의미한 placeholder.
+    // 전체 9개 패턴 모두 "기타" prefix. 실제 한국어 학과 중 "기타" prefix 인 정상 학과는 없음.
+    // 데이터 자체는 보존 (admin 페이지에서는 여전히 접근 가능).
+    .not("name", "ilike", "기타%")
     // 결정적 순서 — updated_at 동일 묶음 안에서도 같은 순서 보장.
     .order("updated_at", { ascending: false })
     .order("university_id", { ascending: true })

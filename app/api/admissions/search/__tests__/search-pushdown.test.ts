@@ -47,6 +47,7 @@ function makeChainableBuilder(table: string, resolveFn: () => unknown): unknown 
   builder.limit = passthrough("limit");
   builder.lt = passthrough("lt");
   builder.overlaps = passthrough("overlaps");
+  builder.not = passthrough("not");
   builder.then = (
     onFulfilled: (v: { data: unknown; error: null }) => unknown,
   ): Promise<unknown> => {
@@ -301,6 +302,29 @@ describe("GET /api/admissions/search — P0 redesign (QA round 2)", () => {
     expect(dc.filters.find((f) => f.kind === "overlaps")).toBeDefined();
     const inCalls = dc.filters.filter((f) => f.kind === "in");
     expect(inCalls.find((f) => f.args[0] === "universities.category")).toBeDefined();
+  });
+
+  /* ─────────────────────────────────────────────────────────────────────
+     QA round 3 — BUG-019: "기타*" placeholder 학과 제외
+     ───────────────────────────────────────────────────────────────────── */
+
+  it("BUG-019: departments query 에 .not('name', 'ilike', '기타%') 적용", async () => {
+    await callRoute("");
+    const dc = deptCall();
+    const notCall = dc.filters.find((f) => f.kind === "not");
+    expect(notCall, "기타 placeholder 제외 .not() 미적용").toBeDefined();
+    expect(notCall!.args[0]).toBe("name");
+    expect(notCall!.args[1]).toBe("ilike");
+    expect(notCall!.args[2]).toBe("기타%");
+  });
+
+  it("BUG-019: trackKind/category 등 다른 필터와 무관하게 항상 적용", async () => {
+    await callRoute("category=seoul&trackKind=susi_subject&q=고려");
+    const dc = deptCall();
+    const notCalls = dc.filters.filter((f) => f.kind === "not");
+    // 한 번 호출 + 정확히 '기타%' 패턴
+    expect(notCalls).toHaveLength(1);
+    expect(notCalls[0].args[2]).toBe("기타%");
   });
 
   it("키워드에 콤마/괄호 — PostgREST OR 구분자 충돌 차단 (공백 치환)", async () => {
