@@ -18,6 +18,7 @@ import {
   getProductKr,
   getEffectivePriceKrw,
   isEarlybirdActive,
+  calculateBundleSavings,
   TIME_SLOT_LABELS,
   type ProductDefKr,
 } from "@/lib/plans";
@@ -459,30 +460,44 @@ function PricingCard({
       </div>
 
       {/* Bundle 포함 내용 */}
-      {product.bundleContents && product.bundleContents.length > 0 && (
-        <div
-          data-element="bundle-contents"
-          className="rounded-2xl border border-iris/30 bg-iris/5 dark:bg-iris/10 p-3 text-xs"
-        >
-          <p className="mb-2 text-2xs font-semibold uppercase tracking-wider text-iris">패키지 구성</p>
-          <ul className="space-y-1.5">
-            {product.bundleContents.map((c, i) => (
-              <li key={i} className="flex items-start gap-1.5 text-foreground break-keep-all">
-                <span className="text-iris">·</span>
-                <span>
-                  {c.kind === "subscription" && "시즌권 분석 무제한"}
-                  {c.kind === "consulting" && `1:1 컨설팅 ${c.count}회`}
-                  {c.timeSlots && (
-                    <span className="block text-2xs text-muted-foreground mt-0.5">
-                      시기: {c.timeSlots.map((t) => TIME_SLOT_LABELS[t]).join(" · ")}
-                    </span>
-                  )}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      {product.bundleContents && product.bundleContents.length > 0 && (() => {
+        // BUG-017: 절약액은 calculateBundleSavings 가 단일 진실. 정적 카피 금지.
+        const savings = calculateBundleSavings(product);
+        return (
+          <div
+            data-element="bundle-contents"
+            className="rounded-2xl border border-iris/30 bg-iris/5 dark:bg-iris/10 p-3 text-xs"
+          >
+            <p className="mb-2 text-2xs font-semibold uppercase tracking-wider text-iris">패키지 구성</p>
+            <ul className="space-y-1.5">
+              {product.bundleContents.map((c, i) => (
+                <li key={i} className="flex items-start gap-1.5 text-foreground break-keep-all">
+                  <span className="text-iris">·</span>
+                  <span>
+                    {c.kind === "subscription" && "시즌권 분석 무제한"}
+                    {c.kind === "consulting" && `1:1 컨설팅 ${c.count}회`}
+                    {c.timeSlots && (
+                      <span className="block text-2xs text-muted-foreground mt-0.5">
+                        시기: {c.timeSlots.map((t) => TIME_SLOT_LABELS[t]).join(" · ")}
+                      </span>
+                    )}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            {savings && savings.savings > 0 && (
+              <p
+                data-element="bundle-savings"
+                className="mt-3 pt-2 border-t border-iris/20 text-2xs text-foreground/80 font-numeric tabular-nums break-keep-all"
+              >
+                단건 합산 <span className="line-through text-muted-foreground">₩{savings.individualTotal.toLocaleString("ko-KR")}</span>
+                {" 대비 "}
+                <strong className="text-iris">₩{savings.savings.toLocaleString("ko-KR")} 절약</strong>
+              </p>
+            )}
+          </div>
+        );
+      })()}
 
       {/* Highlights */}
       <ul className="flex flex-col gap-2.5 flex-1">

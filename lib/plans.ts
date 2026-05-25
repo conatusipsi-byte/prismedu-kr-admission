@@ -335,10 +335,11 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
     blocksOnInsufficientSample: false,
     enabled: true,
     isPricePlaceholder: false,
+    // BUG-017 (QA round 3, 2026-05-25): 정적 "절약" 카피는 잘못된 9.5x 부풀린 값이었음.
+    // 절약액은 calculateBundleSavings() 가 동적으로 계산하여 PricingCard 에서 노출.
     highlights: [
       "시즌권 분석 무제한 (6개월)",
       "1:1 컨설팅 1회 (60분)",
-      "단건 합산 대비 ₩180,000 절약 (얼리버드 기준 ₩209k vs ₩190k)",
     ],
     bundleContents: [
       { kind: "subscription", count: 1 },
@@ -442,6 +443,50 @@ export function isEarlybirdActive(p: ProductDefKr, now: Date = new Date()): bool
   if (!p.earlybirdUntil || p.earlybirdPriceKrw == null) return false;
   const eb = Date.parse(`${p.earlybirdUntil}T23:59:59+09:00`);
   return !Number.isNaN(eb) && now.getTime() <= eb;
+}
+
+/**
+ * 번들 상품의 단건 합산 vs 번들 가격 비교 — "절약" 표기 단일 진실 (BUG-017).
+ *
+ * 단건 가격은 동 시점의 effective 가격 (얼리버드 OR 정가) 적용.
+ * 따라서 얼리버드 기간 안/밖 모두 정확한 절약액.
+ *
+ * 정직성 (P-002):
+ *   - savings ≤ 0 면 호출자가 "절약" 카피 노출 X (음수 절약 = 번들이 더 비쌈).
+ *   - bundle 이 아니거나 bundleContents 없으면 null.
+ */
+export interface BundleSavings {
+  /** 동봉 항목들의 단건 합산 (현 시점 effective 가격 기준) */
+  individualTotal: number;
+  /** 번들 자체의 현 시점 effective 가격 */
+  bundlePrice: number;
+  /** 단건 합산 − 번들 가격. 양수면 절약, 0 이하면 절약 X. */
+  savings: number;
+}
+
+export function calculateBundleSavings(
+  product: ProductDefKr,
+  now: Date = new Date(),
+): BundleSavings | null {
+  if (product.type !== "bundle" || !product.bundleContents) return null;
+  let individualTotal = 0;
+  for (const part of product.bundleContents) {
+    if (part.kind === "subscription") {
+      const sp = getProductKr("season_pass");
+      if (!sp) continue;
+      individualTotal += getEffectivePriceKrw(sp, now) * part.count;
+    } else if (part.kind === "consulting") {
+      const co = getProductKr("consult_one");
+      if (!co) continue;
+      individualTotal += getEffectivePriceKrw(co, now) * part.count;
+    }
+  }
+  const bundlePrice = getEffectivePriceKrw(product, now);
+  return {
+    individualTotal,
+    bundlePrice,
+    savings: individualTotal - bundlePrice,
+  };
 }
 
 /**

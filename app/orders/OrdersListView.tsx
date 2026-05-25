@@ -13,6 +13,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { OrderRow, type OrderRowData } from "@/components/payment/OrderRow";
+import { PRODUCTS_KR, getEffectivePriceKrw } from "@/lib/plans";
 
 interface ApiOrderItem {
   id: string;
@@ -163,7 +164,9 @@ export function OrdersListView(): React.ReactElement {
                 아직 결제 이력이 없어요
               </h2>
               <p className="text-sm text-muted-foreground break-keep-all leading-relaxed">
-                단건 분석 리포트(₩9,900) 또는 시즌권(₩99,000)으로 학과별 합격률 분석을 무제한으로 사용해보세요.
+                단건 분석 리포트(₩{getEffectivePriceKrw(PRODUCTS_KR.report_one).toLocaleString("ko-KR")})
+                또는 시즌권(₩{getEffectivePriceKrw(PRODUCTS_KR.season_pass).toLocaleString("ko-KR")})으로
+                학과별 합격률 분석을 무제한으로 사용해보세요.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-2 mt-2">

@@ -48,7 +48,7 @@ describe("/pricing 카드 (QA round 2 ④)", () => {
     expect(card!.textContent).toContain("40,000"); // 정가 취소선
   });
 
-  it("season_consult_1 번들 카드 — 패키지 구성 박스 노출", () => {
+  it("season_consult_1 번들 카드 — 패키지 구성 박스 노출 + 절약액 정확 (BUG-017 회귀)", () => {
     const { container } = render(<PricingPage />);
     const card = container.querySelector(
       'article[data-product-kind="season_consult_1"]',
@@ -62,6 +62,14 @@ describe("/pricing 카드 (QA round 2 ④)", () => {
     expect(card!.getAttribute("data-earlybird")).toBe("true");
     expect(card!.textContent).toContain("190,000");
     expect(card!.textContent).toContain("300,000"); // 정가
+    // BUG-017: 동적 절약액 — 단건 합산 ₩209,000 대비 ₩19,000 절약
+    const savings = bundle!.querySelector('[data-element="bundle-savings"]');
+    expect(savings, "bundle-savings 미노출").not.toBeNull();
+    expect(savings!.textContent).toContain("209,000"); // 단건 합산
+    expect(savings!.textContent).toContain("19,000");  // 절약액
+    expect(savings!.textContent).toContain("절약");
+    // 9.5x 부풀린 ₩180,000 회귀 차단
+    expect(savings!.textContent).not.toContain("180,000");
   });
 
   it("season_consult_3 번들 카드 — 시기 슬롯 라벨 (6모/9모/수능)", () => {
@@ -79,6 +87,11 @@ describe("/pricing 카드 (QA round 2 ④)", () => {
     expect(bundle!.textContent).toMatch(/수능 이후/);
     expect(card!.textContent).toContain("490,000");
     expect(card!.textContent).toContain("700,000");
+    // BUG-017: 동적 절약액 — 단건 합산 ₩569,000 대비 ₩79,000 절약
+    const savings = bundle!.querySelector('[data-element="bundle-savings"]');
+    expect(savings, "bundle-savings 미노출").not.toBeNull();
+    expect(savings!.textContent).toContain("569,000");
+    expect(savings!.textContent).toContain("79,000");
   });
 
   it("report_one 등 얼리버드 미적용 상품은 data-earlybird=false (회귀 방지)", () => {
