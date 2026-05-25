@@ -46,6 +46,7 @@ function makeChainableBuilder(table: string, resolveFn: () => unknown): unknown 
   builder.range = passthrough("range");
   builder.limit = passthrough("limit");
   builder.lt = passthrough("lt");
+  builder.overlaps = passthrough("overlaps");
   builder.then = (
     onFulfilled: (v: { data: unknown; error: null }) => unknown,
   ): Promise<unknown> => {
@@ -236,6 +237,70 @@ describe("GET /api/admissions/search — P0 redesign (QA round 2)", () => {
     const expr = orCall!.args[0] as string;
     // % 가 \% 로 escape — pattern 내부 wildcard 와 충돌 차단
     expect(expr).toContain("n.ilike.%100\\%%");
+  });
+
+  /* ─────────────────────────────────────────────────────────────────────
+     QA round 3 — trackKind DB pushdown 회귀 (이전 JS post-filter 결함)
+     ───────────────────────────────────────────────────────────────────── */
+
+  it("QA-r3: trackKind 단일 — department_admissions inner join + year eq + overlaps", async () => {
+    await callRoute("trackKind=susi_subject");
+    const dc = deptCall();
+    // select 호출 인자에 inner join 명시
+    const selectCall = dc.filters.find((f) => f.kind === "select");
+    expect(selectCall, "select 미호출").toBeDefined();
+    const selectStr = selectCall!.args[0] as string;
+    expect(selectStr).toContain("department_admissions!inner");
+
+    // year eq 호출
+    const yearEq = dc.filters.find(
+      (f) => f.kind === "eq" && f.args[0] === "department_admissions.year",
+    );
+    expect(yearEq, "department_admissions.year eq 필터 누락").toBeDefined();
+
+    // overlaps 호출 — available_track_kinds && [susi_subject]
+    const overlaps = dc.filters.find((f) => f.kind === "overlaps");
+    expect(overlaps, "overlaps 미호출").toBeDefined();
+    expect(overlaps!.args[0]).toBe("department_admissions.available_track_kinds");
+    expect(overlaps!.args[1]).toEqual(["susi_subject"]);
+  });
+
+  it("QA-r3: trackKind 다중 — overlaps 배열에 모두 전달 (DB OR)", async () => {
+    await callRoute("trackKind=susi_subject%2Csusi_comprehensive%2Cjeongsi_na");
+    const dc = deptCall();
+    const overlaps = dc.filters.find((f) => f.kind === "overlaps");
+    expect(overlaps!.args[1]).toEqual([
+      "susi_subject",
+      "susi_comprehensive",
+      "jeongsi_na",
+    ]);
+  });
+
+  it("QA-r3: trackKind 미지정 — inner join 없음, overlaps 호출 X (좌측 임베드)", async () => {
+    await callRoute("");
+    const dc = deptCall();
+    const selectStr = dc.filters.find((f) => f.kind === "select")!.args[0] as string;
+    expect(selectStr).not.toContain("department_admissions!inner");
+    expect(selectStr).toContain("department_admissions (");
+    expect(dc.filters.find((f) => f.kind === "overlaps")).toBeUndefined();
+  });
+
+  it("QA-r3: trackKind + 키워드 동시 — 두 필터 모두 적용 (DB-side)", async () => {
+    mockUnivKeywordResults.push({ id: "snu" });
+    await callRoute("q=%EC%84%9C%EC%9A%B8&trackKind=susi_comprehensive");
+    const dc = deptCall();
+    // overlaps 호출 + 키워드 or 호출 둘 다
+    expect(dc.filters.find((f) => f.kind === "overlaps")).toBeDefined();
+    const orCalls = dc.filters.filter((f) => f.kind === "or");
+    expect(orCalls.find((f) => (f.args[0] as string).includes("name.ilike"))).toBeDefined();
+  });
+
+  it("QA-r3: trackKind + category 동시 — 두 필터 모두 적용", async () => {
+    await callRoute("trackKind=susi_essay&category=seoul");
+    const dc = deptCall();
+    expect(dc.filters.find((f) => f.kind === "overlaps")).toBeDefined();
+    const inCalls = dc.filters.filter((f) => f.kind === "in");
+    expect(inCalls.find((f) => f.args[0] === "universities.category")).toBeDefined();
   });
 
   it("키워드에 콤마/괄호 — PostgREST OR 구분자 충돌 차단 (공백 치환)", async () => {

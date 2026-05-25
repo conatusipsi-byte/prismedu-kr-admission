@@ -145,13 +145,20 @@ async function searchDepartments(
 
   /* ─────────────────────────────────────────────────────────────────────
      2) departments 메인 쿼리 — 모든 필터 DB-side.
+        trackKind 가 있으면 department_admissions inner join + year + overlaps
+        (QA round 3, 2026-05-25). 없으면 좌측 임베드 (admissions 없는 dept 도 노출).
      ───────────────────────────────────────────────────────────────────── */
+  const wantsTrackKindFilter = Boolean(query.trackKind && query.trackKind.length > 0);
+  const admEmbed = wantsTrackKindFilter
+    ? "department_admissions!inner ( year, available_track_kinds )"
+    : "department_admissions ( year, available_track_kinds )";
+
   let q = sb
     .from("departments")
     .select(`
       *,
       universities!inner ( * ),
-      department_admissions ( year, available_track_kinds )
+      ${admEmbed}
     `)
     .eq("active", true)
     .eq("universities.active", true)
@@ -160,6 +167,15 @@ async function searchDepartments(
     .order("university_id", { ascending: true })
     .order("id", { ascending: true })
     .range(offset, offset + query.limit - 1);
+
+  // QA round 3 — trackKind 필터 DB pushdown (JS post-filter 제거).
+  // department_admissions.year = current year + 1 + available_track_kinds && ARRAY[...].
+  // GIN 인덱스 dept_admissions_track_kinds_idx 사용 → overlaps O(log N).
+  if (wantsTrackKindFilter) {
+    q = q
+      .eq("department_admissions.year", year)
+      .overlaps("department_admissions.available_track_kinds", query.trackKind!);
+  }
 
   // 학위과정 필터 — 'all' 이면 미적용, default '학사'
   if (query.degreeCourse !== "all") {
@@ -268,12 +284,10 @@ async function searchDepartments(
     const adm = raw.department_admissions.find((a) => a.year === year);
     let availableTracks: AdmissionTrackKind[] = adm?.available_track_kinds ?? [];
     if (!allowJaeoegukmin) {
+      // P-013 — 응답 display 에서 jaeoegukmin 숨김 (사용자가 명시적으로 trackKind 에 포함시키지 않은 한).
       availableTracks = availableTracks.filter((k) => k !== "jaeoegukmin");
     }
-    if (query.trackKind && query.trackKind.length > 0) {
-      const anyMatch = query.trackKind.some((tk) => availableTracks.includes(tk));
-      if (!anyMatch) continue;
-    }
+    // QA round 3 — trackKind 필터는 DB-side (overlaps + inner join). JS 후처리 제거.
 
     const primaryTrack: AdmissionTrackKind | undefined = availableTracks[0];
     let sampleSufficient = false;
