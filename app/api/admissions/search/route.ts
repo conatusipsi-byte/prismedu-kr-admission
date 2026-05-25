@@ -16,7 +16,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import {
   AdmissionsSearchQuerySchema,
-  ADMISSIONS_SEARCH_EXCLUDE_NIGHT,
   type AdmissionsSearchQuery,
 } from "@/lib/schemas/api/admissions";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
@@ -48,24 +47,6 @@ const CACHE_HEADERS_DEFAULT = {
   "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=7200",
 };
 
-/**
- * ILIKE 특수문자 이스케이프 — `%` `_` `\` 를 리터럴로 처리.
- * 사용자 입력을 SQL pattern 으로 쓰기 전 필수.
- */
-function escapeIlike(s: string): string {
-  return s.replace(/\\/g, "\\\\").replace(/%/g, "\\%").replace(/_/g, "\\_");
-}
-
-/**
- * PostgREST `.or()` 값 안에서 안전한 문자열 — 콤마/괄호는 PostgREST 문법 충돌.
- * `*` 를 ILIKE wildcard 로 변환하기 전이라서, 사용자 입력 그대로 ILIKE 패턴에 끼우기.
- * 콤마는 OR 구분자라 escape 가 없는 PostgREST .or() 문법에서 사용자 입력을 보호하려면
- * 쿼리 단계에서 콤마를 미리 제거하거나 분리한다. 입력 q 는 max 100자 (zod) 라
- * 콤마 포함 시 search 의미가 모호하므로 콤마는 공백으로 치환.
- */
-function safeForPostgrestOr(s: string): string {
-  return s.replace(/[,()]/g, " ").trim();
-}
 
 export async function GET(req: NextRequest): Promise<NextResponse> {
   const params: Record<string, string> = {};
@@ -117,114 +98,31 @@ async function searchDepartments(
   const offset = decodeOffset(query.cursor);
 
   /* ─────────────────────────────────────────────────────────────────────
-     1) 키워드 검색 시 학교명·단축명·영문명 매칭 univ ID 사전 풀링.
-        PostgREST 가 foreign-table OR (예: `name.ilike OR universities.n.ilike`)
-        를 지원하지 않으므로 두 쿼리 패턴 사용.
+     BUG-020 (QA round 3, 2026-05-25): RPC 단일 호출로 라운드로빈 정렬.
+     ROW_NUMBER OVER (PARTITION BY university_id) 가 PostgREST 표현 불가 →
+     SECURITY INVOKER RPC search_admissions_v2 가 모든 필터 + 라운드로빈 처리.
+     PostgREST 시절의 ILIKE 이스케이프 / 키워드 사전 풀링 / category·trackKind·
+     degreeCourse·daytime 필터는 RPC 내부에서 동일 의미로 재구현.
+
+     dedup (legacy vs KCUE pattern) 과 jaeoegukmin display strip / sample_stats
+     lookup 은 페이지별 동작이라 RPC 외부 (아래 JS) 유지.
      ───────────────────────────────────────────────────────────────────── */
-  let universityIdsForKeyword: string[] | null = null;
-  let keywordPattern: string | null = null;
-  if (query.q) {
-    const raw = safeForPostgrestOr(query.q);
-    if (raw.length > 0) {
-      keywordPattern = `%${escapeIlike(raw)}%`;
-      const { data: univIds, error: univErr } = await sb
-        .from("universities")
-        .select("id")
-        .eq("active", true)
-        .or(
-          `n.ilike.${keywordPattern},short_name.ilike.${keywordPattern},name_en.ilike.${keywordPattern}`,
-        )
-        .limit(500); // 한 검색어가 500개 학교를 가리킬 일은 없음 — 안전 캡
-      if (univErr) {
-        console.error("[/api/admissions/search] univ keyword lookup:", univErr.message);
-        return { results: [] };
-      }
-      universityIdsForKeyword = (univIds ?? []).map((r) => r.id as string);
-    }
-  }
-
-  /* ─────────────────────────────────────────────────────────────────────
-     2) departments 메인 쿼리 — 모든 필터 DB-side.
-        trackKind 가 있으면 department_admissions inner join + year + overlaps
-        (QA round 3, 2026-05-25). 없으면 좌측 임베드 (admissions 없는 dept 도 노출).
-     ───────────────────────────────────────────────────────────────────── */
-  const wantsTrackKindFilter = Boolean(query.trackKind && query.trackKind.length > 0);
-  const admEmbed = wantsTrackKindFilter
-    ? "department_admissions!inner ( year, available_track_kinds )"
-    : "department_admissions ( year, available_track_kinds )";
-
-  let q = sb
-    .from("departments")
-    .select(`
-      *,
-      universities!inner ( * ),
-      ${admEmbed}
-    `)
-    .eq("active", true)
-    .eq("universities.active", true)
-    // BUG-019 (QA round 3, 2026-05-25): KCUE 메타 분류 학과 제외.
-    // "기타(소속학과없음)" (315건) + "기타모집단위" (140+건) — 사용자에게 무의미한 placeholder.
-    // 전체 9개 패턴 모두 "기타" prefix. 실제 한국어 학과 중 "기타" prefix 인 정상 학과는 없음.
-    // 데이터 자체는 보존 (admin 페이지에서는 여전히 접근 가능).
-    .not("name", "ilike", "기타%")
-    // 결정적 순서 — updated_at 동일 묶음 안에서도 같은 순서 보장.
-    .order("updated_at", { ascending: false })
-    .order("university_id", { ascending: true })
-    .order("id", { ascending: true })
-    .range(offset, offset + query.limit - 1);
-
-  // QA round 3 — trackKind 필터 DB pushdown (JS post-filter 제거).
-  // department_admissions.year = current year + 1 + available_track_kinds && ARRAY[...].
-  // GIN 인덱스 dept_admissions_track_kinds_idx 사용 → overlaps O(log N).
-  if (wantsTrackKindFilter) {
-    q = q
-      .eq("department_admissions.year", year)
-      .overlaps("department_admissions.available_track_kinds", query.trackKind!);
-  }
-
-  // 학위과정 필터 — 'all' 이면 미적용, default '학사'
-  if (query.degreeCourse !== "all") {
-    q = q.or(`degree_course.eq.${query.degreeCourse},degree_course.is.null`);
-  }
-  // 주야 필터 — 야간 학과는 항상 제외 (입시 추천 도메인 외).
-  if (ADMISSIONS_SEARCH_EXCLUDE_NIGHT) {
-    q = q.or("daytime.eq.주간,daytime.is.null");
-  }
-
-  // 대학 카테고리 필터 — 임베드된 universities 컬럼 IN.
-  if (query.category && query.category.length > 0) {
-    q = q.in("universities.category", query.category);
-  }
-  if (query.track) {
-    q = q.eq("track", query.track);
-  }
-  if (query.trackCategory && query.trackCategory.length > 0) {
-    const validTracks = query.trackCategory.filter((c) =>
-      ["humanities", "social", "natural", "engineering", "medical", "arts", "interdisciplinary"].includes(c),
-    );
-    if (validTracks.length > 0) {
-      q = q.in("track", validTracks);
-    }
-  }
-
-  /* 키워드 필터 — DB pushdown (BUG #1 fix):
-     departments.name ILIKE  OR  university_id IN (universities matching 학교명/단축명/영문명).
-     키워드가 있는데 매칭 학교 0개 + departments.name 매칭도 0개 → 결과 0건.
-     PostgREST 는 .or() 안에서 .in. 을 지원: `in.(id1,id2,...)`. */
-  if (query.q && keywordPattern) {
-    const safeIds = (universityIdsForKeyword ?? [])
-      .filter((id) => /^[A-Za-z0-9_-]{1,64}$/.test(id)) // PostgREST .in() 안전성 보장
-      .slice(0, 200);
-    const conditions: string[] = [`name.ilike.${keywordPattern}`];
-    if (safeIds.length > 0) {
-      conditions.push(`university_id.in.(${safeIds.join(",")})`);
-    }
-    q = q.or(conditions.join(","));
-  }
-
-  const { data, error } = await q;
+  const trackCategoryFiltered = query.trackCategory?.filter((c) =>
+    ["humanities", "social", "natural", "engineering", "medical", "arts", "interdisciplinary"].includes(c),
+  );
+  const { data, error } = await sb.rpc("search_admissions_v2", {
+    p_category: query.category ?? null,
+    p_track: query.track ?? null,
+    p_track_category: trackCategoryFiltered && trackCategoryFiltered.length > 0 ? trackCategoryFiltered : null,
+    p_track_kind: query.trackKind ?? null,
+    p_keyword: query.q ?? null,
+    p_degree_course: query.degreeCourse ?? "학사",
+    p_year: year,
+    p_limit: query.limit,
+    p_offset: offset,
+  });
   if (error || !data) {
-    if (error) console.error("[/api/admissions/search] query error:", error.message);
+    if (error) console.error("[/api/admissions/search] rpc error:", error.message);
     return { results: [] };
   }
 
