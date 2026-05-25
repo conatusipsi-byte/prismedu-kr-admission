@@ -157,8 +157,9 @@ export function featureLimit(plan: Plan, feature: keyof PlanFeatures): number {
    ───────────────────────────────────────────────────────────────────────
    types/admission.ts 의 ProductKind 와 1:1 매핑.
 
-   ⚠️ 가격은 모두 placeholder — 클라이언트(방준현) 확정 후 P-014 정책으로
+   ⚠️ 일부 가격은 placeholder — 클라이언트 확정 후 P-014 정책으로
    `docs/policy.md` 에 등록해야 한다. 본 PR 단계에선 결제 흐름 검증만 목적.
+   QA round 2 ④ (2026-05-25): season_pass·consult_one·season_consult_* 가격 확정.
    ⚠️ 토스 시크릿은 dev_test 키로 작업 — staging 가입 후 live 키로 교체.
 
    P-001 정합성:
@@ -169,7 +170,15 @@ export function featureLimit(plan: Plan, feature: keyof PlanFeatures): number {
      분석은 여전히 비공개(insufficient_sample)지만 결제 환불 사유 X.
    ═══════════════════════════════════════════════════════════════════════ */
 
-import type { ProductKind } from "@/types/admission";
+import type { ConsultingTimeSlot, ProductKind } from "@/types/admission";
+
+/** 번들 동봉 내용 정의 (PRODUCTS_KR 카탈로그 메타) */
+export interface ProductBundleContent {
+  kind: "subscription" | "consulting";
+  count: number;
+  /** 컨설팅 시기 지정 — count 와 길이 일치 필요. 없으면 시기 미지정. */
+  timeSlots?: ConsultingTimeSlot[];
+}
 
 export interface ProductDefKr {
   /** types/admission.ts ProductKind와 일치 */
@@ -178,8 +187,14 @@ export interface ProductDefKr {
   displayName: string;
   /** 짧은 설명 — 카드에 노출 */
   shortDescription: string;
-  /** 결제 금액 (KRW). ⚠️ placeholder — P-014로 확정 */
+  /** 결제 금액 (KRW). earlybird 기간엔 earlybirdPriceKrw 가 표시 우선. */
   priceKrw: number;
+  /** QA round 2 ④ (2026-05-25) — 얼리버드 가격 (활성 기간 ≤ earlybirdUntil) */
+  earlybirdPriceKrw?: number;
+  /** 정가 (얼리버드 종료 후) — UI 에서 취소선 노출 시 사용 */
+  regularPriceKrw?: number;
+  /** 얼리버드 종료일 (ISO date). 이후엔 priceKrw 기준. */
+  earlybirdUntil?: string;
   /** 토스 결제 주기. 단건은 "once". */
   period: "once" | "monthly" | "yearly";
   /** 권한 유효 기간 (일). 만료일 = 결제일 + durationDays. */
@@ -212,11 +227,28 @@ export interface ProductDefKr {
    *   - 'analysis': 분석 단건/시즌권
    *   - 'subscription': 정기 구독
    *   - 'consulting': 1:1 컨설팅 (예약 캘린더 → /consulting 으로 이동)
+   *   - 'bundle': 시즌권 + 컨설팅 패키지 (QA round 2 ④)
    */
-  type: "analysis" | "subscription" | "consulting";
+  type: "analysis" | "subscription" | "consulting" | "bundle";
   /** 컨설팅 상품 전용 — 세션 길이 (분). 그 외 상품은 undefined. */
   durationMinutes?: number;
+  /** 번들 상품 전용 — 동봉 컨텐츠 (subscription·consulting 조합) */
+  bundleContents?: ProductBundleContent[];
 }
+
+/** ConsultingTimeSlot 별 사용 가능 시점 (ISO date) — 2027학년도 입시 일정 기준. */
+export const TIME_SLOT_VALID_FROM: Record<ConsultingTimeSlot, string> = {
+  before_june: "2026-06-01T00:00:00+09:00", // 6월 모의평가 이후 사용
+  before_sept: "2026-09-01T00:00:00+09:00", // 9월 모의평가 이후 사용
+  after_csat: "2026-11-14T00:00:00+09:00",  // 2026 수능일 (11/14) 이후
+};
+
+/** ConsultingTimeSlot → 사용자 노출 라벨 */
+export const TIME_SLOT_LABELS: Record<ConsultingTimeSlot, string> = {
+  before_june: "6월 모의평가 이후",
+  before_sept: "9월 모의평가 이후",
+  after_csat: "수능 이후",
+};
 
 /**
  * 한국 입시 단건·구독 상품 카탈로그.
@@ -248,39 +280,99 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
     type: "analysis",
     displayName: "시즌권 (수시·정시 통합)",
     shortDescription: "시즌 전체 분석·재분석 무제한 (수시·정시 한 사이클)",
-    priceKrw: 99000,
+    // QA round 2 ④ (2026-05-25): 얼리버드 가격 적용. priceKrw = 결제 시 청구액 (얼리버드값).
+    priceKrw: 29000,
+    earlybirdPriceKrw: 29000,
+    regularPriceKrw: 40000,
+    earlybirdUntil: "2027-03-31",
     period: "once",
     durationDays: 180,
     grants: { unlocksAnalysis: true, upgradePlan: "pro" },
     blocksOnInsufficientSample: false,
     enabled: true,
-    isPricePlaceholder: true,
+    isPricePlaceholder: false,
     highlights: [
       "수시 + 정시 시즌 전체 (6개월)",
       "분석 재실행 무제한",
       "AI 카운슬러 무제한",
     ],
   },
-  // 컨설팅 모듈 (2026-05-21 추가 계약 +70만원) — ProductKind 'consult_one' 의미 재정의.
-  //   기존: AI 카운슬러 1회 → 신규: 1:1 입시 컨설팅 60분 (방준현 대표).
-  //   가격 placeholder + enabled=false → /pricing 카드 노출되지만 결제 버튼 비활성화 (P-014).
+  // 컨설팅 모듈 (2026-05-21 추가 계약 +110만원) — ProductKind 'consult_one' 의미 재정의.
+  //   기존: AI 카운슬러 1회 → 신규: 1:1 입시 컨설팅 60분.
+  //   QA round 2 ④ (2026-05-25): 가격 확정 (180,000원) + enabled=true 전환.
   consult_one: {
     kind: "consult_one",
     type: "consulting",
     displayName: "1:1 입시 컨설팅 (60분)",
-    shortDescription: "방준현 대표와 1:1 입시 상담 (60분, 화상 또는 대면)",
-    priceKrw: 0, // ⚠️ TODO P-014: 클라이언트 가격 결정 후 변경 (현재 placeholder)
+    shortDescription: "코나투스 입시 컨설턴트와 1:1 입시 상담 (60분, 화상 또는 대면)",
+    priceKrw: 180000,
     period: "once",
     durationDays: 60, // 결제일 ~60일 내 예약 사용
     durationMinutes: 60,
     grants: { consultCredits: 1 },
     blocksOnInsufficientSample: false,
-    enabled: false, // ⚠️ placeholder — 가격 확정 시 true 로 전환
-    isPricePlaceholder: true,
+    enabled: true,
+    isPricePlaceholder: false,
     highlights: [
-      "방준현 대표와 1:1 60분 상담",
+      "코나투스 입시 컨설턴트와 1:1 60분 상담",
       "신청서 기반 맞춤 진단",
       "정시·수시·학종 전략 통합",
+    ],
+  },
+  // QA round 2 ④ (2026-05-25) — 시즌권 + 컨설팅 1회 번들.
+  season_consult_1: {
+    kind: "season_consult_1",
+    type: "bundle",
+    displayName: "시즌권 + 1:1 컨설팅 1회",
+    shortDescription: "시즌권 + 1:1 컨설팅 1회 패키지 (얼리버드)",
+    priceKrw: 190000,
+    earlybirdPriceKrw: 190000,
+    regularPriceKrw: 300000,
+    earlybirdUntil: "2027-03-31",
+    period: "once",
+    durationDays: 180,
+    grants: { unlocksAnalysis: true, upgradePlan: "pro", consultCredits: 1 },
+    blocksOnInsufficientSample: false,
+    enabled: true,
+    isPricePlaceholder: false,
+    highlights: [
+      "시즌권 분석 무제한 (6개월)",
+      "1:1 컨설팅 1회 (60분)",
+      "단건 합산 대비 ₩180,000 절약 (얼리버드 기준 ₩209k vs ₩190k)",
+    ],
+    bundleContents: [
+      { kind: "subscription", count: 1 },
+      { kind: "consulting", count: 1 },
+    ],
+  },
+  // QA round 2 ④ — 시즌권 + 컨설팅 3회 (시기 지정) 번들.
+  season_consult_3: {
+    kind: "season_consult_3",
+    type: "bundle",
+    displayName: "시즌권 + 1:1 컨설팅 3회 (6모/9모/수능 이후)",
+    shortDescription: "시즌권 + 시기별 1:1 컨설팅 3회 패키지 (얼리버드)",
+    priceKrw: 490000,
+    earlybirdPriceKrw: 490000,
+    regularPriceKrw: 700000,
+    earlybirdUntil: "2027-03-31",
+    period: "once",
+    durationDays: 365, // 수능 이후 슬롯까지 사용 가능하도록 1년 보장
+    grants: { unlocksAnalysis: true, upgradePlan: "pro", consultCredits: 3 },
+    blocksOnInsufficientSample: false,
+    enabled: true,
+    isPricePlaceholder: false,
+    highlights: [
+      "시즌권 분석 무제한 (1년)",
+      "1:1 컨설팅 3회 — 6월 모평·9월 모평·수능 이후",
+      "시기별 최적 타이밍 보장",
+    ],
+    bundleContents: [
+      { kind: "subscription", count: 1 },
+      {
+        kind: "consulting",
+        count: 3,
+        timeSlots: ["before_june", "before_sept", "after_csat"],
+      },
     ],
   },
   subscription_pro: {
@@ -330,6 +422,26 @@ export function listEnabledProductsKr(): ProductDefKr[] {
 export function getProductKr(kind: ProductKind | string): ProductDefKr | null {
   if (kind in PRODUCTS_KR) return PRODUCTS_KR[kind as ProductKind];
   return null;
+}
+
+/**
+ * 현 시점에 적용되는 결제 금액 — 얼리버드 기간 안이면 earlybirdPriceKrw, 그 외 priceKrw.
+ *
+ * 호출 시점에 따라 가격이 바뀌므로 결제 API·UI 모두 본 함수를 통과해 단일 진실.
+ * earlybirdUntil 은 KST 자정(00:00:00+09:00) 까지로 해석 → 1일 끝까지 얼리버드.
+ */
+export function getEffectivePriceKrw(p: ProductDefKr, now: Date = new Date()): number {
+  if (p.earlybirdPriceKrw == null || !p.earlybirdUntil) return p.priceKrw;
+  const eb = Date.parse(`${p.earlybirdUntil}T23:59:59+09:00`);
+  if (Number.isNaN(eb)) return p.priceKrw;
+  return now.getTime() <= eb ? p.earlybirdPriceKrw : (p.regularPriceKrw ?? p.priceKrw);
+}
+
+/** 얼리버드 기간 안인지 — UI 배지·취소선 노출 판정. */
+export function isEarlybirdActive(p: ProductDefKr, now: Date = new Date()): boolean {
+  if (!p.earlybirdUntil || p.earlybirdPriceKrw == null) return false;
+  const eb = Date.parse(`${p.earlybirdUntil}T23:59:59+09:00`);
+  return !Number.isNaN(eb) && now.getTime() <= eb;
 }
 
 /**

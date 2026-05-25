@@ -1,20 +1,26 @@
 /**
  * /pricing — 요금제 (공개 SEO)
  *
- * Stage 5 재설계 (2026-05):
- * - 3-card grid + featured(시즌권) scale-up + 풀폭 그라디언트 리본
- * - 큰 가격 숫자 (52px) + tabular-nums + 기간 small
- * - 체크 리스트: 원형 brand 백그라운드 + 흰 체크
- * - 비교 테이블 신설 (feature × plan)
- * - 결제수단 카드 2단 분할 (아이콘 + 설명)
+ * Stage 5 재설계 (2026-05). QA round 2 ④ (2026-05-25):
+ *   - 5 상품 노출 (단건/시즌권/컨설팅 + 번들 2종)
+ *   - 얼리버드 가격 강조 (정가 취소선 + ~2027.03까지 배지)
+ *   - 컨설턴트 명칭: "코나투스 입시 컨설턴트"
+ *   - 비교표 = 단건/시즌권/컨설팅 3-card 기준 유지 (번들은 시즌권+컨설팅 합산)
  *
- * 데이터: lib/plans.ts PRODUCTS_KR. 가격은 P-014 확정 전 placeholder.
+ * 데이터: lib/plans.ts PRODUCTS_KR. 가격은 P-014 확정 (season_pass·consult·번들 확정).
  */
 
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Check, Sparkles, ShieldCheck, RefreshCw } from "lucide-react";
-import { listEnabledProductsKr, getProductKr, type ProductDefKr } from "@/lib/plans";
+import {
+  listEnabledProductsKr,
+  getProductKr,
+  getEffectivePriceKrw,
+  isEarlybirdActive,
+  TIME_SLOT_LABELS,
+  type ProductDefKr,
+} from "@/lib/plans";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
@@ -22,12 +28,12 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "요금제 — Conatus",
   description:
-    "단건 분석 리포트, AI 카운슬러 1회권, 시즌권. 한국 입시 시즌(7~11월) 전용 요금제.",
+    "단건 분석 리포트, 1:1 컨설팅, 시즌권, 시즌+컨설팅 번들. 한국 입시 시즌 전용 요금제.",
   openGraph: {
     type: "website",
     locale: "ko_KR",
     title: "요금제 — Conatus",
-    description: "단건·시즌권 한국 대학 입시 분석 요금제",
+    description: "단건·시즌권·번들 한국 대학 입시 요금제",
     url: "https://conatusipsi.com/pricing",
   },
   alternates: { canonical: "/pricing" },
@@ -36,8 +42,6 @@ export const metadata: Metadata = {
 
 /* ───────────────────────── 비교 테이블 데이터 ───────────────────────── */
 
-// consult_one 의 의미가 2026-05-21 자로 "AI 카운슬러 1회" → "1:1 입시 컨설팅 60분"
-// 으로 재정의됨 (Day 1 of consulting 계약). 비교표 라벨·값도 함께 갱신.
 const COMPARE_PLANS = [
   { kind: "report_one",   label: "단건 리포트", featured: false },
   { kind: "season_pass",  label: "시즌권",       featured: true  },
@@ -89,12 +93,14 @@ const TESTIMONIALS = [
 
 export default function PricingPage(): React.ReactElement {
   const allProducts = listEnabledProductsKr();
-  // BUG-006: 비교표에 1:1 컨설팅 컬럼이 있는데 상단 카드가 없어 구매 경로가 끊김 (QA 1차).
-  // consult_one 은 lib/plans.ts 에서 enabled=false (placeholder) — 그래서 listEnabledProductsKr
-  // 결과에서 빠진다. 상단 3-card 그리드는 "출시 예정" 카드로라도 노출해 사용자 인지·기대를 형성.
-  // PRIMARY_KINDS 는 enabled 와 무관하게 직접 PRODUCTS_KR 에서 조회.
+  // PRIMARY: 단건·시즌권·컨설팅 3종 카드 (QA round 2 ④ 자 consult_one 활성화 — 더이상 "출시 예정" X)
   const PRIMARY_KINDS = ["report_one", "season_pass", "consult_one"] as const;
   const primary = PRIMARY_KINDS
+    .map((k) => getProductKr(k))
+    .filter((p): p is ProductDefKr => Boolean(p));
+  // BUNDLE: 시즌권 + 컨설팅 패키지 2종
+  const BUNDLE_KINDS = ["season_consult_1", "season_consult_3"] as const;
+  const bundles = BUNDLE_KINDS
     .map((k) => getProductKr(k))
     .filter((p): p is ProductDefKr => Boolean(p));
   const subscription = allProducts.filter((p) => p.kind === "subscription_pro" || p.kind === "subscription_elite");
@@ -111,14 +117,15 @@ export default function PricingPage(): React.ReactElement {
         <header className="text-center max-w-2xl mx-auto mb-14 lg:mb-20 flex flex-col items-center gap-4">
           <Badge variant="pill-brand" size="md">
             <Sparkles className="h-3 w-3" />
-            출시 전 임시 가격
+            얼리버드 가격 (~2027.03)
           </Badge>
           <h1 className="font-display text-4xl lg:text-6xl font-extrabold tracking-tighter text-foreground break-keep-all leading-[1.05]">
             내 입시 시즌에 맞춰 결제하세요
           </h1>
           <p className="text-base lg:text-lg text-muted-foreground leading-relaxed break-keep-all">
             한 번만 쓰면 되는 분이라면 <strong className="text-foreground">단건권</strong>,
-            수시·정시 사이클 전체를 활용한다면 <strong className="text-foreground">시즌권</strong>이 유리해요.
+            수시·정시 사이클 전체를 활용한다면 <strong className="text-foreground">시즌권</strong>,
+            전략 상담까지 받고 싶다면 <strong className="text-foreground">시즌+컨설팅 번들</strong>이 유리해요.
           </p>
         </header>
 
@@ -128,6 +135,23 @@ export default function PricingPage(): React.ReactElement {
             <PricingCard key={p.kind} product={p} featured={p.kind === "season_pass"} />
           ))}
         </div>
+
+        {/* Bundle row — 시즌권 + 컨설팅 패키지 */}
+        {bundles.length > 0 && (
+          <section className="mt-16 max-w-5xl mx-auto">
+            <div className="mb-6 flex items-center gap-3">
+              <Badge variant="pill-iris" size="md">패키지</Badge>
+              <span className="text-sm text-muted-foreground break-keep-all">
+                시즌권 + 1:1 컨설팅 — 단건 합산 대비 절약
+              </span>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2 items-stretch">
+              {bundles.map((p) => (
+                <PricingCard key={p.kind} product={p} compact />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Subscription row */}
         {subscription.length > 0 && (
@@ -151,6 +175,9 @@ export default function PricingPage(): React.ReactElement {
             <h2 className="font-display text-3xl lg:text-4xl font-extrabold tracking-tighter">
               어떤 게 나에게 맞을까요
             </h2>
+            <p className="text-sm text-muted-foreground break-keep-all">
+              번들 패키지는 시즌권 + 컨설팅 행이 모두 포함됩니다.
+            </p>
           </div>
 
           <div className="overflow-hidden rounded-3xl border border-border bg-card/80 backdrop-blur-sm">
@@ -317,15 +344,13 @@ export default function PricingPage(): React.ReactElement {
 /* ───────────────────────── PricingCard ───────────────────────── */
 
 /**
- * BUG-006: 상품의 `enabled=false` 면 "출시 예정" 카드로 표시.
- * - 가격 자리에 "준비 중" 텍스트 (₩0 같은 임의 숫자 X)
- * - 헤더 옆에 출시일 배지 ("5/28 출시 예정" — consult_one 한정)
- * - 결제 버튼 disabled
- *
- * 일자 컨벤션 (출시 일자가 카드별로 다를 수 있음): COMING_SOON_DATES 룩업.
+ * 카드 종류:
+ *   - enabled=false → "출시 예정" 카드 (BUG-006)
+ *   - earlybird 활성 → 정가 취소선 + 얼리버드 가격 강조 + "~earlybirdUntil" 배지 (QA round 2 ④)
+ *   - bundle 카드 → 번들 포함 내용 노출 (시즌권 + 컨설팅 N회, 시기 슬롯 라벨)
  */
 const COMING_SOON_DATES: Partial<Record<ProductDefKr["kind"], string>> = {
-  consult_one: "5/28 출시 예정",
+  // QA round 2 ④ — consult_one 활성화. 향후 다른 상품이 비활성으로 들어올 때 본 맵 사용.
 };
 
 function PricingCard({
@@ -339,6 +364,9 @@ function PricingCard({
 }): React.ReactElement {
   const comingSoon = !product.enabled;
   const comingSoonLabel = COMING_SOON_DATES[product.kind] ?? "출시 예정";
+  const earlybird = isEarlybirdActive(product);
+  const effectivePrice = getEffectivePriceKrw(product);
+  const regularPrice = product.regularPriceKrw ?? product.priceKrw;
   const periodLabel =
     product.period === "once"
       ? product.durationDays
@@ -351,6 +379,7 @@ function PricingCard({
       data-component="pricing-card"
       data-product-kind={product.kind}
       data-coming-soon={comingSoon}
+      data-earlybird={earlybird}
       className={cn(
         "group relative flex flex-col gap-5 rounded-3xl bg-card border transition-all overflow-hidden",
         featured
@@ -376,6 +405,11 @@ function PricingCard({
               {comingSoonLabel}
             </Badge>
           )}
+          {!comingSoon && earlybird && (
+            <Badge variant="pill-brand" size="sm" data-element="earlybird-badge">
+              얼리버드 ~{product.earlybirdUntil?.slice(0, 7).replace("-", ".")}
+            </Badge>
+          )}
         </div>
         <p className="text-xs text-muted-foreground break-keep-all leading-relaxed">
           {product.shortDescription}
@@ -387,15 +421,23 @@ function PricingCard({
         {!comingSoon && product.isPricePlaceholder && (
           <Badge variant="pill-amber" size="sm" className="self-start">베타 임시 가격</Badge>
         )}
-        <div className="flex items-baseline gap-2">
+        <div className="flex items-baseline gap-2 flex-wrap">
           {comingSoon ? (
             <span className="text-3xl font-extrabold tracking-tight text-muted-foreground/80 leading-none">
               준비 중
             </span>
           ) : (
             <>
+              {earlybird && regularPrice !== effectivePrice && (
+                <span
+                  data-element="regular-price-strikethrough"
+                  className="font-numeric tabular-nums text-base font-medium text-muted-foreground line-through"
+                >
+                  ₩{regularPrice.toLocaleString("ko-KR")}
+                </span>
+              )}
               <span className="font-numeric tabular-nums text-5xl font-extrabold tracking-tightest text-foreground leading-none">
-                ₩{product.priceKrw.toLocaleString("ko-KR")}
+                ₩{effectivePrice.toLocaleString("ko-KR")}
               </span>
               <span className="text-xs font-medium text-muted-foreground">{periodLabel}</span>
             </>
@@ -404,12 +446,43 @@ function PricingCard({
         {!comingSoon && product.isPricePlaceholder && (
           <p className="text-2xs text-muted-foreground">정식 출시(2026.09) 전 변경될 수 있어요.</p>
         )}
+        {!comingSoon && earlybird && product.earlybirdUntil && (
+          <p className="text-2xs text-muted-foreground break-keep-all">
+            {product.earlybirdUntil} 까지 얼리버드 가격 적용. 이후 정가 ₩{regularPrice.toLocaleString("ko-KR")}.
+          </p>
+        )}
         {comingSoon && (
           <p className="text-2xs text-muted-foreground break-keep-all">
             상품 안내·가격은 출시일에 맞춰 공개됩니다.
           </p>
         )}
       </div>
+
+      {/* Bundle 포함 내용 */}
+      {product.bundleContents && product.bundleContents.length > 0 && (
+        <div
+          data-element="bundle-contents"
+          className="rounded-2xl border border-iris/30 bg-iris/5 dark:bg-iris/10 p-3 text-xs"
+        >
+          <p className="mb-2 text-2xs font-semibold uppercase tracking-wider text-iris">패키지 구성</p>
+          <ul className="space-y-1.5">
+            {product.bundleContents.map((c, i) => (
+              <li key={i} className="flex items-start gap-1.5 text-foreground break-keep-all">
+                <span className="text-iris">·</span>
+                <span>
+                  {c.kind === "subscription" && "시즌권 분석 무제한"}
+                  {c.kind === "consulting" && `1:1 컨설팅 ${c.count}회`}
+                  {c.timeSlots && (
+                    <span className="block text-2xs text-muted-foreground mt-0.5">
+                      시기: {c.timeSlots.map((t) => TIME_SLOT_LABELS[t]).join(" · ")}
+                    </span>
+                  )}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {/* Highlights */}
       <ul className="flex flex-col gap-2.5 flex-1">

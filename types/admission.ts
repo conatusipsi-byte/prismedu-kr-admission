@@ -818,7 +818,16 @@ export type ProductKind =
   | "season_pass"
   | "consult_one"
   | "subscription_pro"
-  | "subscription_elite";
+  | "subscription_elite"
+  // QA round 2 ④ (2026-05-25) — 번들 상품 2종 (시즌권 + 컨설팅).
+  | "season_consult_1"
+  | "season_consult_3";
+
+/**
+ * 시기 지정 컨설팅 슬롯 — season_consult_3 의 컨설팅 3회 시기 분할.
+ * 각 슬롯은 validFrom 도래 이후에만 예약 가능. (lib/consulting/entitlement.ts)
+ */
+export type ConsultingTimeSlot = "before_june" | "before_sept" | "after_csat";
 
 export type OrderStatus = "pending" | "approved" | "failed" | "refunded" | "cancelled";
 
@@ -875,14 +884,46 @@ export interface Order {
  * 결제 승인 트랜잭션에서 active 배열에 추가.
  * 구독 전환 시 currentPlan을 pro/elite로 변경.
  */
+/**
+ * 번들 상품의 entitlement 내부 구조 (QA round 2 ④, 2026-05-25).
+ *
+ * 단건/시즌권 상품은 active 엔트리에 bundleContents 가 비어 있음 (legacy 호환).
+ * 번들 상품 (season_consult_1, season_consult_3) 결제 시 bundleContents 채워짐.
+ */
+export interface EntitlementBundleContents {
+  /** 시즌권 권한 동봉 여부 — 있으면 분석 unlocks. */
+  subscription?: { active: boolean };
+  /**
+   * 컨설팅 권한 동봉.
+   *   - totalSlots: 총 컨설팅 횟수
+   *   - timeSlots: 시기 지정이 있는 경우 (season_consult_3). 키 = ConsultingTimeSlot.
+   *     없으면 (= season_consult_1) totalSlots 만 사용해 단순 카운트.
+   */
+  consulting?: {
+    totalSlots: number;
+    timeSlots?: Partial<Record<ConsultingTimeSlot, {
+      /** 남은 사용 가능 횟수 (보통 1) */
+      remaining: number;
+      /** 사용 시각 — 사용했을 때만 set */
+      usedAt?: string;
+      /** 이 슬롯이 사용 가능해지는 시점 (ISO). 그 전엔 예약 불가. */
+      validFrom: string;
+    }>>;
+  };
+}
+
+export interface UserEntitlementActiveEntry {
+  orderId: string;
+  productKind: ProductKind;
+  validUntil?: Timestamp;
+  grantedAt: Timestamp;
+  /** 번들 상품 전용 (QA round 2 ④). 단건/시즌권/consult_one 은 undefined. */
+  bundleContents?: EntitlementBundleContents;
+}
+
 export interface UserEntitlement {
   uid: string;
-  active: Array<{
-    orderId: string;
-    productKind: ProductKind;
-    validUntil?: Timestamp;
-    grantedAt: Timestamp;
-  }>;
+  active: UserEntitlementActiveEntry[];
   /** 구독 호환 — 현재 유효한 플랜 (free / pro / elite) */
   currentPlan: "free" | "pro" | "elite";
   /** 권한 출처 — 단건 누적인지 구독인지 */

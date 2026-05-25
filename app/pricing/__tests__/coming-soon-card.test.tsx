@@ -1,61 +1,103 @@
 /**
- * BUG-006 회귀 — /pricing 의 1:1 컨설팅 (enabled=false) 카드 노출.
+ * /pricing 카드 회귀 — QA round 2 ④ (2026-05-25) 갱신.
  *
- * 결함: 비교표에 "1:1 컨설팅" 컬럼이 있는데 상단 카드 영역에는 없어서 사용자에게
- * 구매 경로가 끊겼음. consult_one 은 lib/plans.ts 에서 enabled=false placeholder 라
- * listEnabledProductsKr() 결과에서 제외되기 때문.
+ * 변경 컨텍스트:
+ *   - consult_one 활성화 (5/28 출시 예정 → 즉시 결제 가능)
+ *   - 시즌권·번들 얼리버드 가격 적용 (~2027.03)
+ *   - 신규 번들 2종 (season_consult_1, season_consult_3)
  *
- * 본 테스트가 강제하는 계약:
- *   1. /pricing 페이지 (server component) 가 consult_one 카드를 항상 렌더 (enabled 무관)
- *   2. 카드에 "출시 예정" 배지 노출 (consult_one 의 경우 "5/28 출시 예정")
- *   3. 가격 영역에 "준비 중" 텍스트 (₩0 같은 임의 숫자가 노출되면 회귀)
- *   4. 버튼이 disabled 상태이고 라벨이 "출시 예정"
- *   5. 카드의 data-coming-soon="true" 속성으로 E2E 셀렉터 안정성 확보
+ * 회귀 검증:
+ *   1. consult_one 카드 = enabled (data-coming-soon="false") + 활성 가격
+ *   2. 얼리버드 활성 카드 = data-earlybird="true" + 정가 취소선 + 얼리버드 배지
+ *   3. 번들 카드 = bundle-contents 박스 노출
+ *   4. season_consult_3 = 시기 슬롯 라벨 (6모/9모/수능) 노출
  */
 
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import PricingPage from "../page";
 
-describe("BUG-006 — /pricing 1:1 컨설팅 카드 (enabled=false)", () => {
-  it("consult_one 카드가 페이지에 노출된다 (data-product-kind 셀렉터)", () => {
-    const { container } = render(<PricingPage />);
-    const consultCard = container.querySelector(
-      'article[data-component="pricing-card"][data-product-kind="consult_one"]',
-    );
-    expect(consultCard).not.toBeNull();
-  });
-
-  it("consult_one 카드에 'data-coming-soon=true' + '5/28 출시 예정' 배지", () => {
+describe("/pricing 카드 (QA round 2 ④)", () => {
+  it("consult_one 카드 = enabled (출시 예정 라벨 X)", () => {
     const { container } = render(<PricingPage />);
     const card = container.querySelector(
-      'article[data-product-kind="consult_one"][data-coming-soon="true"]',
+      'article[data-product-kind="consult_one"]',
     );
-    expect(card, "consult_one 카드가 coming-soon 으로 표시되어야 함").not.toBeNull();
-    expect(card!.textContent).toContain("5/28 출시 예정");
+    expect(card, "consult_one 카드 미노출").not.toBeNull();
+    expect(card!.getAttribute("data-coming-soon")).toBe("false");
+    // "준비 중" 텍스트 사라지고 실제 가격 표기
+    expect(card!.textContent).not.toContain("준비 중");
+    expect(card!.textContent).toContain("180,000");
   });
 
-  it("consult_one 카드 가격 영역에 '준비 중' (₩0 같은 임의 숫자 X — P-002)", () => {
+  it("season_pass 카드 = 얼리버드 활성 (정가 취소선 + 배지)", () => {
     const { container } = render(<PricingPage />);
-    const card = container.querySelector('article[data-product-kind="consult_one"]')!;
-    expect(card.textContent).toContain("준비 중");
-    // ₩0 노출 X — 의미 없는 가격 숫자 회귀 방지
-    expect(card.textContent).not.toContain("₩0");
-  });
-
-  it("consult_one 카드 버튼은 disabled + '출시 예정' 라벨", () => {
-    render(<PricingPage />);
-    const btn = screen.getByRole("button", { name: "출시 예정" });
-    expect(btn).toBeDisabled();
-    expect(btn.getAttribute("aria-disabled")).toBe("true");
-  });
-
-  it("report_one / season_pass 등 enabled 상품 카드는 영향 없음 (회귀 방지)", () => {
-    const { container } = render(<PricingPage />);
-    // 일반 카드는 data-coming-soon="false"
-    const normalCards = container.querySelectorAll(
-      'article[data-component="pricing-card"][data-coming-soon="false"]',
+    const card = container.querySelector(
+      'article[data-product-kind="season_pass"]',
     );
-    expect(normalCards.length, "활성 상품 카드가 최소 1개 이상 존재해야 함").toBeGreaterThan(0);
+    expect(card!.getAttribute("data-earlybird")).toBe("true");
+    expect(
+      card!.querySelector('[data-element="earlybird-badge"]'),
+      "얼리버드 배지 미노출",
+    ).not.toBeNull();
+    expect(
+      card!.querySelector('[data-element="regular-price-strikethrough"]'),
+      "정가 취소선 미노출",
+    ).not.toBeNull();
+    expect(card!.textContent).toContain("29,000"); // 얼리버드
+    expect(card!.textContent).toContain("40,000"); // 정가 취소선
+  });
+
+  it("season_consult_1 번들 카드 — 패키지 구성 박스 노출", () => {
+    const { container } = render(<PricingPage />);
+    const card = container.querySelector(
+      'article[data-product-kind="season_consult_1"]',
+    );
+    expect(card, "season_consult_1 카드 미노출").not.toBeNull();
+    const bundle = card!.querySelector('[data-element="bundle-contents"]');
+    expect(bundle, "bundle-contents 박스 미노출").not.toBeNull();
+    expect(bundle!.textContent).toContain("시즌권 분석 무제한");
+    expect(bundle!.textContent).toContain("1:1 컨설팅 1회");
+    // 얼리버드 활성
+    expect(card!.getAttribute("data-earlybird")).toBe("true");
+    expect(card!.textContent).toContain("190,000");
+    expect(card!.textContent).toContain("300,000"); // 정가
+  });
+
+  it("season_consult_3 번들 카드 — 시기 슬롯 라벨 (6모/9모/수능)", () => {
+    const { container } = render(<PricingPage />);
+    const card = container.querySelector(
+      'article[data-product-kind="season_consult_3"]',
+    );
+    expect(card, "season_consult_3 카드 미노출").not.toBeNull();
+    const bundle = card!.querySelector('[data-element="bundle-contents"]');
+    expect(bundle).not.toBeNull();
+    expect(bundle!.textContent).toContain("1:1 컨설팅 3회");
+    // 시기 슬롯 — 6월 모평/9월 모평/수능 이후
+    expect(bundle!.textContent).toMatch(/6월 모의평가/);
+    expect(bundle!.textContent).toMatch(/9월 모의평가/);
+    expect(bundle!.textContent).toMatch(/수능 이후/);
+    expect(card!.textContent).toContain("490,000");
+    expect(card!.textContent).toContain("700,000");
+  });
+
+  it("report_one 등 얼리버드 미적용 상품은 data-earlybird=false (회귀 방지)", () => {
+    const { container } = render(<PricingPage />);
+    const reportCard = container.querySelector(
+      'article[data-product-kind="report_one"]',
+    );
+    expect(reportCard!.getAttribute("data-earlybird")).toBe("false");
+    // 얼리버드 배지·취소선 X
+    expect(reportCard!.querySelector('[data-element="earlybird-badge"]')).toBeNull();
+    expect(reportCard!.querySelector('[data-element="regular-price-strikethrough"]')).toBeNull();
+  });
+
+  it("5개 활성 상품 카드 모두 렌더링 (단건/시즌/컨설팅/번들×2)", () => {
+    const { container } = render(<PricingPage />);
+    const kinds = ["report_one", "season_pass", "consult_one", "season_consult_1", "season_consult_3"];
+    for (const k of kinds) {
+      const card = container.querySelector(`article[data-product-kind="${k}"]`);
+      expect(card, `${k} 카드 미노출`).not.toBeNull();
+    }
   });
 });

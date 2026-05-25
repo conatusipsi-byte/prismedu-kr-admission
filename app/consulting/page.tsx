@@ -18,7 +18,7 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: "1:1 입시 컨설팅 예약 | 코나투스 입시",
   description:
-    "방준현 대표와 1:1 한국 대학 입시 컨설팅 (60분). 정시·수시·학종 전 영역 맞춤 상담.",
+    "코나투스 입시 컨설턴트와 1:1 한국 대학 입시 컨설팅 (60분). 정시·수시·학종 전 영역 맞춤 상담.",
 };
 
 export default function ConsultingPage() {

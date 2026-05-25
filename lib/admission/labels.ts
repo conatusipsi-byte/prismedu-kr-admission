@@ -175,9 +175,10 @@ export interface DepartmentCategoryGroup {
 }
 
 export const DEPARTMENT_CATEGORY_GROUPS: DepartmentCategoryGroup[] = [
-  { id: "liberal",       label: "인문·사회·어문·상경", options: ["humanities", "social", "language", "business"] },
-  { id: "science",       label: "자연·공학",         options: ["natural", "engineering"] },
-  { id: "medical_group", label: "의치한약수",         options: ["medicine", "dental", "korean_medicine", "pharmacy", "veterinary"] },
+  // QA round 2 ③ (2026-05-25): 그룹 헤더 간소화 (옵션 칩은 기존 유지).
+  { id: "liberal",       label: "문과대학", options: ["humanities", "social", "language", "business"] },
+  { id: "science",       label: "이과대학", options: ["natural", "engineering"] },
+  { id: "medical_group", label: "메디컬",  options: ["medicine", "dental", "korean_medicine", "pharmacy", "veterinary"] },
 ];
 
 /**

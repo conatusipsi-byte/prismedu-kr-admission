@@ -31,19 +31,23 @@ vi.mock("next/navigation", () => ({
    ═══════════════════════════════════════════════════════════════════════ */
 
 describe("PRODUCTS_KR — 가격 placeholder 마커", () => {
-  it("모든 활성 상품에 isPricePlaceholder=true (P-014 가격 미확정)", () => {
-    const enabled = listEnabledProductsKr();
-    expect(enabled.length).toBeGreaterThan(0);
-    for (const p of enabled) {
-      expect(p.isPricePlaceholder, `${p.kind} 가격 placeholder 마커 누락`).toBe(true);
-    }
+  // QA round 2 ④ (2026-05-25): season_pass·consult_one·번들 2종 가격 확정 (placeholder=false).
+  // report_one 만 P-014 placeholder 유지 (시즌 진입 전 별도 확정).
+  it("placeholder 마커가 PRODUCTS_KR 정의와 일치 — report_one 만 placeholder", () => {
+    expect(PRODUCTS_KR.report_one.isPricePlaceholder).toBe(true);
+    expect(PRODUCTS_KR.season_pass.isPricePlaceholder).toBe(false);
+    expect(PRODUCTS_KR.consult_one.isPricePlaceholder).toBe(false);
+    expect(PRODUCTS_KR.season_consult_1.isPricePlaceholder).toBe(false);
+    expect(PRODUCTS_KR.season_consult_3.isPricePlaceholder).toBe(false);
+    // 활성 상품 목록은 비어 있지 않음 (회귀 가드)
+    expect(listEnabledProductsKr().length).toBeGreaterThan(0);
   });
 
   it("getProductKr는 알 수 없는 kind에 null 반환", () => {
     expect(getProductKr("unknown_kind")).toBeNull();
   });
 
-  it("ProductKind 5종 모두 카탈로그에 정의됨", () => {
+  it("ProductKind 7종 모두 카탈로그에 정의됨 (번들 2종 포함)", () => {
     const kinds = Object.keys(PRODUCTS_KR);
     expect(kinds).toEqual(
       expect.arrayContaining([
@@ -52,6 +56,8 @@ describe("PRODUCTS_KR — 가격 placeholder 마커", () => {
         "consult_one",
         "subscription_pro",
         "subscription_elite",
+        "season_consult_1",
+        "season_consult_3",
       ]),
     );
   });

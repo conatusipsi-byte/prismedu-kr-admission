@@ -19,13 +19,22 @@ import { getAdminSupabase } from "@/lib/supabase-server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { PaymentConfirmSchema } from "@/lib/schemas/api/payment";
-import { getProductKr } from "@/lib/plans";
+import {
+  getProductKr,
+  getEffectivePriceKrw,
+  TIME_SLOT_VALID_FROM,
+} from "@/lib/plans";
 import { reportRouteError } from "@/lib/sentry-report";
 import {
   parseKrOrderId,
   validateOrderTimestamp,
 } from "@/lib/admission/order-id";
-import type { UserEntitlement } from "@/types/admission";
+import type {
+  ConsultingTimeSlot,
+  EntitlementBundleContents,
+  UserEntitlement,
+  UserEntitlementActiveEntry,
+} from "@/types/admission";
 
 const TOSS_CONFIRM_URL = "https://api.tosspayments.com/v1/payments/confirm";
 
@@ -83,9 +92,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       { status: 400 },
     );
   }
-  if (amount !== product.priceKrw) {
+  // 얼리버드 활성 시 effectivePrice = earlybirdPriceKrw, 종료 후엔 regularPriceKrw.
+  // priceKrw 는 결제 시점에 청구하는 금액과 일치하므로 effective 와 같아야 함.
+  const effectivePrice = getEffectivePriceKrw(product);
+  if (amount !== effectivePrice) {
     console.warn(
-      `[payment/confirm] amount mismatch: client=${amount} catalog=${product.priceKrw}`,
+      `[payment/confirm] amount mismatch: client=${amount} catalog=${effectivePrice} (earlybird=${product.earlybirdPriceKrw} regular=${product.regularPriceKrw})`,
     );
     return NextResponse.json(
       { error: "결제 금액이 상품 가격과 일치하지 않아요." },
@@ -161,9 +173,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     console.error(`[payment/confirm] orderId mismatch: req=${orderId} toss=${tossData.orderId}`);
     return NextResponse.json({ error: "주문 정보 불일치" }, { status: 400 });
   }
-  if (tossData.totalAmount !== product.priceKrw) {
+  if (tossData.totalAmount !== effectivePrice) {
     console.error(
-      `[payment/confirm] amount mismatch: catalog=${product.priceKrw} toss=${tossData.totalAmount}`,
+      `[payment/confirm] amount mismatch: catalog=${effectivePrice} toss=${tossData.totalAmount}`,
     );
     return NextResponse.json({ error: "결제 금액 불일치" }, { status: 400 });
   }
@@ -189,7 +201,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       .update({
         product_kind: order.productKind,
         product_name: product.displayName,
-        amount: product.priceKrw,
+        amount: effectivePrice,
         status: "approved",
         period: order.period,
         valid_from: validFromIso,
@@ -214,15 +226,39 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const upgradedPlan = product.grants.upgradePlan ?? (entRow as { current_plan: string } | null)?.current_plan ?? "free";
     const planSource: UserEntitlement["planSource"] =
       product.period === "once" ? "one_time" : "subscription";
-    const newActive = [
-      ...prevActive,
-      {
-        orderId,
-        productKind: order.productKind,
-        validUntil: validUntilIso as unknown as UserEntitlement["active"][number]["validUntil"],
-        grantedAt: new Date().toISOString() as unknown as UserEntitlement["active"][number]["grantedAt"],
-      },
-    ];
+
+    // 번들 상품 — bundleContents 구성. 시기 지정 컨설팅은 TIME_SLOT_VALID_FROM 적용.
+    let bundleContents: EntitlementBundleContents | undefined;
+    if (product.type === "bundle" && product.bundleContents) {
+      bundleContents = {};
+      for (const part of product.bundleContents) {
+        if (part.kind === "subscription") {
+          bundleContents.subscription = { active: true };
+        } else if (part.kind === "consulting") {
+          const timeSlots = part.timeSlots
+            ? Object.fromEntries(
+                part.timeSlots.map((ts: ConsultingTimeSlot) => [
+                  ts,
+                  { remaining: 1, validFrom: TIME_SLOT_VALID_FROM[ts] },
+                ]),
+              )
+            : undefined;
+          bundleContents.consulting = {
+            totalSlots: part.count,
+            ...(timeSlots ? { timeSlots } : {}),
+          };
+        }
+      }
+    }
+
+    const newEntry: UserEntitlementActiveEntry = {
+      orderId,
+      productKind: order.productKind,
+      validUntil: validUntilIso as unknown as UserEntitlementActiveEntry["validUntil"],
+      grantedAt: new Date().toISOString() as unknown as UserEntitlementActiveEntry["grantedAt"],
+      ...(bundleContents ? { bundleContents } : {}),
+    };
+    const newActive = [...prevActive, newEntry];
 
     const { error: entErr } = await sb
       .from("user_entitlements")

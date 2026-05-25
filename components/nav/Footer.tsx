@@ -98,7 +98,7 @@ export function Footer(): React.ReactElement | null {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-border/60 pt-6 text-2xs text-muted-foreground md:flex-row md:items-center md:justify-between">
           <p>ⓒ {year} Conatus. All rights reserved.</p>
-          {/* 사업자등록번호 · 통신판매신고 — 클라이언트(방준현) 등록 완료 후
+          {/* 사업자등록번호 · 통신판매신고 — 클라이언트 등록 완료 후
               env 또는 인라인 텍스트로 노출. 미등록 상태에서 "출시 직전 등록 예정"
               문구를 그대로 노출하면 신뢰도 하락 + 통신판매업 미신고로 결제 CTA
               노출 위험 → 등록 전까지 라인 자체를 감추고, 베타 안내는 헤더/메인 카피에 둠. */}

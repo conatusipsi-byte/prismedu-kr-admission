@@ -177,13 +177,13 @@ describe("UniversityCategoryFilter (v2 multi-select 그룹 칩)", () => {
   it("그룹 헤더 클릭 시 그룹 내 모든 옵션 토글", () => {
     const onChange = vi.fn();
     render(<UniversityCategoryFilter selected={[]} onChange={onChange} />);
-    fireEvent.click(screen.getByRole("checkbox", { name: "인문·사회·어문·상경" }));
+    fireEvent.click(screen.getByRole("checkbox", { name: "문과대학" }));
     // 그룹 헤더 = humanities/social/language/business 4개 일괄 활성
     const calledWith = onChange.mock.calls[0][0] as string[];
     expect(new Set(calledWith)).toEqual(new Set(["humanities", "social", "language", "business"]));
   });
 
-  it("의치한약수 그룹: 5개 칩 표시 (의예/치의예/한의예/약학/수의예)", () => {
+  it("메디컬 그룹: 5개 칩 표시 (의예/치의예/한의예/약학/수의예)", () => {
     render(<UniversityCategoryFilter selected={[]} onChange={() => {}} />);
     expect(screen.getByRole("checkbox", { name: "의예" })).toBeInTheDocument();
     expect(screen.getByRole("checkbox", { name: "치의예" })).toBeInTheDocument();

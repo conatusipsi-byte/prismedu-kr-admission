@@ -35,7 +35,7 @@ import type { ProductKind } from "@/types/admission";
  * named capture group으로 분해.
  */
 const KR_ORDER_ID_REGEX =
-  /^kr_(report_one|season_pass|consult_one|subscription_pro|subscription_elite)_(once|monthly|yearly)_([A-Za-z0-9-]{20,40})_(\d{13,16})_([A-Za-z0-9]{6})$/;
+  /^kr_(report_one|season_pass|consult_one|subscription_pro|subscription_elite|season_consult_1|season_consult_3)_(once|monthly|yearly)_([A-Za-z0-9-]{20,40})_(\d{13,16})_([A-Za-z0-9]{6})$/;
 
 export type OrderPeriod = "once" | "monthly" | "yearly";
 
