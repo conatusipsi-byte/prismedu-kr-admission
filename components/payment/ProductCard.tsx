@@ -19,6 +19,7 @@ import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { PriceTag } from "@/components/pricing/PriceTag";
 import type { ProductDefKr } from "@/lib/plans";
 
 export interface ProductCardProps {
@@ -68,19 +69,19 @@ export function ProductCard({
           </Badge>
         </div>
 
-        {/* 가격 */}
-        <div className="flex items-baseline gap-2">
-          <span className="text-2xl font-bold tabular-nums">
-            {product.priceKrw.toLocaleString("ko-KR")}원
-          </span>
-          {product.period !== "once" && (
-            <span className="text-xs text-muted-foreground">/ 월</span>
-          )}
+        {/* 가격 — BUG-022: PriceTag 단일 컴포넌트 (정가 + 얼리버드 + 배지 일관) */}
+        <div className="flex items-baseline gap-2 flex-wrap">
+          <PriceTag
+            product={product}
+            size="compact"
+            showEarlybirdBadge
+            periodLabel={product.period !== "once" ? "/ 월" : undefined}
+          />
           {product.isPricePlaceholder && (
             <Badge
               variant="outline"
               data-element="price-placeholder-badge"
-              className="ml-1 border-amber-300 bg-amber-50 text-amber-700 dark:border-amber-900/40 dark:bg-amber-900/20 dark:text-amber-300"
+              className="border-amber-300 bg-amber-50 text-amber-700 dark:border-amber-900/40 dark:bg-amber-900/20 dark:text-amber-300"
             >
               <AlertTriangle aria-hidden className="mr-0.5 h-3 w-3" />
               임시 가격

@@ -16,7 +16,6 @@ import { ArrowRight, Check, Sparkles, ShieldCheck, RefreshCw } from "lucide-reac
 import {
   listEnabledProductsKr,
   getProductKr,
-  getEffectivePriceKrw,
   isEarlybirdActive,
   calculateBundleSavings,
   TIME_SLOT_LABELS,
@@ -26,6 +25,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { BundlePackageVisualizer } from "@/components/pricing/BundlePackageVisualizer";
+import { PriceTag } from "@/components/pricing/PriceTag";
 
 export const metadata: Metadata = {
   title: "요금제 — Conatus",
@@ -370,7 +370,6 @@ function PricingCard({
   const comingSoon = !product.enabled;
   const comingSoonLabel = COMING_SOON_DATES[product.kind] ?? "출시 예정";
   const earlybird = isEarlybirdActive(product);
-  const effectivePrice = getEffectivePriceKrw(product);
   const regularPrice = product.regularPriceKrw ?? product.priceKrw;
   const periodLabel =
     product.period === "once"
@@ -426,28 +425,16 @@ function PricingCard({
         {!comingSoon && product.isPricePlaceholder && (
           <Badge variant="pill-amber" size="sm" className="self-start">베타 임시 가격</Badge>
         )}
-        <div className="flex items-baseline gap-2 flex-wrap">
-          {comingSoon ? (
+        {comingSoon ? (
+          <div className="flex items-baseline gap-2 flex-wrap">
             <span className="text-3xl font-extrabold tracking-tight text-muted-foreground/80 leading-none">
               준비 중
             </span>
-          ) : (
-            <>
-              {earlybird && regularPrice !== effectivePrice && (
-                <span
-                  data-element="regular-price-strikethrough"
-                  className="font-numeric tabular-nums text-base font-medium text-muted-foreground line-through"
-                >
-                  ₩{regularPrice.toLocaleString("ko-KR")}
-                </span>
-              )}
-              <span className="font-numeric tabular-nums text-5xl font-extrabold tracking-tightest text-foreground leading-none">
-                ₩{effectivePrice.toLocaleString("ko-KR")}
-              </span>
-              <span className="text-xs font-medium text-muted-foreground">{periodLabel}</span>
-            </>
-          )}
-        </div>
+          </div>
+        ) : (
+          // BUG-022: PriceTag 단일 진실 — /pricing 과 /payment 일관 표기
+          <PriceTag product={product} size="hero" periodLabel={periodLabel} />
+        )}
         {!comingSoon && product.isPricePlaceholder && (
           <p className="text-2xs text-muted-foreground">정식 출시(2026.09) 전 변경될 수 있어요.</p>
         )}

@@ -38,6 +38,40 @@ describe("BUG-005 — ProductCard disabledReason UX", () => {
     expect(btn.getAttribute("aria-disabled")).not.toBe("true");
   });
 
+  /* ─────────────────────────────────────────────────────────────────────
+     BUG-022 회귀 — /payment 가격 표시도 정가 line-through + 얼리버드 일관
+     ───────────────────────────────────────────────────────────────────── */
+
+  it("BUG-022: 얼리버드 상품 — 정가 line-through + 얼리버드 가격 + 배지 모두 노출", () => {
+    const SEASON_PASS_LIKE: ProductDefKr = {
+      ...BASE_PRODUCT,
+      kind: "season_pass",
+      displayName: "시즌권",
+      priceKrw: 29000,
+      earlybirdPriceKrw: 29000,
+      regularPriceKrw: 40000,
+      earlybirdUntil: "2099-12-31", // 항상 활성
+      isPricePlaceholder: false,
+    };
+    const { container } = render(<ProductCard product={SEASON_PASS_LIKE} />);
+    // 정가 line-through
+    const regular = container.querySelector('[data-element="regular-price-strikethrough"]');
+    expect(regular, "정가 line-through 미노출 (BUG-022 회귀)").not.toBeNull();
+    expect(regular!.textContent).toContain("40,000");
+    // 얼리버드 가격
+    expect(container.querySelector('[data-element="effective-price"]')!.textContent).toContain("29,000");
+    // 얼리버드 배지
+    const badge = container.querySelector('[data-element="earlybird-badge"]');
+    expect(badge, "얼리버드 배지 미노출").not.toBeNull();
+  });
+
+  it("BUG-022: 얼리버드 없는 상품 (report_one) — 단일 가격, 배지 X", () => {
+    const { container } = render(<ProductCard product={BASE_PRODUCT} />);
+    expect(container.querySelector('[data-element="regular-price-strikethrough"]')).toBeNull();
+    expect(container.querySelector('[data-element="earlybird-badge"]')).toBeNull();
+    expect(container.querySelector('[data-element="effective-price"]')!.textContent).toContain("9,900");
+  });
+
   it("disabledReason 있을 때: 버튼 '결제하기 (준비 중)' + disabled + aria-disabled", () => {
     const reason = "사업자 등록 완료 후 활성화됩니다 (출시 준비 중)";
     render(<ProductCard product={BASE_PRODUCT} disabledReason={reason} />);
