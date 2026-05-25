@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * ApplicationForm — 컨설팅 신청서 폼 (Day 3).
+ * ApplicationForm — 컨설팅 신청서 폼.
  *
  * react-hook-form + zod (lib/schemas/api/consulting.ts) 패턴. 시각·검증·접근성:
  *   - 필수 표시 (*) + 한국어 에러 메시지
@@ -12,12 +12,12 @@
  *   - 희망 대학: 텍스트 입력 + Enter/추가 버튼 → chip 누적 (max 5)
  *
  * 정직성 (P-002):
- *   - 본 폼 제출만으로 예약 확정 X — 명시 안내 (하단 노트).
+ *   - 24시간 전 취소 정책 명시 (하단 노트).
  *   - 표본 부족 학과 분석 같은 가공 X. 입력 그대로 저장.
  *
  * 제출 흐름:
  *   - onValidSubmit(values) 콜백을 부모(BookingSection)가 전달.
- *   - 부모가 POST /api/consulting/applications 호출 + 토스트/state 처리.
+ *   - 부모가 신청서 INSERT → 예약 확정 RPC 까지 한 번에 처리.
  *   - 본 컴포넌트는 form 검증 + UI 만 담당 (네트워크 X).
  */
 
@@ -397,8 +397,11 @@ export function ApplicationForm({
         {isSubmitting ? "신청서 제출 중…" : "신청서 제출"}
       </Button>
 
-      <p className="text-2xs text-muted-foreground break-keep-all leading-relaxed">
-        ⓘ 본 폼은 신청서만 저장합니다. 예약 확정·이용권 차감은 Day 4 작업 완료 후 활성화됩니다.
+      <p
+        data-element="form-footer-notice"
+        className="text-2xs text-muted-foreground break-keep-all leading-relaxed"
+      >
+        ⓘ 제출 시 선택한 시간으로 예약이 즉시 확정됩니다. 24시간 전까지 <a href="/consulting/my-bookings" className="underline">내 예약</a>에서 취소 가능합니다.
       </p>
     </form>
   );
