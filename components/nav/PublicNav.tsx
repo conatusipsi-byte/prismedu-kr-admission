@@ -119,7 +119,14 @@ export function PublicNav(): React.ReactElement | null {
               <>
                 {user ? (
                   <>
-                    <Button asChild size="sm" variant="outline">
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="outline"
+                      // BUG-024: header outline 버튼 다크모드 — header bg/0~95 와 자연스럽게
+                      // 어우러지도록 transparent fill + theme-aware border.
+                      className="dark:bg-transparent dark:border-border dark:hover:bg-accent/40"
+                    >
                       <Link href="/dashboard">대시보드</Link>
                     </Button>
                     <UserMenu
@@ -131,7 +138,12 @@ export function PublicNav(): React.ReactElement | null {
                   </>
                 ) : (
                   <>
-                    <Button asChild size="sm" variant="outline">
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="outline"
+                      className="dark:bg-transparent dark:border-border dark:hover:bg-accent/40"
+                    >
                       <Link href="/login">로그인</Link>
                     </Button>
                     <Button asChild size="sm" variant="primary">
@@ -213,7 +225,12 @@ export function PublicNav(): React.ReactElement | null {
                         <Button asChild size="xl" variant="primary" className="w-full">
                           <Link href="/dashboard">대시보드</Link>
                         </Button>
-                        <Button asChild size="xl" variant="outline" className="w-full">
+                        <Button
+                          asChild
+                          size="xl"
+                          variant="outline"
+                          className="w-full dark:bg-transparent dark:border-border dark:hover:bg-accent/40"
+                        >
                           <Link href="/profile">프로필</Link>
                         </Button>
                         <Button
@@ -229,7 +246,12 @@ export function PublicNav(): React.ReactElement | null {
                       </>
                     ) : (
                       <>
-                        <Button asChild size="xl" variant="outline" className="w-full">
+                        <Button
+                          asChild
+                          size="xl"
+                          variant="outline"
+                          className="w-full dark:bg-transparent dark:border-border dark:hover:bg-accent/40"
+                        >
                           <Link href="/login">로그인</Link>
                         </Button>
                         <Button asChild size="xl" variant="primary" className="w-full">
