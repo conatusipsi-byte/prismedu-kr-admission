@@ -3,6 +3,13 @@
  *
  * P-001: 비로그인 접근 가능. 응답에 합격률·확률 미포함 (정형 정보만).
  * P-013: jaeoegukmin 트랙은 명시적 trackKind 필터일 때만 노출.
+ *
+ * 2026-05-25 QA round 2 P0 재설계 — 4중 결함 수정:
+ *   #1 키워드 매칭을 DB 로 push (ILIKE) — JS 후처리 제거.
+ *   #2 cursor 를 offset 인코딩으로 전환 — 동일 updated_at 묶음 문제 회피.
+ *   #3 ORDER BY 에 (university_id, id) tiebreak 추가 — 결정적 동작 보장.
+ *   #4 키워드 검색 시 학교명·단축명 매칭 ID 를 사전 풀링 → departments.name
+ *      OR university_id.in.(...) 결합 — PostgREST foreign-table OR 미지원 우회.
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -12,7 +19,6 @@ import {
   ADMISSIONS_SEARCH_EXCLUDE_NIGHT,
   type AdmissionsSearchQuery,
 } from "@/lib/schemas/api/admissions";
-import { matchesSearchQuery } from "@/lib/admission/labels";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
 import { zodErrorResponse } from "@/lib/api-auth";
 import type {
@@ -42,6 +48,25 @@ const CACHE_HEADERS_DEFAULT = {
   "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=7200",
 };
 
+/**
+ * ILIKE 특수문자 이스케이프 — `%` `_` `\` 를 리터럴로 처리.
+ * 사용자 입력을 SQL pattern 으로 쓰기 전 필수.
+ */
+function escapeIlike(s: string): string {
+  return s.replace(/\\/g, "\\\\").replace(/%/g, "\\%").replace(/_/g, "\\_");
+}
+
+/**
+ * PostgREST `.or()` 값 안에서 안전한 문자열 — 콤마/괄호는 PostgREST 문법 충돌.
+ * `*` 를 ILIKE wildcard 로 변환하기 전이라서, 사용자 입력 그대로 ILIKE 패턴에 끼우기.
+ * 콤마는 OR 구분자라 escape 가 없는 PostgREST .or() 문법에서 사용자 입력을 보호하려면
+ * 쿼리 단계에서 콤마를 미리 제거하거나 분리한다. 입력 q 는 max 100자 (zod) 라
+ * 콤마 포함 시 search 의미가 모호하므로 콤마는 공백으로 치환.
+ */
+function safeForPostgrestOr(s: string): string {
+  return s.replace(/[,()]/g, " ").trim();
+}
+
 export async function GET(req: NextRequest): Promise<NextResponse> {
   const params: Record<string, string> = {};
   req.nextUrl.searchParams.forEach((v, k) => {
@@ -70,14 +95,57 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   }
 }
 
+/**
+ * cursor 디코딩 — 신규 offset 인코딩 `o:<n>` 우선, legacy timestamp 는 무시 (offset 0).
+ *
+ * Legacy 호환: prior version 은 cursor 로 ISO timestamp 를 발급했다. 신규 클라이언트가
+ * 받는 cursor 는 항상 `o:<n>` 형식. 옛 cursor 가 그대로 재전송돼도 안전하게 무시 (첫 페이지).
+ */
+function decodeOffset(cursor: string | undefined): number {
+  if (!cursor) return 0;
+  const m = /^o:(\d+)$/.exec(cursor);
+  if (!m) return 0;
+  return Math.max(0, parseInt(m[1], 10));
+}
+
 async function searchDepartments(
   query: AdmissionsSearchQuery,
   allowJaeoegukmin: boolean,
 ): Promise<SearchResponse> {
   const sb = getAdminSupabase();
   const year = new Date().getFullYear() + 1;
+  const offset = decodeOffset(query.cursor);
 
-  // 임베드 select — departments + universities + department_admissions
+  /* ─────────────────────────────────────────────────────────────────────
+     1) 키워드 검색 시 학교명·단축명·영문명 매칭 univ ID 사전 풀링.
+        PostgREST 가 foreign-table OR (예: `name.ilike OR universities.n.ilike`)
+        를 지원하지 않으므로 두 쿼리 패턴 사용.
+     ───────────────────────────────────────────────────────────────────── */
+  let universityIdsForKeyword: string[] | null = null;
+  let keywordPattern: string | null = null;
+  if (query.q) {
+    const raw = safeForPostgrestOr(query.q);
+    if (raw.length > 0) {
+      keywordPattern = `%${escapeIlike(raw)}%`;
+      const { data: univIds, error: univErr } = await sb
+        .from("universities")
+        .select("id")
+        .eq("active", true)
+        .or(
+          `n.ilike.${keywordPattern},short_name.ilike.${keywordPattern},name_en.ilike.${keywordPattern}`,
+        )
+        .limit(500); // 한 검색어가 500개 학교를 가리킬 일은 없음 — 안전 캡
+      if (univErr) {
+        console.error("[/api/admissions/search] univ keyword lookup:", univErr.message);
+        return { results: [] };
+      }
+      universityIdsForKeyword = (univIds ?? []).map((r) => r.id as string);
+    }
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────
+     2) departments 메인 쿼리 — 모든 필터 DB-side.
+     ───────────────────────────────────────────────────────────────────── */
   let q = sb
     .from("departments")
     .select(`
@@ -87,33 +155,28 @@ async function searchDepartments(
     `)
     .eq("active", true)
     .eq("universities.active", true)
+    // 결정적 순서 — updated_at 동일 묶음 안에서도 같은 순서 보장.
     .order("updated_at", { ascending: false })
-    .limit(query.limit);
+    .order("university_id", { ascending: true })
+    .order("id", { ascending: true })
+    .range(offset, offset + query.limit - 1);
 
   // 학위과정 필터 — 'all' 이면 미적용, default '학사'
   if (query.degreeCourse !== "all") {
-    // NULL 인 legacy row 도 학사로 간주 — 마이그레이션에서 backfill 완료
     q = q.or(`degree_course.eq.${query.degreeCourse},degree_course.is.null`);
   }
   // 주야 필터 — 야간 학과는 항상 제외 (입시 추천 도메인 외).
-  // DB 에는 보존되지만 검색 결과 노출 X. 정책: ADMISSIONS_SEARCH_EXCLUDE_NIGHT.
   if (ADMISSIONS_SEARCH_EXCLUDE_NIGHT) {
     q = q.or("daytime.eq.주간,daytime.is.null");
   }
 
-  // 대학 카테고리 필터 — RegionFilter (서울권/경기권/지방국립/지방사립/특수대학) UI 에서
-  // REGION_GROUP_TO_CATEGORIES 매핑을 거쳐 들어온 UniversityCategory 배열.
-  // 임베드된 universities 테이블 컬럼에 대해 PostgREST `universities.category` 문법으로 IN 필터.
-  // 한도 적용(limit) 이전에 DB 단계에서 거르므로, "특수대학 5곳" 같은 좁은 카테고리도
-  // 결과가 빈 채로 도착하지 않는다 (이전 post-filter 방식의 잠재 결함 동시 수정).
+  // 대학 카테고리 필터 — 임베드된 universities 컬럼 IN.
   if (query.category && query.category.length > 0) {
     q = q.in("universities.category", query.category);
   }
   if (query.track) {
     q = q.eq("track", query.track);
   }
-  // 계열 다중 필터 — trackCategory (콤마 구분) 가 있으면 departments.track 의 OR 매칭.
-  // 'business'/'language' 는 직접 매칭 안 되므로 제외 (후속 PR 에서 메타데이터 분리).
   if (query.trackCategory && query.trackCategory.length > 0) {
     const validTracks = query.trackCategory.filter((c) =>
       ["humanities", "social", "natural", "engineering", "medical", "arts", "interdisciplinary"].includes(c),
@@ -122,9 +185,20 @@ async function searchDepartments(
       q = q.in("track", validTracks);
     }
   }
-  if (query.cursor) {
-    // cursor 는 마지막 row 의 updated_at ISO
-    q = q.lt("updated_at", query.cursor);
+
+  /* 키워드 필터 — DB pushdown (BUG #1 fix):
+     departments.name ILIKE  OR  university_id IN (universities matching 학교명/단축명/영문명).
+     키워드가 있는데 매칭 학교 0개 + departments.name 매칭도 0개 → 결과 0건.
+     PostgREST 는 .or() 안에서 .in. 을 지원: `in.(id1,id2,...)`. */
+  if (query.q && keywordPattern) {
+    const safeIds = (universityIdsForKeyword ?? [])
+      .filter((id) => /^[A-Za-z0-9_-]{1,64}$/.test(id)) // PostgREST .in() 안전성 보장
+      .slice(0, 200);
+    const conditions: string[] = [`name.ilike.${keywordPattern}`];
+    if (safeIds.length > 0) {
+      conditions.push(`university_id.in.(${safeIds.join(",")})`);
+    }
+    q = q.or(conditions.join(","));
   }
 
   const { data, error } = await q;
@@ -171,10 +245,8 @@ async function searchDepartments(
   const items: SearchResultItem[] = [];
   // (university_id, kedi_mjr_id) 중복 차단 — legacy row 우선.
   // KCUE-imported row 의 id 는 `<lowercase>-ba-d` 패턴 (긴 hex+suffix), legacy 는 짧은 slug.
-  // 같은 (univ, kediMjrId) 의 row 가 multiple 등장하면 KCUE 패턴 row 들을 skip.
   const isKcueImportedId = (id: string): boolean => /^u\d{8,}-(ba|ma|phd|ass)-[dnx]$/.test(id);
   const rawRows = data as unknown as Row[];
-  // (univ, kediMjrId) 중 legacy(=KCUE 패턴 아닌 id) row 가 존재하는 키 집합 미리 산출
   const legacyOwned = new Set<string>();
   for (const raw of rawRows) {
     if (raw.kedi_mjr_id && !isKcueImportedId(raw.id)) {
@@ -186,17 +258,11 @@ async function searchDepartments(
   for (const raw of rawRows) {
     if (raw.kedi_mjr_id) {
       const dedupKey = `${raw.university_id}/${raw.kedi_mjr_id}`;
-      // legacy 가 이 키를 소유하는데 현재 row 가 KCUE 패턴이면 skip
       if (isKcueImportedId(raw.id) && legacyOwned.has(dedupKey)) continue;
       if (dedupSeen.has(dedupKey)) continue;
       dedupSeen.add(dedupKey);
     }
     const univ = raw.universities;
-
-    if (query.q) {
-      const targetText = `${univ.n} ${univ.short_name ?? ""} ${raw.name}`;
-      if (!matchesSearchQuery(targetText, query.q)) continue;
-    }
 
     // 해당 연도 admissions
     const adm = raw.department_admissions.find((a) => a.year === year);
@@ -204,7 +270,6 @@ async function searchDepartments(
     if (!allowJaeoegukmin) {
       availableTracks = availableTracks.filter((k) => k !== "jaeoegukmin");
     }
-    // 다중 trackKind — OR 매칭 (1개라도 학과 트랙에 포함되면 통과).
     if (query.trackKind && query.trackKind.length > 0) {
       const anyMatch = query.trackKind.some((tk) => availableTracks.includes(tk));
       if (!anyMatch) continue;
@@ -245,8 +310,8 @@ async function searchDepartments(
     });
   }
 
-  const lastRow = (data as unknown as Row[])[(data as unknown as Row[]).length - 1];
-  const nextCursor = data.length === query.limit ? lastRow?.updated_at : undefined;
+  // 다음 페이지 cursor — DB 가 limit 만큼 채워서 돌려줬으면 다음 offset 발급.
+  const nextCursor = data.length === query.limit ? `o:${offset + query.limit}` : undefined;
 
   return {
     results: items,

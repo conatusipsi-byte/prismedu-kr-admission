@@ -321,8 +321,14 @@ async function syncDepartments(
 
     // dedup by id — KCUE 가 같은 (kediMjrId, deg, day) 를 여러 행으로 반복하는 경우 보호
     const byId = new Map<string, ReturnType<typeof toRow>>();
+    // row 별 updated_at 분산 — set_updated_at() 트리거가 explicit value 보존 (migration 20260525140000)
+    // 하므로 row 마다 1ms 차이의 timestamp 부여. cursor pagination 결정성 + 정렬 안정성 보장.
+    const baseSyncMs = Date.now();
+    let rowIndex = 0;
     function toRow(m: KcueSchoolMajor) {
       const d = normalizeDepartmentFromMajor(m);
+      const ts = new Date(baseSyncMs + rowIndex).toISOString();
+      rowIndex += 1;
       return {
         id: makeDepartmentId(d.kediMjrId, d.degreeCourse, d.daytime),
         university_id: u.slug,
@@ -334,7 +340,8 @@ async function syncDepartments(
         active: d.active,
         kedi_mjr_id: d.kediMjrId,
         std_clft_mjr_id: d.stdClftMjrId || null,
-        kcue_synced_at: new Date().toISOString(),
+        kcue_synced_at: ts,
+        updated_at: ts,
       };
     }
     for (const m of majors) {
