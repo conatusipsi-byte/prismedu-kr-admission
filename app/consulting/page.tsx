@@ -44,7 +44,7 @@ export default async function ConsultingPage() {
   const calendarEnt = await getCalendarEntitlementSummary(user.id);
 
   return (
-    <div className="container max-w-5xl py-section flex flex-col gap-section">
+    <div className="mx-auto max-w-content-wide px-gutter-sm md:px-gutter lg:px-gutter-lg py-section flex flex-col gap-section">
       <header className="flex flex-col gap-1.5">
         <div className="flex items-center justify-between gap-2 flex-wrap">
           <div>

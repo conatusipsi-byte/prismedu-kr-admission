@@ -65,7 +65,8 @@ export function MyBookingsView({
   loadError,
 }: MyBookingsViewProps): React.ReactElement {
   const router = useRouter();
-  const [tab, setTab] = React.useState<Tab>(upcoming.length > 0 ? "upcoming" : "past");
+  // BUG-023: 빈 예약이어도 "예정" 탭이 default — 사용자가 "여기 비어있네 → 예약하러 가자" 흐름.
+  const [tab, setTab] = React.useState<Tab>("upcoming");
   const [cancellingId, setCancellingId] = React.useState<string | null>(null);
   const [error, setError] = React.useState<string | null>(loadError);
   const [toast, setToast] = React.useState<string | null>(null);
@@ -106,7 +107,7 @@ export function MyBookingsView({
   };
 
   return (
-    <div className="container max-w-3xl py-section flex flex-col gap-section">
+    <div className="mx-auto max-w-content px-gutter-sm md:px-gutter lg:px-gutter-lg py-section flex flex-col gap-section">
       <header className="flex items-center justify-between gap-2 flex-wrap">
         <div>
           <p className="text-2xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">
@@ -174,10 +175,17 @@ export function MyBookingsView({
       {/* 목록 */}
       {items.length === 0 ? (
         <Card data-state="empty">
-          <CardContent className="py-12 text-center text-sm text-muted-foreground">
-            {tab === "upcoming" && "예정된 예약이 없습니다."}
-            {tab === "past" && "완료된 예약이 아직 없습니다."}
-            {tab === "cancelled" && "취소된 예약이 없습니다."}
+          <CardContent className="py-12 text-center text-sm text-muted-foreground flex flex-col items-center gap-4">
+            <span>
+              {tab === "upcoming" && "예정된 예약이 없습니다."}
+              {tab === "past" && "완료된 예약이 아직 없습니다."}
+              {tab === "cancelled" && "취소된 예약이 없습니다."}
+            </span>
+            {tab === "upcoming" && (
+              <Button asChild size="sm" variant="outline" data-element="empty-state-cta">
+                <Link href="/consulting">컨설팅 예약하기</Link>
+              </Button>
+            )}
           </CardContent>
         </Card>
       ) : (
