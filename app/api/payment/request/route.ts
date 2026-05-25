@@ -26,6 +26,7 @@ import {
   PRODUCTS_KR,
   canPurchaseProductKr,
   getProductKr,
+  getEffectivePriceKrw,
 } from "@/lib/plans";
 import { reportRouteError } from "@/lib/sentry-report";
 import { buildKrOrderId } from "@/lib/admission/order-id";
@@ -109,8 +110,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     return NextResponse.json({ error: "결제 준비 실패 (uid 형식 오류)" }, { status: 500 });
   }
 
-  // 7. orders 테이블에 pending row 작성
-  const amountKrw = product.priceKrw;
+  // 7. orders 테이블에 pending row 작성 — 얼리버드 시점 분기 (QA round 2 ④)
+  const amountKrw = getEffectivePriceKrw(product);
   try {
     const sb = getAdminSupabase();
     const { error } = await sb.from("orders").insert({

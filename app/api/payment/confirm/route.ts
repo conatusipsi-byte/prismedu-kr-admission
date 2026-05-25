@@ -35,6 +35,8 @@ import type {
   UserEntitlement,
   UserEntitlementActiveEntry,
 } from "@/types/admission";
+import { sendEmail } from "@/lib/email/resend";
+import { buildPaymentReceiptEmail } from "@/lib/email/templates/payment-receipt";
 
 const TOSS_CONFIRM_URL = "https://api.tosspayments.com/v1/payments/confirm";
 
@@ -269,6 +271,18 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         plan_source: planSource,
       });
     if (entErr) throw entErr;
+
+    // Day 5 — 영수증 메일 발송 (비동기, 실패 격리).
+    //   결제 + entitlement 부여가 모두 성공한 후만 발송. 메일 실패해도 결제 응답 차단 X.
+    void sendPaymentReceipt({
+      uid: auth.uid,
+      orderId,
+      productKind: order.productKind,
+      amountKrw: effectivePrice,
+      approvedAt: tossData.approvedAt ?? new Date().toISOString(),
+      paymentMethod: tossData.method,
+      validUntilIso,
+    });
   } catch (txError) {
     reportRouteError("api.payment.confirm.tx_failed", txError, {
       uid: auth.uid,
@@ -303,4 +317,73 @@ interface TossConfirmResponse {
   paymentKey?: string;
   code?: string;
   message?: string;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   영수증 발송 — Day 5 (2026-05-25)
+   ───────────────────────────────────────────────────────────────────── */
+
+interface ReceiptArgs {
+  uid: string;
+  orderId: string;
+  productKind: string;
+  amountKrw: number;
+  approvedAt: string;
+  paymentMethod?: string;
+  validUntilIso: string;
+}
+
+/**
+ * 영수증 메일 비동기 발송. 실패해도 결제 응답을 차단하지 않는다 (P-002 정직성 + UX).
+ * - 사용자 이메일 조회 실패: silent skip + warn.
+ * - Resend 키 미설정: sendEmail 이 no_api_key 반환 → 조용히 종료.
+ * - 발송 실패: Sentry 캡처 (resend 모듈이 처리).
+ */
+async function sendPaymentReceipt(args: ReceiptArgs): Promise<void> {
+  try {
+    const sb = getAdminSupabase();
+    // Auth 사용자 이메일 — service_role 키 필요 (admin API)
+    const { data: userRes, error: userErr } = await sb.auth.admin.getUserById(args.uid);
+    if (userErr || !userRes?.user?.email) {
+      console.warn(
+        `[payment/confirm] 영수증 발송 skip — 사용자 이메일 없음 uid=${args.uid} ${userErr?.message ?? ""}`,
+      );
+      return;
+    }
+    const product = getProductKr(args.productKind);
+    if (!product) {
+      console.warn(`[payment/confirm] 영수증 발송 skip — 상품 없음 ${args.productKind}`);
+      return;
+    }
+    const siteUrl =
+      process.env.NEXT_PUBLIC_SITE_URL ??
+      "https://conatusipsi.com"; // 운영 fallback
+    const { subject, html, text } = buildPaymentReceiptEmail({
+      orderId: args.orderId,
+      product,
+      amountKrw: args.amountKrw,
+      approvedAt: args.approvedAt,
+      paymentMethod: args.paymentMethod,
+      validUntilIso: args.validUntilIso,
+      siteUrl,
+    });
+    const result = await sendEmail({
+      to: userRes.user.email,
+      subject,
+      html,
+      text,
+      tags: [
+        { name: "kind", value: "payment_receipt" },
+        { name: "product", value: args.productKind },
+      ],
+    });
+    if (!result.ok) {
+      console.warn(
+        `[payment/confirm] 영수증 발송 실패 (계속) orderId=${args.orderId} reason=${result.reason}`,
+      );
+    }
+  } catch (e) {
+    // 메일 발송이 결제 응답을 절대 차단하지 않도록 모든 에러 swallow
+    console.error("[payment/confirm] 영수증 발송 중 예외 (무시):", e);
+  }
 }
