@@ -303,11 +303,18 @@ export function BookingCalendar({ onSelect, entitlement }: BookingCalendarProps)
         </div>
       )}
 
-      {selectedSlotId && (
-        <p className="text-2xs text-muted-foreground border-t border-border pt-3">
-          선택한 시간 ID: <code className="font-mono">{selectedSlotId}</code> · 신청서 작성은 다음 단계에서 진행됩니다 (Day 3).
-        </p>
-      )}
+      {selectedSlotId && (() => {
+        const sel = slots.find((s) => s.id === selectedSlotId);
+        if (!sel) return null;
+        return (
+          <p
+            data-element="selected-slot-indicator"
+            className="text-2xs text-muted-foreground border-t border-border pt-3"
+          >
+            선택하신 시간: <strong className="text-foreground font-medium">{formatColumnHeader(new Date(sel.startAt))} {formatSlotTime(sel.startAt)} KST</strong>
+          </p>
+        );
+      })()}
     </div>
   );
 }
