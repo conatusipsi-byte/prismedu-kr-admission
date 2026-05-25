@@ -13,11 +13,11 @@ import Link from "next/link";
 import { ArrowRight, Database } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { StagingPendingCard } from "./StagingPendingCard";
+import { adminPageMetadata } from "@/lib/admin-metadata";
 
-export const metadata: Metadata = {
-  title: "모집요강 관리 — Conatus 운영",
-  robots: { index: false, follow: false },
-};
+// BUG-018: 비-master 접근 시 admin title 누설 차단.
+export const generateMetadata = (): Promise<Metadata> =>
+  adminPageMetadata("모집요강 관리 — Conatus 운영");
 
 const STAGES = [
   {

@@ -9,11 +9,11 @@
 
 import type { Metadata } from "next";
 import { OrdersView } from "./OrdersView";
+import { adminPageMetadata } from "@/lib/admin-metadata";
 
-export const metadata: Metadata = {
-  title: "주문 관리 — Conatus 운영",
-  robots: { index: false, follow: false },
-};
+// BUG-018: 비-master 접근 시 admin title 누설 차단.
+export const generateMetadata = (): Promise<Metadata> =>
+  adminPageMetadata("주문 관리 — Conatus 운영");
 
 export default function AdminOrdersPage(): React.ReactElement {
   return <OrdersView />;

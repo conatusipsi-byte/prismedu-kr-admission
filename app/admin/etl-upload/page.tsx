@@ -8,11 +8,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { EtlUploadForm } from "@/components/admin/EtlUploadForm";
+import { adminPageMetadata } from "@/lib/admin-metadata";
 
-export const metadata: Metadata = {
-  title: "ETL 업로드 — admin",
-  robots: { index: false, follow: false },
-};
+// BUG-018: 비-master 접근 시 admin title 누설 차단.
+export const generateMetadata = (): Promise<Metadata> =>
+  adminPageMetadata("ETL 업로드 — admin");
 
 export default function EtlUploadPage(): React.ReactElement {
   return (

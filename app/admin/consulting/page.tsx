@@ -7,13 +7,14 @@
 
 import type { Metadata } from "next";
 import { AdminConsultingView } from "./AdminConsultingView";
+import { adminPageMetadata } from "@/lib/admin-metadata";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = {
-  title: "컨설팅 예약 관리 — 운영 콘솔",
-  robots: { index: false, follow: false },
-};
+// BUG-018: 비-master 사용자에게 admin title 누설 차단. adminPageMetadata 가 auth 검사
+// 실패 시 404 metadata 반환 (root not-found 와 정확 일치).
+export const generateMetadata = (): Promise<Metadata> =>
+  adminPageMetadata("컨설팅 예약 관리 — 운영 콘솔");
 
 export default function AdminConsultingPage() {
   return <AdminConsultingView />;

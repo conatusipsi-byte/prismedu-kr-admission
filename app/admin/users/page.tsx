@@ -6,11 +6,11 @@
 
 import type { Metadata } from "next";
 import { UsersView } from "./UsersView";
+import { adminPageMetadata } from "@/lib/admin-metadata";
 
-export const metadata: Metadata = {
-  title: "사용자 — admin",
-  robots: { index: false, follow: false },
-};
+// BUG-018: 비-master 접근 시 admin title 누설 차단.
+export const generateMetadata = (): Promise<Metadata> =>
+  adminPageMetadata("사용자 — admin");
 
 export default function UsersPage(): React.ReactElement {
   return <UsersView />;

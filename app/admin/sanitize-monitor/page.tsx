@@ -13,11 +13,11 @@
 
 import type { Metadata } from "next";
 import { SanitizeMonitorView } from "./SanitizeMonitorView";
+import { adminPageMetadata } from "@/lib/admin-metadata";
 
-export const metadata: Metadata = {
-  title: "카운슬러 가드 모니터링 — admin",
-  robots: { index: false, follow: false }, // 검색 엔진 차단
-};
+// BUG-018: 비-master 접근 시 admin title 누설 차단.
+export const generateMetadata = (): Promise<Metadata> =>
+  adminPageMetadata("카운슬러 가드 모니터링 — admin");
 
 export default function SanitizeMonitorPage() {
   return <SanitizeMonitorView />;

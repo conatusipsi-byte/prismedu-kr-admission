@@ -7,11 +7,11 @@
 
 import type { Metadata } from "next";
 import { EtlStatusView } from "./EtlStatusView";
+import { adminPageMetadata } from "@/lib/admin-metadata";
 
-export const metadata: Metadata = {
-  title: "ETL 검수 — admin",
-  robots: { index: false, follow: false },
-};
+// BUG-018: 비-master 접근 시 admin title 누설 차단.
+export const generateMetadata = (): Promise<Metadata> =>
+  adminPageMetadata("ETL 검수 — admin");
 
 export default function EtlStatusPage(): React.ReactElement {
   return <EtlStatusView />;

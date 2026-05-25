@@ -21,11 +21,11 @@ import {
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { AdminKpiCards } from "./AdminKpiCards";
+import { adminPageMetadata } from "@/lib/admin-metadata";
 
-export const metadata: Metadata = {
-  title: "운영자 대시보드 — Conatus",
-  robots: { index: false, follow: false },
-};
+// BUG-018: 비-master 접근 시 admin title 누설 차단. lib/admin-metadata.ts 참조.
+export const generateMetadata = (): Promise<Metadata> =>
+  adminPageMetadata("운영자 대시보드 — Conatus");
 
 const QUICK_LINKS = [
   {
