@@ -19,16 +19,26 @@
 
 import * as React from "react";
 import { CalendarClock, CheckCircle2 } from "lucide-react";
-import { BookingCalendar, type AvailableSlot } from "@/components/consulting/BookingCalendar";
+import Link from "next/link";
+import { BookingCalendar, type AvailableSlot, type CalendarEntitlement } from "@/components/consulting/BookingCalendar";
 import { ApplicationForm } from "@/components/consulting/ApplicationForm";
 import { fetchWithAuth, ApiError } from "@/lib/api-client";
 import type { ConsultingApplicationCreate } from "@/lib/schemas/api/consulting";
+import { TIME_SLOT_LABELS } from "@/lib/plans";
+import type { ConsultingTimeSlot } from "@/types/admission";
 
 type SubmitState = "idle" | "submitting" | "success" | "error";
 
 interface ApplicationsResponse {
   id: string;
   createdAt: string;
+}
+
+interface BookingResponse {
+  bookingId: string;
+  slotStartAt: string;
+  slotEndAt: string;
+  consumedTimeSlot: ConsultingTimeSlot | null;
 }
 
 /** ISO timestamp → "5/23 (토) 19:00 KST" */
@@ -38,17 +48,23 @@ function formatSlotLabel(iso: string): string {
   return `${d.getMonth() + 1}/${d.getDate()} (${KOREAN_WEEKDAYS[d.getDay()]}) ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")} KST`;
 }
 
-export function ConsultingBookingSection(): React.ReactElement {
+export interface ConsultingBookingSectionProps {
+  calendarEntitlement?: CalendarEntitlement;
+}
+
+export function ConsultingBookingSection({ calendarEntitlement }: ConsultingBookingSectionProps = {}): React.ReactElement {
   const [selected, setSelected] = React.useState<AvailableSlot | null>(null);
   const [submitState, setSubmitState] = React.useState<SubmitState>("idle");
   const [submitError, setSubmitError] = React.useState<string | null>(null);
-  const [lastApplicationId, setLastApplicationId] = React.useState<string | null>(null);
+  const [lastBooking, setLastBooking] = React.useState<BookingResponse | null>(null);
 
   const onSubmit = async (values: ConsultingApplicationCreate): Promise<void> => {
+    if (!selected) return;
     setSubmitState("submitting");
     setSubmitError(null);
     try {
-      const body = await fetchWithAuth<ApplicationsResponse>(
+      // Day 3 — 신청서 INSERT
+      const appBody = await fetchWithAuth<ApplicationsResponse>(
         "/api/consulting/applications",
         {
           method: "POST",
@@ -56,7 +72,16 @@ export function ConsultingBookingSection(): React.ReactElement {
           body: JSON.stringify(values),
         },
       );
-      setLastApplicationId(body.id);
+      // Day 4 — 예약 확정 (slot + entitlement 차감 트랜잭션, RPC)
+      const bookingBody = await fetchWithAuth<BookingResponse>(
+        "/api/consulting/bookings",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ timeSlotId: selected.id, applicationId: appBody.id }),
+        },
+      );
+      setLastBooking(bookingBody);
       setSubmitState("success");
     } catch (e) {
       // ApiError 는 status + 한국어 message 를 갖고 있음. 일반 Error 도 message 노출.
@@ -75,12 +100,12 @@ export function ConsultingBookingSection(): React.ReactElement {
     setSelected(null);
     setSubmitState("idle");
     setSubmitError(null);
-    setLastApplicationId(null);
+    setLastBooking(null);
   };
 
   return (
     <div className="flex flex-col gap-6">
-      <BookingCalendar onSelect={setSelected} />
+      <BookingCalendar onSelect={setSelected} entitlement={calendarEntitlement} />
 
       {/* 신청서 영역 — 슬롯 선택 시 펼침 */}
       {!selected ? (
@@ -104,27 +129,36 @@ export function ConsultingBookingSection(): React.ReactElement {
             />
             <div className="flex flex-col gap-1">
               <p className="text-sm font-semibold text-foreground">
-                신청서가 접수되었습니다.
+                예약이 확정되었습니다.
               </p>
               <p className="text-2xs text-muted-foreground break-keep-all leading-relaxed">
-                선택한 시간: <strong>{formatSlotLabel(selected.startAt)}</strong>
+                일시: <strong>{formatSlotLabel(selected.startAt)}</strong>
+                {lastBooking?.consumedTimeSlot && (
+                  <>
+                    <br />
+                    차감 슬롯: <strong>{TIME_SLOT_LABELS[lastBooking.consumedTimeSlot]}</strong>
+                  </>
+                )}
                 <br />
-                예약 확정·이용권 차감은 Day 4 작업이 완료된 뒤 활성화됩니다. 현재는 신청서만 저장된 상태이며, 같은 슬롯을 다른 사용자가 먼저 예약할 수 있습니다.
+                예약 24시간 전까지 <Link href="/consulting/my-bookings" className="underline">내 예약</Link> 에서 취소할 수 있어요.
               </p>
-              {lastApplicationId && (
-                <p className="text-2xs text-muted-foreground font-mono">
-                  신청 ID: {lastApplicationId}
-                </p>
-              )}
             </div>
           </div>
-          <button
-            type="button"
-            onClick={resetAfterSuccess}
-            className="text-sm text-brand-600 dark:text-brand-400 underline-offset-2 hover:underline self-start"
-          >
-            다른 시간으로 다시 신청하기
-          </button>
+          <div className="flex items-center gap-3">
+            <Link
+              href="/consulting/my-bookings"
+              className="text-sm text-brand-600 dark:text-brand-400 underline-offset-2 hover:underline"
+            >
+              내 예약 보기
+            </Link>
+            <button
+              type="button"
+              onClick={resetAfterSuccess}
+              className="text-sm text-muted-foreground underline-offset-2 hover:underline"
+            >
+              다른 시간으로 추가 예약
+            </button>
+          </div>
         </div>
       ) : (
         <div className="border-t border-border pt-5 flex flex-col gap-3">

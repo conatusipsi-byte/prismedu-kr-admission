@@ -69,3 +69,23 @@ export const ConsultingApplicationCreateSchema = z.object({
 });
 
 export type ConsultingApplicationCreate = z.infer<typeof ConsultingApplicationCreateSchema>;
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Day 4 — 예약 생성/취소 입력 스키마
+   ═══════════════════════════════════════════════════════════════════════ */
+
+const UUID_RE = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+const UuidSchema = z.string().regex(UUID_RE, "유효하지 않은 UUID 형식");
+
+/** POST /api/consulting/bookings body */
+export const ConsultingBookingCreateSchema = z.object({
+  timeSlotId: UuidSchema,
+  applicationId: UuidSchema,
+});
+export type ConsultingBookingCreate = z.infer<typeof ConsultingBookingCreateSchema>;
+
+/** PATCH /api/consulting/bookings/[id] body */
+export const ConsultingBookingCancelSchema = z.object({
+  reason: z.string().trim().max(500, "취소 사유는 500자 이내").optional(),
+});
+export type ConsultingBookingCancel = z.infer<typeof ConsultingBookingCancelSchema>;

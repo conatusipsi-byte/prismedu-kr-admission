@@ -22,6 +22,23 @@ import type {
   ProductKind,
 } from "@/types/admission";
 
+/**
+ * 캘린더 표시용 entitlement 요약 — BookingCalendar 가 prop 으로 받아 슬롯별 사용 가능 판정.
+ * page.tsx (server) 가 빌드 후 client component 로 전달.
+ */
+export interface CalendarEntitlementSummary {
+  untimedRemaining: number;
+  timedSlots: Array<{
+    timeSlot: ConsultingTimeSlot;
+    validFrom: string;
+    remaining: number;
+  }>;
+  pendingTimedSlots: Array<{
+    timeSlot: ConsultingTimeSlot;
+    validFrom: string;
+  }>;
+}
+
 export interface ConsultingEntitlement {
   hasAccess: boolean;
   /** 즉시 예약 가능한 컨설팅 크레딧 수 (시기 슬롯의 validFrom 도래 + remaining ≥ 1). */
@@ -178,4 +195,76 @@ export async function getConsultingEntitlement(
     totalUnexpired,
     usedCount,
   };
+}
+
+/**
+ * 캘린더용 entitlement 요약 — BookingCalendar 가 사용. 시기 ready/pending 분리 + untimed 잔여.
+ * /consulting/page.tsx 가 호출 후 client 컴포넌트로 전달.
+ */
+export async function getCalendarEntitlementSummary(
+  uid: string,
+): Promise<CalendarEntitlementSummary> {
+  const sb = getAdminSupabase();
+  const { data } = await sb
+    .from("user_entitlements")
+    .select("active")
+    .eq("user_id", uid)
+    .maybeSingle();
+
+  const empty: CalendarEntitlementSummary = {
+    untimedRemaining: 0,
+    timedSlots: [],
+    pendingTimedSlots: [],
+  };
+  if (!data) return empty;
+
+  const active = ((data as { active: ActiveEntry[] | null }).active ?? []) as ActiveEntry[];
+  const nowMs = Date.now();
+  let untimedTotal = 0;
+  const timedSlots: CalendarEntitlementSummary["timedSlots"] = [];
+  const pendingTimedSlots: CalendarEntitlementSummary["pendingTimedSlots"] = [];
+
+  for (const entry of active) {
+    if (!CONSULTING_PRODUCTS.has(entry.productKind)) continue;
+    if (!entry.validUntil) continue;
+    if (Date.parse(entry.validUntil) <= nowMs) continue;
+
+    const consulting = entry.bundleContents?.consulting;
+    const timed = consulting?.timeSlots;
+
+    if (entry.productKind === "consult_one") {
+      untimedTotal += 1;
+    } else if (consulting && !timed) {
+      untimedTotal += consulting.totalSlots;
+    } else if (timed) {
+      for (const [ts, meta] of Object.entries(timed) as Array<[
+        ConsultingTimeSlot,
+        { remaining: number; usedAt?: string; validFrom: string },
+      ]>) {
+        if (meta.remaining <= 0 || meta.usedAt) continue;
+        if (Date.parse(meta.validFrom) <= nowMs) {
+          timedSlots.push({ timeSlot: ts, validFrom: meta.validFrom, remaining: meta.remaining });
+        } else {
+          pendingTimedSlots.push({ timeSlot: ts, validFrom: meta.validFrom });
+        }
+      }
+    }
+  }
+
+  // booking 카운트로 untimed 사용분 차감
+  const { count: confirmedBookings } = await sb
+    .from("consulting_bookings")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", uid)
+    .eq("status", "confirmed");
+  const totalConfirmed = confirmedBookings ?? 0;
+  const timedUsedFromActive = active.reduce((s, e) => {
+    const timed = e.bundleContents?.consulting?.timeSlots;
+    if (!timed) return s;
+    return s + Object.values(timed).filter((meta) => meta?.usedAt).length;
+  }, 0);
+  const untimedUsed = Math.max(0, totalConfirmed - timedUsedFromActive);
+  const untimedRemaining = Math.max(0, untimedTotal - untimedUsed);
+
+  return { untimedRemaining, timedSlots, pendingTimedSlots };
 }

@@ -22,6 +22,8 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { TIME_SLOT_LABELS } from "@/lib/plans";
+import type { ConsultingTimeSlot } from "@/types/admission";
 
 const MAX_WEEKS_AHEAD = 4;
 const KOREAN_WEEKDAYS = ["일", "월", "화", "수", "목", "금", "토"] as const;
@@ -37,9 +39,61 @@ interface SlotsApiResponse {
   slots: AvailableSlot[];
 }
 
+/**
+ * 캘린더 entitlement context — page (server) 가 사용자의 권한을 분석해 전달.
+ * 캘린더는 시기 도래 + 슬롯 시작 시각을 비교해 각 슬롯의 사용 가능 여부 판정.
+ */
+export interface CalendarEntitlement {
+  /** 시기 미지정 슬롯 잔여 (consult_one + 시기 미지정 번들) */
+  untimedRemaining: number;
+  /** 시기 지정 슬롯 (validFrom 도래 + 미사용) */
+  timedSlots: Array<{
+    timeSlot: ConsultingTimeSlot;
+    validFrom: string;
+    remaining: number;
+  }>;
+  /** 시기 지정 슬롯 (validFrom 미도래) — 안내용 */
+  pendingTimedSlots: Array<{
+    timeSlot: ConsultingTimeSlot;
+    validFrom: string;
+  }>;
+}
+
 export interface BookingCalendarProps {
   /** 슬롯 선택 시 콜백. Day 3 신청서 폼과 결합. */
   onSelect?: (slot: AvailableSlot | null) => void;
+  /** 사용자 컨설팅 entitlement — page 가 분석 후 전달. 미전달 시 모든 슬롯 활성. */
+  entitlement?: CalendarEntitlement;
+}
+
+/**
+ * 특정 슬롯이 사용자의 entitlement 로 예약 가능한지 + 사유 메시지.
+ */
+function evaluateSlotUsability(
+  slot: AvailableSlot,
+  ent: CalendarEntitlement | undefined,
+): { usable: boolean; lockedReason?: string } {
+  if (!ent) return { usable: true };
+  if (ent.untimedRemaining > 0) return { usable: true };
+  const slotMs = Date.parse(slot.startAt);
+  // 시기 지정 슬롯 중 validFrom 도래 + slot.startAt 이후 사용 가능한 게 있나
+  const usableTimed = ent.timedSlots.find(
+    (t) => t.remaining > 0 && Date.parse(t.validFrom) <= slotMs,
+  );
+  if (usableTimed) return { usable: true };
+  // 모든 가용 시기 슬롯이 slot 시각 이전이면 (=remaining 다 썼거나 부재) → 거부
+  // 미도래 슬롯이 있고 그게 slot.startAt 이전이면 "X월 X일 이후 예약 가능"
+  const earliestPending = ent.pendingTimedSlots
+    .filter((p) => Date.parse(p.validFrom) > Date.now())
+    .sort((a, b) => Date.parse(a.validFrom) - Date.parse(b.validFrom))[0];
+  if (earliestPending) {
+    const label = TIME_SLOT_LABELS[earliestPending.timeSlot];
+    return {
+      usable: false,
+      lockedReason: `${label} (${earliestPending.validFrom.slice(0, 10)}) 부터 예약 가능`,
+    };
+  }
+  return { usable: false, lockedReason: "사용 가능한 컨설팅 권한이 없습니다." };
 }
 
 /** 주의 시작일(오늘 + weekOffset*7) YYYY-MM-DD */
@@ -71,7 +125,7 @@ function formatSlotTime(iso: string): string {
   return `${hh}:${mm}`;
 }
 
-export function BookingCalendar({ onSelect }: BookingCalendarProps): React.ReactElement {
+export function BookingCalendar({ onSelect, entitlement }: BookingCalendarProps): React.ReactElement {
   const [weekOffset, setWeekOffset] = React.useState(0);
   const [selectedSlotId, setSelectedSlotId] = React.useState<string | null>(null);
   const [slots, setSlots] = React.useState<AvailableSlot[]>([]);
@@ -216,18 +270,25 @@ export function BookingCalendar({ onSelect }: BookingCalendarProps): React.React
                   ) : (
                     daySlots.map((slot) => {
                       const selected = slot.id === selectedSlotId;
+                      const { usable, lockedReason } = evaluateSlotUsability(slot, entitlement);
                       return (
                         <button
                           key={slot.id}
                           type="button"
-                          onClick={() => handleSelect(slot)}
+                          onClick={() => usable && handleSelect(slot)}
                           aria-pressed={selected}
+                          aria-disabled={!usable}
+                          disabled={!usable}
+                          title={!usable ? lockedReason : undefined}
+                          data-slot-usable={usable}
                           className={cn(
                             "rounded-md border px-2 py-1.5 text-xs font-medium transition-colors",
                             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-1",
-                            selected
-                              ? "bg-brand-600 border-brand-600 text-white hover:bg-brand-700"
-                              : "bg-background border-border text-foreground hover:bg-muted",
+                            !usable
+                              ? "bg-muted/40 border-dashed border-border text-muted-foreground/60 cursor-not-allowed"
+                              : selected
+                                ? "bg-brand-600 border-brand-600 text-white hover:bg-brand-700"
+                                : "bg-background border-border text-foreground hover:bg-muted",
                           )}
                         >
                           {formatSlotTime(slot.startAt)}
