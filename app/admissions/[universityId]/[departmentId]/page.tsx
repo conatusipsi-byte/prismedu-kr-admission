@@ -224,6 +224,7 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
               <PrevYearResultCard
                 prevYearResult={prevYearResult}
                 trackKind={primaryTrackKind}
+                availableTrackKinds={admissions.availableTrackKinds}
                 sampleSufficient={sampleSufficient}
               />
             </section>
@@ -239,6 +240,7 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
               <PrevYearResultCard
                 prevYearResult={prevYearResult}
                 trackKind={primaryTrackKind}
+                availableTrackKinds={admissions.availableTrackKinds}
                 sampleSufficient={sampleSufficient}
               />
 
