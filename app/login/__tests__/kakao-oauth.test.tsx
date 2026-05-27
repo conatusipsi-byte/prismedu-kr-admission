@@ -1,5 +1,11 @@
 /**
- * 카카오 OAuth 회귀 — 로그인 버튼 노출·클릭 시 signInWithOAuth 호출·provider/redirectTo 정합성.
+ * 카카오 OAuth 회귀 — KOE205 수정 포함.
+ *
+ * 검증:
+ *   - 로그인 버튼 노출·클릭 시 signInWithOAuth 호출
+ *   - scopes: 'profile_nickname' only (비즈 앱 전 한계)
+ *   - account_email·profile_image scope 부재 (KOE205 회귀 가드)
+ *   - provider/redirectTo 정합성
  *
  * jsdom 한계: 실 OAuth 리다이렉트는 prod 검증 필요.
  */
@@ -23,7 +29,10 @@ vi.mock("@/lib/auth-context", () => ({
     loginWithKakao: async () => {
       const { error } = await mockSignInWithOAuth({
         provider: "kakao",
-        options: { redirectTo: `${window.location.origin}/auth/callback` },
+        options: {
+          scopes: "profile_nickname",
+          redirectTo: `${window.location.origin}/auth/callback`,
+        },
       });
       if (error) throw error;
     },
@@ -65,13 +74,35 @@ describe("카카오 OAuth 로그인", () => {
   it("클릭 시 signInWithOAuth({ provider: 'kakao' }) 호출", async () => {
     const { LoginView } = await import("../LoginView");
     render(<LoginView />);
-    const btn = screen.getByTestId("login-kakao");
-    fireEvent.click(btn);
+    fireEvent.click(screen.getByTestId("login-kakao"));
 
     await waitFor(() => {
       expect(mockSignInWithOAuth).toHaveBeenCalledWith(
         expect.objectContaining({ provider: "kakao" }),
       );
+    });
+  });
+
+  it("scopes: 'profile_nickname' only — 비즈 앱 전 한계", async () => {
+    const { LoginView } = await import("../LoginView");
+    render(<LoginView />);
+    fireEvent.click(screen.getByTestId("login-kakao"));
+
+    await waitFor(() => {
+      const call = mockSignInWithOAuth.mock.calls[0]?.[0];
+      expect(call?.options?.scopes).toBe("profile_nickname");
+    });
+  });
+
+  it("KOE205 회귀 — account_email·profile_image scope 부재", async () => {
+    const { LoginView } = await import("../LoginView");
+    render(<LoginView />);
+    fireEvent.click(screen.getByTestId("login-kakao"));
+
+    await waitFor(() => {
+      const scopes = mockSignInWithOAuth.mock.calls[0]?.[0]?.options?.scopes ?? "";
+      expect(scopes).not.toContain("account_email");
+      expect(scopes).not.toContain("profile_image");
     });
   });
 
@@ -100,8 +131,7 @@ describe("카카오 OAuth 로그인", () => {
   it("Google 로그인은 카카오와 독립적으로 동작한다", async () => {
     const { LoginView } = await import("../LoginView");
     render(<LoginView />);
-    const googleBtn = screen.getByTestId("login-google");
-    fireEvent.click(googleBtn);
+    fireEvent.click(screen.getByTestId("login-google"));
 
     await waitFor(() => {
       const call = mockSignInWithOAuth.mock.calls[0]?.[0];
