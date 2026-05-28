@@ -354,6 +354,19 @@ function humanizeAuthError(msg: string): string {
   if (msg === "missing_code" || msg === "missing_code_or_token") {
     return "인증 링크가 만료됐거나 잘못됐어요. 다시 가입 또는 메일 재발송을 시도해주세요.";
   }
+  // OAuth provider 측 거절 — Supabase 가 /auth/callback?error=... 로 돌려보냄.
+  // 사용자가 동의창에서 취소했을 가능성과 provider 측 일시 장애를 분리해 안내.
+  if (/access_denied|user.*denied|user.*cancel/i.test(msg)) {
+    return "소셜 로그인 동의를 취소하셨어요. 다시 시도하시거나 이메일로 가입해주세요.";
+  }
+  // 카카오/Google 등에서 이메일 못 받아 옴 — 비즈 앱 이메일 권한 미승인 등.
+  // Supabase 가 'Error getting user email from external provider' 류 메시지로 회신.
+  if (/email.*from.*external.*provider|user email.*provider/i.test(msg)) {
+    return "소셜 계정에서 이메일을 가져오지 못했어요. 잠시 후 다시 시도하시거나 이메일 가입을 이용해주세요.";
+  }
+  if (/server_error|unexpected_failure/i.test(msg)) {
+    return "소셜 로그인 처리 중 일시적 오류가 발생했어요. 잠시 후 다시 시도해주세요.";
+  }
   // OTP / token 만료 (이메일 인증 링크가 24시간 등 만료된 경우)
   if (/token.*expired|otp.*expired|invalid.*token/i.test(msg)) {
     return "인증 링크가 만료됐어요. 가입을 다시 시도하면 새 메일이 발송돼요.";

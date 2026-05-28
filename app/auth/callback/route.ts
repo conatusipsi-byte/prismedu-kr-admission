@@ -40,6 +40,18 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   // 안전한 path 만 허용 — open redirect 차단
   const safeNext = nextPath.startsWith("/") && !nextPath.startsWith("//") ? nextPath : "/dashboard";
 
+  // OAuth provider 측 거절 — Supabase 가 ?error=...&error_description=... 로 돌려보냄.
+  // code/token_hash 없는 경로보다 먼저 surface 해서 사용자에게 정확한 사유를 노출.
+  // (이전: missing_code_or_token 으로 폴백되어 "인증 링크 만료" 오인 문구가 노출됐음)
+  const oauthError = url.searchParams.get("error");
+  const oauthErrorDesc = url.searchParams.get("error_description");
+  if (oauthError) {
+    const msg = oauthErrorDesc || oauthError;
+    return NextResponse.redirect(
+      new URL(`/login?error=${encodeURIComponent(msg)}`, url.origin),
+    );
+  }
+
   try {
     const sb = await getRouteSupabase();
 
