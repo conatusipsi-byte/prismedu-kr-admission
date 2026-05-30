@@ -18,6 +18,7 @@ import {
   ShoppingBag,
   ClipboardList,
   CalendarClock,
+  Inbox,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -31,6 +32,7 @@ const ADMIN_NAV = [
   { href: "/admin/users", label: "사용자", icon: Users, status: "active" },
   { href: "/admin/orders", label: "주문", icon: ShoppingBag, status: "active" },
   { href: "/admin/consulting", label: "컨설팅", icon: CalendarClock, status: "active" },
+  { href: "/admin/inquiries", label: "문의", icon: Inbox, status: "active" },
 ] as const;
 
 export function AdminShell({ children }: { children: React.ReactNode }) {
