@@ -267,15 +267,28 @@ function broadcast(allDepts: RawDepartment[]): { merged: RawDepartment[]; report
   }
 
   // 3단계: pseudo-univ 적용 (catch-all, 제외 단과대 학과는 skip)
+  //
+  // 음대 지역균형 제외 정책 (2026-05-30 추가):
+  //   서울대 p11-12 모집인원 표 확인 결과 — 음대 5개 학과 (성악·작곡·피아노·관현·국악) 의
+  //   지역균형전형 인원이 0 (entry 자체 없음). 음대는 자체 실기위주 / 학생부종합(일반) 만 운영.
+  //   pseudo entry 명에 명시적 제외 없어도 음대를 지역균형 broadcast 에서 추가 제외.
+  const MUSIC_FACULTY_SET = new Set(["음악대학"]);
+  const isJiyokTrack = (name: string): boolean => /지역균형/.test(name);
+
   for (const pseudo of pseudoUniv) {
     const excludedFaculties = parseExcludedFaculties(pseudo.departmentName);
     for (const pTrack of pseudo.tracks) {
       const applied: string[] = [];
       const excluded: string[] = [];
+      const enforceMusicExclude = isJiyokTrack(pTrack.trackName);
       for (const rd of real) {
         const faculty = SNU_FACULTY_OF[rd.departmentName];
         if (faculty && excludedFaculties.includes(faculty)) {
           excluded.push(`${rd.departmentName}(${faculty})`);
+          continue;
+        }
+        if (enforceMusicExclude && faculty && MUSIC_FACULTY_SET.has(faculty)) {
+          excluded.push(`${rd.departmentName}(${faculty}, 지역균형 모집인원 0)`);
           continue;
         }
         applyTrackToRealDept(rd, pTrack, report.warnings);

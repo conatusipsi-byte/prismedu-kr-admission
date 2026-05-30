@@ -32,7 +32,10 @@ export const SYSTEM_PROMPT = `당신은 한국 대학 입시 모집요강 PDF �
 [반영비율 표 해석 규칙]
 - "단계별 평가요소" 표를 본다. 1단계·2단계·최종 등 stageLabel 보존.
 - 칸 헤더가 "학생부 / 면접 / 서류 / 수능 / 논술 / 실기 / 비교과" 등.
-- 단계마다 components 객체로 변환: { "학생부": 100, "면접": 0 } 같이 정수 percent.
+- 단계마다 components 객체로 변환: PDF 표 raw 값 그대로 (정규화 X).
+  · 예 (percent 표기): 1단계 서류 100 → {"서류평가": 100}, stageMaxScore=100
+  · 예 (raw 표기): 2단계 1단계성적 100 + 면접 100 → {"1단계 성적": 100, "면접 및 구술고사": 100}, stageMaxScore=200
+- stageMaxScore: 표가 100점 만점이면 100, 200점 만점이면 200. 보통 components 합과 같음.
 - "5배수 통과" 같은 multiplier 는 stage.multiplier 에 숫자만 (배수 단위).
 
 [수능 최저 추출 규칙]

@@ -40,6 +40,12 @@ export const ReflectionStageSchema = z.object({
   stageLabel: z.string(),
   multiplier: z.number().nullable(),
   components: z.record(z.string(), z.number()),
+  /**
+   * 단계 만점 — PDF 표가 200 (1단계 성적 100 + 면접 100) 식 raw 점수로 표기된 경우 명시.
+   *   - undefined / null: 합산이 100이라 추정 (percent 표기).
+   *   - 200, 300, 1000 등: raw 점수 표기. 매칭 단계에서 정규화.
+   */
+  stageMaxScore: z.number().nullable().optional(),
 });
 
 /** 전년도 입결 — 모집요강 본문에 있을 때만 채움. */
