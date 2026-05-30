@@ -62,6 +62,13 @@ export const RawTrackSchema = z.object({
   // reflectionStages 는 PDF 에 표가 없으면 null 도 허용 (요약 페이지 케이스).
   reflectionStages: z.array(ReflectionStageSchema).nullable(),
   csatMinimumRawText: z.string().nullable().describe("수능 최저 원본 텍스트"),
+  /**
+   * 수능 최저 명시적 "미적용" 여부 — 데이터 없음(null)과 미적용(true)을 구분 (P-002).
+   *   - true: PDF 에 "수능최저 미적용" 또는 "수능 최저학력기준 적용하지 않음" 명시.
+   *   - false: PDF 에 수능최저가 명시되어 있음 (csatMinimumRawText 채워짐).
+   *   - null: 본 청크에 그 전형의 수능최저 관련 정보가 없음 (다른 페이지 가능성).
+   */
+  csatMinimumExempt: z.boolean().nullable().describe("PDF가 '수능최저 미적용' 으로 명시 시 true. 정보 없으면 null."),
   csatRequiredAreasRawText: z.string().nullable().describe("수능 응시영역 기준 원본"),
   prevYearResult: PrevYearResultSchema,
   /**

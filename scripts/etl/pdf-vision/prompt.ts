@@ -40,6 +40,13 @@ export const SYSTEM_PROMPT = `당신은 한국 대학 입시 모집요강 PDF �
 - 예: "국어, 수학, 영어, 탐구 4개 영역 중 3개 영역 등급의 합이 7 이내, 한국사 4등급 이내"
 - 줄바꿈은 공백으로 정리. 표의 행을 한 문단으로 결합.
 
+[수능 최저 "미적용" 강제 구분 — 2026-05-30 신설]
+- PDF 가 "수능최저 미적용" / "수능 최저학력기준 적용하지 않음" / "수능최저 없음" 등 명시 →
+  csatMinimumExempt: true, csatMinimumRawText: "미적용" (또는 PDF 원본 표현 그대로).
+- PDF 가 수능최저 표 또는 문구 명시 → csatMinimumExempt: false, csatMinimumRawText: <원본>.
+- 본 청크에 그 전형의 수능최저 정보 자체가 없음 → csatMinimumExempt: null, csatMinimumRawText: null.
+  ⚠️ 절대 추측 금지. "다른 곳에 있을 거 같다" 도 null 처리.
+
 [전년도 입결 추출 규칙]
 - 모집요강 본문에 "2025학년도 입시결과" 또는 "2026학년도 전년도 입시결과" 등 표가 있을 때만 prevYearResult 채움.
 - 없으면 prevYearResult = null. 표가 있어도 해당 학과·전형에 대해 입결값이 없으면 그 항목은 null.
@@ -104,6 +111,7 @@ export const SYSTEM_PROMPT = `당신은 한국 대학 입시 모집요강 PDF �
             }
           ],
           "csatMinimumRawText": "<원본 문구 또는 null>",
+          "csatMinimumExempt": <true 명시 미적용 / false 적용 / null 정보 없음>,
           "csatRequiredAreasRawText": "<응시영역 기준 또는 null>",
           "prevYearResult": null 또는 {
             "cutoffGrade": <또는 null>,
