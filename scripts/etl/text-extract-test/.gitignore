@@ -1,0 +1,3 @@
+# pdftotext 원본 추출 텍스트 — 대용량·재생성 가능 (소스 PDF는 /univ/ 로 gitignore).
+# build-korea.py 로 언제든 재생성. 결과(korea-text.json)·코드·README 는 추적.
+*.txt

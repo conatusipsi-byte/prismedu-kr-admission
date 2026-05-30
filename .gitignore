@@ -69,6 +69,7 @@ serviceAccountKey.json
 # 원본 입력 데이터 (모집요강 PDF · KICE 통계 CSV · HWPX) — 로컬 dev 전용
 # 파싱 산출물은 data/parsed-admissions/ 또는 Supabase 에 적재됨.
 /university/
+/univ/
 
 # Claude Code local session state
 /.claude/
