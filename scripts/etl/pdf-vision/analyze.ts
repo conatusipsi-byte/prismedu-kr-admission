@@ -29,7 +29,7 @@ import {
   PdfAnalysisResultSchema,
   type PdfAnalysisResult,
 } from "./types";
-import { SYSTEM_PROMPT, USER_PROMPT } from "./prompt";
+import { SYSTEM_PROMPT, buildUserPrompt } from "./prompt";
 
 loadDotenv({ path: path.resolve(process.cwd(), ".env.local") });
 
@@ -42,6 +42,10 @@ interface CliOpts {
   outPath: string;
   model: "sonnet" | "opus";
   dryRun: boolean;
+  /** 청크 PDF 의 원본 PDF 기준 시작 페이지 (1-indexed). 기본 1. */
+  originalStartPage: number;
+  /** max_tokens — tier upgrade 후 더 큰 값 권장. 기본 16000. */
+  maxTokens: number;
 }
 
 function parseCli(): CliOpts {
@@ -52,7 +56,7 @@ function parseCli(): CliOpts {
   const pdfPath = arg("pdf");
   const outPath = arg("out");
   if (!pdfPath || !outPath) {
-    console.error("필수: --pdf=<path> --out=<path>");
+    console.error("필수: --pdf=<path> --out=<path> [--start-page=N] [--max-tokens=N]");
     process.exit(1);
   }
   const modelArg = arg("model") ?? "sonnet";
@@ -65,6 +69,8 @@ function parseCli(): CliOpts {
     outPath: path.resolve(outPath),
     model: modelArg,
     dryRun: process.argv.includes("--dry-run"),
+    originalStartPage: parseInt(arg("start-page") ?? "1", 10),
+    maxTokens: parseInt(arg("max-tokens") ?? "16000", 10),
   };
 }
 
@@ -146,11 +152,11 @@ async function main(): Promise<void> {
   }, 30_000);
   process.on("exit", () => clearInterval(progressTimer));
 
-  // Tier 1 rate limit 8k output tokens/min — Anthropic 가 max_tokens 만큼 예약.
-  //   2k 로 줄여 budget 부담 최소화 (한 학과 + 한 전형 분 추출 가능).
+  // max_tokens 와 page offset 은 CLI 로 받음 — tier 업 후 자유롭게 조정.
+  const userPrompt = buildUserPrompt(opts.originalStartPage, meta.pageCount);
   const response = await client.messages.create({
     model: MODELS[opts.model],
-    max_tokens: 2000,
+    max_tokens: opts.maxTokens,
     temperature: 0,
     system: SYSTEM_PROMPT,
     messages: [
@@ -167,7 +173,7 @@ async function main(): Promise<void> {
           },
           {
             type: "text",
-            text: USER_PROMPT,
+            text: userPrompt,
           },
         ],
       },

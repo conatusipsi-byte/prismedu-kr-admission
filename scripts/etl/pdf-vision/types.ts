@@ -64,6 +64,13 @@ export const RawTrackSchema = z.object({
   csatMinimumRawText: z.string().nullable().describe("수능 최저 원본 텍스트"),
   csatRequiredAreasRawText: z.string().nullable().describe("수능 응시영역 기준 원본"),
   prevYearResult: PrevYearResultSchema,
+  /**
+   * 출처 페이지 — 사용자가 PDF 열어 1:1 대조하기 위한 필수 필드 (2026-05-30 강화).
+   *   - 추출 데이터가 등장한 PDF 페이지 번호 (1-indexed, 모집요강 PDF 기준).
+   *   - 표 행이 여러 페이지에 걸치면 가장 핵심 데이터 페이지를 선택.
+   *   - 미상이면 null (하지만 추출했다면 페이지는 항상 알 수 있어야 함).
+   */
+  sourcePages: z.array(z.number().int().positive()).describe("이 전형 데이터가 등장한 PDF 페이지 번호 (1-indexed)"),
 });
 
 /** 단일 학과 추출 결과 */
