@@ -1,0 +1,94 @@
+/**
+ * PDF Vision ETL 출력 타입 — 2026-05-30.
+ *
+ * Claude 가 PDF 모집요강 → 본 스키마 JSON 으로 추출. 추출 후 mapping/track-kind.ts 와
+ * 결합해 conatus department_admissions 행으로 변환.
+ *
+ * 정직성 (P-005):
+ *   - null 은 "PDF 에 정보 없음" 의미 (가짜 데이터 X).
+ *   - warnings 에 신뢰도 낮은 추출 표시.
+ */
+
+import { z } from "zod";
+
+/** 어디가 trackType 표기 (track-kind.ts 매핑과 일치) */
+export const TrackTypeRawSchema = z.enum([
+  "학생부위주(교과)",
+  "학생부위주(종합)",
+  "논술위주",
+  "실기/실적위주",
+  "수능위주",
+  "기타",
+]);
+
+export const RecruitmentPeriodRawSchema = z.enum([
+  "수시",
+  "정시(가)",
+  "정시(나)",
+  "정시(다)",
+  "추가",
+  "기타",
+]);
+
+/**
+ * 단계별 반영비율.
+ *   stageLabel: "1단계" | "2단계" | "최종" 등 모집요강 표기 그대로.
+ *   multiplier: "5배수" → 5. 없으면 null.
+ *   components: { 학생부: 100, 면접: 30, ... } — 키는 한국어. 값은 percent (0~150).
+ */
+export const ReflectionStageSchema = z.object({
+  stageLabel: z.string(),
+  multiplier: z.number().nullable(),
+  components: z.record(z.string(), z.number()),
+});
+
+/** 전년도 입결 — 모집요강 본문에 있을 때만 채움. */
+export const PrevYearResultSchema = z.object({
+  cutoffGrade: z.number().nullable().describe("교과·학종 등급 컷 (1~9, 낮을수록 우수)"),
+  cutoffPercentile: z.number().nullable().describe("정시 환산점수·백분위 컷 (0~100)"),
+  competitionRate: z.number().nullable().describe("경쟁률 (지원자 ÷ 모집인원)"),
+  rawText: z.string().nullable().describe("PDF 원문 인용 (검증용)"),
+}).nullable();
+
+/** 단일 전형(track) 추출 결과 */
+export const RawTrackSchema = z.object({
+  trackName: z.string().describe("전형 정식명, 예: '지역균형전형'·'학업우수전형'·'논술우수자전형'"),
+  trackTypeRaw: TrackTypeRawSchema,
+  recruitmentPeriodRaw: RecruitmentPeriodRawSchema,
+  /** 정원외 특별전형 키워드 (농어촌·기회균형·재외국민·특성화고 등) — 일반전형이면 null */
+  specialTypeKeyword: z.string().nullable(),
+  quotaInitial: z.number().int().nonnegative().nullable(),
+  applicationQualification: z.string().nullable().describe("지원자격 자유텍스트 (요약)"),
+  // reflectionStages 는 PDF 에 표가 없으면 null 도 허용 (요약 페이지 케이스).
+  reflectionStages: z.array(ReflectionStageSchema).nullable(),
+  csatMinimumRawText: z.string().nullable().describe("수능 최저 원본 텍스트"),
+  csatRequiredAreasRawText: z.string().nullable().describe("수능 응시영역 기준 원본"),
+  prevYearResult: PrevYearResultSchema,
+});
+
+/** 단일 학과 추출 결과 */
+export const RawDepartmentSchema = z.object({
+  departmentName: z.string().describe("학과 정식명, 예: '컴퓨터공학부'·'의예과'·'경영학과'"),
+  campus: z.string().nullable().describe("캠퍼스명 (본교는 null)"),
+  /** 어디가 분류 보조 — 인문/사회/자연/공학/의약/예체능/광역 등 */
+  trackHint: z.string().nullable(),
+  totalQuotaHint: z.number().int().nonnegative().nullable().describe("학과 전체 모집인원 (전형 합)"),
+  tracks: z.array(RawTrackSchema),
+});
+
+/** PDF 1개 분석 결과 */
+export const PdfAnalysisResultSchema = z.object({
+  universityName: z.string(),
+  year: z.number().int().min(2025).max(2099),
+  recruitmentSeason: z.enum(["susi", "jeongsi"]),
+  departments: z.array(RawDepartmentSchema),
+  /** 추출 시 신뢰도 낮거나 모호한 케이스 */
+  warnings: z.array(z.string()),
+});
+
+export type TrackTypeRaw = z.infer<typeof TrackTypeRawSchema>;
+export type RecruitmentPeriodRaw = z.infer<typeof RecruitmentPeriodRawSchema>;
+export type ReflectionStage = z.infer<typeof ReflectionStageSchema>;
+export type RawTrack = z.infer<typeof RawTrackSchema>;
+export type RawDepartment = z.infer<typeof RawDepartmentSchema>;
+export type PdfAnalysisResult = z.infer<typeof PdfAnalysisResultSchema>;
