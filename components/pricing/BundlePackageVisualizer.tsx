@@ -87,7 +87,7 @@ function BundleCard({ bundle }: { bundle: ProductDefKr }): React.ReactElement {
             </span>
             <div className="flex flex-col gap-0.5">
               <span className="text-foreground font-medium break-keep-all">
-                {part.kind === "subscription" && "시즌권 분석 무제한"}
+                {part.kind === "subscription" && "2027대입 시즌권 분석 무제한"}
                 {part.kind === "consulting" && `1:1 컨설팅 ${part.count}회 (각 60분)`}
               </span>
               {part.timeSlots && part.timeSlots.length > 0 && (

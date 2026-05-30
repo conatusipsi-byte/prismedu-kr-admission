@@ -27,7 +27,8 @@ describe("/pricing 카드 (QA round 2 ④)", () => {
     expect(card!.getAttribute("data-coming-soon")).toBe("false");
     // "준비 중" 텍스트 사라지고 실제 가격 표기
     expect(card!.textContent).not.toContain("준비 중");
-    expect(card!.textContent).toContain("180,000");
+    // 2026-05-30 컨설팅 가격 180k → 300k.
+    expect(card!.textContent).toContain("300,000");
   });
 
   it("season_pass 카드 = 얼리버드 활성 (정가 취소선 + 배지)", () => {
@@ -56,17 +57,18 @@ describe("/pricing 카드 (QA round 2 ④)", () => {
     expect(card, "season_consult_1 카드 미노출").not.toBeNull();
     const bundle = card!.querySelector('[data-element="bundle-contents"]');
     expect(bundle, "bundle-contents 박스 미노출").not.toBeNull();
-    expect(bundle!.textContent).toContain("시즌권 분석 무제한");
+    // 2026-05-30 클라이언트 요청 (방준현): 시즌권 명 변경 + 컨설팅 가격 180k→300k.
+    expect(bundle!.textContent).toContain("2027대입 시즌권 분석 무제한");
     expect(bundle!.textContent).toContain("1:1 컨설팅 1회");
     // 얼리버드 활성
     expect(card!.getAttribute("data-earlybird")).toBe("true");
     expect(card!.textContent).toContain("190,000");
     expect(card!.textContent).toContain("300,000"); // 정가
-    // BUG-017: 동적 절약액 — 단건 합산 ₩209,000 대비 ₩19,000 절약
+    // BUG-017: 동적 절약액 — 단건 합산 ₩329,000 대비 ₩139,000 절약 (consult_one 300k 반영)
     const savings = bundle!.querySelector('[data-element="bundle-savings"]');
     expect(savings, "bundle-savings 미노출").not.toBeNull();
-    expect(savings!.textContent).toContain("209,000"); // 단건 합산
-    expect(savings!.textContent).toContain("19,000");  // 절약액
+    expect(savings!.textContent).toContain("329,000"); // 단건 합산
+    expect(savings!.textContent).toContain("139,000"); // 절약액
     expect(savings!.textContent).toContain("절약");
     // 9.5x 부풀린 ₩180,000 회귀 차단
     expect(savings!.textContent).not.toContain("180,000");
@@ -87,11 +89,11 @@ describe("/pricing 카드 (QA round 2 ④)", () => {
     expect(bundle!.textContent).toMatch(/수능 이후/);
     expect(card!.textContent).toContain("490,000");
     expect(card!.textContent).toContain("700,000");
-    // BUG-017: 동적 절약액 — 단건 합산 ₩569,000 대비 ₩79,000 절약
+    // BUG-017: 동적 절약액 — 단건 합산 ₩929,000 대비 ₩439,000 절약 (consult_one 300k × 3 + 29k)
     const savings = bundle!.querySelector('[data-element="bundle-savings"]');
     expect(savings, "bundle-savings 미노출").not.toBeNull();
-    expect(savings!.textContent).toContain("569,000");
-    expect(savings!.textContent).toContain("79,000");
+    expect(savings!.textContent).toContain("929,000");
+    expect(savings!.textContent).toContain("439,000");
   });
 
   it("report_one 등 얼리버드 미적용 상품은 data-earlybird=false (회귀 방지)", () => {

@@ -260,8 +260,10 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
   report_one: {
     kind: "report_one",
     type: "analysis",
-    displayName: "분석 리포트 1회",
-    shortDescription: "성적·비교과 입력 후 학과별 합격 가능성 1회 분석",
+    // 2026-05-30 클라이언트 요청 (방준현): "1회" → "30일 무제한". durationDays=30 은 그대로,
+    //   카피만 시간 기반으로 정정 — 실제 entitlement 도 기간 기반이라 로직 변경 불필요.
+    displayName: "분석 리포트 (30일 무제한)",
+    shortDescription: "성적·비교과 입력 후 30일간 학과별 합격 가능성 무제한 분석",
     priceKrw: 9900,
     period: "once",
     durationDays: 30,
@@ -270,7 +272,7 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
     enabled: true,
     isPricePlaceholder: true,
     highlights: [
-      "분석 결과 30일 보관",
+      "결제 후 30일간 분석 재실행 무제한",
       "Reach·Match·Safety 분류",
       "학종 1단계 × 2단계 분해 표시 (P-006)",
     ],
@@ -278,8 +280,9 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
   season_pass: {
     kind: "season_pass",
     type: "analysis",
-    displayName: "시즌권 (수시·정시 통합)",
-    shortDescription: "시즌 전체 분석·재분석 무제한 (수시·정시 한 사이클)",
+    // 2026-05-30 클라이언트 요청 (방준현): 시즌 명시화 — "2027대입 시즌권".
+    displayName: "2027대입 시즌권",
+    shortDescription: "2027학년도 입시 시즌 전체 분석·재분석 무제한 (수시·정시 한 사이클)",
     // QA round 2 ④ (2026-05-25): 얼리버드 가격 적용. priceKrw = 결제 시 청구액 (얼리버드값).
     priceKrw: 29000,
     earlybirdPriceKrw: 29000,
@@ -303,9 +306,12 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
   consult_one: {
     kind: "consult_one",
     type: "consulting",
-    displayName: "1:1 입시 컨설팅 (60분)",
+    // 2026-05-30 클라이언트 요청 (방준현):
+    //   - 명칭: "1:1 입시 컨설팅 (60분)" → "코나투스 1:1 입시컨설팅"
+    //   - 가격: 180,000 → 300,000 (number 자체만 변경; calculateBundleSavings 가 동적 재계산)
+    displayName: "코나투스 1:1 입시컨설팅",
     shortDescription: "코나투스 입시 컨설턴트와 1:1 입시 상담 (60분, 화상 또는 대면)",
-    priceKrw: 180000,
+    priceKrw: 300000,
     period: "once",
     durationDays: 60, // 결제일 ~60일 내 예약 사용
     durationMinutes: 60,
@@ -323,8 +329,10 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
   season_consult_1: {
     kind: "season_consult_1",
     type: "bundle",
-    displayName: "시즌권 + 1:1 컨설팅 1회",
-    shortDescription: "시즌권 + 1:1 컨설팅 1회 패키지 (얼리버드)",
+    // 2026-05-30 클라이언트 요청: 시즌 명시화. 번들 가격은 미변경 — consult_one 단건이
+    //   180k→300k 로 오르며 calculateBundleSavings 가 자동으로 새 절약액 산출.
+    displayName: "2027대입 시즌권 + 1:1 컨설팅 1회",
+    shortDescription: "2027대입 시즌권 + 1:1 컨설팅 1회 패키지 (얼리버드)",
     priceKrw: 190000,
     earlybirdPriceKrw: 190000,
     regularPriceKrw: 300000,
@@ -338,7 +346,7 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
     // BUG-017 (QA round 3, 2026-05-25): 정적 "절약" 카피는 잘못된 9.5x 부풀린 값이었음.
     // 절약액은 calculateBundleSavings() 가 동적으로 계산하여 PricingCard 에서 노출.
     highlights: [
-      "시즌권 분석 무제한 (6개월)",
+      "2027대입 시즌권 분석 무제한 (6개월)",
       "1:1 컨설팅 1회 (60분)",
     ],
     bundleContents: [
@@ -350,8 +358,8 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
   season_consult_3: {
     kind: "season_consult_3",
     type: "bundle",
-    displayName: "시즌권 + 1:1 컨설팅 3회 (6모/9모/수능 이후)",
-    shortDescription: "시즌권 + 시기별 1:1 컨설팅 3회 패키지 (얼리버드)",
+    displayName: "2027대입 시즌권 + 1:1 컨설팅 3회 (6모/9모/수능 이후)",
+    shortDescription: "2027대입 시즌권 + 시기별 1:1 컨설팅 3회 패키지 (얼리버드)",
     priceKrw: 490000,
     earlybirdPriceKrw: 490000,
     regularPriceKrw: 700000,
@@ -363,7 +371,7 @@ export const PRODUCTS_KR: Record<ProductKind, ProductDefKr> = {
     enabled: true,
     isPricePlaceholder: false,
     highlights: [
-      "시즌권 분석 무제한 (1년)",
+      "2027대입 시즌권 분석 무제한 (1년)",
       "1:1 컨설팅 3회 — 6월 모평·9월 모평·수능 이후",
       "시기별 최적 타이밍 보장",
     ],

@@ -54,9 +54,9 @@ export default function RefundPage(): React.ReactElement {
           </thead>
           <tbody className="text-muted-foreground">
             <tr className="border-t">
-              <Td>분석 리포트 1회</Td>
+              <Td>분석 리포트 (30일 무제한)</Td>
               <Td>7일 이내 전액</Td>
-              <Td className="text-destructive">불가 (사용 즉시 소진)</Td>
+              <Td className="text-destructive">불가 (분석 실행 후 잔여 기간 환불 X)</Td>
             </tr>
             <tr className="border-t">
               <Td>AI 카운슬러 1회권</Td>

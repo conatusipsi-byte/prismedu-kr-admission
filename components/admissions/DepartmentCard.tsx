@@ -39,6 +39,56 @@ function monogramOf(name: string): string {
   return trimmed.slice(0, 2).toUpperCase();
 }
 
+/**
+ * UniversityBrand — 로고 or monogram 자동 분기 (2026-05-30 클라이언트 요청 #1).
+ *
+ * 로고 데이터가 있으면 <img> 노출, 없거나 로드 실패 시 monogram 폴백.
+ * - logo_url 컬럼이 비어있는 학교가 대부분이므로 monogram 이 기본 경로.
+ * - <img> onError 로 fallback (broken URL 도 자동 폴백).
+ * - 동일 컨테이너(40x40 rounded)에 그라데이션 배경 유지 → 일관 UX.
+ */
+function UniversityBrand({
+  logoUrl,
+  monogram,
+  sampleSufficient,
+  alt,
+}: {
+  logoUrl: string | undefined | null;
+  monogram: string;
+  sampleSufficient: boolean;
+  alt: string;
+}): React.ReactElement {
+  const [imgFailed, setImgFailed] = React.useState(false);
+  const showLogo = !!logoUrl && !imgFailed;
+  return (
+    <span
+      aria-hidden
+      data-element="university-brand"
+      data-has-logo={showLogo}
+      className={cn(
+        "flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl text-2xs font-bold font-numeric tabular-nums transition-colors",
+        sampleSufficient
+          ? "bg-gradient-to-br from-brand-50 to-iris/10 text-brand-700 ring-1 ring-brand-200/60 group-hover:from-brand-100 group-hover:to-iris/20 dark:from-brand-950/60 dark:to-iris/15 dark:text-brand-300 dark:ring-brand-800/50"
+          : "bg-ink-100 text-ink-500 ring-1 ring-ink-200 dark:bg-ink-800 dark:text-ink-400 dark:ring-ink-700",
+      )}
+    >
+      {showLogo ? (
+        // 외부 이미지 — next/image 대신 plain <img> (성능 추적·외부 도메인 화이트리스트 없이 안전).
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={logoUrl!}
+          alt={alt}
+          className="h-full w-full object-contain p-1"
+          loading="lazy"
+          onError={() => setImgFailed(true)}
+        />
+      ) : (
+        <span>{monogram}</span>
+      )}
+    </span>
+  );
+}
+
 export function DepartmentCard({
   department,
   university,
@@ -69,19 +119,14 @@ export function DepartmentCard({
           className,
         )}
       >
-        {/* Top — monogram + 대학·캠퍼스 */}
+        {/* Top — 로고 (있으면) or monogram + 대학·캠퍼스 (클라이언트 요청 #1, 2026-05-30) */}
         <div className="mb-4 flex items-center gap-3">
-          <span
-            aria-hidden
-            className={cn(
-              "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-2xs font-bold font-numeric tabular-nums transition-colors",
-              sampleSufficient
-                ? "bg-gradient-to-br from-brand-50 to-iris/10 text-brand-700 ring-1 ring-brand-200/60 group-hover:from-brand-100 group-hover:to-iris/20 dark:from-brand-950/60 dark:to-iris/15 dark:text-brand-300 dark:ring-brand-800/50"
-                : "bg-ink-100 text-ink-500 ring-1 ring-ink-200 dark:bg-ink-800 dark:text-ink-400 dark:ring-ink-700",
-            )}
-          >
-            {monogramOf(uniName)}
-          </span>
+          <UniversityBrand
+            logoUrl={university.logoUrl}
+            monogram={monogramOf(uniName)}
+            sampleSufficient={sampleSufficient}
+            alt={`${uniName} 로고`}
+          />
           <div className="flex flex-col leading-tight min-w-0">
             <span className={cn("text-xs font-semibold", sampleSufficient ? "text-foreground" : "text-muted-foreground")}>
               {uniName}

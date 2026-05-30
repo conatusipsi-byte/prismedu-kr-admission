@@ -47,27 +47,28 @@ describe("BundlePackageVisualizer (BUG-021)", () => {
     expect(timeSlots!.textContent).toContain("수능 이후");
   });
 
-  it("season_consult_1 가격 비교 — 단건 합산 ₩209,000 → 패키지 ₩190,000 → 절약 ₩19,000", () => {
+  // 2026-05-30 클라이언트 요청 (방준현): consult_one 180k → 300k 로 단건 합산·절약액 갱신.
+  it("season_consult_1 가격 비교 — 단건 합산 ₩329,000 → 패키지 ₩190,000 → 절약 ₩139,000", () => {
     const { container } = render(<BundlePackageVisualizer />);
     const c1 = container.querySelector('[data-product-kind="season_consult_1"]')!;
     const cmp = c1.querySelector('[data-element="bundle-price-comparison"]')!;
-    expect(cmp.textContent).toContain("209,000"); // 단건 합산
+    expect(cmp.textContent).toContain("329,000"); // 단건 합산 (29k + 300k)
     expect(cmp.textContent).toContain("190,000"); // 패키지
     const savings = c1.querySelector('[data-element="bundle-savings-line"]');
     expect(savings, "절약 라인 미노출").not.toBeNull();
-    expect(savings!.textContent).toContain("19,000");
+    expect(savings!.textContent).toContain("139,000");
     // BUG-017 회귀 가드: 9.5x 부풀린 ₩180,000 잔존 X
     expect(cmp.textContent).not.toContain("180,000");
   });
 
-  it("season_consult_3 가격 비교 — 단건 합산 ₩569,000 → 패키지 ₩490,000 → 절약 ₩79,000", () => {
+  it("season_consult_3 가격 비교 — 단건 합산 ₩929,000 → 패키지 ₩490,000 → 절약 ₩439,000", () => {
     const { container } = render(<BundlePackageVisualizer />);
     const c3 = container.querySelector('[data-product-kind="season_consult_3"]')!;
     const cmp = c3.querySelector('[data-element="bundle-price-comparison"]')!;
-    expect(cmp.textContent).toContain("569,000");
+    expect(cmp.textContent).toContain("929,000"); // 29k + 300k × 3
     expect(cmp.textContent).toContain("490,000");
     const savings = c3.querySelector('[data-element="bundle-savings-line"]');
-    expect(savings!.textContent).toContain("79,000");
+    expect(savings!.textContent).toContain("439,000");
   });
 
   it("결제 CTA — /payment 로 이동", () => {

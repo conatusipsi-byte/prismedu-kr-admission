@@ -92,7 +92,7 @@ function buildUsageGuide(p: ProductDefKr, siteUrl: string): string {
     return `
       <h3 style="margin:24px 0 8px;font-size:15px;color:#0f172a">사용 안내</h3>
       <ul style="margin:0;padding-left:18px;color:#475569;font-size:14px;line-height:1.7">
-        <li>분석 리포트 1회 — 결제 후 30일 보관.</li>
+        <li>분석 리포트 — 결제 후 <strong>30일간 무제한</strong> 재실행 가능.</li>
         <li><a href="${siteUrl}/analysis" style="color:#0f766e">분석 시작</a> 에서 성적·비교과를 입력하세요.</li>
       </ul>`;
   }

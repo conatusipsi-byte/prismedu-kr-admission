@@ -90,8 +90,10 @@ export function PriceTag({
         <span className="text-xs font-medium text-muted-foreground">{periodLabel}</span>
       )}
       {earlybirdOn && showEarlybirdBadge && (
+        // 2026-05-30 클라이언트 요청: 종료 시점 표기 제거 (라벨만 유지).
+        //   가격 계산은 getEffectivePriceKrw 가 earlybirdUntil 로 계속 분기.
         <Badge variant="outline" size="sm" data-element="earlybird-badge" className="border-brand-300 bg-brand-50 text-brand-700 dark:border-brand-700 dark:bg-brand-950/40 dark:text-brand-300">
-          얼리버드 ~{product.earlybirdUntil?.slice(0, 7).replace("-", ".")}
+          얼리버드
         </Badge>
       )}
     </div>

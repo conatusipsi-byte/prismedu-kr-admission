@@ -12,10 +12,11 @@ import {
 } from "../plans";
 
 describe("PRODUCTS_KR 카탈로그", () => {
-  it("consult_one 활성화 + 가격 180,000", () => {
+  it("consult_one 활성화 + 가격 300,000 (2026-05-30 변경)", () => {
     const p = PRODUCTS_KR.consult_one;
     expect(p.enabled).toBe(true);
-    expect(p.priceKrw).toBe(180000);
+    // 클라이언트 요청 (방준현): 180,000 → 300,000.
+    expect(p.priceKrw).toBe(300000);
     expect(p.isPricePlaceholder).toBe(false);
     expect(p.shortDescription).toContain("코나투스 입시 컨설턴트");
     expect(p.shortDescription).not.toContain("방준현");

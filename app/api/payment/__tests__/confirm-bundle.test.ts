@@ -159,9 +159,9 @@ function buildReq(orderId: string, amount: number): NextRequest {
 describe("POST /api/payment/confirm — Day 5 신규 상품", () => {
   it("consult_one — entitlement.active 에 bundleContents 없는 엔트리", async () => {
     const orderId = makeOrderId("consult_one");
-    fetchMock.mockResolvedValueOnce(tossOk(orderId, 180000));
+    fetchMock.mockResolvedValueOnce(tossOk(orderId, 300000));
     const { POST } = await import("../confirm/route");
-    const res = await POST(buildReq(orderId, 180000));
+    const res = await POST(buildReq(orderId, 300000));
     expect(res.status).toBe(200);
     const body = await res.json();
     expect(body.success).toBe(true);
@@ -229,7 +229,7 @@ describe("POST /api/payment/confirm — Day 5 신규 상품", () => {
     const orderId = makeOrderId("consult_one");
     mockState.orderStatus = "approved";
     const { POST } = await import("../confirm/route");
-    const res = await POST(buildReq(orderId, 180000));
+    const res = await POST(buildReq(orderId, 300000));
     expect(res.status).toBe(200);
     const body = await res.json();
     expect(body.idempotent).toBe(true);
@@ -238,10 +238,10 @@ describe("POST /api/payment/confirm — Day 5 신규 상품", () => {
 
   it("영수증 메일 발송 실패 → 결제 성공 응답 유지 (격리)", async () => {
     const orderId = makeOrderId("consult_one");
-    fetchMock.mockResolvedValueOnce(tossOk(orderId, 180000));
+    fetchMock.mockResolvedValueOnce(tossOk(orderId, 300000));
     sendEmailMock.mockResolvedValueOnce({ ok: false, reason: "send_failed", error: "smtp down" });
     const { POST } = await import("../confirm/route");
-    const res = await POST(buildReq(orderId, 180000));
+    const res = await POST(buildReq(orderId, 300000));
     expect(res.status).toBe(200);
     const body = await res.json();
     expect(body.success).toBe(true);
@@ -253,12 +253,12 @@ describe("POST /api/payment/confirm — Day 5 신규 상품", () => {
   it("토스 status != DONE → 400", async () => {
     const orderId = makeOrderId("consult_one");
     fetchMock.mockResolvedValueOnce(
-      new Response(JSON.stringify({ orderId, totalAmount: 180000, status: "IN_PROGRESS" }), {
+      new Response(JSON.stringify({ orderId, totalAmount: 300000, status: "IN_PROGRESS" }), {
         status: 200,
       }),
     );
     const { POST } = await import("../confirm/route");
-    const res = await POST(buildReq(orderId, 180000));
+    const res = await POST(buildReq(orderId, 300000));
     expect(res.status).toBe(400);
   });
 });

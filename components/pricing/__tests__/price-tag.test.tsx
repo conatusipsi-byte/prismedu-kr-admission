@@ -34,7 +34,8 @@ describe("PriceTag (BUG-022)", () => {
     expect(tag!.getAttribute("data-earlybird")).toBe("true");
   });
 
-  it("showEarlybirdBadge=true → 배지 노출 (~YYYY.MM)", () => {
+  it("showEarlybirdBadge=true → 배지 노출 (라벨만, 종료일 미표시)", () => {
+    // 2026-05-30 클라이언트 요청: "얼리버드 ~YYYY.MM" 포맷 → "얼리버드"만 노출.
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-12-01T00:00:00Z"));
     const { container } = render(
@@ -42,8 +43,10 @@ describe("PriceTag (BUG-022)", () => {
     );
     const badge = container.querySelector('[data-element="earlybird-badge"]');
     expect(badge, "얼리버드 배지 미노출").not.toBeNull();
-    expect(badge!.textContent).toContain("얼리버드");
-    expect(badge!.textContent).toContain("2027.03");
+    expect(badge!.textContent?.trim()).toBe("얼리버드");
+    // 회귀 가드: 종료일 (YYYY.MM) 가 라벨에 포함되지 않음
+    expect(badge!.textContent).not.toContain("2027.03");
+    expect(badge!.textContent).not.toMatch(/~\s*\d{4}/);
   });
 
   it("showEarlybirdBadge=false (default) → 배지 미노출", () => {

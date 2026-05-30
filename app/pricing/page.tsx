@@ -57,7 +57,7 @@ type Feature = {
 };
 
 const FEATURES: readonly Feature[] = [
-  { group: "분석",   name: "학과별 합격 가능성 분석",     values: { report_one: "1회", season_pass: "무제한", consult_one: "—" } },
+  { group: "분석",   name: "학과별 합격 가능성 분석",     values: { report_one: "30일 무제한", season_pass: "무제한", consult_one: "—" } },
   { group: "분석",   name: "전형별 분리 (수시·정시·논술)", values: { report_one: true,  season_pass: true,    consult_one: false } },
   { group: "분석",   name: "재분석·시뮬레이션",            values: { report_one: false, season_pass: true,    consult_one: false } },
   { group: "상담",   name: "AI 카운슬러 채팅",             values: { report_one: "5턴", season_pass: "무제한", consult_one: "—" } },
@@ -465,7 +465,7 @@ function PricingCard({
                 <li key={i} className="flex items-start gap-1.5 text-foreground break-keep-all">
                   <span className="text-iris">·</span>
                   <span>
-                    {c.kind === "subscription" && "시즌권 분석 무제한"}
+                    {c.kind === "subscription" && "2027대입 시즌권 분석 무제한"}
                     {c.kind === "consulting" && `1:1 컨설팅 ${c.count}회`}
                     {c.timeSlots && (
                       <span className="block text-2xs text-muted-foreground mt-0.5">

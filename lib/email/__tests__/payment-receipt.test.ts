@@ -27,7 +27,8 @@ describe("buildPaymentReceiptEmail", () => {
   it("subject 가 상품명 포함", () => {
     const r = buildPaymentReceiptEmail({ ...baseArgs, product: PRODUCTS_KR.consult_one });
     expect(r.subject).toContain("결제 완료");
-    expect(r.subject).toContain("1:1 입시 컨설팅");
+    // 2026-05-30 클라이언트 요청 (방준현): 컨설팅 명 변경 → "코나투스 1:1 입시컨설팅"
+    expect(r.subject).toContain("코나투스 1:1 입시컨설팅");
   });
 
   it("html — 금액·주문번호·환불 정책 포함", () => {
@@ -83,21 +84,25 @@ describe("buildPaymentReceiptEmail", () => {
     expect(r.html).toContain("/analysis");
   });
 
-  it("report_one — 30일 보관", () => {
+  it("report_one — 30일간 무제한 (정책 변경 2026-05-30)", () => {
     const r = buildPaymentReceiptEmail({
       ...baseArgs,
       amountKrw: 9900,
       product: PRODUCTS_KR.report_one,
     });
-    expect(r.html).toContain("30일 보관");
+    // 클라이언트 요청: "1회 사용 후 30일 보관" → "30일간 무제한 재실행"
+    expect(r.html).toContain("30일간 무제한");
     expect(r.html).toContain("/analysis");
+    // 회귀 가드: 옛 "30일 보관" 문구가 남아있지 않음
+    expect(r.html).not.toContain("30일 보관");
   });
 
   it("text fallback — 주문번호·금액·상품명 포함", () => {
     const r = buildPaymentReceiptEmail({ ...baseArgs, product: PRODUCTS_KR.consult_one });
     expect(r.text).toContain("180,000");
     expect(r.text).toContain(baseArgs.orderId);
-    expect(r.text).toContain("1:1 입시 컨설팅");
+    // 2026-05-30 컨설팅 명 변경
+    expect(r.text).toContain("코나투스 1:1 입시컨설팅");
     expect(r.text).toContain("conatusipsi@gmail.com");
   });
 
