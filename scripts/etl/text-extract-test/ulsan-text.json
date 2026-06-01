@@ -1,0 +1,3333 @@
+{
+  "meta": {
+    "universityName": "울산대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0.0,
+    "departments": 17,
+    "totalTracks": 111,
+    "rowSumValidation": {
+      "passed": 17,
+      "failed": 0
+    },
+    "colTotalValidation": [
+      {
+        "track": "일반교과",
+        "computed": 657,
+        "expectedSumRow": 657,
+        "match": true
+      },
+      {
+        "track": "지역교과",
+        "computed": 553,
+        "expectedSumRow": 553,
+        "match": true
+      },
+      {
+        "track": "학교장추천",
+        "computed": 40,
+        "expectedSumRow": 40,
+        "match": true
+      },
+      {
+        "track": "기회균형",
+        "computed": 14,
+        "expectedSumRow": 14,
+        "match": true
+      },
+      {
+        "track": "지역의사제",
+        "computed": 5,
+        "expectedSumRow": 5,
+        "match": true
+      },
+      {
+        "track": "농어촌학생",
+        "computed": 72,
+        "expectedSumRow": 72,
+        "match": true
+      },
+      {
+        "track": "기초생활/차상위",
+        "computed": 31,
+        "expectedSumRow": 31,
+        "match": true
+      },
+      {
+        "track": "특성화고교졸업자",
+        "computed": 29,
+        "expectedSumRow": 29,
+        "match": true
+      },
+      {
+        "track": "잠재역량",
+        "computed": 428,
+        "expectedSumRow": 428,
+        "match": true
+      },
+      {
+        "track": "지역인재",
+        "computed": 464,
+        "expectedSumRow": 464,
+        "match": true
+      },
+      {
+        "track": "지역인재(기초/차상위)",
+        "computed": 4,
+        "expectedSumRow": 4,
+        "match": true
+      },
+      {
+        "track": "예체능",
+        "computed": 156,
+        "expectedSumRow": 156,
+        "match": true
+      },
+      {
+        "track": "특기자",
+        "computed": 13,
+        "expectedSumRow": 13,
+        "match": true
+      },
+      {
+        "track": "경기실적우수자",
+        "computed": 19,
+        "expectedSumRow": 19,
+        "match": true
+      },
+      {
+        "track": "예체능(농어촌)",
+        "computed": 5,
+        "expectedSumRow": 5,
+        "match": true
+      }
+    ],
+    "fillRatios": {
+      "quotaInitial": [
+        111,
+        111
+      ],
+      "reflectionStages": [
+        111,
+        111
+      ],
+      "csatMinimumRawText": [
+        19,
+        111
+      ],
+      "csatMinimumExempt": [
+        111,
+        111
+      ],
+      "sourcePages": [
+        111,
+        111
+      ]
+    },
+    "completeRecords": [
+      111,
+      111
+    ]
+  },
+  "result": {
+    "universityName": "울산대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "자율전공학부",
+        "campus": null,
+        "trackHint": "자율전공",
+        "totalQuotaHint": 140,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 2개 영역 합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 2개 영역 합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "학교장추천 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고교 졸업예정자로 소속 고교장 추천을 받은 자(자율전공학부 한정).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              14
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(4배수)",
+                "multiplier": 4,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계(최종)",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 50,
+                  "면접": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미래모빌리티공학부",
+        "campus": null,
+        "trackHint": "공학",
+        "totalQuotaHint": 268,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 95,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 2개 영역 합 10등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 65,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "에너지화학공학부",
+        "campus": null,
+        "trackHint": "공학",
+        "totalQuotaHint": 124,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 2개 영역 합 10등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "신소재·반도체융합학부",
+        "campus": null,
+        "trackHint": "공학",
+        "totalQuotaHint": 136,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 2개 영역 합 10등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전기전자융합학부",
+        "campus": null,
+        "trackHint": "공학",
+        "totalQuotaHint": 176,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 57,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 2개 영역 합 10등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "ICT융합학부",
+        "campus": null,
+        "trackHint": "공학",
+        "totalQuotaHint": 255,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 69,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 2개 영역 합 10등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 67,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 56,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 45,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "바이오메디컬헬스학부",
+        "campus": null,
+        "trackHint": "공학",
+        "totalQuotaHint": 112,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 2개 영역 합 10등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축·도시환경학부",
+        "campus": null,
+        "trackHint": "공학",
+        "totalQuotaHint": 169,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 43,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 1개 영역 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 43,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 34,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 36,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "디자인융합학부",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 161,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          },
+          {
+            "trackName": "예체능 전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 86,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "실기": 70,
+                  "학생부": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학부",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 69,
+        "tracks": [
+          {
+            "trackName": "예체능 전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "학생부": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              30
+            ]
+          },
+          {
+            "trackName": "특기자 특별전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "스포츠과학부 테니스·씨름·축구(남) 특기자.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "경기(수상)실적": 70,
+                  "학생부": 20,
+                  "면접": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              33
+            ]
+          },
+          {
+            "trackName": "경기실적 우수자 특별전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "스포츠과학부 농구·복싱·펜싱·양궁·볼링·수영 등 경기실적 우수자.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "경기(수상)실적": 60,
+                  "학생부": 20,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              35
+            ]
+          },
+          {
+            "trackName": "예체능(농어촌학생) 특별전형(정원 외)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "학생부": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공공인재학부",
+        "campus": null,
+        "trackHint": "사회",
+        "totalQuotaHint": 236,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 78,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 1개 영역 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 54,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 44,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 46,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영경제융합학부",
+        "campus": null,
+        "trackHint": "사회",
+        "totalQuotaHint": 283,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 98,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 1개 영역 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 65,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 46,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 56,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌인문학부",
+        "campus": null,
+        "trackHint": "인문",
+        "totalQuotaHint": 207,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 46,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 1개 영역 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 68,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              21
+            ]
+          },
+          {
+            "trackName": "특성화고교 졸업자 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 41,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 39,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "예술학부(음악)",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 11,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "예체능 전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "실기": 90,
+                  "학생부": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "예술학부(미술)",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "예체능 전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "실기": 90,
+                  "학생부": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의예과",
+        "campus": null,
+        "trackHint": "의약",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(5배수)",
+                "multiplier": 5,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 800
+              },
+              {
+                "stageLabel": "2단계(최종)",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 필수선택), 영어, 과탐(2과목 평균) 중 3개 영역 합 4등급 이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "지역의사제 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "'복무형 지역의사'가 되려는 자로, 부산/울산/경남 권역(창원·진주·통영·김해·거창권) 중·고교 전 과정 이수·졸업(예정)·거주자. 의예과 권역별 각 1명.",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(5배수)",
+                "multiplier": 5,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 800
+              },
+              {
+                "stageLabel": "2단계(최종)",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 필수선택), 영어, 과탐(2과목 평균) 중 3개 영역 합 5등급 이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              17
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(5배수)",
+                "multiplier": 5,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계(최종)",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 50,
+                  "면접": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 필수선택), 영어, 과탐(2과목 평균) 중 3개 영역 합 4등급 이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(5배수)",
+                "multiplier": 5,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계(최종)",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 50,
+                  "면접": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 필수선택), 영어, 과탐(2과목 평균) 중 3개 영역 합 4등급 이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          },
+          {
+            "trackName": "지역인재(기초생활/차상위) 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 1,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(5배수)",
+                "multiplier": 5,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계(최종)",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 50,
+                  "면접": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 필수선택), 영어, 과탐(2과목 평균) 중 3개 영역 합 4등급 이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              28
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": null,
+        "trackHint": "의약",
+        "totalQuotaHint": 72,
+        "tracks": [
+          {
+            "trackName": "일반교과 전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 수학을 포함한 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "trackName": "지역교과 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회, 과학 중 1과목) 중 수학을 포함한 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5,
+              12
+            ]
+          },
+          {
+            "trackName": "기회균형 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생 특별전형(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 90,
+                  "학생부(출결)": 10
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              19
+            ]
+          },
+          {
+            "trackName": "잠재역량 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(4배수)",
+                "multiplier": 4,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계(최종)",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 50,
+                  "면접": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              24
+            ]
+          },
+          {
+            "trackName": "지역인재 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              26
+            ]
+          },
+          {
+            "trackName": "지역인재(기초생활/차상위) 특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급/차상위",
+            "quotaInitial": 3,
+            "applicationQualification": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류평가(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              28
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "[모집인원] 총괄표 17개 모집단위 × 15개 전형 그리드를 우앵커(우측 15개 숫자) 결정론 파싱. 이름열은 단과대학 병합셀·줄바꿈으로 오염되어 위치 기반 정식명(세부 모집인원표로 확정) 사용.",
+      "[열합검증] 전형별 모집인원 합 = 합계행(계) 657/553/40/14/5/72/31/29/428/464/4/156/13/19/5 전열 일치.",
+      "[반영비율] 울산대는 동일 전형도 모집단위별 반영비율 상이(의예과 2단계·자율전공·간호 종합형 단계, 디자인70/스포츠60/예술90 실기) → 세부안내(p11~36) 표 직접 인용해 학과별 분기.",
+      "[학생부 구성] 학생부 100% = 교과(공통/일반)80 + 교과(진로선택)10 + 출결10 (p38). components 는 총괄표 요약(p3) 표기에 맞춰 교과90+출결10 으로 집계. 특성화고는 교과90+출결10(p38).",
+      "[수능최저] 일반교과/지역교과는 단과대학 그룹별 상이(아산6·미래엔지10·경영인문건축5·간호2개합7·의예3개합4). 지역의사제는 의예 3개합5. 디자인융합·예술학부는 미적용 명시(p4 ※) → csatMinimumExempt=true.",
+      "[csatRequiredAreasRawText] 응시영역 별도 표 없음(수능최저 원문에 영역 포함) → null.",
+      "[정원외] 농어촌·기초생활/차상위·특성화고·예체능(농어촌)·지역인재(기초/차상위)는 정원외 특별전형 → specialTypeKeyword 표기. 그리드 모집인원은 정원외 칼럼 값 그대로.",
+      "[prevYearResult] 본 모집요강에 전년도 입결(경쟁률·등급컷) 표 없음 → 전 전형 null."
+    ]
+  }
+}

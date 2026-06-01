@@ -1,12 +1,14 @@
 /**
- * korea-text.json 의 result 를 실제 PdfAnalysisResultSchema(zod) 로 검증.
- *   npx tsx scripts/etl/text-extract-test/validate-schema.ts
+ * {univ}-text.json 의 result 를 실제 PdfAnalysisResultSchema(zod) 로 검증.
+ *   npx tsx scripts/etl/text-extract-test/validate-schema.ts [path]
+ * path 미지정 시 korea-text.json.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { PdfAnalysisResultSchema } from "../pdf-vision/types";
 
-const p = path.resolve("scripts/etl/text-extract-test/korea-text.json");
+const argPath = process.argv[2];
+const p = path.resolve(argPath ?? "scripts/etl/text-extract-test/korea-text.json");
 const data = JSON.parse(fs.readFileSync(p, "utf8"));
 const parsed = PdfAnalysisResultSchema.safeParse(data.result);
 

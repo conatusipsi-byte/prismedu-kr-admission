@@ -1,0 +1,5477 @@
+{
+  "meta": {
+    "universityName": "성균관대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용). 모집인원 총괄표는 문자 컬럼 우측끝 앵커 매칭으로 결정론 파싱.",
+    "visionCost": 0.0,
+    "departments": 56,
+    "totalTracks": 161,
+    "rowSumValidation": {
+      "passed": 56,
+      "failed": 0
+    },
+    "colTotalValidation": [
+      {
+        "track": "융합인재",
+        "computed": 329,
+        "expectedSumRow": 329,
+        "match": true
+      },
+      {
+        "track": "탐구인재",
+        "computed": 589,
+        "expectedSumRow": 589,
+        "match": true
+      },
+      {
+        "track": "기회균형",
+        "computed": 28,
+        "expectedSumRow": 28,
+        "match": true
+      },
+      {
+        "track": "성균인재",
+        "computed": 196,
+        "expectedSumRow": 196,
+        "match": true
+      },
+      {
+        "track": "성균인재-지역인재",
+        "computed": 3,
+        "expectedSumRow": 3,
+        "match": true
+      },
+      {
+        "track": "과학인재",
+        "computed": 155,
+        "expectedSumRow": 155,
+        "match": true
+      },
+      {
+        "track": "추천인재",
+        "computed": 419,
+        "expectedSumRow": 419,
+        "match": true
+      },
+      {
+        "track": "언어형",
+        "computed": 172,
+        "expectedSumRow": 172,
+        "match": true
+      },
+      {
+        "track": "수리형",
+        "computed": 204,
+        "expectedSumRow": 204,
+        "match": true
+      },
+      {
+        "track": "예체능특기자",
+        "computed": 21,
+        "expectedSumRow": 21,
+        "match": true
+      },
+      {
+        "track": "예체능실기우수자",
+        "computed": 75,
+        "expectedSumRow": 75,
+        "match": true
+      },
+      {
+        "track": "특성화고졸재직자",
+        "computed": 187,
+        "expectedSumRow": 187,
+        "match": true
+      }
+    ],
+    "fillRatios": {
+      "quotaInitial": [
+        161,
+        161
+      ],
+      "reflectionStages": [
+        161,
+        161
+      ],
+      "csatMinimumRawText": [
+        86,
+        161
+      ],
+      "csatMinimumExempt": [
+        161,
+        161
+      ],
+      "sourcePages": [
+        161,
+        161
+      ]
+    },
+    "completeRecords": [
+      161,
+      161
+    ]
+  },
+  "result": {
+    "universityName": "성균관대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "자유전공계열",
+        "campus": null,
+        "trackHint": "광역",
+        "totalQuotaHint": 170,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 70,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인문과학계열",
+        "campus": null,
+        "trackHint": "광역",
+        "totalQuotaHint": 120,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(기회균형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 7,
+            "applicationQualification": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              35,
+              36
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회과학계열",
+        "campus": null,
+        "trackHint": "광역",
+        "totalQuotaHint": 127,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(기회균형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 7,
+            "applicationQualification": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              35,
+              36
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 105,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌리더학부",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌경제학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌경영학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 58,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "교육학과",
+        "campus": null,
+        "trackHint": "사범",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "한문교육과",
+        "campus": null,
+        "trackHint": "사범",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유학·동양학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국어국문학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "프랑스어문학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "독어독문학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "러시아어문학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "한문학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "심리학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "아동·청소년학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "통계학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영상학과",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "실기/실적(예체능특기자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 40,
+                  "면접": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              45,
+              46,
+              47
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의상학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자연과학계열",
+        "campus": null,
+        "trackHint": "광역",
+        "totalQuotaHint": 137,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(기회균형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 7,
+            "applicationQualification": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              35,
+              36
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전자전기정보공학부",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 105,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공학계열",
+        "campus": null,
+        "trackHint": "광역",
+        "totalQuotaHint": 240,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 64,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(기회균형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 7,
+            "applicationQualification": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              35,
+              36
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 54,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "반도체시스템공학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "지능형소프트웨어학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "배터리학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌바이오메디컬공학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 41,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "반도체융합공학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "에너지학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "양자정보공학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합(과학인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              33
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "바이오신약·규제과학과",
+        "campus": null,
+        "trackHint": "의약",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인공지능학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학과(5년제)",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "약학과",
+        "campus": null,
+        "trackHint": "의약",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부종합(융합인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              27,
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의예과",
+        "campus": null,
+        "trackHint": "의약",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 6,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "학생부종합(성균인재-지역인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "지원 권역 내 중·고교 전 교육과정 이수·거주(지원자격심사 포함). 의사면허 취득 후 10년 권역 내 근무",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 6,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              30,
+              32
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 등급합 5등급 이내 (의예과)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "수학교육과",
+        "campus": null,
+        "trackHint": "사범",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터교육과",
+        "campus": null,
+        "trackHint": "사범",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "생명과학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "수학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "화학과",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건설환경공학부",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학생부종합(탐구인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(추천인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "출신 고등학교장 추천(고교별 추천인원 제한 없음), 학생부 5학기 이상 교과성적 기재자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "학생부 정량(A군)": 70,
+                  "학생부 정량(B군)": 10,
+                  "학생부 정성": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌AI융합학부",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "논술위주(언어형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              42,
+              43
+            ]
+          },
+          {
+            "trackName": "논술위주(수리형)",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              13,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "연기예술학과(연기)",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "실기/실적(예체능실기우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 6,
+                "components": {
+                  "실기(기초연기역량평가)": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 6,
+                "components": {
+                  "학생부": 40,
+                  "실기(전공적성평가)": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "연기예술학과(연출)",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 9,
+        "tracks": [
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "무용학과(한국무용)",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 13,
+        "tracks": [
+          {
+            "trackName": "실기/실적(예체능실기우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부": 40,
+                  "실기(기초/전공)": 40,
+                  "실기(부전공)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "무용학과(발레)",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "실기/실적(예체능실기우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부": 40,
+                  "실기(기초/전공)": 40,
+                  "실기(부전공)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "무용학과(컨템포러리댄스)",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "실기/실적(예체능실기우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부": 40,
+                  "실기(기초/전공)": 40,
+                  "실기(부전공)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학과",
+        "campus": null,
+        "trackHint": "예체능",
+        "totalQuotaHint": 46,
+        "tracks": [
+          {
+            "trackName": "학생부종합(성균인재)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "학생부": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "실기/실적(예체능특기자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "체육특기자(야구·축구·농구·배구·골프 등 종목별 선발). 경기실적증명서(필수)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "아래 기준 중 하나 충족: ① 국내고 졸업(예정)자 교과 기준, ② 해외고 기준, ③ 검정고시 합격자는 충족 간주, ④ 2027 수능 응시 후 국어·수학·영어·탐구·탐구·한국사 중 상위등급 2개 과목 평균등급 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              45,
+              46,
+              47
+            ]
+          },
+          {
+            "trackName": "실기/실적(예체능실기우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "스포츠과학 종목별 선발(단체/개인종목). 실기능력 증빙자료(선택)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "서류(학생부)": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계 성적": 20,
+                  "면접/실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              48,
+              49,
+              50,
+              51
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응용AI융합학부(AI융합운영)",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 94,
+        "tracks": [
+          {
+            "trackName": "학생부종합(특성화고졸재직자)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고졸재직자",
+            "quotaInitial": 94,
+            "applicationQualification": "특성화고 등 졸업 + 산업체 근무경력 3년 이상 재직자 (정원외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              53,
+              54
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응용AI융합학부(산업인공지능)",
+        "campus": null,
+        "trackHint": null,
+        "totalQuotaHint": 93,
+        "tracks": [
+          {
+            "trackName": "학생부종합(특성화고졸재직자)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고졸재직자",
+            "quotaInitial": 93,
+            "applicationQualification": "특성화고 등 졸업 + 산업체 근무경력 3년 이상 재직자 (정원외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              9,
+              53,
+              54
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "[광역 모집단위] ☆ 표시 5개(학부 단위 모집): ['자유전공계열', '인문과학계열', '사회과학계열', '자연과학계열', '공학계열'] → trackHint='광역', 행합/열합 정상 검증됨.",
+      "[수능최저 신설] 2027 학생부종합(융합인재) 수능 최저학력기준 신설(3개 등급합 6 이내). 그 외 학생부종합 전형은 수능최저 미적용(csatMinimumExempt=true).",
+      "[특성화고졸재직자] 정원외 특별전형(응용AI융합학부 AI융합운영94/산업인공지능93, 총187명). 모집인원 총괄표 별도 컬럼.",
+      "[스포츠과학과 특기자] 수능최저는 등급합이 아닌 4개 기준 중 택1(검정고시 충족간주 포함, CSAT 옵션 ④ 상위2과목 평균 7등급). rawText 인용, exempt=false.",
+      "[성균인재 1단계 배수] 모집단위별 상이(자유전공/글로벌AI 7배수, 의예과 6배수, 사범대학/스포츠과학과 3배수, 연기예술학과(연출) 5배수). 미명시 모집단위는 multiplier=null.",
+      "[trackHint] 광역(☆)·사범·의약·예체능은 PDF 명시 근거로 분류. 단일 학과 계열은 근거 부족 시 null(정직)."
+    ]
+  }
+}
