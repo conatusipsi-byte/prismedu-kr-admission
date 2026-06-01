@@ -18566,6 +18566,146 @@
     }
   },
   {
+    "id": "kcue_0000066_business-accounting_2027",
+    "university_id": "kcue_0000066",
+    "department_id": "business-accounting",
+    "year": 2027,
+    "tracks": {
+      "susi_subject": [
+        {
+          "name": "지역균형전형",
+          "kind": "susi_subject",
+          "specialType": "general",
+          "quotaInitial": 30,
+          "stages": [
+            {
+              "step": 1,
+              "components": {
+                "학생부(교과·비교과 출결·봉사)": 70,
+                "document": 30
+              }
+            }
+          ],
+          "csatMinimum": {
+            "candidateAreas": [
+              "korean",
+              "math",
+              "english",
+              "investigation"
+            ],
+            "requiredCount": 2,
+            "sumGradeMax": 5,
+            "historyGradeMax": 5,
+            "investigationRule": "one",
+            "originalText": "국어, 수학, 영어, 사회/과학탐구(2과목) 중 2개 영역 등급의 합이 5 이내이고, 한국사 5등급 이내 [의예과, 한의예과(인문·자연), 치의예과, 약학과 제외]",
+            "complexity": "simple_sum",
+            "autoEvaluable": true
+          },
+          "notes": "수능응시영역: 탐구영역은 2과목 평균 등급을 반영(소수점 버림 없이 반영). 필수 지정 응시과목 없음(한국사는 전원 필수 응시)."
+        }
+      ],
+      "susi_comprehensive": [
+        {
+          "name": "네오르네상스전형",
+          "kind": "susi_comprehensive",
+          "specialType": "general",
+          "quotaInitial": 61,
+          "stages": [
+            {
+              "step": 1,
+              "components": {
+                "document": 100
+              },
+              "multiplier": 3
+            },
+            {
+              "step": 2,
+              "components": {
+                "1단계 성적": 70,
+                "interview": 30
+              }
+            }
+          ]
+        },
+        {
+          "name": "기회균형전형 I",
+          "kind": "susi_comprehensive",
+          "specialType": "low_income",
+          "quotaInitial": 9,
+          "stages": [
+            {
+              "step": 1,
+              "components": {
+                "document": 70,
+                "schoolRecord": 30
+              }
+            }
+          ],
+          "quotaScope": "group"
+        },
+        {
+          "name": "기회균형전형 II",
+          "kind": "susi_comprehensive",
+          "specialType": "low_income",
+          "quotaInitial": 6,
+          "stages": [
+            {
+              "step": 1,
+              "components": {
+                "document": 70,
+                "schoolRecord": 30
+              }
+            }
+          ],
+          "quotaScope": "group"
+        }
+      ],
+      "susi_essay": [
+        {
+          "name": "논술우수자전형",
+          "kind": "susi_essay",
+          "specialType": "general",
+          "quotaInitial": 27,
+          "stages": [
+            {
+              "step": 1,
+              "components": {
+                "essay": 100
+              }
+            }
+          ],
+          "csatMinimum": {
+            "candidateAreas": [
+              "korean",
+              "math",
+              "english",
+              "investigation"
+            ],
+            "requiredCount": 2,
+            "sumGradeMax": 5,
+            "historyGradeMax": 5,
+            "investigationRule": "one",
+            "originalText": "인문/자연, 자율전공학부 : 국어, 수학, 영어, 사회/과학탐구(2과목) 중 2개 영역 등급의 합이 5 이내이고, 한국사 5등급 이내 [의예과, 한의예과(인문·자연), 치의예과, 약학과 제외]",
+            "complexity": "simple_sum",
+            "autoEvaluable": true
+          },
+          "notes": "수능응시영역: 탐구영역은 2과목 평균 등급을 반영(소수점 버림 없이 반영). 필수 지정 응시과목 없음(한국사는 전원 필수 응시)."
+        }
+      ]
+    },
+    "available_track_kinds": [
+      "susi_subject",
+      "susi_comprehensive",
+      "susi_essay"
+    ],
+    "source": {
+      "type": "text_extract",
+      "pdf": "univ/2027학년도 경희대학교 수시 모집요강-최종.pdf",
+      "extractedAt": "2026-06-01",
+      "parserVersion": "text-extract-v1"
+    }
+  },
+  {
     "id": "kcue_0000066_u05040200078-ba-d_2027",
     "university_id": "kcue_0000066",
     "department_id": "u05040200078-ba-d",
@@ -39724,6 +39864,70 @@
     "available_track_kinds": [
       "susi_comprehensive",
       "susi_subject"
+    ],
+    "source": {
+      "type": "text_extract",
+      "pdf": "univ/20260529115520H43SMR.pdf",
+      "extractedAt": "2026-06-01",
+      "parserVersion": "text-extract-v1"
+    }
+  },
+  {
+    "id": "sungkyunkwan_artificial-intelligence_2027",
+    "university_id": "sungkyunkwan",
+    "department_id": "artificial-intelligence",
+    "year": 2027,
+    "tracks": {
+      "susi_comprehensive": [
+        {
+          "name": "학생부종합(탐구인재)",
+          "kind": "susi_comprehensive",
+          "specialType": "general",
+          "quotaInitial": 15,
+          "stages": [
+            {
+              "step": 1,
+              "components": {
+                "schoolRecord": 100
+              }
+            }
+          ]
+        }
+      ],
+      "susi_essay": [
+        {
+          "name": "논술위주(수리형)",
+          "kind": "susi_essay",
+          "specialType": "general",
+          "quotaInitial": 5,
+          "stages": [
+            {
+              "step": 1,
+              "components": {
+                "essay": 100
+              }
+            }
+          ],
+          "csatMinimum": {
+            "candidateAreas": [
+              "korean",
+              "math",
+              "english",
+              "investigation"
+            ],
+            "requiredCount": 4,
+            "sumGradeMax": 5,
+            "investigationRule": "one",
+            "originalText": "국어, 수학, 영어, 탐구(2개 과목 평균) 4개 영역 중 3개 등급합 5등급 이내",
+            "complexity": "simple_avg",
+            "autoEvaluable": true
+          }
+        }
+      ]
+    },
+    "available_track_kinds": [
+      "susi_comprehensive",
+      "susi_essay"
     ],
     "source": {
       "type": "text_extract",
