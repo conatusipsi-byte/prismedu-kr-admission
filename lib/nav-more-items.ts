@@ -1,4 +1,4 @@
-import { User, CreditCard, BarChart3, HelpCircle, type LucideIcon } from "lucide-react";
+import { User, CreditCard, BarChart3, HelpCircle, FileText, type LucideIcon } from "lucide-react";
 
 /**
  * BottomNav(모바일)와 DesktopSidebar(PC) "더보기" 메뉴의 단일 소스.
@@ -25,6 +25,7 @@ export interface MoreNavItem {
 export const MORE_NAV_ITEMS: MoreNavItem[] = [
   { id: "profile",      label: "프로필",     description: "내 정보·스펙 관리",          icon: User,       href: "/profile" },
   { id: "analysis",     label: "전체 분석",  description: "합격 확률·강약점 종합 리포트", icon: BarChart3,  href: "/analysis" },
+  { id: "saengbu",      label: "생기부 분석", description: "생기부 5축 AI 정성 분석 (Pro)", icon: FileText,   href: "/saengbu-analysis" },
   { id: "pricing",      label: "요금제",     description: "Free·Pro·Elite 비교",        icon: CreditCard, href: "/pricing" },
   { id: "subscription", label: "구독 관리",  description: "결제 내역·플랜 변경",         icon: CreditCard, href: "/subscription" },
   { id: "help",         label: "도움말·FAQ", description: "사용법·자주 묻는 질문",        icon: HelpCircle, href: "/help" },

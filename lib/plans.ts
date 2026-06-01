@@ -11,6 +11,8 @@ export interface PlanFeatures {
   essayReviewLimit: number | "unlimited";
   whatIfEnabled: boolean;
   specAnalysisEnabled: boolean;
+  /** 생기부(학생부) AI 분석 — 토큰 소모 큰 정성 분석. Pro+ 전용(운영 API 비용 통제). */
+  saengbuAnalysisEnabled: boolean;
   autoPlannerEnabled: boolean;
   parentReportType: ParentReportType;
   universityRubricEnabled: boolean;
@@ -42,6 +44,7 @@ export const PLANS: Record<Plan, PlanDef> = {
       essayReviewLimit: 0,
       whatIfEnabled: false,
       specAnalysisEnabled: false,
+      saengbuAnalysisEnabled: false,
       autoPlannerEnabled: false,
       parentReportType: "sample",
       universityRubricEnabled: false,
@@ -68,6 +71,7 @@ export const PLANS: Record<Plan, PlanDef> = {
       essayReviewLimit: "unlimited",
       whatIfEnabled: true,
       specAnalysisEnabled: true,
+      saengbuAnalysisEnabled: true,
       autoPlannerEnabled: true,
       parentReportType: "basic",
       universityRubricEnabled: false,
@@ -95,6 +99,7 @@ export const PLANS: Record<Plan, PlanDef> = {
       essayReviewLimit: "unlimited",
       whatIfEnabled: true,
       specAnalysisEnabled: true,
+      saengbuAnalysisEnabled: true,
       autoPlannerEnabled: true,
       parentReportType: "weekly",
       universityRubricEnabled: true,
