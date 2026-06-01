@@ -51,7 +51,7 @@ const SOURCES: Source[] = [
   { file: `${B}/yonsei-text.json`,       univId: "yonsei",       type: "text_extract", pdf: "univ/20260529204109T8NZNJ.pdf" },
   { file: `${B}/ulsan-text.json`,        univId: "kcue_0000158", type: "text_extract", pdf: "univ/2027학년도+수시+모집요강 0526.pdf" },
   { file: `${B}/sungkyunkwan-text.json`, univId: "sungkyunkwan", type: "text_extract", pdf: "univ/20260529115520H43SMR.pdf" },
-  { file: "scripts/etl/pdf-vision/output/snu-merged.json", univId: "snu", type: "ai_vision", pdf: "univ/SNU_2027_susi.pdf" },
+  { file: `${B}/snu-text.json`, univId: "snu", type: "text_extract", pdf: "univ/SNU_2027_susi.pdf" }, // 텍스트추출로 대체(구 vision-snu-v1 14학과 → 87 모집단위)
   // ── Phase 2 batch 1 (2026-06-01) — 텍스트 추출, 학년도 독립검증 통과(2027). ──
   //    충남대(cnu)는 PDF가 2026학년도 내용(파일명만 2027)이라 제외 — 2027 요강 재수급 대기.
   { file: `${B}/hanyang-text.json`,           univId: "hanyang",      type: "text_extract", pdf: "univ/hanyang_2027_susi.pdf" },
@@ -59,6 +59,21 @@ const SOURCES: Source[] = [
   { file: `${B}/pusan-text.json`,             univId: "pusan",        type: "text_extract", pdf: "univ/pusan_2027_susi.pdf" },
   { file: `${B}/kangwon_chuncheon-text.json`, univId: "kcue_0000003", type: "text_extract", pdf: "univ/2027학년도 강원대학교 춘천·삼척（도계포함）캠퍼스 수시모집요강_공개용.pdf" },
 ];
+
+/* ── 학과명 ALIAS (추출명 → 기존 DB 정규명) — 개명·학부전공형 부착, DB 무변경 ──
+ *   reconciliation(2026-06-01): 매핑실패 중 "이미 DB에 변형명으로 존재"하는 단위를
+ *   기존 active 학과에 부착해 중복 신설 방지. 진짜 부재 학과는 departments 에 신규 추가됨. */
+const NAME_ALIAS: Record<string, Record<string, string>> = {
+  kcue_0000005: { "산림과학ㆍ조경학부": "산림과학.조경학부(임학전공,임산공학전공,조경학전공)", "자동차공학과": "자동차공학부" },
+  pusan: {
+    "산업공학부": "산업공학과", "데이터사이언스학부": "데이터사이언스전공",
+    "반도체공학전공": "전기전자공학부 반도체공학전공", "전기공학전공": "전기전자공학부 전기공학전공",
+    "전자공학전공": "전기전자공학부 전자공학전공", "컴퓨터공학전공": "정보컴퓨터공학부 컴퓨터공학전공",
+    "인공지능전공": "정보컴퓨터공학부 인공지능전공",
+  },
+  kcue_0000003: { "의생명시스템과학과": "의생명시스템과학전공", "경제금융학과": "경제금융전공" },
+  snu: { "건설환경도시공학부": "건설환경공학부" },
+};
 
 /* ── Management API ─────────────────────────────────────────────────────── */
 const TOKEN = (process.env.SUPABASE_ACCESS_TOKEN ?? "").trim();
@@ -247,7 +262,7 @@ async function main() {
 
     const stat = { univ: univName, univId: src.univId, depts: deps.length, matched: 0, rows: 0, tracks: 0, kinds: new Set<string>() };
     for (const dep of deps) {
-      const m = match(dep.departmentName);
+      const m = match(NAME_ALIAS[src.univId]?.[dep.departmentName] ?? dep.departmentName);
       if (!m.id) { unmatched.push({ univ: univName, dept: dep.departmentName, tracks: dep.tracks.length }); continue; }
       if (m.how === "contain") containMatches.push(`${univName}: "${dep.departmentName}" → "${m.matchedName}"`);
       stat.matched++;
