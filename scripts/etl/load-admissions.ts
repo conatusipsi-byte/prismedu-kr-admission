@@ -29,6 +29,7 @@ import { finalizeMinReq } from "@/lib/admission/min-req-classifier";
 import { classifyQuotaScope } from "@/lib/admission/quota-scope";
 import { mapAdigaToTrackKind } from "@/scripts/etl/adiga/track-kind";
 import { checkExtractionIntegrity } from "@/scripts/etl/extraction-integrity";
+import { buildMatcher, resolveDeptName, type DeptRow } from "@/scripts/etl/dept-matcher";
 import type {
   AdmissionTrack,
   AdmissionTrackKind,
@@ -63,20 +64,7 @@ const SOURCES: Source[] = [
   { file: `${B}/kangwon_chuncheon-text.json`, univId: "kcue_0000003", type: "text_extract", pdf: "univ/2027학년도 강원대학교 춘천·삼척（도계포함）캠퍼스 수시모집요강_공개용.pdf" },
 ];
 
-/* ── 학과명 ALIAS (추출명 → 기존 DB 정규명) — 개명·학부전공형 부착, DB 무변경 ──
- *   reconciliation(2026-06-01): 매핑실패 중 "이미 DB에 변형명으로 존재"하는 단위를
- *   기존 active 학과에 부착해 중복 신설 방지. 진짜 부재 학과는 departments 에 신규 추가됨. */
-const NAME_ALIAS: Record<string, Record<string, string>> = {
-  kcue_0000005: { "산림과학ㆍ조경학부": "산림과학.조경학부(임학전공,임산공학전공,조경학전공)", "자동차공학과": "자동차공학부" },
-  pusan: {
-    "산업공학부": "산업공학과", "데이터사이언스학부": "데이터사이언스전공",
-    "반도체공학전공": "전기전자공학부 반도체공학전공", "전기공학전공": "전기전자공학부 전기공학전공",
-    "전자공학전공": "전기전자공학부 전자공학전공", "컴퓨터공학전공": "정보컴퓨터공학부 컴퓨터공학전공",
-    "인공지능전공": "정보컴퓨터공학부 인공지능전공",
-  },
-  kcue_0000003: { "의생명시스템과학과": "의생명시스템과학전공", "경제금융학과": "경제금융전공" },
-  snu: { "건설환경도시공학부": "건설환경공학부" },
-};
+/* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */
 
 /* ── Management API ─────────────────────────────────────────────────────── */
 const TOKEN = (process.env.SUPABASE_ACCESS_TOKEN ?? "").trim();
@@ -92,42 +80,8 @@ async function sql<T = any>(query: string): Promise<T> {
   return JSON.parse(text) as T;
 }
 
-/* ── 학과명 정규화 + 매칭 ───────────────────────────────────────────────── */
-function norm(s: string): string {
-  return s
-    .normalize("NFC")
-    .replace(/[★◇◉*※☆▲△・·•∙\s]/g, "")
-    .replace(/[()（）]/g, "")
-    .replace(/Ⅰ/g, "I").replace(/Ⅱ/g, "II").replace(/Ⅲ/g, "III")
-    .toLowerCase();
-}
-
-interface DeptRow { id: string; name: string; active: boolean }
-interface MatchResult { id: string | null; matchedName?: string; how?: string }
-
-function buildMatcher(deps: DeptRow[]) {
-  // 동일 정규화명 충돌 시 active=true 우선
-  const byNorm = new Map<string, DeptRow>();
-  for (const d of deps) {
-    const k = norm(d.name);
-    const prev = byNorm.get(k);
-    if (!prev || (!prev.active && d.active)) byNorm.set(k, d);
-  }
-  return (extracted: string): MatchResult => {
-    const nk = norm(extracted);
-    // 1. 정확 일치
-    const exact = byNorm.get(nk);
-    if (exact) return { id: exact.id, matchedName: exact.name, how: "exact" };
-    // 2. 접두(prefix) 일치만 허용 — 중간 부분문자열 오탐 방지 (예: 화학과 ⊄ 연극영화학과).
-    //    정당 케이스는 전부 접두: 지리학과(인문)⊃지리학과 / 의예과⊂의예과(자연계열).
-    //    active 우선, 그다음 길이차 작은 순(가장 근접).
-    const cands = deps
-      .filter((d) => { const dn = norm(d.name); return dn.startsWith(nk) || nk.startsWith(dn); })
-      .sort((a, b) => (Number(b.active) - Number(a.active)) || (Math.abs(norm(a.name).length - nk.length) - Math.abs(norm(b.name).length - nk.length)));
-    if (cands.length) return { id: cands[0].id, matchedName: cands[0].name, how: "contain" };
-    return { id: null };
-  };
-}
+/* ── 학과명 정규화 + 매칭 — 순수 모듈로 분리(테스트 가능, P2 3-1) ─────────────
+ *   norm·buildMatcher·DeptRow·MatchResult 는 scripts/etl/dept-matcher 참조. */
 
 /* ── component 매핑 (한글→영문, 미매핑 보존) ────────────────────────────── */
 const COMP: Record<string, keyof AdmissionStage["components"] | string> = {
@@ -280,7 +234,7 @@ async function main() {
 
     const stat = { univ: univName, univId: src.univId, depts: deps.length, matched: 0, rows: 0, tracks: 0, kinds: new Set<string>() };
     for (const dep of deps) {
-      const m = match(NAME_ALIAS[src.univId]?.[dep.departmentName] ?? dep.departmentName);
+      const m = match(resolveDeptName(src.univId, dep.departmentName));
       if (!m.id) { unmatched.push({ univ: univName, dept: dep.departmentName, tracks: dep.tracks.length }); continue; }
       if (m.how === "contain") containMatches.push(`${univName}: "${dep.departmentName}" → "${m.matchedName}"`);
       stat.matched++;

@@ -18,6 +18,7 @@ import { useSearchParams } from "next/navigation";
 import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { toDisplayOrderNumber } from "@/lib/admission/order-id";
 
 type ConfirmState =
   | { kind: "loading" }
@@ -78,7 +79,7 @@ export function PaymentSuccessView(): React.ReactElement {
                 <strong>{state.productName}</strong> 권한이 즉시 활성화됐습니다. 이제 분석을 시작해보세요.
               </p>
               <p className="text-2xs text-muted-foreground">
-                주문번호: <code className="font-mono">{state.orderId}</code>
+                주문번호: <code className="font-mono">{toDisplayOrderNumber(state.orderId)}</code>
               </p>
               <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
                 <Button asChild>

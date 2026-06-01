@@ -29,6 +29,8 @@ if (!url || !anon) {
  * (createBrowserClient 내부 캐시).
  */
 export function getBrowserSupabase() {
+  // 쿠키 보안 (P2 2-3): @supabase/ssr 기본값 유지. 이 클라이언트는 세션 JWT 를 쿠키에서
+  //   JS 로 읽어야 하므로 httpOnly=false 가 설계상 필수 (true 로 바꾸면 인증 깨짐). 변경 X.
   return createBrowserClient(
     url ?? "https://placeholder.supabase.co",
     anon ?? "placeholder-anon-key",

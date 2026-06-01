@@ -42,6 +42,10 @@ if (process.env.NODE_ENV === "production") {
  */
 export async function getRouteSupabase() {
   const cookieStore = await cookies();
+  // 쿠키 보안 (P2 2-3 검토 결론): cookieOptions 를 재정의하지 않고 @supabase/ssr 기본값 사용
+  //   (sameSite=lax, secure=HTTPS 자동). httpOnly 는 false 로 두는 것이 라이브러리 설계상
+  //   필수 — 브라우저 SDK(createBrowserClient)가 세션 JWT 를 JS 로 읽어야 하므로 httpOnly=true
+  //   로 강제하면 클라이언트 인증이 깨진다. access_token 만료(기본 1h)로 XSS 탈취 위험창은 제한적.
   return createServerClient(URL, ANON, {
     cookies: {
       getAll() {

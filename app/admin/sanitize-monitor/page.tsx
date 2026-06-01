@@ -3,12 +3,12 @@
  *
  * P-002 정직성 운영 방어선. 출시 시점에 동작 필수.
  *
- * 본 PR 단계:
- *   - mock-sanitize-events 데이터로 초기 fetch 시연
- *   - master 권한 검증은 페이지 진입 직후 수행 권장 (현재 stub — 실 구현 시 requireMasterAuth)
+ * 현재 상태 (준비 중):
+ *   - master 권한: app/admin/layout.tsx 의 requireMasterAuthFromHeaders 로 강제됨(가드 정상).
+ *   - 데이터: mock-sanitize-events 시연 데이터. 화면 상단에 "준비 중 — Mock" 배너 상시 노출.
  *
- * ⚠️ TODO: Firestore 연결 — 현재는 mock 데이터.
- *    실 구현은 /api/admin/sanitize-monitor 라우트 호출 + master 가드.
+ * ⚠️ TODO(P2 범위 밖): Firestore monitoring/sanitizeEvents 연결 → 실 데이터 교체 + 배너 제거.
+ *    그 전까지는 mock 배너로 정직하게 "준비 중" 명시(가짜 기능 노출 방지).
  */
 
 import type { Metadata } from "next";

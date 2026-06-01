@@ -18,6 +18,7 @@ import { CalendarClock, RotateCcw } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { toDisplayOrderNumber } from "@/lib/admission/order-id";
 
 export interface OrderRowData {
   id: string;
@@ -92,7 +93,7 @@ export function OrderRow({
           <span>·</span>
           <span className="tabular-nums">{order.amount.toLocaleString("ko-KR")}원</span>
           <span>·</span>
-          <span className="font-mono text-2xs opacity-70">{order.id.slice(0, 24)}…</span>
+          <span className="font-mono text-2xs opacity-70">{toDisplayOrderNumber(order.id)}</span>
         </div>
       </div>
 

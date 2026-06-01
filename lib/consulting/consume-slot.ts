@@ -59,7 +59,9 @@ export async function consumeNextConsultingSlot(
     .maybeSingle();
   if (error || !data) throw new Error("no_available_slot");
 
-  const active = ((data as { active: ActiveEntry[] | null }).active ?? []) as ActiveEntry[];
+  // JSONB 손상 방어(P2 3-2): active 가 배열이 아니면 빈 배열로 — 비배열 캐스트로 인한 오동작 차단.
+  const rawActive = (data as { active: unknown }).active;
+  const active: ActiveEntry[] = Array.isArray(rawActive) ? (rawActive as ActiveEntry[]) : [];
   const nowMs = now.getTime();
 
   // 우선순위 1: 가용 시기 지정 슬롯 (validFrom 도래, remaining ≥ 1, usedAt 없음).
@@ -77,7 +79,8 @@ export async function consumeNextConsultingSlot(
       ConsultingTimeSlot,
       { remaining: number; usedAt?: string; validFrom: string },
     ]>) {
-      if (meta.remaining <= 0 || meta.usedAt) continue;
+      // remaining 이 유한수가 아니면 스킵 — 손상 엔트리로 인한 NaN 차감 방지(P2 3-2).
+      if (typeof meta.remaining !== "number" || !Number.isFinite(meta.remaining) || meta.remaining <= 0 || meta.usedAt) continue;
       const vfMs = Date.parse(meta.validFrom);
       if (Number.isNaN(vfMs) || vfMs > nowMs) continue;
       if (vfMs < pickedValidFromMs) {

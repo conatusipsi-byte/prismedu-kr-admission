@@ -102,6 +102,28 @@ function generateNonce(): string {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
+   표시용 주문번호 — uid 미노출 (정보 위생, P2 2-1)
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/**
+ * 사용자 화면용 주문번호. 내부 orderId 는 uid 를 포함(서버 검증에 필요)하지만,
+ * 화면/스크린샷에 인증 식별자가 새지 않도록 uid 를 제거한 표시 문자열을 만든다.
+ * orderId 포맷·DB·토스 연동은 그대로 두므로 기존/진행중 주문과 100% 호환.
+ *
+ *   kr_report_one_once_{uid}_{ts}_{nonce}  →  kr_report_one_once_{ts}_{nonce}
+ *
+ * 파싱 불가(레거시 등) 시 끝 8자만 노출(uid 구간이 아니라 안전).
+ */
+export function toDisplayOrderNumber(orderId: string): string {
+  if (typeof orderId !== "string" || !orderId) return "";
+  const parsed = parseKrOrderId(orderId);
+  if (!parsed) {
+    return orderId.length > 8 ? `…${orderId.slice(-8)}` : orderId;
+  }
+  return `kr_${parsed.productKind}_${parsed.period}_${parsed.timestamp}_${parsed.nonce}`;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
    timestamp 유효성 — replay/만료 차단
    ═══════════════════════════════════════════════════════════════════════ */
 

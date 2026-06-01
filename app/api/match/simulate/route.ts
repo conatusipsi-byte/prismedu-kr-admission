@@ -15,8 +15,8 @@ import {
   matchKrAdmissions,
   type MatchCandidate,
 } from "@/lib/matching-kr";
+import { loadSampleStatsBatch, sampleStatId } from "@/lib/admission/sample-stats";
 import type {
-  AdmissionSampleStats,
   AdmissionTrackKind,
   Department,
   DepartmentAdmissions,
@@ -209,8 +209,8 @@ async function loadCandidates(
     }>;
   };
 
-  const candidates: MatchCandidate[] = [];
-
+  // 1차 패스: 필터 통과 후보 수집(sampleStats 제외) + stat id 목록. (N+1 제거 — P2 1-1)
+  const pending: Array<Omit<MatchCandidate, "sampleStats"> & { statId: string }> = [];
   for (const raw of data as unknown as Row[]) {
     const univ = raw.universities;
     const admissions = raw.department_admissions[0];
@@ -227,8 +227,7 @@ async function loadCandidates(
       if (trackKind === "jaeoegukmin") continue;
       const trackList = admissions.tracks[trackKind] ?? [];
       for (const track of trackList) {
-        const sampleStats = await loadSampleStats(univ.id, raw.id, year, trackKind);
-        candidates.push({
+        pending.push({
           universityId: univ.id,
           universityName: univ.n,
           departmentId: raw.id,
@@ -237,46 +236,15 @@ async function loadCandidates(
           trackName: track.name,
           track,
           prevYearResult: admissions.prev_year_result,
-          sampleStats,
+          statId: sampleStatId(univ.id, raw.id, year, trackKind),
         });
       }
     }
   }
-  return candidates;
-}
 
-async function loadSampleStats(
-  universityId: string,
-  departmentId: string,
-  year: number,
-  trackKind: AdmissionTrackKind,
-): Promise<AdmissionSampleStats | undefined> {
-  try {
-    const sb = getAdminSupabase();
-    const id = `${universityId}_${departmentId}_${year}_${trackKind}`;
-    const { data } = await sb
-      .from("admission_sample_stats")
-      .select("verified_count, weighted_count, accepted_count, stage1_passed_count, stage2_accepted_count")
-      .eq("id", id)
-      .maybeSingle();
-    if (!data) return undefined;
-    const row = data as Record<string, unknown>;
-    return {
-      id,
-      universityId,
-      departmentId,
-      year,
-      trackKind,
-      verifiedCount: row.verified_count as number,
-      weightedCount: row.weighted_count as number,
-      acceptedCount: row.accepted_count as number,
-      stage1PassedCount: row.stage1_passed_count as number | undefined,
-      stage2AcceptedCount: row.stage2_accepted_count as number | undefined,
-      updatedAt: new Date().toISOString() as unknown as AdmissionSampleStats["updatedAt"],
-    };
-  } catch {
-    return undefined;
-  }
+  // 2차: sample_stats 를 .in() 배치로 일괄 조회 (직렬 N+1 → 청크 쿼리). 결과는 id 별 동일.
+  const statsById = await loadSampleStatsBatch(pending.map((p) => p.statId));
+  return pending.map(({ statId, ...rest }) => ({ ...rest, sampleStats: statsById.get(statId) }));
 }
 
 function matchesUiTrack(

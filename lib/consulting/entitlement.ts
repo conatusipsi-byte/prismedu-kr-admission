@@ -107,7 +107,9 @@ export async function getConsultingEntitlement(
     .maybeSingle();
   if (error || !data) return NOT_ENTITLED;
 
-  const active = ((data as { active: ActiveEntry[] | null }).active ?? []) as ActiveEntry[];
+  // JSONB 손상 방어(P2 3-2): active 가 배열이 아니면 빈 배열로.
+  const rawActive = (data as { active: unknown }).active;
+  const active: ActiveEntry[] = Array.isArray(rawActive) ? (rawActive as ActiveEntry[]) : [];
   const now = Date.now();
 
   // 미만료 + 컨설팅 권한 보유 엔트리만.
@@ -138,7 +140,8 @@ export async function getConsultingEntitlement(
       ConsultingTimeSlot,
       { remaining: number; usedAt?: string; validFrom: string },
     ]>) {
-      if (meta.remaining <= 0 || meta.usedAt) continue;
+      // remaining 이 유한수가 아니면 스킵 — 손상 엔트리가 readyTimedSlots 를 NaN 으로 오염시키지 않게(P2 3-2).
+      if (typeof meta.remaining !== "number" || !Number.isFinite(meta.remaining) || meta.remaining <= 0 || meta.usedAt) continue;
       const validFromMs = Date.parse(meta.validFrom);
       if (Number.isNaN(validFromMs)) continue;
       if (validFromMs <= now) {

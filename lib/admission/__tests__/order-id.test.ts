@@ -12,12 +12,44 @@ import { describe, it, expect } from "vitest";
 import {
   buildKrOrderId,
   parseKrOrderId,
+  toDisplayOrderNumber,
   validateOrderTimestamp,
   ORDER_TIMESTAMP_MAX_AGE_MS,
   ORDER_TIMESTAMP_FUTURE_TOLERANCE_MS,
 } from "@/lib/admission/order-id";
 
 const VALID_UID = "abc123XYZ456abc123XYZ456abc1"; // 28자 — Firebase 표준
+
+/* ═══════════════════════════════════════════════════════════════════════
+   toDisplayOrderNumber — 표시번호에 uid 미포함 (P2 2-1 회귀 가드)
+   ═══════════════════════════════════════════════════════════════════════ */
+
+describe("toDisplayOrderNumber (uid 미노출)", () => {
+  it("정상 orderId → uid 제거된 표시번호 (productKind·period·ts·nonce 유지)", () => {
+    const id = buildKrOrderId(VALID_UID, "report_one", "once");
+    const disp = toDisplayOrderNumber(id);
+    expect(disp).not.toContain(VALID_UID); // uid 미포함 (핵심)
+    expect(disp.startsWith("kr_report_one_once_")).toBe(true);
+    const parsed = parseKrOrderId(id)!;
+    expect(disp).toBe(`kr_report_one_once_${parsed.timestamp}_${parsed.nonce}`);
+  });
+
+  it("UUID(하이픈) uid 도 표시번호에서 제거", () => {
+    const uuid = "12345678-1234-1234-1234-123456789abc";
+    const id = buildKrOrderId(uuid, "subscription_pro", "monthly");
+    expect(toDisplayOrderNumber(id)).not.toContain(uuid);
+  });
+
+  it("파싱 불가 형식 → 끝 8자 마스킹(uid 구간 비노출)", () => {
+    const disp = toDisplayOrderNumber("legacy_weird_id_value_1234567890");
+    expect(disp).toBe("…34567890");
+  });
+
+  it("빈/비문자열 안전", () => {
+    expect(toDisplayOrderNumber("")).toBe("");
+    expect(toDisplayOrderNumber(undefined as unknown as string)).toBe("");
+  });
+});
 
 /* ═══════════════════════════════════════════════════════════════════════
    1. 라운드트립

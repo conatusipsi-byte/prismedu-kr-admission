@@ -57,6 +57,14 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
   if (status !== "all") query = query.eq("status", status);
   if (category) query = query.eq("category", category);
+  // 검색어 — DB 컬럼(제목·본문·연락이메일) ilike 로 푸시다운 → count·페이지네이션 정합 (P2 1-2).
+  //   콤마·괄호·% 는 PostgREST or() 문법/와일드카드 충돌 → 공백 치환(안전).
+  //   로그인 auth.email 검색 차원은 GoTrue bulk-by-id 부재로 제외(기존엔 현재 페이지 내에서만
+  //   매칭돼 total/nextOffset 이 어긋났음 → contact_email 기준 통일로 정합성 확보).
+  const safeQ = q?.trim().replace(/[,()%\\]/g, " ").trim();
+  if (safeQ) {
+    query = query.or(`title.ilike.%${safeQ}%,body.ilike.%${safeQ}%,contact_email.ilike.%${safeQ}%`);
+  }
 
   const { data, error, count } = await query;
   if (error) {
@@ -69,7 +77,8 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
   const rows = (data ?? []) as InquiryAdminRow[];
 
-  // user.email 매핑 — 답변 발송 시 누구에게 갈지 운영자가 미리 확인.
+  // user.email 매핑 — 답변 발송 시 누구에게 갈지 운영자가 미리 확인. 반환 페이지 행에 한정
+  // (limit 바운드)하여 병렬 조회. GoTrue 는 bulk-by-id 미지원이라 per-id 가 불가피.
   const userIds = Array.from(
     new Set(rows.map((r) => r.user_id).filter((x): x is string => x !== null)),
   );
@@ -83,22 +92,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     );
   }
 
-  // 검색어 — 제목·본문·이메일 부분 매칭 (메모리, count 가 정확하지 않을 수 있음).
-  let filtered = rows;
-  if (q && q.trim().length > 0) {
-    const lower = q.trim().toLowerCase();
-    filtered = rows.filter((r) => {
-      const userEmail = (r.user_id && emailMap.get(r.user_id)) || "";
-      return (
-        r.title.toLowerCase().includes(lower) ||
-        r.body.toLowerCase().includes(lower) ||
-        (r.contact_email ?? "").toLowerCase().includes(lower) ||
-        userEmail.toLowerCase().includes(lower)
-      );
-    });
-  }
-
-  const items = filtered.map((r) => ({
+  const items = rows.map((r) => ({
     id: r.id,
     category: r.category,
     title: r.title,

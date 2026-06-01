@@ -48,8 +48,10 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
     const { data, error } = await q;
 
-    if (error || !data || (data.length === 0 && !cursor)) {
-      // dev mock fallback
+    // mock 폴백은 개발 편의 한정 (P2 1-3). prod 는 빈 staging 을 mock 으로 위장하지 않고
+    // 실제 빈 상태를 노출 — 운영자가 "데이터 없음"을 가짜 항목으로 오인하지 않도록.
+    const isProd = process.env.NODE_ENV === "production";
+    const mockResponse = () => {
       const mockItems = listMockStaging({
         promoted,
         trustLevel: trustLevel as ParserTrustLevel | "all",
@@ -60,9 +62,19 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
         summary: summarizeStaging(mockItems),
         source: "mock",
       });
+    };
+
+    if (error) {
+      if (!isProd) return mockResponse();
+      console.error("[/api/admin/etl-status] query error:", error.message);
+      return NextResponse.json({ error: "조회 중 오류가 발생했어요." }, { status: 500 });
+    }
+    // 로컬 빈 staging(첫 페이지)만 dev mock. prod·후속 페이지는 실제 결과(빈 배열 포함).
+    if ((!data || data.length === 0) && !cursor && !isProd) {
+      return mockResponse();
     }
 
-    const rows = data as Array<{
+    const rows = (data ?? []) as Array<{
       id: string;
       university_id: string;
       year: number;

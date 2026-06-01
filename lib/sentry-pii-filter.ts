@@ -96,6 +96,13 @@ export function sentryBeforeSend(
         }
       }
     }
+    // AI 분석 엔드포인트 — 요청 본문 전체가 사용자 민감 입력(생기부 원문 text / 스펙 specs)이라
+    // request.data 를 통째 redact. scrubObject 의 키 패턴에 안 걸리는 free-form 'text' 까지
+    // 확실히 차단(P2 4-1). 디버깅은 url·stack·extra{uid} 로 충분.
+    const reqUrl = typeof event.request.url === "string" ? event.request.url : "";
+    if (/\/api\/(saengbu-analysis|spec-analysis)/.test(reqUrl) && event.request.data != null) {
+      event.request.data = REDACTED;
+    }
   }
 
   // 3. extra context — Sentry.setExtra() 로 첨부한 자유 데이터

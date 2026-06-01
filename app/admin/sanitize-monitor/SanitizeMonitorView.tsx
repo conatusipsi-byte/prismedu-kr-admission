@@ -70,13 +70,14 @@ export function SanitizeMonitorView() {
         </p>
       </header>
 
-      {/* mock 안내 — 운영 환경에서는 제거 */}
+      {/* 준비 중 안내 — 실 데이터(Firestore) 연결 후 제거. 그 전까지는 운영 환경에도
+          노출해 mock 을 실데이터로 오인하지 않게 한다(정직성, 가짜 기능 방지). */}
       <div
         data-element="mock-banner"
-        className="rounded-md border border-amber-200 bg-amber-50/40 p-3 text-xs leading-relaxed text-amber-900 dark:border-amber-900/40 dark:bg-amber-950/20 dark:text-amber-200"
+        className="rounded-md border border-amber-300 bg-amber-50 p-3 text-xs leading-relaxed text-amber-900 dark:border-amber-900/40 dark:bg-amber-950/20 dark:text-amber-200"
       >
-        ⚠️ <strong>Mock 데이터 표시 중</strong> — Firestore 연결 후 실 데이터로 교체. 본 화면의
-        통계·로그는 시연용입니다.
+        🚧 <strong>준비 중 — Mock 데이터</strong> · Firestore 연결 전 시연 화면입니다. 표시된
+        통계·트렌드·로그는 <strong>실제 운영 데이터가 아닙니다</strong>. (실 데이터 연결 시 본 배너 제거)
       </div>
 
       <SanitizeStatsCards stats={stats} />
