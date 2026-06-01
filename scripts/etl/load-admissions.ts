@@ -52,6 +52,12 @@ const SOURCES: Source[] = [
   { file: `${B}/ulsan-text.json`,        univId: "kcue_0000158", type: "text_extract", pdf: "univ/2027학년도+수시+모집요강 0526.pdf" },
   { file: `${B}/sungkyunkwan-text.json`, univId: "sungkyunkwan", type: "text_extract", pdf: "univ/20260529115520H43SMR.pdf" },
   { file: "scripts/etl/pdf-vision/output/snu-merged.json", univId: "snu", type: "ai_vision", pdf: "univ/SNU_2027_susi.pdf" },
+  // ── Phase 2 batch 1 (2026-06-01) — 텍스트 추출, 학년도 독립검증 통과(2027). ──
+  //    충남대(cnu)는 PDF가 2026학년도 내용(파일명만 2027)이라 제외 — 2027 요강 재수급 대기.
+  { file: `${B}/hanyang-text.json`,           univId: "hanyang",      type: "text_extract", pdf: "univ/hanyang_2027_susi.pdf" },
+  { file: `${B}/knu-text.json`,               univId: "kcue_0000005", type: "text_extract", pdf: "univ/knu_2027_susi.pdf" },
+  { file: `${B}/pusan-text.json`,             univId: "pusan",        type: "text_extract", pdf: "univ/pusan_2027_susi.pdf" },
+  { file: `${B}/kangwon_chuncheon-text.json`, univId: "kcue_0000003", type: "text_extract", pdf: "univ/2027학년도 강원대학교 춘천·삼척（도계포함）캠퍼스 수시모집요강_공개용.pdf" },
 ];
 
 /* ── Management API ─────────────────────────────────────────────────────── */

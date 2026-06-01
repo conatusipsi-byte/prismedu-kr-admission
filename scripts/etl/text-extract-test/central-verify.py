@@ -25,6 +25,10 @@ FILES = {
     "연세":   BASE / "yonsei-text.json",
     "울산":   BASE / "ulsan-text.json",
     "성균관": BASE / "sungkyunkwan-text.json",
+    "한양":   BASE / "hanyang-text.json",
+    "부산":   BASE / "pusan-text.json",
+    "강원대(춘천·삼척)": BASE / "kangwon_chuncheon-text.json",
+    "경북대": BASE / "knu-text.json",
 }
 
 TRACKTYPE_ENUM = {"학생부위주(교과)","학생부위주(종합)","논술위주","실기/실적위주","수능위주","기타"}
