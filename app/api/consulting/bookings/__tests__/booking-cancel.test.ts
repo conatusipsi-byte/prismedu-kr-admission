@@ -68,6 +68,7 @@ describe("PATCH /api/consulting/bookings/[id]", () => {
       p_user_id: "user-uid-1",
       p_booking_id: validId,
       p_reason: "일정 변경",
+      p_force: false,
     });
   });
 
@@ -168,6 +169,7 @@ describe("PATCH /api/consulting/bookings/[id]", () => {
       p_user_id: "user-uid-1",
       p_booking_id: validId,
       p_reason: null,
+      p_force: false,
     });
   });
 });

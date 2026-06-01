@@ -219,10 +219,13 @@ r_n = cnt(lambda t: t["reflectionStages"])
 c_n = cnt(lambda t: t["csatMinimumRawText"] is not None)
 comp_n = cnt(lambda t: t["quotaInitial"] and t["reflectionStages"] and t["sourcePages"])
 
+# 체크섬 게이트(P1-3): 행합 전부 통과 + 모든 열합 일치여야 적재 허용. load-admissions 가 참조.
+checksum_passed = (len(rowsum_fail) == 0) and all(m for (_, _, _, m) in col_report)
 meta = {
     "universityName": "서울대학교", "year": 2027, "recruitmentSeason": "susi",
     "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용; vision-snu-v1 대체)",
     "visionCost": 0.0, "departments": len(departments), "totalTracks": T,
+    "checksumPassed": checksum_passed,
     "rowSumValidation": {"passed": len(departments) - len(rowsum_fail), "failed": len(rowsum_fail)},
     "colTotalValidation": [{"track": n, "computed": g, "expectedSumRow": e, "match": m}
                            for (n, g, e, m) in col_report],

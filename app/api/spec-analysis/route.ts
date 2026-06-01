@@ -24,9 +24,11 @@ import { reportRouteError } from "@/lib/sentry-report";
 import { canUseFeature, type Plan } from "@/lib/plans";
 import {
   SpecAnalysisRequestSchema,
+  SpecAnalysisResponseSchema,
   type SpecAnalysisResponse,
 } from "@/lib/schemas/api/spec-analysis";
 import type { KrSpecsInput } from "@/lib/schemas/api/match";
+import { parseModelOutput } from "@/lib/spec-analysis/parse-model-output";
 
 const MODEL = "claude-sonnet-4-6";
 const MAX_TOKENS = 1500;
@@ -130,14 +132,20 @@ async function runSpecAnalysis(input: RunInput): Promise<SpecAnalysisResponse> {
     return buildMockResponse(input);
   }
 
-  return {
+  // 최종 스키마 검증 — parseModelOutput 이 형식·범위를 보장하지만, 권위 검증을
+  // 한 번 더 거쳐 스키마 위반(모델 오출력)이 클라이언트에 새지 않게 한다(P-002).
+  const validated = SpecAnalysisResponseSchema.safeParse({
     ...parsed,
     source: "anthropic",
     usage: {
       inputTokens: completion.usage.input_tokens,
       outputTokens: completion.usage.output_tokens,
     },
-  };
+  });
+  if (!validated.success) {
+    return buildMockResponse(input);
+  }
+  return validated.data;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -218,32 +226,8 @@ function buildUserPrompt(specs: KrSpecsInput): string {
 위 입력으로 비교과 정성 분석을 수행하라. 시스템 프롬프트의 JSON 형식만 출력하라.`;
 }
 
-/**
- * 모델 응답에서 JSON 추출. 코드펜스/앞뒤 텍스트가 섞여 있어도 robust 하게 파싱.
- * 검증은 SpecAnalysisResponseSchema 가 라우트 레벨에서 수행하므로 여기선 형식만 맞춤.
- */
-function parseModelOutput(text: string): Omit<SpecAnalysisResponse, "source" | "usage"> | null {
-  const cleaned = text.trim().replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
-  // 첫 '{' ~ 마지막 '}' 추출
-  const start = cleaned.indexOf("{");
-  const end = cleaned.lastIndexOf("}");
-  if (start < 0 || end < 0 || end <= start) return null;
-  const slice = cleaned.slice(start, end + 1);
-  try {
-    const obj = JSON.parse(slice);
-    if (!obj || typeof obj !== "object") return null;
-    const activities = Array.isArray(obj.activities) ? obj.activities : [];
-    const strengths = Array.isArray(obj.strengths) ? obj.strengths.slice(0, 5) : [];
-    const weaknesses = Array.isArray(obj.weaknesses) ? obj.weaknesses.slice(0, 5) : [];
-    const recommendations = Array.isArray(obj.recommendations)
-      ? obj.recommendations.slice(0, 5)
-      : [];
-    const caveats = Array.isArray(obj.caveats) ? obj.caveats.slice(0, 5) : [];
-    return { activities, strengths, weaknesses, recommendations, caveats };
-  } catch {
-    return null;
-  }
-}
+// parseModelOutput: 모델 출력 파싱 + 범위·형식 정규화는 순수 헬퍼로 분리(테스트 가능).
+// import 는 파일 상단 참조.
 
 /* ═══════════════════════════════════════════════════════════════════════
    Mock fallback — Anthropic 키 미등록 시

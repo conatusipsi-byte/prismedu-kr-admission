@@ -28,6 +28,7 @@ import { config as loadDotenv } from "dotenv";
 import { finalizeMinReq } from "@/lib/admission/min-req-classifier";
 import { classifyQuotaScope } from "@/lib/admission/quota-scope";
 import { mapAdigaToTrackKind } from "@/scripts/etl/adiga/track-kind";
+import { checkExtractionIntegrity } from "@/scripts/etl/extraction-integrity";
 import type {
   AdmissionTrack,
   AdmissionTrackKind,
@@ -40,6 +41,8 @@ loadDotenv({ path: path.resolve(process.cwd(), ".env.local") });
 
 const YEAR = 2027;
 const EXECUTE = process.argv.includes("--execute");
+// 무결성 게이트(P1-3): 체크섬/학년도 실패 source 는 적재 거부. --allow-checksum-fail 로 강제.
+const ALLOW_CHECKSUM_FAIL = process.argv.includes("--allow-checksum-fail");
 const B = "scripts/etl/text-extract-test";
 
 /* ── 대학 매핑 (universityName → DB university_id, source) ──────────────── */
@@ -246,6 +249,7 @@ async function main() {
   const unmatched: Array<{ univ: string; dept: string; tracks: number }> = [];
   const containMatches: string[] = [];
   const skips: string[] = [];
+  const integrityRejected: string[] = [];
   const perUniv: Array<{ univ: string; univId: string; depts: number; matched: number; rows: number; tracks: number; kinds: Set<string> }> = [];
 
   for (const src of SOURCES) {
@@ -254,6 +258,20 @@ async function main() {
     const result = data.result ?? data;
     const univName: string = result.universityName ?? data.meta?.universityName ?? src.univId;
     const deps: Array<{ departmentName: string; tracks: RawTrack[] }> = result.departments;
+
+    // ── 무결성 게이트 (P1-3): 체크섬/학년도 실패분 적재 차단 ──
+    const integrity = checkExtractionIntegrity(data.meta, result, YEAR);
+    integrity.warnings.forEach((w) => console.log(`  ⚠ ${univName}: ${w}`));
+    if (!integrity.ok) {
+      const msg = `${univName}: ${integrity.reasons.join("; ")}`;
+      if (ALLOW_CHECKSUM_FAIL) {
+        console.log(`  ⚠ [무결성 실패 강제적재] ${msg}`);
+      } else {
+        console.log(`  ❌ [적재 거부 — 무결성] ${msg}`);
+        integrityRejected.push(msg);
+        continue;
+      }
+    }
 
     const dbDeps = await sql<DeptRow[]>(
       `select id, name, active from public.departments where university_id='${src.univId}'`,
@@ -300,7 +318,11 @@ async function main() {
   for (const s of perUniv)
     console.log(`  ${s.univ.padEnd(8)} (${s.univId.padEnd(13)}) 추출학과=${String(s.depts).padStart(3)} 매칭=${String(s.matched).padStart(3)} row=${String(s.rows).padStart(3)} track=${String(s.tracks).padStart(4)} kinds=${[...s.kinds].sort().join(",")}`);
   const totalRows = rows.length, totalTracks = rows.reduce((a, r) => a + Object.values(r.tracks).flat().length, 0);
-  console.log(`\n총 row(병합후)=${totalRows}  track=${totalTracks}  매핑실패학과=${unmatched.length}  병합=${merges.length}  trackKind매핑skip=${skips.length}`);
+  console.log(`\n총 row(병합후)=${totalRows}  track=${totalTracks}  매핑실패학과=${unmatched.length}  병합=${merges.length}  trackKind매핑skip=${skips.length}  무결성거부source=${integrityRejected.length}`);
+  if (integrityRejected.length) {
+    console.log(`\n── 무결성 거부 source (${integrityRejected.length}) — 적재 제외 (--allow-checksum-fail 로 강제) ──`);
+    integrityRejected.forEach((m) => console.log(`  ❌ ${m}`));
+  }
   const kindDist: Record<string, number> = {};
   for (const r of rows) for (const k of r.available_track_kinds) kindDist[k] = (kindDist[k] ?? 0) + 1;
   console.log("available_track_kinds 분포(학과수):", JSON.stringify(kindDist));

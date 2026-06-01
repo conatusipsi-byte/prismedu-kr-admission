@@ -65,10 +65,12 @@ export async function PATCH(req: NextRequest, ctx: RouteContext): Promise<NextRe
   if (!parsed.success) return zodErrorResponse(parsed.error);
 
   const sb = getAdminSupabase();
+  // 단일 4-arg RPC 호출 (p_force=false → 본인 검증·24h 정책 적용). 3-arg 버전은 제거됨.
   const { data, error } = await sb.rpc("cancel_consulting_booking", {
     p_user_id: auth.uid,
     p_booking_id: id,
     p_reason: parsed.data.reason ?? null,
+    p_force: false,
   });
   if (error) {
     console.error("[/api/consulting/bookings PATCH] rpc error:", error.message);
