@@ -149,6 +149,45 @@ export const AdminConsultingBookingPatchSchema = z
   );
 export type AdminConsultingBookingPatch = z.infer<typeof AdminConsultingBookingPatchSchema>;
 
+/* ═══════════════════════════════════════════════════════════════════════
+   컨설팅 슬롯 관리 — /api/admin/consulting/slots (admin 슬롯 열기/닫기/생성)
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/** GET — 날짜 범위 내 전체 슬롯(available/booked/blocked) 조회. 기본 향후 14일. */
+export const AdminConsultingSlotsQuerySchema = z
+  .object({
+    from: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "YYYY-MM-DD 형식").optional(),
+    to: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "YYYY-MM-DD 형식").optional(),
+    /** 상태 필터 (미지정 = 전체) */
+    status: z.enum(["available", "booked", "blocked"]).optional(),
+  })
+  .refine(
+    (v) => !v.from || !v.to || Date.parse(`${v.to}T00:00:00Z`) >= Date.parse(`${v.from}T00:00:00Z`),
+    { message: "to 는 from 이후여야 합니다", path: ["to"] },
+  );
+export type AdminConsultingSlotsQuery = z.infer<typeof AdminConsultingSlotsQuerySchema>;
+
+/** PATCH /[id] — 단일 슬롯 status 토글. booked 은 대상 아님(예약 보호 → 라우트에서 거부). */
+export const AdminConsultingSlotPatchSchema = z.object({
+  status: z.enum(["available", "blocked"]),
+});
+export type AdminConsultingSlotPatch = z.infer<typeof AdminConsultingSlotPatchSchema>;
+
+/** POST /generate — 향후 N일치 슬롯 멱등 생성 (slot-schedule 12:00~20:00 60분). */
+export const AdminConsultingSlotsGenerateSchema = z.object({
+  daysAhead: z.coerce.number().int().min(1).max(60).default(14),
+});
+export type AdminConsultingSlotsGenerate = z.infer<typeof AdminConsultingSlotsGenerateSchema>;
+
+/** POST /bulk — 특정 KST 날짜 전체 열기/닫기. booked 슬롯은 건너뜀(예약 보호). */
+export const AdminConsultingSlotsBulkSchema = z.object({
+  /** 대상 KST 날짜 (YYYY-MM-DD) */
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "YYYY-MM-DD 형식"),
+  /** open: blocked→available / close: available→blocked */
+  action: z.enum(["open", "close"]),
+});
+export type AdminConsultingSlotsBulk = z.infer<typeof AdminConsultingSlotsBulkSchema>;
+
 export const AdminConsultingApplicationsQuerySchema = z.object({
   /** 'unbooked' (booking 없음) | 'all' (default: unbooked) */
   filter: z.enum(["unbooked", "all"]).default("unbooked"),
