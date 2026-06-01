@@ -9,13 +9,18 @@
  * P-001: 합격률·점수 미리보기 X. 정형 정보(모집인원·일정·평가 비중)만.
  */
 
-import { Calendar, Users } from "lucide-react";
+import { Calendar, Users, Info } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AdmissionTrackBadge } from "./AdmissionTrackBadge";
 import { CsatMinimumCard } from "./CsatMinimumCard";
 import { ReflectionRatioChart } from "./ReflectionRatioChart";
+import {
+  classifyQuotaScope,
+  isQuotaExternal,
+  quotaScopeLabel,
+} from "@/lib/admission/quota-scope";
 import type { AdmissionTrack } from "@/types/admission";
 
 export interface TrackDetailCardProps {
@@ -34,20 +39,34 @@ const COMPONENT_LABEL: Record<string, string> = {
 };
 
 export function TrackDetailCard({ track, className }: TrackDetailCardProps) {
+  // P-005 정직성 — 정원외/그룹 단위 전형은 모집인원이 학과 단위가 아니므로 별도 표시.
+  const quotaScope = classifyQuotaScope(track);
+  const external = isQuotaExternal(track);
   return (
     <Card
       data-component="track-detail-card"
       data-track-kind={track.kind}
-      className={cn(className)}
+      data-quota-scope={quotaScope}
+      className={cn(external && "border-indigo-200 dark:border-indigo-900/50", className)}
     >
       <CardContent className="flex flex-col gap-4 py-5">
         {/* 헤더 — 전형명·뱃지·모집인원 */}
         <div className="flex flex-wrap items-center gap-2">
           <h3 className="text-base font-semibold">{track.name}</h3>
           <AdmissionTrackBadge kind={track.kind} />
+          {external && (
+            <Badge
+              variant="outline"
+              data-element="quota-external-badge"
+              className="border-indigo-200 bg-indigo-50 text-2xs text-indigo-700 dark:border-indigo-900/40 dark:bg-indigo-950/30 dark:text-indigo-300"
+            >
+              {quotaScopeLabel(quotaScope)}
+            </Badge>
+          )}
           <span className="ml-auto inline-flex items-center gap-1 text-sm font-medium tabular-nums text-muted-foreground">
             <Users aria-hidden className="h-3.5 w-3.5" />
             {track.quotaInitial}명
+            {external && <span className="text-2xs font-normal">(그룹 단위)</span>}
             {track.quotaFinal != null && track.quotaFinal !== track.quotaInitial && (
               <span className="text-xs">
                 {" → "}
@@ -103,9 +122,31 @@ export function TrackDetailCard({ track, className }: TrackDetailCardProps) {
           </p>
         )}
 
-        {/* 자유 메모 */}
-        {track.notes && (
-          <p className="text-xs leading-relaxed text-muted-foreground">{track.notes}</p>
+        {/* 정원외(그룹 모집) — 지원자격 강조 + 합격률 미산출 안내 (P-005 정직성) */}
+        {external ? (
+          <div
+            data-element="quota-external-notice"
+            className="rounded-md border border-indigo-200 bg-indigo-50/50 p-3 dark:border-indigo-900/40 dark:bg-indigo-950/20"
+          >
+            <p className="flex items-center gap-1.5 text-xs font-medium text-indigo-800 dark:text-indigo-300">
+              <Info aria-hidden className="h-3.5 w-3.5" />
+              정원외 (그룹 모집) — 학과별 경쟁률·합격률과 다름
+            </p>
+            <p className="mt-1 text-2xs leading-relaxed text-indigo-900/80 dark:text-indigo-200/80">
+              모집인원이 학과가 아닌 그룹·대학 단위라 학과별 합격률을 산출하지 않습니다.
+              아래 지원자격 충족 여부가 핵심이니 꼭 확인하세요.
+            </p>
+            {track.notes && (
+              <p className="mt-2 rounded bg-white/60 p-2 text-xs leading-relaxed text-foreground dark:bg-black/20">
+                <span className="font-medium">지원자격·안내: </span>
+                {track.notes}
+              </p>
+            )}
+          </div>
+        ) : (
+          track.notes && (
+            <p className="text-xs leading-relaxed text-muted-foreground">{track.notes}</p>
+          )
         )}
       </CardContent>
     </Card>

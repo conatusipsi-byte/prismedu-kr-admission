@@ -312,6 +312,40 @@ describe("matchSingle — 일반 트랙", () => {
     expect(r.probability.sampleSufficient).toBe(false);
   });
 
+  it("정원외(specialType≠general) → category='quota_external', probability null, 표본 충분해도 산출 안 함 (P-005)", () => {
+    const n = normalizeKrSpecs(specs());
+    // 표본은 충분(기본 sampleStats)하지만 정원외라 합격률 미산출
+    const r = matchSingle(n, candidate({ name: "농어촌학생전형", specialType: "agricultural" }));
+    expect(r.probability.category).toBe("quota_external");
+    expect(r.probability.probability).toBeNull();
+    expect(r.caveats.some((c) => /정원외|지원자격/.test(c))).toBe(true);
+  });
+
+  it("정원외(재직자: specialType=general, 이름 키워드) → quota_external", () => {
+    const n = normalizeKrSpecs(specs());
+    const r = matchSingle(n, candidate({ name: "특성화고 등을 졸업한 재직자전형", specialType: "general" }));
+    expect(r.probability.category).toBe("quota_external");
+    expect(r.probability.probability).toBeNull();
+  });
+
+  it("정원외 게이트는 자격검사 이후 — 자격 미달이면 reach(자격 미달) 우선", () => {
+    const sp = specs();
+    sp.score.csat.math = { ...sp.score.csat.math, course: "probability_statistics" };
+    const n = normalizeKrSpecs(sp);
+    // 정원외 + 자격 미달: 자격 미달이 먼저 평가됨 (reach, probability=1)
+    const r = matchSingle(n, candidate({ name: "농어촌학생전형", specialType: "agricultural" }));
+    expect(r.probability.category).toBe("reach");
+    expect(r.caveats.some((c) => /자격 미달/.test(c))).toBe(true);
+  });
+
+  it("정원내 일반전형은 영향 없음 — 정상 확률 산출 (회귀)", () => {
+    const n = normalizeKrSpecs(specs());
+    const r = matchSingle(n, candidate({ name: "지역균형전형", specialType: "general" }));
+    expect(r.probability.category).not.toBe("quota_external");
+    expect(r.probability.sampleSufficient).toBe(true);
+    expect(r.probability.probability).not.toBeNull();
+  });
+
   it("정시 + preliminary 변환표 → caveat에 'P-012' 포함", () => {
     const n = normalizeKrSpecs(specs());
     const r = matchSingle(

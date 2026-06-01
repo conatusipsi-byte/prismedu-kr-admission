@@ -162,7 +162,7 @@ export const MatchResultItemSchema = z.object({
   departmentName: z.string(),
   trackKind: TrackKindSchema,
   trackName: z.string(),
-  category: z.enum(["reach", "hard_target", "target", "safety", "insufficient_sample"]),
+  category: z.enum(["reach", "hard_target", "target", "safety", "insufficient_sample", "quota_external"]),
   probability: z.number().min(0).max(100).nullable(),
   low: z.number().min(0).max(100).nullable(),
   high: z.number().min(0).max(100).nullable(),

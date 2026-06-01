@@ -478,6 +478,17 @@ export interface AdmissionTrack {
   kind: AdmissionTrackKind;
   specialType: SpecialAdmissionType;
 
+  /**
+   * 모집인원 단위 (P-005 정직성 — 학과별 합격률 오도 방지).
+   *   - "department" (기본/undefined): 학과 단위 모집 → 학과별 합격률·경쟁률 산출 정상.
+   *   - "group": 정원외/특별전형 등 인원이 그룹 단위(예: 가톨릭 농어촌 계열 통합 31명).
+   *              학과별로 부착돼 있어도 그룹 모집이므로 학과 단위 합격률 산출 비대상.
+   *   - "university": 전 대학 단위 풀(예: 장애인 통합선발). 마찬가지로 학과별 산출 비대상.
+   * group/university 는 지원자격(applicationQualification)이 핵심 — UI에서 강조.
+   * 미설정(undefined)이면 lib/admission/quota-scope.ts 의 classifyQuotaScope 가 도출.
+   */
+  quotaScope?: "department" | "group" | "university";
+
   /** 모집인원 (모집요강 발표 시점) */
   quotaInitial: number;
   /** 수시 미충원 이월 후 — 정시 트랙에서만 의미 있음. ETL이 1월 하순에 갱신. */
@@ -969,10 +980,15 @@ export interface AdmissionSampleStats {
    합격 확률 출력 (matching 알고리즘 결과 래퍼)
    ═══════════════════════════════════════════════════════════════════════ */
 
-/** 일반 분류 + 표본 부족 별도 카테고리 (결정: 표본 < 5는 "표본 부족" 메시지) */
+/**
+ * 일반 분류 + 표본 부족 + 정원외 별도 카테고리.
+ *   - insufficient_sample: 합격 사례 표본 < 5 (확률 비공개).
+ *   - quota_external: 정원외/그룹 단위 전형 — 학과별 합격률 산출 비대상(그룹 모집인원, 별도 자격).
+ *     둘 다 probability=null. UI 는 각각 다른 안내 문구.
+ */
 export type ProbabilityCategory =
   | "reach" | "hard_target" | "target" | "safety"
-  | "insufficient_sample";
+  | "insufficient_sample" | "quota_external";
 
 /**
  * 학종 합격 확률 — 1단계 × 2단계 분해 (결정: 분해 표시)

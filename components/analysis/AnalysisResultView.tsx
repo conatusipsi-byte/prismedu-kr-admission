@@ -38,6 +38,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { InsufficientSampleCard } from "@/components/access/Gated";
 import { DepartmentRecommendCard } from "./DepartmentRecommendCard";
 import { PreviewLockOverlay } from "./PreviewLockOverlay";
@@ -85,7 +86,10 @@ export function AnalysisResultView({
   // 1. 표본 부족 / 락 / 카테고리별 분기
   const visible = data.results.filter((r) => !r.lockable);
   const insufficient = visible.filter((r) => r.category === "insufficient_sample");
-  const sufficient = visible.filter((r) => r.category !== "insufficient_sample");
+  const quotaExternal = visible.filter((r) => r.category === "quota_external");
+  const sufficient = visible.filter(
+    (r) => r.category !== "insufficient_sample" && r.category !== "quota_external",
+  );
 
   const sections = SECTION_ORDER.map((id) => ({
     id,
@@ -207,6 +211,57 @@ export function AnalysisResultView({
                   </Link>
                 </div>
                 <InsufficientSampleCard feature="analysis" sampleN={it.sampleN} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* 7-2. 정원외(그룹 모집) 별도 섹션 — P-005 정직성 (학과별 합격률 미산출) */}
+      {quotaExternal.length > 0 && (
+        <section
+          data-section="quota-external"
+          className="flex flex-col gap-3 rounded-lg border-l-4 border-indigo-300 pl-3 dark:border-indigo-800"
+        >
+          <div>
+            <h2 className="text-base font-semibold text-indigo-700 dark:text-indigo-300">
+              정원외 (그룹 모집) 전형
+            </h2>
+            <p className="text-2xs text-muted-foreground">
+              농어촌·재직자·특성화고·장애 등 정원외 전형은 모집인원이 학과가 아닌 그룹·대학 단위라
+              학과별 경쟁률·합격률과 다릅니다. 정확하지 않은 숫자로 오도하지 않기 위해 합격률을
+              표시하지 않으며, <span className="font-medium">지원자격 충족 여부가 핵심</span>입니다.
+            </p>
+          </div>
+          <div
+            data-element="quota-external-grid"
+            className="grid grid-cols-1 gap-3 lg:grid-cols-2 xl:grid-cols-3"
+          >
+            {quotaExternal.map((it) => (
+              <div
+                key={cardKey(it)}
+                data-result-row={cardKey(it)}
+                data-category="quota_external"
+                className="rounded-lg border border-indigo-200 bg-indigo-50/40 p-3 dark:border-indigo-900/40 dark:bg-indigo-950/20"
+              >
+                <Link
+                  href={`/admissions/${it.universityId}/${it.departmentId}`}
+                  className="text-xs font-medium hover:underline"
+                >
+                  {it.universityName} · {it.departmentName}
+                </Link>
+                <div className="mt-1 flex items-center gap-1.5">
+                  <Badge
+                    variant="outline"
+                    className="border-indigo-200 bg-indigo-50 text-2xs text-indigo-700 dark:border-indigo-900/40 dark:bg-indigo-950/30 dark:text-indigo-300"
+                  >
+                    정원외 (그룹 모집)
+                  </Badge>
+                  <span className="text-2xs text-muted-foreground">{it.trackName}</span>
+                </div>
+                <p className="mt-1.5 text-2xs text-muted-foreground">
+                  학과별 합격률 산출 안 함 — 지원자격을 확인하세요.
+                </p>
               </div>
             ))}
           </div>

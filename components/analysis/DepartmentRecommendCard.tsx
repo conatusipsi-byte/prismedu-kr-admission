@@ -36,6 +36,7 @@ const CATEGORY_LABEL: Record<ProbabilityCategory, string> = {
   target: "적정",
   safety: "안정",
   insufficient_sample: "표본 부족",
+  quota_external: "정원외",
 };
 
 const CATEGORY_TONE: Record<ProbabilityCategory, string> = {
@@ -44,6 +45,7 @@ const CATEGORY_TONE: Record<ProbabilityCategory, string> = {
   target: "border-brand-300 bg-brand-50/40 text-brand-700 dark:border-brand-800/40 dark:bg-brand-950/20 dark:text-brand-400",
   safety: "border-emerald-200 bg-emerald-50/40 text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-950/20 dark:text-emerald-300",
   insufficient_sample: "border-zinc-300 bg-zinc-50 text-zinc-600 dark:border-zinc-700 dark:bg-zinc-900/40 dark:text-zinc-300",
+  quota_external: "border-indigo-200 bg-indigo-50/50 text-indigo-700 dark:border-indigo-900/40 dark:bg-indigo-950/20 dark:text-indigo-300",
 };
 
 export interface DepartmentRecommendCardProps {

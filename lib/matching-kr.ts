@@ -37,6 +37,10 @@ import {
   checkSampleSufficiency,
   type SampleGateResult,
 } from "@/lib/admission/sample-gate";
+import {
+  buildQuotaExternalProbability,
+  isQuotaExternal,
+} from "@/lib/admission/quota-scope";
 
 /* ═══════════════════════════════════════════════════════════════════════
    상수 — 휴리스틱 계수. 변경 시 lib/__tests__/matching-kr.test.ts 회귀 검증.
@@ -315,6 +319,19 @@ export function matchSingle(
     };
   }
 
+  // 1.5 정원외/그룹 단위 전형 — 학과별 합격률 산출 비대상 (P-005 정직성)
+  //     모집인원이 그룹·대학 단위(농어촌·재직자·특성화고·장애·기회균형 등)라
+  //     학과별 경쟁률·합격률이 무의미. 가짜 숫자 대신 quota_external 라벨 + 자격 안내.
+  if (isQuotaExternal(track)) {
+    return {
+      candidate,
+      probability: buildQuotaExternalProbability(),
+      caveats: [
+        "정원외 그룹 모집 — 학과별 경쟁률과 다르며, 지원자격(농어촌·재직자·특성화고·장애 등) 충족 여부가 핵심입니다.",
+      ],
+    };
+  }
+
   // 2. 표본 충족 검사 (P-001)
   const sample = checkSampleSufficiency(sampleStats);
   if (!sample.sufficient) {
@@ -546,6 +563,14 @@ export function matchKrAdmissions(input: MatchKrInput): MatchKrOutput {
   if (insufficientCount > 0 && results.length > 0) {
     globalCaveats.push(
       `${insufficientCount}/${results.length}개 학과는 합격 사례 표본이 부족해 확률을 표시하지 않습니다 (P-001).`,
+    );
+  }
+  const quotaExternalCount = results.filter(
+    (r) => r.probability.category === "quota_external",
+  ).length;
+  if (quotaExternalCount > 0 && results.length > 0) {
+    globalCaveats.push(
+      `${quotaExternalCount}/${results.length}개 전형은 정원외(농어촌·재직자·특성화고·장애 등) 그룹 모집이라 학과별 합격률을 산출하지 않습니다. 지원자격을 확인하세요 (P-005).`,
     );
   }
 

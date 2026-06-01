@@ -17,7 +17,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Info } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -56,7 +56,31 @@ export function ProbabilityTab({
   previewCounter,
   className,
 }: ProbabilityTabProps) {
-  // 1. 표본 부족 — Gated 안내 카드 (CTA 없음, P-001 옵션 B)
+  // 1a. 정원외(그룹 모집) — 학과별 합격률 산출 비대상 (P-005 정직성). CTA 없음.
+  if (probability?.category === "quota_external") {
+    return (
+      <div
+        data-component="probability-tab"
+        data-state="quota_external"
+        className={className}
+      >
+        <Card className="border-indigo-200 bg-indigo-50/40 dark:border-indigo-900/40 dark:bg-indigo-950/20">
+          <CardContent className="flex flex-col items-center gap-2 py-8 text-center">
+            <Info className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
+            <p className="text-sm font-medium">정원외 (그룹 모집) — 합격률 산출 안 함</p>
+            <p className="max-w-sm text-xs text-muted-foreground">
+              이 전형은 모집인원이 학과가 아닌 그룹·대학 단위라 학과별 경쟁률·합격률과 다릅니다.
+              정확하지 않은 숫자로 오도하지 않기 위해 합격률을 표시하지 않아요.
+              <span className="font-medium text-foreground"> 지원자격 충족 여부가 핵심</span>이니
+              모집요강에서 자격 조건을 꼭 확인하세요.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  // 1b. 표본 부족 — Gated 안내 카드 (CTA 없음, P-001 옵션 B)
   if (!sampleSufficient) {
     return (
       <div
@@ -240,6 +264,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   target: "적정",
   safety: "안정",
   insufficient_sample: "표본 부족",
+  quota_external: "정원외 (그룹 모집)",
 };
 
 const CATEGORY_CLASS: Record<string, string> = {
@@ -248,4 +273,5 @@ const CATEGORY_CLASS: Record<string, string> = {
   target: "bg-emerald-50 text-emerald-700 border-emerald-200",
   safety: "bg-blue-50 text-blue-700 border-blue-200",
   insufficient_sample: "bg-zinc-50 text-zinc-700 border-zinc-200",
+  quota_external: "bg-indigo-50 text-indigo-700 border-indigo-200",
 };

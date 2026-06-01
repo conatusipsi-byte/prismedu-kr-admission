@@ -111,7 +111,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -293,7 +294,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -453,7 +455,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -613,7 +616,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -773,7 +777,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -933,7 +938,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -1093,7 +1099,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -1253,7 +1260,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -1435,7 +1443,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -1595,7 +1604,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -1755,7 +1765,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -1915,7 +1926,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -2075,7 +2087,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -2235,7 +2248,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -2395,7 +2409,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -2555,7 +2570,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -2578,7 +2594,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -2738,7 +2755,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -2783,7 +2801,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -2943,7 +2962,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -2966,7 +2986,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -3126,7 +3147,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -3149,7 +3171,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -3309,7 +3332,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -3469,7 +3493,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -3629,7 +3654,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -3811,7 +3837,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -3971,7 +3998,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -4131,7 +4159,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -4154,7 +4183,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -4314,7 +4344,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -4337,7 +4368,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -4497,7 +4529,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -4520,7 +4553,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -4680,7 +4714,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -4703,7 +4738,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -4912,7 +4948,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -4935,7 +4972,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -5095,7 +5133,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -5140,7 +5179,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -5300,7 +5340,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -5323,7 +5364,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -5483,7 +5525,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -5506,7 +5549,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -5666,7 +5710,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -5711,7 +5756,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -5871,7 +5917,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -5894,7 +5941,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -6054,7 +6102,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -6099,7 +6148,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -6330,7 +6380,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -6353,7 +6404,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -6584,7 +6636,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -6733,7 +6786,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -6893,7 +6947,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -7053,7 +7108,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -7213,7 +7269,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -7373,7 +7430,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -7533,7 +7591,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -7693,7 +7752,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -7896,7 +7956,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -8056,7 +8117,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -8101,7 +8163,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -8261,7 +8324,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -8284,7 +8348,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -8444,7 +8509,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -8467,7 +8533,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -8684,7 +8751,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -8885,7 +8953,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -9045,7 +9114,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -9068,7 +9138,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -9228,7 +9299,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -9251,7 +9323,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -9411,7 +9484,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "다문화전형",
@@ -9456,7 +9530,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -9616,7 +9691,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -9754,7 +9830,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -9956,7 +10033,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "재직자전형",
@@ -9979,7 +10057,8 @@
               }
             }
           ],
-          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)"
+          "notes": "재직자전형 지원가능 모집단위 (모집단위별 최대 1명, 총 18명 이내 선발)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -10139,7 +10218,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -10433,7 +10513,8 @@
               }
             }
           ],
-          "notes": "정원외. 인문사회계열(31명)·자연공학계열(31명) 계열 단위 선발. 약학과(2)·신학과(2) 별도. 인문사회계열 단위 31명"
+          "notes": "정원외. 인문사회계열(31명)·자연공학계열(31명) 계열 단위 선발. 약학과(2)·신학과(2) 별도. 인문사회계열 단위 31명",
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -10463,7 +10544,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -10562,7 +10644,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -10679,7 +10762,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -10796,7 +10880,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -10936,7 +11021,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -11076,7 +11162,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -11216,7 +11303,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -11419,7 +11507,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -11559,7 +11648,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "장애인 등 대상자전형",
@@ -11582,7 +11672,8 @@
               }
             }
           ],
-          "notes": "정원외. 장애인 등 대상자. 인문사회계열 통합 6명 (앵커=심리학과, PDF 표상 인문사회 블록 합계)"
+          "notes": "정원외. 장애인 등 대상자. 인문사회계열 통합 6명 (앵커=심리학과, PDF 표상 인문사회 블록 합계)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -11699,7 +11790,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -11839,7 +11931,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -11956,7 +12049,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -12096,7 +12190,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -12213,7 +12308,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -12330,7 +12426,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -12410,7 +12507,8 @@
               }
             }
           ],
-          "notes": "정원외. 일반고/종합고 중 특성화고교 교육과정 이수자만 지원. 학과 통합 선발(각주 그룹). 아동학과·경영학과·회계학과 통합 9명 (앵커=경영학과)"
+          "notes": "정원외. 일반고/종합고 중 특성화고교 교육과정 이수자만 지원. 학과 통합 선발(각주 그룹). 아동학과·경영학과·회계학과 통합 9명 (앵커=경영학과)",
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -12485,7 +12583,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -12625,7 +12724,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -12678,7 +12778,8 @@
               }
             }
           ],
-          "notes": "정원내 12명. 글로벌경영학부(국제경영·세무회계금융·IT파이낸스)로만 선발."
+          "notes": "정원내 12명. 글로벌경영학부(국제경영·세무회계금융·IT파이낸스)로만 선발.",
+          "quotaScope": "group"
         },
         {
           "name": "특성화고 등을 졸업한 재직자전형",
@@ -12693,7 +12794,8 @@
               }
             }
           ],
-          "notes": "정원외. 전형기간 자율화 전형(모집시기 미구분). 글로벌경영학부 3개 트랙으로 선발. 글로벌경영학부(국제경영·세무회계금융·IT파이낸스) 정원외 94명 (앵커=세무회계금융학과)"
+          "notes": "정원외. 전형기간 자율화 전형(모집시기 미구분). 글로벌경영학부 3개 트랙으로 선발. 글로벌경영학부(국제경영·세무회계금융·IT파이낸스) 정원외 94명 (앵커=세무회계금융학과)",
+          "quotaScope": "group"
         }
       ]
     },
@@ -12754,7 +12856,8 @@
               }
             }
           ],
-          "notes": "정원외. 인문사회계열(31명)·자연공학계열(31명) 계열 단위 선발. 약학과(2)·신학과(2) 별도. 자연공학계열 단위 31명"
+          "notes": "정원외. 인문사회계열(31명)·자연공학계열(31명) 계열 단위 선발. 약학과(2)·신학과(2) 별도. 자연공학계열 단위 31명",
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -12784,7 +12887,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -12883,7 +12987,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -13000,7 +13105,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -13117,7 +13223,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -13234,7 +13341,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -13314,7 +13422,8 @@
               }
             }
           ],
-          "notes": "정원외. 일반고/종합고 중 특성화고교 교육과정 이수자만 지원. 학과 통합 선발(각주 그룹). 공간디자인·소비자학과·의류학과·식품영양학과·AI전자정보융합대학 통합 16명 (앵커=의류학과)"
+          "notes": "정원외. 일반고/종합고 중 특성화고교 교육과정 이수자만 지원. 학과 통합 선발(각주 그룹). 공간디자인·소비자학과·의류학과·식품영양학과·AI전자정보융합대학 통합 16명 (앵커=의류학과)",
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -13366,7 +13475,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -13483,7 +13593,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -13600,7 +13711,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -13740,7 +13852,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "장애인 등 대상자전형",
@@ -13763,7 +13876,8 @@
               }
             }
           ],
-          "notes": "정원외. 장애인 등 대상자. 자연공학계열 통합 4명 (앵커=컴퓨터정보공학부, PDF 표상 자연공학 블록 합계)"
+          "notes": "정원외. 장애인 등 대상자. 자연공학계열 통합 4명 (앵커=컴퓨터정보공학부, PDF 표상 자연공학 블록 합계)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -13903,7 +14017,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -14043,7 +14158,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -14183,7 +14299,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -14323,7 +14440,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -14440,7 +14558,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -14580,7 +14699,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -14720,7 +14840,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -14837,7 +14958,8 @@
                 "document": 100
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -14955,7 +15077,8 @@
               }
             }
           ],
-          "notes": "정원외. 바이오로직스공학부 1명"
+          "notes": "정원외. 바이오로직스공학부 1명",
+          "quotaScope": "group"
         }
       ]
     },
@@ -15055,7 +15178,8 @@
               }
             }
           ],
-          "notes": "정원외. AI의공학과 1명"
+          "notes": "정원외. AI의공학과 1명",
+          "quotaScope": "group"
         }
       ]
     },
@@ -15270,7 +15394,8 @@
             "complexity": "with_required",
             "autoEvaluable": false
           },
-          "notes": "정원외. 인문사회계열(31명)·자연공학계열(31명) 계열 단위 선발. 약학과(2)·신학과(2) 별도. 약학과 2명 (농어촌은 약학과만 수능최저 적용) | 수능응시영역: 국어(화법과작문/언어와매체), 수학(미적분/기하/확률과통계), 영어, 사탐(1과목)/과탐(1과목)"
+          "notes": "정원외. 인문사회계열(31명)·자연공학계열(31명) 계열 단위 선발. 약학과(2)·신학과(2) 별도. 약학과 2명 (농어촌은 약학과만 수능최저 적용) | 수능응시영역: 국어(화법과작문/언어와매체), 수학(미적분/기하/확률과통계), 영어, 사탐(1과목)/과탐(1과목)",
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -15334,7 +15459,8 @@
             "complexity": "with_required",
             "autoEvaluable": false
           },
-          "notes": "정원외. 약학과 3명 (약학과 수능최저 적용) | 수능응시영역: 국어(화법과작문/언어와매체), 수학(미적분/기하/확률과통계), 영어, 사탐(1과목)/과탐(1과목)"
+          "notes": "정원외. 약학과 3명 (약학과 수능최저 적용) | 수능응시영역: 국어(화법과작문/언어와매체), 수학(미적분/기하/확률과통계), 영어, 사탐(1과목)/과탐(1과목)",
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -15693,7 +15819,8 @@
               }
             }
           ],
-          "notes": "정원외. 인문사회계열(31명)·자연공학계열(31명) 계열 단위 선발. 약학과(2)·신학과(2) 별도. 신학과 2명"
+          "notes": "정원외. 인문사회계열(31명)·자연공학계열(31명) 계열 단위 선발. 약학과(2)·신학과(2) 별도. 신학과 2명",
+          "quotaScope": "group"
         }
       ]
     },
@@ -15783,7 +15910,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -15798,7 +15926,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -15996,7 +16125,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -16011,7 +16141,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -16134,7 +16265,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -16149,7 +16281,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -16272,7 +16405,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -16287,7 +16421,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -16410,7 +16545,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -16425,7 +16561,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -16548,7 +16685,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -16671,7 +16809,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -16794,7 +16933,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -16917,7 +17057,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -17040,7 +17181,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -17163,7 +17305,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -17286,7 +17429,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -17409,7 +17553,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -17424,7 +17569,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -17547,7 +17693,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -17562,7 +17709,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -17685,7 +17833,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -17700,7 +17849,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -17823,7 +17973,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -17838,7 +17989,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -17961,7 +18113,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -17976,7 +18129,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -18099,7 +18253,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -18114,7 +18269,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -18237,7 +18393,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -18252,7 +18409,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -18375,7 +18533,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -18390,7 +18549,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -18588,7 +18748,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -18603,7 +18764,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -18726,7 +18888,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -18849,7 +19012,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -18864,7 +19028,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -18987,7 +19152,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -19002,7 +19168,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -19125,7 +19292,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -19140,7 +19308,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -19263,7 +19432,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -19417,7 +19587,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "네오르네상스전형",
@@ -19454,7 +19625,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -19469,7 +19641,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -19622,7 +19795,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -19745,7 +19919,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -19760,7 +19935,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -19883,7 +20059,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -20006,7 +20183,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -20021,7 +20199,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -20144,7 +20323,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -20159,7 +20339,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -20282,7 +20463,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -20297,7 +20479,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -20420,7 +20603,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -20435,7 +20619,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -20666,7 +20851,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -20681,7 +20867,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -20804,7 +20991,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -20819,7 +21007,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -20942,7 +21131,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -20957,7 +21147,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -21080,7 +21271,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -21095,7 +21287,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -21218,7 +21411,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -21341,7 +21535,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -21464,7 +21659,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -21587,7 +21783,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -21602,7 +21799,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -21833,7 +22031,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -21848,7 +22047,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -21971,7 +22171,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -22202,7 +22403,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -22433,7 +22635,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -22448,7 +22651,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -22571,7 +22775,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -23406,7 +23611,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -23529,7 +23735,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -23544,7 +23751,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -23667,7 +23875,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -23682,7 +23891,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -23804,7 +24014,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_practical": [
@@ -23911,7 +24122,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_practical": [
@@ -24018,7 +24230,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_practical": [
@@ -24125,7 +24338,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_practical": [
@@ -24232,7 +24446,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_practical": [
@@ -24339,7 +24554,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_practical": [
@@ -24446,7 +24662,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -24461,7 +24678,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -24582,7 +24800,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -24656,7 +24875,8 @@
               }
             }
           ],
-          "notes": "특성화고 등을 졸업한 재직자 특별전형(정원외 전담 학과, 산업체 3년 이상 재직). 전형기간 자율화."
+          "notes": "특성화고 등을 졸업한 재직자 특별전형(정원외 전담 학과, 산업체 3년 이상 재직). 전형기간 자율화.",
+          "quotaScope": "group"
         }
       ]
     },
@@ -24697,7 +24917,8 @@
               }
             }
           ],
-          "notes": "특성화고 등을 졸업한 재직자 특별전형(정원외 전담 학과, 산업체 3년 이상 재직). 전형기간 자율화."
+          "notes": "특성화고 등을 졸업한 재직자 특별전형(정원외 전담 학과, 산업체 3년 이상 재직). 전형기간 자율화.",
+          "quotaScope": "group"
         }
       ]
     },
@@ -24738,7 +24959,8 @@
               }
             }
           ],
-          "notes": "특성화고 등을 졸업한 재직자 특별전형(정원외 전담 학과, 산업체 3년 이상 재직). 전형기간 자율화."
+          "notes": "특성화고 등을 졸업한 재직자 특별전형(정원외 전담 학과, 산업체 3년 이상 재직). 전형기간 자율화.",
+          "quotaScope": "group"
         }
       ]
     },
@@ -24961,7 +25183,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기회균형전형 II",
@@ -24976,7 +25199,8 @@
                 "schoolRecord": 30
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_practical": [
@@ -25250,7 +25474,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -25379,7 +25604,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -25508,7 +25734,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -25637,7 +25864,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -25766,7 +25994,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -25895,7 +26124,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -26024,7 +26254,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -26153,7 +26384,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -26282,7 +26514,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -26411,7 +26644,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -26540,7 +26774,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -26669,7 +26904,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -26798,7 +27034,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -26927,7 +27164,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -27056,7 +27294,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -27185,7 +27424,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -27314,7 +27554,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -27443,7 +27684,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -27572,7 +27814,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -27701,7 +27944,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -27830,7 +28074,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -27959,7 +28204,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -28088,7 +28334,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -28217,7 +28464,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -28346,7 +28594,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -28475,7 +28724,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -28604,7 +28854,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -28733,7 +28984,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -29026,7 +29278,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -29155,7 +29408,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -29284,7 +29538,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -29413,7 +29668,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -29542,7 +29798,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -29671,7 +29928,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -29907,7 +30165,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -30036,7 +30295,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -30148,7 +30408,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -30277,7 +30538,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -30406,7 +30668,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -30518,7 +30781,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -30647,7 +30911,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -30759,7 +31024,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -30888,7 +31154,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -31000,7 +31267,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -31112,7 +31380,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -31224,7 +31493,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -31336,7 +31606,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -31448,7 +31719,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -32026,7 +32298,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -32138,7 +32411,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -32250,7 +32524,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -32362,7 +32637,8 @@
                 "interview": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_essay": [
@@ -32593,7 +32869,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -32608,7 +32885,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -32623,7 +32901,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -32638,7 +32917,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -32749,7 +33029,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -32764,7 +33045,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -32779,7 +33061,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -32794,7 +33077,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -32905,7 +33189,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -32920,7 +33205,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -32935,7 +33221,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -32950,7 +33237,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -33061,7 +33349,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -33076,7 +33365,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -33091,7 +33381,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -33106,7 +33397,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -33217,7 +33509,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -33232,7 +33525,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -33247,7 +33541,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -33262,7 +33557,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -33373,7 +33669,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -33388,7 +33685,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -33403,7 +33701,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -33418,7 +33717,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -33529,7 +33829,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -33544,7 +33845,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -33559,7 +33861,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -33574,7 +33877,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -33671,7 +33975,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -33686,7 +33991,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -33819,7 +34125,8 @@
                 "schoolRecord": 40
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ]
     },
@@ -33898,7 +34205,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -33913,7 +34221,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -33928,7 +34237,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -34039,7 +34349,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -34054,7 +34365,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -34069,7 +34381,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -34084,7 +34397,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -34195,7 +34509,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -34210,7 +34525,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "기초생활수급자 및 차상위계층 특별전형(정원 외)",
@@ -34225,7 +34541,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "특성화고교 졸업자 특별전형(정원 외)",
@@ -34240,7 +34557,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -34561,7 +34879,8 @@
             "complexity": "with_required",
             "autoEvaluable": false
           },
-          "notes": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외)."
+          "notes": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+          "quotaScope": "group"
         }
       ]
     },
@@ -34655,7 +34974,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         },
         {
           "name": "농어촌학생 특별전형(정원 외)",
@@ -34670,7 +34990,8 @@
                 "학생부(출결)": 10
               }
             }
-          ]
+          ],
+          "quotaScope": "group"
         }
       ],
       "susi_comprehensive": [
@@ -34724,7 +35045,8 @@
               }
             }
           ],
-          "notes": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외)."
+          "notes": "입학~졸업(예정)까지 부산/울산/경남지역 고교 재학 졸업(예정)자(영재학교 제외).",
+          "quotaScope": "group"
         }
       ]
     },
@@ -34977,7 +35299,8 @@
               }
             }
           ],
-          "notes": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)"
+          "notes": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)",
+          "quotaScope": "group"
         }
       ],
       "susi_subject": [
@@ -35118,7 +35441,8 @@
               }
             }
           ],
-          "notes": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)"
+          "notes": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)",
+          "quotaScope": "group"
         }
       ],
       "susi_subject": [
@@ -36981,7 +37305,8 @@
               }
             }
           ],
-          "notes": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)"
+          "notes": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)",
+          "quotaScope": "group"
         },
         {
           "name": "학생부종합(과학인재)",
@@ -37172,7 +37497,8 @@
               }
             }
           ],
-          "notes": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)"
+          "notes": "국가보훈대상자/농어촌학생/특성화고/기초생활수급·차상위·한부모/장애인등/자립지원 대상자(지원자격심사 포함)",
+          "quotaScope": "group"
         },
         {
           "name": "학생부종합(과학인재)",
@@ -39204,7 +39530,8 @@
               }
             }
           ],
-          "notes": "특성화고 등 졸업 + 산업체 근무경력 3년 이상 재직자 (정원외)"
+          "notes": "특성화고 등 졸업 + 산업체 근무경력 3년 이상 재직자 (정원외)",
+          "quotaScope": "group"
         },
         {
           "name": "학생부종합(특성화고졸재직자)",
@@ -39219,7 +39546,8 @@
               }
             }
           ],
-          "notes": "특성화고 등 졸업 + 산업체 근무경력 3년 이상 재직자 (정원외)"
+          "notes": "특성화고 등 졸업 + 산업체 근무경력 3년 이상 재직자 (정원외)",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39323,7 +39651,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39428,7 +39757,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39533,7 +39863,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39638,7 +39969,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39743,7 +40075,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39848,7 +40181,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39892,7 +40226,8 @@
               }
             }
           ],
-          "notes": "여자 1명 (홀수 학년도 여자 1명 선발) | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "여자 1명 (홀수 학년도 여자 1명 선발) | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39935,7 +40270,8 @@
               }
             }
           ],
-          "notes": "작곡 1명 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "작곡 1명 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -39986,7 +40322,8 @@
               }
             }
           ],
-          "notes": "피아노 1명 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "피아노 1명 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         },
         {
           "name": "실기위주전형(일반전형)",
@@ -40060,7 +40397,8 @@
               }
             }
           ],
-          "notes": "바이올린 1명 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "바이올린 1명 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         },
         {
           "name": "실기위주전형(일반전형)",
@@ -40242,7 +40580,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -40347,7 +40686,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },
@@ -40450,7 +40790,8 @@
               }
             }
           ],
-          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음"
+          "notes": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 지원서 접수 마감일 기준으로 농어촌 학생(가·나), 저소득 학생(다·라·마), 국가보훈대상자(바), 서해 5도 학생(사), 자립지원 대상자(아) 중 하나의 자격을 유지하고 있는 자 | 수능응시영역: 전 모집단위에서 수능 최저학력기준(수능 응시영역기준 포함)을 적용하지 않음",
+          "quotaScope": "group"
         }
       ]
     },

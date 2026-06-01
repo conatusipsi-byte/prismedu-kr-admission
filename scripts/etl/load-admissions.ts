@@ -26,6 +26,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { config as loadDotenv } from "dotenv";
 import { finalizeMinReq } from "@/lib/admission/min-req-classifier";
+import { classifyQuotaScope } from "@/lib/admission/quota-scope";
 import { mapAdigaToTrackKind } from "@/scripts/etl/adiga/track-kind";
 import type {
   AdmissionTrack,
@@ -208,6 +209,9 @@ function convertTrack(rt: RawTrack): { kind: AdmissionTrackKind; track: Admissio
     ...(csat ? { csatMinimum: csat } : {}),
     ...(noteParts.length ? { notes: noteParts.join(" | ") } : {}),
   };
+  // P-005 — 정원외/그룹 단위 전형 명시 백필 (학과별 합격률 비대상). department 는 미설정(lean).
+  const scope = classifyQuotaScope(track);
+  if (scope !== "department") track.quotaScope = scope;
   return { kind: mapped.kind, track };
 }
 
