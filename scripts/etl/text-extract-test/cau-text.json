@@ -9,7 +9,7 @@
     "visionCost": 0.0,
     "campusScope": "서울 + 다빈치(안성) 두 캠퍼스 통합",
     "departments": 89,
-    "totalTracks": 309,
+    "totalTracks": 310,
     "rowSumValidation": {
       "basis": "수시 계 열",
       "passed": 89,
@@ -31,33 +31,33 @@
       },
       {
         "track": "융합형",
-        "computed": 386,
+        "computed": 378,
         "expectedSumRow": 378,
-        "match": false
+        "match": true
       },
       {
         "track": "성장형",
-        "computed": 100,
+        "computed": 108,
         "expectedSumRow": 108,
-        "match": false
+        "match": true
       },
       {
         "track": "어울림",
-        "computed": 22,
+        "computed": 20,
         "expectedSumRow": 20,
-        "match": false
+        "match": true
       },
       {
         "track": "농어촌",
-        "computed": 148,
+        "computed": 142,
         "expectedSumRow": 142,
-        "match": false
+        "match": true
       },
       {
         "track": "기초생활",
-        "computed": 64,
+        "computed": 74,
         "expectedSumRow": 74,
-        "match": false
+        "match": true
       },
       {
         "track": "재직자",
@@ -97,36 +97,36 @@
       }
     ],
     "colTotalGye": {
-      "computed": 2860,
+      "computed": 2862,
       "expected": 2862,
-      "match": false
+      "match": true
     },
-    "checksumPassed": false,
+    "checksumPassed": true,
     "fillRatios": {
       "quotaInitial": [
-        309,
-        309
+        310,
+        310
       ],
       "reflectionStages": [
-        309,
-        309
+        310,
+        310
       ],
       "csatMinimumRawText": [
-        309,
-        309
+        310,
+        310
       ],
       "csatMinimumExempt": [
-        309,
-        309
+        310,
+        310
       ],
       "sourcePages": [
-        309,
-        309
+        310,
+        310
       ]
     },
     "completeRecords": [
-      309,
-      309
+      310,
+      310
     ]
   },
   "result": {
@@ -885,7 +885,7 @@
         "departmentName": "유럽문화학부(프랑스어문학)",
         "campus": "서울",
         "trackHint": "인문",
-        "totalQuotaHint": 27,
+        "totalQuotaHint": 29,
         "tracks": [
           {
             "trackName": "학생부종합(탐구형인재)",
@@ -922,6 +922,34 @@
               15,
               16,
               23
+            ]
+          },
+          {
+            "trackName": "학생부종합(어울림)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려계층",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등학력자로서 국가보훈대상자/장애인부모자녀/자립지원대상아동/직업군인·경찰·소방공무원자녀(20년이상)/다자녀(4자녀이상)/다문화/북한이탈주민 등 중 해당자. 외국고교 졸업(예정)자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              14,
+              15,
+              16,
+              37
             ]
           },
           {
@@ -1581,7 +1609,7 @@
             ]
           },
           {
-            "trackName": "학생부종합(융합형인재)",
+            "trackName": "학생부종합(성장형인재)",
             "trackTypeRaw": "학생부위주(종합)",
             "recruitmentPeriodRaw": "수시",
             "specialTypeKeyword": null,
@@ -1589,51 +1617,32 @@
             "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자",
             "reflectionStages": [
               {
-                "stageLabel": "일괄합산",
+                "stageLabel": "1단계(5배수)",
                 "multiplier": null,
                 "components": {
                   "서류평가": 100
                 },
                 "stageMaxScore": 1000
-              }
-            ],
-            "csatMinimumRawText": "없음",
-            "csatMinimumExempt": true,
-            "csatRequiredAreasRawText": null,
-            "prevYearResult": null,
-            "sourcePages": [
-              14,
-              15,
-              16,
-              28
-            ]
-          },
-          {
-            "trackName": "학생부종합(어울림)",
-            "trackTypeRaw": "학생부위주(종합)",
-            "recruitmentPeriodRaw": "수시",
-            "specialTypeKeyword": "사회배려계층",
-            "quotaInitial": 2,
-            "applicationQualification": "고등학교 졸업(예정)자 또는 동등학력자로서 국가보훈대상자/장애인부모자녀/자립지원대상아동/직업군인·경찰·소방공무원자녀(20년이상)/다자녀(4자녀이상)/다문화/북한이탈주민 등 중 해당자. 외국고교 졸업(예정)자 지원 불가",
-            "reflectionStages": [
+              },
               {
-                "stageLabel": "일괄합산",
+                "stageLabel": "2단계",
                 "multiplier": null,
                 "components": {
-                  "서류평가": 100
+                  "1단계성적": 70,
+                  "면접": 30
                 },
                 "stageMaxScore": 1000
               }
             ],
-            "csatMinimumRawText": "없음",
-            "csatMinimumExempt": true,
-            "csatRequiredAreasRawText": null,
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사/과) 중 3개 영역 등급합 6 이내, 탐구 상위 1과목 반영, 한국사 4등급 이내. 영어 1·2등급은 통합하여 1등급으로 간주",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학). 제2외국어·한문 미반영",
             "prevYearResult": null,
             "sourcePages": [
               14,
               15,
               16,
-              37
+              33
             ]
           },
           {
@@ -1662,6 +1671,34 @@
               15,
               16,
               42
+            ]
+          },
+          {
+            "trackName": "학생부종합(기회균형-기초생활수급자및차상위계층)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자및차상위계층",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등학력자로서 국민기초생활보장법 수급권자·차상위계층·한부모가족지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              14,
+              15,
+              16,
+              45
             ]
           },
           {
@@ -1835,34 +1872,6 @@
             ]
           },
           {
-            "trackName": "학생부종합(어울림)",
-            "trackTypeRaw": "학생부위주(종합)",
-            "recruitmentPeriodRaw": "수시",
-            "specialTypeKeyword": "사회배려계층",
-            "quotaInitial": 2,
-            "applicationQualification": "고등학교 졸업(예정)자 또는 동등학력자로서 국가보훈대상자/장애인부모자녀/자립지원대상아동/직업군인·경찰·소방공무원자녀(20년이상)/다자녀(4자녀이상)/다문화/북한이탈주민 등 중 해당자. 외국고교 졸업(예정)자 지원 불가",
-            "reflectionStages": [
-              {
-                "stageLabel": "일괄합산",
-                "multiplier": null,
-                "components": {
-                  "서류평가": 100
-                },
-                "stageMaxScore": 1000
-              }
-            ],
-            "csatMinimumRawText": "없음",
-            "csatMinimumExempt": true,
-            "csatRequiredAreasRawText": null,
-            "prevYearResult": null,
-            "sourcePages": [
-              14,
-              15,
-              16,
-              37
-            ]
-          },
-          {
             "trackName": "학생부종합(기회균형-농어촌학생)",
             "trackTypeRaw": "학생부위주(종합)",
             "recruitmentPeriodRaw": "수시",
@@ -1888,6 +1897,34 @@
               15,
               16,
               42
+            ]
+          },
+          {
+            "trackName": "학생부종합(기회균형-기초생활수급자및차상위계층)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자및차상위계층",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등학력자로서 국민기초생활보장법 수급권자·차상위계층·한부모가족지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              14,
+              15,
+              16,
+              45
             ]
           },
           {
@@ -3248,12 +3285,12 @@
             ]
           },
           {
-            "trackName": "학생부종합(기회균형-농어촌학생)",
+            "trackName": "학생부종합(기회균형-기초생활수급자및차상위계층)",
             "trackTypeRaw": "학생부위주(종합)",
             "recruitmentPeriodRaw": "수시",
-            "specialTypeKeyword": "농어촌학생",
+            "specialTypeKeyword": "기초생활수급자및차상위계층",
             "quotaInitial": 2,
-            "applicationQualification": "국내 고등학교 졸업(예정)자 중 유형I(6년 농어촌) 또는 유형II(12년 농어촌)에 해당하는 자. 특목고·검정고시·외국고 지원불가",
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등학력자로서 국민기초생활보장법 수급권자·차상위계층·한부모가족지원 대상자",
             "reflectionStages": [
               {
                 "stageLabel": "일괄합산",
@@ -3272,7 +3309,7 @@
               14,
               15,
               16,
-              42
+              45
             ]
           },
           {
@@ -4062,7 +4099,7 @@
             ]
           },
           {
-            "trackName": "학생부종합(융합형인재)",
+            "trackName": "학생부종합(성장형인재)",
             "trackTypeRaw": "학생부위주(종합)",
             "recruitmentPeriodRaw": "수시",
             "specialTypeKeyword": null,
@@ -4070,23 +4107,32 @@
             "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자",
             "reflectionStages": [
               {
-                "stageLabel": "일괄합산",
+                "stageLabel": "1단계(5배수)",
                 "multiplier": null,
                 "components": {
                   "서류평가": 100
                 },
                 "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
               }
             ],
-            "csatMinimumRawText": "없음",
-            "csatMinimumExempt": true,
-            "csatRequiredAreasRawText": null,
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사/과) 중 3개 영역 등급합 6 이내, 탐구 상위 1과목 반영, 한국사 4등급 이내. 영어 1·2등급은 통합하여 1등급으로 간주",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학). 제2외국어·한문 미반영",
             "prevYearResult": null,
             "sourcePages": [
               14,
               15,
               16,
-              28
+              33
             ]
           }
         ]
@@ -9313,12 +9359,12 @@
             ]
           },
           {
-            "trackName": "학생부종합(기회균형-농어촌학생)",
+            "trackName": "학생부종합(기회균형-기초생활수급자및차상위계층)",
             "trackTypeRaw": "학생부위주(종합)",
             "recruitmentPeriodRaw": "수시",
-            "specialTypeKeyword": "농어촌학생",
+            "specialTypeKeyword": "기초생활수급자및차상위계층",
             "quotaInitial": 2,
-            "applicationQualification": "국내 고등학교 졸업(예정)자 중 유형I(6년 농어촌) 또는 유형II(12년 농어촌)에 해당하는 자. 특목고·검정고시·외국고 지원불가",
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등학력자로서 국민기초생활보장법 수급권자·차상위계층·한부모가족지원 대상자",
             "reflectionStages": [
               {
                 "stageLabel": "일괄합산",
@@ -9337,7 +9383,7 @@
               14,
               15,
               16,
-              42
+              45
             ]
           },
           {
@@ -9812,12 +9858,12 @@
             ]
           },
           {
-            "trackName": "학생부종합(기회균형-농어촌학생)",
+            "trackName": "학생부종합(기회균형-기초생활수급자및차상위계층)",
             "trackTypeRaw": "학생부위주(종합)",
             "recruitmentPeriodRaw": "수시",
-            "specialTypeKeyword": "농어촌학생",
+            "specialTypeKeyword": "기초생활수급자및차상위계층",
             "quotaInitial": 2,
-            "applicationQualification": "국내 고등학교 졸업(예정)자 중 유형I(6년 농어촌) 또는 유형II(12년 농어촌)에 해당하는 자. 특목고·검정고시·외국고 지원불가",
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등학력자로서 국민기초생활보장법 수급권자·차상위계층·한부모가족지원 대상자",
             "reflectionStages": [
               {
                 "stageLabel": "일괄합산",
@@ -9836,7 +9882,7 @@
               14,
               15,
               16,
-              42
+              45
             ]
           }
         ]
@@ -10350,8 +10396,7 @@
       "[논술창의형 서울한정] 논술(창의형) 86명은 모두 서울캠퍼스. 2027년 졸업예정자만 지원 가능.",
       "[지식경영학부] 수시 정원내 0, 정원외 234명(특성화고졸재직자) 전부.",
       "[연극(뮤지컬연기) 복합전형] 지역균형 8명 + 실기형 8명 = 수시 16명. 총괄표 pdftotext 레이아웃상 마지막 '8'이 계로 표시되나 실제 계=16.",
-      "[열합 불일치 상세] pdftotext 총괄표 레이아웃 한계 + 전형별 세부 페이지 간 불일치로 아래 전형의 열합이 PDF 합계행과 차이가 남. 행합(학과별 수시계)은 89/89 모두 통과. 불일치 항목: 융합형 386 vs PDF 378(+8), 성장형 100 vs 108(-8), 어울림 22 vs 20(+2), 농어촌 148 vs 142(+6), 기초생활 64 vs 74(-10). 원인: (1) 철학과/역사학과/사회학과/문헌정보학과/응용통계학과 탐구→융합 재분류 시 행합은 유지되나 융합 과잉 8이 잔존. (2) 성장형 세부(인쇄p31)의 정치국제4·산업보안인문4는 총괄표 계와 충돌하여 제외. (3) 어울림/농어촌/기초생활 세부 목록과 총괄표 계열 간 일부 학과 출처 충돌. 조작 금지 원칙에 따라 임의 수정 없이 경고로만 기록.",
-      "[열합총계] 계산=2860 vs PDF합계=2862 — 불일치"
+      "[열합 재정합 완료 — 종합전형 5열] 구판은 총괄표 인접셀 위치판독 한계로 융합형 386(+8)/성장형 100(-8)/어울림 22(+2)/농어촌 148(+6)/기초생활 64(-10) 열합이 PDF 합계행과 불일치했음. 전형별 세부페이지(가.모집단위와 모집인원)를 직독해 재정합 — 각 세부페이지 총계가 PDF 합계행과 정확히 일치 검증: 융합형 p25=378 / 성장형 p30=108 / 어울림 p34=20 / 농어촌 p39=142 / 기초생활 p43=74. 보정한 7개 모집단위(전부 총괄표 인접열 오판독, 행합 보존): 정치국제(융4→성4, 어2→기2), 산업보안인문(융4→성4), 심리(어2→기2), 영어교육(농2→기2), 문예창작(농2→기2), 패션(농2→기2), 프랑스어문학(어울2 누락복원, 계27→29). 재정합 후 12개 전형열 전부 PDF 합계행과 일치, 행합 89/89 유지, 총계 2,862 일치 → checksumPassed=true."
     ]
   }
 }
