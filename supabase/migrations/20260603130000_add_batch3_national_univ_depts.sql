@@ -1,0 +1,182 @@
+-- ╔═══════════════════════════════════════════════════════════════════════╗
+-- ║ Phase 2 batch 3 — 9개 거점국립대 DB 미등재 실존 학과 146건 INSERT (2026-06-03)  ║
+-- ║                                                                       ║
+-- ║ 대상: 부경·제주·공주·한밭·전남·충북·전북·서울과기·경상국립 2027 수시 모집요강 적재 시  ║
+-- ║   매핑 실패 학과 중 'DB 미등재 실존' 만 INSERT. (거점국립대는 KCUE baseline 이      ║
+-- ║   2027 모집요강 학과명/구조와 불일치가 커서 누락 多.)                              ║
+-- ║                                                                       ║
+-- ║ 분류(정직성):                                                              ║
+-- ║   - 실존+모집요강: 전부 추출 JSON 에 모집인원>0(행합·열합 체크섬·grand total 원문   ║
+-- ║     대조·central-verify 통과분). norm() 정확/접두 매칭 0 + 동일 base active 학과   ║
+-- ║     부재(stem 일치 검증) = 진짜 누락.                                          ║
+-- ║   - 학과↔학부 동일 base rename 3건은 NAME_ALIAS 처리(본 INSERT 제외).            ║
+-- ║   - pseudo 52건 제외: 자유전공·자율전공·OO계열(광역)·[특수교육대상자]·[군위탁]·      ║
+-- ║     전문대학원/학석사통합·(야)야간풀 — 학과 단위 아님.                             ║
+-- ║   - 학부(전공)래핑·prefix확장(near-dup)은 오alias 방지로 신규 INSERT.             ║
+-- ║                                                                       ║
+-- ║ id: 합성 slug b3-{univ}-NN. active_override=true(KCUE 재sync 비활성화 방지).     ║
+-- ║ track: 검색 필터용 best-effort(인문→social·자연→natural/공학계 engineering·      ║
+-- ║   예체능→interdisciplinary). 합격 데이터 정본은 department_admissions.tracks.    ║
+-- ╚═══════════════════════════════════════════════════════════════════════╝
+
+INSERT INTO departments
+  (university_id, id, campus_id, name, unit_type, track, total_quota,
+   active, active_override, active_override_reason, active_override_at,
+   degree_course, daytime)
+VALUES
+  -- 국립부경대 (kcue_0000013)
+  ('kcue_0000013','b3-pukyong-01','main','행정복지학부(행정학전공,사회복지학전공)','division','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-02','main','패션디자인학과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-03','main','화학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-04','main','화학공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-05','main','토목공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-06','main','해양생산시스템관리학부(해양생산학전공,해양경찰학전공)','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-07','main','해양수산경영경제학부(해양수산경영학전공,자원환경경제학전공)','division','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-08','main','환경공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-09','main','해양학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-10','main','지질환경과학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-11','main','지속가능대기환경학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-12','main','해양공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-13','main','해양스포츠학과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-14','main','컴퓨터·인공지능공학부(컴퓨터공학전공,인공지능전공)','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-15','main','AX지속가능융합학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000013','b3-pukyong-16','main','AI융합시스템공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  -- 제주대 (kcue_0000027)
+  ('kcue_0000027','b3-jeju-01','main','디자인학부(공업디자인전공)','division','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000027','b3-jeju-02','main','디자인학부(문화공예디자인전공)','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000027','b3-jeju-03','main','디자인학부(시각영상디자인전공)','division','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  -- 국립공주대 (kcue_0000008)
+  ('kcue_0000008','b3-kongju-01','main','한문교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-02','main','영어교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-03','main','윤리교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-04','main','특수교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-05','main','역사교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-06','main','유아교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-07','main','화학교육과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-08','main','환경교육과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-09','main','기술·가정교육과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-10','main','음악교육과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-11','main','영어영문학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-12','main','행정학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-13','main','데이터정보물리학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-14','main','응용수학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-15','main','화학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-16','main','대기과학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-17','main','의류상품학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-18','main','스포츠과학과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-19','main','응급구조학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-20','main','의료정보학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-21','main','영상학과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-22','main','기계자동차공학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-23','main','도시·교통공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-24','main','화학공학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-25','main','환경공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-26','main','원예학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-27','main','동물생명과학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-28','main','외식상품학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000008','b3-kongju-29','main','특수동물학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  -- 국립한밭대 (kcue_0000039)
+  ('kcue_0000039','b3-hanbat-01','main','건축설비시스템공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000039','b3-hanbat-02','main','우주국방첨단융합학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000039','b3-hanbat-03','main','정보기술AI융합학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000039','b3-hanbat-04','main','빅데이터헬스케어융합학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  -- 전남대 (kcue_0000023)
+  ('kcue_0000023','b3-chonnam-01','main','환경에너지공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-02','main','토목공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-03','main','환경시스템공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-04','main','지역·바이오시스템공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-05','main','멀티미디어전공','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-06','main','전자상거래전공','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-07','main','지리교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-08','main','체육교육과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-09','main','지리학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-10','main','철학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-11','main','통계학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-12','main','창의융합학부','division','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000023','b3-chonnam-13','main','디지털융합정보학과(조기취업형계약학과)','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  -- 충북대 (kcue_0000030)
+  ('kcue_0000030','b3-chungbuk-01','main','인공지능학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000030','b3-chungbuk-02','main','미술학과(동양화)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000030','b3-chungbuk-03','main','미술학과(서양화)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000030','b3-chungbuk-04','main','미술학과(조소)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  -- 전북대 (kcue_0000025)
+  ('kcue_0000025','b3-jeonbuk-01','main','간호학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-02','main','독어교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-03','main','영어교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-04','main','약학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-05','main','무용학과(발레/무용교육크리에이터)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-06','main','무용학과(한국무용)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-07','main','무용학과(컨템포러리무용/안무)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-08','main','미술학과(한국화)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-09','main','미술학과(회화/시각예술)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-10','main','미술학과(조소/공공미술)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-11','main','미술학과(가구조형디자인)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-12','main','한국음악학과(작곡·이론)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-13','main','한국음악학과(성악·타악)','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-14','main','한국음악학과[기악(관악)]','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-15','main','한국음악학과[기악(현악)]','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-16','main','독일학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-17','main','문헌정보학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-18','main','사학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-19','main','영어영문학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-20','main','프랑스·아프리카학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-21','main','치의예과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-22','main','이차전지공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-23','main','첨단방위산업학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000025','b3-jeonbuk-24','main','한옥학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  -- 서울과학기술대 (kcue_0000036)
+  ('kcue_0000036','b3-seoultech-01','main','기계시스템공학부(지능형로봇전공)','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-02','main','기계시스템공학부(미래자동차전공)','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-03','main','기계공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-04','main','ICT융합공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-05','main','바이오메디컬학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-06','main','양자융합물리학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-07','main','산업디자인학과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-08','main','시각디자인학과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-09','main','산업공학부(산업정보시스템전공)_자연','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-10','main','산업공학부(ITM전공)_자연','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000036','b3-seoultech-11','main','미래에너지학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  -- 경상국립대 (kcue_0000007)
+  ('kcue_0000007','b3-gnu-01','main','스포츠헬스케어학과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-02','main','불어불문학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-03','main','사학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-04','main','중어중문학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-05','main','철학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-06','main','민속예술무용학과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-07','main','사회복지학부','division','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-08','main','사회학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-09','main','정치외교학과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-10','main','생명과학부','division','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-11','main','정보통계학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-12','main','지질과학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-13','main','제약공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-14','main','경영정보학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-15','main','산업경영학과(야간/성인학습자과정)','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-16','main','건축공학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-17','main','신소재공학부 고분자공학전공','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-18','main','신소재공학부 금속재료공학전공','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-19','main','신소재공학부 세라믹공학전공','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-20','main','산업시스템공학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-21','main','건축학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-22','main','에너지시스템공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-23','main','건설시스템공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-24','main','인테리어재료공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-25','main','조경학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-26','main','AI컴퓨터공학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-27','main','반도체공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-28','main','전기공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-29','main','전자공학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-30','main','제어로봇공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-31','main','생물산업기계공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-32','main','지역시스템공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-33','main','법학부','division','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-34','main','일반사회교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-35','main','일어교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-36','main','지리교육과','department','social',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-37','main','생물교육과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-38','main','미술교육과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-39','main','체육교육과','department','interdisciplinary',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-40','main','간호학과','department','natural',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-41','main','조선해양공학과','department','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간'),
+  ('kcue_0000007','b3-gnu-42','main','해양식품공학·수산생명의학부','division','engineering',0,true,true,'2027 모집요강 실존 학과 — KCUE 미등재 수동 추가 (batch3 거점국립대, 2026-06-03)',NOW(),'학사','주간')
+ON CONFLICT (university_id, id) DO NOTHING;

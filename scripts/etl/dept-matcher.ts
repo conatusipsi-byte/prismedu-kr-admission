@@ -9,8 +9,8 @@
 export function norm(s: string): string {
   return s
     .normalize("NFC")
-    // ㆍ(U+318D HANGUL LETTER ARAEA)·ᆢ(U+11A2) 도 장식 가운뎃점으로 취급 — 모집요강(·)↔DB(ㆍ) 문자차이 흡수
-    .replace(/[★◇◉*※☆▲△・·•∙ㆍᆢ\s]/g, "")
+    // 장식 가운뎃점 변종 흡수 — ㆍ(U+318D)·ᆢ(U+11A2)·‧(U+2027 HYPHENATION POINT)·∙(U+2219)·⋅(U+22C5) 등
+    .replace(/[★◇◉*※☆▲△・·•∙ㆍᆢ‧⋅․．\s]/g, "")
     .replace(/[()（）]/g, "")
     .replace(/Ⅰ/g, "I").replace(/Ⅱ/g, "II").replace(/Ⅲ/g, "III")
     .toLowerCase();
@@ -83,6 +83,12 @@ export const NAME_ALIAS: Record<string, Record<string, string>> = {
   kcue_0000212: { // 홍익 — 개편 rename
     "조선해양모빌리티공학과": "조선해양공학과", "바이오화학융합공학과": "바이오화학공학과",
   },
+  // ── Phase 2 batch 3 (2026-06-03) — 9개 거점국립대. 학과↔학부 동일 base rename만 alias(stem 일치 검증). ──
+  //    학부(전공) 래핑·prefix 확장(산업디자인학과↔디자인학과(산업디자인전공), AI컴퓨터공학부↔컴퓨터공학부 등)은
+  //    오alias 위험 → 추정매칭 금지로 신규 INSERT 처리(near-dup 허용, 잘못된 부착 회피).
+  kcue_0000013: { "위성정보융합공학과": "위성정보융합공학전공" }, // 부경
+  kcue_0000027: { "생활환경복지학과": "생활환경복지학부" }, // 제주
+  kcue_0000023: { "글로벌비즈니스학과": "글로벌비즈니스학부" }, // 전남
 };
 
 /** univId 별 별칭 적용 — 없으면 원본 반환. */

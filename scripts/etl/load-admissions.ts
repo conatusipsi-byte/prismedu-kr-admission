@@ -73,6 +73,17 @@ const SOURCES: Source[] = [
   { file: `${B}/hongik-text.json`,  univId: "kcue_0000212", type: "text_extract", pdf: "univ/2027학년도_홍익대학교_수시모집요강_웹용_0529.pdf" },
   { file: `${B}/gachon-text.json`,  univId: "kcue_0000063", type: "text_extract", pdf: "univ/20260522154511HBZYTW.pdf" },
   { file: `${B}/cau-text.json`,     univId: "kcue_0000175", type: "text_extract", pdf: "univ/2027학년도 중앙대학교 수시모집요강_20260529_VF.pdf" },
+  // ── Phase 2 batch 3 (2026-06-03) — 신규 9개 거점국립대. pdftotext + 본체 직접 구조화($0). 행합·열합·grand total 원문대조·central-verify 통과. ──
+  //    서울과기대(seoultech)는 PDF 파일명 "(안)" = 초안. meta.draft=true 기록, 확정본 교체 시 재적재.
+  { file: `${B}/pukyong-text.json`,   univId: "kcue_0000013", type: "text_extract", pdf: "univ/2027학년도 수시 신입생 모집요강(배포용)최종.pdf" },
+  { file: `${B}/jeju-text.json`,      univId: "kcue_0000027", type: "text_extract", pdf: "univ/705605111b3afcc6c8075dbd0480d3a7.pdf" },
+  { file: `${B}/kongju-text.json`,    univId: "kcue_0000008", type: "text_extract", pdf: "univ/2027학년도 수시 신입생 모집요강_26.05.29..pdf" },
+  { file: `${B}/hanbat-text.json`,    univId: "kcue_0000039", type: "text_extract", pdf: "univ/2027학년도 신입생 수시모집요강.pdf" },
+  { file: `${B}/chonnam-text.json`,   univId: "kcue_0000023", type: "text_extract", pdf: "univ/2027-susi-0529.pdf" },
+  { file: `${B}/chungbuk-text.json`,  univId: "kcue_0000030", type: "text_extract", pdf: "univ/2027학년도+대학입학전형+수시+신입생+모집요강.pdf" },
+  { file: `${B}/jeonbuk-text.json`,   univId: "kcue_0000025", type: "text_extract", pdf: "univ/전북대학교 2027학년도 대입전형 수시 모집요강_최초공지.pdf" },
+  { file: `${B}/seoultech-text.json`, univId: "kcue_0000036", type: "text_extract", pdf: "univ/서울과학기술대학교 2027학년도 수시 신입생 모집요강(안).pdf" },
+  { file: `${B}/gnu-text.json`,       univId: "kcue_0000007", type: "text_extract", pdf: "univ/(경상국립대)2027학년도 신입생 수시 모집요강(배포용).pdf" },
 ];
 
 /* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */

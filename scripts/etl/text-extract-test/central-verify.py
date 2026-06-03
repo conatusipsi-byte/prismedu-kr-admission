@@ -39,6 +39,16 @@ FILES = {
     "가천대":   BASE / "gachon-text.json",
     "중앙대":   BASE / "cau-text.json",
     "아주대":   BASE / "aju-text.json",
+    # ── Phase 2 batch 3 (2026-06-03) — 신규 9개 거점국립대 ──
+    "부경대":     BASE / "pukyong-text.json",
+    "제주대":     BASE / "jeju-text.json",
+    "공주대":     BASE / "kongju-text.json",
+    "한밭대":     BASE / "hanbat-text.json",
+    "전남대":     BASE / "chonnam-text.json",
+    "충북대":     BASE / "chungbuk-text.json",
+    "전북대":     BASE / "jeonbuk-text.json",
+    "서울과기대": BASE / "seoultech-text.json",
+    "경상국립대": BASE / "gnu-text.json",
 }
 
 TRACKTYPE_ENUM = {"학생부위주(교과)","학생부위주(종합)","논술위주","실기/실적위주","수능위주","기타"}
