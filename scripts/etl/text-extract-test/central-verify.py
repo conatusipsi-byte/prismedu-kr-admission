@@ -29,6 +29,16 @@ FILES = {
     "부산":   BASE / "pusan-text.json",
     "강원대(춘천·삼척)": BASE / "kangwon_chuncheon-text.json",
     "경북대": BASE / "knu-text.json",
+    # ── Phase 2 batch 2 (2026-06-03) — 신규 9개 (아주대는 브로셔=모집그리드 없음) ──
+    "서울시립": BASE / "uos-text.json",
+    "이화여대": BASE / "ewha-text.json",
+    "인하대":   BASE / "inha-text.json",
+    "건국대":   BASE / "konkuk-text.json",
+    "동국대":   BASE / "dongguk-text.json",
+    "홍익대":   BASE / "hongik-text.json",
+    "가천대":   BASE / "gachon-text.json",
+    "중앙대":   BASE / "cau-text.json",
+    "아주대":   BASE / "aju-text.json",
 }
 
 TRACKTYPE_ENUM = {"학생부위주(교과)","학생부위주(종합)","논술위주","실기/실적위주","수능위주","기타"}

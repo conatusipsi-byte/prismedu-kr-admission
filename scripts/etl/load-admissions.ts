@@ -62,6 +62,17 @@ const SOURCES: Source[] = [
   { file: `${B}/knu-text.json`,               univId: "kcue_0000005", type: "text_extract", pdf: "univ/knu_2027_susi.pdf" },
   { file: `${B}/pusan-text.json`,             univId: "pusan",        type: "text_extract", pdf: "univ/pusan_2027_susi.pdf" },
   { file: `${B}/kangwon_chuncheon-text.json`, univId: "kcue_0000003", type: "text_extract", pdf: "univ/2027학년도 강원대학교 춘천·삼척（도계포함）캠퍼스 수시모집요강_공개용.pdf" },
+  // ── Phase 2 batch 2 (2026-06-03) — 텍스트 추출, Zod·행합·열합·표본 원문대조 통과. ──
+  //    아주대(aju)는 업로드 PDF가 모집요강이 아닌 '입학전형 안내 브로셔'라 모집인원 그리드 부재 → 제외(2027 수시 요강 재수급 대기).
+  //    중앙대(cau)는 정원외/기회균형 특별전형 열합 미일치(checksumPassed=false)로 무결성 게이트가 거부 → 특별전형 귀속 재정합 후 재적재.
+  { file: `${B}/uos-text.json`,     univId: "kcue_0000040", type: "text_extract", pdf: "univ/2027학년도 수시모집 신입생 모집요강.pdf" },
+  { file: `${B}/ewha-text.json`,    univId: "kcue_0000163", type: "text_extract", pdf: "univ/20260602125244F7AFE4.pdf" },
+  { file: `${B}/inha-text.json`,    univId: "kcue_0000169", type: "text_extract", pdf: "univ/2027학년도 인하대학교 수시모집요강_20260529.pdf" },
+  { file: `${B}/konkuk-text.json`,  univId: "kcue_0000052", type: "text_extract", pdf: "univ/2027학년도 건국대학교 수시모집요강(단면)_260528.pdf" },
+  { file: `${B}/dongguk-text.json`, univId: "kcue_0000100", type: "text_extract", pdf: "univ/20260601115911UVEHWG.pdf" },
+  { file: `${B}/hongik-text.json`,  univId: "kcue_0000212", type: "text_extract", pdf: "univ/2027학년도_홍익대학교_수시모집요강_웹용_0529.pdf" },
+  { file: `${B}/gachon-text.json`,  univId: "kcue_0000063", type: "text_extract", pdf: "univ/20260522154511HBZYTW.pdf" },
+  { file: `${B}/cau-text.json`,     univId: "kcue_0000175", type: "text_extract", pdf: "univ/2027학년도 중앙대학교 수시모집요강_20260529_VF.pdf" },
 ];
 
 /* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */

@@ -1,0 +1,5597 @@
+{
+  "meta": {
+    "universityName": "서울시립대학교",
+    "universityId": "kcue_0000040",
+    "year": 2027,
+    "sourceDocYear": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용, $0)",
+    "visionCost": 0.0,
+    "campusScope": "단일 캠퍼스 (서울 동대문)",
+    "departments": 40,
+    "totalTracks": 159,
+    "checksumPassed": true,
+    "rowSumValidation": {
+      "basis": "수시모집합계(정원내) 칼럼",
+      "passed": 40,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "논술",
+        "computed": 88,
+        "expectedSumRow": 88,
+        "match": true
+      },
+      {
+        "track": "고교추천",
+        "computed": 254,
+        "expectedSumRow": 254,
+        "match": true
+      },
+      {
+        "track": "종합Ⅰ",
+        "computed": 410,
+        "expectedSumRow": 410,
+        "match": true
+      },
+      {
+        "track": "종합Ⅱ",
+        "computed": 99,
+        "expectedSumRow": 99,
+        "match": true
+      },
+      {
+        "track": "기회균형",
+        "computed": 132,
+        "expectedSumRow": 132,
+        "match": true
+      },
+      {
+        "track": "사회공헌",
+        "computed": 46,
+        "expectedSumRow": 46,
+        "match": true
+      },
+      {
+        "track": "실기",
+        "computed": 7,
+        "expectedSumRow": 7,
+        "match": true
+      }
+    ],
+    "colTotalGye": {
+      "computed": 1036,
+      "expected": 1036,
+      "match": true
+    },
+    "fillRatios": {
+      "quotaInitial": [
+        159,
+        159
+      ],
+      "reflectionStages": [
+        159,
+        159
+      ],
+      "csatMinimumRawText": [
+        159,
+        159
+      ],
+      "csatMinimumExempt": [
+        159,
+        159
+      ],
+      "sourcePages": [
+        159,
+        159
+      ]
+    },
+    "completeRecords": [
+      159,
+      159
+    ]
+  },
+  "result": {
+    "universityName": "서울시립대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "행정학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국제관계학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경제학부",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅱ(서류형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              19
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "세무학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학부",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 125,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅱ(서류형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 80,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              19
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영어영문학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국어국문학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국사학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "중국어문화학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "도시행정학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "도시사회학과",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공학부(인문)",
+        "campus": "서울",
+        "trackHint": "인문",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전자전기컴퓨터공학부",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 78,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "화학공학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "기계정보공학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "신소재공학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "토목공학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "수학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "통계학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "생명과학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "환경원예학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "융합응용화학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학부(건축공학전공)",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학부(건축학전공)",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "도시공학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "교통공학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "조경학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "환경공학부",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공간정보공학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공학부(자연)",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "첨단융합학부 융합바이오헬스전공",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 4,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "첨단융합학부 첨단인공지능전공",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 2,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "첨단융합학부 지능형반도체전공",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터과학부",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인공지능학과",
+        "campus": "서울",
+        "trackHint": "자연",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술고사": 80,
+                  "학교생활기록부(교과)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "고교추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 2026년 이후 졸업(예정)자 중 소속 고등학교장의 추천을 받은 자로서 2027학년도 대학수학능력시험 응시자. 3학년 1학기까지 국내 고등학교 교육과정에서 통산 5학기 이상의 성적 취득자. 고등학교별 추천인원 20명 이내.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학교생활기록부(교과) 공통·일반선택과목": 70,
+                  "학교생활기록부(교과) 진로선택과목": 10,
+                  "교과 정성평가": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학 중 상위 1과목) 중 3개 영역 등급합 8이내 및 한국사 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어(화법과작문, 언어와매체 중 택1), 수학(확률과통계, 미적분, 기하 중 택1), 영어, 탐구(사회/과학), 한국사",
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          },
+          {
+            "trackName": "기회균형전형Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 국가보훈대상자(교육지원대상자) ② 국민기초생활수급권자·수급자 ③ 차상위계층(복지급여수급자) ④ 한부모가족지원법 지원대상 가구 학생 ⑤ 특성화고교 전 학년 이수 졸업(예정)자(동일계열 지원자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              22
+            ]
+          },
+          {
+            "trackName": "사회공헌·통합전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자로서 다음 중 하나에 해당: ① 독립유공자 후손(증손자녀 이하) ② 민주화운동관련자 또는 그의 자녀 ③ 의사자 자녀 및 의상자(1~6급) 또는 그 자녀 ④ 다문화가정 자녀(대한민국 국적자) ⑤ 다자녀(3자녀이상)가정 자녀 ⑥ 난민 또는 그의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "음악학과",
+        "campus": "서울",
+        "trackHint": "예체능",
+        "totalQuotaHint": 7,
+        "tracks": [
+          {
+            "trackName": "실기전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "초·중등교육법 시행령 제76조의3에 따른 국내 고등학교 졸업(예정)자. 학교생활기록부 교과 성적 산출 가능자(최소 3학기 이상 성적). 해당 모집단위: 음악학과(성악전공)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기평가": 90,
+                  "학교생활기록부(교과)": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학과",
+        "campus": "서울",
+        "trackHint": "예체능",
+        "totalQuotaHint": 8,
+        "tracks": [
+          {
+            "trackName": "학생부종합전형Ⅰ(면접형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(졸업예정자) 또는 법령에 의하여 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계(3배수)",
+                "multiplier": 3,
+                "components": {
+                  "서류평가": 100
+                },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류평가": 50,
+                  "면접평가": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              16
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "[수시 미선발(계=0)] 디자인학과(시각디자인전공), 디자인학과(산업디자인전공), 조각학과는 수시모집합계=0(정시 선발 전용) → 학과 자체를 생성하지 않음(정직: 빈 전형 날조 금지). PDF p2 그리드에서 해당 행의 수시합계 칼럼이 '-'(0)임을 직접 확인.",
+      "[첨단융합학부] PDF p2 그리드에서 '첨단', '융합', '학부' 라벨이 3행에 걸쳐 수직 분포. 각 행에 '융합바이오헬스전공(입학정원6·수시4)', '첨단인공지능전공(입학정원5·수시2)', '지능형반도체전공(입학정원26·수시16)'이 명시되어 있으며, 별도 모집단위로 파싱. 모집단위명은 PDF 원문의 '첨단 융합바이오헬스전공', '융합 첨단인공지능전공', '학부 지능형반도체전공' 텍스트 레이아웃을 읽어 '첨단융합학부 OO전공' 형태로 정규화.",
+      "[캠퍼스] 서울시립대학교는 단일 캠퍼스(서울 동대문구 서울시립대로 163). PDF 전체에 분교·캠퍼스 분리 없음 → 전 학과 campus='서울'."
+    ]
+  }
+}
