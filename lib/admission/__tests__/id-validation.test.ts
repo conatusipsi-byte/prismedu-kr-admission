@@ -28,6 +28,12 @@ describe("isValidAdmissionId", () => {
     }
   });
 
+  it("NFD(자모 분해) 한글은 거부 — 호출부가 NFC 정규화해야 통과 (버그 2차 원인)", () => {
+    const nfd = "gap-미래토목건설공학과".normalize("NFD");
+    expect(isValidAdmissionId(nfd)).toBe(false); // 분해형 자모는 가-힣 아님 → 거부
+    expect(isValidAdmissionId(nfd.normalize("NFC"))).toBe(true); // NFC 정규화 후 통과
+  });
+
   it("빈 문자열·길이 초과 불허", () => {
     expect(isValidAdmissionId("")).toBe(false);
     expect(isValidAdmissionId("a".repeat(51))).toBe(false);

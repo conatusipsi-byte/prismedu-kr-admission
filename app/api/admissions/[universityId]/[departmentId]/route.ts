@@ -23,7 +23,10 @@ export async function GET(
   _req: NextRequest,
   ctx: { params: Promise<{ universityId: string; departmentId: string }> },
 ): Promise<NextResponse> {
-  const { universityId, departmentId } = await ctx.params;
+  const raw = await ctx.params;
+  // 한글 id 는 NFC 정규화(클라/Next 가 NFD 로 보낼 수 있음 → DB(NFC) 와 일치시켜야 매칭).
+  const universityId = raw.universityId.normalize("NFC");
+  const departmentId = raw.departmentId.normalize("NFC");
   // 한글 department_id 허용 (id-validation). 구버전 ASCII-only 는 한글 학과를 400 으로 막았음.
   if (!isValidAdmissionId(universityId) || !isValidAdmissionId(departmentId)) {
     return NextResponse.json({ error: "유효하지 않은 ID" }, { status: 400 });

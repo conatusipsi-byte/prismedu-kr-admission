@@ -41,8 +41,11 @@ export async function fetchDepartmentDetail(
   universityId: string,
   departmentId: string,
 ): Promise<DepartmentDetail | null> {
-  // ID 검증 — 캐시 키 안정성 + PostgREST 필터 안전. 한글 음절 허용(한글 department_id 지원).
-  // (구버전은 ASCII 만 허용 → 한글 id 학과 상세가 통째로 빈 페이지였음. 55개 학과 영향.)
+  // ⚠️ 한글 id 정규화 — Next.js 가 Server Component route param 을 NFD(자모 분해)로 전달하는 경우
+  // 가 있어, DB(NFC) 와 불일치 → 매칭 실패(한글 학과 빈 페이지, 55개). NFC 로 정규화해 일치시킨다.
+  universityId = universityId.normalize("NFC");
+  departmentId = departmentId.normalize("NFC");
+  // ID 검증 — 캐시 키 안정성 + PostgREST 필터 안전. 한글 음절(가-힣) 허용.
   if (!isValidAdmissionId(universityId)) return null;
   if (!isValidAdmissionId(departmentId)) return null;
 
