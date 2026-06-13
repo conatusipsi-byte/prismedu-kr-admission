@@ -20,6 +20,7 @@ import {
   InquiryCreateSchema,
   InquiryListQuerySchema,
 } from "@/lib/schemas/api/inquiries";
+import { sendInquiryAdminNotification } from "@/lib/notify/inquiry-admin-notify";
 
 export const dynamic = "force-dynamic";
 
@@ -145,8 +146,33 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     );
   }
 
+  const row = data as InquiryRow;
+
+  // 운영자 알림 — best-effort. 발송 실패/미설정이 문의 접수(201)를 막지 않음 (P-002).
+  // MASTER_EMAILS·RESEND_API_KEY 미설정 시 notify 내부에서 graceful skip.
+  try {
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://conatusipsi.com";
+    const notify = await sendInquiryAdminNotification({
+      inquiryId: row.id,
+      category: row.category,
+      title: row.title,
+      body: row.body,
+      authorEmail: row.contact_email,
+      createdAt: row.created_at,
+      siteUrl,
+    });
+    if (!notify.ok) {
+      console.warn(`[/api/inquiries POST] 운영자 알림 skip: ${notify.reason}${notify.detail ? ` (${notify.detail})` : ""}`);
+    } else {
+      console.info(`[/api/inquiries POST] 운영자 알림 발송: ${notify.recipientCount}명`);
+    }
+  } catch (e) {
+    // notify 는 내부에서 throw 하지 않지만, 어떤 경우에도 201 을 보장.
+    console.warn("[/api/inquiries POST] 운영자 알림 예외:", (e as Error).message);
+  }
+
   return NextResponse.json(
-    { ok: true, inquiry: rowToDto(data as InquiryRow) },
+    { ok: true, inquiry: rowToDto(row) },
     { status: 201 },
   );
 }
