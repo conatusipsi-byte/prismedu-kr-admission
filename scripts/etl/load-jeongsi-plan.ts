@@ -163,6 +163,80 @@ function koreaTrack(quota: number, gye: "H" | "N"): AdmissionTrack {
   };
 }
 
+/* ───── 연세대 배치2 (2027 전형계획) — 정시 '가'군 수능위주 ─────
+   ⚠️ 반영방법 복잡(수능 유형 Ⅰ/Ⅱ/Ⅲ별 상이 + 총점 환산) → reflectionRatio 생략, 군·인원+비고만.
+   인원 = 정시 '가'군 일반전형 모집인원(총괄표 직독). 광역(상경계열·첨단컴퓨팅)·정원외계약학과(시스템반도체·디스플레이) skip. */
+const YONSEI_NOTE =
+  "2027 전형시행계획(예정) · 정시 가군 수능위주 일반전형 · 수능 영역별 반영은 수능유형(인문/자연/통합)별로 " +
+  "상이하고 총점 환산식 적용 → 영역별 반영비율·환산 상세는 정시모집요강(12월 확정본) 확인 · 변환표준점수 12월 공지";
+function yonseiTrack(quota: number): AdmissionTrack {
+  return {
+    kind: "jeongsi_ga",
+    name: "수능전형(일반전형)",
+    specialType: "general",
+    quotaInitial: quota,
+    stages: [{ step: 1, components: { csat: 100 } }],
+    conversionTable: { status: "not_applicable" },
+    planStatus: "preliminary",
+    planSource: { kind: "admission_plan", publishedYear: PLAN_PUBLISHED_YEAR, sourceUrl: "연세대학교 2027학년도 대학입학전형 시행계획 (2025.04, 입학처 공개 PDF)" },
+    notes: YONSEI_NOTE,
+  };
+}
+const YONSEI_DEPTS: Array<[string, number]> = [
+  ["u01010200008-ba-d", 18], ["u01010400016-ba-d", 13], ["u01010600018-ba-d", 31], ["u01010700003-ba-d", 13],
+  ["u01011000004-ba-d", 12], ["u01010800003-ba-d", 13], ["u01020400006-ba-d", 19], ["u01020700029-ba-d", 14],
+  ["u01020100006-ba-d", 13], ["u01020300006-ba-d", 12], ["u02010200015-ba-d", 41], ["u05040200009-ba-d", 14],
+  ["business", 113], ["u05040100016-ba-d", 13], ["u05040300016-ba-d", 11], ["u05020500010-ba-d", 14],
+  ["u05040500007-ba-d", 10], ["u05040400010-ba-d", 9], ["u05040400001-ba-d", 8], ["u04100100036-ba-d", 22],
+  ["u04050200006-ba-d", 57], ["u04010100003-ba-d", 19], ["u04020200003-ba-d", 12], ["u05020600005-ba-d", 25],
+  ["u04040100012-ba-d", 36], ["u04070300012-ba-d", 29], ["u04090100017-ba-d", 12], ["u05020100017-ba-d", 14],
+  ["u05020200137-ba-d", 4], ["u05020200029-ba-d", 3], ["u05020100010-ba-d", 15], ["u02010300101-ba-d", 4],
+  ["u04070100114-ba-d", 13], ["u01020500028-ba-d", 22], ["u02030600012-ba-d", 30], ["u02030700081-ba-d", 29],
+  ["u02030100029-ba-d", 13], ["u02030400005-ba-d", 12], ["u01020200007-ba-d", 5], ["u02010400027-ba-d", 16],
+];
+
+/* ───── 서울대 배치2 (2027 전형계획) — 정시 '나'군 ─────
+   ⚠️ 수능 + 교과평가(2단계) 환산·감점 복합 → reflectionRatio·단계비율 단정 안 함(stages 비움), 군·인원+비고만.
+   인원 = 정시 '나'군 일반전형 모집인원(총괄표 직독, 합계 검산). 광역(인문계열 등)·실기위주(미대/음대/체육)·이름 불일치 skip. */
+const SNU_NOTE =
+  "2027 전형시행계획(예정) · 정시 나군 일반전형 · 수능 + 교과평가(2단계) 환산·감점 복합 구조 → " +
+  "영역별 반영방법·단계 비율 상세는 정시모집요강(12월 확정본) 확인 · 변환표준점수 12월 공지";
+function snuTrack(quota: number): AdmissionTrack {
+  return {
+    kind: "jeongsi_na",
+    name: "수능전형(일반전형)",
+    specialType: "general",
+    quotaInitial: quota,
+    stages: [], // 수능+교과평가 복합 — 비율 단정 않음(정직성). 비고 참고.
+    conversionTable: { status: "not_applicable" },
+    planStatus: "preliminary",
+    planSource: { kind: "admission_plan", publishedYear: PLAN_PUBLISHED_YEAR, sourceUrl: "서울대학교 2027학년도 대학입학전형 시행계획 (2025.04, 입학처 공개 PDF)" },
+    notes: SNU_NOTE,
+  };
+}
+const SNU_DEPTS: Array<[string, number]> = [
+  // 공과대학
+  ["u04040100012-ba-d", 32], ["u04070400012-ba-d", 32], ["u04050100050-ba-d", 52], ["computer-science", 28],
+  ["u05020200059-ba-d", 26], ["u04010200012-ba-d", 15], ["u04090100017-ba-d", 12], ["u04060200030-ba-d", 4],
+  ["u04060200009-ba-d", 6], ["gap-조선해양공학과", 16], ["u04030200017-ba-d", 12],
+  // 농업생명대학
+  ["gap-농경제사회학부", 13], ["u05020200031-ba-d", 26], ["u05010300005-ba-d", 16], ["u05020100127-ba-d", 17],
+  ["u05020200045-ba-d", 12], ["gap-조경지역시스템공학부", 17], ["u05020100128-ba-d", 14], ["u05010100148-ba-d", 10],
+  // 자연과학대학
+  ["u05040100006-ba-d", 9], ["u05040200022-ba-d", 7], ["u05040300091-ba-d", 12], ["u05040400030-ba-d", 5],
+  ["u05020500012-ba-d", 13], ["u05020100017-ba-d", 20], ["u05020600020-ba-d", 9],
+  // 사회과학대학
+  ["u02030600015-ba-d", 16], ["u02010200015-ba-d", 54], ["u02030400005-ba-d", 10], ["u01020300006-ba-d", 9],
+  ["u05040500013-ba-d", 8], ["u02030500048-ba-d", 7],
+  // 사범대학(일반학과)
+  ["u03050100002-ba-d", 10], ["u03050100010-ba-d", 8], ["u03050300002-ba-d", 6], ["u03050300007-ba-d", 6],
+  ["u03050300014-ba-d", 6], ["u03050200011-ba-d", 5], ["u03050500018-ba-d", 10], ["u03050500010-ba-d", 10],
+  ["u03050500023-ba-d", 7], ["u03050500013-ba-d", 8], ["u03050500021-ba-d", 8],
+  // 생활과학대학 + 수의대
+  ["u05030100075-ba-d", 8], ["u05030100076-ba-d", 7], ["u05030200045-ba-d", 12], ["u05030300008-ba-d", 8],
+  ["u05020300002-ba-d", 15],
+];
+
 const PILOT: JeongsiSeedRow[] = [
   { universityId: "pusan", departmentId: "u04040100012-ba-d", jeongsi: [PUSAN_MECH_JEONGSI] },
   ...KOREA_DEPTS.map(([id, quota, gye]) => ({
@@ -170,6 +244,8 @@ const PILOT: JeongsiSeedRow[] = [
     departmentId: id,
     jeongsi: [koreaTrack(quota, gye)],
   })),
+  ...YONSEI_DEPTS.map(([id, quota]) => ({ universityId: "yonsei", departmentId: id, jeongsi: [yonseiTrack(quota)] })),
+  ...SNU_DEPTS.map(([id, quota]) => ({ universityId: "snu", departmentId: id, jeongsi: [snuTrack(quota)] })),
 ];
 
 const JEONGSI_KINDS: AdmissionTrackKind[] = ["jeongsi_ga", "jeongsi_na", "jeongsi_da"];
