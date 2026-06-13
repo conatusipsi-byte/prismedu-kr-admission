@@ -14,10 +14,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronRight, Lock } from "lucide-react";
+import { ChevronRight, Lock, Sparkles } from "lucide-react";
 import { AdmissionDetailHero } from "@/components/admissions/AdmissionDetailHero";
 import { TrackDetailCard } from "@/components/admissions/TrackDetailCard";
 import { CsatMinChecker } from "@/components/admissions/CsatMinChecker";
+import { AdmissionFitPanel } from "@/components/admissions/AdmissionFitPanel";
 import { PrevYearResultCard } from "@/components/admissions/PrevYearResultCard";
 import { ProbabilitySection } from "@/components/admissions/ProbabilitySection";
 import { AnalysisCtaBox } from "@/components/admissions/AnalysisCtaBox";
@@ -111,6 +112,7 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
             { href: "#overview",    label: "개요" },
             { href: "#tracks",      label: "모집요강" },
             { href: "#csat-min",    label: "수능최저 충족" },
+            { href: "#ai-fit",      label: "AI 적합도", icon: <Sparkles className="h-3 w-3" /> },
             { href: "#probability", label: "합격률 분석", icon: <Lock className="h-3 w-3" /> },
             { href: "#prev-trend",  label: "경쟁률 추이" },
             { href: "#similar",     label: "유사 학과" },
@@ -178,7 +180,16 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
               />
             )}
 
-            {/* 합격률 분석 (Gated) — 클라이언트 wrapper 가 로그인 상태 판정 */}
+            {/* AI 적합도 분석 (Layer 1) — 입결 없이 "전형 요구 대비 적합도". Pro·명시적 클릭 1회만 AI 호출. */}
+            {allTracks.length > 0 && (
+              <AdmissionFitPanel
+                universityId={universityId}
+                departmentId={departmentId}
+                tracks={allTracks.map(({ kind, track }) => ({ kind, name: track.name }))}
+              />
+            )}
+
+            {/* 합격률 분석 (Gated, Layer 2) — 클라이언트 wrapper 가 로그인 상태 판정 */}
             <ProbabilitySection
               trackKind={primaryTrackKind}
               sampleSufficient={sampleSufficient}
