@@ -87,7 +87,6 @@ export function CsatMinChecker({ tracks }: { tracks: CsatMinTrack[] }): React.Re
 
   const csat = buildCsat(grades);
   const complete = csat != null;
-  const withMin = tracks.filter((t) => t.csatMinimum);
 
   return (
     <section
@@ -135,14 +134,12 @@ export function CsatMinChecker({ tracks }: { tracks: CsatMinTrack[] }): React.Re
         </p>
       )}
 
-      {/* 전형별 판정 */}
-      {withMin.length === 0 ? (
-        <p className="text-sm text-muted-foreground break-keep-all">
-          이 학과의 등록된 전형에는 수능최저학력기준이 없습니다. (수능최저 미적용)
-        </p>
+      {/* 전형별 판정 — 모든 전형 표시(수능최저 없는 전형은 '미적용' 명시) */}
+      {tracks.length === 0 ? (
+        <p className="text-sm text-muted-foreground break-keep-all">등록된 전형이 없습니다.</p>
       ) : (
         <ul className="flex flex-col gap-2">
-          {withMin.map((t, i) => (
+          {tracks.map((t, i) => (
             <CsatMinRow key={`${t.kind}-${i}`} track={t} csat={csat} />
           ))}
         </ul>
@@ -159,8 +156,21 @@ export function CsatMinChecker({ tracks }: { tracks: CsatMinTrack[] }): React.Re
 
 function CsatMinRow({ track, csat }: { track: CsatMinTrack; csat: CsatScore | null }): React.ReactElement {
   const [open, setOpen] = React.useState(false);
-  const min = track.csatMinimum!;
+  const min = track.csatMinimum;
   const label = `${TRACK_KIND_LABELS[track.kind]} · ${track.name}`;
+
+  // 수능최저 미적용 전형
+  if (!min) {
+    return (
+      <li className="rounded-2xl border border-border bg-background p-3">
+        <div className="flex items-center justify-between gap-2">
+          <span className="min-w-0 truncate text-sm font-semibold">{label}</span>
+          <StatusChip tone="neutral" icon={<Info className="h-3 w-3" />}>수능최저 없음</StatusChip>
+        </div>
+        <p className="mt-1 text-2xs text-muted-foreground">이 전형은 수능최저학력기준을 적용하지 않습니다.</p>
+      </li>
+    );
+  }
 
   // 복잡 케이스 — 자동 판정 X, 원문만
   if (!min.autoEvaluable) {
