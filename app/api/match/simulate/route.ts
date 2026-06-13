@@ -11,17 +11,8 @@ import {
   MatchSimulateSchema,
   type KrSpecsInput,
 } from "@/lib/schemas/api/match";
-import {
-  matchKrAdmissions,
-  type MatchCandidate,
-} from "@/lib/matching-kr";
-import { loadSampleStatsBatch, sampleStatId } from "@/lib/admission/sample-stats";
-import type {
-  AdmissionTrackKind,
-  Department,
-  DepartmentAdmissions,
-  University,
-} from "@/types/admission";
+import { matchKrAdmissions } from "@/lib/matching-kr";
+import { loadKrCandidates } from "@/lib/admission/candidate-loader";
 
 const DEFAULT_CANDIDATE_LIMIT = 60;
 
@@ -86,7 +77,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       );
     }
 
-    const candidates = await loadCandidates(validated.data, DEFAULT_CANDIDATE_LIMIT);
+    const candidates = await loadKrCandidates(validated.data, DEFAULT_CANDIDATE_LIMIT);
     const { results, globalCaveats } = matchKrAdmissions({
       specs: validated.data,
       candidates,
@@ -173,86 +164,4 @@ async function loadPlan(uid: string): Promise<"free" | "pro" | "elite"> {
   }
 }
 
-async function loadCandidates(
-  specs: KrSpecsInput,
-  limit: number,
-): Promise<MatchCandidate[]> {
-  const sb = getAdminSupabase();
-  const year = new Date().getFullYear() + 1;
-
-  const { data, error } = await sb
-    .from("departments")
-    .select(`
-      id, university_id, name, track, active, updated_at,
-      universities!inner ( id, n, category, campuses, active ),
-      department_admissions!inner ( year, tracks, available_track_kinds, prev_year_result )
-    `)
-    .eq("active", true)
-    .eq("universities.active", true)
-    .eq("department_admissions.year", year)
-    .order("updated_at", { ascending: false })
-    .limit(limit);
-
-  if (error || !data) return [];
-
-  type Row = {
-    id: string;
-    university_id: string;
-    name: string;
-    track: Department["track"];
-    universities: { id: string; n: string; category: University["category"]; campuses: University["campuses"]; active: boolean };
-    department_admissions: Array<{
-      year: number;
-      tracks: DepartmentAdmissions["tracks"];
-      available_track_kinds: AdmissionTrackKind[];
-      prev_year_result: DepartmentAdmissions["prevYearResult"];
-    }>;
-  };
-
-  // 1차 패스: 필터 통과 후보 수집(sampleStats 제외) + stat id 목록. (N+1 제거 — P2 1-1)
-  const pending: Array<Omit<MatchCandidate, "sampleStats"> & { statId: string }> = [];
-  for (const raw of data as unknown as Row[]) {
-    const univ = raw.universities;
-    const admissions = raw.department_admissions[0];
-    if (!admissions) continue;
-
-    if (!matchesUiTrack(specs.basic.track, raw.track)) continue;
-    if (specs.filter?.category && univ.category !== specs.filter.category) continue;
-    if (
-      specs.filter?.region &&
-      !univ.campuses.some((c) => c.region === specs.filter!.region)
-    ) continue;
-
-    for (const trackKind of admissions.available_track_kinds) {
-      if (trackKind === "jaeoegukmin") continue;
-      const trackList = admissions.tracks[trackKind] ?? [];
-      for (const track of trackList) {
-        pending.push({
-          universityId: univ.id,
-          universityName: univ.n,
-          departmentId: raw.id,
-          departmentName: raw.name,
-          trackKind,
-          trackName: track.name,
-          track,
-          prevYearResult: admissions.prev_year_result,
-          statId: sampleStatId(univ.id, raw.id, year, trackKind),
-        });
-      }
-    }
-  }
-
-  // 2차: sample_stats 를 .in() 배치로 일괄 조회 (직렬 N+1 → 청크 쿼리). 결과는 id 별 동일.
-  const statsById = await loadSampleStatsBatch(pending.map((p) => p.statId));
-  return pending.map(({ statId, ...rest }) => ({ ...rest, sampleStats: statsById.get(statId) }));
-}
-
-function matchesUiTrack(
-  uiTrack: KrSpecsInput["basic"]["track"],
-  depTrack: Department["track"],
-): boolean {
-  if (uiTrack === "humanities") return depTrack === "humanities" || depTrack === "social" || depTrack === "interdisciplinary";
-  if (uiTrack === "natural") return depTrack === "natural" || depTrack === "engineering" || depTrack === "medical" || depTrack === "interdisciplinary";
-  if (uiTrack === "arts") return depTrack === "arts";
-  return false;
-}
+/* 후보 로딩은 lib/admission/candidate-loader.ts(loadKrCandidates)로 통합 — match 와 동일. */

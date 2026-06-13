@@ -23,21 +23,13 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { reportRouteError } from "@/lib/sentry-report";
-import { KrSpecsSchema, type KrSpecsInput, type MatchResultItem } from "@/lib/schemas/api/match";
+import { KrSpecsSchema, type MatchResultItem } from "@/lib/schemas/api/match";
 import {
   matchKrAdmissions,
   type CandidateProbability,
-  type MatchCandidate,
 } from "@/lib/matching-kr";
 import { isLockable, type Plan } from "@/lib/admission/sample-gate";
-import { loadSampleStatsBatch, sampleStatId } from "@/lib/admission/sample-stats";
-import type {
-  AdmissionTrack,
-  AdmissionTrackKind,
-  Department,
-  DepartmentAdmissions,
-  University,
-} from "@/types/admission";
+import { loadKrCandidates } from "@/lib/admission/candidate-loader";
 
 const FREE_PREVIEW_QUOTA = 20;
 const DEFAULT_CANDIDATE_LIMIT = 60;
@@ -61,7 +53,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const plan = await loadPlan(auth.uid);
     const limit = clampLimit(specs.filter?.limit, plan);
 
-    const candidates = await loadCandidates(specs, limit);
+    const candidates = await loadKrCandidates(specs, limit);
     if (candidates.length === 0) {
       return NextResponse.json(
         {
@@ -145,100 +137,6 @@ async function loadPlan(uid: string): Promise<Plan> {
 function clampLimit(req: number | undefined, plan: Plan): number {
   if (plan === "free") return Math.min(req ?? DEFAULT_CANDIDATE_LIMIT, DEFAULT_CANDIDATE_LIMIT);
   return Math.min(req ?? DEFAULT_CANDIDATE_LIMIT, MAX_CANDIDATE_LIMIT);
-}
-
-/**
- * 후보 학과 조회 — departments + 부모 university + department_admissions/{year} 한 번에.
- *
- * Postgres 임베드 select 로 N+1 회피.
- */
-async function loadCandidates(
-  specs: KrSpecsInput,
-  limit: number,
-): Promise<MatchCandidate[]> {
-  const sb = getAdminSupabase();
-  const year = new Date().getFullYear() + 1;
-
-  // PostgREST 의 임베드 select — universities 조인, department_admissions 조인.
-  // !inner 는 LEFT JOIN 대신 INNER JOIN (admissions 행 없으면 학과 자체 제외).
-  // 컬럼명 snake_case 주의.
-  const { data: rows, error } = await sb
-    .from("departments")
-    .select(`
-      id, university_id, name, track, active, updated_at,
-      universities!inner ( id, n, category, campuses, active ),
-      department_admissions!inner ( year, tracks, available_track_kinds, prev_year_result )
-    `)
-    .eq("active", true)
-    .eq("universities.active", true)
-    .eq("department_admissions.year", year)
-    .order("updated_at", { ascending: false })
-    .limit(limit);
-
-  if (error || !rows) return [];
-
-  type Row = {
-    id: string;
-    university_id: string;
-    name: string;
-    track: Department["track"];
-    universities: { id: string; n: string; category: University["category"]; campuses: University["campuses"]; active: boolean };
-    department_admissions: Array<{
-      year: number;
-      tracks: DepartmentAdmissions["tracks"];
-      available_track_kinds: AdmissionTrackKind[];
-      prev_year_result: DepartmentAdmissions["prevYearResult"];
-    }>;
-  };
-
-  // 1차 패스: 필터 통과 후보 수집(sampleStats 제외) + stat id 목록. (N+1 제거 — P2 1-1)
-  const pending: Array<Omit<MatchCandidate, "sampleStats"> & { statId: string }> = [];
-  for (const raw of rows as unknown as Row[]) {
-    const univ = raw.universities;
-    const admissions = raw.department_admissions[0];
-    if (!admissions) continue;
-
-    if (!matchesUiTrack(specs.basic.track, raw.track)) continue;
-    if (specs.filter?.category && univ.category !== specs.filter.category) continue;
-    if (
-      specs.filter?.region &&
-      !univ.campuses.some((c) => c.region === specs.filter!.region)
-    ) {
-      continue;
-    }
-
-    for (const trackKind of admissions.available_track_kinds) {
-      if (trackKind === "jaeoegukmin") continue;
-      const trackList = admissions.tracks[trackKind] ?? [];
-      for (const track of trackList) {
-        pending.push({
-          universityId: univ.id,
-          universityName: univ.n,
-          departmentId: raw.id,
-          departmentName: raw.name,
-          trackKind,
-          trackName: track.name,
-          track,
-          prevYearResult: admissions.prev_year_result,
-          statId: sampleStatId(univ.id, raw.id, year, trackKind),
-        });
-      }
-    }
-  }
-
-  // 2차: sample_stats 를 .in() 배치로 일괄 조회 (직렬 N+1 → 청크 쿼리). 결과는 id 별 동일.
-  const statsById = await loadSampleStatsBatch(pending.map((p) => p.statId));
-  return pending.map(({ statId, ...rest }) => ({ ...rest, sampleStats: statsById.get(statId) }));
-}
-
-function matchesUiTrack(
-  uiTrack: KrSpecsInput["basic"]["track"],
-  depTrack: AdmissionTrack["kind"] extends never ? never : Department["track"],
-): boolean {
-  if (uiTrack === "humanities") return depTrack === "humanities" || depTrack === "social" || depTrack === "interdisciplinary";
-  if (uiTrack === "natural") return depTrack === "natural" || depTrack === "engineering" || depTrack === "medical";
-  if (uiTrack === "arts") return depTrack === "arts";
-  return true;
 }
 
 function applyFreePreview(
