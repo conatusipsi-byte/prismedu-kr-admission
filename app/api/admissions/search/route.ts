@@ -63,7 +63,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   try {
     const result = await searchDepartments(query, allowJaeoegukmin);
     const cacheHeaders =
-      query.q || query.category || query.trackKind || query.trackCategory
+      query.q || query.category || query.trackKind || query.trackCategory || query.specialType
         ? CACHE_HEADERS_PUBLIC
         : CACHE_HEADERS_DEFAULT;
     return NextResponse.json(result, { headers: cacheHeaders });
@@ -115,6 +115,7 @@ async function searchDepartments(
     p_track: query.track ?? null,
     p_track_category: trackCategoryFiltered && trackCategoryFiltered.length > 0 ? trackCategoryFiltered : null,
     p_track_kind: query.trackKind ?? null,
+    p_special_type: query.specialType ?? null,
     p_keyword: query.q ?? null,
     p_degree_course: query.degreeCourse ?? "학사",
     p_year: year,

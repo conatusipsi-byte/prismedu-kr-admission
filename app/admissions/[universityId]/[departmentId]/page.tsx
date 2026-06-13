@@ -18,6 +18,7 @@ import { ChevronRight, Lock, Sparkles } from "lucide-react";
 import { AdmissionDetailHero } from "@/components/admissions/AdmissionDetailHero";
 import { TrackDetailCard } from "@/components/admissions/TrackDetailCard";
 import { CsatMinChecker } from "@/components/admissions/CsatMinChecker";
+import { SpecialEligibilityChecker, type SpecialTrackInfo } from "@/components/admissions/SpecialEligibilityChecker";
 import { AdmissionFitPanel } from "@/components/admissions/AdmissionFitPanel";
 import { PrevYearResultCard } from "@/components/admissions/PrevYearResultCard";
 import { ProbabilitySection } from "@/components/admissions/ProbabilitySection";
@@ -78,6 +79,17 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
 
   const primaryTrackKind = (admissions.availableTrackKinds[0] ?? "jeongsi_na") as AdmissionTrackKind;
 
+  // 특별전형(농어촌/기회균형/특성화) 트랙 — 자격 자기신고 매칭용 (general/overseas 제외).
+  const SPECIAL_TYPES = ["agricultural", "low_income", "etc"] as const;
+  const specialTracks: SpecialTrackInfo[] = allTracks
+    .filter(({ track }) => (SPECIAL_TYPES as readonly string[]).includes(track.specialType))
+    .map(({ kind, track }) => ({
+      specialType: track.specialType as SpecialTrackInfo["specialType"],
+      kind,
+      name: track.name,
+      quotaInitial: track.quotaInitial,
+    }));
+
   return (
     <div className="relative">
       {/* 배경 mesh */}
@@ -112,6 +124,7 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
             { href: "#overview",    label: "개요" },
             { href: "#tracks",      label: "모집요강" },
             { href: "#csat-min",    label: "수능최저 충족" },
+            ...(specialTracks.length > 0 ? [{ href: "#special-eligibility", label: "특별전형 자격" }] : []),
             { href: "#ai-fit",      label: "AI 적합도", icon: <Sparkles className="h-3 w-3" /> },
             { href: "#probability", label: "합격률 분석", icon: <Lock className="h-3 w-3" /> },
             { href: "#prev-trend",  label: "경쟁률 추이" },
@@ -178,6 +191,11 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
                   csatMinimum: track.csatMinimum ?? null,
                 }))}
               />
+            )}
+
+            {/* 특별전형 자격 자기신고 — 농어촌/기회균형/특성화 (데이터 보유 시만). 정원외 안내·자기신고≠확정. */}
+            {specialTracks.length > 0 && (
+              <SpecialEligibilityChecker specialTracks={specialTracks} />
             )}
 
             {/* AI 적합도 분석 (Layer 1) — 입결 없이 "전형 요구 대비 적합도". Pro·명시적 클릭 1회만 AI 호출. */}

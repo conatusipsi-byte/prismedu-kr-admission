@@ -18,11 +18,23 @@ import { Badge } from "@/components/ui/badge";
 import type { AdmissionTrackKind } from "@/types/admission";
 import { TRACK_KIND_LABELS } from "@/lib/admission/labels";
 
+/** 특별전형 필터 — specialType 기반(농어촌/기회균형/특성화 등). trackKind 와 별개 차원. */
+export type SpecialFilterKind = "agricultural" | "low_income" | "etc";
+const SPECIAL_KINDS: SpecialFilterKind[] = ["agricultural", "low_income", "etc"];
+const SPECIAL_LABEL: Record<SpecialFilterKind, string> = {
+  agricultural: "농어촌",
+  low_income: "기회균형",
+  etc: "특성화·기타",
+};
+
 export interface TrackFilterProps {
   selected: AdmissionTrackKind[];
   onChange: (kinds: AdmissionTrackKind[]) => void;
   /** P-013 진입점 분리 정책 — 명시 true 일 때만 jaeoegukmin 옵션 노출 */
   allowJaeoegukmin?: boolean;
+  /** 특별전형(specialType) 다중 선택 — onSpecialChange 제공 시 "특별전형" 그룹 렌더 */
+  specialSelected?: SpecialFilterKind[];
+  onSpecialChange?: (kinds: SpecialFilterKind[]) => void;
   className?: string;
 }
 
@@ -47,6 +59,8 @@ export function TrackFilter({
   selected,
   onChange,
   allowJaeoegukmin = false,
+  specialSelected,
+  onSpecialChange,
   className,
 }: TrackFilterProps): React.ReactElement {
   const toggle = React.useCallback(
@@ -57,6 +71,17 @@ export function TrackFilter({
       onChange([...set]);
     },
     [selected, onChange],
+  );
+
+  const toggleSpecial = React.useCallback(
+    (kind: SpecialFilterKind) => {
+      if (!onSpecialChange) return;
+      const set = new Set(specialSelected ?? []);
+      if (set.has(kind)) set.delete(kind);
+      else set.add(kind);
+      onSpecialChange([...set]);
+    },
+    [specialSelected, onSpecialChange],
   );
 
   const others = React.useMemo<AdmissionTrackKind[]>(() => {
@@ -123,6 +148,50 @@ export function TrackFilter({
           <TrackChip key={kind} kind={kind} on={selected.includes(kind)} onClick={() => toggle(kind)} />
         ))}
       </div>
+
+      {/* 특별전형 — 농어촌·기회균형·특성화 (specialType, trackKind 와 별개) */}
+      {onSpecialChange && (
+        <div
+          className="flex flex-wrap items-center gap-2"
+          data-track-group="special"
+          role="group"
+          aria-label="특별전형"
+        >
+          <span className="text-2xs font-bold uppercase tracking-wider text-muted-foreground mr-1">
+            특별
+          </span>
+          {SPECIAL_KINDS.map((kind) => {
+            const on = (specialSelected ?? []).includes(kind);
+            return (
+              <button
+                key={kind}
+                type="button"
+                role="checkbox"
+                aria-checked={on}
+                data-selected={on}
+                data-special-type={kind}
+                onClick={() => toggleSpecial(kind)}
+                className={cn(
+                  "rounded-full transition",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-brand-400/70",
+                )}
+              >
+                <Badge
+                  variant={on ? "default" : "outline"}
+                  className={cn(
+                    on
+                      ? "bg-brand-600 text-white hover:bg-brand-700"
+                      : "bg-transparent hover:bg-brand-50 dark:hover:bg-brand-950/40",
+                    "cursor-pointer border",
+                  )}
+                >
+                  {SPECIAL_LABEL[kind]}
+                </Badge>
+              </button>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

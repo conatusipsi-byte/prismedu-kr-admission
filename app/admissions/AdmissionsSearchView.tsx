@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DepartmentSearchBar } from "@/components/admissions/DepartmentSearchBar";
 import { RegionFilter } from "@/components/admissions/RegionFilter";
-import { TrackFilter } from "@/components/admissions/TrackFilter";
+import { TrackFilter, type SpecialFilterKind } from "@/components/admissions/TrackFilter";
 import { UniversityCategoryFilter } from "@/components/admissions/UniversityCategoryFilter";
 import { DepartmentCard } from "@/components/admissions/DepartmentCard";
 import type { AdmissionTrackKind, Department, University } from "@/types/admission";
@@ -47,6 +47,7 @@ export function AdmissionsSearchView(): React.ReactElement {
   const [query, setQuery] = React.useState("");
   const [regions, setRegions] = React.useState<RegionGroup[]>([]);
   const [tracks, setTracks] = React.useState<AdmissionTrackKind[]>([]);
+  const [specialTypes, setSpecialTypes] = React.useState<SpecialFilterKind[]>([]);
   const [categories, setCategories] = React.useState<DepartmentCategory[]>([]);
   const [filterDrawerOpen, setFilterDrawerOpen] = React.useState(false);
   // 야간대는 입시 추천 도메인 외 — 검색 결과에서 항상 제외 (DB 보존, UI 미노출).
@@ -66,7 +67,7 @@ export function AdmissionsSearchView(): React.ReactElement {
     setHasMore(true);
     void fetchPage(undefined, true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query, regions.join(","), tracks.join(","), categories.join(",")]);
+  }, [query, regions.join(","), tracks.join(","), specialTypes.join(","), categories.join(",")]);
 
   async function fetchPage(nextCursor: string | undefined, replace: boolean): Promise<void> {
     if (loading) return;
@@ -93,6 +94,8 @@ export function AdmissionsSearchView(): React.ReactElement {
       // 전형 다중 필터 — AdmissionTrackKind[] 를 콤마 구분 trackKind 로 전달.
       // 서버는 transform → array → OR 매칭 (available_track_kinds 와 겹치면 통과).
       if (tracks.length > 0) params.set("trackKind", tracks.join(","));
+      // 특별전형 다중 필터 — specialType(농어촌/기회균형/특성화)을 콤마 구분으로 전달.
+      if (specialTypes.length > 0) params.set("specialType", specialTypes.join(","));
       if (nextCursor) params.set("cursor", nextCursor);
       params.set("limit", "20");
       // includeNight 는 서버 default(false) 사용 — 야간대 검색 비노출 정책.
@@ -138,11 +141,13 @@ export function AdmissionsSearchView(): React.ReactElement {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cursor, hasMore, loading]);
 
-  const hasActiveFilters = query.length > 0 || regions.length > 0 || tracks.length > 0 || categories.length > 0;
+  const hasActiveFilters =
+    query.length > 0 || regions.length > 0 || tracks.length > 0 || specialTypes.length > 0 || categories.length > 0;
   const clearAllFilters = () => {
     setQuery("");
     setRegions([]);
     setTracks([]);
+    setSpecialTypes([]);
     setCategories([]);
   };
 
@@ -154,7 +159,13 @@ export function AdmissionsSearchView(): React.ReactElement {
       </section>
       <section className="flex flex-col gap-3">
         <h2 className="text-2xs font-bold uppercase tracking-wider text-muted-foreground">전형</h2>
-        <TrackFilter selected={tracks} onChange={setTracks} allowJaeoegukmin={false} />
+        <TrackFilter
+          selected={tracks}
+          onChange={setTracks}
+          allowJaeoegukmin={false}
+          specialSelected={specialTypes}
+          onSpecialChange={setSpecialTypes}
+        />
       </section>
       <section className="flex flex-col gap-3">
         <h2 className="text-2xs font-bold uppercase tracking-wider text-muted-foreground">계열</h2>

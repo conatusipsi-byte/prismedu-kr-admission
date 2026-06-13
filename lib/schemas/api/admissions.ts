@@ -78,6 +78,23 @@ export const AdmissionsSearchQuerySchema = z.object({
       ) as ValidTrackKind[];
       return valid.length > 0 ? valid : undefined;
     }),
+  /**
+   * 특별전형 다중 필터 — 콤마 구분 (예: "agricultural,etc").
+   * specialType 기반(농어촌=agricultural / 기회균형·저소득=low_income / 특성화 등=etc).
+   * RPC 가 tracks jsonb 의 specialType 을 검사(OR 매칭). general/overseas 는 필터 비대상
+   * (overseas=재외국민은 /admissions/jaeoegukmin 전용 경로). 유효하지 않은 값은 필터 아웃.
+   */
+  specialType: z
+    .string()
+    .max(100)
+    .optional()
+    .transform((v) => {
+      if (!v) return undefined;
+      const valid = v
+        .split(",").map((s) => s.trim()).filter(Boolean)
+        .filter((p) => ["agricultural", "low_income", "etc"].includes(p));
+      return valid.length > 0 ? valid : undefined;
+    }),
   limit: z.coerce.number().int().min(1).max(100).default(20),
   cursor: z.string().optional(),
   /** 학위과정 필터 — default '학사'. 전체는 'all' (대학원 포함). */
