@@ -10,7 +10,7 @@
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
 import { ADMISSION_PROBABILITY_ENABLED } from "@/lib/admission/feature-flags";
-import { isValidAdmissionId } from "@/lib/admission/id-validation";
+import { isValidAdmissionId, canonicalizeAdmissionId } from "@/lib/admission/id-validation";
 import type {
   AdmissionSampleStats,
   AdmissionTrack,
@@ -41,10 +41,10 @@ export async function fetchDepartmentDetail(
   universityId: string,
   departmentId: string,
 ): Promise<DepartmentDetail | null> {
-  // ⚠️ 한글 id 정규화 — Next.js 가 Server Component route param 을 NFD(자모 분해)로 전달하는 경우
-  // 가 있어, DB(NFC) 와 불일치 → 매칭 실패(한글 학과 빈 페이지, 55개). NFC 로 정규화해 일치시킨다.
-  universityId = universityId.normalize("NFC");
-  departmentId = departmentId.normalize("NFC");
+  // ⚠️ 한글 id canonical 화 — Next.js 가 Server Component route param 을 percent-encoded(또는
+  // NFD)로 전달 → DB(NFC) 와 불일치 → 매칭 실패(한글 학과 빈 페이지, 55개). decode + NFC 로 일치.
+  universityId = canonicalizeAdmissionId(universityId);
+  departmentId = canonicalizeAdmissionId(departmentId);
   // ID 검증 — 캐시 키 안정성 + PostgREST 필터 안전. 한글 음절(가-힣) 허용.
   if (!isValidAdmissionId(universityId)) return null;
   if (!isValidAdmissionId(departmentId)) return null;

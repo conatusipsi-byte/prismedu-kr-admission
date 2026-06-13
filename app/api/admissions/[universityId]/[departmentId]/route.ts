@@ -8,7 +8,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
-import { isValidAdmissionId } from "@/lib/admission/id-validation";
+import { isValidAdmissionId, canonicalizeAdmissionId } from "@/lib/admission/id-validation";
 import type {
   AdmissionSampleStats,
   AdmissionTrackKind,
@@ -24,9 +24,9 @@ export async function GET(
   ctx: { params: Promise<{ universityId: string; departmentId: string }> },
 ): Promise<NextResponse> {
   const raw = await ctx.params;
-  // 한글 id 는 NFC 정규화(클라/Next 가 NFD 로 보낼 수 있음 → DB(NFC) 와 일치시켜야 매칭).
-  const universityId = raw.universityId.normalize("NFC");
-  const departmentId = raw.departmentId.normalize("NFC");
+  // 한글 id canonical 화(decode + NFC) — page 와 동일 처리. 인코딩/정규화 경로차 흡수.
+  const universityId = canonicalizeAdmissionId(raw.universityId);
+  const departmentId = canonicalizeAdmissionId(raw.departmentId);
   // 한글 department_id 허용 (id-validation). 구버전 ASCII-only 는 한글 학과를 400 으로 막았음.
   if (!isValidAdmissionId(universityId) || !isValidAdmissionId(departmentId)) {
     return NextResponse.json({ error: "유효하지 않은 ID" }, { status: 400 });
