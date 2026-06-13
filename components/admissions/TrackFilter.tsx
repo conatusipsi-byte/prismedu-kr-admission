@@ -88,6 +88,15 @@ export function TrackFilter({
         <span className="text-2xs font-bold uppercase tracking-wider text-muted-foreground mr-1">
           정시
         </span>
+        {/* 방준현 피드백 #4 (2026-06): 정시 모집요강은 12월 발행 → 현재 미적재.
+            선택 전에 "12월 오픈"을 알려 빈 결과가 고장으로 오인되지 않게 한다.
+            필터 자체는 12월에 쓰므로 제거하지 않음. */}
+        <span
+          title="정시 모집요강은 12월 발행 후 제공됩니다"
+          className="inline-flex items-center rounded-full border border-amber-300/70 bg-amber-50 px-1.5 py-0.5 text-2xs font-semibold text-amber-700 dark:border-amber-700/50 dark:bg-amber-950/40 dark:text-amber-300"
+        >
+          12월 오픈
+        </span>
         {JEONGSI.map((kind) => (
           <TrackChip
             key={kind}

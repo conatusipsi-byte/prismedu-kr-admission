@@ -130,7 +130,15 @@ const TRUST_KEYWORDS = [
 
 export default function LandingPage(): React.ReactElement {
   return (
-    <div className="relative bg-background overflow-x-hidden">
+    /*
+      iPad 스크롤 버그 (방준현 피드백 #1, 2026-06): overflow-x-hidden 은 CSS 사양상 다른 축
+      (overflow-y)을 visible→auto 로 승격시켜 이 래퍼를 암묵적 세로 스크롤 컨테이너로 만든다.
+      iOS Safari 는 높이 미지정 래퍼 + body overscroll-behavior 조합에서 이 컨테이너에 터치
+      스크롤이 갇혀 홈이 안 내려가는 결함이 있었다. overflow-x-clip 은 스크롤 컨테이너를 만들지
+      않으면서(가로 넘침만 클립) 세로 스크롤을 뷰포트(html/body)에 그대로 둔다 — 장식 orb 의
+      가로 클리핑 효과는 hidden 과 동일. 데스크톱·모바일 회귀 없음.
+    */
+    <div className="relative bg-background overflow-x-clip">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

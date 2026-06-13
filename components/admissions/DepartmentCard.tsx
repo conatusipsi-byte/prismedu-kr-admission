@@ -128,7 +128,9 @@ export function DepartmentCard({
             alt={`${uniName} 로고`}
           />
           <div className="flex flex-col leading-tight min-w-0">
-            <span className={cn("text-xs font-semibold", sampleSufficient ? "text-foreground" : "text-muted-foreground")}>
+            {/* 방준현 피드백 #3 (2026-06): 대학명 위계 상향 (text-xs/semibold → text-base/bold).
+                학과명(text-lg)보다는 작게 두어 대학>학과 2단 위계는 유지하되 대학명 가독성 확보. */}
+            <span className={cn("text-base font-bold", sampleSufficient ? "text-foreground" : "text-muted-foreground")}>
               {uniName}
             </span>
             {campusLabel && (

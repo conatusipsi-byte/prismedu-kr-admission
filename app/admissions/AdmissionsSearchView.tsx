@@ -11,7 +11,7 @@
  */
 
 import * as React from "react";
-import { Filter as FilterIcon, X, Sparkles, Search as SearchIcon } from "lucide-react";
+import { Filter as FilterIcon, X, Sparkles, Search as SearchIcon, CalendarClock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DepartmentSearchBar } from "@/components/admissions/DepartmentSearchBar";
@@ -293,9 +293,15 @@ export function AdmissionsSearchView(): React.ReactElement {
               </div>
             )}
 
-            {/* 빈 상태 — 일러스트 + 추천 칩 */}
+            {/* 빈 상태 — 일러스트 + 추천 칩 (정시 선택 시 '12월 발행' 안내로 분기) */}
             {!loading && items.length === 0 && !error && (
-              <EmptyState hasFilters={hasActiveFilters} onClearFilters={clearAllFilters} onApplySuggested={(track) => setTracks([track])} />
+              <EmptyState
+                hasFilters={hasActiveFilters}
+                jeongsiSelected={tracks.some((t) => t.startsWith("jeongsi_"))}
+                onClearFilters={clearAllFilters}
+                onApplySuggested={(track) => setTracks([track])}
+                onShowSusi={() => setTracks(tracks.filter((t) => !t.startsWith("jeongsi_")))}
+              />
             )}
 
             {/* 결과 그리드 */}
@@ -384,13 +390,47 @@ const SUGGESTED_TRACKS: { kind: AdmissionTrackKind; label: string }[] = [
 
 function EmptyState({
   hasFilters,
+  jeongsiSelected,
   onClearFilters,
   onApplySuggested,
+  onShowSusi,
 }: {
   hasFilters: boolean;
+  jeongsiSelected: boolean;
   onClearFilters: () => void;
   onApplySuggested: (track: AdmissionTrackKind) => void;
+  onShowSusi: () => void;
 }): React.ReactElement {
+  // 정시(가·나·다군) 선택 시 — 정시 모집요강은 12월 발행이라 현재 미적재.
+  // 빈 결과를 "고장"이 아닌 "아직 안 열림"으로 정직하게 안내한다 (방준현 피드백 #4).
+  if (jeongsiSelected) {
+    return (
+      <div className="flex flex-col items-center justify-center py-20 text-center">
+        <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-50 text-amber-600 ring-1 ring-amber-200/70 dark:bg-amber-950/40 dark:text-amber-300 dark:ring-amber-800/50">
+          <CalendarClock className="h-8 w-8" strokeWidth={1.5} aria-hidden />
+        </div>
+        <h3 className="font-display text-xl font-bold mb-2">정시 모집요강은 12월에 열려요</h3>
+        <p className="text-sm text-muted-foreground mb-1.5 max-w-md break-keep-all">
+          정시(가·나·다군) 모집요강은 매년 <strong className="text-foreground">12월에 발행</strong>됩니다.
+          발행 후 순차적으로 등록될 예정이에요.
+        </p>
+        <p className="text-sm text-muted-foreground mb-6 max-w-md break-keep-all">
+          지금은 <strong className="text-foreground">수시 전형</strong>(학생부교과·학생부종합·논술) 정보를 제공하고 있어요.
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <Button variant="primary" size="default" onClick={onShowSusi}>
+            <SearchIcon className="h-3.5 w-3.5" />
+            수시 전형 보기
+          </Button>
+          <Button variant="ghost" size="default" onClick={onClearFilters}>
+            <X className="h-3.5 w-3.5" />
+            필터 초기화
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col items-center justify-center py-20 text-center">
       {/* 추상 SVG 일러스트 */}

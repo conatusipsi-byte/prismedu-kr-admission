@@ -36,6 +36,9 @@ import { cn } from "@/lib/utils";
 // 맞춤. Footer 의 RESOURCES 링크에 changelog 보존 (운영 투명성 유지).
 const NAV_ITEMS = [
   { href: "/admissions", label: "학과 검색" },
+  // 방준현 피드백 #2 (2026-06): 컨설팅 예약 페이지(/consulting) 헤더 노출. 데스크톱·모바일
+  // 둘 다 본 배열을 map 하므로 한 줄 추가로 양쪽 반영. 순서: 핵심 기능(학과 검색·컨설팅) → 요금제 → 도움말.
+  { href: "/consulting", label: "컨설팅" },
   { href: "/pricing", label: "요금제" },
   { href: "/help", label: "도움말" },
 ] as const;
