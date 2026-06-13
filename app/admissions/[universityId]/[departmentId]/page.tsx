@@ -17,6 +17,7 @@ import { notFound } from "next/navigation";
 import { ChevronRight, Lock } from "lucide-react";
 import { AdmissionDetailHero } from "@/components/admissions/AdmissionDetailHero";
 import { TrackDetailCard } from "@/components/admissions/TrackDetailCard";
+import { CsatMinChecker } from "@/components/admissions/CsatMinChecker";
 import { PrevYearResultCard } from "@/components/admissions/PrevYearResultCard";
 import { ProbabilitySection } from "@/components/admissions/ProbabilitySection";
 import { AnalysisCtaBox } from "@/components/admissions/AnalysisCtaBox";
@@ -109,6 +110,7 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
           {[
             { href: "#overview",    label: "개요" },
             { href: "#tracks",      label: "모집요강" },
+            { href: "#csat-min",    label: "수능최저 충족" },
             { href: "#probability", label: "합격률 분석", icon: <Lock className="h-3 w-3" /> },
             { href: "#prev-trend",  label: "경쟁률 추이" },
             { href: "#similar",     label: "유사 학과" },
@@ -164,6 +166,17 @@ export default async function DepartmentDetailPage({ params }: PageProps) {
                 ))
               )}
             </section>
+
+            {/* 수능최저 충족 판정 — 사실 기반(결정적). 합격률 플래그와 무관하게 항상 제공. */}
+            {allTracks.length > 0 && (
+              <CsatMinChecker
+                tracks={allTracks.map(({ kind, track }) => ({
+                  kind,
+                  name: track.name,
+                  csatMinimum: track.csatMinimum ?? null,
+                }))}
+              />
+            )}
 
             {/* 합격률 분석 (Gated) — 클라이언트 wrapper 가 로그인 상태 판정 */}
             <ProbabilitySection
