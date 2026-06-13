@@ -24,7 +24,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { getAdminSupabase } from "@/lib/supabase-server";
-import { getAnthropicClient, createMessageWithTimeout } from "@/lib/anthropic";
+import { getAnthropicClient, createMessageWithTimeout, ClaudeTimeoutError } from "@/lib/anthropic";
 import { makeCacheKey, getCachedResponse, setCachedResponse } from "@/lib/ai-cache";
 import { reportRouteError } from "@/lib/sentry-report";
 import { canUseFeature, type Plan } from "@/lib/plans";
@@ -36,6 +36,8 @@ import {
 } from "@/lib/schemas/api/saengbu-analysis";
 
 export const dynamic = "force-dynamic";
+// 생기부는 길어 분석이 ~30~60초 걸릴 수 있음 → Vercel 함수 실행 상한 명시(앱 타임아웃 90초 + 여유).
+export const maxDuration = 120;
 
 const MODEL = "claude-sonnet-4-6"; // 정성 분석 — Sonnet(비용·품질 균형). spec-analysis 와 동일.
 const MAX_TOKENS = 2048;
@@ -94,6 +96,14 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     return NextResponse.json(result);
   } catch (e) {
     // 주의: 생기부 본문을 오류 컨텍스트에 포함하지 않는다 (PII).
+    // 타임아웃은 "고장"이 아니라 "생기부가 길어 오래 걸림" → 명확히 안내 (null 점수 화면 X).
+    if (e instanceof ClaudeTimeoutError) {
+      reportRouteError("api.saengbu-analysis.timeout", e, { uid: auth.uid });
+      return NextResponse.json(
+        { error: "생기부가 길어 분석이 오래 걸려요. 생기부를 더 짧게 나눠 입력하거나 잠시 후 다시 시도해주세요." },
+        { status: 504 },
+      );
+    }
     reportRouteError("api.saengbu-analysis", e, { uid: auth.uid });
     return NextResponse.json(
       { error: "분석 처리 중 오류가 발생했어요. 잠시 후 다시 시도해주세요." },
@@ -124,7 +134,8 @@ async function runSaengbuAnalysis(input: RunInput): Promise<SaengbuAnalysisRespo
       system: buildSystemPrompt(input.focusMajor),
       messages: [{ role: "user", content: buildUserPrompt(input.text, input.focusMajor) }],
     },
-    { timeoutMs: 45_000, upstreamSignal: input.upstreamSignal }, // 생기부는 길어 타임아웃 ↑
+    // 관측 ~30초(out 2048토큰). 긴 생기부(3만자) 대비 90초로 상향 — 헤드룸 부족 시 타임아웃→고장처럼 보이던 문제 방지.
+    { timeoutMs: 90_000, upstreamSignal: input.upstreamSignal },
   );
 
   const rawText = completion.content

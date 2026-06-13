@@ -28,6 +28,9 @@ import { isMasterEmail } from "@/lib/master";
 
 const QUOTA_BUCKET = "aiChatDailyLimit";
 
+// Vercel 함수 실행 상한 — AI 응답 지연 대비 (AI 라우트 maxDuration 명시).
+export const maxDuration = 60;
+
 export async function POST(req: NextRequest): Promise<NextResponse> {
   const auth = await requireAuth(req);
   if (!auth.ok) return auth.response;

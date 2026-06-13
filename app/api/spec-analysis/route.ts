@@ -33,6 +33,9 @@ import { parseModelOutput } from "@/lib/spec-analysis/parse-model-output";
 const MODEL = "claude-sonnet-4-6";
 const MAX_TOKENS = 1500;
 
+// Vercel 함수 실행 상한 — 앱 타임아웃 30초 + 여유 (AI 라우트 maxDuration 명시).
+export const maxDuration = 60;
+
 export async function POST(req: NextRequest): Promise<NextResponse> {
   const auth = await requireAuth(req);
   if (!auth.ok) return auth.response;

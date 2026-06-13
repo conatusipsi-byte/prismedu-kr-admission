@@ -190,9 +190,18 @@ export function SaengbuAnalysisView(): React.ReactElement {
 
       <Button onClick={() => void handleSubmit()} disabled={!canSubmit} size="lg" className="self-start">
         {submitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-        {submitting ? "AI 분석 중… (15~30초)" : "생기부 분석하기"}
+        {submitting ? "분석 중입니다… (최대 1~2분)" : "생기부 분석하기"}
       </Button>
-      {!consent && (
+      {submitting && (
+        <p className="text-2xs text-muted-foreground -mt-3 flex items-start gap-1.5 break-keep-all leading-relaxed">
+          <Loader2 className="h-3 w-3 mt-0.5 shrink-0 animate-spin" aria-hidden />
+          <span>
+            AI가 생기부를 5축으로 정성 분석 중이에요. 생기부가 길면{" "}
+            <strong className="text-foreground/80">최대 1~2분</strong>까지 걸릴 수 있어요 — 창을 닫지 말고 기다려주세요.
+          </span>
+        </p>
+      )}
+      {!submitting && !consent && (
         <p className="text-2xs text-muted-foreground -mt-3 flex items-center gap-1">
           <Lock className="h-3 w-3" aria-hidden /> 분석하려면 개인정보 처리에 동의해주세요.
         </p>

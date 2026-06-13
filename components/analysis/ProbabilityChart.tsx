@@ -113,8 +113,10 @@ function BarRow({ label, value, low, high, color, emphasize }: BarRowProps): Rea
   const lo = low != null ? clamp(low, 0, 100) : null;
   const hi = high != null ? clamp(high, 0, 100) : null;
 
-  const barColor = color === "mint" ? "#00A88B" : "#6366F1";
-  const marginColor = color === "mint" ? "#00C9A7" : "#818CF8";
+  // 브랜드 emerald (#10B981 계열) — 2026-05 리브랜드. 구 민트(#00A88B/#00C9A7) 제거.
+  // mint 막대 = emerald-500/400(bar/margin), indigo = indigo-500/400 패턴과 동일.
+  const barColor = color === "mint" ? "#10B981" : "#6366F1";
+  const marginColor = color === "mint" ? "#34D399" : "#818CF8";
 
   return (
     <div className="grid grid-cols-[6rem_1fr_auto] items-center gap-2 text-xs">

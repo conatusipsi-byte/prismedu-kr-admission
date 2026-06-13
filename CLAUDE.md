@@ -19,21 +19,22 @@
    - 추후 구독형 전환 대비 DB 구조 설계
 
 ## 기술 스택 (실제 채택분)
-> 초기 기획에선 PostgreSQL/Prisma/Supabase를 검토했으나, 실제 구현은 **Firebase 스택**으로 확정됨.
+> 초기 기획에선 PostgreSQL/Prisma/Supabase·Firebase 등을 검토했고, 실제 구현은 **Supabase 스택**으로 확정됨.
+> (2026-05 Firebase→Supabase 마이그레이션 완료. `docs/supabase-migration-handoff.md` 참조 — 일부 과거 주석/문서에 firebase 잔재가 남아있을 수 있음.)
 - **Frontend**: Next.js 15 (App Router, Turbopack) / React 19 / TypeScript 5 / Tailwind CSS 3
 - **UI 컴포넌트**: Radix UI + shadcn/ui (`components.json`) + lucide-react
-- **Backend**: Next.js API Routes (`app/api/*`) + `firebase-admin` (서버 SDK)
-- **DB / Storage / Auth**: Firebase 11 — Firestore + Firebase Auth + Firebase Storage
-- **AI**: Anthropic Claude API (`@anthropic-ai/sdk`) — `lib/anthropic.ts`, 캐싱은 `lib/ai-cache.ts`, 호출 제한은 `lib/rate-limit.ts`
+- **Backend**: Next.js API Routes (`app/api/*`) — 서버는 service-role Supabase 클라이언트 (`lib/supabase-server.ts`)
+- **DB / Storage / Auth**: Supabase — Postgres(RPC 예: `search_admissions_v2`) + Supabase Auth(카카오·구글 OAuth) + Supabase Storage. RLS 로 행 보안.
+- **AI**: Anthropic Claude API (`@anthropic-ai/sdk`) — `lib/anthropic.ts`, 캐싱 `lib/ai-cache.ts`(Supabase `ai_cache`), 호출 제한 `lib/rate-limit.ts`(Supabase `rate_limits` RPC)
 - **Payment**: 토스페이먼츠 (`@tosspayments/tosspayments-sdk`) — 단건결제, 구독 호환 스키마
 - **모니터링**: Sentry (`@sentry/nextjs`)
 - **테스트**: Vitest 4 (단위) + Playwright 1.59 (e2e) + Testing Library
-- **로컬 개발**: Firebase Emulator (firestore + auth + storage)
+- **로컬 개발**: dev 서버는 원격 Supabase(스테이징/프로덕션)에 연결 — `NEXT_PUBLIC_SUPABASE_URL`·`NEXT_PUBLIC_SUPABASE_ANON_KEY`·`SUPABASE_SERVICE_ROLE_KEY` 필요. (Firebase Emulator 미사용)
 - **Deploy**: Vercel
 - **Dev port**: 9002
 
 ## 디자인 가이드
-- **브랜드 컬러**: #00C9A7 (mint)
+- **브랜드 컬러**: #10B981 (emerald) — 2026-05 리브랜드. 구 민트 #00C9A7 은 레거시(신규 코드는 `brand-*` emerald 토큰 사용)
 - **톤앤매너**: 깔끔, 정보 밀도 높지만 답답하지 않게
 - **타깃**: 학생·학부모·교사 모두 사용 (UI는 학생 기준 우선)
 - **반응형**: 모바일 우선 (학생은 모바일 사용 비중↑)
@@ -55,7 +56,7 @@
 ## 폴더 구조
 ```
 app/                  # Next.js App Router
-  api/                # API Routes (서버사이드, firebase-admin 사용)
+  api/                # API Routes (서버사이드, Supabase service-role)
   admin/              # 운영자 페이지
   admissions/         # 입시 정보·모집요강 조회
   analysis/           # 합격률 분석
@@ -68,7 +69,7 @@ app/                  # Next.js App Router
   profile/ onboarding/ login/  # 사용자
   privacy/ terms/ refund/      # 정책 페이지
 components/           # 재사용 컴포넌트 (ui/는 shadcn/ui 베이스)
-lib/                  # 도메인·유틸 (firebase, anthropic, ai-cache, rate-limit, schemas …)
+lib/                  # 도메인·유틸 (supabase, anthropic, ai-cache, rate-limit, schemas …)
 hooks/                # 커스텀 훅
 data/                 # 정적 데이터 (대학·학과 등)
 scripts/              # CLI/시드 스크립트
@@ -80,10 +81,7 @@ _prism_reference/     # prismedu.kr 참고 코드 (.gitignore 처리됨, 배포 
 
 ## 자주 쓰는 명령어
 ```bash
-npm run dev          # Next.js 개발 서버 (port 9002, turbopack)
-npm run dev:emu      # 에뮬레이터 + 개발 서버 동시 (PowerShell — Windows 전용)
-npm run emu:start    # Firebase Emulator만 (firestore/auth/storage)
-npm run emu:seed     # 에뮬레이터 컬렉션 시드
+npm run dev          # Next.js 개발 서버 (port 9002, turbopack) — 원격 Supabase 연결
 npm run build        # 프로덕션 빌드
 npm run start        # 프로덕션 서버
 npm run lint         # ESLint
@@ -94,11 +92,11 @@ npm run test:e2e     # Playwright e2e
 ```
 
 ## GitHub Codespaces
-- `.devcontainer/devcontainer.json` 포함 — Node 20 + Java 17(Firebase Emulator용) + Playwright(chromium) 자동 설치
-- Codespace 진입 후 `npm run dev` 또는 두 터미널에서 `npm run emu:start` + `npm run dev`
-- 환경변수는 **GitHub Codespaces Secrets**에 등록 (저장소 Settings → Secrets and variables → Codespaces)
-- forwardPorts: 9002(Next), 4000(Emulator UI), 8080(Firestore), 9099(Auth), 9199(Storage)
-- `dev:emu` 스크립트는 PowerShell 의존이라 Codespaces(Linux)에선 동작 안 함 → emulator/dev 별도 터미널 사용
+- `.devcontainer/devcontainer.json` 포함 — Node 20 + Playwright(chromium) 자동 설치
+- Codespace 진입 후 `npm run dev` (원격 Supabase 연결)
+- 환경변수는 **GitHub Codespaces Secrets** 또는 `.env.local` 에 등록. 필수: `NEXT_PUBLIC_SUPABASE_URL`·`NEXT_PUBLIC_SUPABASE_ANON_KEY`·`SUPABASE_SERVICE_ROLE_KEY`·`ANTHROPIC_API_KEY`·토스/Resend 키 등 (없으면 DB·로그인·결제·AI 동작 안 함)
+- forwardPorts: 9002(Next)
+- Firebase Emulator 는 더 이상 사용하지 않음 (Supabase 마이그레이션 후 제거)
 
 ## Claude에게 지시할 때
 - 코드 변경 시 반드시 prismedu.kr 패턴과 일관성 유지

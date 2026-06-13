@@ -60,6 +60,7 @@ const PROTECTED_PATH_PREFIXES = [
   "/compare",
   "/what-if",
   "/spec-analysis",
+  "/saengbu-analysis", // 게이팅 통일 (2026-06): spec-analysis 와 동일하게 미인증 → /login (ProGate만 의존 X)
   "/consulting",  // Day 2 of consulting 계약 — entitlement 추가 검증은 app/consulting/layout.tsx
 ] as const;
 
