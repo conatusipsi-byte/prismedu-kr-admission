@@ -42,6 +42,7 @@ import { Badge } from "@/components/ui/badge";
 import { InsufficientSampleCard } from "@/components/access/Gated";
 import { DepartmentRecommendCard } from "./DepartmentRecommendCard";
 import { PreviewLockOverlay } from "./PreviewLockOverlay";
+import { ADMISSION_PROBABILITY_ENABLED } from "@/lib/admission/feature-flags";
 import type { MatchResponse, MatchResultItem } from "@/lib/schemas/api/match";
 
 export interface AnalysisResultViewProps {
@@ -112,6 +113,23 @@ export function AnalysisResultView({
 
   return (
     <div data-component="analysis-result-view" className={cn("flex flex-col gap-6", className)}>
+      {/* 안전 가드(2026-06): 합격률 데이터(입결·표본)가 실데이터 확보 전이라 "준비 중" 안내.
+          가짜 난수 확률 노출 차단 — 모집요강 정보는 정상 제공. (feature-flags.ts) */}
+      {!ADMISSION_PROBABILITY_ENABLED && (
+        <div
+          data-component="probability-preparing-banner"
+          className="rounded-xl border border-amber-200 bg-amber-50/60 p-4 dark:border-amber-900/40 dark:bg-amber-950/20"
+        >
+          <div className="flex items-start gap-2.5">
+            <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-amber-600 dark:text-amber-400" />
+            <p className="text-sm leading-relaxed text-amber-900 break-keep-all dark:text-amber-200">
+              <strong>합격률 분석은 데이터 준비 중입니다.</strong> 실제 입결 데이터를 확보하는
+              중이라 합격 확률은 아직 표시하지 않아요. 모집요강 정보(전형·정원·수능최저·반영비율)는
+              정상 제공됩니다.
+            </p>
+          </div>
+        </div>
+      )}
       {/* 1. Hero */}
       <header className="flex flex-col gap-2">
         <h1 className="text-2xl font-bold">분석 결과</h1>

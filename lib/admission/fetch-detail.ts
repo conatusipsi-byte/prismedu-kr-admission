@@ -9,6 +9,7 @@
 
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
+import { ADMISSION_PROBABILITY_ENABLED } from "@/lib/admission/feature-flags";
 import type {
   AdmissionSampleStats,
   AdmissionTrack,
@@ -110,7 +111,9 @@ export async function fetchDepartmentDetail(
     university: rowToUniversity(row.universities),
     department: rowToDepartment(row),
     admissions: rowToAdmissions(adm, year),
-    prevYearResult: adm.prev_year_result ?? undefined,
+    // 안전 가드(2026-06): 합격률 비활성 시 전년도 입결(경쟁률·등급컷)도 숨김 — seed-v1 난수
+    // 차단. (실 ETL 행은 대부분 prev_year_result=null 이라 가림으로 잃는 실데이터 없음.)
+    prevYearResult: ADMISSION_PROBABILITY_ENABLED ? (adm.prev_year_result ?? undefined) : undefined,
     sampleSufficient,
   };
 }

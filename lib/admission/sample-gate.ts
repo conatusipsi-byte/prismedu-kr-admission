@@ -18,6 +18,7 @@ import type {
   AdmissionTrackKind,
   HakjongProbability,
 } from "@/types/admission";
+import { ADMISSION_PROBABILITY_ENABLED } from "@/lib/admission/feature-flags";
 
 /* ═══════════════════════════════════════════════════════════════════════
    임계치
@@ -75,6 +76,11 @@ export type SampleGateResult =
 export function checkSampleSufficiency(
   stats?: AdmissionSampleStats,
 ): SampleGateResult {
+  // 안전 가드(2026-06): 합격률 표본이 시연용 난수뿐이라 실데이터 확보 전까지 전면 비공개.
+  // 모든 학과를 '표본 없음'으로 폴백 → 가짜 합격 확률 미노출. (feature-flags.ts 참조)
+  if (!ADMISSION_PROBABILITY_ENABLED) {
+    return { sufficient: false, reason: "no_data", acceptedN: 0, weightedN: 0 };
+  }
   if (!stats) {
     return { sufficient: false, reason: "no_data", acceptedN: 0, weightedN: 0 };
   }
@@ -105,6 +111,10 @@ export function checkSampleSufficiency(
 export function checkHakjongSampleSufficiency(
   stats?: AdmissionSampleStats,
 ): { sufficient: boolean; stage1N: number; finalN: number; reason?: SampleGateReason } {
+  // 안전 가드(2026-06): 합격률 비활성 시 학종 분해도 전면 비공개. (feature-flags.ts)
+  if (!ADMISSION_PROBABILITY_ENABLED) {
+    return { sufficient: false, stage1N: 0, finalN: 0, reason: "no_data" };
+  }
   const stage1N = stats?.stage1PassedCount ?? 0;
   const finalN = stats?.stage2AcceptedCount ?? stats?.acceptedCount ?? 0;
 

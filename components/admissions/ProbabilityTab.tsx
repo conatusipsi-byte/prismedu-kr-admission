@@ -22,6 +22,7 @@ import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Gated, type GateReason } from "@/components/access/Gated";
+import { ADMISSION_PROBABILITY_ENABLED } from "@/lib/admission/feature-flags";
 import type {
   AdmissionProbability,
   AdmissionTrackKind,
@@ -56,6 +57,25 @@ export function ProbabilityTab({
   previewCounter,
   className,
 }: ProbabilityTabProps) {
+  // 0. 안전 가드(2026-06): 합격률 데이터(입결·표본)가 실데이터 확보 전 → "준비 중" 안내.
+  //    가짜 난수 확률 노출 차단. 모집요강 정보는 다른 탭에서 정상 제공. (feature-flags.ts)
+  if (!ADMISSION_PROBABILITY_ENABLED) {
+    return (
+      <div data-component="probability-tab" data-state="preparing" className={className}>
+        <Card className="border-amber-200 bg-amber-50/40 dark:border-amber-900/40 dark:bg-amber-950/20">
+          <CardContent className="flex flex-col items-center gap-2 py-8 text-center">
+            <Info className="h-6 w-6 text-amber-600 dark:text-amber-400" />
+            <p className="text-sm font-medium">합격률 분석 데이터 준비 중</p>
+            <p className="max-w-sm text-xs text-muted-foreground break-keep-all">
+              실제 입결 데이터를 확보하는 중이라 합격 확률은 아직 표시하지 않아요.
+              모집인원·전형·수능최저·반영비율 등 모집요강 정보는 그대로 확인할 수 있어요.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
   // 1a. 정원외(그룹 모집) — 학과별 합격률 산출 비대상 (P-005 정직성). CTA 없음.
   if (probability?.category === "quota_external") {
     return (
