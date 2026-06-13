@@ -82,8 +82,94 @@ const PUSAN_MECH_JEONGSI: AdmissionTrack = {
     "변환표준점수표 등 세부는 정시모집요강(12월) 확정 예정. (타 군 약 15명 모집은 확정본에서 반영 예정)",
 };
 
+/* ───── 고려대 배치1 (2027 전형시행계획 p.24-25 추출) ─────
+   - 정시 일반전형, 전 모집단위 '가'군(단일군).
+   - 수능 영역별 반영점수(계열별):
+       자연·의학(가정교육·간호 제외): 국200·수240·탐200(표준점수) + 영어/한국사 등급별 감점(별도) + 과탐 변환점수 3% 가산
+       인문 전체:                    국200·수200·탐160(표준점수) + 영어/한국사 등급별 감점(별도)
+   - 수능최저: 정시 일반전형 미적용(의대 등 특수는 보류). 변환표준점수표 등 세부는 12월 확정 → conversionTable null.
+   - 모집인원: 정시 일반전형 모집단위별 인원(총괄표 last numeric column). 예체능·간호·가정교육·의대 등 상이 스킴은 이번 배치 보류.
+   ※ 영어/한국사 '등급별 감점' 표 수치는 PDF에 미상세 → 지어내지 않고 ratio 0 + 비고 처리(정직성). */
+const KOREA_RR_NATURAL = {
+  korean: { ratio: 200, scoreType: "standard" as const },
+  math: { ratio: 240, scoreType: "standard" as const },
+  investigation: { ratio: 200, scoreType: "converted_standard" as const },
+  english: { ratio: 0 }, // 등급별 감점(별도) — 등급표 미상세, 지어내지 않음
+  history: { ratio: 0 }, // 등급별 감점(별도)
+  bonusByCourse: { science_two_subjects_converted_pct: 3 },
+};
+const KOREA_RR_HUM = {
+  korean: { ratio: 200, scoreType: "standard" as const },
+  math: { ratio: 200, scoreType: "standard" as const },
+  investigation: { ratio: 160, scoreType: "converted_standard" as const },
+  english: { ratio: 0 },
+  history: { ratio: 0 },
+};
+const KOREA_NOTE_N =
+  "2027 전형시행계획(예정) · 가군 정시 일반전형 · 자연계열 국200:수240:탐200(표준점수) · " +
+  "영어·한국사 등급별 감점(별도, 등급표는 정시모집요강 12월 확정) · 과학탐구 변환점수 3% 가산 · 변환표준점수 등 세부 12월 확정";
+const KOREA_NOTE_H =
+  "2027 전형시행계획(예정) · 가군 정시 일반전형 · 인문계열 국200:수200:탐160(표준점수) · " +
+  "영어·한국사 등급별 감점(별도, 등급표는 정시모집요강 12월 확정) · 변환표준점수 등 세부 12월 확정";
+
+// [DB dept_id, 정시 일반전형 모집인원, 계열 H=인문/N=자연] — 총괄표 직독, 이름 DB 정확 매칭
+const KOREA_DEPTS: Array<[string, number, "H" | "N"]> = [
+  ["u02010100035-ba-d", 46, "H"], // 경영대학 → 경영학과
+  ["u01010200008-ba-d", 8, "H"],  // 국어국문학과
+  ["u01020700029-ba-d", 6, "H"],  // 철학과
+  ["u01020400022-ba-d", 3, "H"],  // 한국사학과
+  ["u01020400006-ba-d", 6, "H"],  // 사학과
+  ["u02030400005-ba-d", 11, "H"], // 사회학과
+  ["u01010400019-ba-d", 3, "H"],  // 한문학과
+  ["u01010600018-ba-d", 14, "H"], // 영어영문학과
+  ["u01010700003-ba-d", 5, "H"],  // 독어독문학과
+  ["u01011000004-ba-d", 5, "H"],  // 불어불문학과
+  ["u01010400016-ba-d", 7, "H"],  // 중어중문학과
+  ["u01010800003-ba-d", 5, "H"],  // 노어노문학과
+  ["u01010300010-ba-d", 6, "H"],  // 일어일문학과
+  ["u01010900004-ba-d", 7, "H"],  // 서어서문학과
+  ["u01010100006-ba-d", 4, "H"],  // 언어학과
+  ["u05020400078-ba-d", 8, "H"],  // 식품자원경제학과
+  ["u02030600012-ba-d", 11, "H"], // 정치외교학과
+  ["u02010200014-ba-d", 18, "H"], // 경제학과
+  ["u05040200022-ba-d", 10, "H"], // 통계학과(정경대 인문계열)
+  ["u02030700081-ba-d", 10, "H"], // 행정학과
+  ["u05020100017-ba-d", 14, "N"], // 생명과학부
+  ["u05020100011-ba-d", 15, "N"], // 생명공학부
+  ["u05030200017-ba-d", 6, "N"],  // 식품공학과
+  ["u05020600069-ba-d", 10, "N"], // 환경생태공학부
+  ["u05040100016-ba-d", 7, "N"],  // 수학과
+  ["u05040300016-ba-d", 7, "N"],  // 물리학과
+  ["u05020500010-ba-d", 6, "N"],  // 화학과
+  ["u05020600018-ba-d", 5, "N"],  // 지구환경과학과
+];
+
+function koreaTrack(quota: number, gye: "H" | "N"): AdmissionTrack {
+  return {
+    kind: "jeongsi_ga",
+    name: "수능전형(일반전형)",
+    specialType: "general",
+    quotaInitial: quota,
+    stages: [{ step: 1, components: { csat: 100 } }],
+    reflectionRatio: gye === "N" ? KOREA_RR_NATURAL : KOREA_RR_HUM,
+    conversionTable: { status: "not_applicable" },
+    planStatus: "preliminary",
+    planSource: {
+      kind: "admission_plan",
+      publishedYear: PLAN_PUBLISHED_YEAR,
+      sourceUrl: "고려대학교 2027학년도 대학입학전형 시행계획 (2025.04, 입학처 공개 PDF)",
+    },
+    notes: gye === "N" ? KOREA_NOTE_N : KOREA_NOTE_H,
+  };
+}
+
 const PILOT: JeongsiSeedRow[] = [
   { universityId: "pusan", departmentId: "u04040100012-ba-d", jeongsi: [PUSAN_MECH_JEONGSI] },
+  ...KOREA_DEPTS.map(([id, quota, gye]) => ({
+    universityId: "korea",
+    departmentId: id,
+    jeongsi: [koreaTrack(quota, gye)],
+  })),
 ];
 
 const JEONGSI_KINDS: AdmissionTrackKind[] = ["jeongsi_ga", "jeongsi_na", "jeongsi_da"];
