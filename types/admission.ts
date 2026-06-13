@@ -524,6 +524,16 @@ export interface AdmissionTrack {
     announcementDate?: string;
   };
 
+  /**
+   * 데이터 단계 — 정시 예정안(전형시행계획) vs 확정(모집요강) 구분 (정직성 P-002).
+   *   - undefined / "confirmed": 확정 데이터(모집요강). 기존 전 트랙 호환 기본값.
+   *   - "preliminary": 전형시행계획 기준 예정안. 12월 모집요강 확정본으로 교체 예정.
+   *     세부 환산점수(conversionTable 등)는 아직 null 일 수 있음 — 지어내지 않음.
+   */
+  planStatus?: "confirmed" | "preliminary";
+  /** 예정안 출처 — 12월 확정본 교체 추적용. planStatus="preliminary" 일 때만 채움. */
+  planSource?: { kind: "admission_plan"; publishedYear: number; sourceUrl?: string };
+
   /** 정형화 어려운 메모 (가산점 정책, 면접 형식, 결격 사유 등) */
   notes?: string;
 }

@@ -30,6 +30,7 @@ import type { ParserTrustLevel } from "../../scripts/etl/parsers/types";
 export type DataSourceKind =
   | "kcue_openapi" // 한국대학교육협의회 공시 (academyinfo.go.kr)
   | "pdf_extract" // PDF 모집요강 텍스트 추출 (pdftotext)
+  | "admission_plan" // 대학 전형시행계획(예정) — 정시 예정안. 확정(모집요강)보다 한 단계 아래.
   | "ocr" // OCR 결과 (Tesseract)
   | "manual_admin" // 운영자 수동 입력
   | "csv_csat"; // 수능 통계 CSV (KICE)
@@ -89,6 +90,11 @@ const SOURCE_META: Record<DataSourceKind, SourceMeta> = {
   pdf_extract: {
     defaultTrust: "trusted-fallback",
     label: "대학 공식 모집요강",
+  },
+  admission_plan: {
+    // 예정안 — 확정 모집요강보다 한 단계 아래(trusted-fallback). 12월 확정본으로 승격.
+    defaultTrust: "trusted-fallback",
+    label: "대학 전형시행계획(예정)",
   },
   ocr: {
     defaultTrust: "suspicious",

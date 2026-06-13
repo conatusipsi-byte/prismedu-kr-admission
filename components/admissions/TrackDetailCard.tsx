@@ -42,18 +42,34 @@ export function TrackDetailCard({ track, className }: TrackDetailCardProps) {
   // P-005 정직성 — 정원외/그룹 단위 전형은 모집인원이 학과 단위가 아니므로 별도 표시.
   const quotaScope = classifyQuotaScope(track);
   const external = isQuotaExternal(track);
+  // 정시 예정안(전형시행계획) — 확정(모집요강) 아님. 시각 분리 + 배지 (정직성 P-002).
+  const isPreliminary = track.planStatus === "preliminary";
   return (
     <Card
       data-component="track-detail-card"
       data-track-kind={track.kind}
       data-quota-scope={quotaScope}
-      className={cn(external && "border-indigo-200 dark:border-indigo-900/50", className)}
+      data-plan-status={track.planStatus ?? "confirmed"}
+      className={cn(
+        external && "border-indigo-200 dark:border-indigo-900/50",
+        isPreliminary && "border-l-4 border-l-amber-400 dark:border-l-amber-500/70",
+        className,
+      )}
     >
       <CardContent className="flex flex-col gap-4 py-5">
         {/* 헤더 — 전형명·뱃지·모집인원 */}
         <div className="flex flex-wrap items-center gap-2">
           <h3 className="text-base font-semibold">{track.name}</h3>
           <AdmissionTrackBadge kind={track.kind} />
+          {isPreliminary && (
+            <Badge
+              variant="outline"
+              data-element="plan-preliminary-badge"
+              className="border-amber-300 bg-amber-50 text-2xs text-amber-700 dark:border-amber-800/50 dark:bg-amber-950/30 dark:text-amber-300"
+            >
+              예정안 · 전형시행계획
+            </Badge>
+          )}
           {external && (
             <Badge
               variant="outline"
@@ -75,6 +91,20 @@ export function TrackDetailCard({ track, className }: TrackDetailCardProps) {
             )}
           </span>
         </div>
+
+        {/* 예정안 안내 — 확정본 교체 예정 (정직성 P-002) */}
+        {isPreliminary && (
+          <p
+            data-element="plan-preliminary-note"
+            className="flex items-start gap-1.5 rounded-md border border-amber-200 bg-amber-50/50 p-2.5 text-2xs leading-relaxed text-amber-800 dark:border-amber-900/40 dark:bg-amber-950/20 dark:text-amber-300"
+          >
+            <Info aria-hidden className="mt-0.5 h-3 w-3 shrink-0" />
+            <span>
+              2027 <strong>전형시행계획(예정안)</strong> 기준이에요. 정시 상세(변환표준점수 등)는{" "}
+              <strong>12월 확정본</strong>으로 교체될 수 있습니다.
+            </span>
+          </p>
+        )}
 
         {/* 단계별 평가 — stages.length > 1 이면 1단계 + 2단계 분해 */}
         {track.stages.length > 0 && <StagesSection stages={track.stages} />}
