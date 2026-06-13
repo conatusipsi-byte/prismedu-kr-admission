@@ -10,6 +10,7 @@
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
 import { ADMISSION_PROBABILITY_ENABLED } from "@/lib/admission/feature-flags";
+import { isValidAdmissionId } from "@/lib/admission/id-validation";
 import type {
   AdmissionSampleStats,
   AdmissionTrack,
@@ -40,9 +41,10 @@ export async function fetchDepartmentDetail(
   universityId: string,
   departmentId: string,
 ): Promise<DepartmentDetail | null> {
-  // ID 검증 — SQL injection 차단 외에 캐시 키 안정성도 보장.
-  if (!/^[a-zA-Z0-9_-]{1,50}$/.test(universityId)) return null;
-  if (!/^[a-zA-Z0-9_-]{1,50}$/.test(departmentId)) return null;
+  // ID 검증 — 캐시 키 안정성 + PostgREST 필터 안전. 한글 음절 허용(한글 department_id 지원).
+  // (구버전은 ASCII 만 허용 → 한글 id 학과 상세가 통째로 빈 페이지였음. 55개 학과 영향.)
+  if (!isValidAdmissionId(universityId)) return null;
+  if (!isValidAdmissionId(departmentId)) return null;
 
   const sb = getAdminSupabase();
   const year = new Date().getFullYear() + 1;

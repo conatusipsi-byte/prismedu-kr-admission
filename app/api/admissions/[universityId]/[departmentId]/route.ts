@@ -8,6 +8,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
+import { isValidAdmissionId } from "@/lib/admission/id-validation";
 import type {
   AdmissionSampleStats,
   AdmissionTrackKind,
@@ -23,7 +24,8 @@ export async function GET(
   ctx: { params: Promise<{ universityId: string; departmentId: string }> },
 ): Promise<NextResponse> {
   const { universityId, departmentId } = await ctx.params;
-  if (!/^[a-zA-Z0-9_-]{1,50}$/.test(universityId) || !/^[a-zA-Z0-9_-]{1,50}$/.test(departmentId)) {
+  // 한글 department_id 허용 (id-validation). 구버전 ASCII-only 는 한글 학과를 400 으로 막았음.
+  if (!isValidAdmissionId(universityId) || !isValidAdmissionId(departmentId)) {
     return NextResponse.json({ error: "유효하지 않은 ID" }, { status: 400 });
   }
 
