@@ -147,6 +147,7 @@ function buildSystemPrompt(): string {
 3. 근거가 부족하면 일반론임을 caveats 에 명시한다. 모르는 것을 지어내지 마라.
 4. strengths/weaknesses/recommendations 는 각각 한국어 한 문장(60자 내외).
 5. caveats 에 "본 분석은 합격을 보장하지 않으며 전형 요구 대비 적합도 참고용"이라는 취지를 1개 이상 포함하라.
+6. 수능최저(수능최저학력기준)에 대해서는 아래 입력의 "수능최저: …(status=…)" 시스템 판정값만 근거로 한다. 충족/미충족이라는 정성적 사실만 언급하고, 등급합 등 구체 수치를 직접 계산·재서술하지 마라(임의 숫자 금지). 프로필의 "수능 성적 참고" 등급합은 일반 참고치로 수능최저 기준 등급합과 다르니, 두 값을 혼동해 인용하지 마라.
 
 출력 — 다음 JSON 만(앞뒤 설명·코드펜스 금지):
 {"fitTier":"strong|moderate|weak","summary":"...","strengths":["..."],"weaknesses":["..."],"recommendations":["..."],"caveats":["..."]}`;
@@ -166,7 +167,7 @@ function buildUserPrompt(input: RunInput): string {
 
 [학생 프로필] (null=미입력)
 내신 평균등급: ${fmt(n.naesinGpa)}
-수능 등급합(국·수·영·탐): ${fmt(n.csatGradeSum)} / 영어 등급: ${fmt(n.englishGrade)} / 표준점수 평균: ${fmt(n.csatStdAvg)}
+수능 성적 참고(일반 참고치 — 위 '수능최저' 시스템 판정과 별개, 혼동 금지): 등급합(국·수·탐) ${fmt(n.csatGradeSum)} / 영어 등급 ${fmt(n.englishGrade)} / 표준점수 평균 ${fmt(n.csatStdAvg)}
 비교과 종합점수(0~12): ${fmt(n.extraScore)}
 
 위 전형이 강조하는 요소(교과=내신, 학종=생기부/비교과·세특, 논술=논술+수능최저, 정시=수능) 대비
