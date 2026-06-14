@@ -90,6 +90,12 @@ const SOURCES: Source[] = [
   { file: `${B}/myongji-text.json`,   univId: "kcue_0000109", type: "text_extract", pdf: "univ/susi-2027/kcue_0000109.pdf" },
   { file: `${B}/dankook-text.json`,   univId: "kcue_0000082", type: "text_extract", pdf: "univ/susi-2027/kcue_0000082.pdf" },
   { file: `${B}/soongsil-text.json`,  univId: "kcue_0000143", type: "text_extract", pdf: "univ/susi-2027/kcue_0000143.pdf" },
+  // ── Phase 2 batch 5 (2026-06-14) — 인서울/수도권+거점국립 5교(100교 목표). 입학처 직링크. 이중 체크섬·central-verify 통과. ──
+  { file: `${B}/hallym-text.json`,    univId: "kcue_0000198", type: "text_extract", pdf: "univ/susi-2027/kcue_0000198.pdf" },
+  { file: `${B}/kyungnam-text.json`,  univId: "kcue_0000059", type: "text_extract", pdf: "univ/susi-2027/kcue_0000059.pdf" },
+  { file: `${B}/donga-text.json`,     univId: "kcue_0000105", type: "text_extract", pdf: "univ/susi-2027/kcue_0000105.pdf" },
+  { file: `${B}/hannam-text.json`,    univId: "kcue_0000195", type: "text_extract", pdf: "univ/susi-2027/kcue_0000195.pdf" },
+  { file: `${B}/cnu-text.json`,       univId: "kcue_0000029", type: "text_extract", pdf: "univ/susi-2027/kcue_0000029.pdf" },
 ];
 
 /* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */
