@@ -84,6 +84,12 @@ const SOURCES: Source[] = [
   { file: `${B}/jeonbuk-text.json`,   univId: "kcue_0000025", type: "text_extract", pdf: "univ/전북대학교 2027학년도 대입전형 수시 모집요강_최초공지.pdf" },
   { file: `${B}/seoultech-text.json`, univId: "kcue_0000036", type: "text_extract", pdf: "univ/서울과학기술대학교 2027학년도 수시 신입생 모집요강(안).pdf" },
   { file: `${B}/gnu-text.json`,       univId: "kcue_0000007", type: "text_extract", pdf: "univ/(경상국립대)2027학년도 신입생 수시 모집요강(배포용).pdf" },
+  // ── Phase 2 batch 4 (2026-06-14) — 인서울/수도권 5교(100교 목표). 입학처 직링크 PDF → pdftotext + 본체 구조화($0). 행합/열합 이중 체크섬·central-verify·grand total 원문대조 통과. ──
+  { file: `${B}/sejong-text.json`,    univId: "kcue_0000138", type: "text_extract", pdf: "univ/susi-2027/kcue_0000138.pdf" },
+  { file: `${B}/sookmyung-text.json`, univId: "kcue_0000141", type: "text_extract", pdf: "univ/susi-2027/kcue_0000141.pdf" },
+  { file: `${B}/myongji-text.json`,   univId: "kcue_0000109", type: "text_extract", pdf: "univ/susi-2027/kcue_0000109.pdf" },
+  { file: `${B}/dankook-text.json`,   univId: "kcue_0000082", type: "text_extract", pdf: "univ/susi-2027/kcue_0000082.pdf" },
+  { file: `${B}/soongsil-text.json`,  univId: "kcue_0000143", type: "text_extract", pdf: "univ/susi-2027/kcue_0000143.pdf" },
 ];
 
 /* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */
@@ -228,7 +234,15 @@ async function main() {
   const integrityRejected: string[] = [];
   const perUniv: Array<{ univ: string; univId: string; depts: number; matched: number; rows: number; tracks: number; kinds: Set<string> }> = [];
 
-  for (const src of SOURCES) {
+  // ── 증분 적재 안전장치 (--only=<univId,...>) ──
+  // ⚠ 전체 실행(--execute, --only 없음)은 tracks 컬럼을 통째 UPSERT 하므로,
+  //    load-jeongsi-plan.ts 로 병합해 둔 정시 예정안(jeongsi_*)을 덮어쓴다.
+  //    기존 대학을 재적재할 땐 반드시 정시 보존을 확인하고, 신규 대학만 넣을 땐 --only 로 한정할 것.
+  const ONLY = process.argv.find((a) => a.startsWith("--only="))?.slice("--only=".length).split(",").filter(Boolean);
+  const ACTIVE = ONLY && ONLY.length ? SOURCES.filter((s) => ONLY.includes(s.univId)) : SOURCES;
+  if (ONLY && ONLY.length) console.log(`[--only] ${ACTIVE.length}개 대학만 처리: ${ONLY.join(", ")}\n`);
+
+  for (const src of ACTIVE) {
     if (!fs.existsSync(src.file)) { console.log(`⚠ ${src.file} 없음 — skip`); continue; }
     const data = JSON.parse(fs.readFileSync(src.file, "utf8"));
     const result = data.result ?? data;

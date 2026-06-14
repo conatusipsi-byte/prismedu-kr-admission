@@ -49,6 +49,12 @@ FILES = {
     "전북대":     BASE / "jeonbuk-text.json",
     "서울과기대": BASE / "seoultech-text.json",
     "경상국립대": BASE / "gnu-text.json",
+    # ── 추가 (2026-06-14) ──
+    "숭실대":     BASE / "soongsil-text.json",
+    "숙명여대":   BASE / "sookmyung-text.json",
+    "세종대":     BASE / "sejong-text.json",
+    "명지대":     BASE / "myongji-text.json",
+    "단국대(죽전·천안)": BASE / "dankook-text.json",
 }
 
 TRACKTYPE_ENUM = {"학생부위주(교과)","학생부위주(종합)","논술위주","실기/실적위주","수능위주","기타"}
