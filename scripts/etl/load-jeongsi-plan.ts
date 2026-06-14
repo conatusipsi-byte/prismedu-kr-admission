@@ -14,6 +14,8 @@
  * 사용: .env.local 로드 후  `npx tsx scripts/etl/load-jeongsi-plan.ts [--commit]`
  *   --commit 없으면 DRY-RUN(미적재, before/after 미리보기만).
  */
+import fs from "node:fs";
+import path from "node:path";
 import type { AdmissionTrack, AdmissionTrackKind } from "../../types/admission";
 
 const REF = "bqmccfeglxzzrmgdirxe";
@@ -248,15 +250,30 @@ const PILOT: JeongsiSeedRow[] = [
   ...SNU_DEPTS.map(([id, quota]) => ({ universityId: "snu", departmentId: id, jeongsi: [snuTrack(quota)] })),
 ];
 
+/* ───── 배치3 (거점국립 + 인서울 10교) — 전형시행계획 텍스트추출 → 중앙검증 ─────
+   경상국립·전남·제주·동국(reflectionRatio 계열균일) + 경북·서울시립·공주·가천·인하·가톨릭(군·인원+비고).
+   data/jeongsi-2027-preliminary-batch3.json (univ_dept 단위 1 track, 모두 기존 수시행에 MERGE).
+   복잡5교(성균관·한양·중앙·경희·이화) 및 [수동필요](강원·충북·홍익·건국·서울과기·전북)는 제외. */
+const BATCH3_PATH = path.resolve(process.cwd(), "data/jeongsi-2027-preliminary-batch3.json");
+const BATCH3: JeongsiSeedRow[] = fs.existsSync(BATCH3_PATH)
+  ? (JSON.parse(fs.readFileSync(BATCH3_PATH, "utf8")) as Array<{ universityId: string; departmentId: string; track: AdmissionTrack }>).map(
+      (r) => ({ universityId: r.universityId, departmentId: r.departmentId, jeongsi: [r.track] }),
+    )
+  : [];
+
 const JEONGSI_KINDS: AdmissionTrackKind[] = ["jeongsi_ga", "jeongsi_na", "jeongsi_da"];
 
 interface DbRow { tracks: Record<string, AdmissionTrack[]> | null; available_track_kinds: string[] | null; source: object | null }
 
 async function main() {
   const commit = process.argv.includes("--commit");
-  console.log(`[load-jeongsi-plan] ${commit ? "COMMIT" : "DRY-RUN"} · ${PILOT.length} dept(s)\n`);
+  // 기본=배치3만(PILOT 부산/고려/연세/서울은 이미 적재됨). --all 로 전체 재병합(멱등).
+  const batch3Only = !process.argv.includes("--all");
+  const ROWS = batch3Only ? BATCH3 : [...PILOT, ...BATCH3];
+  console.log(`[load-jeongsi-plan] ${commit ? "COMMIT" : "DRY-RUN"} · ${batch3Only ? "BATCH3-only" : "ALL(PILOT+BATCH3)"} · ${ROWS.length} dept(s)\n`);
 
-  for (const row of PILOT) {
+  let mergeCount = 0, insertCount = 0;
+  for (const row of ROWS) {
     const id = `${row.universityId}_${row.departmentId}_${YEAR}`;
     const existingRows = await sql<DbRow>(
       `select tracks, available_track_kinds, source from public.department_admissions where id=${escStr(id)};`,
@@ -276,9 +293,9 @@ async function main() {
     const lost = prevNonJeongsi.filter((k) => !(k in merged));
     if (lost.length > 0) throw new Error(`[ABORT] ${id} 수시 트랙 유실: ${lost.join(",")}`);
 
-    console.log(`▶ ${id}  (${existing ? "MERGE 기존행" : "INSERT 신규행"})`);
-    console.log(`   before kinds: [${prevKinds.join(", ") || "—"}]`);
-    console.log(`   after  kinds: [${availableKinds.join(", ")}]  (수시 보존: ${prevNonJeongsi.join(",") || "없음"})`);
+    if (existing) mergeCount++; else insertCount++;
+    const jsKinds = row.jeongsi.map((t) => `${t.kind}:${t.quotaInitial}${t.reflectionRatio ? "★" : ""}`).join(",");
+    console.log(`▶ ${id} ${existing ? "MERGE" : "INSERT"} +[${jsKinds}] 수시보존[${prevNonJeongsi.join(",") || "없음"}] → after[${availableKinds.join(",")}]`);
 
     if (!commit) continue;
 
@@ -300,9 +317,9 @@ async function main() {
     const afterKinds: string[] = afterRows[0]?.available_track_kinds ?? [];
     const stillLost = prevNonJeongsi.filter((k) => !afterKinds.includes(k));
     if (stillLost.length > 0) throw new Error(`[POST-VERIFY FAIL] ${id} 수시 유실: ${stillLost.join(",")}`);
-    console.log(`   ✓ 적재 완료 · DB 재확인 kinds: [${afterKinds.join(", ")}]\n`);
   }
-  console.log(`[done] ${commit ? "적재 완료" : "DRY-RUN 종료 (--commit 로 실제 적재)"}`);
+  console.log(`\n[summary] rows=${ROWS.length} · MERGE(기존행)=${mergeCount} · INSERT(신규행)=${insertCount}`);
+  console.log(`[done] ${commit ? "적재 완료 (수시 보존 POST-VERIFY 통과)" : "DRY-RUN 종료 (--commit 로 실제 적재)"}`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
