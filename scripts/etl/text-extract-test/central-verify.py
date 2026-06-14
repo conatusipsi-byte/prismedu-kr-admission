@@ -59,6 +59,7 @@ FILES = {
     "한남대":     BASE / "hannam-text.json",
     "동아대":     BASE / "donga-text.json",
     "충남대":     BASE / "cnu-text.json",
+    "국립창원대": BASE / "changwon-text.json",
 }
 
 TRACKTYPE_ENUM = {"학생부위주(교과)","학생부위주(종합)","논술위주","실기/실적위주","수능위주","기타"}

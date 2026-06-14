@@ -96,6 +96,10 @@ const SOURCES: Source[] = [
   { file: `${B}/donga-text.json`,     univId: "kcue_0000105", type: "text_extract", pdf: "univ/susi-2027/kcue_0000105.pdf" },
   { file: `${B}/hannam-text.json`,    univId: "kcue_0000195", type: "text_extract", pdf: "univ/susi-2027/kcue_0000195.pdf" },
   { file: `${B}/cnu-text.json`,       univId: "kcue_0000029", type: "text_extract", pdf: "univ/susi-2027/kcue_0000029.pdf" },
+  // ── Phase 2 batch 6 (2026-06-14) — 3차 신규 국립대(100교 목표). 입학처 직링크. ──
+  //    강릉원주(gwnu)는 2025 강원대 통합으로 요강이 '강원대 강릉·원주캠퍼스' 브랜딩 → 귀속 univ_id 확인 후 적재(보류).
+  { file: `${B}/changwon-text.json`,  univId: "kcue_0000028", type: "text_extract", pdf: "univ/susi-2027/kcue_0000028.pdf" },
+  { file: `${B}/kchungju-text.json`,  univId: "kcue_0000034", type: "text_extract", pdf: "univ/susi-2027/kcue_0000034.pdf" },
 ];
 
 /* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */
