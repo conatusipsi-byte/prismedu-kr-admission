@@ -1,0 +1,474 @@
+{
+  "meta": {
+    "universityName": "차의과학대학교",
+    "universityId": "kcue_0000187",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "단일 캠퍼스(경기 포천). 의·약·간호·바이오·보건 계열. 모집단위는 단과대학 단위(간호대학·약학대학·글로벌미래인재대학)로 모집",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 3,
+    "totalTracks": 17,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 수시 전형 인원 합) = Ⅲ.전형별 모집인원 표의 단과대학별 수시 소계",
+      "passed": 3,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      { "track": "학생부교과(CHA학생부교과전형)", "computed": 68, "stated": 68, "match": true },
+      { "track": "학생부교과(지역균형선발전형)", "computed": 101, "stated": 101, "match": true },
+      { "track": "학생부종합(CHA학생부종합전형)", "computed": 186, "stated": 186, "match": true },
+      { "track": "학생부종합(사회통합전형)", "computed": 34, "stated": 34, "match": true },
+      { "track": "학생부종합(농어촌학생특별전형)", "computed": 22, "stated": 22, "match": true },
+      { "track": "학생부종합(기회균등특별전형)", "computed": 9, "stated": 9, "match": true }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "차의과학대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "간호대학",
+        "campus": "포천",
+        "trackHint": "자연",
+        "totalQuotaHint": 74,
+        "tracks": [
+          {
+            "trackName": "학생부교과(CHA학생부교과전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": "5배수",
+                "components": { "학생부(교과)": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": { "교과": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 22,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활이 타의 모범이 되어 해당 학교장의 추천을 받는 자(고교별 추천 인원 제한 없음)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "학생부(교과)": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          },
+          {
+            "trackName": "학생부종합(CHA학생부종합전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": "3배수",
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          },
+          {
+            "trackName": "학생부종합(사회통합전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 6,
+            "applicationQualification": "장애인 등 대상자, 농어촌학생, 특성화고교 졸업자, 기회균등, 국가보훈대상자, 서해5도 학생, 자립지원 대상자, 북한이탈주민이나 제3국 출생 북한이탈주민 자녀, 만학도 등 사회통합 대상 지원자격 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": "3배수",
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 14]
+          },
+          {
+            "trackName": "학생부종합(농어촌학생특별전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 [지원자격1] 중학교~고등학교 전 교육과정을 농어촌 소재지에서 연속 이수하고 본인 및 부·모 모두 농어촌 거주, 또는 [지원자격2] 초등학교~고등학교 전 교육과정 농어촌 연속 이수 및 본인 농어촌 거주. (특수목적고 제외) — 정원외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "서류": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 20]
+          },
+          {
+            "trackName": "학생부종합(기회균등특별전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균등",
+            "quotaInitial": 1,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 국민기초생활보장법 수급(권)자, 차상위계층, 한부모가족지원법 지원대상자 중 하나에 해당하는 자 — 정원외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "서류": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 23]
+          }
+        ]
+      },
+      {
+        "departmentName": "약학대학",
+        "campus": "포천",
+        "trackHint": "자연",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과(CHA학생부교과전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": "5배수",
+                "components": { "학생부(교과)": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": { "교과": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함) 등급 합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함)",
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활이 타의 모범이 되어 해당 학교장의 추천을 받는 자(고교별 추천 인원 제한 없음)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "학생부(교과)": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함) 등급 합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함)",
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          },
+          {
+            "trackName": "학생부종합(CHA학생부종합전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": "3배수",
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함) 등급 합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함)",
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          },
+          {
+            "trackName": "학생부종합(농어촌학생특별전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 [지원자격1] 중학교~고등학교 전 교육과정을 농어촌 소재지에서 연속 이수하고 본인 및 부·모 모두 농어촌 거주, 또는 [지원자격2] 초등학교~고등학교 전 교육과정 농어촌 연속 이수 및 본인 농어촌 거주. (특수목적고 제외) — 정원외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "서류": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함) 등급 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함)",
+            "prevYearResult": null,
+            "sourcePages": [3, 20]
+          },
+          {
+            "trackName": "학생부종합(기회균등특별전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균등",
+            "quotaInitial": 3,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 국민기초생활보장법 수급(권)자, 차상위계층, 한부모가족지원법 지원대상자 중 하나에 해당하는 자 — 정원외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "서류": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함) 등급 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 2과목 평균, 소수점 이하 절사) 중 3개 영역(수학 포함)",
+            "prevYearResult": null,
+            "sourcePages": [3, 23]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌미래인재대학",
+        "campus": "포천",
+        "trackHint": "자연",
+        "totalQuotaHint": 322,
+        "tracks": [
+          {
+            "trackName": "학생부교과(CHA학생부교과전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": "5배수",
+                "components": { "학생부(교과)": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": { "교과": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 72,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활이 타의 모범이 되어 해당 학교장의 추천을 받는 자(고교별 추천 인원 제한 없음)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "학생부(교과)": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          },
+          {
+            "trackName": "학생부종합(CHA학생부종합전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 152,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": "3배수",
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          },
+          {
+            "trackName": "학생부종합(사회통합전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 28,
+            "applicationQualification": "장애인 등 대상자, 농어촌학생, 특성화고교 졸업자, 기회균등, 국가보훈대상자, 서해5도 학생, 자립지원 대상자, 북한이탈주민이나 제3국 출생 북한이탈주민 자녀, 만학도 등 사회통합 대상 지원자격 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": "3배수",
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 14]
+          },
+          {
+            "trackName": "학생부종합(농어촌학생특별전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 [지원자격1] 중학교~고등학교 전 교육과정을 농어촌 소재지에서 연속 이수하고 본인 및 부·모 모두 농어촌 거주, 또는 [지원자격2] 초등학교~고등학교 전 교육과정 농어촌 연속 이수 및 본인 농어촌 거주. (특수목적고 제외) — 정원외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "서류": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 20]
+          },
+          {
+            "trackName": "학생부종합(기회균등특별전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균등",
+            "quotaInitial": 5,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 국민기초생활보장법 수급(권)자, 차상위계층, 한부모가족지원법 지원대상자 중 하나에 해당하는 자 — 정원외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": { "서류": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 23]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "글로벌미래인재대학은 무전공(자율전공) 모집단위임 — 학생은 무전공으로 입학 후 2학년 진급 시 생명과학대학·헬스케어융합대학 산하 전공(세포·유전자재생의학/시스템생명과학/바이오식의약학/디지털보건의료/스포츠의학/경영학/AI의료홍보미디어/심리학/AI의료데이터학/미술치료/소프트웨어융합 등) 중 1~2전공 선택(정원 제한 없음). 간호학과·약학과는 선택 불가. 따라서 모집단위는 전공 단위가 아닌 단과대학 단위로 구조화함.",
+      "정원외 전형(농어촌학생특별전형 22명·기회균등특별전형 9명)은 Ⅲ.전형별 모집인원 표에서 각 단과대학 수시 소계에 이미 포함되어 합산되어 있음(간호 74=10+22+31+6+4+1, 약학 24=8+7+3+0+3+3, 글로벌 322=50+72+152+28+15+5). 따라서 totalQuotaHint(=수시 소계)에 정원외를 포함하여 rowSum 검증함. 별도 풀로 분리하지 않음.",
+      "약학대학은 학생부종합(사회통합전형) 미모집('-' 표기) — 해당 track 제외(약학대학 tracks=5).",
+      "약학대학만 수능최저학력기준 적용: 학생부교과/지역균형/CHA학생부종합전형은 등급 합 6등급 이내, 농어촌/기회균등특별전형은 등급 합 7등급 이내. 간호대학·글로벌미래인재대학은 전 전형 수능최저 없음(csatMinimumExempt=true).",
+      "사회통합전형(34명)은 장애인·농어촌·특성화고·기회균등·국가보훈·서해5도·자립지원·북한이탈주민·만학도 등 다양한 사회통합 자격을 단일 전형으로 통합 모집함(별도 인원 분리 없음).",
+      "trackHint는 모집단위(의·약·간호·바이오·보건 계열) 특성상 전 모집단위를 '자연'으로 분류. 단 글로벌미래인재대학은 경영학·심리학 등 인문 전공도 포함하는 무전공 단위이므로 잠정 '자연' 표기(실제 trackHint 미명시, 검토 필요).",
+      "정시 모집인원(간호31·약학12·글로벌142, 계185)은 수시모집 결과에 따라 변동 가능(수시 미충원 인원 정시 이월). 본 JSON은 susi만 구조화."
+    ]
+  }
+}

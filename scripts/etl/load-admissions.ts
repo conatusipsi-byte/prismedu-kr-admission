@@ -108,6 +108,20 @@ const SOURCES: Source[] = [
   { file: `${B}/anyang-text.json`,     univId: "kcue_0000147", type: "text_extract", pdf: "univ/susi-2027/kcue_0000147.pdf" },
   { file: `${B}/pyeongtaek-text.json`, univId: "kcue_0000186", type: "text_extract", pdf: "univ/susi-2027/kcue_0000186.pdf" },
   { file: `${B}/hyupsung-text.json`,   univId: "kcue_0000207", type: "text_extract", pdf: "univ/susi-2027/kcue_0000207.pdf" },
+  // ── Phase 2 batch 5 (2026-06-17) — 수도권/지방 사립·국립 12교(100교 목표). 입학처 board 직링크 → pdftotext + 본체 구조화($0). 행합/열합 이중 체크섬·central 재검증·grand total 원문대조 통과. ──
+  //    한국공학대(kcue_0000247)=JS flipbook 이미지뷰어, 강서대(kcue_0000079)=2027 수시요강 미발표 → [수동필요]. 호서는 재외국민(정원외 ◎ pool) colTotal 제외 후 56행 정합.
+  { file: `${B}/daejin-text.json`,    univId: "kcue_0000097", type: "text_extract", pdf: "univ/susi-2027/kcue_0000097.pdf" },
+  { file: `${B}/yongin-text.json`,    univId: "kcue_0000156", type: "text_extract", pdf: "univ/susi-2027/kcue_0000156.pdf" },
+  { file: `${B}/hankyong-text.json`,  univId: "kcue_0000037", type: "text_extract", pdf: "univ/susi-2027/kcue_0000037.pdf" },
+  { file: `${B}/cha-text.json`,       univId: "kcue_0000187", type: "text_extract", pdf: "univ/susi-2027/kcue_0000187.pdf" },
+  { file: `${B}/cku-text.json`,       univId: "kcue_0000072", type: "text_extract", pdf: "univ/susi-2027/kcue_0000072.pdf" },
+  { file: `${B}/namseoul-text.json`,  univId: "kcue_0000245", type: "text_extract", pdf: "univ/susi-2027/kcue_0000245.pdf" },
+  { file: `${B}/hoseo-text.json`,     univId: "kcue_0000211", type: "text_extract", pdf: "univ/susi-2027/kcue_0000211.pdf" },
+  { file: `${B}/woosong-text.json`,   univId: "kcue_0000240", type: "text_extract", pdf: "univ/susi-2027/kcue_0000240.pdf" },
+  { file: `${B}/semyung-text.json`,   univId: "kcue_0000137", type: "text_extract", pdf: "univ/susi-2027/kcue_0000137.pdf" },
+  { file: `${B}/joongbu-text.json`,   univId: "kcue_0000173", type: "text_extract", pdf: "univ/susi-2027/kcue_0000173.pdf" },
+  { file: `${B}/konyang-text.json`,   univId: "kcue_0000054", type: "text_extract", pdf: "univ/susi-2027/kcue_0000054.pdf" },
+  { file: `${B}/kyungdong-text.json`, univId: "kcue_0000060", type: "text_extract", pdf: "univ/susi-2027/kcue_0000060.pdf" },
 ];
 
 /* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */

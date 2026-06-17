@@ -1,0 +1,1322 @@
+{
+  "meta": {
+    "universityName": "경동대학교",
+    "universityId": "kcue_0000060",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "메트로폴캠퍼스(경기도 양주)·메디컬캠퍼스(원주문막) 정원내 수시 모집, 글로벌캠퍼스(고성) 정원내 모집 없음",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 28,
+    "totalTracks": 38,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 수시 전형 인원 합)",
+      "passed": 26,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "일반학생",
+        "computed": 1341,
+        "stated": 1341,
+        "match": true
+      },
+      {
+        "track": "자기추천제",
+        "computed": 57,
+        "stated": 57,
+        "match": true
+      },
+      {
+        "track": "지역인재",
+        "computed": 110,
+        "stated": 110,
+        "match": true
+      },
+      {
+        "track": "태권도특기자",
+        "computed": 12,
+        "stated": 12,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "경동대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "유아교육과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 68,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 68,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 39,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "행정학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 34,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 34,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건행정학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔관광경영학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외식사업학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔조리학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 44,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 44,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학과",
+        "campus": "양주",
+        "trackHint": "자연",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 61,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소프트웨어융합보안학과",
+        "campus": "양주",
+        "trackHint": "자연",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 39,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축공학과",
+        "campus": "양주",
+        "trackHint": "자연",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건설시스템공학과",
+        "campus": "양주",
+        "trackHint": "자연",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축디자인학과",
+        "campus": "양주",
+        "trackHint": "자연",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "디자인학과",
+        "campus": "양주",
+        "trackHint": "자연",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠마케팅학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 49,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "군사학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공서비스학과",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "자기추천제",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 7,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자로서 지원 학과에 재능과 열정이 있다고 본인이 스스로 판단하는 사람.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "출결": 10,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "체육학과",
+        "campus": "양주",
+        "trackHint": "자연",
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 37,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 체육학과 지원자.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 25,
+                  "출결": 5,
+                  "실기": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "태권도특기자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 12,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자 중 본 대학 체육학과 지원자. 겨루기 8명, 격파 4명 선발.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 25,
+                  "출결": 5,
+                  "입상실적": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18,
+              19,
+              20,
+              21,
+              22
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국제융합학부",
+        "campus": "양주",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "재외국민 및 외국인 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재외국민·외국인",
+            "quotaInitial": null,
+            "applicationQualification": "재외국민 및 외국인 특별전형으로 모집인원 제한 없이 선발. 별도 모집요강 참조(대학 홈페이지 공지).",
+            "reflectionStages": [],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 372,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 265,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "자기추천제",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 50,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자로서 지원 학과에 재능과 열정이 있다고 본인이 스스로 판단하는 사람.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "출결": 10,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27,
+              28,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 57,
+            "applicationQualification": "강원권 내 소재 고등학교에 입학하여 졸업(예정)한 사람. (간호학과 지원자 중 2022학년도 이후 중학교 입학자는 별도 거주·이수 요건 적용)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "치위생학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 158,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 134,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 24,
+            "applicationQualification": "강원권 내 소재 고등학교에 입학하여 졸업(예정)한 사람. (간호학과 지원자 중 2022학년도 이후 중학교 입학자는 별도 거주·이수 요건 적용)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 69,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 62,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "강원권 내 소재 고등학교에 입학하여 졸업(예정)한 사람. (간호학과 지원자 중 2022학년도 이후 중학교 입학자는 별도 거주·이수 요건 적용)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 74,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 67,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "강원권 내 소재 고등학교에 입학하여 졸업(예정)한 사람. (간호학과 지원자 중 2022학년도 이후 중학교 입학자는 별도 거주·이수 요건 적용)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 34,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "강원권 내 소재 고등학교에 입학하여 졸업(예정)한 사람. (간호학과 지원자 중 2022학년도 이후 중학교 입학자는 별도 거주·이수 요건 적용)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상병리학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 55,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "강원권 내 소재 고등학교에 입학하여 졸업(예정)한 사람. (간호학과 지원자 중 2022학년도 이후 중학교 입학자는 별도 거주·이수 요건 적용)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "치기공학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 59,
+        "tracks": [
+          {
+            "trackName": "일반학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 53,
+            "applicationQualification": "2027년 2월 고등학교 졸업예정자 또는 졸업자, 고졸 동등학력 인정자. 고교 계열 무관 교차지원 가능.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "강원권 내 소재 고등학교에 입학하여 졸업(예정)한 사람. (간호학과 지원자 중 2022학년도 이후 중학교 입학자는 별도 거주·이수 요건 적용)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국제학부",
+        "campus": "고성",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "재외국민 및 외국인 특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재외국민·외국인",
+            "quotaInitial": null,
+            "applicationQualification": "재외국민 및 외국인 특별전형으로 모집인원 제한 없이 선발. 별도 모집요강 참조(대학 홈페이지 공지).",
+            "reflectionStages": [],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              8
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "정원외 전형(농어촌학생 38명, 특성화고교졸업자 15명, 기초생활수급자·차상위계층·한부모가족지원대상자 31명; 총 84명)은 캠퍼스 구분없이 전체 학과를 대상으로 통합선발하는 풀(pool)이며 모집단위(학과)별로 배분되지 않으므로, 학과 totalQuotaHint 및 학과별 track 에서 제외함. 학생부(교과) 위주(메트로폴 교과90+출결10, 단 메디컬 일반과 동일 산식). 유아교육과만 정원외 총 7명(농어촌3+기수4)으로 별도 명시.",
+      "국제융합학부(양주)·국제학부(고성)는 재외국민 및 외국인 특별전형으로 정원 내 선발하지 않고 모집인원 제한 없이 별도 모집요강으로 선발하므로 quotaInitial=null, totalQuotaHint=null. 수시 정원내 일반 전형 인원 합산(검증)에서 제외.",
+      "최저학력기준: 모든 학과/모든 전형에서 적용하지 않음(csatMinimumExempt=true).",
+      "체육학과 일반학생전형은 교과25+출결5+실기70 구조로 실기/실적 위주에 해당하나, 6p 총괄표상 '일반학생' 컬럼에 집계됨. 태권도특기자(12명)는 별도 컬럼.",
+      "자기추천제 전형은 항공서비스학과(7명, 메트로폴)·간호학과(50명, 메디컬) 2개 학과에서만 면접고사를 포함하여 선발함.",
+      "지역인재 전형은 메디컬캠퍼스(원주문막) 7개 학과에서만 선발(간호57·치위생24·작업치료7·물리치료7·응급구조3·임상병리6·치기공6).",
+      "campusScope: 글로벌캠퍼스(고성)는 2027 수시 정원내 모집 없음(국제학부 별도전형만). 메트로폴(양주)·메디컬(원주문막) 정원내 수시 모집.",
+      "GRAND_TOTAL 정합: 추출 수시 정원내 전형 합 = 1,520명(일반1,341+자기추천57+지역인재110+태권도특기자12). 6p 총괄표 총계행 '2027 모집인원' 컬럼 1,556은 입학정원 합으로 정시모집 36명(가군18·나군16·다군2)을 포함함. 1,556(입학정원) − 36(정시) = 1,520(수시 정원내)로 정확히 일치. 정원외 84명·국제학부류는 별도."
+    ]
+  }
+}

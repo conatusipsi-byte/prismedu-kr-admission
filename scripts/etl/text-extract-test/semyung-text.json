@@ -1,0 +1,5795 @@
+{
+  "meta": {
+    "universityName": "세명대학교",
+    "universityId": "kcue_0000137",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "제천 단일 캠퍼스 (충북 제천시) — 정원내 37개 모집단위 수시 전형 전체",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 37,
+    "totalTracks": 204,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 정원내 수시 전형 인원 합)",
+      "passed": 37,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "[학생부교과,실기/실적위주] 일반전형(교과 컬럼)",
+        "computed": 705,
+        "stated": 705,
+        "match": true
+      },
+      {
+        "track": "인문계고교전형",
+        "computed": 265,
+        "stated": 265,
+        "match": true
+      },
+      {
+        "track": "사회배려자및봉사자전형",
+        "computed": 26,
+        "stated": 26,
+        "match": true
+      },
+      {
+        "track": "지역인재(일반)전형",
+        "computed": 98,
+        "stated": 98,
+        "match": true
+      },
+      {
+        "track": "지역인재(기회균형)전형",
+        "computed": 4,
+        "stated": 4,
+        "match": true
+      },
+      {
+        "track": "특성화고교인재전형",
+        "computed": 57,
+        "stated": 57,
+        "match": true
+      },
+      {
+        "track": "면접우수자전형",
+        "computed": 93,
+        "stated": 93,
+        "match": true
+      },
+      {
+        "track": "[학생부교과,실기/실적위주] 일반전형(실기/실적 컬럼)",
+        "computed": 98,
+        "stated": 98,
+        "match": true
+      },
+      {
+        "track": "SMU의료인재전형",
+        "computed": 33,
+        "stated": 33,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "세명대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "미디어콘텐츠창작학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외국어학부[영미언어문화/중국언어문화/일본언어문화]",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "아트&산업디자인학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "실내디자인학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "시각․영상디자인학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "패션디자인학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공연예술학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "사회배려자및봉사자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려자",
+            "quotaInitial": 2,
+            "applicationQualification": "국가보훈대상자·사회봉사직종 자녀·3인이상 다자녀·다문화가정 자녀·백혈병소아암 병력자·봉사활동 30시간 이상·검정고시 출신자 중 1개 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영화웹툰애니메이션학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 44,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 2,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 59,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "사회배려자및봉사자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려자",
+            "quotaInitial": 3,
+            "applicationQualification": "국가보훈대상자·사회봉사직종 자녀·3인이상 다자녀·다문화가정 자녀·백혈병소아암 병력자·봉사활동 30시간 이상·검정고시 출신자 중 1개 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "법학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "부동산지적학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방방재학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "사회배려자및봉사자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려자",
+            "quotaInitial": 2,
+            "applicationQualification": "국가보훈대상자·사회봉사직종 자녀·3인이상 다자녀·다문화가정 자녀·백혈병소아암 병력자·봉사활동 30시간 이상·검정고시 출신자 중 1개 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "회계세무금융학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔경영학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공서비스학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "광고홍보학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "상담심리학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI컴퓨터학부[인공지능소프트웨어/컴퓨터시스템]",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 42,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트IT학부[인공지능응용학/정보통신학]",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "사회배려자및봉사자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려자",
+            "quotaInitial": 3,
+            "applicationQualification": "국가보훈대상자·사회봉사직종 자녀·3인이상 다자녀·다문화가정 자녀·백혈병소아암 병력자·봉사활동 30시간 이상·검정고시 출신자 중 1개 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전기전자공학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "재난안전학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건안전공학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 2,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 84,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "사회배려자및봉사자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려자",
+            "quotaInitial": 3,
+            "applicationQualification": "국가보훈대상자·사회봉사직종 자녀·3인이상 다자녀·다문화가정 자녀·백혈병소아암 병력자·봉사활동 30시간 이상·검정고시 출신자 중 1개 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 34,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재(기회균형)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권 소재 고교 전 교육과정 이수 + 기초생활수급(권)자/차상위계층/한부모가족 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20,
+              21
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "SMU의료인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자. 검정고시 불가. 면접 없음(서류 100%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 80,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 36,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "사회배려자및봉사자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려자",
+            "quotaInitial": 8,
+            "applicationQualification": "국가보훈대상자·사회봉사직종 자녀·3인이상 다자녀·다문화가정 자녀·백혈병소아암 병력자·봉사활동 30시간 이상·검정고시 출신자 중 1개 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "SMU의료인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자. 검정고시 불가. 면접 없음(서류 100%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상병리학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 69,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "사회배려자및봉사자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려자",
+            "quotaInitial": 5,
+            "applicationQualification": "국가보훈대상자·사회봉사직종 자녀·3인이상 다자녀·다문화가정 자녀·백혈병소아암 병력자·봉사활동 30시간 이상·검정고시 출신자 중 1개 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "면접우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자 또는 검정고시 출신자. 출신고교·이수계열 무관(교차지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 53,
+                  "면접": 47
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23,
+              24
+            ]
+          },
+          {
+            "trackName": "SMU의료인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자. 검정고시 불가. 면접 없음(서류 100%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "바이오제약산업학부[제약산업/바이오의약]",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "바이오코스메틱학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티케어학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "바이오식품영양학부[식품영양학(교직)/건강기능식품학]",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "동물보건학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "반려동물산업학과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교인재전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화고 또는 종합계고 전문계열과 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교",
+            "quotaInitial": null,
+            "applicationQualification": "2019년~2027년 2월 국내 특성화(전문계)고 또는 종합계고 졸업(예정)자 중 동일계 인정학과/전문교과 30단위 이상. 정원외, 통합선발(총 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "생활체육학과",
+        "campus": "제천",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "한의예과",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "인문계고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2019년~2027년 2월 이전 국내 일반(인문계)고교 또는 종합계고 일반과(보통과) 졸업(예정)자. 특목고·방송통신고 가능, 특성화고·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 수학 포함 우수 3개 영역 등급 합 5 이내 (한국사 미반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어/수학/영어/사회·과학탐구(우수 1과목) 중 수학 포함 우수 3개 영역. 수학·탐구 지정영역 없음",
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 16,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 수학 포함 우수 3개 영역 등급 합 5 이내 (한국사 미반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어/수학/영어/사회·과학탐구(우수 1과목) 중 수학 포함 우수 3개 영역. 수학·탐구 지정영역 없음",
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재(기회균형)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권 소재 고교 전 교육과정 이수 + 기초생활수급(권)자/차상위계층/한부모가족 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 수학 포함 우수 3개 영역 등급 합 5 이내 (한국사 미반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어/수학/영어/사회·과학탐구(우수 1과목) 중 수학 포함 우수 3개 영역. 수학·탐구 지정영역 없음",
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20,
+              21
+            ]
+          },
+          {
+            "trackName": "SMU의료인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2019년~2027년 2월 국내 고교 졸업(예정)자. 검정고시 불가. 면접 없음(서류 100%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 수학(미적분 또는 기하) 포함 3개 영역 등급 합 5 이내 (확률과통계 응시자 불합격, 한국사 미반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어/수학(미적분 또는 기하)/영어/탐구 중 3개 영역. 수학 확률과통계 응시 시 불합격",
+            "prevYearResult": null,
+            "sourcePages": [
+              25
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 수학(미적분 또는 기하) 포함 3개 영역 등급 합 5 이내 (확률과통계 응시자 불합격, 한국사 미반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어/수학(미적분 또는 기하)/영어/탐구 중 3개 영역. 수학 확률과통계 응시 시 불합격",
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 수학(미적분 또는 기하) 포함 3개 영역 등급 합 5 이내 (확률과통계 응시자 불합격, 한국사 미반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어/수학(미적분 또는 기하)/영어/탐구 중 3개 영역. 수학 확률과통계 응시 시 불합격",
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자율전공학부",
+        "campus": "제천",
+        "trackHint": "자연",
+        "totalQuotaHint": 44,
+        "tracks": [
+          {
+            "trackName": "[학생부교과, 실기/실적위주] 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 33,
+            "applicationQualification": "2027년 2월 이전 고등학교 졸업(예정)자 또는 동등 학력 인정자. 출신고교·이수계열 무관(교차지원 가능), 수능 응시여부 무관",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "지역인재(일반)전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 11,
+            "applicationQualification": "2019년~2027년 2월 충청권(대전·세종·충북·충남) 소재 고교에서 전 교육과정 이수한 졸업(예정)자. 검정고시·영재학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "유형Ⅰ(중·고 6년) 또는 유형Ⅱ(초·중·고 12년) 농어촌 지역 재학·거주. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급자및차상위계층,한부모가족전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": null,
+            "applicationQualification": "2027년 2월 이전 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 대상자. 정원외, 통합선발(총 35명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              31,
+              32
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "면접우수자전형: 세부전형 본문(요강 [23])에는 '총 97명'으로 표기되어 있으나, 모집인원 총괄표(GROUND TRUTH, 요강 [7]) 합계 및 학과별 합산은 93명으로 일치함. 총괄표 값(93)을 채택. 본문 97은 요강 자체 불일치로 추정.",
+      "정원외 3개 전형(농어촌 총35·특성화고교 총10·기초생활차상위한부모 총35)은 통합선발 전형으로, 학과별 표기는 '최대모집 가능인원(N이내)'이며 입학정원 행 합계에 포함되지 않음. 따라서 quotaInitial=null 처리하고 totalQuotaHint(정원내 합)에서 제외함.",
+      "한의예과 수능최저(수학 포함/미적분·기하 포함 3개 영역 등급 합 5 이내)는 한의예과 모집단위에 한해 적용. 그 외 모집단위는 전 전형 수능최저 없음(csatMinimumExempt=true).",
+      "아트&산업디자인학과 등 실기 모집단위 및 생활체육학과의 '일반전형'은 trackTypeRaw='실기/실적위주'로 분리 표기. 교과 일반전형과 동일 전형명([학생부교과, 실기/실적위주] 일반전형) 하에 모집단위별로 교과/실기 중 하나만 운영.",
+      "공연예술학과 실기고사는 서울 대학로(민송아트홀)에서 시행되나 소속 캠퍼스는 제천 본교."
+    ]
+  }
+}

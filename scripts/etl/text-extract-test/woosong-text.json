@@ -1,0 +1,6333 @@
+{
+  "meta": {
+    "universityName": "우송대학교",
+    "universityId": "kcue_0000240",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "우송대학교 단일 캠퍼스(대전) — 솔브릿지국제경영대학·엔디컷국제대학·철도대학·소프트웨어(SW)융합대학·외식조리대학·보건복지대학",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 43,
+    "totalTracks": 202,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 수시 전형 인원 합)",
+      "passed": 43,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "교과중심",
+        "computed": 859,
+        "stated": 859,
+        "match": true
+      },
+      {
+        "track": "지역인재",
+        "computed": 97,
+        "stated": 97,
+        "match": true
+      },
+      {
+        "track": "자기추천",
+        "computed": 114,
+        "stated": 114,
+        "match": true
+      },
+      {
+        "track": "교과면접",
+        "computed": 547,
+        "stated": 547,
+        "match": true
+      },
+      {
+        "track": "종합서류형",
+        "computed": 183,
+        "stated": 183,
+        "match": true
+      },
+      {
+        "track": "종합면접형",
+        "computed": 138,
+        "stated": 138,
+        "match": true
+      },
+      {
+        "track": "지역인재Ⅱ",
+        "computed": 2,
+        "stated": 2,
+        "match": true
+      },
+      {
+        "track": "체육특기자",
+        "computed": 2,
+        "stated": 2,
+        "match": true
+      },
+      {
+        "track": "미술우수자",
+        "computed": 5,
+        "stated": 5,
+        "match": true
+      },
+      {
+        "track": "뷰티특기자",
+        "computed": 10,
+        "stated": 10,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "우송대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "자유전공학부",
+        "campus": "솔브릿지국제경영대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "◉솔브릿지경영학부",
+        "campus": "솔브릿지국제경영대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 59,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI경영학과",
+        "campus": "엔디컷국제대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "◉AI•빅데이터학과",
+        "campus": "엔디컷국제대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "◉글로벌철도학과",
+        "campus": "철도대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도건설시스템학부 철도건설시스템전공",
+        "campus": "철도대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도건설시스템학부 건축공학전공",
+        "campus": "철도대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도경영학과",
+        "campus": "철도대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 77,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도시스템학부 철도전기시스템전공",
+        "campus": "철도대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 67,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도시스템학부 철도소프트웨어전공",
+        "campus": "철도대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도차량시스템학과",
+        "campus": "철도대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 76,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도자율전공학부",
+        "campus": "철도대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI•컴퓨터공학과",
+        "campus": "소프트웨어(SW)융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 46,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "◉글로벌미디어AI영상학과",
+        "campus": "소프트웨어(SW)융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "테크노미디어융합학부 미디어디자인·영상전공",
+        "campus": "소프트웨어(SW)융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "게임멀티미디어학부 게임소프트웨어전공",
+        "campus": "소프트웨어(SW)융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "게임멀티미디어학부 게임그래픽전공",
+        "campus": "소프트웨어(SW)융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "미술우수자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "미술우수자",
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 등으로 포트폴리오(4절 이하 작품 5점 이내) 제출자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 18,
+                  "출결": 2,
+                  "면접": 20,
+                  "실적": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌조리학부 ◉글로벌조리전공",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌조리학부 ◉글로벌외식,조리경영전공",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌조리학부 ◉Lyfe조리전공",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "★외식조리전공",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 96,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 37,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외식조리학부 한식·조리과학전공",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외식조리학부 외식,조리경영전공",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "★외식조리영양학과",
+        "campus": "외식조리대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "제과제빵·조리학부 제과제빵·조리전공",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 79,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 36,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "제과제빵·조리학부 ◉글로벌제과제빵학과",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔관광학부 호텔관광경영전공",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔관광학부 ◉글로벌호텔관광학과",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외식조리자율전공학부",
+        "campus": "외식조리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건의료경영학과",
+        "campus": "보건복지대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "재활학부 스포츠건강재활학과",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 69,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "체육특기자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "체육특기자",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 등으로 대한체육회 정회원 종목단체 주최 펜싱 국제/전국대회 개인·단체 3위 이내 입상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 18,
+                  "출결": 2,
+                  "면접": 20,
+                  "실적": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "재활학부 언어치료·청각재활학과",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "재활학부 물리치료학과",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 47,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "재활학부 작업치료학과",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "보건복지대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방·안전학부",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 33,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "★뷰티디자인경영학과",
+        "campus": "보건복지대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "뷰티특기자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "뷰티특기자",
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업(예정)자 등으로 미용 관련 기능경기대회/경진대회 입상 또는 국가·민간자격증 취득자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 18,
+                  "출결": 2,
+                  "면접": 20,
+                  "실적": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "동물관리학부 토탈펫케어학과",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "동물관리학부 동물의료관리학과",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "[사범계열]유아교육과",
+        "campus": "보건복지대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "보건복지대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 33,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "trackName": "종합서류형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "종합면접형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내·해외 고교 졸업(예정)자 또는 동등학력 인정자(검정고시 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권 소재 고교 입학~졸업 재학자 중 기초생활수급/차상위/한부모 해당자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": {
+                  "서류": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              20,
+              21
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건복지자율전공학부",
+        "campus": "보건복지대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "교과중심",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고교 입학~졸업 재학자(검정고시·해외고 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "trackName": "자기추천",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자기추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자 중 자기추천 등 지원유형 해당자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "교과면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등학력 인정자(검정고시·해외고 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              7,
+              12
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "정원외 전형(농어촌학생 55명, 특성화고교졸업자 29명, 기초생활수급자 및 차상위계층 25명)은 통합 모집으로 별도 선발하며, 모집단위별 (숫자)는 최대 모집인원 hint일 뿐 합계에 포함되지 않아 totalQuotaHint 및 tracks에서 제외함. 정시 정원외(농어촌·특성화고·기초차상위·특수교육대상자)는 수시 대상 아님.",
+      "totalQuotaHint는 모집단위별 '정원내 모집인원(수시+정시)' 컬럼이 아닌 '수시 정원내 전형 인원 합'을 사용함. 정원내 모집인원 컬럼은 정시 36명(전학과 일반/교과 분산)을 포함하므로 일부 모집단위에서 1~2명 큰 값을 가짐.",
+      "전 전형 수능최저학력기준 미적용(csatMinimumExempt=true). 모든 전형 수능최저 '없음'.",
+      "종합서류형은 면접 없는 일괄합산(서류 100%, 700점 만점). 종합면접형·지역인재Ⅱ는 단계전형(1단계 서류 100% 5배수 → 2단계 서류 70%+면접 30%).",
+      "실기/실적(체육특기자·미술우수자·뷰티특기자) 반영비율은 교과 18%+출결 2%+면접 20%+실적 60%(요약표상 교과 20%+면접 20%+실적 60%; 세부 전형방법표의 교과 18/출결 2 분리값을 채택). 체육특기자=스포츠건강재활학과 2명, 미술우수자=게임그래픽전공 5명, 뷰티특기자=뷰티디자인경영학과 10명에 각각 배정됨.",
+      "campus 필드에는 우송대 단과대학명을 기재함(우송대는 단일 캠퍼스). ◉=글로벌 특성화 학과(100% 영어수업), ★=교직과정 설치 학부(과) 표식을 모집단위명에 원문 그대로 유지.",
+      "자유전공학부 및 철도/외식조리/보건복지자율전공학부는 모집단위(department)로 포함함. 명칭변경(예: AI·컴퓨터공학과 통합, 글로벌미디어AI영상학과)·신설(글로벌제과제빵학과)은 2027 변경사항 반영본 기준.",
+      "applicationQualification은 원문 지원자격을 1줄 요약한 것으로, 세부 제출서류·예외조항은 sourcePages 원문 참조."
+    ]
+  }
+}

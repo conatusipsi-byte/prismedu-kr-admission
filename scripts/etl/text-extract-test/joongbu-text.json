@@ -1,0 +1,2926 @@
+{
+  "meta": {
+    "universityName": "중부대학교",
+    "universityId": "kcue_0000173",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "충청국제캠퍼스(금산)·고양창의캠퍼스(고양/덕소) 2개 캠퍼스 정원내 수시 전체(정원외 통합모집 4전형은 풀 단위만 기록)",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 41,
+    "totalTracks": 87,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 수시 전형 인원 합) vs 02 모집인원 총괄표 수시 column",
+      "passed": 41,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학교생활우수자전형",
+        "computed": 279,
+        "stated": 279,
+        "match": true
+      },
+      {
+        "track": "학교생활우수자전형(항공운항서비스)",
+        "computed": 21,
+        "stated": 21,
+        "match": true
+      },
+      {
+        "track": "학교생활우수자전형(항공서비스)",
+        "computed": 60,
+        "stated": 60,
+        "match": true
+      },
+      {
+        "track": "학생부우수자전형",
+        "computed": 896,
+        "stated": 896,
+        "match": true
+      },
+      {
+        "track": "지역인재Ⅰ전형",
+        "computed": 74,
+        "stated": 74,
+        "match": true
+      },
+      {
+        "track": "지역인재Ⅱ전형",
+        "computed": 3,
+        "stated": 3,
+        "match": true
+      },
+      {
+        "track": "국가보훈대상자전형",
+        "computed": 4,
+        "stated": 4,
+        "match": true
+      },
+      {
+        "track": "실기우수자전형",
+        "computed": 234,
+        "stated": 234,
+        "match": true
+      },
+      {
+        "track": "실적우수자전형",
+        "computed": 13,
+        "stated": 13,
+        "match": true
+      }
+    ],
+    "checksumPassed": true,
+    "jeongwonoiPools": {
+      "농어촌학생전형": 36,
+      "특성화고교졸업자전형": 18,
+      "기초생활수급자 및 차상위계층자, 한부모가족지원대상자전형": 36,
+      "특수교육대상자전형": 3
+    }
+  },
+  "result": {
+    "universityName": "중부대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "경찰행정학전공",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "인문",
+        "totalQuotaHint": 77,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 59,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "국가보훈대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "국가보훈기본법 제3조제2호 국가보훈대상자로서 교육지원대상자(대학입학특별전형 대상자 증명서 발급 가능자). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              23,
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰경호학전공",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "인문",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 33,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공운항서비스학전공",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학교생활우수자전형(항공운항서비스)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 50,
+                  "면접": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              12,
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과(교직), (간호교육인증)",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "자연",
+        "totalQuotaHint": 128,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 43,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 42,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자로서 기초생활수급자/차상위/한부모가족 중 하나 충족. 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              21,
+              22
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "국가보훈대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "국가보훈기본법 제3조제2호 국가보훈대상자로서 교육지원대상자(대학입학특별전형 대상자 증명서 발급 가능자). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              23,
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "반려동물사육학전공",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "자연",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 1,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠재활복지학전공",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "자연",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 1,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "실적우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함)로서 종목별(태권도·세팍타크로·배구·골프) 입상/자격 요건 충족자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "출결": 10,
+                  "실기": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              42,
+              43,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠건강관리학전공",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          },
+          {
+            "trackName": "실적우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함)로서 종목별(태권도·세팍타크로·배구·골프) 입상/자격 요건 충족자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "출결": 10,
+                  "실기": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              42,
+              43,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트팜학과",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "자연",
+        "totalQuotaHint": 5,
+        "tracks": [
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공학부",
+        "campus": "충청국제캠퍼스(금산)",
+        "trackHint": "인문",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공공안전학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "국가보훈대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "국가보훈기본법 제3조제2호 국가보훈대상자로서 교육지원대상자(대학입학특별전형 대상자 증명서 발급 가능자). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              23,
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌무역학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미디어커뮤니케이션학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 47,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "문헌정보학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공서비스학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 80,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형(항공서비스)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 60,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 50,
+                  "면접": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자율설계학부",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 200,
+        "tracks": [
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 192,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 고교 입학부터 졸업까지 이수자(간호학과는 비수도권 중학교+충청권 고교 요건). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "동물보건학과(동물보건사 양성기관 평가인증)",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수교육과 유아특수교육",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수교육과 초등특수교육",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수교육과 중등특수교육",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수체육교육과",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "게임소프트웨어전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "정보보호학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인공지능전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전기전자공학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "국가보훈대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "국가보훈기본법 제3조제2호 국가보훈대상자로서 교육지원대상자(대학입학특별전형 대상자 증명서 발급 가능자). 2027년 2월 졸업예정자 포함",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              23,
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트모빌리티공학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "산업디자인학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "만화애니메이션학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 58,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 58,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사진영상학전공(교직)",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "연극영화학전공 연출/제작/기획",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "연극영화학전공 연기",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "실용음악학전공 기악",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "실용음악학전공 뮤직프로덕션",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 8,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "실용음악학전공 보컬",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              6,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "엔터테인먼트학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티·패션비즈니스학전공",
+        "campus": "고양창의캠퍼스(고양/덕소)",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부우수자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 최저학력기준 : 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              16,
+              17,
+              18
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "정원외 4개 전형(농어촌36·특성화고18·기초/차상위/한부모36·특수교육대상자3)은 모두 '통합모집' 공동선발 풀이며 모집단위별 인원이 '(n)이내' 상한으로만 표시됨. 모집단위별 확정 quota가 아니므로 departments[]에 미포함하고 totalQuotaHint에서 제외함. 풀 총원은 meta.warnings/jeongwonoiPools 참고.",
+      "campus는 PDF에 '충청국제캠퍼스'(금산)·'고양창의캠퍼스'(고양/덕소)로 표기됨. 프롬프트의 '고양(덕소)/금산' 캠퍼스 명칭을 괄호로 병기함.",
+      "특수교육과는 유아특수교육·초등특수교육·중등특수교육 3개 세부전공으로 별도 모집단위 분리(각 수시 20명). 연극영화학전공(연출제작기획/연기)·실용음악학전공(기악/뮤직프로덕션/보컬)도 세부전공 분리.",
+      "실적우수자전형은 종목(태권도1·세팍타크로2·배구7·골프3)으로 세분되나 모집단위(스포츠재활복지·스포츠건강관리) 단위로 합산 적재: 스포츠재활복지 3(태권도1+세팍타크로2), 스포츠건강관리 10(배구7+골프3).",
+      "전 모집단위 수능최저학력기준 없음(csatMinimumExempt=true).",
+      "실기우수자 실기 반영비율 2027학년도 80%로 확대(2026 70%). components: 교과20+실기80.",
+      "prevYearResult는 스키마 계약상 null 고정(2026 입시결과 표는 PDF p.65~66에 존재하나 본 스키마 필드는 null)."
+    ]
+  }
+}

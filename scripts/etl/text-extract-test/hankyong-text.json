@@ -1,0 +1,4603 @@
+{
+  "meta": {
+    "universityName": "한경국립대학교",
+    "universityId": "kcue_0000037",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "안성캠퍼스·평택캠퍼스 2개 캠퍼스, 6개 단과대학 42개 학과 + 자율전공학부(HK자율전공학부Ⅰ/Ⅱ) + 단과대학 광역(유형2)",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 48,
+    "totalTracks": 155,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 정원내소계) == sum(tracks.quotaInitial)",
+      "passed": 48,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학생부교과(일반전형_안성+평택 합산)",
+        "computed": 448,
+        "stated": 448,
+        "match": true
+      },
+      {
+        "track": "학생부교과(특수교육대상자)",
+        "computed": 80,
+        "stated": 80,
+        "match": true
+      },
+      {
+        "track": "학생부교과(지역균형선발_안성)",
+        "computed": 80,
+        "stated": 80,
+        "match": true
+      },
+      {
+        "track": "학생부종합(잠재력우수자_안성)",
+        "computed": 299,
+        "stated": 299,
+        "match": true
+      },
+      {
+        "track": "학생부종합(사회통합_안성)",
+        "computed": 61,
+        "stated": 61,
+        "match": true
+      },
+      {
+        "track": "실기위주(디자인_안성)",
+        "computed": 6,
+        "stated": 6,
+        "match": true
+      },
+      {
+        "track": "실기/실적위주(체육특기자_안성)",
+        "computed": 5,
+        "stated": 5,
+        "match": true
+      },
+      {
+        "track": "실기위주(음악특기자_평택)_일반",
+        "computed": 9,
+        "stated": 9,
+        "match": true
+      },
+      {
+        "track": "실기위주(음악특기자_평택)_특수교육대상자",
+        "computed": 4,
+        "stated": 4,
+        "match": true
+      }
+    ],
+    "checksumPassed": true,
+    "notesUnincluded": {
+      "scope": "정원외(법정 정원외) — 정원내만 departments 에 구조화함",
+      "tracks": {
+        "학생부교과(특성화고교 졸업자)": {
+          "안성": 6,
+          "평택": 3,
+          "total": 9,
+          "sourcePages": [
+            32,
+            33,
+            34
+          ]
+        },
+        "학생부교과(농어촌학생)": {
+          "안성": 40,
+          "평택": 9,
+          "total": 49,
+          "sourcePages": [
+            35,
+            36,
+            37
+          ]
+        },
+        "학생부교과(기초생활수급자 및 차상위계층 등)": {
+          "안성": 7,
+          "평택": 4,
+          "total": 11,
+          "sourcePages": [
+            38,
+            39
+          ]
+        },
+        "학생부교과(서해 5도)": {
+          "안성": "6(통합모집)",
+          "평택": 1,
+          "total_statedColumn": 6,
+          "sourcePages": [
+            40,
+            41
+          ]
+        },
+        "실기위주(재외국민)": {
+          "total": 25,
+          "note": "총괄표 재외국민 모집인원 25, 모집합계 100 구성요소. 세부전형 안내는 별도 모집요강.",
+          "sourcePages": [
+            6
+          ]
+        }
+      },
+      "정원외_모집합계_총괄표": 100
+    }
+  },
+  "result": {
+    "universityName": "한경국립대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "인문사회과학대학(유형2)",
+        "campus": "안성/평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "문예창작미디어콘텐츠홍보학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영미언어문화학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "행정학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "법학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "복지상담학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 10,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_평택)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "한국수어교육학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 10,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_평택)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아특수보육학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 11,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_평택)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공공행정학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "상담심리교육학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 10,
+        "tracks": [
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "생명자원과학대학(유형2)",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식품영양학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식물생명환경학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "조경학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "동물생명과학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "동물응용과학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "원예생명공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응용생명공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "지역자원시스템공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공과대학(유형2)",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 64,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 48,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "토목공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "환경공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "안전공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식품생명공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "화학공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응용수학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "ICT로봇공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "기계공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전자공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전기공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학과(5년제)",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의료재활공학과",
+        "campus": "평택",
+        "trackHint": "자연",
+        "totalQuotaHint": 11,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_평택)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI융합대학(유형2)",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 7,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인공지능학과",
+        "campus": "안성",
+        "trackHint": "자연",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI반도체융합학과",
+        "campus": "평택",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_평택)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의류산업학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(사회통합_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합",
+            "quotaInitial": 1,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              21,
+              22,
+              23
+            ]
+          },
+          {
+            "trackName": "실기위주(디자인_안성)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "실기",
+            "quotaInitial": 6,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 40,
+                  "실기": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              24,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 7,
+        "tracks": [
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          },
+          {
+            "trackName": "실기/실적위주(체육특기자_안성)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "체육특기자",
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 25,
+                  "출결": 5,
+                  "실적": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              26,
+              27
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "시각미디어디자인학과",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "학생부종합(잠재력우수자_안성)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "제품공간디자인학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_평택)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 5,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "실용음악학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 13,
+        "tracks": [
+          {
+            "trackName": "실기위주(음악특기자_평택)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "음악특기자",
+            "quotaInitial": 9,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28,
+              29,
+              30
+            ]
+          },
+          {
+            "trackName": "실기위주(음악특기자_평택)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "음악특기자(특수교육대상자)",
+            "quotaInitial": 4,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28,
+              29,
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "귀금속보석공예학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 11,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_평택)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              13,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 3,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수체육학과",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 12,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "HK자율전공학부Ⅰ",
+        "campus": "안성",
+        "trackHint": "인문",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 45,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "대학수학능력시험 4개 영역 중 성적우수 2개 영역 등급의 합이 8등급 이내 (4개영역 중 2개). 국어·수학·영어·탐구영역에 한하여 적용. 탐구는 사회/과학탐구 중 성적우수 1개 영역 반영(직업탐구 미반영). 수학 미적분/기하 응시자는 취득등급에서 2등급 감산(수학이 2개영역에 포함될 경우에 한함, 단 HK자율전공학부Ⅰ·문예창작미디어콘텐츠홍보학과·영미언어문화학과·행정학과·법학과·경영학과·복지상담학과 지원자 제외).",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 탐구(사회/과학 중 1) 중 성적우수 2개 영역",
+            "prevYearResult": null,
+            "sourcePages": [
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역균형선발_안성)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역균형",
+            "quotaInitial": 10,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "HK자율전공학부Ⅱ",
+        "campus": "평택",
+        "trackHint": "인문",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "학생부교과(특수교육대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 17,
+            "applicationQualification": null,
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "정원내 총괄표는 pdftotext -layout 출력에서 안성 학과의 지역균형/잠재력/사회통합 컬럼이 어긋나게 찍혀, -bbox-layout word x-coord 로 재정렬 후 적재함(컬럼 totals 전수 일치).",
+      "정원외(특성화고교9·농어촌49·기초생활11·서해5도6·재외국민25·모집합계100)는 법정 정원외로, 대부분 학과당 1명 분산 배정이라 본 JSON 의 departments[].tracks 에는 포함하지 않음(정원내만 구조화). 정원외 track-level 합계는 meta.notesUnincluded 참조.",
+      "음악특기자(평택, 실용음악학과)는 일반9·특수교육대상자4 로 대상별 선발하나 전형방법은 실기100 동일. 두 트랙으로 분리 적재.",
+      "체육특기자(스포츠과학과) 배점 학생부교과250/출결50/수상실적700(총1000)을 %로 환산: 교과25/출결5/실적70.",
+      "HK자율전공학부Ⅰ(안성)=일반45+지역균형10=55, HK자율전공학부Ⅱ(평택)=특수교육대상자17. 자율전공/계열광역 모집단위로 departments 에 포함.",
+      "단과대학 (유형2) 광역 모집단위(인문사회과학대학·생명자원과학대학·공과대학·AI융합대학)는 소속 학과와 별개의 모집단위로 입학정원·정원내소계에 합산되므로 departments 에 각각 포함함."
+    ]
+  }
+}

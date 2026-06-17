@@ -1,0 +1,3533 @@
+{
+  "meta": {
+    "universityName": "건양대학교",
+    "universityId": "kcue_0000054",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "메디컬캠퍼스(대전)+글로컬캠퍼스(논산) 통합. '전형별 모집인원 총괄표'(txt p.12~13) GROUND TRUTH, 각 전형 세부 페이지(전형별 세부 사항 p.15~35)와 교차검증. 요약표 정원내 1,518/정원외 109/계 1,627 정합.",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 39,
+    "totalTracks": 120,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 수시 전형 인원 합 == 총괄표 '총 모집인원')",
+      "passed": 39,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "일반[교과]",
+        "computed": 982,
+        "stated": 982,
+        "match": true
+      },
+      {
+        "track": "지역[교과]",
+        "computed": 163,
+        "stated": 163,
+        "match": true
+      },
+      {
+        "track": "일반[최저]",
+        "computed": 11,
+        "stated": 11,
+        "match": true
+      },
+      {
+        "track": "지역[최저]",
+        "computed": 20,
+        "stated": 20,
+        "match": true
+      },
+      {
+        "track": "지역[면접]",
+        "computed": 10,
+        "stated": 10,
+        "match": true
+      },
+      {
+        "track": "지역[기초]",
+        "computed": 7,
+        "stated": 7,
+        "match": true
+      },
+      {
+        "track": "군사학전형",
+        "computed": 35,
+        "stated": 35,
+        "match": true
+      },
+      {
+        "track": "농어촌학생전형[면접]",
+        "computed": 2,
+        "stated": 2,
+        "match": true
+      },
+      {
+        "track": "농어촌학생전형[교과]",
+        "computed": 60,
+        "stated": 60,
+        "match": true
+      },
+      {
+        "track": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+        "computed": 16,
+        "stated": 16,
+        "match": true
+      },
+      {
+        "track": "특성화고교졸업자전형",
+        "computed": 7,
+        "stated": 7,
+        "match": true
+      },
+      {
+        "track": "특수교육대상자전형",
+        "computed": 4,
+        "stated": 4,
+        "match": true
+      },
+      {
+        "track": "채용조건형[계약]",
+        "computed": 20,
+        "stated": 20,
+        "match": true
+      },
+      {
+        "track": "학생부종합",
+        "computed": 241,
+        "stated": 241,
+        "match": true
+      },
+      {
+        "track": "지역의사",
+        "computed": 6,
+        "stated": 6,
+        "match": true
+      },
+      {
+        "track": "특기자전형",
+        "computed": 13,
+        "stated": 13,
+        "match": true
+      },
+      {
+        "track": "일반[실기]",
+        "computed": 30,
+        "stated": 30,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "건양대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "의학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 51,
+        "tracks": [
+          {
+            "trackName": "일반[최저]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자 [의학과]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택 합 4등급 (※ 과탐 2과목 평균 산출시 소수점 이하 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택",
+            "prevYearResult": null,
+            "sourcePages": [
+              17
+            ]
+          },
+          {
+            "trackName": "지역[최저]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 20,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 [의학과]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택 합 6등급 (※ 과탐 2과목 평균 산출시 소수점 이하 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택",
+            "prevYearResult": null,
+            "sourcePages": [
+              17
+            ]
+          },
+          {
+            "trackName": "지역[면접]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 [의학과] (실질반영 1단계 61.5%+면접 38.5%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 800
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "지역[기초]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역+기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권 소재 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자 [의학과] (실질반영 1단계 61.5%+면접 38.5%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 800
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택 합 7등급 (※ 과탐 2과목 평균 산출시 소수점 이하 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택",
+            "prevYearResult": null,
+            "sourcePages": [
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[면접]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 [의학과] (실질반영 1단계 61.5%+면접 38.5%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 800
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3개 영역 합 6등급 (※ 과탐 2과목 평균 산출시 소수점 이하 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택",
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "지역의사",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역의사",
+            "quotaInitial": 6,
+            "applicationQualification": "복무형 지역의사 희망자로 충청권 중학교 및 각 권역 고교 이수·거주(의무복무 10년 조건) [의학과] (실질반영 1단계 82.71%+면접 17.29%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택 합 6등급 (※ 과탐 2과목 평균 산출시 소수점 이하 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 수학, 영어, 과탐(2과목 평균) 중 3과목 선택",
+            "prevYearResult": null,
+            "sourcePages": [
+              33
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "데이터의학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 187,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 65,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 63,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "지역[기초]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역+기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권 소재 고교 졸업(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자 [간호학과]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 5,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "병원경영학과",
+        "campus": "대전",
+        "trackHint": "인문",
+        "totalQuotaHint": 63,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 52,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고교졸업(예정)자 등 기초생활수급(권)자/차상위계층/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "안경광학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상병리학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 54,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 9,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 5,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고교졸업(예정)자 등 기초생활수급(권)자/차상위계층/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "방사선학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "치위생학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 53,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고교졸업(예정)자 등 기초생활수급(권)자/차상위계층/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 52,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형+정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고교졸업(예정)자 등 기초생활수급(권)자/차상위계층/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 52,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 15,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 5,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고교졸업(예정)자 등 기초생활수급(권)자/차상위계층/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의공학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 58,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 11,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의료IT공학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 53,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 39,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고 졸업(예정)자(동일계 인정학과 이수 또는 전문교과 30단위 이상). 마이스터고·대안교육형 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의료공간디자인학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 18,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "제약생명공학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 41,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의료신소재학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 33,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인공지능학과",
+        "campus": "대전",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국방XR학부",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트팜학부",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형+정원외",
+            "quotaInitial": 1,
+            "applicationQualification": "국내 고교졸업(예정)자 등 기초생활수급(권)자/차상위계층/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고+정원외",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화고 졸업(예정)자(동일계 인정학과 이수 또는 전문교과 30단위 이상). 마이스터고·대안교육형 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "기업소프트웨어학부",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트보안학과",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 34,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유무인항공학과",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "채용조건형[계약]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(채용조건형)+정원외",
+            "quotaInitial": 8,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상 학력소지자 (기업별 모집·채용조건형 계약학과) (실질반영 교과 61.5%+면접 38.5%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "재난안전소방학전공",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "방위산업공학전공",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "채용조건형[계약]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(채용조건형)+정원외",
+            "quotaInitial": 12,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상 학력소지자 (기업별 모집·채용조건형 계약학과) (실질반영 교과 61.5%+면접 38.5%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국방반도체공학과",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "ND산업디자인학부",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고+정원외",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화고 졸업(예정)자(동일계 인정학과 이수 또는 전문교과 30단위 이상). 마이스터고·대안교육형 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국방산업경영학부",
+        "campus": "논산",
+        "trackHint": "인문",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상의약바이오학과",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식품생명공학과",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌의료뷰티학전공",
+        "campus": "논산",
+        "trackHint": "인문",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고+정원외",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화고 졸업(예정)자(동일계 인정학과 이수 또는 전문교과 30단위 이상). 마이스터고·대안교육형 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "특기자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 13,
+            "applicationQualification": "미용기능경기대회·미용관련 경진대회 입상자 또는 미용관련 국가/민간자격증 취득자 (분야: 미용/의상) [글로벌의료뷰티학전공] (실질반영 교과 10.6%+특기실적 89.4%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "특기실적": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠의학전공",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "심리상담치료학과",
+        "campus": "논산",
+        "trackHint": "인문",
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형+정원외",
+            "quotaInitial": 1,
+            "applicationQualification": "국내 고교졸업(예정)자 등 기초생활수급(권)자/차상위계층/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고 졸업(예정)자(동일계 인정학과 이수 또는 전문교과 30단위 이상). 마이스터고·대안교육형 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과",
+        "campus": "논산",
+        "trackHint": "인문",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자+정원외",
+            "quotaInitial": 1,
+            "applicationQualification": "장애인등록자/특수교육법 제15조 대상자/국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "재활퍼스널트레이닝학과",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "일반[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "실기",
+            "quotaInitial": 30,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자 [재활퍼스널트레이닝학과] (실질반영 교과 6.25%+전공실기 93.75%)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              35
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국방경찰행정학부",
+        "campus": "논산",
+        "trackHint": "인문",
+        "totalQuotaHint": 47,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "군사학과(남)",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "군사학전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "군사학",
+            "quotaInitial": 26,
+            "applicationQualification": "국내 고교졸업(예정)자 등 군 인사법 제10조 결격사유 없고 임관일 기준 만20~29세(군복무 합산 가능). 친권자 동의·재정보증보험 가입 가능자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "체력검정": 10,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "군사학과(여)",
+        "campus": "논산",
+        "trackHint": "자연",
+        "totalQuotaHint": 9,
+        "tracks": [
+          {
+            "trackName": "군사학전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "군사학",
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고교졸업(예정)자 등 군 인사법 제10조 결격사유 없고 임관일 기준 만20~29세(군복무 합산 가능). 친권자 동의·재정보증보험 가입 가능자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "체력검정": 10,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "논산",
+        "trackHint": "인문",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수교육과",
+        "campus": "논산",
+        "trackHint": "인문",
+        "totalQuotaHint": 46,
+        "tracks": [
+          {
+            "trackName": "일반[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "trackName": "지역[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·충남·충북·세종) 소재 고교에서 입학~졸업(예정)한 자 (각종/영재/고등기술학교·동등학력 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌+정원외",
+            "quotaInitial": 1,
+            "applicationQualification": "농어촌(읍·면/도서·벽지) 중·고 6년 또는 초·중·고 12년 이수 및 본인(부모) 거주 (의학과 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              25,
+              26
+            ]
+          },
+          {
+            "trackName": "기초생활수급자,차상위계층,한부모가족 지원대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형+정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고교졸업(예정)자 등 기초생활수급(권)자/차상위계층/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자+정원외",
+            "quotaInitial": 3,
+            "applicationQualification": "장애인등록자/특수교육법 제15조 대상자/국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              29
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고교졸업(예정)자 또는 동등이상의 학력소지자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "정원외 특별전형(농어촌·기초/차상위/한부모·특성화고·특수교육대상자·채용조건형[계약])은 총괄표 '총 모집인원' 컬럼에 이미 합산되어 있어 totalQuotaHint 및 rowSum에 포함됨. 정원외 합계 109명(농어촌면접2+농어촌교과60+기초16+특성화7+특수4+채용20).",
+      "방위산업공학전공은 정원내 모집 없이 채용조건형[계약](정원외) 12명만 모집(총괄표 '총' 12, 정원내소계 표기 '-').",
+      "지역[기초]는 의학과(2명, 수능최저 3합7·면접형 2단계)와 간호학과(5명, 수능최저 없음·교과100)로 전형방법·수능최저가 상이하여 학과별로 분리 구조화함(표시명은 동일 '지역[기초]').",
+      "농어촌학생전형은 의학과만 면접형(농어촌[면접], 정원외 2명, 수능최저 3합6)이고 그 외 전 학과는 교과형(농어촌[교과], 수능최저 없음). 총괄표상 캠퍼스별 정원외 농어촌 컬럼이 분리되어 있어 [면접]/[교과]로 구분.",
+      "의학과 지역의사전형은 6개 권역세부(광역·공주·논산·서산·천안·홍성) 각 1명 합 6명; 단일 모집단위(의학과)·단일 전형으로 통합 구조화.",
+      "trackHint(인문/자연)는 대표 계열 추정값(모집요강에 계열 명시 없음). 입결 매핑 보조용 참고치."
+    ]
+  }
+}
