@@ -9,8 +9,8 @@
 export function norm(s: string): string {
   return s
     .normalize("NFC")
-    // 장식 가운뎃점 변종 흡수 — ㆍ(U+318D)·ᆢ(U+11A2)·‧(U+2027 HYPHENATION POINT)·∙(U+2219)·⋅(U+22C5) 등
-    .replace(/[★◇◉*※☆▲△・·•∙ㆍᆢ‧⋅․．\s]/g, "")
+    // 장식 가운뎃점 변종 흡수 — ㆍ(U+318D)·ᆢ(U+11A2)·‧(U+2027 HYPHENATION POINT)·∙(U+2219)·⋅(U+22C5)·･(U+FF65 HALFWIDTH KATAKANA MIDDLE DOT) 등
+    .replace(/[★◇◉*※☆▲△・·•∙ㆍᆢ‧⋅･․．\s]/g, "")
     .replace(/[()（）]/g, "")
     .replace(/Ⅰ/g, "I").replace(/Ⅱ/g, "II").replace(/Ⅲ/g, "III")
     .toLowerCase();

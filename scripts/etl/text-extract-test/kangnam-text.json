@@ -1,0 +1,1814 @@
+{
+  "meta": {
+    "universityName": "강남대학교",
+    "universityId": "kcue_0000051",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "단일 캠퍼스(경기 용인 기흥) — 주간·야간(야)·사범대학(사) 학과 포함",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 19,
+    "totalTracks": 100,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 수시 전형 인원 합)",
+      "passed": 19,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      { "track": "논술전형", "computed": 309, "stated": 309, "match": true },
+      { "track": "지역균형전형", "computed": 185, "stated": 185, "match": true },
+      { "track": "농어촌학생전형", "computed": 40, "stated": 40, "match": true },
+      { "track": "국가보훈대상자전형", "computed": 19, "stated": 19, "match": true },
+      { "track": "만학도전형", "computed": 26, "stated": 26, "match": true },
+      { "track": "학교생활우수자전형1", "computed": 239, "stated": 239, "match": true },
+      { "track": "학교생활우수자전형2", "computed": 55, "stated": 55, "match": true },
+      { "track": "실기전형", "computed": 86, "stated": 86, "match": true },
+      { "track": "특성화고교졸업자전형", "computed": 22, "stated": 22, "match": true },
+      { "track": "기초차상위전형", "computed": 58, "stated": 58, "match": true },
+      { "track": "장애인 등 대상자전형", "computed": 14, "stated": 14, "match": true }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "강남대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "자유전공학부",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 74,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          }
+        ]
+      },
+      {
+        "departmentName": "복지융합대학",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 70,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          },
+          {
+            "trackName": "장애인 등 대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 장애인복지법 제32조 등록 장애인 또는 국가유공자 상이등급자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 37]
+          }
+        ]
+      },
+      {
+        "departmentName": "상경학부",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 82,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          },
+          {
+            "trackName": "장애인 등 대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 장애인복지법 제32조 등록 장애인 또는 국가유공자 상이등급자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 37]
+          }
+        ]
+      },
+      {
+        "departmentName": "법행정세무학부",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          },
+          {
+            "trackName": "장애인 등 대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 장애인복지법 제32조 등록 장애인 또는 국가유공자 상이등급자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 37]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌문화콘텐츠대학",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 96,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 37,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          },
+          {
+            "trackName": "장애인 등 대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 장애인복지법 제32조 등록 장애인 또는 국가유공자 상이등급자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 37]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학부",
+        "campus": "강남대학교",
+        "trackHint": "자연",
+        "totalQuotaHint": 52,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          }
+        ]
+      },
+      {
+        "departmentName": "인공지능융합공학부",
+        "campus": "강남대학교",
+        "trackHint": "자연",
+        "totalQuotaHint": 57,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          }
+        ]
+      },
+      {
+        "departmentName": "전자반도체공학부",
+        "campus": "강남대학교",
+        "trackHint": "자연",
+        "totalQuotaHint": 57,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          }
+        ]
+      },
+      {
+        "departmentName": "부동산건설학부",
+        "campus": "강남대학교",
+        "trackHint": "자연",
+        "totalQuotaHint": 62,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "주간 모집단위: 국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역이 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(사회 혹은 과학탐구 1과목) 중 1개 영역",
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "국가보훈대상자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 「국가보훈 기본법」 제3조 제2호의 국가보훈대상자로서 교육지원 대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 20]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          }
+        ]
+      },
+      {
+        "departmentName": "디자인학과",
+        "campus": "강남대학교",
+        "trackHint": "자연",
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학교생활우수자전형2",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 26]
+          },
+          {
+            "trackName": "실기전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 42,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 40, "실기": 60 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 28]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "장애인 등 대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 장애인복지법 제32조 등록 장애인 또는 국가유공자 상이등급자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 37]
+          }
+        ]
+      },
+      {
+        "departmentName": "체육학과",
+        "campus": "강남대학교",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "실기전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "실기": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 28]
+          }
+        ]
+      },
+      {
+        "departmentName": "음악학과",
+        "campus": "강남대학교",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "실기전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 동등 이상의 학력이 있다고 인정된 자 (세부 전공: 피아노 10·성악 3·관현악 6)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "실기": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 28]
+          }
+        ]
+      },
+      {
+        "departmentName": "교육학과",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "학교생활우수자전형2",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 26]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "농어촌학생전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 농·어촌(읍·면)·도서벽지 지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 및 거주 요건 충족자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 17]
+          },
+          {
+            "trackName": "학교생활우수자전형2",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 26]
+          }
+        ]
+      },
+      {
+        "departmentName": "초등특수교육과",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "학교생활우수자전형2",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 26]
+          },
+          {
+            "trackName": "장애인 등 대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 장애인복지법 제32조 등록 장애인 또는 국가유공자 상이등급자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 37]
+          }
+        ]
+      },
+      {
+        "departmentName": "중등특수교육과",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "학교생활우수자전형2",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 26]
+          },
+          {
+            "trackName": "장애인 등 대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 장애인복지법 제32조 등록 장애인 또는 국가유공자 상이등급자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "서류": 70, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 37]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학부(야)",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자 (야간 모집단위)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "야간 모집단위: 최저학력기준 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "만학도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 1997년 3월 1일 이전 출생자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 22]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          }
+        ]
+      },
+      {
+        "departmentName": "상경학부(야)",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 77,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자 (야간 모집단위)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "야간 모집단위: 최저학력기준 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "만학도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 1997년 3월 1일 이전 출생자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 22]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          }
+        ]
+      },
+      {
+        "departmentName": "법행정세무학부(야)",
+        "campus": "강남대학교",
+        "trackHint": "인문",
+        "totalQuotaHint": 68,
+        "tracks": [
+          {
+            "trackName": "논술전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관련 법령에 의하여 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 20, "논술": 80 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 13]
+          },
+          {
+            "trackName": "지역균형전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로 소속 고등학교장의 추천을 받은 자 (야간 모집단위)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "야간 모집단위: 최저학력기준 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 15]
+          },
+          {
+            "trackName": "만학도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도",
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 1997년 3월 1일 이전 출생자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 22]
+          },
+          {
+            "trackName": "학교생활우수자전형1",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "국내 소재 고등학교 졸업(예정)자로서 3학년 1학기까지 국내 고등학교 학교생활기록부 교과 성적이 4개 학기 이상 있으며 학교생활을 충실히 한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "특성화고교졸업자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로서 기준학과<표1> 해당 또는 고교 전문교과<표2> 30단위 이상 이수자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 30]
+          },
+          {
+            "trackName": "기초차상위전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 등으로서 국민기초생활수급(권)자·차상위계층·한부모가족 지원대상자에 해당하는 자 [정원외]",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": null,
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 35]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "totalQuotaHint는 총괄표(p.7)의 '정원 내 소계' 값을 사용함. 정원외 특별전형(특성화고교졸업자·기초차상위·장애인 등 대상자)은 별도 정원외 풀이므로 totalQuotaHint(정원내 합)에는 포함하지 않고 tracks에는 포함함. 따라서 각 학과의 sum(정원내 전형 quotaInitial)만 totalQuotaHint와 일치함(rowSum 검증은 정원내 전형만으로 수행).",
+      "공무원위탁전형(학생부종합, 사회복지학부(야)·상경학부(야)·법행정세무학부(야) 대상, 모집인원 '약간 명')은 총괄표(p.7)에 인원이 집계되지 않는 별도 풀이며 정수 quota가 없으므로 departments/tracks에 포함하지 않음(p.40). 데이터 부재 → 표시 안 함 원칙 적용.",
+      "음악학과는 총괄표에서 세부전공(피아노 10·성악 3·관현악 6 = 19)으로 분리 표기되나, 모집단위는 '음악학과' 하나이므로 단일 학과·단일 실기전형(quotaInitial 19, 음악학과 실기 100%)으로 통합함.",
+      "디자인학과 실기전형: 학생부(교과) 40% + 실기 60%, 체육학과 실기전형: 학생부(교과) 20% + 실기 80%, 음악학과: 실기 100% (p.28).",
+      "지역균형전형 수능최저: 주간 모집단위만 '국/영/수/탐(1과목) 중 1개 영역 3등급 이내' 적용. 야간(야) 모집단위(사회복지학부(야)·상경학부(야)·법행정세무학부(야))는 최저학력기준 없음 → csatMinimumExempt=true.",
+      "국가보훈대상자/농어촌/기초차상위/장애인 등 대상자/만학도 전형은 표준 분류상 기회균형(또는 농어촌·만학도) 특별전형이나 강남대 전형명 그대로 trackName 유지. specialTypeKeyword로 분류 표기.",
+      "총괄표 정원내 컬럼 합계: 논술309/지역균형185/농어촌40/보훈19/만학도26/우수자1 239/우수자2 55/실기86 → 정원내 소계 959, 정원외(특성화22+기초차상위58+장애14) 소계 94. 모두 stated 값과 일치(bbox x좌표로 컬럼 검증)."
+    ]
+  }
+}

@@ -1,0 +1,5379 @@
+{
+  "meta": {
+    "universityName": "협성대학교",
+    "universityId": "kcue_0000207",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "단일 캠퍼스(경기 화성 봉담) — 웨슬리대학·인문사회과학대학·경영대학·이공대학·예술대학",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 30,
+    "totalTracks": 173,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 수시 전형 인원 합)",
+      "passed": 30,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "교과성적우수자",
+        "computed": 188,
+        "stated": 188,
+        "match": true
+      },
+      {
+        "track": "미래창의인재",
+        "computed": 81,
+        "stated": 81,
+        "match": true
+      },
+      {
+        "track": "웨슬리",
+        "computed": 25,
+        "stated": 25,
+        "match": true
+      },
+      {
+        "track": "기회균형",
+        "computed": 38,
+        "stated": 38,
+        "match": true
+      },
+      {
+        "track": "사회배려자",
+        "computed": 38,
+        "stated": 38,
+        "match": true
+      },
+      {
+        "track": "융합인재Ⅰ",
+        "computed": 88,
+        "stated": 88,
+        "match": true
+      },
+      {
+        "track": "융합인재Ⅱ",
+        "computed": 102,
+        "stated": 102,
+        "match": true
+      },
+      {
+        "track": "실기우수자(예술대학)",
+        "computed": 130,
+        "stated": 130,
+        "match": true
+      },
+      {
+        "track": "실기우수자(에이블아트·스포츠)",
+        "computed": 5,
+        "stated": 5,
+        "match": true
+      },
+      {
+        "track": "농어촌학생",
+        "computed": 20,
+        "stated": 20,
+        "match": true
+      },
+      {
+        "track": "특성화고교졸업자",
+        "computed": 15,
+        "stated": 15,
+        "match": true
+      },
+      {
+        "track": "기초생활수급자·차상위계층·한부모가족",
+        "computed": 20,
+        "stated": 20,
+        "match": true
+      },
+      {
+        "track": "장애인(에이블아트·스포츠)",
+        "computed": 20,
+        "stated": 20,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "협성대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "자율전공학부(1유형)",
+        "campus": "웨슬리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 70,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "신학과",
+        "campus": "웨슬리대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "웨슬리",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "신학과 지원자 / 세례증명서·담임목사추천서 제출 필수 / 1단계 교과100(7배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "에이블아트·스포츠학과",
+        "campus": "웨슬리대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "실기우수자(에이블아트·스포츠)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "발달장애인(지적·자폐성장애) 등록자/특수교육대상자/상이등급자(1~7급) / 면접40+실기60 / 정원 내·외 중복지원 가능 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "면접": 40,
+                  "실기": 60
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              22,
+              23
+            ]
+          },
+          {
+            "trackName": "장애인(에이블아트·스포츠)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "장애인",
+            "quotaInitial": 20,
+            "applicationQualification": "[정원 외] 발달장애인(지적·자폐성장애) 등록자/특수교육대상자/상이등급자(1~7급) / 면접40+실기60 / 정원 내·외 중복지원 가능 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "면접": 40,
+                  "실기": 60
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "문예창작학과",
+        "campus": "인문사회과학대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "인문사회과학대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 43,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 2,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "아동보육학과",
+        "campus": "인문사회과학대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "중국어문화학과",
+        "campus": "인문사회과학대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "도시행정학과",
+        "campus": "인문사회과학대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미디어영상광고학과",
+        "campus": "인문사회과학대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 2,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": "경영대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "금융보험학과",
+        "campus": "경영대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "세무회계학과",
+        "campus": "경영대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔관광경영학과",
+        "campus": "경영대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유통경영학과",
+        "campus": "경영대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌통상·문화학과",
+        "campus": "경영대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학과",
+        "campus": "이공대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 2,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소프트웨어공학과",
+        "campus": "이공대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 34,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 2,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축공학과",
+        "campus": "이공대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "도시공학과",
+        "campus": "이공대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건관리학과",
+        "campus": "이공대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의생명화학과",
+        "campus": "이공대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "교과성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "미래창의인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 1단계 교과 100(7배수), 2단계 면접 50+1단계 50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 7,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "학생부(교과)": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "trackName": "기회균형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌·특성화고졸·기초/차상위/한부모·자립지원·국가보훈대상자 중 하나 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              12,
+              13
+            ]
+          },
+          {
+            "trackName": "사회배려자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정·다자녀(3자녀이상)·군인/사회기여자 자녀 등 / 외국고교 출신자 지원 불가 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              14,
+              15
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅰ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 서류(학생부 종합정성평가) 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              16,
+              17
+            ]
+          },
+          {
+            "trackName": "융합인재Ⅱ",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 / 학생부 없는 자 지원 불가 / 1단계 서류100(4배수), 2단계 면접50+1단계50 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 4,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "면접": 50,
+                  "서류": 50
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              18,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "기초생활수급자·차상위계층·한부모가족",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 국민기초생활수급권자·차상위계층·한부모가족 지원대상자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "디자인 자율전공학부(2유형)",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "피아노전공",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 6,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "관현악전공",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 4,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 10,
+                  "실기": 90
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "성악전공",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 3,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 10,
+                  "실기": 90
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "실용음악전공",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 4,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 10,
+                  "실기": 90
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "실내디자인학과",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 30,
+                  "실기": 70
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "가구디자인학과",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "산업디자인학과",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 30,
+                  "실기": 70
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "시각디자인학과",
+        "campus": "예술대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "실기우수자(예술대학)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(2027 예정)자 및 동등 이상 학력 인정자 / 실기위주 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 30,
+                  "실기": 70
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              20,
+              21
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 농어촌 소재 중·고(6년) 또는 초·중·고(12년) 교육과정 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              24,
+              25
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "[정원 외] 특성화고(일반고/종합고 특성화과정 포함) 졸업(2027 예정)·동일계열 기준학과 이수자 / 교과 100 / 수능최저 없음",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "전체 모집단위 및 전형에서 수능최저학력기준을 적용하지 않음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              1,
+              26,
+              27
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "자율전공학부 2유형(인문사회/경영/이공)은 수시 모집인원 0(정시 전용)이라 수시 모집단위에서 제외함 (부록 정시표에서만 모집).",
+      "음악학부는 Ⅱ표에서 묶여 있으나 Ⅲ표·실기우수자 세부표가 전공별(피아노/관현악/성악/실용음악) 별도 quota를 부여하므로 4개 모집단위로 분리함.",
+      "에이블아트·스포츠학과는 1개 모집단위로 통합(정원내 실기우수자 5 + 정원외 장애인 20 = totalQuotaHint 25). 정원 내·외 중복지원 가능.",
+      "정원외 전형(농어촌20·특성화고15·기초생활20·장애인20=75)은 Ⅲ표 모집단위 행 합계에 포함되어 있어 totalQuotaHint에 합산함.",
+      "에이블아트·스포츠/장애인은 예체능 계열이나 스키마상 trackHint는 인문|자연 한정이라 '자연'으로 표기(예체능 정보는 campus/학과명으로 식별).",
+      "디자인 자율전공학부는 Ⅱ표 명칭 '디자인 자율전공학부', 세부표·Ⅲ표 명칭 '디자인 자율전공학부(2유형)' — 트랙 정의 위치(실기우수자 세부표) 기준으로 '(2유형)' 포함 명칭 사용.",
+      "전 모집단위·전 전형 수능최저학력기준 미적용(Ⅲ표 하단 명시) → 모든 트랙 csatMinimumExempt=true."
+    ]
+  }
+}

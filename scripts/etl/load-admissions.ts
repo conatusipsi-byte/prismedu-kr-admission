@@ -100,6 +100,14 @@ const SOURCES: Source[] = [
   //    강릉원주(gwnu)는 2025 강원대 통합으로 요강이 '강원대 강릉·원주캠퍼스' 브랜딩 → 귀속 univ_id 확인 후 적재(보류).
   { file: `${B}/changwon-text.json`,  univId: "kcue_0000028", type: "text_extract", pdf: "univ/susi-2027/kcue_0000028.pdf" },
   { file: `${B}/kchungju-text.json`,  univId: "kcue_0000034", type: "text_extract", pdf: "univ/susi-2027/kcue_0000034.pdf" },
+  // ── Phase 2 batch 4 (2026-06-17) — 수도권 사립 6교(100교 목표). 입학처 board 직링크 → pdftotext + 본체 구조화($0). 행합/열합 이중 체크섬·central-verify·grand total 원문대조 통과. ──
+  //    한신대(kcue_0000202)는 PDF가 이미지 기반(텍스트 레이어 0자) → OCR 필요, [수동필요]. 성결·을지·한성은 2027 수시요강 미발표(전형계획만 존재).
+  { file: `${B}/kangnam-text.json`,    univId: "kcue_0000051", type: "text_extract", pdf: "univ/susi-2027/kcue_0000051.pdf" },
+  { file: `${B}/samyuk-text.json`,     univId: "kcue_0000116", type: "text_extract", pdf: "univ/susi-2027/kcue_0000116.pdf" },
+  { file: `${B}/suwon-text.json`,      univId: "kcue_0000140", type: "text_extract", pdf: "univ/susi-2027/kcue_0000140.pdf" },
+  { file: `${B}/anyang-text.json`,     univId: "kcue_0000147", type: "text_extract", pdf: "univ/susi-2027/kcue_0000147.pdf" },
+  { file: `${B}/pyeongtaek-text.json`, univId: "kcue_0000186", type: "text_extract", pdf: "univ/susi-2027/kcue_0000186.pdf" },
+  { file: `${B}/hyupsung-text.json`,   univId: "kcue_0000207", type: "text_extract", pdf: "univ/susi-2027/kcue_0000207.pdf" },
 ];
 
 /* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */

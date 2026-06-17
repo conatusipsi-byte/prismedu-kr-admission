@@ -14,6 +14,9 @@ describe("norm (정규화)", () => {
     expect(norm("★컴퓨터·공학")).toBe("컴퓨터공학");
     expect(norm("물리학Ⅱ")).toBe("물리학ii");
   });
+  it("가운뎃점 변종 흡수 — 반각 ･(U+FF65) 도 정규화 (철도경영･물류 = 철도경영·물류)", () => {
+    expect(norm("철도경영･물류학과")).toBe(norm("철도경영·물류학과"));
+  });
 });
 
 describe("buildMatcher", () => {

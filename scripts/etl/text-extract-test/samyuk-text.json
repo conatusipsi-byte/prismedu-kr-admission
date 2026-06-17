@@ -1,0 +1,4323 @@
+{
+  "meta": {
+    "universityName": "삼육대학교",
+    "universityId": "kcue_0000116",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "sourceDocYear": 2027,
+    "campusScope": "삼육대학교 단일 캠퍼스(서울 노원구), 수시 정원내 9개 전형 + 정원외 6개 특별전형 전체 수록",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "departments": 26,
+    "totalTracks": 137,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(모집단위별 수시 전형 인원 합)",
+      "passed": 26,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학교장추천전형",
+        "computed": 131,
+        "stated": 131,
+        "match": true
+      },
+      {
+        "track": "세움인재전형",
+        "computed": 277,
+        "stated": 277,
+        "match": true
+      },
+      {
+        "track": "기회균형Ⅰ전형",
+        "computed": 37,
+        "stated": 37,
+        "match": true
+      },
+      {
+        "track": "S/W인재전형",
+        "computed": 30,
+        "stated": 30,
+        "match": true
+      },
+      {
+        "track": "신학특별전형",
+        "computed": 38,
+        "stated": 38,
+        "match": true
+      },
+      {
+        "track": "재림교회목회자추천전형",
+        "computed": 85,
+        "stated": 85,
+        "match": true
+      },
+      {
+        "track": "논술우수자전형",
+        "computed": 231,
+        "stated": 231,
+        "match": true
+      },
+      {
+        "track": "실기우수자전형",
+        "computed": 47,
+        "stated": 47,
+        "match": true
+      },
+      {
+        "track": "예체능인재전형",
+        "computed": 9,
+        "stated": 9,
+        "match": true
+      },
+      {
+        "track": "농어촌전형",
+        "computed": 43,
+        "stated": 43,
+        "match": true
+      },
+      {
+        "track": "특성화고교전형",
+        "computed": 9,
+        "stated": 9,
+        "match": true
+      },
+      {
+        "track": "특성화고졸재직자전형",
+        "computed": 63,
+        "stated": 63,
+        "match": true
+      },
+      {
+        "track": "서해5도전형",
+        "computed": 6,
+        "stated": 6,
+        "match": true
+      },
+      {
+        "track": "기회균형Ⅱ전형",
+        "computed": 11,
+        "stated": 11,
+        "match": true
+      },
+      {
+        "track": "특수교육대상자전형",
+        "computed": 12,
+        "stated": 12,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "삼육대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "신학과",
+        "campus": "신학대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "신학특별전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "신학",
+            "quotaInitial": 38,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력, 2026.2.28 이전 침례, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 48,
+                  "필기": 20,
+                  "면접": 32
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              35
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "간호대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 44,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 6등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              49
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "약학과",
+        "campus": "약학대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              49
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "장애인복지법 등록 장애인 또는 국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학(미적분 또는 기하), 과학탐구(1과목) 중 3개 영역 합 5등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              50
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "창의융합자유전공학부",
+        "campus": "창의융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 33,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영어영문학과",
+        "campus": "창의융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 34,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "장애인복지법 등록 장애인 또는 국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              50
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공관광외국어학부",
+        "campus": "창의융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌한국학과",
+        "campus": "창의융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "장애인복지법 등록 장애인 또는 국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              50
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": "창의융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 4,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "2005.2 이후 국내 특성화고/일반고(종합) 전문계학과 졸업(예정)자, 3학년 1학기까지 4개 학기 이상 재학, 기준학과·전문교과 요건 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              44
+            ]
+          },
+          {
+            "trackName": "특성화고졸재직자전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고졸재직자",
+            "quotaInitial": 63,
+            "applicationQualification": "4대보험 가입 산업체 3년 이상 재직자(고등교육법 시행령 제29조 제2항 제14호 다목 대상)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              46
+            ]
+          },
+          {
+            "trackName": "서해5도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "서해5도",
+            "quotaInitial": 1,
+            "applicationQualification": "서해5도(백령·대청·소청·연평·소연평도) 6년 또는 12년 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              48
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "장애인복지법 등록 장애인 또는 국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              50
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과",
+        "campus": "창의융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              49
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "창의융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "서해5도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "서해5도",
+            "quotaInitial": 1,
+            "applicationQualification": "서해5도(백령·대청·소청·연평·소연평도) 6년 또는 12년 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              48
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              49
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "장애인복지법 등록 장애인 또는 국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              50
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "상담심리학과",
+        "campus": "창의융합대학",
+        "trackHint": "인문",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "서해5도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "서해5도",
+            "quotaInitial": 1,
+            "applicationQualification": "서해5도(백령·대청·소청·연평·소연평도) 6년 또는 12년 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              48
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "음악학과",
+        "campus": "창의융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              37
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "장애인복지법 등록 장애인 또는 국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              50
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "아트앤디자인학과",
+        "campus": "창의융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "실기우수자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              37
+            ]
+          },
+          {
+            "trackName": "예체능인재전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "전국규모 미술/디자인 대회(아트앤디자인) 또는 대한체육회 가맹단체 전국대회 입상실적(체육) 보유자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              38
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "특수교육대상자전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "장애인복지법 등록 장애인 또는 국가유공자 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              50
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "체육학과",
+        "campus": "창의융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 40,
+                  "실기": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 30,
+                  "실기": 70
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "예체능인재전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "전국규모 미술/디자인 대회(아트앤디자인) 또는 대한체육회 가맹단체 전국대회 입상실적(체육) 보유자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "학생부": 40,
+                  "실기": 60
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              38
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 40,
+                  "실기": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미래융합자유전공학부",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 75,
+        "tracks": [
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 25,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 6등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 6등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "서해5도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "서해5도",
+            "quotaInitial": 1,
+            "applicationQualification": "서해5도(백령·대청·소청·연평·소연평도) 6년 또는 12년 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              48
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              49
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건관리학과",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              49
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식품영양학과",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 4,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "서해5도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "서해5도",
+            "quotaInitial": 1,
+            "applicationQualification": "서해5도(백령·대청·소청·연평·소연평도) 6년 또는 12년 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              48
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학부",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 43,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "S/W인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "SW",
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고졸(예정)자, 소프트웨어 분야 관심자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              34
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "2005.2 이후 국내 특성화고/일반고(종합) 전문계학과 졸업(예정)자, 3학년 1학기까지 4개 학기 이상 재학, 기준학과·전문교과 요건 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              44
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인공지능융합학부",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 65,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "S/W인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "SW",
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고졸(예정)자, 소프트웨어 분야 관심자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              34
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": "2005.2 이후 국내 특성화고/일반고(종합) 전문계학과 졸업(예정)자, 3학년 1학기까지 4개 학기 이상 재학, 기준학과·전문교과 요건 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              44
+            ]
+          },
+          {
+            "trackName": "서해5도전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "서해5도",
+            "quotaInitial": 1,
+            "applicationQualification": "서해5도(백령·대청·소청·연평·소연평도) 6년 또는 12년 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              48
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              49
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "바이오융합공학과",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "화학생명과학과",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "동물자원과학과",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "환경디자인원예학과",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "데이터클라우드공학과",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "S/W인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "SW",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고졸(예정)자, 소프트웨어 분야 관심자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              34
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학과(5년제)",
+        "campus": "미래융합대학",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학교장추천전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "2005년 2월 이후 국내 고졸(예정)자, 출신 고교장 추천, 3학년 1학기까지 3개 학기 이상 본교 지정교과 석차/성취도 보유(특목·예술·체육·특성화고 동일과정 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 2개 영역 합 7등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              30
+            ]
+          },
+          {
+            "trackName": "세움인재전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              27
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "국가보훈대상자·자립지원대상아동·북한이탈주민(자녀)·기초수급·차상위·한부모·농어촌학생·만학도 등 정원내 기회균형 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              28
+            ]
+          },
+          {
+            "trackName": "재림교회목회자추천전형",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재림교회목회자추천",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고졸(예정)자, 현직 안수목사 신임·위임목사 추천자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 4등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              36
+            ]
+          },
+          {
+            "trackName": "논술우수자전형",
+            "trackTypeRaw": "논술위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "국내 고졸(예정)자 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "논술": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": "국어, 영어, 수학, 탐구(1과목) 중 1개 영역 3등급 이내",
+            "prevYearResult": null,
+            "sourcePages": [
+              32
+            ]
+          },
+          {
+            "trackName": "농어촌전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(읍·면·도서벽지) 6년(중·고) 또는 12년(초·중·고) 과정 이수·거주 요건 충족 국내 고졸(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              42
+            ]
+          },
+          {
+            "trackName": "특성화고교전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "2005.2 이후 국내 특성화고/일반고(종합) 전문계학과 졸업(예정)자, 3학년 1학기까지 4개 학기 이상 재학, 기준학과·전문교과 요건 충족",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "학생부(교과)": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              44
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "totalQuotaHint은 총괄표 '정원내 소계' 기준(정원내 9개 전형 합)이며, 정원외 6개 특별전형(농어촌·특성화고교·특성화고졸재직자·서해5도·기회균형Ⅱ·특수교육대상자) 인원은 별도 정원외 풀이므로 totalQuotaHint에서 제외함(rowSum에 영향 없음). 정원외 학과별 합은 별도 총괄표(계 144)로 검증됨.",
+      "colTotalValidation의 stated 값은 각 전형 세부 모집인원표의 '계'(전형별 합) 기준임. 총괄표 모집인원 그리드의 컬럼 합계(line 602: 97/231/37/117/30/277/96, line 638: 39/9/6/63/11/9/7)는 전형을 '학생부교과/학생부종합/논술/실기실적' 그룹 단위로 묶거나(예: 117=신학특별38+재림교회목회자추천 종합분79, 96=학교장추천 실기분34+재림 실기분6+실기우수자47+예체능9, 97=학교장추천 교과분131-실기34) 학교장추천·재림·예체능의 교과/실기 또는 종합/실기 분할분을 다른 컬럼에 배분하여 표시한 것으로, 개별 전형 단위 합과 1:1 대응하지 않음. 세부표 '계'가 더 신뢰 가능한 전형별 ground truth이며 전부 일치함.",
+      "아트앤디자인학과·체육학과의 학교장추천전형은 '학생부 교과/실기' 위주로 학생부(교과)20~40% + 실기60~80% 반영. trackTypeRaw는 '학생부위주(교과)'로 분류하고 실기 비중을 reflectionStages에 명시함.",
+      "재림교회목회자추천전형의 아트앤디자인학과·체육학과는 '학생부 종합/실기' 위주(서류+실기/면접). trackTypeRaw='학생부위주(종합)'로 분류.",
+      "특수교육대상자전형의 음악학과·아트앤디자인학과는 실기80%+면접20% 일괄합산. trackTypeRaw='학생부위주(종합)'(서류평가 항목표에 포함)로 분류하되 학생부 컴포넌트 없이 실기/면접만 반영.",
+      "음악학과 실기우수자전형(20명)은 피아노8·성악4·관현악8 세부 전공 합산이며 모집단위 단위(음악학과)로 1개 트랙으로 모델링함.",
+      "수능최저: 정원내·정원외 대부분 일반학과(부)는 전형별 기준 적용. 약학과는 전 전형 공통 '국·영·수(미적분/기하)·과탐(1) 3개영역 합 5등급'. 간호·물리치료는 학교장추천(2개합6)·재림교회목회자추천(1개3) 등에서 별도 강화 기준 적용. 예체능학과(음악·아트앤디자인·체육)는 없음.",
+      "정원외 농어촌·서해5도의 아트앤디자인·체육학과 분할분은 총괄표 정원외 소계에는 합산되나(아트앤디자인 정원외 4=농어촌2+특수교육2, 체육 정원외 2=농어촌2), 정원외 농어촌 세부표 계(43)·특수교육 세부표 계(12)에 모두 포함되어 일치함.",
+      "건축학과는 4년제/5년제 운영이나 수시 모집단위는 '건축학과(5년제)'로만 표기되어 그대로 사용함."
+    ]
+  }
+}
