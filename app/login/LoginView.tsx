@@ -28,6 +28,19 @@ type Mode = "login" | "signup";
 
 const KAKAO_YELLOW = "#FEE500";
 
+/**
+ * 구글 OAuth 게이트 — Supabase Console 의 `external_google_enabled` 와 반드시 동기화.
+ *
+ * 현재 Supabase 에 구글 provider 가 미설정(비활성)이라, 버튼을 누르면
+ * "provider is not enabled" 로 100% 실패한다(누적 가입 0건). 死버튼이 회원가입·로그인
+ * 불능의 원인이었으므로 노출하지 않는다.
+ *
+ * 복원 절차: Google Cloud Console 에서 OAuth client ID/secret 발급 → Supabase
+ * Authentication → Providers → Google 활성화(+redirect `…/auth/callback` 등록) →
+ * 이 상수를 `true` 로 변경. 그러면 버튼이 즉시 복원된다.
+ */
+const GOOGLE_OAUTH_ENABLED = false;
+
 export interface LoginViewProps {
   /** 초기 모드 — /signup 페이지에서 "signup" 로 진입. 기본 "login". */
   initialMode?: Mode;
@@ -129,20 +142,22 @@ export function LoginView({ initialMode = "login" }: LoginViewProps = {}): React
           )}
           카카오로 {mode === "login" ? "로그인" : "시작하기"}
         </Button>
-        <Button
-          type="button"
-          variant="outline"
-          disabled={!!pending}
-          onClick={() => handle("google", auth.loginWithGoogle)}
-          data-testid="login-google"
-        >
-          {pending === "google" ? (
-            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-          ) : (
-            <GoogleIcon />
-          )}
-          Google로 {mode === "login" ? "로그인" : "시작하기"}
-        </Button>
+        {GOOGLE_OAUTH_ENABLED && (
+          <Button
+            type="button"
+            variant="outline"
+            disabled={!!pending}
+            onClick={() => handle("google", auth.loginWithGoogle)}
+            data-testid="login-google"
+          >
+            {pending === "google" ? (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            ) : (
+              <GoogleIcon />
+            )}
+            Google로 {mode === "login" ? "로그인" : "시작하기"}
+          </Button>
+        )}
       </div>
 
       {/* 구분선 */}

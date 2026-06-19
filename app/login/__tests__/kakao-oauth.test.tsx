@@ -143,15 +143,13 @@ describe("카카오 OAuth 로그인", () => {
     });
   });
 
-  it("Google 로그인은 카카오와 독립적으로 동작한다", async () => {
+  it("Google 버튼은 노출되지 않는다 — Supabase provider 미설정이라 게이트 OFF", async () => {
+    // 死버튼 재발 방지: 구글 OAuth(external_google_enabled)가 Supabase 에서 켜지고
+    // LoginView 의 GOOGLE_OAUTH_ENABLED 가 true 가 되기 전까지, 누르면 실패하는
+    // 구글 버튼은 렌더되지 않아야 한다. (회원가입·로그인 불능의 원인이었음)
     const { LoginView } = await import("../LoginView");
     render(<LoginView />);
-    fireEvent.click(screen.getByTestId("login-google"));
-
-    await waitFor(() => {
-      const call = mockSignInWithOAuth.mock.calls[0]?.[0];
-      expect(call?.provider).toBe("google");
-    });
+    expect(screen.queryByTestId("login-google")).toBeNull();
   });
 
   it("회원가입 모드에서도 카카오 버튼이 노출된다", async () => {

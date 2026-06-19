@@ -50,15 +50,15 @@ test.describe("회원가입 → 온보딩 진입", () => {
     await expect(page.locator("body")).toContainText(/학년|계열|단계/);
   });
 
-  test("로그인 페이지 — Google + 카카오 + 이메일 옵션 모두 노출", async ({ page }) => {
+  test("로그인 페이지 — 카카오 + 이메일 옵션 노출 (구글은 게이트 OFF)", async ({ page }) => {
     await page.goto(`${BASE_URL}/login`);
 
     // 페이지 자체 200 OK + 제목
     await expect(page.locator("h1")).toBeVisible();
 
-    // 소셜 로그인 — data-testid 기반
+    // 소셜 로그인 — 카카오 노출. 구글은 Supabase provider 미설정이라 비노출(死버튼 방지).
     await expect(page.getByTestId("login-kakao")).toBeVisible({ timeout: 10_000 });
-    await expect(page.getByTestId("login-google")).toBeVisible();
+    await expect(page.getByTestId("login-google")).toHaveCount(0);
 
     // 이메일·비밀번호 입력
     await expect(page.getByLabel("이메일")).toBeVisible();
