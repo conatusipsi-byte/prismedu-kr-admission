@@ -17,6 +17,7 @@ import type {
   AdmissionSampleStats,
   AdmissionTrackKind,
   HakjongProbability,
+  PrevYearResult,
 } from "@/types/admission";
 import { ADMISSION_PROBABILITY_ENABLED } from "@/lib/admission/feature-flags";
 
@@ -97,6 +98,20 @@ export function checkSampleSufficiency(
     return { sufficient: false, reason: "weighted_below", acceptedN, weightedN };
   }
   return { sufficient: true, acceptedN, weightedN };
+}
+
+/**
+ * 공식 입결 추정 가능 여부 — 합격자 개별 표본은 없지만 대학 공시 전년도 입결
+ * (교과/학종 컷등급 또는 정시 환산컷)이 있으면 '추정 모드'로 합격가능성을 산출한다.
+ * 플래그(ADMISSION_PROBABILITY_ENABLED) 가드 — OFF면 항상 false (전면 비공개 유지).
+ * 정직성: 표본 기반 정밀 확률이 아니라 "작년 입결 기반 추정"임을 basis 로 명시(UI 라벨).
+ */
+export function officialEstimateEligible(prev?: PrevYearResult): boolean {
+  if (!ADMISSION_PROBABILITY_ENABLED) return false;
+  if (!prev) return false;
+  const hasGradeCut = prev.gradeCutoff70 != null || prev.gradeCutoffAvg != null;
+  const hasJeongsiCut = prev.cutoff70 != null || prev.cutoffAvg != null;
+  return hasGradeCut || hasJeongsiCut;
 }
 
 /**

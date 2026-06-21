@@ -35,6 +35,7 @@ import {
   buildInsufficientSampleProbability,
   checkHakjongSampleSufficiency,
   checkSampleSufficiency,
+  officialEstimateEligible,
   type SampleGateResult,
 } from "@/lib/admission/sample-gate";
 import {
@@ -335,6 +336,14 @@ export function matchSingle(
   // 2. 표본 충족 검사 (P-001)
   const sample = checkSampleSufficiency(sampleStats);
   if (!sample.sufficient) {
+    // 합격자 표본은 없지만 대학 공시 전년도 입결(컷등급·경쟁률)이 있으면 '추정 모드' 산출.
+    if (officialEstimateEligible(candidate.prevYearResult)) {
+      return {
+        candidate,
+        probability: matchEstimate(student, candidate),
+        caveats: ["작년 대학 공시 입결 기반 추정입니다 — 실제 합격자 표본이 아니므로 참고용으로만 활용하세요."],
+      };
+    }
     return {
       candidate,
       probability: buildInsufficientSampleProbability(sample),
@@ -427,6 +436,44 @@ function matchGeneralTrack(
     sampleSufficient: true,
     sampleN: sample.acceptedN,
     weightedSampleN: sample.weightedN,
+  };
+}
+
+/**
+ * 공식 입결 기반 추정 합격가능성 (basis="official_estimate").
+ *
+ * 합격자 표본이 없을 때, 대학 공시 전년도 입결(컷등급·경쟁률)만으로 산출.
+ * 핵심 신호 = (작년 컷등급 − 학생 내신) 마진. 컷보다 우수하면 ↑, 비슷하면 적정, 아래면 ↓.
+ * 로지스틱(k=1.79): margin 0 ≈ 55%, +1등급 ≈ 88%, −1등급 ≈ 17%. 경쟁률은 약한 보정(최대 −0.2등급).
+ * ※ 표본 기반 정밀확률이 아니라 추정 — UI 라벨 + 넓은 범위(±12)로 불확실성 명시.
+ */
+function matchEstimate(student: NormalizedStudent, candidate: MatchCandidate): AdmissionProbability {
+  const pyr = candidate.prevYearResult;
+  const gradeCutoff = pyr?.gradeCutoffAvg ?? pyr?.gradeCutoff70 ?? null;
+  const ESTIMATE_MARGIN = 12;
+  let prob: number;
+
+  if (gradeCutoff != null && student.naesinGpa != null) {
+    // margin > 0 = 학생이 컷보다 우수(등급 숫자 낮음)
+    let margin = gradeCutoff - student.naesinGpa;
+    // 컷이 이미 경쟁도를 반영하므로 경쟁률 보정은 약하게(최대 −0.2등급).
+    const comp = pyr?.competitionRate;
+    if (comp != null && comp > 0) margin -= clamp((comp - 6) * 0.01, 0, 0.2);
+    prob = Math.round(clamp(100 / (1 + Math.exp(-1.79 * (margin + 0.112))), PROB_FLOOR, PROB_CEILING));
+  } else {
+    // 컷등급 없음(정시 환산컷 등 추후) — 경쟁률만으로 보수적 baseline.
+    prob = Math.round(clamp(baseProbabilityFromCompetition(pyr?.competitionRate), PROB_FLOOR, PROB_CEILING));
+  }
+
+  return {
+    category: classifyCategory(prob),
+    probability: prob,
+    low: clamp(prob - ESTIMATE_MARGIN, PROB_FLOOR, PROB_CEILING),
+    high: clamp(prob + ESTIMATE_MARGIN, PROB_FLOOR, PROB_CEILING),
+    sampleSufficient: true, // 표시는 하되 basis 로 '추정' 구분(UI 라벨)
+    sampleN: 0,
+    weightedSampleN: 0,
+    basis: "official_estimate",
   };
 }
 

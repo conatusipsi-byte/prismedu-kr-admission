@@ -1045,6 +1045,12 @@ export interface AdmissionProbability {
   sampleN: number;
   weightedSampleN: number;
 
+  /**
+   * 확률 산출 근거 — "sample"(합격자 표본 기반 정밀) | "official_estimate"(대학 공시
+   * 전년도 입결 기반 추정). UI 는 official_estimate 일 때 "작년 입결 기반 추정" 라벨 노출.
+   */
+  basis?: "sample" | "official_estimate";
+
   /** 학종 전형에 한해 채워짐 */
   hakjong?: HakjongProbability;
 }

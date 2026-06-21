@@ -125,6 +125,11 @@ function prevYear(overrides: Partial<PrevYearResult> = {}): PrevYearResult {
   };
 }
 
+/** 표본도 없고 공식 입결(컷)도 없는 케이스 — insufficient 게이트 검증용(공식 추정 비대상). */
+const NO_OFFICIAL_RESULT: Partial<PrevYearResult> = {
+  gradeCutoff70: undefined, gradeCutoffAvg: undefined, cutoff70: undefined, cutoffAvg: undefined,
+};
+
 function sampleStats(overrides: Partial<AdmissionSampleStats> = {}): AdmissionSampleStats {
   return {
     id: "univ_dept_2027_jeongsi_na",
@@ -304,12 +309,21 @@ describe("matchSingle — 일반 트랙", () => {
     expect(r.probability.sampleSufficient).toBe(true);
   });
 
-  it("표본 부족 → category='insufficient_sample', probability null", () => {
+  it("표본 부족 + 공식 입결도 없음 → category='insufficient_sample', probability null", () => {
     const n = normalizeKrSpecs(specs());
-    const r = matchSingle(n, candidate({}, {}, { acceptedCount: 1, weightedCount: 0.5 }));
+    const r = matchSingle(n, candidate({}, NO_OFFICIAL_RESULT, { acceptedCount: 1, weightedCount: 0.5 }));
     expect(r.probability.category).toBe("insufficient_sample");
     expect(r.probability.probability).toBeNull();
     expect(r.probability.sampleSufficient).toBe(false);
+  });
+
+  it("표본 없어도 공식 입결(컷등급) 있으면 → official_estimate 추정 산출 (basis 라벨 + 추정 caveat)", () => {
+    const n = normalizeKrSpecs(specs());
+    const r = matchSingle(n, candidate({ kind: "susi_subject" }, { gradeCutoff70: 3.0, competitionRate: 10 }, { acceptedCount: 0, weightedCount: 0 }));
+    expect(r.probability.basis).toBe("official_estimate");
+    expect(r.probability.probability).not.toBeNull();
+    expect(r.probability.category).not.toBe("insufficient_sample");
+    expect(r.caveats.some((c) => /추정/.test(c))).toBe(true);
   });
 
   it("정원외(specialType≠general) → category='quota_external', probability null, 표본 충분해도 산출 안 함 (P-005)", () => {
@@ -438,7 +452,7 @@ describe("matchSingle — 학종 트랙 (P-006 분해)", () => {
       n,
       candidate(
         { kind: "susi_comprehensive" },
-        {},
+        NO_OFFICIAL_RESULT,
         {
           trackKind: "susi_comprehensive",
           acceptedCount: 1,
@@ -462,7 +476,7 @@ describe("matchKrAdmissions — 메인 진입점", () => {
       candidates: [
         candidate({}, { competitionRate: 20 }), // 경쟁률 높음 → base 작음
         candidate({}, { competitionRate: 2 }),  // 경쟁률 낮음 → base 큼
-        candidate({}, {}, { acceptedCount: 1 }), // 표본 부족
+        candidate({}, NO_OFFICIAL_RESULT, { acceptedCount: 1 }), // 표본 부족·공식입결 없음 → insufficient
       ],
     });
     expect(out.results).toHaveLength(3);
@@ -491,8 +505,8 @@ describe("matchKrAdmissions — 메인 진입점", () => {
       specs: specs(),
       candidates: [
         candidate(),
-        candidate({}, {}, { acceptedCount: 1 }),
-        candidate({}, {}, { acceptedCount: 0 }),
+        candidate({}, NO_OFFICIAL_RESULT, { acceptedCount: 1 }),
+        candidate({}, NO_OFFICIAL_RESULT, { acceptedCount: 0 }),
       ],
     });
     expect(out.globalCaveats.some((c) => /표본/.test(c))).toBe(true);
