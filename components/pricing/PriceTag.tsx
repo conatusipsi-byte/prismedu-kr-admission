@@ -41,7 +41,10 @@ export interface PriceTagProps {
 }
 
 const SIZE_CLASS: Record<NonNullable<PriceTagProps["size"]>, string> = {
-  hero: "text-5xl font-extrabold tracking-tightest leading-none",
+  // BUG fix(2026-06-21): 고정 text-5xl(48px)는 /pricing 다단 그리드의 좁은 카드(태블릿 3열 등)
+  //   폭을 넘겨 카드 overflow-hidden 에 가격이 잘렸음(예: "₩300,0"). 좁은 폭은 text-4xl,
+  //   카드가 충분히 넓어지는 초광폭(2xl)에서만 text-5xl 로 hero 강조 복원.
+  hero: "text-4xl 2xl:text-5xl font-extrabold tracking-tightest leading-none",
   compact: "text-2xl font-bold tabular-nums",
   inline: "text-base font-semibold tabular-nums",
 };
