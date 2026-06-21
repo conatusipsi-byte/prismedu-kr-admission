@@ -11,6 +11,7 @@
  */
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
+import { isMasterEmail } from "@/lib/master";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { getAnthropicClient, createMessageWithTimeout, ClaudeTimeoutError } from "@/lib/anthropic";
@@ -49,7 +50,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   const dayErr = await enforceRateLimit({ bucket: "admission_fit_daily", uid: auth.uid, windowMs: 86_400_000, limit: 30 });
   if (dayErr) return dayErr;
 
-  const plan = await loadPlan(auth.uid);
+  const plan = isMasterEmail(auth.email) ? "elite" : await loadPlan(auth.uid);
   if (!canUseFeature(plan, "specAnalysisEnabled")) {
     return NextResponse.json({ error: "AI 적합도 분석은 Pro 전용 기능입니다.", upgradeUrl: "/pricing" }, { status: 403 });
   }

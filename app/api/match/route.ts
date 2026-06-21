@@ -22,6 +22,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
+import { isMasterEmail } from "@/lib/master";
 import { reportRouteError } from "@/lib/sentry-report";
 import { KrSpecsSchema, type MatchResultItem } from "@/lib/schemas/api/match";
 import {
@@ -50,7 +51,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   const specs = parsed.data;
 
   try {
-    const plan = await loadPlan(auth.uid);
+    const plan = isMasterEmail(auth.email) ? "elite" : await loadPlan(auth.uid);
     const limit = clampLimit(specs.filter?.limit, plan);
 
     const candidates = await loadKrCandidates(specs, limit);

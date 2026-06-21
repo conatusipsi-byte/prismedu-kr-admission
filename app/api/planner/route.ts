@@ -4,6 +4,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
+import { isMasterEmail } from "@/lib/master";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { reportRouteError } from "@/lib/sentry-report";
 import { canUseFeature, type Plan } from "@/lib/plans";
@@ -25,7 +26,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   const auth = await requireAuth(req);
   if (!auth.ok) return auth.response;
 
-  const plan = await loadPlan(auth.uid);
+  const plan = isMasterEmail(auth.email) ? "elite" : await loadPlan(auth.uid);
   if (!canUseFeature(plan, "autoPlannerEnabled")) {
     return NextResponse.json(
       { error: "자동 플래너는 Pro 전용 기능입니다.", upgradeUrl: "/pricing" },
@@ -70,7 +71,7 @@ export async function PATCH(req: NextRequest): Promise<NextResponse> {
   const auth = await requireAuth(req);
   if (!auth.ok) return auth.response;
 
-  const plan = await loadPlan(auth.uid);
+  const plan = isMasterEmail(auth.email) ? "elite" : await loadPlan(auth.uid);
   if (!canUseFeature(plan, "autoPlannerEnabled")) {
     return NextResponse.json(
       { error: "자동 플래너는 Pro 전용 기능입니다.", upgradeUrl: "/pricing" },

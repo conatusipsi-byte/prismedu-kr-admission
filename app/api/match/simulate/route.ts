@@ -4,6 +4,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
+import { isMasterEmail } from "@/lib/master";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { reportRouteError } from "@/lib/sentry-report";
 import {
@@ -31,7 +32,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   const { baseSpecId, override } = parsed.data;
 
   try {
-    const plan = await loadPlan(auth.uid);
+    const plan = isMasterEmail(auth.email) ? "elite" : await loadPlan(auth.uid);
     if (plan === "free") {
       return NextResponse.json(
         {

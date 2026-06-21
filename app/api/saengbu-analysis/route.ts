@@ -22,6 +22,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
+import { isMasterEmail } from "@/lib/master";
 import { enforceRateLimit } from "@/lib/rate-limit";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { getAnthropicClient, createMessageWithTimeout, ClaudeTimeoutError } from "@/lib/anthropic";
@@ -56,7 +57,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   const dayErr = await enforceRateLimit({ bucket: "saengbu_analysis_daily", uid: auth.uid, windowMs: 86_400_000, limit: 20 });
   if (dayErr) return dayErr;
 
-  const plan = await loadPlan(auth.uid);
+  const plan = isMasterEmail(auth.email) ? "elite" : await loadPlan(auth.uid);
   if (!canUseFeature(plan, "saengbuAnalysisEnabled")) {
     return NextResponse.json(
       { error: "생기부 AI 분석은 Pro 전용 기능입니다.", upgradeUrl: "/pricing" },

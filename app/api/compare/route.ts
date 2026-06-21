@@ -4,6 +4,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
+import { isMasterEmail } from "@/lib/master";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { reportRouteError } from "@/lib/sentry-report";
 import { CompareRequestSchema } from "@/lib/schemas/api/compare";
@@ -46,7 +47,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   try {
     const sb = getAdminSupabase();
 
-    const plan = await loadPlan(auth.uid);
+    const plan = isMasterEmail(auth.email) ? "elite" : await loadPlan(auth.uid);
     if (plan === "free") {
       return NextResponse.json(
         { error: "학과 비교는 Pro 전용 기능입니다.", upgradeUrl: "/pricing" },

@@ -4,6 +4,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { requireAuth } from "@/lib/api-auth";
+import { isMasterEmail } from "@/lib/master";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import type { AdmissionIntent } from "@/types/admission";
 
@@ -27,7 +28,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
   try {
     const [plan, latestSpec] = await Promise.all([
-      loadPlan(auth.uid),
+      isMasterEmail(auth.email) ? Promise.resolve("elite" as const) : loadPlan(auth.uid),
       loadLatestSpec(auth.uid),
     ]);
 
