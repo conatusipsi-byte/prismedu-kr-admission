@@ -1,0 +1,118 @@
+[
+ {
+  "name": "경북대학교",
+  "kcueId": "kcue_0000005",
+  "status": "text",
+  "year": 2026,
+  "sourceUrl": "https://ipsi1.knu.ac.kr/_common/new_download_file.php?menu=boardfile&file_no=5080",
+  "cutoffBasis": "입학자(등록자) 학생부 등급 70%컷. 학생부등급=국·영·수·사·과·한국사 과목 평균. 모집/등록 2명 이하 학과는 개인정보보호로 미공개되어 제외됨.",
+  "deptCount": 200
+ },
+ {
+  "name": "전남대학교",
+  "kcueId": "kcue_0000023",
+  "status": "text",
+  "year": 2026,
+  "sourceUrl": "https://admission.jnu.ac.kr/WebApp/web/HOM/COM/Board/board.aspx?boardID=423&bbsMode=view&page=1&key=26",
+  "cutoffBasis": "학생부 등급 70%컷(이수단위 반영, 등록자 기준). 등록자 3명 이하로 70%컷 산출불가인 소수 모집단위는 학생부 등급 평균값으로 대체(예: 공과대학 건축학부 교과 3.956은 평균값). 낮을수록 우수.",
+  "deptCount": 176
+ },
+ {
+  "name": "충남대학교",
+  "kcueId": "kcue_0000029",
+  "status": "text",
+  "year": 2026,
+  "sourceUrl": "https://ipsi.cnu.ac.kr/_prog/_board/?mode=V&no=2025630&code=recsroom_01&site_dvs_cd=uadm&menu_dvs_cd=0105",
+  "cutoffBasis": "최종등록자 학생부 등급 70%컷 (전학년 전교과 100% 반영, 진로선택과목 환산점수 포함, 면접고사 점수 제외; 9등급제, 낮을수록 우수). 경쟁률은 모집단위별 지원경쟁률(X.XX:1의 배수값).",
+  "deptCount": 245
+ },
+ {
+  "name": "전북대학교",
+  "kcueId": "kcue_0000025",
+  "status": "text",
+  "year": 2025,
+  "sourceUrl": "https://che.jbnu.ac.kr/bbs/che/1174/356770/artclView.do",
+  "cutoffBasis": "최종등록자 학생부등급 70% cut (전형 총점 상위 70% 등록자 점수; 종합전형은 대교협 공시 기준 등급순 재배열). 낮을수록 우수. 경쟁률=등록인원 대비 지원인원. 출처: 전북대 공식 '2025학년도 학부(수시,정시) 입시결과(공개용).xlsx'",
+  "deptCount": 72
+ },
+ {
+  "name": "경상국립대학교",
+  "kcueId": "kcue_0000007",
+  "status": "text",
+  "year": 2025,
+  "sourceUrl": "https://www.gnu.ac.kr/common/fileDownload.do?fileKey=11765",
+  "cutoffBasis": "최종등록자 학생부등급 80%컷(상위 80% 지점, 낮을수록 우수). competitionRate=경쟁률(지원/모집, 실경쟁률 아님). 출처: 경상국립대 입학처 '2025학년도 수시모집 입학결과(학생부교과, 실기/실적)' 공식 PDF.",
+  "deptCount": 131
+ },
+ {
+  "name": "강원대학교",
+  "kcueId": "kcue_0000003",
+  "status": "text",
+  "year": 2026,
+  "sourceUrl": "https://admission.kangwon.ac.kr/admission/bbs/1166/detail.do?pstSn=478&searchCl1=2",
+  "cutoffBasis": "최초합격자 교과등급 50%컷 (median of initial-admit student-record grades; lower is better). Source XLSX also provides 평균/표준편차/최고등급/75%컷/최저등급 per dept; gradeCutoff here is the 50%컷. 종합전형은 면접전형의 경우 등급컷이 일부 비공개(미반영)일 수 있음.",
+  "deptCount": 297
+ },
+ {
+  "name": "충북대학교",
+  "kcueId": "kcue_0000030",
+  "status": "text",
+  "year": 2026,
+  "sourceUrl": "https://ipsi.chungbuk.ac.kr/kor/bbs/BBSMSTR_000000000011/lst.do",
+  "cutoffBasis": "최종등록자 내신등급 70%컷 (gradeCutoff). 70%컷 미공개(해당 인원 3인 이하)인 경우 null. competitionRate = 지원인원 / 모집인원 (충북대 입학처 공개 입시결과표에 명시된 지원인원·모집인원으로 산출). 2026학년도 충북대학교 대학입학전형결과 현황표(입학처 공식 공개).",
+  "deptCount": 168
+ },
+ {
+  "name": "부경대학교",
+  "kcueId": "kcue_0000013",
+  "status": "unpublished",
+  "year": 2026,
+  "sourceUrl": "https://iphak.pknu.ac.kr/pknu/board/g_board.htm?code=iphak_data&tn=exam_result&page=1&mode=read&number=103&kind=ra",
+  "cutoffBasis": "N/A — 공식 수치 추출 실패(아래 notes 참조)",
+  "deptCount": 0
+ },
+ {
+  "name": "제주대학교",
+  "kcueId": "kcue_0000027",
+  "status": "unpublished",
+  "year": null,
+  "sourceUrl": "https://ibsi.jejunu.ac.kr/10000049",
+  "cutoffBasis": "N/A - 공식 입학처에 학과별 합격자 등급 미공개",
+  "deptCount": 0
+ },
+ {
+  "name": "경희대학교",
+  "kcueId": "kcue_0000066",
+  "status": "text",
+  "year": 2026,
+  "sourceUrl": "https://iphak.khu.ac.kr/file/download.do?sfn=20260513054627045_2026학년도+입학전형+통계자료_홈페이지공지용.pdf",
+  "cutoffBasis": "최종등록자(합격자, 충원합격 포함) 학생부교과 등급 70%CUT. 환산 교과: 자율·자유전공/인문·자연계열=국어·영어·수학·사회·과학·한국사 전과목 평균등급, 예술·체육계열=국어·영어 전과목 평균등급. 종합(네오르네상스)은 합격자 학생부교과 등급 70%CUT(서류·면접 정성평가 전형이라 교과등급은 참고용). 낮을수록 우수.",
+  "deptCount": 133
+ },
+ {
+  "name": "인하대학교",
+  "kcueId": "kcue_0000169",
+  "status": "text",
+  "year": 2025,
+  "sourceUrl": "https://admission.inha.ac.kr/ajaxfile/FR_SVC/FileDown.do?GBN=X01&BOARD_SEQ=1&SITE_NO=2&BBS_SEQ=1233&FILE_SEQ=1",
+  "cutoffBasis": "최종등록자 교과등급 70%CUT (낮을수록 우수). 원문에 50%CUT/70%CUT 모두 공개. 종합(면접형)은 최종등록자 50%/70%CUT, 교과(지역균형)은 최종등록자 50%CUT/70%CUT. gradeCutoff에는 최종등록자 70%CUT 기재. 교과 경쟁률은 공시(일반)경쟁률 사용(실질경쟁률 별도 존재).",
+  "deptCount": 111
+ },
+ {
+  "name": "가천대학교",
+  "kcueId": "kcue_0000063",
+  "status": "text",
+  "year": 2026,
+  "sourceUrl": "https://admission.gachon.ac.kr/admission/html/rolling/result.asp",
+  "cutoffBasis": "최종등록자 학생부 등급 70%컷 (50%/70%/90% 중 70% 값 사용). 등급 산출방식: 해당 학년도 전형별 반영 교과/과목의 평균(이수단위 반영, 진로선택과목 미반영, 9등급 체계 원등급). 학생부종합(가천바람개비)은 반영방법이 없어 학생부우수자 전형 기준 교과 평균으로 산출.",
+  "deptCount": 90
+ },
+ {
+  "name": "부산대학교",
+  "kcueId": "pusan",
+  "status": "text",
+  "year": 2026,
+  "cutoffBasis": "교과종합등급 70%컷 (= 반영교과[국·수·영·사·과·한국사] 석차등급 평균; 낮을수록 우수). 표본부족 2개 학과는 70%컷 미공개로 평균등급만 수록.",
+  "deptCount": 93
+ }
+]

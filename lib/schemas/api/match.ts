@@ -169,6 +169,8 @@ export const MatchResultItemSchema = z.object({
   sampleSufficient: z.boolean(),
   sampleN: z.number().int().min(0),
   weightedSampleN: z.number().min(0),
+  /** 합격률 근거 — "sample"(합격자 표본) | "official_estimate"(대학 공시 입결 기반 추정). UI 라벨용. */
+  basis: z.enum(["sample", "official_estimate"]).optional(),
   /** 학종 트랙에 한해 채워짐 (P-006 분해) */
   hakjong: z
     .object({

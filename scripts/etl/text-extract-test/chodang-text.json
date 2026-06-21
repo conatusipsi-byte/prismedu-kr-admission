@@ -1,0 +1,1300 @@
+{
+  "meta": {
+    "universityName": "초당대학교",
+    "universityId": "chodang",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "무안(전남) 단일 캠퍼스. 2027 수시 정원내(일반학생·지역인재·일반고·만학도)+정원외(농어촌·기초생활차상위) 전형만 추출. 정시(5명)·만학도(전형기간자율, 정원외 0명)·2026 입시결과(과거)는 제외.",
+    "sourceDocYear": 2027,
+    "departments": 25,
+    "totalTracks": 37,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 firm 전형 인원 합) — 단, 2027 모집단위별 인원배정표(요강 p.10)가 이미지로 pdftotext 추출 불가하여 전 모집단위 totalQuotaHint=null. 검증 가능한 firm 학과 0건.",
+      "passed": 0,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "일반학생전형(정원내)",
+        "computed": 385,
+        "stated": 385,
+        "match": true
+      },
+      {
+        "track": "지역인재전형(정원내)",
+        "computed": 75,
+        "stated": 75,
+        "match": true
+      },
+      {
+        "track": "일반고전형(정원내)",
+        "computed": 90,
+        "stated": 90,
+        "match": true
+      },
+      {
+        "track": "만학도전형(정원내)",
+        "computed": 100,
+        "stated": 100,
+        "match": true
+      },
+      {
+        "track": "정원내 합계(385+75+90+100)",
+        "computed": 650,
+        "stated": 650,
+        "match": true
+      },
+      {
+        "track": "농어촌학생전형(정원외)",
+        "computed": 15,
+        "stated": 15,
+        "match": true
+      },
+      {
+        "track": "기초생활차상위전형(정원외)",
+        "computed": 21,
+        "stated": 21,
+        "match": true
+      },
+      {
+        "track": "정원외 합계(15+21)",
+        "computed": 36,
+        "stated": 36,
+        "match": true
+      },
+      {
+        "track": "수시 총합계(정원내+정원외)",
+        "computed": 686,
+        "stated": 686,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "초당대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "간호학과",
+        "campus": "무안",
+        "trackHint": "자연",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": "2026학년도 입시결과(일반학생전형): 모집 100명, 경쟁률 4.48, 최초합격 평균 3.30등급, 최초등록 평균 4.92등급, 70%CUT 5.17, 최저 8.00 (※ 과거 결과, 2027 모집인원 아님)",
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          },
+          {
+            "trackName": "지역인재전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(전남·전북·광주)",
+            "quotaInitial": null,
+            "applicationQualification": "전라남·북도 또는 광주광역시 지역 소재 고등학교에서 전 교육과정을 이수하고 졸업(예정)한 자(입학부터 졸업까지 해당지역 고교 재학). 단, 간호학과는 중학교 전 교육과정 이수·졸업 및 거주 요건도 충족. 검정고시·외국고교·학력인정학교·대안학교·영재학교 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              13,
+              19
+            ]
+          },
+          {
+            "trackName": "일반고전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": null,
+            "applicationQualification": "전국 일반고·자율고 및 특수목적고(과학고·외국어고·국제고 출신자)와 종합고 내 인문계 과정 졸업(예정)자. 검정고시 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              14,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자로서 유형② 초·중·고 전 교육과정 이수 및 12년간 본인만 농어촌(읍·면/도서·벽지) 소재지 학교 거주자. 검정고시·특수목적고(과학·외국어·국제·예술·체육·마이스터고) 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              16,
+              19
+            ]
+          },
+          {
+            "trackName": "기초생활차상위전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위(정원외)",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자로서 국민기초생활보장법 제2조 1·2·10호(수급권자·수급자·차상위계층) 및 한부모가족지원법 제5조·제5조의2 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              17,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공운항학과",
+        "campus": "무안",
+        "trackHint": "자연",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자 (항공운항학과: 국토교통부 지정 항공신체검사 1종 적합 판정자만 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": "2026학년도 입시결과(일반학생전형): 모집 25명, 경쟁률 5.56, 최초합격 평균 2.34등급, 최초등록 평균 3.08등급, 70%CUT 3.58, 최저 3.92 (※ 과거 결과, 2027 모집인원 아님)",
+            "sourcePages": [
+              10,
+              12,
+              19,
+              22
+            ]
+          },
+          {
+            "trackName": "지역인재전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(전남·전북·광주)",
+            "quotaInitial": null,
+            "applicationQualification": "전라남·북도 또는 광주광역시 지역 소재 고교 전 교육과정 이수·졸업(예정)자(입학~졸업 해당지역 재학) + 항공신체검사 1종 적합자. 검정고시·외국고교·대안학교·영재학교 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              13,
+              19,
+              22
+            ]
+          },
+          {
+            "trackName": "일반고전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": null,
+            "applicationQualification": "전국 일반고·자율고·특목고(과학·외국어·국제고 출신자)·종합고 인문계 과정 졸업(예정)자 + 항공신체검사 1종 적합자. 검정고시 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              14,
+              19,
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": null,
+            "applicationQualification": "유형② 초·중·고 12년 농어촌 이수·거주자 + 항공신체검사 1종 적합자. 검정고시·특목고 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              16,
+              19,
+              22
+            ]
+          },
+          {
+            "trackName": "기초생활차상위전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위(정원외)",
+            "quotaInitial": null,
+            "applicationQualification": "국민기초생활보장법 제2조 1·2·10호 및 한부모가족지원법 지원대상자 + 항공신체검사 1종 적합자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              17,
+              19,
+              22
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공학부 항공정비전공",
+        "campus": "무안",
+        "trackHint": "자연",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          },
+          {
+            "trackName": "지역인재전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(전남·전북·광주)",
+            "quotaInitial": null,
+            "applicationQualification": "전라남·북도 또는 광주광역시 지역 소재 고등학교에서 전 교육과정을 이수하고 졸업(예정)한 자(입학부터 졸업까지 해당지역 고교 재학). 단, 간호학과는 중학교 전 교육과정 이수·졸업 및 거주 요건도 충족. 검정고시·외국고교·학력인정학교·대안학교·영재학교 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              13,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공학부 무인항공기전공",
+        "campus": "무안",
+        "trackHint": "자연",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          },
+          {
+            "trackName": "지역인재전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(전남·전북·광주)",
+            "quotaInitial": null,
+            "applicationQualification": "전라남·북도 또는 광주광역시 지역 소재 고등학교에서 전 교육과정을 이수하고 졸업(예정)한 자(입학부터 졸업까지 해당지역 고교 재학). 단, 간호학과는 중학교 전 교육과정 이수·졸업 및 거주 요건도 충족. 검정고시·외국고교·학력인정학교·대안학교·영재학교 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              13,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공학부 항공기제작전공",
+        "campus": "무안",
+        "trackHint": "자연",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          },
+          {
+            "trackName": "지역인재전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(전남·전북·광주)",
+            "quotaInitial": null,
+            "applicationQualification": "전라남·북도 또는 광주광역시 지역 소재 고등학교에서 전 교육과정을 이수하고 졸업(예정)한 자(입학부터 졸업까지 해당지역 고교 재학). 단, 간호학과는 중학교 전 교육과정 이수·졸업 및 거주 요건도 충족. 검정고시·외국고교·학력인정학교·대안학교·영재학교 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              13,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공학부 도심항공모빌리티전공",
+        "campus": "무안",
+        "trackHint": "자연",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          },
+          {
+            "trackName": "지역인재전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(전남·전북·광주)",
+            "quotaInitial": null,
+            "applicationQualification": "전라남·북도 또는 광주광역시 지역 소재 고등학교에서 전 교육과정을 이수하고 졸업(예정)한 자(입학부터 졸업까지 해당지역 고교 재학). 단, 간호학과는 중학교 전 교육과정 이수·졸업 및 거주 요건도 충족. 검정고시·외국고교·학력인정학교·대안학교·영재학교 출신자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              13,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학부 스포츠경기지도전공",
+        "campus": "무안",
+        "trackHint": "예체능",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학부 생활체육전공",
+        "campus": "무안",
+        "trackHint": "예체능",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티디자인학부 헤어미용전공",
+        "campus": "무안",
+        "trackHint": "예체능",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티디자인학부 메이크업크리에이티브전공",
+        "campus": "무안",
+        "trackHint": "예체능",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티디자인학부 화장품·피부전공",
+        "campus": "무안",
+        "trackHint": "예체능",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지·제약보건학부 사회복지전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지·제약보건학부 청소년교육상담전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지·제약보건학부 재활헬스케어전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지·제약보건학부 제약유통전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔조리베이커리학부 호텔조리전공",
+        "campus": "무안",
+        "trackHint": "예체능",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔조리베이커리학부 제과제빵전공",
+        "campus": "무안",
+        "trackHint": "예체능",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔조리베이커리학부 K-푸드전공",
+        "campus": "무안",
+        "trackHint": "예체능",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방·군사·경찰학부 군사학전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방·군사·경찰학부 소방안전전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방·군사·경찰학부 첨단방재시스템전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방·군사·경찰학부 지적학전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방·군사·경찰학부 경찰전공",
+        "campus": "무안",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자율전공학부",
+        "campus": "무안",
+        "trackHint": null,
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "일반학생전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공(입학 당해 학기 수료 후 개설 학과(부) 선택, 단 간호학과·미래평생교육학부 제외)",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자. 입학 당해 학기 수료 후 개설된 모든 학과(부) 선택 가능(단, 간호학과·미래평생교육학부 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10,
+              12,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미래평생교육학부",
+        "campus": "무안",
+        "trackHint": null,
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "만학도전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도(만 25세 이상)",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 고등학교 졸업예정자 또는 이와 동등 이상의 학력이 있다고 인정된 자 중 만 25세 이상인 자(2027.3.1 기준 2001.2.28 이전 출생자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": "2026학년도 입시결과(만학도전형): 모집 80명, 경쟁률 1.44, 최초합격 평균 5.23등급, 최초등록 평균 5.27등급, 70%CUT 6.42, 최저 8.67 (※ 과거 결과, 2027 모집인원 아님)",
+            "sourcePages": [
+              10,
+              15,
+              19
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "★최중요: 2027 '모집단위별 입학정원 및 모집인원' 표(요강 p.10, 목차 명시)가 PDF상 이미지로만 존재하여 pdftotext -layout으로 추출되지 않음. 본문 어디에도 모집단위(학과/학부전공)별 2027 모집인원 숫자가 텍스트로 없음 → 전 트랙 quotaInitial=null, 전 학과 totalQuotaHint=null. 인원 임의생성 금지 원칙에 따라 숫자 미기재.",
+      "검증 가능한 2027 firm 인원은 '세부 전형별 안내'의 전형별 총원(grand total)뿐: 일반학생 385·지역인재 75·일반고 90·만학도 100(정원내 소계 650), 농어촌 15·기초생활차상위 21(정원외 소계 36), 수시 총 686. 이 값들은 '전형요약 및 주요 변경사항' 비교표(2027 수시 정원내650/정원외36/합계686)와 완전 일치 → colTotalValidation 전건 match.",
+      "수능 최저학력기준: 모든 전형 '없음'(세부 전형별 안내 각 전형 '수능최저학력기준: 없음', 변경사항표 간호 일반고전형 수능최저 '삭제'). csatMinimumExempt=true, csatMinimumRawText='없음'.",
+      "전형요소별 반영비율 표(요강 p.19): 모든 전형·모든 모집단위 학생부교과 100%(1,000점 만점, 실질반영 1,000~880점). 면접 폐지(변경사항 '면접없음'). 전 트랙 reflectionStages=교과100, stageMaxScore=1000.",
+      "모집단위(학과)별 전형 부착은 세부 전형별 안내 '전형방법'에 명시된 모집단위명 + 2026 입시결과표 출현 모집단위로 보수적 추정: 일반학생전형='모든 모집단위'(전 학과 부착); 지역인재전형=간호·항공운항·항공학부(전형방법 line539); 일반고/농어촌/기초생활차상위=간호·항공운항(전형방법); 만학도=미래평생교육학부. 단 인원 배정은 미상(null).",
+      "departments는 '학과소개'에 영문 부제와 함께 명시된 2027 모집단위만 수록: 2개 독립학과(간호·항공운항)+항공학부 4전공+스포츠과학부 2전공+뷰티디자인학부 3전공+사회복지·제약보건학부 4전공+호텔조리베이커리학부 3전공+소방·군사·경찰학부 5전공+자율전공학부+미래평생교육학부. 변경사항표는 '9개 학부 34개 전공'이라 했으나 학과소개에 전 전공이 인쇄되지 않아(라이프학부·관광학부 등 2026 명칭 일부 미등장) 누락 전공은 임의 생성하지 않음.",
+      "만학도전형(전형기간 자율)(정원외)은 세부안내 line896 '모집단위 및 모집인원 0명'으로 명시되어 firm 트랙에서 제외(미래평생교육학부 정원내 만학도전형 100명만 수록).",
+      "정시(정원내 5명)는 2027 비교표에만 등장하고 세부 전형/모집단위 미상이며 수시 추출 범위 밖이라 제외.",
+      "2026학년도 수시 입시결과표(요강 p.앞부분, 경쟁률/평균등급/70%CUT/최저점)는 과거 결과이며 2027 모집인원 아님. 명확 귀속되는 간호학과·항공운항학과(일반학생전형)·미래평생교육학부(만학도전형)만 prevYearResult에 기록(2026 학부전공 통합 라인은 모집단위 매칭 불명확하여 미기록).",
+      "sourcePages는 PDF 인쇄쪽수(footer '초당대학교 2027 | N') 기준. 모집인원표=p10(이미지), 세부전형=p12~17, 학생부반영방법(전형요소별표)=p19, 항공신체검사=p22."
+    ]
+  }
+}

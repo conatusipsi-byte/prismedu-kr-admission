@@ -80,13 +80,24 @@ export function DepartmentRecommendCard({
               </div>
               <h3 className="truncate text-base font-semibold">{result.departmentName}</h3>
             </div>
-            <Badge
-              variant="outline"
-              data-category-badge={result.category}
-              className={cn("shrink-0 border", CATEGORY_TONE[result.category])}
-            >
-              {CATEGORY_LABEL[result.category]}
-            </Badge>
+            <div className="flex shrink-0 flex-col items-end gap-1">
+              <Badge
+                variant="outline"
+                data-category-badge={result.category}
+                className={cn("border", CATEGORY_TONE[result.category])}
+              >
+                {CATEGORY_LABEL[result.category]}
+              </Badge>
+              {result.basis === "official_estimate" && (
+                <Badge
+                  variant="outline"
+                  data-basis-badge="official_estimate"
+                  className="border-sky-200 bg-sky-50/60 text-2xs font-medium text-sky-700 dark:border-sky-900/40 dark:bg-sky-950/20 dark:text-sky-300"
+                >
+                  추정
+                </Badge>
+              )}
+            </div>
           </div>
 
           {/* 트랙 뱃지 */}
@@ -117,9 +128,13 @@ export function DepartmentRecommendCard({
             </ul>
           )}
 
-          {/* 표본 수 (정직성 안내) */}
+          {/* 표본/근거 (정직성 안내) — 추정은 표본이 아니라 작년 공시 입결 기반임을 명시 */}
           <div className="flex items-center justify-between text-2xs text-muted-foreground">
-            <span>합격 사례 {result.sampleN}건 (가중 {result.weightedSampleN.toFixed(1)})</span>
+            <span>
+              {result.basis === "official_estimate"
+                ? "작년 대학 공시 입결 기반 추정 (합격자 표본 아님)"
+                : `합격 사례 ${result.sampleN}건 (가중 ${result.weightedSampleN.toFixed(1)})`}
+            </span>
             <span className="flex items-center gap-0.5">
               상세 <ChevronRight aria-hidden className="h-3 w-3" />
             </span>

@@ -175,6 +175,7 @@ function applyFreePreview(
       sampleSufficient: r.probability.sampleSufficient,
       sampleN: r.probability.sampleN,
       weightedSampleN: r.probability.weightedSampleN,
+      basis: r.probability.basis,
       hakjong: r.probability.hakjong,
       lockable,
       caveats: r.caveats,
