@@ -1,0 +1,4476 @@
+{
+  "meta": {
+    "universityName": "선문대학교",
+    "universityId": "sunmoon",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "아산캠퍼스 단일 (전 모집단위)",
+    "sourceDocYear": 2027,
+    "departments": 46,
+    "totalTracks": 147,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 designated 전형 인원 합)",
+      "passed": 46,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학생부교과(일반전형)",
+        "computed": 1101,
+        "stated": 1101,
+        "match": true
+      },
+      {
+        "track": "학생부교과(지역학생전형)",
+        "computed": 274,
+        "stated": 274,
+        "match": true
+      },
+      {
+        "track": "학생부교과(지역저소득층전형)",
+        "computed": 2,
+        "stated": 2,
+        "match": true
+      },
+      {
+        "track": "학생부교과(사회통합전형)",
+        "computed": 22,
+        "stated": 22,
+        "match": true
+      },
+      {
+        "track": "학생부교과(면접전형)",
+        "computed": 110,
+        "stated": 110,
+        "match": true
+      },
+      {
+        "track": "학생부종합(서류전형)",
+        "computed": 271,
+        "stated": 271,
+        "match": true
+      },
+      {
+        "track": "실기/실적(일반전형)",
+        "computed": 158,
+        "stated": 158,
+        "match": true
+      },
+      {
+        "track": "실기/실적(체육특기자전형)",
+        "computed": 10,
+        "stated": 10,
+        "match": true
+      },
+      {
+        "track": "학생부교과(농어촌학생전형) 합계(보건 지정+미지정)",
+        "computed": 41,
+        "stated": 41,
+        "match": true
+      },
+      {
+        "track": "학생부교과(특성화고교졸업자전형) 합계(보건 지정+미지정)",
+        "computed": 30,
+        "stated": 30,
+        "match": true
+      },
+      {
+        "track": "학생부교과(기초생활수급자및차상위계층전형) 합계(보건 지정+미지정)",
+        "computed": 41,
+        "stated": 41,
+        "match": true
+      },
+      {
+        "track": "학생부교과(장애인등대상자전형)",
+        "computed": 10,
+        "stated": 10,
+        "match": true
+      },
+      {
+        "track": "학생부교과(면접전형-계약학과) 합계(조기취업형 80+계약정원제 10)",
+        "computed": 90,
+        "stated": 90,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "선문대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "디지털콘텐츠학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰행정법학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 41,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "상담심리학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회통합전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "다문화가정의 자녀 또는 다자녀(2자녀 이상) 가정의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회통합전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정의 자녀 또는 다자녀(2자녀 이상) 가정의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미디어커뮤니케이션학부",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 72,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 42,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 13,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회통합전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "다문화가정의 자녀 또는 다자녀(2자녀 이상) 가정의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 106,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 70,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 19,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회통합전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "다문화가정의 자녀 또는 다자녀(2자녀 이상) 가정의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌경제학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "IT경영학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "관광호텔경영학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공서비스학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외국어학부(스페인어중남미전공)",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외국어학부(영어학전공)",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외국어학부(일본어전공)",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 52,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 9,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회통합전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "다문화가정의 자녀 또는 다자녀(2자녀 이상) 가정의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "아시아문화학부",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공학부",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 86,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 60,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 11,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회통합전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정의 자녀 또는 다자녀(2자녀 이상) 가정의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "신학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 95,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 26,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역저소득층전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재/기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권 고교 졸업(예정)자 중 기초생활수급자·차상위계층·한부모가족 등(간호학과)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": "중·고 6년 또는 초·중·고 12년 농어촌 거주·재학자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 5,
+            "applicationQualification": "특성화고등학교 졸업(예정)자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자및차상위계층전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족지원대상자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 43,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "중·고 6년 또는 초·중·고 12년 농어촌 거주·재학자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 4,
+            "applicationQualification": "특성화고등학교 졸업(예정)자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자및차상위계층전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족지원대상자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "치위생학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": "중·고 6년 또는 초·중·고 12년 농어촌 거주·재학자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화고등학교 졸업(예정)자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자및차상위계층전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족지원대상자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 46,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "중·고 6년 또는 초·중·고 12년 농어촌 거주·재학자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화고등학교 졸업(예정)자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자및차상위계층전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족지원대상자(정원외, 보건계열 지정인원)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              7,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "수산생명의학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식품공학·영양학부",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 47,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "제약생명공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 62,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 41,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 11,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학부",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 65,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 41,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 11,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회통합전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "다문화가정의 자녀 또는 다자녀(2자녀 이상) 가정의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "산업경영공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 34,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방방재안전학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전자공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 56,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 41,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 9,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "디스플레이반도체공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "반도체소재공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 47,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "기계공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 43,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 11,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미래자동차공학부",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "지능로봇공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI소프트웨어학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 52,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학부",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 119,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 74,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 21,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회통합전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 4,
+            "applicationQualification": "다문화가정의 자녀 또는 다자녀(2자녀 이상) 가정의 자녀",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI모빌리티융합공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(면접전형-조기취업형 계약학과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(조기취업형)",
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(외국 국적 소지자 지원 불가). 정원외 계약학과(조기취업형). 기업체 대면 면접.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "모빌리티시스템공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(면접전형-조기취업형 계약학과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(조기취업형)",
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(외국 국적 소지자 지원 불가). 정원외 계약학과(조기취업형). 기업체 대면 면접.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트팩토리융합공학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(면접전형-조기취업형 계약학과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(조기취업형)",
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(외국 국적 소지자 지원 불가). 정원외 계약학과(조기취업형). 기업체 대면 면접.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "실기/실적(일반전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "교과": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "trackName": "실기/실적(체육특기자전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 5,
+            "applicationQualification": "축구 종목 특기자(2024~2026 고교 재학 중 또는 2024.1.1. 이후 검정고시 합격자로 규정 대회 입상·출전 실적 충족자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 45,
+                  "경기실적": 45,
+                  "교과": 5,
+                  "출결": 5
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "무도경호학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "실기/실적(일반전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "교과": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "태권도학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "실기/실적(일반전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "교과": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "피트니스재활학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "실기/실적(일반전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "교과": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "trackName": "실기/실적(체육특기자전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 5,
+            "applicationQualification": "축구 종목 특기자(2024~2026 고교 재학 중 또는 2024.1.1. 이후 검정고시 합격자로 규정 대회 입상·출전 실적 충족자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 45,
+                  "경기실적": 45,
+                  "교과": 5,
+                  "출결": 5
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영화영상학과",
+        "campus": "아산캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북)지역 고등학교 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "디자인학부(시각디자인전공)",
+        "campus": "아산캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "실기/실적(일반전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "교과": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "디자인학부(방송콘텐츠디자인전공)",
+        "campus": "아산캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학생부종합(서류전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자(국내 학교생활기록부가 없는 자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              11,
+              12
+            ]
+          },
+          {
+            "trackName": "실기/실적(일반전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·해외고교 졸업(예정)자 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 80,
+                  "교과": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전계열 미지정(정원외 공통 선발)",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 95,
+        "tracks": [
+          {
+            "trackName": "학생부교과(농어촌학생전형-보건계열 외 미지정 인원)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 29,
+            "applicationQualification": "중·고 6년 또는 초·중·고 12년 농어촌 거주·재학자. 정원외, 보건계열을 제외한 전계열 미지정(공통) 모집인원 29명(학과별 배정 없음).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              28,
+              29
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형-보건계열 외 미지정 인원)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 17,
+            "applicationQualification": "특성화고등학교 졸업(예정)자. 정원외, 보건계열을 제외한 전계열 미지정(공통) 모집인원 17명(학과별 배정 없음).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              30,
+              31
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자및차상위계층전형-보건계열 외 미지정 인원)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 29,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족지원대상자. 정원외, 보건계열을 제외한 전계열 미지정(공통) 모집인원 29명(학과별 배정 없음).",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              31,
+              32
+            ]
+          },
+          {
+            "trackName": "학생부교과(장애인등대상자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(장애인)",
+            "quotaInitial": 10,
+            "applicationQualification": "「장애인복지법」제32조에 의해 장애인 등록을 마친 자. 정원외, 전계열 미지정(공통) 모집인원 10명(학과별 배정 없음). 비대면 녹화면접.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              33
+            ]
+          },
+          {
+            "trackName": "학생부교과(면접전형-계약정원제 계약학과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(계약정원제)",
+            "quotaInitial": 10,
+            "applicationQualification": "AI소프트웨어학과·컴퓨터공학부 대상 계약정원제(SW중심대학사업 연계) 통합 10명. 기업체 대면 면접. 학과별 배정 인원 미구분.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              2,
+              33
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "선문대는 전 전형 수능최저학력기준 '없음'(p19 학생부교과·p44 학생부종합 공통사항 명시). csatMinimumExempt=true.",
+      "정원외 전형(농어촌·특성화고·기초생활수급자및차상위·장애인·계약정원제)은 보건계열(간호·물리치료·치위생·응급구조)만 학과별 지정인원이 부여되고, 나머지는 '보건계열 제외 전계열 미지정 공통 모집인원'으로 운영됨. 미지정 인원(농어촌 29·특성화 17·기초차상위 29·장애인 10·계약정원제 10=95명)은 학과별 배정이 불가하여 별도 의사(疑似)학과 '전계열 미지정(정원외 공통 선발)'로 분리 적재함(지어내기 방지).",
+      "계약정원제 10명은 AI소프트웨어학과+컴퓨터공학부 통합 인원으로 학과별 구분이 없어 공통 풀에 포함. 조기취업형(AI모빌리티 30·스마트팩토리 30·모빌리티시스템 20=80)은 학과별 지정이므로 해당 계약학과에 직접 부착.",
+      "신학과는 모집인원 총괄 grid·면접전형 세부표(p27) 기준 면접전형 30명(대면면접, 교리·학업계획 평가)이며 일반전형/서류전형 인원은 없음.",
+      "항공서비스학과는 일반전형 4명+면접전형 23명(대면면접)으로 구성(교과소계 27).",
+      "이중 체크섬 통과: 행합(학과별 designated track 합 == totalQuotaHint, failed=0) + 열합(13개 전형 컬럼 합계 == 요강 합계행). 총계 2,160명(정원내 1,948+정원외 212) = designated 2,065 + 미지정 공통 95."
+    ]
+  }
+}

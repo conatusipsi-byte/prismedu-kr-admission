@@ -1,0 +1,5478 @@
+{
+  "meta": {
+    "universityName": "대전대학교",
+    "universityId": "daejeonu",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "대전캠퍼스(단일 캠퍼스)",
+    "sourceDocYear": 2027,
+    "departments": 36,
+    "totalTracks": 175,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 수시 정원내 전형 인원 합)",
+      "passed": 36,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학생부교과(교과면접전형)",
+        "computed": 308,
+        "stated": 308,
+        "match": true
+      },
+      {
+        "track": "학생부교과(교과중점전형)",
+        "computed": 867,
+        "stated": 867,
+        "match": true
+      },
+      {
+        "track": "학생부교과(지역인재Ⅰ전형)",
+        "computed": 206,
+        "stated": 206,
+        "match": true
+      },
+      {
+        "track": "학생부교과(지역인재Ⅱ전형)",
+        "computed": 4,
+        "stated": 4,
+        "match": true
+      },
+      {
+        "track": "학생부교과(군사학과전형)",
+        "computed": 40,
+        "stated": 40,
+        "match": true
+      },
+      {
+        "track": "학생부교과(고른기회전형)",
+        "computed": 33,
+        "stated": 33,
+        "match": true
+      },
+      {
+        "track": "학생부종합(혜화인재전형)",
+        "computed": 45,
+        "stated": 45,
+        "match": true
+      },
+      {
+        "track": "실기위주(특기자전형)",
+        "computed": 13,
+        "stated": 13,
+        "match": true
+      },
+      {
+        "track": "실기위주(실기위주전형)",
+        "computed": 165,
+        "stated": 165,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "대전대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "혜화리버럴아츠칼리지",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 140,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 90,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 25,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 14명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 14명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공학부",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": null,
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학과(4년제)",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "패션디자인·비즈니스학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티디자인학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "커뮤니케이션디자인학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "실기위주(실기위주전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (실기고사 결시·중도포기자 불합격)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 18,
+                  "출결": 2,
+                  "실기": 80
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              38
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "웹툰애니메이션학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "실기위주(실기위주전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 60,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (실기고사 결시·중도포기자 불합격)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              38
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공연예술영상콘텐츠학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "실기위주(실기위주전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (실기고사 결시·중도포기자 불합격)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              38
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "군사학과(남)",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(군사학과전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "군사학과",
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자로 사상 건전·품행 단정·체력 강건, 친권자 동의 및 재정보증보험 가입 가능, 군 인사법 제10조 결격사유 미해당(임관일 기준 만20~29세). 남30명/여10명",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 63,
+                  "출결": 7,
+                  "체력검정": 10,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "군사학과(여)",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": null,
+        "totalQuotaHint": 10,
+        "tracks": [
+          {
+            "trackName": "학생부교과(군사학과전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "군사학과",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자로 사상 건전·품행 단정·체력 강건, 친권자 동의 및 재정보증보험 가입 가능, 군 인사법 제10조 결격사유 미해당(임관일 기준 만20~29세). 남30명/여10명",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 63,
+                  "출결": 7,
+                  "체력검정": 10,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "법·행정학부",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 6명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 6명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "상담학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "중등특수교육과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학부",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 80,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 55,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 8명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 8명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 8명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "비즈니스일본어학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물류통상학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "산업·광고심리학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축공학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 2명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 2명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 2명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건설환경안전공학부",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 65,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 52,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 6명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 6명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방방재학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "반도체공학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 80,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 56,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 8명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 8명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 8명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "정보통신공학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 34,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "정보보안학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 2명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 2명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 2명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI소프트웨어학부",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 42,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 6명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 6명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 6명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 78,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 18,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅱ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "대전·세종·충남·충북 소재 고교 졸업(예정)자이면서 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. 간호·한의예과 중학교 거주요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(혜화인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자(고교 입학~졸업 국내 고교 재학)로 학교생활기록부 보유자. 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              34
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부종합(혜화인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자(고교 입학~졸업 국내 고교 재학)로 학교생활기록부 보유자. 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              34
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상병리학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부종합(혜화인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자(고교 입학~졸업 국내 고교 재학)로 학교생활기록부 보유자. 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              34
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부종합(혜화인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자(고교 입학~졸업 국내 고교 재학)로 학교생활기록부 보유자. 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              34
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식품영양학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(고른기회전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 입학~원서접수 마감일(졸업자는 졸업일)까지 학력 인정자 중 국가보훈대상자·서해5도학생·만학도(만30세↑)·산업재해자자녀·백혈병소아암병력자·다문화가정자녀·직업군인자녀(15년↑)·경찰소방교정보호직공무원자녀(15년↑)·다자녀(3자녀↑)가정자녀·의사상자자녀·자립지원대상아동·북한이탈주민(제3국출생자녀포함)·대안학교출신자 등",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              22
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 5명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학부",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 58,
+        "tracks": [
+          {
+            "trackName": "학생부종합(혜화인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자(고교 입학~졸업 국내 고교 재학)로 학교생활기록부 보유자. 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              34
+            ]
+          },
+          {
+            "trackName": "실기위주(특기자전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자로 본교 인정 대회(소프트테니스·펜싱·검도·복싱)에서 일정수준 이상 입상실적이 있는 자 (정구남3·펜싱남4·검도남3·복싱남3)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 18,
+                  "출결": 2,
+                  "실기": 30,
+                  "입상실적": 50
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              36
+            ]
+          },
+          {
+            "trackName": "실기위주(실기위주전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (실기고사 결시·중도포기자 불합격)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 36,
+                  "출결": 4,
+                  "실기": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              38
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건의료경영학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 4명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "화장품학과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          },
+          {
+            "trackName": "학생부교과(특성화고교졸업자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고교 졸업(예정)자로 해당 모집단위 교육과정 기준학과 이수 또는 관련 전문교과 30단위 이상 이수자. 마이스터고·특목고 등 제외. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              27
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업(예정)자로 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "한의예과",
+        "campus": "대전캠퍼스(단일 캠퍼스)",
+        "trackHint": "자연",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 8,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 54,
+                  "출결": 6,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2) 중 3개 영역 등급 합이 5등급 이내 (단, 수학 영역 반드시 포함) / 한국사 5등급 이내 ※탐구(사/과) 2과목 평균(한국사 제외, 소수점 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과중점전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자 (학교폭력 조치사항 감점/부적격 적용). 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2) 중 3개 영역 등급 합이 5등급 이내 (단, 수학 영역 반드시 포함) / 한국사 5등급 이내 ※탐구(사/과) 2과목 평균(한국사 제외, 소수점 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅰ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 23,
+            "applicationQualification": "대전·세종·충남·충북 소재 고등학교 졸업(예정)자(고교 입학~등록일 재학). 간호·한의예과는 2022학년도 이후 중학교 입학자 중학교~고교 재학·거주 요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2) 중 3개 영역 등급 합이 6등급 이내 (단, 수학 영역 반드시 포함) / 한국사 5등급 이내 ※탐구(사/과) 2과목 평균(한국사 제외, 소수점 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재Ⅱ전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "대전·세종·충남·충북 소재 고교 졸업(예정)자이면서 ①기초생활수급(권)자 및 자녀 ②차상위계층 ③한부모가족 지원대상자. 간호·한의예과 중학교 거주요건 추가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2) 중 3개 영역 등급 합이 6등급 이내 (단, 수학 영역 반드시 포함) / 한국사 5등급 이내 ※탐구(사/과) 2과목 평균(한국사 제외, 소수점 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(혜화인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자(고교 입학~졸업 국내 고교 재학)로 학교생활기록부 보유자. 한의예과는 수능최저학력기준 충족 필요",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 600
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 60,
+                  "면접": 40
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2) 중 3개 영역 등급 합이 6등급 이내 (단, 수학 영역 반드시 포함) / 한국사 5등급 이내 ※탐구(사/과) 2과목 평균(한국사 제외, 소수점 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              34
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌(읍·면/도서벽지) 소재 고교 전 교육과정 이수 졸업(예정)자 [중·고6년 본인·부모 거주 또는 초·중·고12년 본인 거주]. 특목고 제외. 한의예과 수능최저 충족 필요. ※정원외 통합모집 (해당 모집단위 최대 3명 이내)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(2) 중 3개 영역 등급 합이 5등급 이내 (단, 수학 영역 반드시 포함) / 한국사 5등급 이내 ※탐구(사/과) 2과목 평균(한국사 제외, 소수점 절사)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              3,
+              25
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "정원외 전형(농어촌학생·특성화고교졸업자·기회균형)은 통합모집으로, 표의 'X이내'는 모집단위별 최대 캡이며 고정 배정 인원이 아님 → quotaInitial=null 처리하고 자격설명에 캡 명시. 전형별 통합 총원(농어촌63·특성화고17·기회균형14)만 colTotal로 검증.",
+      "totalQuotaHint는 각 학과의 '수시 정원내' 전형 인원 합으로 산정함. 모집인원 총괄표의 학과 '총 모집인원' 열은 보건·의약계열(간호85·물리치료40·임상병리40·응급구조40·스포츠65·한의72 등)의 경우 정시 정원내 인원이 포함되어 수시 정원내 합과 다를 수 있음(정시는 본 산출 제외).",
+      "수능최저학력기준은 한의예과에만 적용됨(교과면접·교과중점·농어촌: 3개합5/수학필수/한국사5, 지역인재Ⅰ·Ⅱ·혜화인재: 3개합6/수학필수/한국사5). 군사학과 수능최저는 2027학년도 폐지(군 가산복무 지원금 대상 선발 시에만 국·수·영 1개 5등급 별도 적용).",
+      "군사학과(남)·군사학과(여)는 모집요강 원문대로 별도 모집단위로 분리 기재(각 30명/10명).",
+      "공연예술영상콘텐츠학과는 교과면접전형(5명, 학생부교과)과 실기위주전형(15명)을 동시 운영. 혜화리버럴아츠칼리지·자유전공학부 등 통합/광역 모집단위 포함.",
+      "실기위주전형 반영방법은 모집단위별로 상이: 커뮤니케이션디자인(학생부20+실기80), 웹툰애니메이션·공연예술영상콘텐츠(실기100), 스포츠과학부(학생부40+실기60). 특기자전형은 학생부20+실기30+입상실적50(실기고사는 지원자가 모집인원 초과 시에만 실시).",
+      "반영비율 components는 실질반영비율이 아닌 명목(최대점수) 반영비율 기준. 교과면접 2단계는 교과54+출결6+면접40(전형총점 1000점 중 교과/출결 합 60%)."
+    ]
+  }
+}

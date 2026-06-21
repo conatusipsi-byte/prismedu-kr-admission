@@ -1,0 +1,3159 @@
+{
+  "meta": {
+    "universityName": "목원대학교",
+    "universityId": "mokwon",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "대전 도안캠퍼스 단일 (전 모집단위 동일 캠퍼스)",
+    "sourceDocYear": 2027,
+    "departments": 49,
+    "totalTracks": 102,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 수시 전형 인원 합)",
+      "passed": 49,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "교과",
+        "computed": 1207,
+        "stated": 1207,
+        "match": true
+      },
+      {
+        "track": "교과면접",
+        "computed": 17,
+        "stated": 17,
+        "match": true
+      },
+      {
+        "track": "지역인재",
+        "computed": 138,
+        "stated": 138,
+        "match": true
+      },
+      {
+        "track": "사회적배려자",
+        "computed": 3,
+        "stated": 3,
+        "match": true
+      },
+      {
+        "track": "학생부종합",
+        "computed": 21,
+        "stated": 21,
+        "match": true
+      },
+      {
+        "track": "실기교과",
+        "computed": 64,
+        "stated": 64,
+        "match": true
+      },
+      {
+        "track": "실기",
+        "computed": 420,
+        "stated": 420,
+        "match": true
+      },
+      {
+        "track": "특기자",
+        "computed": 9,
+        "stated": 9,
+        "match": true
+      },
+      {
+        "track": "농어촌",
+        "computed": 44,
+        "stated": 44,
+        "match": true
+      },
+      {
+        "track": "특성화고",
+        "computed": 20,
+        "stated": 20,
+        "match": true
+      },
+      {
+        "track": "기초생활",
+        "computed": 35,
+        "stated": 35,
+        "match": true
+      },
+      {
+        "track": "장애인",
+        "computed": 2,
+        "stated": 2,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "목원대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "신학과(교직)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영어학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "역사학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자. 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지상담학부(사회복지전공, 상담심리복지전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 49,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자. 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "연극영화영상학부(연극전공(교직), 영화영상전공(교직))",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "일본어·중국어문화학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학부(경영전공, 글로벌비즈니스전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 64,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 52,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자. 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공호텔관광경영학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 41,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 37,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "부동산금융보험학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "금융경제학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "마케팅빅데이터학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "광고홍보커뮤니케이션학부(광고홍보전공, 언론영상콘텐츠전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자. 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰행정학부(경찰행정전공, 일반행정전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 53,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 42,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[사회적배려자]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려자",
+            "quotaInitial": 1,
+            "applicationQualification": "국가보훈대상자·만학도·장애인등대상자·다자녀·다문화·경찰등공무원자녀 등 사회적배려 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰법학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 47,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식품제약학부(식품전공, 제약전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 93,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "농·어촌학생전형[학생부교과](정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌(정원외)",
+            "quotaInitial": 23,
+            "applicationQualification": "농·어촌 지역 중·고 6년(본인·부모) 또는 초·중·고 12년(본인) 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "기초생활수급자, 차상위계층, 한부모가족 지원대상자전형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활·차상위·한부모(정원외)",
+            "quotaInitial": 35,
+            "applicationQualification": "기초생활수급자·차상위계층·한부모가족 지원대상자(모집요강 36p 기준)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "화장품학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "생물산업학부(반려동물전공, 생명과학전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자전형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고(정원외)",
+            "quotaInitial": 20,
+            "applicationQualification": "특성화고교 졸업(예정)자(모집요강 35p 기준)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방방재학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 80,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 60,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 18,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[사회적배려자]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려자",
+            "quotaInitial": 2,
+            "applicationQualification": "국가보훈대상자·만학도·장애인등대상자·다자녀·다문화·경찰등공무원자녀 등 사회적배려 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠건강관리학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기교과]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 10,
+                  "실기": 90
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[특기자]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자(체육)",
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고등학교 졸업(예정)자. 씨름(4)·세팍타크로(3)·양궁(2) 인정대회 입상 및 선수등록자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 27,
+                  "출결": 3,
+                  "서류(입상실적)": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "외식조리·제과제빵학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자. 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": null
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건의료행정학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학부(건축학전공(5년), 건축공학전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 70,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 60,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "도시공학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전기전자공학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터융합학부(컴퓨터공학전공, AI실감콘텐츠전공, 사이버보안전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 72,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 65,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "장애인 등 대상자전형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "장애인등대상자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "장애인복지법 등록 장애인 또는 국가유공자법 상이등급자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "게임소프트웨어공학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI응용학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국어교육과(교직)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영어교육과(교직)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "수학교육과(교직)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "음악교육과(교직)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기교과]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 40,
+                  "실기": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미술교육과(교직)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기교과]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 40,
+                  "실기": 60
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과(교직)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[교과면접]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자. 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공연콘텐츠학부(성악·뮤지컬전공, 공연콘텐츠기획전공, 국악전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "실용음악학부(보컬전공, 기악전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "관현악학부(관악전공, 현악전공, 작곡전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "피아노학부(피아노연주전공, 피아노교육전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미술학부(한국화전공, 서양화전공, 아트미디어전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 66,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "농·어촌학생전형[실기/실적위주](정원외)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌(정원외)",
+            "quotaInitial": 21,
+            "applicationQualification": "농·어촌 지역 중·고 6년(본인·부모) 또는 초·중·고 12년(본인) 이수자. 미술·디자인대학 실기 100%",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "입체조형학부(조소전공, 입체캐릭터전공)",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "시각디자인학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "산업디자인학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "섬유·패션디자인학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "도자디자인학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "웹툰학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 82,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 60,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "애니메이션학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "게임콘텐츠학과",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자율전공학부",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 53,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 43,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "학생부교과[지역인재]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 소재 고등학교 입학~졸업 이수자(검정고시·외국고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "창의예술자율전공학부",
+        "campus": "대전 도안캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과[교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자(신학과는 세례교인). 이수계열 무관 교차지원 가능",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          },
+          {
+            "trackName": "실기/실적위주[실기]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령상 동등 이상 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수시모집 모든 전형 수능최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "모집인원 총괄표의 '모집인원' 컬럼은 학과 입학정원(정시 포함)이며, 본 추출의 totalQuotaHint는 수시 전형 인원 합으로 산정함. 영어교육과(정원31/수시29), 음악교육과(27/24), 미술교육과(29/26), 연극영화영상학부(45/42), 실용음악학부(30/28), 창의예술자율전공학부(50/30) 6개 학과는 차액이 정시 등 타 모집으로 배정됨(수시요강 외).",
+      "정원외 전형 중 '○이내'로 표기된 학과별 상한(예: 농어촌 2이내~8이내)은 고정 인원이 아닌 캡이므로 quotaInitial=null 처리 없이 트랙 미생성. 절대인원으로 명시된 정원외만 트랙화: 농어촌 식품제약학부23+미술디자인대학(실기)21=44, 특성화고 생물산업학부20, 기초생활 식품제약학부35, 장애인 컴퓨터융합학부2.",
+      "농·어촌학생(정원외) 실기 21명은 미술·디자인대학 단위 풀(미술학부·입체조형·시각·산업·섬유패션·도자 공동)로, 총괄표상 학과 분리 인원이 명시되지 않아 학부 대표격인 미술학부에 부착함(대학 풀 전형).",
+      "글로벌융합학부(글로벌자율전공학부, 정원외 외국인 전담학부)는 2027 신설되었으나 외국인전형 별도 모집으로 본 수시 총괄표에 인원 미기재 → 학과 미포함.",
+      "수시모집 전 전형 수능최저학력기준 미적용(요강 명시). 전 모집단위 수능최저 없음."
+    ]
+  }
+}

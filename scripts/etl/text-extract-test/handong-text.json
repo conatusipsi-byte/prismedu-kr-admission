@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "universityName": "한동대학교",
+    "universityId": "handong",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "포항 단일 캠퍼스. 전 학부 자율전공(무전공) 통합선발 — 모집단위는 '전 학부 (자율전공)' 1개이며 11개 전형(정원내 7 + 정원외 4 추가 = 총 13개 전형명)으로 모집.",
+    "sourceDocYear": 2027,
+    "departments": 1,
+    "totalTracks": 13,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 전형 인원 합)",
+      "passed": 1,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "전체 합계행(13개 전형 모집인원 합)",
+        "computed": 716,
+        "stated": 716,
+        "match": true
+      },
+      {
+        "track": "학생부교과 소계(일반+한동인재+지역인재+농어촌Ⅰ)",
+        "computed": 236,
+        "stated": 236,
+        "match": true
+      },
+      {
+        "track": "학생부종합 소계(G-IMPACT+SW+대안학교+글로벌+선교사목회자자녀+사회통합+기초차상위+농어촌Ⅱ+장애인)",
+        "computed": 480,
+        "stated": 483,
+        "match": false
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "한동대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "전 학부 (자율전공)",
+        "campus": "포항",
+        "trackHint": null,
+        "totalQuotaHint": 716,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 60,
+            "applicationQualification": "국내·외 정규고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등의 학력이 있다고 인정되는 사람",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": 1,
+                "components": { "교과정량": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능최저(① 또는 ②) ① 국어, 수학, 영어, 탐구(사회/과학 중 1개 과목) 중 2개 영역 합 7등급 이내 ② 국어, 수학, 영어, 탐구(사회/과학 중 1개 과목) 중 1개 영역 1등급",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 35]
+          },
+          {
+            "trackName": "학생부교과 한동인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 110,
+            "applicationQualification": "2021년 12월 이후 국내 정규고등학교 졸업(예정)자로서 3개 학기 이상의 교과 성적이 있는 사람 (특성화고, 전문계 과정(일반고·종합고), 마이스터고, 예술고, 체육고, 방송통신고, 각종학교(대안학교 등), 고등기술학교, 산업체부설고, 특수학교, 학력인정 평생교육시설, 학교생활기록부 미제공 학교 출신자는 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": 1,
+                "components": { "교과정량": 70, "교과정성": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 36]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 50,
+            "applicationQualification": "대구·경북권 소재 정규고등학교 졸업(예정)자로서 대구·경북권 소재 정규 고등학교에서 3년 전 과정을 이수한 사람 (입학일부터 졸업일까지 3년 모든 과정 이수, 「초·중등교육법」 제2조 고등학교 출신자만 지원가능, 각종학교·특수학교·고등기술학교 지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": 1,
+                "components": { "교과정량": 70, "교과정성": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 37]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생Ⅰ(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생/정원외",
+            "quotaInitial": 16,
+            "applicationQualification": "국내 정규 고등학교 졸업(예정)자로서 농어촌 읍·면 또는 도서·벽지 지역 거주·재학 요건 충족자 (중·고 6년 거주(지원자·부모) 또는 초·중·고 12년 거주(지원자)). 특목고(과학고·외고·국제고·체육고·예술고·마이스터고·영재고) 제외.",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": 1,
+                "components": { "교과정량": 100 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 38, 39]
+          },
+          {
+            "trackName": "학생부종합 G-IMPACT인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 213,
+            "applicationQualification": "국내·외 정규고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등의 학력이 있다고 인정되는 사람",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 40, 41]
+          },
+          {
+            "trackName": "학생부종합 SW인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "SW인재",
+            "quotaInitial": 7,
+            "applicationQualification": "국내·외 정규고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등의 학력이 있다고 인정되는 사람",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 500
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 50, "면접": 50 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 42, 43]
+          },
+          {
+            "trackName": "학생부종합 대안학교",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "대안학교",
+            "quotaInitial": 80,
+            "applicationQualification": "국내 대안학교의 졸업(예정)자로서 졸업(예정)일 기준 대안학교의 2개 학기 이상 이수자 (요강에 명시된 인정 대안학교 대상)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 44, 45]
+          },
+          {
+            "trackName": "학생부종합 글로벌인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "글로벌인재",
+            "quotaInitial": 65,
+            "applicationQualification": "국내·외 정규고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등의 학력이 있다고 인정되는 사람 (해외 재학·외국교육기관/외국인학교 관련 세부 지원자격 충족자, 요강 참조)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 46, 47, 48]
+          },
+          {
+            "trackName": "학생부종합 선교사·목회자 자녀",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "선교사·목회자 자녀",
+            "quotaInitial": 50,
+            "applicationQualification": "국내·외 정규 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등의 학력이 있다고 인정되는 자로서 선교사·목회자 자녀 (한국기성교단으로부터 이단판정을 받은 기관 소속자의 자녀는 지원자격 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 49, 50]
+          },
+          {
+            "trackName": "학생부종합 사회통합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회통합/고른기회",
+            "quotaInitial": 40,
+            "applicationQualification": "사회적 배려 대상자를 위한 고른기회전형 (요강에 명시된 사회통합 지원자격 충족자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 51, 52, 53]
+          },
+          {
+            "trackName": "학생부종합 기초생활 및 차상위(정원외)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위/정원외",
+            "quotaInitial": 17,
+            "applicationQualification": "기초생활수급자 및 차상위계층 대상자를 위한 고른기회(정원외) 전형 (요강에 명시된 지원자격 충족자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 54, 55]
+          },
+          {
+            "trackName": "학생부종합 농어촌학생Ⅱ:울릉도(정원외)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생·울릉도/정원외",
+            "quotaInitial": 5,
+            "applicationQualification": "울릉도 소재 농어촌 지역 거주·재학 요건을 충족하는 국내 정규 고등학교 졸업(예정)자 (정원외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 56, 57]
+          },
+          {
+            "trackName": "학생부종합 장애인 등 대상자(정원외)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "장애인 등 대상자/정원외",
+            "quotaInitial": 3,
+            "applicationQualification": "국내·외 정규고등학교 졸업(예정)자 또는 이와 동등 학력 인정자로서 원서접수 마감일 기준 1)「장애인복지법」 제32조에 의한 등록 장애인 또는 2)「국가유공자 등 예우 및 지원에 관한 법률」 제4조 등에 의한 상이등급자(국가보훈처 등록) (정원외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 2.5,
+                "components": { "서류": 100 },
+                "stageMaxScore": 700
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": 1,
+                "components": { "서류": 70, "면접": 30 },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [22, 58, 59]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "한동대는 학부 없이 '전 학부 (자율전공)' 무전공 통합선발(2학년 진학 시 전공 선택)이므로 모집단위는 1개이며, 13개 전형명으로 모집함. DB 학과 매칭 시 단일 모집단위 처리 주의.",
+      "모집인원 총괄표(PDF p22)에서 학생부종합 소계 헤더는 '(483명)'으로 표기되어 있으나 9개 종합 전형 모집인원 행 합은 480명임(213+7+80+65+50+40+17+5+3). 전체 합계행 716명 = 교과 236 + 종합 480 으로 행 데이터 기준 일치하므로 행 데이터를 채택. '(483명)' 라벨은 원문 오기 가능성. 전체 행합(716)·열합(716) 모두 일치하여 checksumPassed=true 유지.",
+      "trackName 은 요강 세부 전형 목차 표기(예: '학생부교과 일반', '학생부종합 G-IMPACT인재')를 그대로 사용함.",
+      "stageMaxScore 는 전형요소표의 '총점' 컬럼 기준(1단계 700/500점, 2단계 1,000점; 일괄합산 1,000점). 1단계 multiplier(선발비율)는 250% → 2.5 로 환산.",
+      "지역인재 전형의 지역 범위는 대구·경북권(요강 본문 기준).",
+      "정시 전형은 본 수시 요강에 포함되지 않아 제외함."
+    ]
+  }
+}

@@ -60,6 +60,22 @@ FILES = {
     "동아대":     BASE / "donga-text.json",
     "충남대":     BASE / "cnu-text.json",
     "국립창원대": BASE / "changwon-text.json",
+    # ── Phase 2 batch 6 (2026-06-21) — 지방 국립·사립 15교 (자동입수 한계까지) ──
+    "군산대":     BASE / "kunsan-text.json",
+    "목포해양대": BASE / "mmu-text.json",
+    "금오공대":   BASE / "kumoh-text.json",
+    "조선대":     BASE / "chosun-text.json",
+    "원광대":     BASE / "wonkwang-text.json",
+    "동의대":     BASE / "dongeui-text.json",
+    "대구가톨릭": BASE / "dcu-text.json",
+    "동서대":     BASE / "dongseo-text.json",
+    "청주대":     BASE / "cheongju-text.json",
+    "우석대":     BASE / "woosuk-text.json",
+    "대전대":     BASE / "daejeonu-text.json",
+    "백석대":     BASE / "baekseok-text.json",
+    "선문대":     BASE / "sunmoon-text.json",
+    "목원대":     BASE / "mokwon-text.json",
+    "한동대":     BASE / "handong-text.json",
 }
 
 TRACKTYPE_ENUM = {"학생부위주(교과)","학생부위주(종합)","논술위주","실기/실적위주","수능위주","기타"}

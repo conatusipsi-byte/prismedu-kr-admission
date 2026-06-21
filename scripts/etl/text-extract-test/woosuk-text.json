@@ -1,0 +1,3541 @@
+{
+  "meta": {
+    "universityName": "우석대학교",
+    "universityId": "woosuk",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "전주캠퍼스 + 진천캠퍼스 2개 캠퍼스 (campus 필드로 구분; 의약계열 한의예/약/한약/간호는 전주, 글로컬라이프·생활체육 등 일부 학과는 진천)",
+    "sourceDocYear": 2027,
+    "departments": 40,
+    "totalTracks": 115,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 전형 인원 합)",
+      "passed": 40,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "교과면접(A)",
+        "computed": 218,
+        "stated": 218,
+        "match": true
+      },
+      {
+        "track": "교과(B)",
+        "computed": 707,
+        "stated": 707,
+        "match": true
+      },
+      {
+        "track": "지역인재1(C)",
+        "computed": 13,
+        "stated": 13,
+        "match": true
+      },
+      {
+        "track": "지역인재2(D)",
+        "computed": 95,
+        "stated": 95,
+        "match": true
+      },
+      {
+        "track": "지역기회균형(E)",
+        "computed": 6,
+        "stated": 6,
+        "match": true
+      },
+      {
+        "track": "성인학습자등(F)",
+        "computed": 116,
+        "stated": 116,
+        "match": true
+      },
+      {
+        "track": "기회균형외(G)",
+        "computed": 26,
+        "stated": 26,
+        "match": true
+      },
+      {
+        "track": "농어촌외(H)",
+        "computed": 35,
+        "stated": 35,
+        "match": true
+      },
+      {
+        "track": "장애인외(I)",
+        "computed": 20,
+        "stated": 20,
+        "match": true
+      },
+      {
+        "track": "성인학습자외(J)",
+        "computed": 123,
+        "stated": 123,
+        "match": true
+      },
+      {
+        "track": "실기일반(K)",
+        "computed": 160,
+        "stated": 160,
+        "match": true
+      },
+      {
+        "track": "실적우수(L)",
+        "computed": 105,
+        "stated": 105,
+        "match": true
+      },
+      {
+        "track": "특기자(M)",
+        "computed": 24,
+        "stated": 24,
+        "match": true
+      },
+      {
+        "track": "기회균형실기외(N)",
+        "computed": 9,
+        "stated": 9,
+        "match": true
+      },
+      {
+        "track": "농어촌실기외(O)",
+        "computed": 9,
+        "stated": 9,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "우석대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "한의예과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 국, 수, 영, 사/과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재1)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "전북특별자치도 소재 고등학교에서 전 교육과정(입학~졸업)을 이수한 졸업(예정)자(검정고시 등 동등학력 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 국, 수, 영, 사/과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재2)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "간호·약학·한의예과: 호남권(전북·광주·전남) 소재 고교 전 교육과정 이수 졸업(예정)자 / 한약학과: 수도권(서울·인천·경기) 제외 비수도권 소재 고교 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 국, 수, 영, 사/과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재 기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "해당지역 고교 전 교육과정 이수 졸업(예정)자로서 기초생활수급자·차상위계층·한부모가정 대상자 중 하나에 해당(간호·약·한의예: 전북·전남·광주 / 한약: 비수도권)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 국, 수, 영, 사/과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 국, 수, 영, 사/과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 1,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한의예과: 국, 수, 영, 사/과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "약학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학생부교과(지역인재1)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "전북특별자치도 소재 고등학교에서 전 교육과정(입학~졸업)을 이수한 졸업(예정)자(검정고시 등 동등학력 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "약학과: 국, 수(미적분 또는 기하 중 택1), 영, 과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재2)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 13,
+            "applicationQualification": "간호·약학·한의예과: 호남권(전북·광주·전남) 소재 고교 전 교육과정 이수 졸업(예정)자 / 한약학과: 수도권(서울·인천·경기) 제외 비수도권 소재 고교 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "약학과: 국, 수(미적분 또는 기하 중 택1), 영, 과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재 기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "해당지역 고교 전 교육과정 이수 졸업(예정)자로서 기초생활수급자·차상위계층·한부모가정 대상자 중 하나에 해당(간호·약·한의예: 전북·전남·광주 / 한약: 비수도권)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "약학과: 국, 수(미적분 또는 기하 중 택1), 영, 과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "약학과: 국, 수(미적분 또는 기하 중 택1), 영, 과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "약학과: 국, 수(미적분 또는 기하 중 택1), 영, 과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(장애인 등 대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "장애인등대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자로서 장애인복지법 제32조에 따른 등록 장애인 또는 국가보훈관계법령에 의한 상이·장애 등급 판정·등록자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "약학과: 국, 수(미적분 또는 기하 중 택1), 영, 과(2과목 평균) 중 3개 영역(수학 포함) 등급 합 7 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "한약학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 44,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "한약학과: 국, 수, 영, 과(1과목) 중 3개 영역 등급 합 9 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한약학과: 국, 수, 영, 과(1과목) 중 3개 영역 등급 합 9 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재2)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 15,
+            "applicationQualification": "간호·약학·한의예과: 호남권(전북·광주·전남) 소재 고교 전 교육과정 이수 졸업(예정)자 / 한약학과: 수도권(서울·인천·경기) 제외 비수도권 소재 고교 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한약학과: 국, 수, 영, 과(1과목) 중 3개 영역 등급 합 9 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재 기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,기회균형",
+            "quotaInitial": 1,
+            "applicationQualification": "해당지역 고교 전 교육과정 이수 졸업(예정)자로서 기초생활수급자·차상위계층·한부모가정 대상자 중 하나에 해당(간호·약·한의예: 전북·전남·광주 / 한약: 비수도권)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한약학과: 국, 수, 영, 과(1과목) 중 3개 영역 등급 합 9 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한약학과: 국, 수, 영, 과(1과목) 중 3개 영역 등급 합 9 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "한약학과: 국, 수, 영, 과(1과목) 중 3개 영역 등급 합 9 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 156,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음 (간호학과 교과면접전형은 수능최저학력기준 미적용)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 55,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "간호학과: 국, 수, 영, 사/과(1과목) 중 2개 영역 등급 합 12 이내 (교과면접전형은 수능최저 미적용)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재2)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 57,
+            "applicationQualification": "간호·약학·한의예과: 호남권(전북·광주·전남) 소재 고교 전 교육과정 이수 졸업(예정)자 / 한약학과: 수도권(서울·인천·경기) 제외 비수도권 소재 고교 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "간호학과: 국, 수, 영, 사/과(1과목) 중 2개 영역 등급 합 12 이내 (교과면접전형은 수능최저 미적용)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재 기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "해당지역 고교 전 교육과정 이수 졸업(예정)자로서 기초생활수급자·차상위계층·한부모가정 대상자 중 하나에 해당(간호·약·한의예: 전북·전남·광주 / 한약: 비수도권)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "간호학과: 국, 수, 영, 사/과(1과목) 중 2개 영역 등급 합 12 이내 (교과면접전형은 수능최저 미적용)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "간호학과: 국, 수, 영, 사/과(1과목) 중 2개 영역 등급 합 12 이내 (교과면접전형은 수능최저 미적용)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 6,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "간호학과: 국, 수, 영, 사/과(1과목) 중 2개 영역 등급 합 12 이내 (교과면접전형은 수능최저 미적용)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 4,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수교육과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(장애인 등 대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "장애인등대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자로서 장애인복지법 제32조에 따른 등록 장애인 또는 국가보훈관계법령에 의한 상이·장애 등급 판정·등록자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아특수교육과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(장애인 등 대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "장애인등대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자로서 장애인복지법 제32조에 따른 등록 장애인 또는 국가보훈관계법령에 의한 상이·장애 등급 판정·등록자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "국어교육과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "체육 자율전공학부(전주)",
+        "campus": "전주캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "실기/실적(실기일반)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "체육학과",
+        "campus": "전주캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "실기/실적(실기일반)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(실적우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "실적우수자",
+            "quotaInitial": 23,
+            "applicationQualification": "최근 3년간 정부·대한체육회 등 공인 경기단체 주최·주관 국제/전국/시·도 대회에서 본교 배점기준 이내 순위 실적이 있는 자(종목·포지션별)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "경기실적": 70,
+                  "교과": 20,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(특기자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 8,
+            "applicationQualification": "최근 3년간 정부·대한체육회 등 공인 경기단체 주최·주관 국제 및 전국 규모 대회에서 배점 이내 순위 실적이 있는 자(종목·포지션별)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "경기실적": 90,
+                  "교과": 5,
+                  "출결": 5
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(기회균형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "국민기초생활보장법(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자(실기고사 실시, 실기일반과 동일 평가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(농어촌학생)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(6년) 또는 유형2(12년) 전 교육과정 이수 및 거주 졸업(예정)자(실기고사 실시, 실기일반과 동일 평가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "태권도학과",
+        "campus": "전주캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 76,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(실기일반)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 52,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(특기자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 8,
+            "applicationQualification": "최근 3년간 정부·대한체육회 등 공인 경기단체 주최·주관 국제 및 전국 규모 대회에서 배점 이내 순위 실적이 있는 자(종목·포지션별)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "경기실적": 90,
+                  "교과": 5,
+                  "출결": 5
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(기회균형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "국민기초생활보장법(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자(실기고사 실시, 실기일반과 동일 평가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(농어촌학생)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(6년) 또는 유형2(12년) 전 교육과정 이수 및 거주 졸업(예정)자(실기고사 실시, 실기일반과 동일 평가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠지도학과",
+        "campus": "전주캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 64,
+        "tracks": [
+          {
+            "trackName": "실기/실적(실기일반)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(실적우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "실적우수자",
+            "quotaInitial": 25,
+            "applicationQualification": "최근 3년간 정부·대한체육회 등 공인 경기단체 주최·주관 국제/전국/시·도 대회에서 본교 배점기준 이내 순위 실적이 있는 자(종목·포지션별)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "경기실적": 70,
+                  "교과": 20,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(특기자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 8,
+            "applicationQualification": "최근 3년간 정부·대한체육회 등 공인 경기단체 주최·주관 국제 및 전국 규모 대회에서 배점 이내 순위 실적이 있는 자(종목·포지션별)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "경기실적": 90,
+                  "교과": 5,
+                  "출결": 5
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(기회균형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "국민기초생활보장법(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자(실기고사 실시, 실기일반과 동일 평가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(농어촌학생)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(6년) 또는 유형2(12년) 전 교육과정 이수 및 거주 졸업(예정)자(실기고사 실시, 실기일반과 동일 평가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "휴먼테크 자율전공학부(전주)",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(장애인 등 대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "장애인등대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "고교 졸업(예정)자로서 장애인복지법 제32조에 따른 등록 장애인 또는 국가보훈관계법령에 의한 상이·장애 등급 판정·등록자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰행정학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방방재학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 44,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "군사학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자로서 국민기초생활보장법 제2조(수급권자·수급자·차상위계층) 또는 한부모가족지원법 지원 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "아동사회복지학부",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "심리학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "식품영양학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "조리제과제빵학부",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "조경학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "수소테크 자율전공학부(경영학부·수소에너지공학과·AI모빌리티공학부)",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 65,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 65,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "정보보안학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI융합학부",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트관광학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(성인학습자 등)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 10,
+            "applicationQualification": "유형1(만 30세 이상, 1997.3.1. 이전 출생) 또는 유형2(특성화고 등 졸업 후 산업체 3년 이상 재직자) 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(성인학습자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 20,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등 학력자로서 만 30세 이상인 자(2027.3.1. 기준, 1997.3.1. 이전 출생)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "심리운동·상담학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(성인학습자 등)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 10,
+            "applicationQualification": "유형1(만 30세 이상, 1997.3.1. 이전 출생) 또는 유형2(특성화고 등 졸업 후 산업체 3년 이상 재직자) 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(성인학습자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 20,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등 학력자로서 만 30세 이상인 자(2027.3.1. 기준, 1997.3.1. 이전 출생)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "수소모빌리티학과",
+        "campus": "전주캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "학생부교과(성인학습자 등)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 15,
+            "applicationQualification": "유형1(만 30세 이상, 1997.3.1. 이전 출생) 또는 유형2(특성화고 등 졸업 후 산업체 3년 이상 재직자) 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(성인학습자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 13,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등 학력자로서 만 30세 이상인 자(2027.3.1. 기준, 1997.3.1. 이전 출생)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "휴먼테크 자율전공학부(진천)",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 1,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "군사안보학과",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "문예창작학과",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생",
+            "quotaInitial": 1,
+            "applicationQualification": "농어촌 소재 학교에서 유형1(중·고 6년) 또는 유형2(초·중·고 12년) 전 교육과정 이수 및 농어촌 거주 졸업(예정)자(특목고·자사고·검정고시·외국고교 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학부",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰범죄심리학과",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌디자인문화경영학부",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": null
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "바이오융합학과",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "체육 자율전공학부(진천)",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "생활체육학부",
+        "campus": "진천캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 65,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(장애인 등 대상자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "장애인등대상자",
+            "quotaInitial": 10,
+            "applicationQualification": "고교 졸업(예정)자로서 장애인복지법 제32조에 따른 등록 장애인 또는 국가보훈관계법령에 의한 상이·장애 등급 판정·등록자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(실기일반)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(실적우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "실적우수자",
+            "quotaInitial": 35,
+            "applicationQualification": "최근 3년간 정부·대한체육회 등 공인 경기단체 주최·주관 국제/전국/시·도 대회에서 본교 배점기준 이내 순위 실적이 있는 자(종목·포지션별)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "경기실적": 70,
+                  "교과": 20,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠문화예술학부",
+        "campus": "진천캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(실기일반)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 고등학교 졸업 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 60,
+                  "면접": 30,
+                  "교과": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "실기/실적(실적우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "실적우수자",
+            "quotaInitial": 22,
+            "applicationQualification": "최근 3년간 정부·대한체육회 등 공인 경기단체 주최·주관 국제/전국/시·도 대회에서 본교 배점기준 이내 순위 실적이 있는 자(종목·포지션별)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "경기실적": 70,
+                  "교과": 20,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "해당 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로컬라이프 자율전공학부(소방산업안전학과·창업컨설팅학과·AI융합심리치유학과)",
+        "campus": "진천캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 151,
+        "tracks": [
+          {
+            "trackName": "학생부교과(성인학습자 등)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 81,
+            "applicationQualification": "유형1(만 30세 이상, 1997.3.1. 이전 출생) 또는 유형2(특성화고 등 졸업 후 산업체 3년 이상 재직자) 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          },
+          {
+            "trackName": "학생부교과(성인학습자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 70,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등 학력자로서 만 30세 이상인 자(2027.3.1. 기준, 1997.3.1. 이전 출생)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              39
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "모집인원 총괄표(PDF p.38 / 문서 p.39)는 -bbox-layout 좌표로 15개 전형 컬럼을 정렬해 추출함. 15개 컬럼별 열합이 원문 합계행(218/707/13/95/6/116/26/35/20/123/160/105/24/9/9)과 정확히 일치하여 이중 체크섬 통과.",
+      "수소테크 자율전공학부는 경영학부·수소에너지공학과·AI모빌리티공학부 통합 모집(교과전형 65명), 글로컬라이프 자율전공학부는 소방산업안전학과·창업컨설팅학과·AI융합심리치유학과 통합 모집(성인학습자 정원내 81+정원외 70=151명). 입학 후 1학년 이수 후 희망학과로 전원 배정.",
+      "수능최저학력기준은 의약계열 4개 학과만 적용: 간호(2합12, 교과면접전형 제외)·약학(3합7, 수학포함)·한약학(3합9)·한의예(3합7, 수학포함). 그 외 전 학과·전 전형 수능최저 없음.",
+      "체육/태권도/스포츠지도/생활체육/스포츠문화예술 학과는 실기/실적위주(실기일반 실기60+면접30+교과10, 실적우수자 경기실적70+교과20+출결10, 특기자 경기실적90+교과5+출결5). 실기 기회균형·농어촌(정원외)은 실기일반과 동일 평가.",
+      "trackHint: 인문/자연 구분이 요강 총괄표에 없어 일반 학과는 null, 실기 기반 체육계열만 예체능으로 표기.",
+      "성인학습자 등(정원내, col F)/성인학습자(정원외, col J)는 미래융합대학·글로컬라이프대학[성인학습자] 학과(스마트관광·심리운동상담·수소모빌리티·글로컬라이프자율전공)에만 부여됨."
+    ]
+  }
+}

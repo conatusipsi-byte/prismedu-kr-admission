@@ -1,0 +1,1655 @@
+{
+  "meta": {
+    "universityName": "국립목포해양대학교",
+    "universityId": "mmu",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "단일 캠퍼스(전남 목포). 해사대학(승선학과: 선원건강검진·시력/청력/색각 신체기준 적용)·해양공과대학·첨단해양모빌리티학과·해양산업융합학과",
+    "sourceDocYear": 2027,
+    "departments": 14,
+    "totalTracks": 93,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 전형 인원 합)",
+      "passed": 14,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {"track": "학생부 성적 우수자[학생부교과]", "computed": 332, "stated": 332, "match": true},
+      {"track": "누구나[학생부교과]", "computed": 91, "stated": 91, "match": true},
+      {"track": "지역인재[학생부교과]", "computed": 82, "stated": 82, "match": true},
+      {"track": "선원자녀 및 선원경력자[학생부교과]", "computed": 28, "stated": 28, "match": true},
+      {"track": "사회적배려대상자[학생부교과]", "computed": 38, "stated": 38, "match": true},
+      {"track": "농어촌학생[학생부교과](정원외)", "computed": 33, "stated": 33, "match": true},
+      {"track": "특성화고교출신자[학생부교과](정원외)", "computed": 25, "stated": 25, "match": true},
+      {"track": "기초생활수급권자 및 차상위계층자[학생부교과](정원외)", "computed": 34, "stated": 34, "match": true},
+      {"track": "특성화고 등을 졸업한 재직자[학생부교과](정원내)", "computed": 1, "stated": 1, "match": true},
+      {"track": "특성화고 등을 졸업한 재직자[학생부교과](정원외)", "computed": 36, "stated": 36, "match": true},
+      {"track": "체육우수자[실기/실적]", "computed": 5, "stated": 5, "match": true},
+      {"track": "합계", "computed": 705, "stated": 705, "match": true}
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "국립목포해양대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "항해학부",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 85,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 52,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자(외국고교 2학기(졸업자 3학기) 이상 이수자 지원 불가). 해사대학 승선학과로 선원건강검진(시력 교정 0.5 이상 등 신체기준) 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 9이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자(검정고시·국외고 포함). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 9이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수(입학부터 졸업까지)한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 10이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "선원자녀 및 선원경력자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "선원자녀/선원경력",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 [선원자녀] 순수 승선 일수 3년(1095일) 이상 승선경력자(선원·해군·해양경찰)의 자녀, 또는 [선원경력자] 고교 졸업 후 3년 이상 승선경력자(승선근무예비역 현역 복무 완료자). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 국가보훈 교육지원대상자·아동복지시설 입소 3년 이상·소년소녀가정·가정위탁보호아동·다문화가족 자녀·다자녀(3자녀 이상) 자녀·20년 이상 재직 직업군인 자녀·20년 이상 재직 경찰(해양경찰 포함)/소방공무원 자녀 중 어느 하나에 해당하는 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자로서 유형Ⅰ(읍·면 또는 도서·벽지 중·고교 전 과정 6년 이수 및 본인·부모 거주) 또는 유형Ⅱ(초·중·고교 전 과정 12년 이수 및 본인 거주). 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화 고등학교(체험위주 자연현장실습 특성화고·마이스터고 제외)에서 전 교육과정을 이수한 졸업(예정)자로서 모집단위별 기준학과를 이수한 자(기준학과 미해당 시 전문교과 30단위 이상 이수 시 지원 가능). 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 국민기초생활보장법 수급(권)자·차상위계층 또는 한부모가족지원법 지원대상자. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "해상운송학부",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 84,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 42,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 10이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자(검정고시·국외고 포함). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 10이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수(입학부터 졸업까지)한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 11이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "선원자녀 및 선원경력자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "선원자녀/선원경력",
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 선원자녀(순수 승선 3년 이상 승선경력자의 자녀) 또는 선원경력자(고교 졸업 후 3년 이상 승선경력자). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 국가보훈 교육지원대상자·아동복지시설·소년소녀가정·가정위탁보호아동·다문화가족 자녀·다자녀 자녀·장기복무 군인 자녀·경찰/소방공무원 자녀 중 해당자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ(6년) 또는 유형Ⅱ(12년) 자격. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화 고등학교에서 전 교육과정을 이수한 졸업(예정)자로서 모집단위별 기준학과 이수자(또는 전문교과 30단위 이상 이수자). 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "항해정보시스템학부",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 10이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 10이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 11이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "선원자녀 및 선원경력자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "선원자녀/선원경력",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 선원자녀 또는 선원경력자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자(국가보훈·아동복지시설·다문화·다자녀·장기복무군인 자녀 등) 해당자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과 이수자(또는 전문교과 30단위 이상). 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "기관시스템공학부",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 84,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 43,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "선원자녀 및 선원경력자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "선원자녀/선원경력",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 선원자녀 또는 선원경력자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자 해당자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과 이수자(또는 전문교과 30단위 이상). 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "해양경찰학부",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 83,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 42,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "선원자녀 및 선원경력자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "선원자녀/선원경력",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 선원자녀 또는 선원경력자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자 해당자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과 이수자(또는 전문교과 30단위 이상). 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "해양메카트로닉스학부",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "선원자녀 및 선원경력자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "선원자녀/선원경력",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 선원자녀 또는 선원경력자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자 해당자. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과 이수자(또는 전문교과 30단위 이상). 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "해군사관학부",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "남녀구분모집(남17/여3)",
+            "quotaInitial": 20,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자. 해군사관학부는 남녀 구분 모집(남 17명/여 3명). 해사대학 승선학과로 선원건강검진(시력·청력·색각 신체기준) 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 10이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "남녀구분모집(남4/여1)",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함). 해군사관학부는 남녀 구분 모집(남 4명/여 1명). 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 10이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(남2)",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자. 해군사관학부 남 2명 모집. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구 영역 중 상위 2개 영역 등급의 합이 11이내(탐구영역은 사회탐구·과학탐구 중 등급이 높은 1개 과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외, 남2)",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외, 해군사관학부 남 2명. 해사대학 승선학과로 선원건강검진 합격 필요.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학과",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자 해당자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과 이수자(또는 전문교과 30단위 이상). 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "조선해양공학과",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자 해당자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과 이수자(또는 전문교과 30단위 이상). 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "환경·생명공학과",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자 해당자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과 이수자(또는 전문교과 30단위 이상). 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "해양건설공학과",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자 해당자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 12]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과 이수자(또는 전문교과 30단위 이상). 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "해양스포츠학과",
+        "campus": "목포",
+        "trackHint": "예체능",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "실기고사포함",
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자. 1단계 학생부 5배수 선발 후 2단계 실기고사(Zigzag Run·제자리멀리뛰기) 실시.",
+            "reflectionStages": [
+              {"stageLabel": "1단계", "multiplier": 5, "components": {"교과": 100}, "stageMaxScore": null},
+              {"stageLabel": "2단계", "multiplier": null, "components": {"학생부(1단계성적)": 60, "실기": 40}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 24]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "실기고사포함",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함). 1단계 학생부 5배수 선발 후 2단계 실기고사 실시.",
+            "reflectionStages": [
+              {"stageLabel": "1단계", "multiplier": 5, "components": {"교과": 100}, "stageMaxScore": null},
+              {"stageLabel": "2단계", "multiplier": null, "components": {"학생부(1단계성적)": 60, "실기": 40}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 24]
+          },
+          {
+            "trackName": "농어촌학생[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)/실기고사포함",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자로서 농어촌학생 유형Ⅰ 또는 유형Ⅱ 자격. 정원외. 1단계 학생부 5배수 선발 후 2단계 실기고사 실시.",
+            "reflectionStages": [
+              {"stageLabel": "1단계", "multiplier": 5, "components": {"교과": 100}, "stageMaxScore": null},
+              {"stageLabel": "2단계", "multiplier": null, "components": {"학생부(1단계성적)": 60, "실기": 40}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [11, 24]
+          },
+          {
+            "trackName": "특성화고교출신자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신자(정원외)/실기고사포함",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화 고등학교 전 교육과정 이수 졸업(예정)자로서 기준학과(해양레저과) 이수자(또는 전문교과 30단위 이상). 정원외. 1단계 학생부 5배수 선발 후 2단계 실기고사 실시.",
+            "reflectionStages": [
+              {"stageLabel": "1단계", "multiplier": 5, "components": {"교과": 100}, "stageMaxScore": null},
+              {"stageLabel": "2단계", "multiplier": null, "components": {"학생부(1단계성적)": 60, "실기": 40}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [13, 24]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)/실기고사포함",
+            "quotaInitial": 1,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외. 1단계 학생부 5배수 선발 후 2단계 실기고사 실시.",
+            "reflectionStages": [
+              {"stageLabel": "1단계", "multiplier": 5, "components": {"교과": 100}, "stageMaxScore": null},
+              {"stageLabel": "2단계", "multiplier": null, "components": {"학생부(1단계성적)": 60, "실기": 40}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14, 24]
+          },
+          {
+            "trackName": "체육우수자[실기/실적]",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "체육우수자(조정3/카약2)",
+            "quotaInitial": 5,
+            "applicationQualification": "2025년 1월 이후 고등학교 졸업(예정)자로서 고교재학 중 선발종목(조정/카약)의 국가대표·대표상비군·청소년대표·고교상비군으로 선발되었던 자, 또는 인정 대회에서 2024.3.1 이후 3위 이내 입상자. 선발종목별 조정 3명·카약 2명.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"입상실적": 50, "학생부": 30, "실기": 20}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [16, 25]
+          }
+        ]
+      },
+      {
+        "departmentName": "첨단해양모빌리티학과",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부 성적 우수자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 학교생활기록부의 영어교과 및 수학교과를 각각 11단위 이상 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [7, 8]
+          },
+          {
+            "trackName": "누구나[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력 인정자(검정고시·국외고 포함).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [8, 9]
+          },
+          {
+            "trackName": "지역인재[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자로서 호남 지역(광주·전남·전북) 소재 고등학교에서 전 과정을 이수한 자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [9]
+          },
+          {
+            "trackName": "사회적배려대상자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회적배려대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 사회적배려대상자 해당자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [10]
+          },
+          {
+            "trackName": "기초생활수급권자 및 차상위계층자[학생부교과]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자/차상위계층(정원외)",
+            "quotaInitial": 1,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등 학력 인정자로서 기초생활수급(권)자·차상위계층 또는 한부모가족지원대상자. 정원외.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [14]
+          }
+        ]
+      },
+      {
+        "departmentName": "해양산업융합학과",
+        "campus": "목포",
+        "trackHint": "자연",
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "특성화고 등을 졸업한 재직자[학생부교과](정원내)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고 등 졸업 재직자(정원내)",
+            "quotaInitial": 1,
+            "applicationQualification": "산업체 근무 경력이 3년 이상인 재직자(2027.3.1 기준 재직 중)로서 일반고 직업교육훈련과정 이수 졸업자·산업수요 맞춤형 고교 졸업자·특성화고 등 졸업자·학력인정 평생교육시설 교육과정 이수자 중 해당자. 정원내 1명.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [15, 16]
+          },
+          {
+            "trackName": "특성화고 등을 졸업한 재직자[학생부교과](정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고 등 졸업 재직자(정원외)",
+            "quotaInitial": 36,
+            "applicationQualification": "산업체 근무 경력이 3년 이상인 재직자(2027.3.1 기준 재직 중)로서 일반고 직업교육훈련과정 이수 졸업자·산업수요 맞춤형 고교 졸업자·특성화고 등 졸업자·학력인정 평생교육시설 교육과정 이수자 중 해당자. 정원외 36명.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 90, "출결": 10}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "최저학력기준 미적용",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [15, 16]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "해군사관학부는 남녀 구분 모집(전 모집단위 중 유일). 모집인원 총괄표상 남 행(학생부우수17/누구나4/지역인재2/기초생활2=25)과 여 행(학생부우수3/누구나1=4)으로 표기됨. 본 JSON에서는 동일 모집단위이므로 전형별로 남+여를 합산(학생부우수20·누구나5)하고 specialTypeKeyword에 남녀 내역을 명시. totalQuotaHint=29(=25+4)는 학과 합계행과 일치.",
+      "해양스포츠학과는 학생부교과 5개 전형(학생부우수10·누구나4·농어촌1·특성화고1·기초생활1=17)이 1단계 학생부 5배수→2단계 학생부60%+실기40%(만점1000) 단계형이며, 별도 체육우수자[실기/실적] 5명(조정3·카약2, 입상실적50%+학생부30%+실기20%)으로 구성. 학과 합계 22=17+5.",
+      "교과 반영비율은 학과마다 다름(국어/수학/영어/사회·과학): 항해학부/항해정보시스템/기관시스템공학/해양경찰/해양메카트로닉스/해군사관/컴퓨터공학/조선해양공학/해양건설공학/첨단해양모빌리티/해양산업융합 = 20/30/30/20; 해상운송학부 = 20/20/40/20; 환경·생명공학과 = 20/20/30/30; 해양스포츠학과 = 30/20/20/30. reflectionStages.components에는 학과 공통인 학생부 전형요소별 비율(교과90%+출결10%, 만점1000)을 기재했고, 과목별 반영비율은 본문(반영교과 및 반영비율 표) 참조.",
+      "수능최저는 해사대학 일부 모집단위·전형에만 적용. 적용: 항해학부/해상운송학부/항해정보시스템학부/해군사관학부의 학생부성적우수자·누구나·지역인재 전형(상위 2개 영역 등급합 기준, 학과·전형별로 9~11 상이). 미적용: 기관시스템공학부·해양경찰학부·해양메카트로닉스학부 전 전형, 해사대학 선원자녀/사회적배려/농어촌/특성화고/기초생활 전형, 해양공과대학 전 모집단위, 첨단해양모빌리티학과, 해양산업융합학과.",
+      "해사대학 전 승선 모집단위(항해학부·해상운송학부·항해정보시스템학부·기관시스템공학부·해양경찰학부·해양메카트로닉스학부·해군사관학부)는 선원건강검진(시력·청력·색각 등 STCW 신체기준) 합격이 합격 전제조건이며, 미제출/불합격 시 불합격 처리됨(applicationQualification에 명시).",
+      "정원외 전형: 농어촌학생·특성화고교출신자·기초생활수급권자및차상위계층자·해양산업융합학과 정원외 재직자(36명)는 정원외 모집. 미달/미등록 결원은 정시모집으로 이월."
+    ]
+  }
+}
