@@ -1,0 +1,6011 @@
+{
+  "meta": {
+    "universityName": "동국대학교(WISE)",
+    "universityId": "dgwise",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "경주 WISE캠퍼스",
+    "sourceDocYear": 2027,
+    "departments": 39,
+    "totalTracks": 209,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint",
+      "passed": 39,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학업성적우수자",
+        "computed": 992,
+        "stated": 992,
+        "match": true
+      },
+      {
+        "track": "학교생활우수자",
+        "computed": 206,
+        "stated": 206,
+        "match": true
+      },
+      {
+        "track": "면접",
+        "computed": 96,
+        "stated": 96,
+        "match": true
+      },
+      {
+        "track": "불교추천인재",
+        "computed": 47,
+        "stated": 47,
+        "match": true
+      },
+      {
+        "track": "실기우수자",
+        "computed": 106,
+        "stated": 106,
+        "match": true
+      },
+      {
+        "track": "체육특기자",
+        "computed": 32,
+        "stated": 32,
+        "match": true
+      },
+      {
+        "track": "지역인재(교과)",
+        "computed": 61,
+        "stated": 61,
+        "match": true
+      },
+      {
+        "track": "지역인재(경북-교과)",
+        "computed": 16,
+        "stated": 16,
+        "match": true
+      },
+      {
+        "track": "기회균형Ⅰ(지역인재)",
+        "computed": 8,
+        "stated": 8,
+        "match": true
+      },
+      {
+        "track": "참사람",
+        "computed": 25,
+        "stated": 25,
+        "match": true
+      },
+      {
+        "track": "지역인재(종합)",
+        "computed": 35,
+        "stated": 35,
+        "match": true
+      },
+      {
+        "track": "지역인재(경북-종합)",
+        "computed": 12,
+        "stated": 12,
+        "match": true
+      },
+      {
+        "track": "지역의사제",
+        "computed": 5,
+        "stated": 5,
+        "match": true
+      },
+      {
+        "track": "농어촌(정원 외, 의약 firm)",
+        "computed": 9,
+        "stated": 9,
+        "match": true
+      },
+      {
+        "track": "기회균형Ⅱ(정원 외, 의약 firm)",
+        "computed": 5,
+        "stated": 5,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "동국대학교(WISE)",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "불교학부 불교학전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 28,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고등학교장의 추천을 받은 자(일반) 또는 대한불교조계종 재적/승적취득예정 승려 등(승려) (일반 5명 + 승려 10명)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              17
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "불교학부 불교문화콘텐츠전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고등학교장의 추천을 받은 자(일반) 또는 대한불교조계종 재적/승적취득예정 승려 등(승려)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              17
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "명상심리상담학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고등학교장의 추천을 받은 자(일반) 또는 대한불교조계종 재적/승적취득예정 승려 등(승려)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              17
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인문콘텐츠학부 웹문예학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인문콘텐츠학부 국사학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "인문콘텐츠학부 고고미술사학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌어문학부 영어영문학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌어문학부 일어일문학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌어문학부 중어중문학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "디자인미술학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 54,
+        "tracks": [
+          {
+            "trackName": "실기우수자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 54,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 30,
+                  "실기": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              25
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠건강과학부 스포츠과학전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "실기우수자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 30,
+                  "실기": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              25
+            ]
+          },
+          {
+            "trackName": "체육특기자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고등학교 졸업자(2027년 2월 졸업예정자 포함)로서 종목별 입상/실적 지원자격 충족자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "출결": 10,
+                  "실적": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              28
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠건강과학부 스포츠의학전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "실기우수자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 30,
+                  "실기": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              25
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠건강과학부 엘리트스포츠전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "체육특기자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 25,
+            "applicationQualification": "국내 고등학교 졸업자(2027년 2월 졸업예정자 포함)로서 종목별 입상/실적 지원자격 충족자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "출결": 10,
+                  "실적": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              28
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "조경·정원디자인학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "행정·경찰공공학부(공공행정학전공/경찰행정학전공)",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 89,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 62,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고등학교장의 추천을 받은 자(일반) 또는 대한불교조계종 재적/승적취득예정 승려 등(승려)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              17
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "아동청소년교육학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌무역학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 45,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "융합경영학부 경영학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 61,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고등학교장의 추천을 받은 자(일반) 또는 대한불교조계종 재적/승적취득예정 승려 등(승려)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              17
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "융합경영학부 회계세무학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "융합경영학부 정보경영학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔관광외식경영학부 호텔관광경영학전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 74,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 57,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔관광외식경영학부 조리외식경영학전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 41,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사범교육학부 유아교육과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고등학교장의 추천을 받은 자(일반) 또는 대한불교조계종 재적/승적취득예정 승려 등(승려)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사범교육학부 가정교육과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사범교육학부 수학교육과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건의료정보학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티아트산업학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "실기우수자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 30,
+                  "실기": 70
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              25
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "바이오·화학융합학부",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "창의융합공학부 전자·정보통신공학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 32,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "창의융합공학부 원자력·에너지·전기공학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 58,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트안전공학부 안전보건전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트안전공학부 소방방재전공",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자동차소재부품공학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고등학교장의 추천을 받은 자(일반) 또는 대한불교조계종 재적/승적취득예정 승려 등(승려)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              17
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "특성화고교졸업자(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": null,
+            "applicationQualification": "국내 특성화 고등학교(종합고 특성화반 포함) 졸업자로서 모집단위별 동일계열 출신자. 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              32
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 65,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 51,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로컬인재학부",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "인문",
+        "totalQuotaHint": 125,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 80,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자. ※교과성적 산출불가자 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              15
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고등학교장의 추천을 받은 자(일반) 또는 대한불교조계종 재적/승적취득예정 승려 등(승려)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              17
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": null,
+            "applicationQualification": "농·어촌 및 도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(부·모·본인 거주요건 충족). 입학정원의 10% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": null,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 입학정원의 20% 이내 선발(모집단위별 정원 미고정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              6,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "한의예과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 67,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 5 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              14
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고교장 추천 또는 승려",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 5 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 20,
+            "applicationQualification": "국내 고졸(예정)자로서 대구·경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 6 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              18
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ(지역인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "대구·경북지역 고교 전 교육과정 이수자 중 기초생활수급(권)자/차상위/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 6 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              20
+            ]
+          },
+          {
+            "trackName": "참사람",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 5 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              21
+            ]
+          },
+          {
+            "trackName": "지역인재(종합)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고졸(예정)자로서 대구·경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 6 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 3,
+            "applicationQualification": "농·어촌/도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(거주요건 충족). 정원 외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 5 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": 3,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 정원 외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 5 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의예과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              14
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고교장 추천 또는 승려",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 16,
+            "applicationQualification": "국내 고졸(예정)자로서 대구·경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재(경북-교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고졸(예정)자로서 경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              19
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ(지역인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "대구·경북지역 고교 전 교육과정 이수자 중 기초생활수급(권)자/차상위/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 5 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              20
+            ]
+          },
+          {
+            "trackName": "참사람",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              21
+            ]
+          },
+          {
+            "trackName": "지역인재(종합)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고졸(예정)자로서 대구·경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              22
+            ]
+          },
+          {
+            "trackName": "지역인재(경북-종합)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고졸(예정)자로서 경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              23
+            ]
+          },
+          {
+            "trackName": "지역의사제",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재/지역의사제",
+            "quotaInitial": 5,
+            "applicationQualification": "대구·경북지역 중학교 전 과정 이수+거주, 선발 진료권(경주/포항/안동/구미/영주권) 고교 전 과정 이수+거주자 (의무복무 10년 조건)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 5 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              24
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 2,
+            "applicationQualification": "농·어촌/도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(거주요건 충족). 정원 외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              31
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅱ(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형/사회배려자",
+            "quotaInitial": 2,
+            "applicationQualification": "기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 정원 외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,과학탐구 중 3과목 등급의 합 4 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              34
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "경주 WISE캠퍼스",
+        "trackHint": "자연",
+        "totalQuotaHint": 145,
+        "tracks": [
+          {
+            "trackName": "학업성적우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              14
+            ]
+          },
+          {
+            "trackName": "학교생활우수자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "서류평가": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              15
+            ]
+          },
+          {
+            "trackName": "불교추천인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "불교추천",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자로서 대한불교조계종 스님이나 종립고교장 추천 또는 승려",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              17
+            ]
+          },
+          {
+            "trackName": "지역인재(교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 25,
+            "applicationQualification": "국내 고졸(예정)자로서 대구·경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              18
+            ]
+          },
+          {
+            "trackName": "지역인재(경북-교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고졸(예정)자로서 경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              19
+            ]
+          },
+          {
+            "trackName": "기회균형Ⅰ(지역인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대구·경북지역 고교 전 교육과정 이수자 중 기초생활수급(권)자/차상위/한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              20
+            ]
+          },
+          {
+            "trackName": "참사람",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 및 동등 학력 인정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              21
+            ]
+          },
+          {
+            "trackName": "지역인재(종합)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 13,
+            "applicationQualification": "국내 고졸(예정)자로서 대구·경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              22
+            ]
+          },
+          {
+            "trackName": "지역인재(경북-종합)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고졸(예정)자로서 경북지역 고교에서 입학~졸업 전 교육과정 이수자",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              23
+            ]
+          },
+          {
+            "trackName": "농어촌(정원 외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": "농·어촌/도서·벽지 중·고 6년 또는 초·중·고 12년 과정 이수자(거주요건 충족). 정원 외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "국어,수학,영어,탐구 중 2개 영역 등급의 합 7 이내 (탐구 상위1과목)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7,
+              31
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "일반계열 모집인원 총괄표의 '모집인원' 컬럼은 입학정원(정시 포함)이며 수시 정원내 합과 다름. totalQuotaHint는 정원내 firm 전형 인원 합으로 산출.",
+      "일반계열 정원외(농어촌/특성화고교졸업자/기회균형Ⅱ) 괄호 수치는 모집단위별 입학정원의 10%(기회균형Ⅱ 20%) 이내 상한(cap)이며 firm 정원이 아님 → 해당 트랙 quotaInitial=null. 대학 단위 firm 합은 농어촌 26·특성화고 26·기회균형Ⅱ 30(일반계열).",
+      "의학·간호계열 정원외(농어촌/기회균형Ⅱ)는 모집단위별 firm 수치로 합계행과 일치하여 quotaInitial 부여(한의 농어촌3·기회Ⅱ3 / 의 농어촌2·기회Ⅱ2 / 간호 농어촌4). 대학 전체 농어촌 35·기회균형Ⅱ 35(요약표 일치).",
+      "불교학부 불교학전공 불교추천인재는 일반5+승려10=15로 합산(승려는 별도 모집구분).",
+      "면접 전형 컬럼은 일반계열 총괄표에만 존재(의학·간호계열 없음).",
+      "콜럼 검증은 정원내 전형(학업성적우수자=992,학교생활우수자=206,면접=96,불교추천인재=47,지역인재(교과)=61 등) 및 의약 정원외 firm에 대해 합계행과 전건 일치."
+    ]
+  }
+}

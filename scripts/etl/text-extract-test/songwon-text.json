@@ -1,0 +1,717 @@
+{
+  "meta": {
+    "universityName": "송원대학교",
+    "universityId": "songwon",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "단일 캠퍼스 (광주광역시 남구 송암로 73). 철도대학·사회과학대학·보건복지대학·공과대학·예체능대학 5개 단과대학.",
+    "sourceDocYear": 2027,
+    "departments": 20,
+    "totalTracks": 32,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 전형 인원 합, 정원내+정원외 firm)",
+      "passed": 20,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {"track": "학생부교과(일반)-정원내인원합", "computed": 605, "stated": 605, "match": true},
+      {"track": "학생부우수자(일반)", "computed": 313, "stated": 313, "match": true},
+      {"track": "학생부우수자(만학도)", "computed": 89, "stated": 89, "match": true},
+      {"track": "면접우수자(면접)", "computed": 161, "stated": 161, "match": true},
+      {"track": "실기우수자(실기)", "computed": 20, "stated": 20, "match": true},
+      {"track": "실적우수자(특기자)", "computed": 22, "stated": 22, "match": true},
+      {"track": "정원외 학생부우수자(수급자/차상위/한부모)", "computed": 33, "stated": 33, "match": true}
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "송원대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "철도운전시스템학과",
+        "campus": "광주",
+        "trackHint": "자연",
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 2,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도운전·관제시스템학과",
+        "campus": "광주",
+        "trackHint": "자연",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 2,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도차량시스템학과",
+        "campus": "광주",
+        "trackHint": "자연",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도운전경영학과",
+        "campus": "광주",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "모빌리티자율전공학과",
+        "campus": "광주",
+        "trackHint": null,
+        "totalQuotaHint": 11,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공",
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [2027학년도 신설 자율전공학과]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰행정학과",
+        "campus": "광주",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "◆유아교육과",
+        "campus": "광주",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [◆ 교직이수 가능 학과]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "국제자율학부(한국어교육과)",
+        "campus": "광주",
+        "trackHint": null,
+        "totalQuotaHint": 1,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율학부",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [2027학년도 신설 국제자율학부(한국어교육과)]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회서비스융합학과",
+        "campus": "광주",
+        "trackHint": "인문",
+        "totalQuotaHint": 89,
+        "tracks": [
+          {
+            "trackName": "학생부교과(만학도)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도",
+            "quotaInitial": 89,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자로서 2027년 3월 1일 기준 만 30세 이상인 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "◆간호학과",
+        "campus": "광주",
+        "trackHint": "자연",
+        "totalQuotaHint": 160,
+        "tracks": [
+          {
+            "trackName": "학생부교과(면접우수자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 141,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [◆ 교직이수 가능 학과 / 면접고사 실시]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 19,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "치위생학과",
+        "campus": "광주",
+        "trackHint": "자연",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 2,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "보건안전관리학과",
+        "campus": "광주",
+        "trackHint": "자연",
+        "totalQuotaHint": 22,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 2,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "광주",
+        "trackHint": "인문",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 2,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축공학과",
+        "campus": "광주",
+        "trackHint": "자연",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [2027학년도 신설 건축공학과]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 1,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "토목환경공학과(야간)",
+        "campus": "광주",
+        "trackHint": "자연",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "야간",
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [야간]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "공연예술학과",
+        "campus": "광주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "실기우수자(실기)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [실기고사 실시: 실용무용 등]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"실기": 70, "학생부교과": 30}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6]
+          }
+        ]
+      },
+      {
+        "departmentName": "미용예술학과",
+        "campus": "광주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [예·체능계열 국어·영어 반영]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠지도학과",
+        "campus": "광주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [2027학년도 신설 스포츠지도학과 / 예·체능계열 국어·영어 반영]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출석": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "실적우수자(특기자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등으로 세팍타크로·야구 종목 대한체육회 산하 경기단체 선수 등록자 또는 최근 5년 이내 프로·실업 선수 활동 경력자, 국가대표(후보/상비군 포함) 등. (세팍타크로 2명, 야구 10명)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"학생부교과": 30, "실적": 40, "면접": 30}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 7]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 1,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠데이터분석학과",
+        "campus": "광주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 21,
+        "tracks": [
+          {
+            "trackName": "학생부교과(면접우수자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [면접고사 실시 / 예·체능계열 국어·영어 반영]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "실적우수자(특기자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등으로 스포츠데이터분석학과 육성종목 배드민턴부 특기자(대한체육회 가맹 중앙경기단체 선수 등록자)로서 전국·국제대회 실적 증명 가능자, 개인전·단체전 4강 이상 입상자 등. (배드민턴 10명)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"학생부교과": 30, "실적": 40, "면접": 30}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 7]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 1,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠AI자율전공학과",
+        "campus": "광주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 11,
+        "tracks": [
+          {
+            "trackName": "학생부교과(면접우수자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자(검정고시 출신자 및 외국고교 출신자 포함) [2027학년도 신설 스포츠AI자율전공학과 / 면접고사 실시]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5]
+          },
+          {
+            "trackName": "학생부교과(수급자/차상위/한부모) 정원외",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(수급자/차상위/한부모)",
+            "quotaInitial": 1,
+            "applicationQualification": "국민기초생활보장법 제2조제1호(수급권자)·제2호(수급자)·제10호(차상위계층), 한부모가족지원법 제5조 또는 제5조의2에 의한 지원대상자(검정고시 출신자, 외국고교 출신자 포함) [정원외]",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 75, "출결": 25}, "stageMaxScore": 1000}
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "송원대 2027 수시는 수능최저학력기준이 전 학과 '해당사항 없음'(없음). csatMinimumExempt=true 일괄 적용.",
+      "면접우수자 전형(간호·스포츠데이터분석·스포츠AI자율전공)은 학생부교과70%+면접30%로 모집요강 6.전형요소 반영비율표에서 '학생부교과위주'로 분류되어 trackTypeRaw=학생부위주(교과)로 표기(학생부종합 면접형 아님).",
+      "stageMaxScore=1000은 7.학생부 성적 반영방법의 총점수 1,000점(또는 예체능 부분배점 합 700~1000) 기준. 일반전형 예체능계열 총점도 1000점 만점 동일.",
+      "신설 학과(모빌리티자율전공·스포츠AI자율전공·건축공학·스포츠지도·국제자율학부(한국어교육과))는 1.전형요약 신설 안내 기준 표기.",
+      "정원외 수급자/차상위/한부모 전형 인원은 모집인원 총괄표 정원외 컬럼(합계 33명) 직독; 모든 정원외 firm 인원을 totalQuotaHint에 합산(정원내+정원외).",
+      "콜체크: 정원내인원합 605, 일반 313, 만학도 89, 면접 161, 실기 20, 실적 22, 정원외 33 모두 원문 합계행과 일치(bbox-layout x좌표 정렬 검증)."
+    ]
+  }
+}

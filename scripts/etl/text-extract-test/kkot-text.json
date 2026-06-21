@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "universityName": "가톨릭꽃동네대학교",
+    "universityId": "kkot",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "단일 캠퍼스 (충북 청주시 서원구 현도면). 소규모 사립(간호·사회복지·상담 특성화). 학과 단위 2개(간호학과·자율전공학부)만 모집.",
+    "sourceDocYear": 2027,
+    "departments": 2,
+    "totalTracks": 13,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 전형 인원 합, 정원내+정원외 firm)",
+      "passed": 2,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      { "track": "학생부교과(일반학생전형)", "computed": 33, "stated": 33, "match": true },
+      { "track": "학생부교과(휴먼리더면접전형)", "computed": 10, "stated": 10, "match": true },
+      { "track": "학생부교과(가톨릭지도자추천전형)", "computed": 16, "stated": 16, "match": true },
+      { "track": "학생부교과(지역인재전형)", "computed": 18, "stated": 18, "match": true },
+      { "track": "학생부교과(지역인재-경제배려대상자전형)", "computed": 2, "stated": 2, "match": true },
+      { "track": "학생부교과(특성화고교전형)", "computed": 5, "stated": 5, "match": true },
+      { "track": "학생부교과(만학도및자립지원전형)[정원외]", "computed": 10, "stated": 10, "match": true },
+      { "track": "학생부교과(경제배려대상자전형)[정원외]", "computed": 4, "stated": 4, "match": true },
+      { "track": "학생부교과(농어촌전형)[정원외]", "computed": 1, "stated": 1, "match": true },
+      { "track": "학생부교과(특수교육대상자전형)[정원외]", "computed": 2, "stated": 2, "match": true },
+      { "track": "수시모집합계", "computed": 101, "stated": 101, "match": true }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "가톨릭꽃동네대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "간호학과",
+        "campus": "본교(충북 청주시 서원구 현도면)",
+        "trackHint": "자연",
+        "totalQuotaHint": 68,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6, 8]
+          },
+          {
+            "trackName": "학생부교과(휴먼리더면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "면접": 40 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6, 8]
+          },
+          {
+            "trackName": "학생부교과(가톨릭지도자추천전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자로서 가. 가톨릭 사제 또는 현직 수도회 장상(총원장, 관구장, 지부장)의 추천을 받은 자, 나. 출신 가톨릭계 고등학교 교사의 추천을 받은 자(지원자의 종교와는 무관함) 중 하나에 해당하는 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "면접": 40 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6, 8]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 18,
+            "applicationQualification": "2016년 2월 이후 고등학교 졸업자(2027년 2월 졸업예정자 포함)로서 학생 본인이 입학일부터 졸업일까지 충청권(충청북도, 충청남도, 대전광역시, 세종특별자치시)에 소재하는 고등학교에서 전 교육과정(3년)을 이수한 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "면접": 40 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6, 8]
+          },
+          {
+            "trackName": "학생부교과(지역인재-경제배려대상자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,기회균형(경제배려)",
+            "quotaInitial": 2,
+            "applicationQualification": "2016년 2월 이후 고등학교 졸업자(2027년 2월 졸업예정자 포함)로서 학생 본인이 입학일부터 졸업일까지 충청권(충청북도, 충청남도, 대전광역시, 세종특별자치시)에 소재하는 고등학교에서 전 교육과정(3년)을 이수한 자로서 가. 기초생활수급권자, 나. 차상위계층, 다. 한부모가족 지원대상자 중 하나에 해당하는 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "면접": 40 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6, 8]
+          },
+          {
+            "trackName": "학생부교과(특성화고교전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 5,
+            "applicationQualification": "2016년 2월 이후 특성화고등학교 졸업자(2027년 2월 졸업예정자 포함)로서 가. 특성화고등학교 졸업자, 나. 종합고 졸업자 중 실업계열 이수자, 다. 마이스터 고등학교 졸업자 중 하나에 해당하는 자(체험위주 교육 전문 고교·대안학교·검정고시 출신자 제외)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6, 8]
+          },
+          {
+            "trackName": "학생부교과(경제배려대상자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "정원외,기회균형(경제배려)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자로서 가. 기초생활수급권자, 나. 차상위계층, 다. 한부모가족 지원대상자 중 하나에 해당하는 자 (정원외)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 7, 8]
+          },
+          {
+            "trackName": "학생부교과(농어촌전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "정원외,농어촌",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함)로서 가. 읍·면(농어촌)/도서·벽지 지역 중·고 전 교육과정(6년) 이수 + 지원자·부모 모두 중학교 입학~고교 졸업 거주, 또는 나. 읍·면(농어촌)/도서·벽지 지역 초·중·고 전 교육과정(12년) 이수 + 지원자 본인 초등학교 입학~고교 졸업 거주 중 하나에 해당하는 자 (특목고 출신자 제외) (정원외)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 7, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "자율전공학부",
+        "campus": "본교(충북 청주시 서원구 현도면)",
+        "trackHint": null,
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "학생부교과(일반학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공",
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자. 자율전공학부 입학생은 2학년 진급 후 희망 전공(사회복지학, 상담심리학 등) 선택 이수.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6, 8]
+          },
+          {
+            "trackName": "학생부교과(가톨릭지도자추천전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공,가톨릭지도자추천",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자로서 가. 가톨릭 사제 또는 현직 수도회 장상의 추천을 받은 자, 나. 출신 가톨릭계 고등학교 교사의 추천을 받은 자(지원자 종교 무관) 중 하나에 해당하는 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "면접": 40 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6, 8]
+          },
+          {
+            "trackName": "학생부교과(만학도및자립지원전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공,정원외,만학도,자립지원",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자로서 가. 만학도: 입학연도(2027.3.1) 기준 만 30세 이상인 자, 나. 자립지원 대상자(아동복지법 시행령 제38조제2항 해당: 가정위탁보호·아동복지시설 보호·보호종료 5년 이내 등) 중 하나에 해당하는 자 (정원외)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 7, 8]
+          },
+          {
+            "trackName": "학생부교과(특수교육대상자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공,정원외,특수교육대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자로서 가. 장애인복지법 제32조에 의한 장애인 등록자, 나. 국가유공자 등 예우 및 지원에 관한 법률 제4조 등에 의한 상이등급자(국가보훈처 등록) 중 하나에 해당하는 자 (정원외)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 7, 8]
+          },
+          {
+            "trackName": "학생부교과(만학도전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공,정원외,만학도,제한없음",
+            "quotaInitial": null,
+            "applicationQualification": "고등학교 졸업자(2027년 2월 졸업예정자 포함) 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자로서 입학연도(2027.3.1) 기준 만 30세 이상인 자 (정원외, 입학정원 제한 없음)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 500 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 5, 8]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "수능최저학력기준: 전 전형 일괄합산 학생부교과(+면접)이며 요강 전체에 수능최저 조항 없음 → 전 트랙 csatMinimumExempt=true('없음').",
+      "정원외 만학도전형(자율전공학부)은 '입학정원 제한 없음(00명)'으로 모집인원 미배정 → quotaInitial=null. 따라서 자율전공학부 totalQuotaHint(33)에는 미포함(정원내18+가톨릭3, 정원외 만학도및자립지원10+특수교육2 = 33, 수시모집합계 컬럼 일치).",
+      "모집인원 grid은 컬럼이 다단 회전헤더로 정렬이 모호하여 pdftotext -bbox-layout(-f4)로 x좌표 정렬 후 컬럼 확정함. 행합/열합 모두 원문 '계' 행(101) 및 '수시모집합계' 컬럼과 일치.",
+      "입학정원(간호78/자율30)은 수시+정시 통합 학과 정원이며 totalQuotaHint(수시 firm 합 68/33)와 다름. 미충원 인원은 정시(나군) 이월.",
+      "departmentName은 요강 원문 그대로 '간호학과'·'자율전공학부' 사용. 동일 전형명(예: 일반학생전형·가톨릭지도자추천전형)이 두 학과에 분리 배정되어 각각 학과 하위 트랙으로 기재.",
+      "trackName은 요강 표기 '학생부교과(○○전형)'를 정식명으로 사용. 정원외 트랙(만학도및자립지원·경제배려대상자·농어촌·특수교육대상자·만학도)은 specialTypeKeyword에 '정원외' 표시."
+    ]
+  }
+}

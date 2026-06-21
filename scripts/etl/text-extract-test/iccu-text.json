@@ -1,0 +1,423 @@
+{
+  "meta": {
+    "universityName": "인천가톨릭대학교",
+    "universityId": "iccu",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "송도국제캠퍼스(조형예술대학·간호대학·자유전공) + 강화캠퍼스(신학대학) 통합. 수시 6개 모집단위(신학과·조형예술학과·융합디자인학과·문화콘텐츠학과·간호학과·자유전공). 정시 표는 제외.",
+    "sourceDocYear": 2027,
+    "departments": 6,
+    "totalTracks": 20,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 전형 인원 합 = 정원내+정원외 firm). 모집단위표 '수시모집' 인원과 전형별 모집인원 그리드 행합 일치 확인.",
+      "passed": 6,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      { "track": "학생부교과(학교생활우수자)", "computed": 22, "stated": 22, "match": true },
+      { "track": "학생부교과(ICCU미래인재)", "computed": 39, "stated": 39, "match": true },
+      { "track": "가톨릭지도자추천(교과+실기 합산 컬럼)", "computed": 8, "stated": 8, "match": true },
+      { "track": "학생부교과(수도자)", "computed": 1, "stated": 1, "match": true },
+      { "track": "학생부교과(대건안드레아)", "computed": 12, "stated": 12, "match": true },
+      { "track": "실기/실적(실기우수자)", "computed": 39, "stated": 39, "match": true },
+      { "track": "[정원외]학생부교과(농어촌학생)", "computed": 2, "stated": 2, "match": true },
+      { "track": "[정원외]실기/실적(특성화고교출신)", "computed": 2, "stated": 2, "match": true },
+      { "track": "[정원외]학생부교과(기회균형)", "computed": 5, "stated": 5, "match": true },
+      { "track": "[정원외]실기/실적(특수교육대상자)", "computed": 4, "stated": 4, "match": true },
+      { "track": "[정원외]기타(북한이탈주민)", "computed": 6, "stated": 6, "match": true },
+      { "track": "수시 총계", "computed": 140, "stated": 140, "match": true }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "인천가톨릭대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "신학과",
+        "campus": "강화캠퍼스(신학대학)",
+        "trackHint": null,
+        "totalQuotaHint": 12,
+        "tracks": [
+          {
+            "trackName": "학생부교과(대건안드레아)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 및 이와 동등 이상 학력 인정자. ①가톨릭 교회 사제직 희망자로 세례 후 만3년 경과한 가톨릭 신자, 신체조건 적합, 소속 본당 주임신부(수도자는 소속 수도회장상) 추천 및 소속 교구장 추천을 받은 자, 또는 ②사도직 수행 목적으로 소속 본당 주임신부(수도자는 소속 수도회장상) 추천을 받은 자.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 11]
+          }
+        ]
+      },
+      {
+        "departmentName": "조형예술학과",
+        "campus": "송도국제캠퍼스(조형예술대학)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "실기/실적(가톨릭지도자추천)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 및 이와 동등 학력 인정자(검정고시 합격자 포함)로서 가톨릭 사제, 수도회 장상, 총원장, 관구장, 지부장, 가톨릭계 고등학교장의 추천을 받은 자. 학생부 반영교과가 없거나 석차등급 산출 불가 시 지원 불가. 실기: 인물수채화, 인물모델링.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 40, "실기": 60 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 8]
+          },
+          {
+            "trackName": "실기/실적(실기우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 졸업예정자 또는 이와 동등 학력 인정자(검정고시 합격자 포함). 학생부 반영교과가 없거나 석차등급 산출 불가 시 지원 불가. 실기: 인물수채화, 인물모델링.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 20, "실기": 80 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 13]
+          },
+          {
+            "trackName": "[정원외]실기/실적(특수교육대상자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "2027년 2월 고등학교 졸업(예정)자 및 이와 동등 학력 인정자로서, 장애인복지법 제32조에 의한 장애인 등록을 마치고 특수교육법 15조 1항 2호 청각장애에 해당하여 본교 장이 특수교육대상자로 선정한 청각장애인(청각장애 외 중복장애 시 지원 불가). 실기: 인물수채화, 인물모델링.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 20, "실기": 80 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 20]
+          },
+          {
+            "trackName": "[정원외]기타(북한이탈주민)",
+            "trackTypeRaw": "기타",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "북한이탈주민(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "북한이탈주민의 보호 및 정착지원에 관한 법률에 의하여 북한이탈주민으로 등록된 자로서 국내·외 고등학교 졸업(예정)자 또는 이와 동등 이상 학력 인정자. 면접 실시.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "면접": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 21]
+          }
+        ]
+      },
+      {
+        "departmentName": "융합디자인학과",
+        "campus": "송도국제캠퍼스(조형예술대학)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "실기/실적(가톨릭지도자추천)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 및 이와 동등 학력 인정자(검정고시 합격자 포함)로서 가톨릭 사제, 수도회 장상, 총원장, 관구장, 지부장, 가톨릭계 고등학교장의 추천을 받은 자. 학생부 반영교과가 없거나 석차등급 산출 불가 시 지원 불가. 실기: 기초디자인.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 40, "실기": 60 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 8]
+          },
+          {
+            "trackName": "실기/실적(실기우수자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업자 및 2027년 2월 졸업예정자 또는 이와 동등 학력 인정자(검정고시 합격자 포함). 학생부 반영교과가 없거나 석차등급 산출 불가 시 지원 불가. 실기: 기초디자인. 1단계 학생부교과 500%(5배수)→2단계 학생부교과20%+실기80%.",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": 5.0, "components": { "학생부교과": 100 }, "stageMaxScore": null },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "학생부교과": 20, "실기": 80 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 13]
+          },
+          {
+            "trackName": "[정원외]실기/실적(특성화고교출신)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교출신(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "고등교육법 시행령 제29조제2항제14호 '나'목 해당자로서 특성화고등학교 졸업자 또는 2027년 2월 졸업예정자. 본인 이수 학과가 본교 기준학과(금속재료과·공예과·디자인과 등 미술/디자인계열)를 충족하고 출신고교장의 동일계열 확인서를 제출, 본교 지원자격 심사 통과자. 기준학과 미명시 시 미술/디자인계열 전문교과 30단위 이상 이수자. 종합고 보통과·일반계고 중도전학자·학력인정고·마이스터고 지원 불가. 실기: 기초디자인.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 40, "실기": 60 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 16]
+          },
+          {
+            "trackName": "[정원외]실기/실적(특수교육대상자)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특수교육대상자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "2027년 2월 고등학교 졸업(예정)자 및 이와 동등 학력 인정자로서, 장애인복지법 제32조에 의한 장애인 등록을 마치고 특수교육법 15조 1항 2호 청각장애에 해당하여 본교 장이 특수교육대상자로 선정한 청각장애인(청각장애 외 중복장애 시 지원 불가). 실기: 기초디자인.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 20, "실기": 80 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 20]
+          },
+          {
+            "trackName": "[정원외]기타(북한이탈주민)",
+            "trackTypeRaw": "기타",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "북한이탈주민(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "북한이탈주민의 보호 및 정착지원에 관한 법률에 의하여 북한이탈주민으로 등록된 자로서 국내·외 고등학교 졸업(예정)자 또는 이와 동등 이상 학력 인정자. 면접 실시.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "면접": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 21]
+          }
+        ]
+      },
+      {
+        "departmentName": "문화콘텐츠학과",
+        "campus": "송도국제캠퍼스(조형예술대학)",
+        "trackHint": null,
+        "totalQuotaHint": 17,
+        "tracks": [
+          {
+            "trackName": "학생부교과(ICCU미래인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(2023년 이후) 및 2027년 2월 졸업예정자로서 일반고·자율고·외국어고·과학고·국제고·예술고·특성화고·종합고(보통과 포함) 출신 및 고졸 동등 학력 인정자(검정고시 합격자 포함). 2022년 2월 및 이전 졸업자(이전 검정고시 포함) 지원 불가. 학생부 반영교과가 없거나 석차등급 산출 불가 시 지원 불가. 1단계 학생부교과 400%(4배수)→2단계 학생부교과80%+면접20%.",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": 4.0, "components": { "학생부교과": 100 }, "stageMaxScore": null },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "학생부교과": 80, "면접": 20 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 7]
+          },
+          {
+            "trackName": "학생부교과(가톨릭지도자추천)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 및 이와 동등 학력 인정자(검정고시 합격자 포함)로서 가톨릭 사제, 수도회 장상, 총원장, 관구장, 지부장, 가톨릭계 고등학교장의 추천을 받은 자. 학생부 반영교과가 없거나 석차등급 산출 불가 시 지원 불가. 면접 실시.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 8]
+          },
+          {
+            "trackName": "[정원외]학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(정원외)",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자 및 이와 동등 학력 인정자로서 원서접수 마감일 기준 ①국민기초생활보장법 제2조 제1호 수급권자 및 제2호 수급자, ②동법 제2조 제10호 차상위계층 대상자(본인부담경감·장애수당·장애인연금 부가급여·자활급여·차상위계층 확인서 발급 대상), ③한부모가족지원법 제5조 또는 5조의2 지원 대상자 중 하나에 해당하는 자.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 18]
+          },
+          {
+            "trackName": "[정원외]기타(북한이탈주민)",
+            "trackTypeRaw": "기타",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "북한이탈주민(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "북한이탈주민의 보호 및 정착지원에 관한 법률에 의하여 북한이탈주민으로 등록된 자로서 국내·외 고등학교 졸업(예정)자 또는 이와 동등 이상 학력 인정자. 면접 실시.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "면접": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 21]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "송도국제캠퍼스(간호대학)",
+        "trackHint": "자연",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "학생부교과(학교생활우수자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(2023년 이후) 및 2027년 2월 졸업예정자로서 일반고·자율고·외국어고·과학고·국제고·종합고의 보통과 출신자에 한해 지원 가능. 2022년 2월 및 이전 졸업자, 예술고·체육고·방송통신고·마이스터고·특성화고(실업 및 대안교육과정 포함)·대안학교·각종학교·검정고시·소년원고교과정이수자·일반계고 직업과정 위탁생·학력인정고·외국고 졸업자, 본교 산출 교과성적이 없는 자는 지원 불가. 1단계 학생부교과 400%(4배수)→2단계 학생부교과80%+면접20%.",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": 4.0, "components": { "학생부교과": 100 }, "stageMaxScore": null },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "학생부교과": 80, "면접": 20 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 6]
+          },
+          {
+            "trackName": "학생부교과(가톨릭지도자추천)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 및 이와 동등 학력 인정자(검정고시 합격자 포함)로서 가톨릭 사제, 수도회 장상, 총원장, 관구장, 지부장, 가톨릭계 고등학교장의 추천을 받은 자. 학생부 반영교과가 없거나 석차등급 산출 불가 시 지원 불가. 면접 실시.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 8]
+          },
+          {
+            "trackName": "학생부교과(수도자)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "수도자",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업자 또는 이와 동등 이상 학력 인정자로서 가톨릭 교회의 수도회에서 일정기간 수련과정을 마치고 수도회 소속으로 소속 장상의 추천을 받은 수사·수녀. 면접 실시.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 9]
+          },
+          {
+            "trackName": "[정원외]학생부교과(농어촌학생)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "고등교육법 시행령 제29조제2항제14호 '가'목 농어촌 지역 또는 도서·벽지 학생. 국내고 졸업(예정)자로서 유형①(농어촌 소재 중·고 6년 이수 + 재학 중 지원자와 부모 모두 농어촌 거주) 또는 유형②(농어촌 소재 초·중·고 12년 이수 + 재학 중 지원자 본인 농어촌 거주) 중 하나. 과학고·외국어고·국제고·예술고·체육고·검정고시 출신자 제외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 14]
+          },
+          {
+            "trackName": "[정원외]학생부교과(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 및 이와 동등 학력 인정자로서 원서접수 마감일 기준 ①국민기초생활보장법 제2조 제1호 수급권자 및 제2호 수급자, ②동법 제2조 제10호 차상위계층 대상자(본인부담경감·장애수당·장애인연금 부가급여·자활급여·차상위계층 확인서 발급 대상), ③한부모가족지원법 제5조 또는 5조의2 지원 대상자 중 하나에 해당하는 자.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부교과": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공",
+        "campus": "송도국제캠퍼스(자유전공)",
+        "trackHint": null,
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학생부교과(ICCU미래인재)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공(대학 내 모든 전공 100% 자율 선택, 간호학과·신학과 제외)",
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(2023년 이후) 및 2027년 2월 졸업예정자로서 일반고·자율고·외국어고·과학고·국제고·예술고·특성화고·종합고(보통과 포함) 출신 및 고졸 동등 학력 인정자(검정고시 합격자 포함). 2022년 2월 및 이전 졸업자(이전 검정고시 포함) 지원 불가. 학생부 반영교과가 없거나 석차등급 산출 불가 시 지원 불가. 1단계 학생부교과 400%(4배수)→2단계 학생부교과80%+면접20%.",
+            "reflectionStages": [
+              { "stageLabel": "1단계", "multiplier": 4.0, "components": { "학생부교과": 100 }, "stageMaxScore": null },
+              { "stageLabel": "2단계", "multiplier": null, "components": { "학생부교과": 80, "면접": 20 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 7]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "캠퍼스 분리: 신학과는 강화캠퍼스(신학대학), 나머지 5개 모집단위는 송도국제캠퍼스. 신학과 전형일정·제출서류 별도.",
+      "신학과 외국인특별전형은 정원 제한 없음(추후 별도 선발)이라 수시 인원 그리드에 포함하지 않음(원문 '제한없음' 표기). totalTracks·체크섬에서 제외.",
+      "가톨릭지도자추천 전형은 모집인원 총괄표에서 단일 컬럼(학과별 2명)이나, 전형방법이 모집학과군에 따라 분리됨: 문화콘텐츠·간호학과는 학생부위주(교과, 학생부60+면접40), 조형예술·융합디자인은 실기/실적위주(학생부40+실기60). 따라서 trackType이 달라 학과별로 별도 track 분리 기록.",
+      "실기우수자 전형: 조형예술학과는 '일괄합산(학생부20+실기80)', 융합디자인학과는 '1단계 학생부교과 500%(5배수) → 2단계 학생부20+실기80' 단계형으로 전형방법이 학과별로 상이(원문 표 동일 전형명 내 분리 명시). 각 학과 reflectionStages에 반영.",
+      "수능최저학력기준은 전 수시 전형 '없음'(요약표 및 각 전형 모두 명시). csatMinimumExempt=true.",
+      "정시모집(Ⅶ, PDF p38~) 및 학교생활기록부 반영방법(Ⅵ)은 수시 전형 구조화 대상이 아니므로 제외.",
+      "sourcePages는 PDF 물리 페이지 기준(인쇄 페이지 +3 오프셋: 인쇄 '-2-' 전형별모집인원=PDF4, 인쇄 '-4-' 학교생활우수자=PDF6 등)."
+    ]
+  }
+}

@@ -1,0 +1,4254 @@
+{
+  "meta": {
+    "universityName": "한라대학교",
+    "universityId": "halla",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "단일 캠퍼스(강원특별자치도 원주). 스마트모빌리티융합대학·웰니스지역공헌대학·미래라이프융합대학·운곡프론티어교양대학.",
+    "sourceDocYear": 2027,
+    "departments": 24,
+    "totalTracks": 147,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 firm 전형 인원 합: 정원내+정원외 firm)",
+      "passed": 24,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "일반학생(교과중심)",
+        "computed": 513,
+        "stated": 513,
+        "match": true
+      },
+      {
+        "track": "지역인재",
+        "computed": 109,
+        "stated": 109,
+        "match": true
+      },
+      {
+        "track": "특성화고교(교과)",
+        "computed": 32,
+        "stated": 32,
+        "match": true
+      },
+      {
+        "track": "운곡인재",
+        "computed": 95,
+        "stated": 95,
+        "match": true
+      },
+      {
+        "track": "일반학생(면접중심)",
+        "computed": 47,
+        "stated": 47,
+        "match": true
+      },
+      {
+        "track": "체육특기자",
+        "computed": 15,
+        "stated": 15,
+        "match": true
+      },
+      {
+        "track": "성인학습자",
+        "computed": 50,
+        "stated": 50,
+        "match": true
+      },
+      {
+        "track": "특성화고 등을 졸업한 재직자(정원외)",
+        "computed": 3,
+        "stated": 3,
+        "match": true
+      },
+      {
+        "track": "만학도(정원외)",
+        "computed": 21,
+        "stated": 21,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "한라대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "기계자동차공학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 38,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 9,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 6,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미래모빌리티공학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 36,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 일반학생(면접중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "도시인프라공학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터공학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "IT소프트웨어학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "전기전자공학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 7,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI정보보안학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "철도시스템학부(철도운전시스템전공)",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 34,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미디어광고콘텐츠학과",
+        "campus": "원주",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 일반학생(면접중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "영상제작학과",
+        "campus": "원주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 일반학생(면접중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건축학과(4년제/5년제)",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 5,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방안전학과",
+        "campus": "원주",
+        "trackHint": "자연",
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 34,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "원주",
+        "trackHint": "인문",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 39,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰행정학과",
+        "campus": "원주",
+        "trackHint": "인문",
+        "totalQuotaHint": 55,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 8,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": "원주",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔항공외식경영학과",
+        "campus": "원주",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "문화관광경영학과",
+        "campus": "원주",
+        "trackHint": "인문",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티디자인학과",
+        "campus": "원주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 27,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 일반학생(면접중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화고등학교 졸업(예정)자 또는 초·중등교육법에 의한 3년제 고등기술학교 졸업(예정)자(일반계고 직업과정위탁생 지원가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              12
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠학과",
+        "campus": "원주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 일반학생(면접중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "실기/실적 체육특기자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "체육특기자",
+            "quotaInitial": 15,
+            "applicationQualification": "고교 졸업(예정)자 등으로 대한축구협회 주최 전국 고등 축구리그대회에서 소속팀 경기시간의 30% 이상 출전하고 리그실적증명서 발급 가능한 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 7,
+                  "출결": 3,
+                  "면접": 30,
+                  "실적": 60
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미래경영학과",
+        "campus": "원주",
+        "trackHint": "인문",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등(2027.3.1. 기준 만 24세 이상인 자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              13
+            ]
+          },
+          {
+            "trackName": "전형기간 자율화 학생부교과 특성화고 등을 졸업한 재직자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재직자·정원외·전형기간자율화",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화고·마이스터고·평생교육시설·직업교육훈련과정 졸업자 중 산업체 근무경력 3년 이상인 재직자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "전형기간 자율화 학생부교과 만학도(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도·정원외·전형기간자율화",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등(2027.3.1. 기준 만 30세 이상인 자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로컬복지학과",
+        "campus": "원주",
+        "trackHint": "인문",
+        "totalQuotaHint": 5,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등(2027.3.1. 기준 만 24세 이상인 자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              13
+            ]
+          },
+          {
+            "trackName": "전형기간 자율화 학생부교과 특성화고 등을 졸업한 재직자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재직자·정원외·전형기간자율화",
+            "quotaInitial": 0,
+            "applicationQualification": "특성화고·마이스터고·평생교육시설·직업교육훈련과정 졸업자 중 산업체 근무경력 3년 이상인 재직자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "전형기간 자율화 학생부교과 만학도(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도·정원외·전형기간자율화",
+            "quotaInitial": 0,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등(2027.3.1. 기준 만 30세 이상인 자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "문화예술학과",
+        "campus": "원주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등(2027.3.1. 기준 만 24세 이상인 자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              13
+            ]
+          },
+          {
+            "trackName": "전형기간 자율화 학생부교과 특성화고 등을 졸업한 재직자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재직자·정원외·전형기간자율화",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화고·마이스터고·평생교육시설·직업교육훈련과정 졸업자 중 산업체 근무경력 3년 이상인 재직자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "전형기간 자율화 학생부교과 만학도(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도·정원외·전형기간자율화",
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등(2027.3.1. 기준 만 30세 이상인 자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "골프산업학과",
+        "campus": "원주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 31,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 20,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등(2027.3.1. 기준 만 24세 이상인 자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              13
+            ]
+          },
+          {
+            "trackName": "전형기간 자율화 학생부교과 특성화고 등을 졸업한 재직자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "재직자·정원외·전형기간자율화",
+            "quotaInitial": 1,
+            "applicationQualification": "특성화고·마이스터고·평생교육시설·직업교육훈련과정 졸업자 중 산업체 근무경력 3년 이상인 재직자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              22
+            ]
+          },
+          {
+            "trackName": "전형기간 자율화 학생부교과 만학도(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "만학도·정원외·전형기간자율화",
+            "quotaInitial": 10,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 등(2027.3.1. 기준 만 30세 이상인 자)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 72,
+                  "출결": 8,
+                  "면접": 20
+                },
+                "stageMaxScore": 500
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공학부",
+        "campus": "원주",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반학생(교과중심)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              9
+            ]
+          },
+          {
+            "trackName": "학생부교과 지역인재",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "강원특별자치도 내 소재하는 고등학교에 입학하여 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              11
+            ]
+          },
+          {
+            "trackName": "학생부종합 운곡인재",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              4,
+              14
+            ]
+          },
+          {
+            "trackName": "학생부교과 농어촌학생(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "국내 고등학교 졸업(예정)자로서 농어촌(유형1: 중·고 6년 / 유형2: 초·중·고 12년) 지역 이수·거주 요건을 갖춘 자 (특목고·검정고시 불인정)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              16
+            ]
+          },
+          {
+            "trackName": "학생부교과 특성화고교 졸업자(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "특성화고등학교 졸업(예정)자로 동일계열 인정 모집단위 또는 전문교과 30단위 이상 이수자(마이스터고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              18
+            ]
+          },
+          {
+            "trackName": "학생부교과 기회균형(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형·정원외·통합모집",
+            "quotaInitial": null,
+            "applicationQualification": "고교 졸업(예정)자 등으로 ①국민기초생활보장법상 수급(권)자·차상위계층 또는 ②한부모가족지원법상 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 90,
+                  "출결": 10
+                },
+                "stageMaxScore": 400
+              }
+            ],
+            "csatMinimumRawText": "수능 최저학력 기준 없음 (전체전형 해당)",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              20
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "수능 최저학력 기준: 전체 전형 '기준 없음'(요강 I-3 주요사항, p.1). 모든 track csatMinimumExempt=true.",
+      "정원외 통합모집 전형(농어촌학생·특성화고교 졸업자·기회균형)은 모집인원이 모집단위별 'N명이내' 상한값이며 실제 선발은 컬럼 합계(17/11/15)로 통합 제한됨(요강 p.5 ※). firm 할당 아님 → quotaInitial=null 처리, totalQuotaHint(행합)·열합 검산에서 제외.",
+      "전형기간 자율화 전형(특성화고 등을 졸업한 재직자·만학도)은 모집단위별 확정인원(재직자 col합 3, 만학도 col합 21)으로 firm 처리, 4개 미래라이프융합대학 학과에만 존재.",
+      "건축학과(4년제/5년제)는 수업연한 변경으로 명칭 변경(2026 건축학과(4년제) → 2027 건축학과(4년제/5년제)). 모집단위 원문 그대로 사용.",
+      "철도시스템학부(철도운전시스템전공)는 2026 철도운전시스템학과에서 명칭 변경. 모집단위 원문 그대로 사용.",
+      "자유전공학부는 운곡프론티어교양대학 계열구분없음(자율전공) 모집단위. trackHint=null.",
+      "totalQuotaHint = 정원내 firm 합 + 정원외 firm(만학도/재직자) 합. 정원내 행합은 모집단위별 입학정원(요강 II)과 거의 일치(건축 48은 정시이월분 존재).",
+      "2027학년도 특수교육대상자 전형 폐지(2026 대비). 본 요강에 해당 전형 없음."
+    ]
+  }
+}

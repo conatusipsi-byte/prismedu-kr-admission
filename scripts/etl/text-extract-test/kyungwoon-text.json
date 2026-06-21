@@ -1,0 +1,1501 @@
+{
+  "meta": {
+    "universityName": "경운대학교",
+    "universityId": "kyungwoon",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "단일 캠퍼스 (경북 구미시 산동읍 강동로 730). 항공·헬스 특성화 사립.",
+    "sourceDocYear": 2027,
+    "departments": 21,
+    "totalTracks": 80,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 정원내 firm 전형 인원 합). 정원외(농어촌·기회균형2·특성화고교졸업자·성인학습자·재직자) 전형은 모집요강 5P·31P 명시상 모집단위별 인원을 별도 지정하지 않으므로(○ 자격표시만 존재) 학과 quotaInitial=null 이며 totalQuotaHint 에 미포함.",
+      "passed": 21,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {"track": "교과일반전형", "computed": 433, "stated": 433, "match": true},
+      {"track": "교과면접전형", "computed": 258, "stated": 258, "match": true},
+      {"track": "지역인재전형", "computed": 119, "stated": 119, "match": true},
+      {"track": "기회균형1전형", "computed": 40, "stated": 40, "match": true},
+      {"track": "평생학습자전형", "computed": 63, "stated": 63, "match": true},
+      {"track": "창의인재전형", "computed": 132, "stated": 132, "match": true},
+      {"track": "미래인재전형", "computed": 61, "stated": 61, "match": true},
+      {"track": "실기전형", "computed": 28, "stated": 28, "match": true},
+      {"track": "포트폴리오전형", "computed": 8, "stated": 8, "match": true},
+      {"track": "체육실적전형", "computed": 35, "stated": 35, "match": true},
+      {"track": "농어촌학생전형(정원외)", "computed": null, "stated": 42, "match": null},
+      {"track": "기회균형2전형(정원외)", "computed": null, "stated": 17, "match": null},
+      {"track": "특성화고교졸업자전형(정원외)", "computed": null, "stated": 6, "match": null},
+      {"track": "성인학습자전형(정원외)", "computed": null, "stated": 65, "match": null},
+      {"track": "특성화고 등을 졸업한 재직자전형(정원외)", "computed": null, "stated": 65, "match": null}
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "경운대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "항공운항학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 38,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. 항공운항학과 지원자는 국토교통부 지정병원 항공종사자 1종 신체검사 '적합' 판정 신체검사증명서 제출 필수(2026.12.8.까지, 조건부적합 불인정).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "수능 4개영역(국어, 수학, 영어, 탐구)중 3개영역 합이 10등급 이내 (탐구영역은 등급이 우수한 1과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 31,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. 항공운항학과 지원자는 항공종사자 1종 신체검사 '적합' 판정 증명서 제출 필수(2026.12.8.까지).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자. 항공운항학과 지원자는 항공신체검사증명서 제출 필수(2026.12.8.까지).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공서비스학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자(『초·중등교육법』 제2조에 따른 고등학교 출신자만 지원 가능)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공산업대학통합(항공정비학부, 항공모빌리티학부, 항공관제물류학부)",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 148,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 85,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. 항공정비학부(기계설계/전기전자 전공), 항공모빌리티학부(모빌리티시스템/드론서비스 전공), 항공관제물류학부(항공교통관제/항공물류경영 전공) 통합 모집.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 33,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부교과(기회균형1전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자로서 국가보훈대상자, 기초생활수급자·차상위계층·한부모가족 지원대상자, 농어촌학생, 만학도(만30세 이상), 특성화고교졸업자 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 11, 12, 13]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공산업자율전공",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공",
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자 (2027학년도 신설 자율전공)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 (2027학년도 신설 자율전공)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI·소프트웨어학부",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 39,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. AI모빌리티/AI보안/AI컴퓨팅 전공 통합.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부교과(기회균형1전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자로서 국가보훈대상자, 기초생활수급자·차상위계층·한부모가족 지원대상자, 농어촌학생, 만학도, 특성화고교졸업자 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 11, 12, 13]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트식품학부",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. 식품영양학/푸드테크 전공. (2027학년도 신설 학부)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "반도체학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 205,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 55,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "수능 4개영역(국어, 수학, 영어, 탐구)중 2개영역 합이 10등급 이내 (탐구영역은 등급이 우수한 1과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 60,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 35,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "수능 4개영역(국어, 수학, 영어, 탐구)중 2개영역 합이 10등급 이내 (탐구영역은 등급이 우수한 1과목 반영)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 55,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 76,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 11,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "치위생학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상병리학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 50,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(창의인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 15]
+          }
+        ]
+      },
+      {
+        "departmentName": "군사학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(미래인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 (2027학년도 신설 전형)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 16]
+          }
+        ]
+      },
+      {
+        "departmentName": "상담심리사회복지학부",
+        "campus": "경북 구미",
+        "trackHint": "인문",
+        "totalQuotaHint": 35,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. 상담심리/사회복지 전공 통합.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부교과(기회균형1전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자로서 국가보훈대상자, 기초생활수급자·차상위계층·한부모가족 지원대상자, 농어촌학생, 만학도, 특성화고교졸업자 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 11, 12, 13]
+          },
+          {
+            "trackName": "학생부종합(미래인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 16]
+          }
+        ]
+      },
+      {
+        "departmentName": "산업안전시스템학과",
+        "campus": "경북 구미",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. (2026학년도 재난안전학과에서 학과명 변경)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(미래인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 16]
+          }
+        ]
+      },
+      {
+        "departmentName": "웹툰애니메이션디자인학과",
+        "campus": "경북 구미",
+        "trackHint": "예체능",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "실기/실적(실기전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자. 실기과목(기초디자인/상황표현/칸 만화/일러스트레이션 중 택1), 4시간, 420점.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 30, "실기": 70}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 17, 18]
+          },
+          {
+            "trackName": "실기/실적(포트폴리오전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자. 포트폴리오(이미지) 5매~10매 이내(A4 출력물, 당일 지참, 영상은 USB 지참).",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 30, "포트폴리오": 70}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 19]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠지도재활학부",
+        "campus": "경북 구미",
+        "trackHint": "예체능",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. 스포츠지도/스포츠재활 전공. (2026학년도 스포츠지도학과에서 학부로 개편)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "실기/실적(실기전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자. 실기종목: Z자 달리기·제자리멀리뛰기.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 30, "실기": 70}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 17, 18, 19]
+          }
+        ]
+      },
+      {
+        "departmentName": "항공보안경호학부",
+        "campus": "경북 구미",
+        "trackHint": "예체능",
+        "totalQuotaHint": 75,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과면접전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. 항공보안/경호무도 전공 통합.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 70, "면접": 30}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 8, 9]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부종합(미래인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 16]
+          },
+          {
+            "trackName": "실기/실적(체육실적전형)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "체육특기자",
+            "quotaInitial": 35,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 자격이 있다고 인정된 자로 반영하는 체육실적이 있는 자. ① 입상실적 소지자: 광역시·도 대회 규모 이상 경기 3위 이내 입상(유도·태권도·검도·레슬링·복싱·사격), ② 단(품)증 소지자: 대한체육회 가맹단체 유도·태권도·검도·합기도 단증 소지자.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 30, "면접": 30, "체육실적": 40}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 20, 21]
+          }
+        ]
+      },
+      {
+        "departmentName": "G커리어대학[주간](휴먼케어학과, 제조ICT융합학과, 서비스경영학과, 탄소중립학과)",
+        "campus": "경북 구미",
+        "trackHint": null,
+        "totalQuotaHint": 110,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. G커리어대학(주간) 4개 학과 통합.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부교과(기회균형1전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자로서 국가보훈대상자, 기초생활수급자·차상위계층·한부모가족 지원대상자, 농어촌학생, 만학도, 특성화고교졸업자 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 11, 12, 13]
+          },
+          {
+            "trackName": "학생부교과(평생학습자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "평생학습자",
+            "quotaInitial": 55,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자로서 만 25세 이상인 자(2002.2.28. 이전 출생자) 또는 산업체 근무 경력 1년 이상인 자(2027.3.1. 기준)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 13, 14]
+          },
+          {
+            "trackName": "학생부종합(미래인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 16]
+          }
+        ]
+      },
+      {
+        "departmentName": "G커리어대학[야간](항공엔지니어링학과, 바이오메디컬학과)",
+        "campus": "경북 구미",
+        "trackHint": null,
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과일반전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 따라 이와 동등 이상의 학력이 있다고 인정되는 자. G커리어대학(야간) 항공엔지니어링·바이오메디컬학과 통합.",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 6, 7]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "대구·경북지역 고등학교에서 입학일부터 졸업일까지 고등학교 전 교육과정을 이수한 졸업(예정)자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 10]
+          },
+          {
+            "trackName": "학생부교과(기회균형1전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형",
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자로서 국가보훈대상자, 기초생활수급자·차상위계층·한부모가족 지원대상자, 농어촌학생, 만학도, 특성화고교졸업자 중 하나에 해당하는 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 11, 12, 13]
+          },
+          {
+            "trackName": "학생부교과(평생학습자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "평생학습자",
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 동등 이상의 학력이 있다고 인정되는 자로서 만 25세 이상인 자(2002.2.28. 이전 출생자) 또는 산업체 근무 경력 1년 이상인 자(2027.3.1. 기준)",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"교과": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 13, 14]
+          },
+          {
+            "trackName": "학생부종합(미래인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 관계 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              {"stageLabel": "일괄합산", "multiplier": null, "components": {"서류종합평가": 100}, "stageMaxScore": 600}
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [5, 16]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "정원외 5개 전형(농어촌학생전형 42명, 기회균형2전형 17명, 특성화고교졸업자전형 6명, 성인학습자전형 65명, 특성화고 등을 졸업한 재직자전형 65명)은 모집인원 총괄표에서 학과별 인원을 숫자가 아닌 ○(지원가능 표시)로만 표기하며, 모집요강 5P·31P(공통사항 라항)에 '정원 외 전형은 모집단위별 모집인원을 별도로 지정하지 않으며 모집요강 5P에서 정한 모집인원 범위 내에서 선발한다'고 명시되어 있음. 따라서 이들 정원외 전형은 학과별 quotaInitial 산출 불가(null)이며, 각 학과 totalQuotaHint(정원내 firm 합)에 미포함. 정원외 firm 전형은 별도 university-level 전형으로 취급 필요. (학과별 인원 미지정 → 본 JSON 의 departments 배열에는 미수록; 전형 총정원만 colTotalValidation 에 stated 로 보존)",
+      "이중 체크섬: 정원내 firm 10개 전형열(교과일반·교과면접·지역인재·기회균형1·평생학습자·창의인재·미래인재·실기·포트폴리오·체육실적) 전부 열합 일치(bbox-layout X좌표 스냅 검증), 전체 행합 합계 1177 = 전체 열합 합계 1177 일치.",
+      "항공운항학과: 모집인원 총괄표상 정원내 firm 합은 38명(교과일반5+교과면접31+창의인재2)이며 totalQuotaHint=38 로 기록. 단, 2027 주요변경사항(3p)에는 '항공운항학과 40명(-5명)'으로 표기되어 있어 총괄표 grid 합(38)과 2명 차이가 있음. 차이 원인은 요강에 명시되지 않아 grid 의 firm 합(38)을 정직하게 채택함. 항공운항학과는 교과일반전형 수능최저(국수영탐 중 3개영역 합 10등급 이내)·항공신체검사 1종 적합 판정 필수.",
+      "기회균형1전형(정원내) 지원자격에 농어촌·만학도·특성화고교졸업자가 포함되며, 별도의 농어촌학생전형(정원외)·특성화고교졸업자전형(정원외)·기회균형2전형(정원외)과 자격이 일부 중복됨. 정원내 기회균형1은 grid 에 학과별 숫자(균형1열)가 있어 quotaInitial 수록, 정원외 전형들은 학과별 미지정으로 미수록.",
+      "스마트식품학부·항공산업자율전공·학생부종합(미래인재전형)은 2027학년도 신설. 학과명 변경: 소프트웨어학부→AI·소프트웨어학부, 무인항공기학부→항공모빌리티학부, 재난안전학과→산업안전시스템학과, 스포츠지도학과→스포츠지도재활학부, 휴먼케어서비스학과→휴먼케어학과, ESG탄소중립학과→탄소중립학과.",
+      "G커리어대학[주간]·[야간]은 요강 모집인원 총괄표에서 각각 단일 모집행으로 통합 표기(주간: 휴먼케어/제조ICT융합/서비스경영/탄소중립 4개 학과, 야간: 항공엔지니어링/바이오메디컬 2개 학과). 학과별 분리 인원이 제공되지 않아 통합 단위(학부 단위)로 1개 department 로 수록."
+    ]
+  }
+}

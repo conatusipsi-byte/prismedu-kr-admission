@@ -1,0 +1,2387 @@
+{
+  "meta": {
+    "universityName": "부산가톨릭대학교",
+    "universityId": "cup",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "단일 캠퍼스(부산광역시 금정구 오륜대로 57)",
+    "sourceDocYear": 2027,
+    "departments": 14,
+    "totalTracks": 80,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 firm track 인원 합 = 정원내 소계 + 정원외 소계)",
+      "passed": 14,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학생부교과(교과우수전형Ⅰ)",
+        "computed": 202,
+        "stated": 202,
+        "match": true
+      },
+      {
+        "track": "학생부교과(교과우수전형Ⅱ)",
+        "computed": 108,
+        "stated": 108,
+        "match": true
+      },
+      {
+        "track": "학생부종합(고교학생부전형)",
+        "computed": 149,
+        "stated": 149,
+        "match": true
+      },
+      {
+        "track": "학생부종합(지역인재전형)",
+        "computed": 115,
+        "stated": 115,
+        "match": true
+      },
+      {
+        "track": "학생부종합(자기추천전형)",
+        "computed": 71,
+        "stated": 71,
+        "match": true
+      },
+      {
+        "track": "학생부종합(가톨릭지도자추천전형)",
+        "computed": 32,
+        "stated": 32,
+        "match": true
+      },
+      {
+        "track": "학생부교과(농어촌학생전형)[정원외]",
+        "computed": 21,
+        "stated": 21,
+        "match": true
+      },
+      {
+        "track": "학생부교과(사회배려대상자전형)[정원외]",
+        "computed": 17,
+        "stated": 17,
+        "match": true
+      },
+      {
+        "track": "정원내 소계",
+        "computed": 677,
+        "stated": 677,
+        "match": true
+      },
+      {
+        "track": "정원외 소계",
+        "computed": 38,
+        "stated": 38,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "부산가톨릭대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "간호학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 135,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 25,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(가톨릭지도자추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 15,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 가톨릭 사제·현직 수도회 장상 또는 가톨릭계 교육기관장의 추천을 받은 자(가톨릭 신자 아니어도 지원 가능). 추천서는 지원자격 요건으로만 활용",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 7,
+            "applicationQualification": "국내 농어촌 지역(읍·면) 고등학교 졸업(예정)자. [유형1] 중·고 6년 본인·부모 거주 / [유형2] 초·중·고 12년 본인 거주. 농어촌 소재 특목고(과학·국제·외국어·예술·체육·마이스터) 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회배려대상자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려대상자",
+            "quotaInitial": 8,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 기초생활수급권자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상병리학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 76,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 12,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(가톨릭지도자추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 가톨릭 사제·현직 수도회 장상 또는 가톨릭계 교육기관장의 추천을 받은 자(가톨릭 신자 아니어도 지원 가능). 추천서는 지원자격 요건으로만 활용",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 농어촌 지역(읍·면) 고등학교 졸업(예정)자. [유형1] 중·고 6년 본인·부모 거주 / [유형2] 초·중·고 12년 본인 거주. 농어촌 소재 특목고(과학·국제·외국어·예술·체육·마이스터) 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회배려대상자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려대상자",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 기초생활수급권자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 67,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 16,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(가톨릭지도자추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 가톨릭 사제·현직 수도회 장상 또는 가톨릭계 교육기관장의 추천을 받은 자(가톨릭 신자 아니어도 지원 가능). 추천서는 지원자격 요건으로만 활용",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 6,
+            "applicationQualification": "국내 농어촌 지역(읍·면) 고등학교 졸업(예정)자. [유형1] 중·고 6년 본인·부모 거주 / [유형2] 초·중·고 12년 본인 거주. 농어촌 소재 특목고(과학·국제·외국어·예술·체육·마이스터) 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회배려대상자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려대상자",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 기초생활수급권자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "방사선학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 85,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 15,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(가톨릭지도자추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 5,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 가톨릭 사제·현직 수도회 장상 또는 가톨릭계 교육기관장의 추천을 받은 자(가톨릭 신자 아니어도 지원 가능). 추천서는 지원자격 요건으로만 활용",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23
+            ]
+          },
+          {
+            "trackName": "학생부교과(농어촌학생전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 농어촌 지역(읍·면) 고등학교 졸업(예정)자. [유형1] 중·고 6년 본인·부모 거주 / [유형2] 초·중·고 12년 본인 거주. 농어촌 소재 특목고(과학·국제·외국어·예술·체육·마이스터) 제외",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              10
+            ]
+          },
+          {
+            "trackName": "학생부교과(사회배려대상자전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려대상자",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 기초생활수급권자·차상위계층·한부모가족 지원대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "치기공학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 79,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 21,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 15,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          },
+          {
+            "trackName": "학생부종합(가톨릭지도자추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "가톨릭지도자추천",
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업(예정)자 또는 동등학력자(검정고시·국외고 포함) 중 가톨릭 사제·현직 수도회 장상 또는 가톨릭계 교육기관장의 추천을 받은 자(가톨릭 신자 아니어도 지원 가능). 추천서는 지원자격 요건으로만 활용",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              23
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "병원경영학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 48,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 7,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "언어청각치료학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 44,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "산업안전보건학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "소방방재학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터정보공학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유통마케팅학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 34,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "상담심리학과",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "trackName": "학생부종합(고교학생부전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "trackName": "학생부종합(지역인재전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "부산·울산·경남지역 소재 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 졸업(예정)자(각종학교·방송통신고·학력인정고 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              18
+            ]
+          },
+          {
+            "trackName": "학생부종합(자기추천전형)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고등학교 졸업자 또는 2027년 2월 졸업예정자(검정고시·국외고 포함)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "서류종합평가": 100
+                },
+                "stageMaxScore": 1000
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자율전공학부",
+        "campus": "부산",
+        "trackHint": null,
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "학생부교과(교과우수전형Ⅰ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 16,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "trackName": "학생부교과(교과우수전형Ⅱ)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "국내 일반계 고등학교 졸업자 또는 2027년 2월 졸업예정자(일반고·자율고·과학고·외국어고·국제고·종합고 보통과). 특목고 일부유형(예술고·체육고·마이스터고)·특성화고·검정고시 등 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "서류(공동체역량)": 20
+                },
+                "stageMaxScore": 1000
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8
+            ]
+          }
+        ],
+        "isGwangyeok": true,
+        "note": "자율전공학부(광역/자율전공 모집단위)"
+      }
+    ],
+    "warnings": [
+      "모집인원 총괄표의 '모집정원(내)' 컬럼은 일부 학과에서 firm 수시 인원 합(소계내)보다 1 큼(예: 치기공학과 모집정원내=81 vs 소계내=79, 병원경영 49 vs 48). 수시 외 정원(정시 등) 포함 수치로 보이며, totalQuotaHint 는 규칙대로 firm track 합(소계내+소계외)을 사용함.",
+      "자율전공학부는 광역/자율전공 모집단위(isGwangyeok). 교과우수전형Ⅱ 16명·고교학생부전형 3명만 모집(정원내 소계 19), 정원외/타 전형 없음.",
+      "정원외 전형(농어촌학생·사회배려대상자)은 간호·임상병리·물리치료·방사선 4개 학과만 모집(나머지 학과는 총괄표 '-' 미모집).",
+      "전 전형 수능최저학력기준 없음(보건계열 포함). 자기추천·가톨릭지도자추천은 1단계 서류100%(5배수)→2단계 1단계성적70%+면접30% 단계형(2단계 총점 1,000점).",
+      "교과우수전형Ⅱ의 서류20%는 공동체역량 정성평가(블라인드). 교과반영=12개 과목 평균등급(국·영·수·탐구 등)."
+    ]
+  }
+}

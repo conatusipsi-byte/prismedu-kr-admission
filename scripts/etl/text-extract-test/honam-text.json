@@ -1,0 +1,2122 @@
+{
+  "meta": {
+    "universityName": "호남대학교",
+    "universityId": "honam",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "단일 캠퍼스(광주광역시 광산구). 수시모집 정원내 1,493 + 정원외 82 = 1,575명. 보건의료대학·교육학부 유아교육학과는 학과별 모집, 그 외 사회혁신/AI융합/창의문화스포츠대학은 대학별 통합선발(학부 단위 표기), 기초·차상위·한부모 정원외는 대학별 통합 pool.",
+    "sourceDocYear": 2027,
+    "departments": 23,
+    "totalTracks": 65,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과/학부별 firm track 인원 합)",
+      "passed": 23,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학생부교과[일반학생A전형]",
+        "computed": 512,
+        "stated": 512,
+        "match": true
+      },
+      {
+        "track": "학생부교과[일반학생B전형]",
+        "computed": 210,
+        "stated": 210,
+        "match": true
+      },
+      {
+        "track": "학생부교과(일반고전형)",
+        "computed": 574,
+        "stated": 574,
+        "match": true
+      },
+      {
+        "track": "학생부교과(지역인재전형)",
+        "computed": 197,
+        "stated": 197,
+        "match": true
+      },
+      {
+        "track": "학생부교과(기초·차상위·한부모전형)[정원외]",
+        "computed": 82,
+        "stated": 82,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "호남대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "간호학과",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 191,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 78,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 3,
+                "components": {
+                  "교과": 83,
+                  "출결": 17
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 78,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "간호학과 : 5등급 (수능 국어, 영어, 수학, 탐구(1과목) 중 우수 2개 영역 평균등급)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 25,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "간호학과 : 5등급 (수능 국어, 영어, 수학, 탐구(1과목) 중 우수 2개 영역 평균등급)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외",
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "간호학과 : 5등급 (수능 국어, 영어, 수학, 탐구(1과목) 중 우수 2개 영역 평균등급)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 42,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 83,
+                  "출결": 17
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 16,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "물리치료학과 : 6등급 (수능 국어, 영어, 수학, 탐구(1과목) 중 우수 2개 영역 평균등급)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "물리치료학과 : 6등급 (수능 국어, 영어, 수학, 탐구(1과목) 중 우수 2개 영역 평균등급)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "물리치료학과 : 6등급 (수능 국어, 영어, 수학, 탐구(1과목) 중 우수 2개 영역 평균등급)",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 47,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 18,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "치위생학과",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 46,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생B전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              9,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 20,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "치기공학과",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생B전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              9,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 15,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상병리학과",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 16,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 56,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생B전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              9,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 18,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "반려동물보건산업학과",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생B전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              9,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 15,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 3,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육학과",
+        "campus": "광주(호남대)",
+        "trackHint": "인문",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생B전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              9,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 17,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지·상담심리학부",
+        "campus": "광주(호남대)",
+        "trackHint": "인문",
+        "totalQuotaHint": 62,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 30,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 12,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공공안전행정학부",
+        "campus": "광주(호남대)",
+        "trackHint": "인문",
+        "totalQuotaHint": 97,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 47,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 15,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "서비스·경영학부",
+        "campus": "광주(호남대)",
+        "trackHint": "인문",
+        "totalQuotaHint": 112,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 44,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 28,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "K푸드-조리·영양학부",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 80,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 30,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "건설시스템공학부",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 30,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI융합학부",
+        "campus": "광주(호남대)",
+        "trackHint": "자연",
+        "totalQuotaHint": 120,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 50,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 30,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠과학부",
+        "campus": "광주(호남대)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 120,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 80,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 30,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "K뷰티·패션디자인학부",
+        "campus": "광주(호남대)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 75,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 40,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 10,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "K컬처·미디어콘텐츠학부",
+        "campus": "광주(호남대)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 160,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생A전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 80,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 50,
+                  "출결": 10,
+                  "면접": 40
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(일반고전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "일반고",
+            "quotaInitial": 60,
+            "applicationQualification": "일반고, 자율고 및 특수목적고(과학고/외국어고/국제고 출신자). 2019년 이후(2019년 포함) 졸업자 ~ 2027년 2월 졸업예정자 中 학생부 전산제공 가능 고교출신자 (단, 일반계·특성화 교과과정 동시 운영 고교 및 특수학교/학력인정학교 출신자 제외)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "trackName": "학생부교과(지역인재전형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 20,
+            "applicationQualification": "호남권(광주광역시, 전라남도, 전라북도) 소재 고교에서 입학일부터 졸업일까지 재학·전 교육과정 이수한 졸업(예정)자 [일반고/종합고/특성화고/자율고/특수목적고 가능, 학력인정학교·검정고시 불가]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              11,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공학부",
+        "campus": "광주(호남대)",
+        "trackHint": "null",
+        "totalQuotaHint": 114,
+        "tracks": [
+          {
+            "trackName": "학생부교과[일반학생B전형]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 114,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 고등학교 졸업자와 동등 이상의 학력이 있다고 인정된 자 [일반고, 종합고, 특성화고, 자율고, 특수목적고, 검정고시, 외국고교 출신자 모두 지원 가능]",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              7,
+              9,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로벌한국어교육학전공(외국인유학생전용)",
+        "campus": "광주(호남대)",
+        "trackHint": "인문",
+        "totalQuotaHint": null,
+        "tracks": []
+      },
+      {
+        "departmentName": "기초·차상위·한부모(정원외)_사회혁신대학 통합선발",
+        "campus": "광주(호남대)",
+        "trackHint": "null",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외/대학통합선발",
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "기초·차상위·한부모(정원외)_AI융합대학 통합선발",
+        "campus": "광주(호남대)",
+        "trackHint": "null",
+        "totalQuotaHint": 7,
+        "tracks": [
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외/대학통합선발",
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "기초·차상위·한부모(정원외)_창의문화스포츠대학 통합선발",
+        "campus": "광주(호남대)",
+        "trackHint": "null",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과(기초생활수급자·차상위계층·한부모가족지원대상자전형)[정원외]",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급자·차상위·한부모/정원외/대학통합선발",
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업(예정)자(검정고시·학력인정학교·외국고교 포함) 中 국민기초생활보장법 제2조 제1호(수급권자)·제2호(수급자)·제10호(차상위계층) 및 한부모가족지원법 제5조·제5조의2 대상자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "출결": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              5,
+              12,
+              15
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "호남대는 대부분 대학별 통합선발(학부 단위 표기). 사회혁신대학·AI융합대학·창의문화스포츠대학 소속 9개 학부의 A/일반고/지역인재 인원은 학부 단위로만 공시되어 학부(모집단위) 단위로 적재함. 보건의료대학 8개 학과·교육학부 유아교육학과만 학과 단위.",
+      "기초·차상위·한부모전형(정원외 82명)은 수시 대학별 통합선발이라 보건의료대학 8개 학과는 학과별 인원(합 29명) 명시, 그 외 3개 대학(사회혁신 23/AI융합 7/창의문화 23 = 53명)은 대학 단위 pool로만 공시되어 별도 '대학통합선발' pseudo-모집단위로 적재(임의 학부 배분 금지).",
+      "글로벌한국어교육학전공은 외국인유학생전담 전공으로 국내 수시 정원이 모두 '-'(0)이라 track 없이 totalQuotaHint=null 처리.",
+      "일반학생A전형(면접중심): 간호학과 1단계 3배수, 물리치료학과 1단계 5배수, 그 외 일괄합산. 일반학생A 수능최저 없음.",
+      "수능최저학력기준은 일반학생B/일반고/지역인재/기초전형에서 간호학과 5등급·물리치료학과 6등급만 적용(국·영·수·탐구(1과목) 중 우수 2개 영역 평균등급), 그 외 전체 학부(과) 없음. 간호·물리치료학과는 일반학생B 인원이 없어 실제 적용 전형은 일반고/지역인재/기초임.",
+      "반영비율: 일반학생A 일괄=교과50+출결10+면접40(학생부60+면접40), 단계형 1단계=교과83+출결17(학생부100), 2단계=교과50+출결10+면접40. 일반학생B/일반고/지역인재/기초=교과80+출결20(학생부100).",
+      "정시모집(나군 일반학생A 수능70+학생부30 9명, 나군 일반학생B 자유전공학부 학생부100 0명)은 수시 추출 대상에서 제외함."
+    ]
+  }
+}

@@ -139,6 +139,23 @@ const SOURCES: Source[] = [
   { file: `${B}/sunmoon-text.json`,  univId: "kcue_0000129", type: "text_extract", pdf: "univ/susi-2027/kcue_0000129.pdf" },
   { file: `${B}/mokwon-text.json`,   univId: "kcue_0000112", type: "text_extract", pdf: "univ/susi-2027/kcue_0000112.pdf" },
   { file: `${B}/handong-text.json`,  univId: "kcue_0000196", type: "text_extract", pdf: "univ/susi-2027/kcue_0000196.pdf" },
+  // ── Phase 2 batch 7 (2026-06-21) — 자동 텍스트 입수 한계 배치, 지방 사립 16교(100교 목표). 입학처 board 직링크 → pdftotext -layout + 본체 구조화($0). 행합/열합 이중 체크섬·central 독립 재검증(_b7verify) 통과. 정원외 농어촌/기회균형/특성화고 = quotaInitial null(약간명·통합모집). ──
+  { file: `${B}/cup-text.json`,       univId: "kcue_0000114", type: "text_extract", pdf: "univ/susi-2027/kcue_0000114.pdf" }, // 부산가톨릭대
+  { file: `${B}/dgwise-text.json`,    univId: "kcue_0000101", type: "text_extract", pdf: "univ/susi-2027/kcue_0000101.pdf" }, // 동국대(WISE)
+  { file: `${B}/dhu-text.json`,       univId: "kcue_0000061", type: "text_extract", pdf: "univ/susi-2027/kcue_0000061.pdf" }, // 대구한의대
+  { file: `${B}/gimcheon-text.json`,  univId: "kcue_0000241", type: "text_extract", pdf: "univ/susi-2027/kcue_0000241.pdf" }, // 김천대
+  { file: `${B}/halla-text.json`,     univId: "kcue_0000197", type: "text_extract", pdf: "univ/susi-2027/kcue_0000197.pdf" }, // 한라대
+  { file: `${B}/hanseo-text.json`,    univId: "kcue_0000199", type: "text_extract", pdf: "univ/susi-2027/kcue_0000199.pdf" }, // 한서대
+  { file: `${B}/honam-text.json`,     univId: "kcue_0000208", type: "text_extract", pdf: "univ/susi-2027/kcue_0000208.pdf" }, // 호남대
+  { file: `${B}/iccu-text.json`,      univId: "kcue_0000168", type: "text_extract", pdf: "univ/susi-2027/kcue_0000168.pdf" }, // 인천가톨릭대
+  { file: `${B}/inje-text.json`,      univId: "kcue_0000164", type: "text_extract", pdf: "univ/susi-2027/kcue_0000164.pdf" }, // 인제대
+  { file: `${B}/jwu-text.json`,       univId: "kcue_0000239", type: "text_extract", pdf: "univ/susi-2027/kcue_0000239.pdf" }, // 중원대
+  { file: `${B}/kkot-text.json`,      univId: "kcue_0000215", type: "text_extract", pdf: "univ/susi-2027/kcue_0000215.pdf" }, // 가톨릭꽃동네대
+  { file: `${B}/kyungwoon-text.json`, univId: "kcue_0000244", type: "text_extract", pdf: "univ/susi-2027/kcue_0000244.pdf" }, // 경운대
+  { file: `${B}/sgu-text.json`,       univId: "kcue_0000065", type: "text_extract", pdf: "univ/susi-2027/kcue_0000065.pdf" }, // 신경주대
+  { file: `${B}/songwon-text.json`,   univId: "kcue_0000243", type: "text_extract", pdf: "univ/susi-2027/kcue_0000243.pdf" }, // 송원대
+  { file: `${B}/u1-text.json`,        univId: "kcue_0000154", type: "text_extract", pdf: "univ/susi-2027/kcue_0000154.pdf" }, // 유원대
+  { file: `${B}/uiduk-text.json`,     univId: "kcue_0000160", type: "text_extract", pdf: "univ/susi-2027/kcue_0000160.pdf" }, // 위덕대
 ];
 
 /* ── 학과명 ALIAS — scripts/etl/dept-matcher 의 NAME_ALIAS/resolveDeptName 참조 ── */

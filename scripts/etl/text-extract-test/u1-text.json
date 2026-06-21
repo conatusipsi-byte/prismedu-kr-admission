@@ -1,0 +1,1299 @@
+{
+  "meta": {
+    "universityName": "유원대학교",
+    "universityId": "u1",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "영동캠퍼스(충북 영동) + 아산캠퍼스(충남 아산) 2개 캠퍼스. 옛 영동대학교. 만학도/외국인 전용학과(스마트평생교육학부·미래라이프융합학부·파크골프지도학과·한국어문화학과·글로벌K-컬쳐학과)는 수시 일반전형 정원 0이라 제외.",
+    "sourceDocYear": 2027,
+    "departments": 28,
+    "totalTracks": 64,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 전형 인원 합)",
+      "passed": 28,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      { "track": "학생부종합(정원내)", "computed": 20, "stated": 20, "match": true },
+      { "track": "유원교과(정원내)", "computed": 557, "stated": 557, "match": true },
+      { "track": "유원면접(정원내)", "computed": 222, "stated": 222, "match": true },
+      { "track": "특기자(검도)(정원내)", "computed": 3, "stated": 3, "match": true },
+      { "track": "지역인재Ⅰ(정원내)", "computed": 30, "stated": 30, "match": true },
+      { "track": "지역인재Ⅱ(정원내)", "computed": 2, "stated": 2, "match": true },
+      { "track": "국가보훈대상자(정원내)", "computed": 3, "stated": 3, "match": true },
+      { "track": "계약형학과_조기취업형(정원외)", "computed": 120, "stated": 120, "match": true },
+      { "track": "계약형학과_재교육형(정원외)", "computed": 20, "stated": 20, "match": true },
+      { "track": "농어촌학생(정원외)", "computed": 15, "stated": 15, "match": true },
+      { "track": "특성화고교졸업자(정원외)", "computed": 13, "stated": 13, "match": true },
+      { "track": "기초생활수급자ㆍ차상위계층ㆍ한부모가족지원대상자(정원외)", "computed": 20, "stated": 20, "match": true },
+      { "track": "장애인등대상자(정원외)", "computed": 40, "stated": 40, "match": true },
+      { "track": "전체 계(만학도 제외 firm합)", "computed": 1065, "stated": 1065, "match": true }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "유원대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "사회복지학부",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 67,
+        "tracks": [
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 4]
+          },
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "국가보훈대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "국가보훈",
+            "quotaInitial": 3,
+            "applicationQualification": "「국가보훈기본법」 제3조 제2호 국가보훈대상자로서 교육지원 대상자(독립유공자 자녀·손자녀, 국가유공자 및 그 자녀, 보훈보상대상자 및 그 자녀 등). 고졸(예정)·동등학력·검정고시 합격자. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          },
+          {
+            "trackName": "장애인등대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(장애인등대상자, 정원외)",
+            "quotaInitial": 8,
+            "applicationQualification": "장애인복지법 제32조 장애인 등록 및 특수교육대상자 선정기준 해당자, 또는 시각·청각·지체부자유 장애 국가유공자 등. 고졸(예정)·동등학력·검정고시 등. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠학부",
+        "campus": "영동캠퍼스",
+        "trackHint": "예체능",
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 36,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "특기자(검도)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자(검도)",
+            "quotaInitial": 3,
+            "applicationQualification": "고졸(예정)·동등학력자 중 고교 재학기간 본교 지정 대회 개인/단체 8강 이내 입상자. 검정고시 합격자 지원 불가. 학년별 출석 70% 이상.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 6]
+          }
+        ]
+      },
+      {
+        "departmentName": "호텔조리베이커리학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "와인사이언스학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트팜학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "★■간호학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 107,
+        "tracks": [
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 53,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음. ※간호학과는 면접 결시 시 불합격 처리.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "지역인재Ⅰ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 30,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 지역 고등학교 졸업(예정)자(입학~졸업 재학). 검정고시 합격자 지원 불가. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(기초·차상위·한부모)",
+            "quotaInitial": 2,
+            "applicationQualification": "충청권(대전·세종·충남·충북) 지역 고등학교 졸업(예정)자 중 국민기초생활보장 수급(권)자·차상위계층, 한부모가족 지원대상자 등. 검정고시 합격자 지원 불가. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 6,
+            "applicationQualification": "농어촌(도서·벽지) 지역 중·고 6년(유형1, 부모거주) 또는 초·중·고 12년(유형2, 본인거주) 이수·거주 졸업(예정)자. 특목고·검정고시 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교졸업자(정원외)",
+            "quotaInitial": 6,
+            "applicationQualification": "특성화고등학교 졸업(예정)자(기준학과: 간호과·보건간호과 등). 검정고시·특목고·학력인정고교 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          },
+          {
+            "trackName": "기초생활수급자ㆍ차상위계층ㆍ한부모가족 지원대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(기초·차상위·한부모, 정원외)",
+            "quotaInitial": 10,
+            "applicationQualification": "국민기초생활보장 수급(권)자 및 자녀, 차상위계층(복지급여 수급 또는 확인서 발급 대상), 한부모가족 지원대상 가구 학생. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          }
+        ]
+      },
+      {
+        "departmentName": "치위생학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 41,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌(도서·벽지) 지역 중·고 6년(유형1, 부모거주) 또는 초·중·고 12년(유형2, 본인거주) 이수·거주 졸업(예정)자. 특목고·검정고시 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교졸업자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "특성화고등학교 졸업(예정)자(기준학과: 간호과·보건간호과 등). 검정고시·특목고·학력인정고교 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          },
+          {
+            "trackName": "기초생활수급자ㆍ차상위계층ㆍ한부모가족 지원대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(기초·차상위·한부모, 정원외)",
+            "quotaInitial": 6,
+            "applicationQualification": "국민기초생활보장 수급(권)자 및 자녀, 차상위계층(복지급여 수급 또는 확인서 발급 대상), 한부모가족 지원대상 가구 학생. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          }
+        ]
+      },
+      {
+        "departmentName": "응급구조학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 4]
+          },
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 26,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "산업안전보건학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 4]
+          },
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "자율설계학부",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 86,
+        "tracks": [
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공(자유전공)",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음. 입학 후 영동캠퍼스 학과(부) 선택 가능한 자유전공학부.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 4]
+          },
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공(자유전공)",
+            "quotaInitial": 71,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음. 입학 후 영동캠퍼스 학과(부) 선택 가능한 자유전공학부.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(도서·벽지) 지역 중·고 6년(유형1, 부모거주) 또는 초·중·고 12년(유형2, 본인거주) 이수·거주 졸업(예정)자. 특목고·검정고시 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교졸업자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자(기준학과: 사회복지과·조리식음료과·자동차과·전자과·기계과·정보컴퓨터과·미용과·경영사무과 등). 검정고시·특목고 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          },
+          {
+            "trackName": "기초생활수급자ㆍ차상위계층ㆍ한부모가족 지원대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(기초·차상위·한부모, 정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "국민기초생활보장 수급(권)자 및 자녀, 차상위계층(복지급여 수급 또는 확인서 발급 대상), 한부모가족 지원대상 가구 학생. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          },
+          {
+            "trackName": "장애인등대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(장애인등대상자, 정원외)",
+            "quotaInitial": 6,
+            "applicationQualification": "장애인복지법 제32조 장애인 등록 및 특수교육대상자 선정기준 해당자, 또는 시각·청각·지체부자유 장애 국가유공자 등. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          }
+        ]
+      },
+      {
+        "departmentName": "미래자동차학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "장애인등대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(장애인등대상자, 정원외)",
+            "quotaInitial": 5,
+            "applicationQualification": "장애인복지법 제32조 장애인 등록 및 특수교육대상자 선정기준 해당자, 또는 시각·청각·지체부자유 장애 국가유공자 등. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          }
+        ]
+      },
+      {
+        "departmentName": "드론로봇응용학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "장애인등대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(장애인등대상자, 정원외)",
+            "quotaInitial": 5,
+            "applicationQualification": "장애인복지법 제32조 장애인 등록 및 특수교육대상자 선정기준 해당자, 또는 시각·청각·지체부자유 장애 국가유공자 등. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI소프트웨어학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "장애인등대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(장애인등대상자, 정원외)",
+            "quotaInitial": 5,
+            "applicationQualification": "장애인복지법 제32조 장애인 등록 및 특수교육대상자 선정기준 해당자, 또는 시각·청각·지체부자유 장애 국가유공자 등. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          }
+        ]
+      },
+      {
+        "departmentName": "미디어콘텐츠학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "장애인등대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(장애인등대상자, 정원외)",
+            "quotaInitial": 5,
+            "applicationQualification": "장애인복지법 제32조 장애인 등록 및 특수교육대상자 선정기준 해당자, 또는 시각·청각·지체부자유 장애 국가유공자 등. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티케어학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 45,
+        "tracks": [
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 39,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(도서·벽지) 지역 중·고 6년(유형1, 부모거주) 또는 초·중·고 12년(유형2, 본인거주) 이수·거주 졸업(예정)자. 특목고·검정고시 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          },
+          {
+            "trackName": "특성화고교졸업자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고교졸업자(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고등학교 졸업(예정)자(기준학과: 미용과). 검정고시·특목고·학력인정고교 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          },
+          {
+            "trackName": "기초생활수급자ㆍ차상위계층ㆍ한부모가족 지원대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(기초·차상위·한부모, 정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "국민기초생활보장 수급(권)자 및 자녀, 차상위계층(복지급여 수급 또는 확인서 발급 대상), 한부모가족 지원대상 가구 학생. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰·소방행정학부",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "국방인재개발학과",
+        "campus": "영동캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "초등특수교육과",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "중등특수교육과",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 49,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "문화복지융합학부",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 39,
+        "tracks": [
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 19,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          }
+        ]
+      },
+      {
+        "departmentName": "창의설계학부",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 72,
+        "tracks": [
+          {
+            "trackName": "학생부종합",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공(자유전공)",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음. 입학 후 아산캠퍼스 학과(부) 선택 가능한 자유전공학부.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 4]
+          },
+          {
+            "trackName": "유원교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공(자유전공)",
+            "quotaInitial": 32,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음. 입학 후 아산캠퍼스 학과(부) 선택 가능한 자유전공학부.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 100 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "유원면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공(자유전공)",
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 이상 자격자, 졸업학력 검정고시 합격자. 출신고교 계열·학과 무관. 최저학력기준 없음. 입학 후 아산캠퍼스 학과(부) 선택 가능한 자유전공학부.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 5]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌(도서·벽지) 지역 중·고 6년(유형1, 부모거주) 또는 초·중·고 12년(유형2, 본인거주) 이수·거주 졸업(예정)자. 특목고·검정고시 출신 지원 불가. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          },
+          {
+            "trackName": "장애인등대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(장애인등대상자, 정원외)",
+            "quotaInitial": 6,
+            "applicationQualification": "장애인복지법 제32조 장애인 등록 및 특수교육대상자 선정기준 해당자, 또는 시각·청각·지체부자유 장애 국가유공자 등. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          }
+        ]
+      },
+      {
+        "departmentName": "뷰티산업학과",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 60,
+        "tracks": [
+          {
+            "trackName": "계약형학과_조기취업형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(조기취업형, 정원외)",
+            "quotaInitial": 60,
+            "applicationQualification": "고졸(예정)·동등학력·검정고시 합격자로 기업과 고용계약 유지(졸업 시까지). 조기취업형 계약학과. 최저학력기준 없음. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "반도체융합학과",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "계약형학과_조기취업형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(조기취업형, 정원외)",
+            "quotaInitial": 30,
+            "applicationQualification": "고졸(예정)·동등학력·검정고시 합격자로 기업과 고용계약 유지(졸업 시까지). 조기취업형 계약학과. 최저학력기준 없음. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "AI모빌리티학과",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "계약형학과_조기취업형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(조기취업형, 정원외)",
+            "quotaInitial": 30,
+            "applicationQualification": "고졸(예정)·동등학력·검정고시 합격자로 기업과 고용계약 유지(졸업 시까지). 조기취업형 계약학과. 최저학력기준 없음. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "문화복지학과",
+        "campus": "아산캠퍼스",
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "계약형학과_재교육형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "계약학과(재교육형, 정원외)",
+            "quotaInitial": 20,
+            "applicationQualification": "고졸(예정)·동등학력·검정고시 합격자로 계약 산업체에서 졸업 후~입학일 기준 10개월 이상 재직(4대보험 가입·상시근로 5인 이상 사업장). 재교육형 계약학과. 최저학력기준 없음. 정원외.",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과)": 60, "면접": 40 }, "stageMaxScore": null }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 9]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "만학도(정원외) 전형: 총괄표에 학과별 인원이 모두 '○'(인원 미표기)로 표기되어 firm quota 산출 불가 → 전 모집단위 대상(일부 제외학과: 간호·치위생·물리치료·응급구조·한국어문화·유아교육·초등특수·중등특수·글로벌K-컬쳐·AI모빌리티·반도체융합·뷰티산업·문화복지)이나 학과 단위 인원이 없어 구조화 departments/tracks에서 제외. 총괄표 만학도 열 합계는 0으로 명시됨.",
+      "외국인 전용학과(한국어문화학과·글로벌K-컬쳐학과) 및 만학도 전용학과(스마트평생교육학부·미래라이프융합학부·파크골프지도학과)는 일반 수시 정원이 0(별도 모집요강)이므로 departments에서 제외.",
+      "학과명 '★■간호학과'는 원문 그대로 보존(★=교직과정 개설, ■=간호교육인증 획득 표기 포함).",
+      "totalQuotaHint는 정원내+정원외 firm quota 합(만학도 제외)으로 산출. 총괄표 우측 '계' 열(만학도 ○=0 처리)과 전 학과 일치, 전체 합계 1,065명 = 총괄표 총계 '계' 1,065와 일치(이중 체크섬 통과).",
+      "모든 전형이 수능최저학력기준 없음(각 전형 지원자격에 '최저학력기준 없음' 명시). 교과 반영은 국어·영어·수학·사회·과학 중 석차등급 상위 9과목(학년구분 없음); 학생부종합만 사회/과학 필수 1과목+선택 8과목 구조."
+    ]
+  }
+}

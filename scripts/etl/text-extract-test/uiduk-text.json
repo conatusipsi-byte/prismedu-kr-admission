@@ -1,0 +1,730 @@
+{
+  "meta": {
+    "universityName": "위덕대학교",
+    "universityId": "uiduk",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "경주 단일캠퍼스 (경북 경주시 강동면). 불교계 소규모 사립 — 경찰·소방·간호·물리치료·유아·불교 등. 야간(체육학부(야)) 및 성인학습자(라이프up융합대학) 모집단위 포함",
+    "sourceDocYear": 2027,
+    "departments": 19,
+    "totalTracks": 33,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 전형 인원 합)",
+      "passed": 18,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      { "track": "학생부교과 면접전형", "computed": 150, "stated": 150, "match": true },
+      { "track": "학생부교과 일반전형", "computed": 181, "stated": 181, "match": true },
+      { "track": "학생부교과 성인학습자면접전형", "computed": 77, "stated": 77, "match": true },
+      { "track": "학생부교과 성인학습자일반전형", "computed": 72, "stated": 72, "match": true },
+      { "track": "실기/실적 특기자전형", "computed": 22, "stated": 22, "match": true },
+      { "track": "학생부교과 지역인재특별전형(35+기회균형3)", "computed": 38, "stated": 38, "match": true },
+      { "track": "정원외 농어촌학생전형(학생부종합)", "computed": 8, "stated": 8, "match": true },
+      { "track": "정원외 농어촌학생전형(학생부교과 별1)", "computed": 8, "stated": 8, "match": true },
+      { "track": "정원외 특성화고교졸업자전형(별2)", "computed": 6, "stated": 6, "match": true },
+      { "track": "정원외 기회균형선발제전형(별3)", "computed": 8, "stated": 8, "match": true },
+      { "track": "정원외 특성화고등을졸업한재직자전형(별4)", "computed": 6, "stated": 6, "match": true }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "위덕대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "사회복지학과",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 19,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영학과",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 9,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "불교문화학과",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수교육학부 초등특수교육전공",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (특수교육학부 지원자는 전공을 반드시 선택)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (특수교육학부 지원자는 전공을 반드시 선택)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수교육학부 중등특수교육전공",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 16,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (특수교육학부 지원자는 전공을 반드시 선택)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (특수교육학부 지원자는 전공을 반드시 선택)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "외식제과제빵창업학과",
+        "campus": "경주",
+        "trackHint": "자연",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 17,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "경주",
+        "trackHint": "자연",
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          },
+          {
+            "trackName": "농어촌학생전형(학생부종합)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생/정원외",
+            "quotaInitial": 2,
+            "applicationQualification": "지방자치법 제3조에 따른 읍·면지역 및 도서·벽지지역 소재 초·중·고 졸업(예정)자. [지원자격1] 중학교 입학~고교 졸업까지 농어촌 소재 중·고 전 과정 연속이수 및 본인·부모 모두 농어촌 거주 / [지원자격2] 초등학교 입학~고교 졸업까지 농어촌 소재 초·중·고 전 과정 연속이수 및 본인 농어촌 거주",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류종합평가": 60, "면접": 40 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 13]
+          }
+        ]
+      },
+      {
+        "departmentName": "반려동물산업학과",
+        "campus": "경주",
+        "trackHint": "자연",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "체육학부",
+        "campus": "경주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 49,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형 (레저스포츠전공/전문스포츠지도전공)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 27,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "실기/실적위주 특기자전형",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특기자",
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자로서 고교 재학 중 전국대회·광역시도대회·시군구대회 체육분야 입상자 또는 해당 자격증 소지자(본교 지정 종목만 인정, 단체/복식/개인전 모두 인정)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 30, "입상실적또는자격증": 70 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 11]
+          }
+        ]
+      },
+      {
+        "departmentName": "체육학부(야) 레저스포츠전공(야)",
+        "campus": "경주",
+        "trackHint": "예체능",
+        "totalQuotaHint": 9,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "야간",
+            "quotaInitial": 9,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "전력시스템공학과",
+        "campus": "경주",
+        "trackHint": "자연",
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "학생부교과 면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 7]
+          },
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "경주",
+        "trackHint": "자연",
+        "totalQuotaHint": null,
+        "tracks": [
+          {
+            "trackName": "학생부교과 일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 86,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 8]
+          },
+          {
+            "trackName": "학생부교과 지역인재특별전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(대구·경북)",
+            "quotaInitial": 35,
+            "applicationQualification": "입학에서 졸업(예정)까지 고교 전 교육과정을 대구·경북지역 고교에서 이수한 자(2022학년도 이후 중학교 입학자는 수도권이 아닌 지역 중학교 전 과정 이수·졸업 및 고교 재학기간 내 대구·경북 거주)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          },
+          {
+            "trackName": "학생부교과 지역인재특별전형(기회균형)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(대구·경북)/기회균형",
+            "quotaInitial": 3,
+            "applicationQualification": "지역인재특별전형 지원자격(대구·경북 고교 전 과정 이수)에 더하여 국민기초생활보장법 수급권자·차상위계층 또는 한부모가족지원법 지원대상자. ※ 모집요강 마. 주: 지역인재특별전형 35명 안의 3명이 기회균형 모집인원이라는 안내와 모집인원 총괄표 합계(35+3=38)가 상충하여 행합 불확실",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 12]
+          },
+          {
+            "trackName": "농어촌학생전형(학생부종합)",
+            "trackTypeRaw": "학생부위주(종합)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생/정원외",
+            "quotaInitial": 6,
+            "applicationQualification": "지방자치법 제3조에 따른 읍·면지역 및 도서·벽지지역 소재 초·중·고 졸업(예정)자. [지원자격1] 중학교 입학~고교 졸업까지 농어촌 소재 중·고 전 과정 연속이수 및 본인·부모 모두 농어촌 거주 / [지원자격2] 초등학교 입학~고교 졸업까지 농어촌 소재 초·중·고 전 과정 연속이수 및 본인 농어촌 거주",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "서류종합평가": 60, "면접": 40 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 13]
+          }
+        ]
+      },
+      {
+        "departmentName": "역사문화콘텐츠학과",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 29,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 29,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자로서 만 25세 이상인 자(기준 2027.3.1.)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트경영학과",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자로서 만 25세 이상인 자(기준 2027.3.1.)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지서비스상담학과",
+        "campus": "경주",
+        "trackHint": "인문",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자면접전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자로서 만 25세 이상인 자(기준 2027.3.1.)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부": 51, "면접": 49 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 9]
+          }
+        ]
+      },
+      {
+        "departmentName": "웰니스케어학과",
+        "campus": "경주",
+        "trackHint": "자연",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자로서 만 25세 이상인 자(기준 2027.3.1.)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          }
+        ]
+      },
+      {
+        "departmentName": "첨단산업학과",
+        "campus": "경주",
+        "trackHint": "자연",
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자로서 만 25세 이상인 자(기준 2027.3.1.)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          }
+        ]
+      },
+      {
+        "departmentName": "라이프융합학과",
+        "campus": "경주",
+        "trackHint": null,
+        "totalQuotaHint": 24,
+        "tracks": [
+          {
+            "trackName": "학생부교과 성인학습자일반전형",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "성인학습자",
+            "quotaInitial": 24,
+            "applicationQualification": "고등학교 졸업(예정)자 또는 동등 학력자로서 만 25세 이상인 자(기준 2027.3.1.)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "학생부(교과80,출결20)": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [3, 10]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "수능최저학력기준 섹션이 모집요강 전체에 존재하지 않음 — 위덕대 수시 전형은 전 모집단위 수능최저 미적용(csatMinimumExempt=true, csatMinimumRawText='없음'). 문서 내 '수능성적'은 정시모집 장학금 안내(27~28p)뿐.",
+      "간호학과 totalQuotaHint=null: 모집요강 마.항 '지역인재특별전형의 3명은 상기 전형(35명) 안에 기회균형선발 모집인원'(즉 3은 35의 부분집합)과 모집인원 총괄표 합계행(지역인재 컬럼=38=35+3, 가산)이 상충. 두 전형(35·3)은 각 세부표 기재값 그대로 quota 유지하되, 행합은 불확실하여 null 처리(지어내기 방지).",
+      "정원외 다음 4개 전형은 특정 모집단위에 고정 배정되지 않고 '해당 모집단위 전체에서 성적순으로' 선발하는 풀(pool) 단위 정원이라 개별 학과 totalQuotaHint·tracks에 포함하지 않음(개별 학과 quota 분배 불가): 별1] 농어촌학생전형(학생부교과) 8명, 별2] 특성화고교졸업자전형 6명, 별3] 기회균형선발제전형 8명, 별4] 특성화고등을졸업한재직자전형 6명. 대상 모집단위: 사회복지·불교문화·경영·유아교육·외식제과제빵·반려동물·체육학부·전력시스템. (열합 검증에는 8/6/8/6으로 포함, colTotalValidation 참조)",
+      "장애인등대상자전형(학생부 51%+면접 49%)·북한이탈주민특별전형(면접 100%)은 모집인원이 '약간명'으로 명시되어 개별 학과 quota 산정 불가 → tracks·totalQuotaHint에서 제외. 대상 모집단위: 사회복지·불교문화·경영·유아교육·외식제과제빵·반려동물·체육학부·전력시스템.",
+      "농어촌학생전형은 학생부교과 경로(별1, 8명, 풀 단위)와 학생부종합 경로(간호6·물리치료2=8명, 모집인원 총괄표 11번째 컬럼 '농어촌(종합)')로 이원화. 학생부종합 경로만 학과별 고정 배정(간호6·물리치료2)이라 해당 학과 tracks에 포함했고, 학생부교과 경로(별1)는 풀 단위로 제외.",
+      "한국어학과는 모집인원 총괄표에 모집단위로 표기되어 있으나 어떤 수시 전형 컬럼에도 인원 배정이 없고(0) 세부 모집표도 없어 departments에서 제외(수시 모집 없음, 정시 전용 추정).",
+      "전형요소별 반영비율은 백분율(학생부 51%+면접 49% 등)로 명확하나 모집요강은 1,000점 만점 환산점수 체계(면접 최고490/최저190, 학생부교과 등급별 환산표 등)를 별도 운영. components에는 비율(%)을, stageMaxScore에는 총점 1,000점을 기재."
+    ]
+  }
+}

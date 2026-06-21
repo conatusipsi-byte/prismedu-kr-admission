@@ -1,0 +1,765 @@
+{
+  "meta": {
+    "universityName": "김천대학교",
+    "universityId": "gimcheon",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "김천(경북) 단일 캠퍼스. 수시모집(정원내+정원외)만 추출, 전형기간자율모집(1차)·정시 제외",
+    "sourceDocYear": 2027,
+    "departments": 18,
+    "totalTracks": 36,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 firm 수시 전형 인원 합)",
+      "passed": 18,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      { "track": "일반교과전형", "computed": 326, "stated": 326, "match": true },
+      { "track": "일반면접전형", "computed": 156, "stated": 156, "match": true },
+      { "track": "고른기회전형", "computed": 3, "stated": 3, "match": true },
+      { "track": "지역인재전형", "computed": 40, "stated": 40, "match": true },
+      { "track": "실기전형", "computed": 30, "stated": 30, "match": true },
+      { "track": "농어촌학생전형(정원외)", "computed": 15, "stated": 15, "match": true },
+      { "track": "기회균형전형(정원외)", "computed": 19, "stated": 19, "match": true }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "김천대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "임상병리학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "방사선학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 64,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 49,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "고른기회전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회(국가보훈/만학도/자립지원/기초생활수급/차상위/장애인)",
+            "quotaInitial": 1,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등 학력자 중 국가보훈대상자(교육지원 대상), 만학도(입학연도 3.1 기준 30세 이상), 자립지원대상아동, 국민기초생활보장법상 수급권자·차상위계층·지원대상자, 장애인 등 해당자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 19]
+          },
+          {
+            "trackName": "농어촌학생전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고교 졸업(예정)자 중 농어촌지역 중·고 6년 또는 초·중·고 12년 전 과정 이수 및 본인(6년형은 부·모 포함) 농어촌지역 거주자. 검정고시·농어촌 소재 특목고(과학·외국어·국제·예술·체육고) 출신자 제외",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 23]
+          },
+          {
+            "trackName": "기회균형전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "국내 고교 졸업(예정)자 또는 동등 학력자 중 국민기초생활보장법 제2조 1·2·10호 대상자(기초생활수급자·복지급여수급자·차상위계층) 및 한부모가족지원법 제5조·제5조의2 지원대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 25]
+          }
+        ]
+      },
+      {
+        "departmentName": "치기공학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "치위생학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 30,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 68,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "농어촌학생전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고교 졸업(예정)자 중 농어촌지역 중·고 6년 또는 초·중·고 12년 전 과정 이수 및 본인(6년형은 부·모 포함) 농어촌지역 거주자. 검정고시·농어촌 소재 특목고(과학·외국어·국제·예술·체육고) 출신자 제외",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 23]
+          },
+          {
+            "trackName": "기회균형전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "국내 고교 졸업(예정)자 또는 동등 학력자 중 국민기초생활보장법 제2조 1·2·10호 대상자(기초생활수급자·복지급여수급자·차상위계층) 및 한부모가족지원법 제5조·제5조의2 지원대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 25]
+          }
+        ]
+      },
+      {
+        "departmentName": "안경광학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 7,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 150,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 51,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "고른기회전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "고른기회(국가보훈/만학도/자립지원/기초생활수급/차상위/장애인)",
+            "quotaInitial": 2,
+            "applicationQualification": "고교 졸업(예정)자 또는 동등 학력자 중 국가보훈대상자(교육지원 대상), 만학도(입학연도 3.1 기준 30세 이상), 자립지원대상아동, 국민기초생활보장법상 수급권자·차상위계층·지원대상자, 장애인 등 해당자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 19]
+          },
+          {
+            "trackName": "지역인재전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재(대구·경북)",
+            "quotaInitial": 40,
+            "applicationQualification": "대구/경북지역 고교 졸업(예정)자로서 해당지역 고등학교에서 입학부터 졸업까지 전 교육과정을 이수한 자. 단, 간호학과는 비수도권 중학교 입학~졸업 이수 및 거주 + 대구/경북 고교 입학~졸업 이수 및 거주 요건 모두 충족",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 90, "출석": 10 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 20]
+          },
+          {
+            "trackName": "농어촌학생전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 9,
+            "applicationQualification": "국내 고교 졸업(예정)자 중 농어촌지역 중·고 6년 또는 초·중·고 12년 전 과정 이수 및 본인(6년형은 부·모 포함) 농어촌지역 거주자. 검정고시·농어촌 소재 특목고(과학·외국어·국제·예술·체육고) 출신자 제외",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 23]
+          },
+          {
+            "trackName": "기회균형전형(학생부교과)(정원외)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기회균형(정원외)",
+            "quotaInitial": 13,
+            "applicationQualification": "국내 고교 졸업(예정)자 또는 동등 학력자 중 국민기초생활보장법 제2조 1·2·10호 대상자(기초생활수급자·복지급여수급자·차상위계층) 및 한부모가족지원법 제5조·제5조의2 지원대상자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 25]
+          }
+        ]
+      },
+      {
+        "departmentName": "경찰소방학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "K-글로벌학과",
+        "campus": "김천",
+        "trackHint": null,
+        "totalQuotaHint": 10,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 2,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "스마트모빌리티학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠재활학과",
+        "campus": "김천",
+        "trackHint": "자연",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 6,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회복지학과",
+        "campus": "김천",
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "상담심리학과",
+        "campus": "김천",
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과[사범]",
+        "campus": "김천",
+        "trackHint": null,
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "생활체육학과",
+        "campus": "김천",
+        "trackHint": "예체능",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          },
+          {
+            "trackName": "실기전형(실기위주)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (실기고사: 10m왕복달리기·제자리멀리뛰기)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "실기": 70, "교과": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 21, 22]
+          }
+        ]
+      },
+      {
+        "departmentName": "신학과",
+        "campus": "김천",
+        "trackHint": null,
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "일반면접전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (지원자 전원 면접 대상)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 60, "출석": 10, "면접": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      },
+      {
+        "departmentName": "음악학과",
+        "campus": "김천",
+        "trackHint": "예체능",
+        "totalQuotaHint": 20,
+        "tracks": [
+          {
+            "trackName": "실기전형(실기위주)",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자 (세부전공 택1: 피아노·성악·작곡·관현악/타악, 실기고사 곡목 자유곡 등)",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "실기": 70, "교과": 30 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 21]
+          }
+        ]
+      },
+      {
+        "departmentName": "자율전공학부",
+        "campus": "김천",
+        "trackHint": null,
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "일반교과전형(학생부교과)",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "자율전공(입학 후 1년 전공탐색, 2학년 진급시 ◎ 표시 학과 중 선택)",
+            "quotaInitial": 23,
+            "applicationQualification": "국내·외 고등학교 졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자. 입학 후 1년 전공탐색과정을 거쳐 2학년 진급시 ◎ 표시 학과(경찰소방·K-글로벌·스마트모빌리티·스포츠재활·사회복지·상담심리) 중 선택",
+            "reflectionStages": [
+              { "stageLabel": "일괄합산", "multiplier": null, "components": { "교과": 100 }, "stageMaxScore": 1000 }
+            ],
+            "csatMinimumRawText": "해당사항 없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [4, 12, 18]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "수능 최저학력기준: 모든 전형 없음(요강 명시 ‘수능 최저학력기준: 모든 전형 없습니다’ + 각 전형 ‘해당사항 없음’).",
+      "성인학습자전형(정원내 60명)·특성화고졸재직자전형(정원외 15명)은 모집인원 총괄표상 ‘전형기간자율모집’ 컬럼에 속하므로 수시 추출에서 제외함(요강 표지 수시589명 = firm 수시 트랙 합과 일치 확인).",
+      "산업안전학과·건강재활서비스학과·스마트물류시스템공학과는 수시 모집인원이 0(성인학습자·특성화고졸자=전형기간자율모집만 존재)이므로 수시 학과 목록에서 제외함.",
+      "totalQuotaHint는 규칙 #3에 따라 학과별 firm 수시 전형(정원내+정원외) 인원 합산값이며 입학정원과 다를 수 있음(예: 방사선학과 64=정원내60+정원외4, 물리치료학과 68, 간호학과 150).",
+      "sourcePages는 PDF 물리적 페이지 번호 기준(요강 인쇄쪽수 = PDF페이지 - 2). 모집인원표=PDF p4, 전형방법=PDF p12.",
+      "실기전형(실기위주)는 ‘선발방법 일괄합산’으로 기재되어 stageLabel=일괄합산, components 실기70+교과30으로 처리(단계형 아님)."
+    ]
+  }
+}

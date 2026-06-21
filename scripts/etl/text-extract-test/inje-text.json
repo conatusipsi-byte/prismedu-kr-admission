@@ -1,0 +1,2928 @@
+{
+  "meta": {
+    "universityName": "인제대학교",
+    "universityId": "inje",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "method": "pdftotext -layout + Claude Code 본체 직접 구조화 (Vision API 미사용)",
+    "visionCost": 0,
+    "campusScope": "김해캠퍼스 단일(의예과 면접은 부산캠퍼스 실시). 백병원 기반 의약계열(의예·약학·간호·보건) + 일반계열 종합사립",
+    "sourceDocYear": 2027,
+    "departments": 24,
+    "totalTracks": 95,
+    "rowSumValidation": {
+      "basis": "totalQuotaHint(학과별 수시 firm 전형 인원 합=정원내+정원외)",
+      "passed": 24,
+      "failed": 0,
+      "failedList": []
+    },
+    "colTotalValidation": [
+      {
+        "track": "학생부교과",
+        "computed": 799,
+        "stated": 799,
+        "match": true
+      },
+      {
+        "track": "면접",
+        "computed": 245,
+        "stated": 245,
+        "match": true
+      },
+      {
+        "track": "지역인재Ⅰ",
+        "computed": 67,
+        "stated": 67,
+        "match": true
+      },
+      {
+        "track": "지역인재Ⅱ",
+        "computed": 184,
+        "stated": 184,
+        "match": true
+      },
+      {
+        "track": "지역인재 기초생활수급권자",
+        "computed": 7,
+        "stated": 7,
+        "match": true
+      },
+      {
+        "track": "의예·약학",
+        "computed": 33,
+        "stated": 33,
+        "match": true
+      },
+      {
+        "track": "지역의사",
+        "computed": 15,
+        "stated": 15,
+        "match": true
+      },
+      {
+        "track": "특성화고교",
+        "computed": 110,
+        "stated": 110,
+        "match": true
+      },
+      {
+        "track": "사회배려대상자",
+        "computed": 2,
+        "stated": 2,
+        "match": true
+      },
+      {
+        "track": "실기",
+        "computed": 55,
+        "stated": 55,
+        "match": true
+      },
+      {
+        "track": "체육특기자",
+        "computed": 40,
+        "stated": 40,
+        "match": true
+      },
+      {
+        "track": "농어촌학생",
+        "computed": 48,
+        "stated": 48,
+        "match": true
+      },
+      {
+        "track": "기초생활수급권자",
+        "computed": 40,
+        "stated": 40,
+        "match": true
+      }
+    ],
+    "checksumPassed": true
+  },
+  "result": {
+    "universityName": "인제대학교",
+    "year": 2027,
+    "recruitmentSeason": "susi",
+    "departments": [
+      {
+        "departmentName": "의예과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 78,
+        "tracks": [
+          {
+            "trackName": "지역인재Ⅰ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 31,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 각 2등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "지역인재 기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,기초생활수급권자",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만 + 부울경 소재 고교 전 교육과정 이수(2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 이수·거주). 검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 각 2등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          },
+          {
+            "trackName": "의예·약학",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 25,
+            "applicationQualification": "일반고/자율고/대안학교/종합고(인문)/과학고·국제고·외국어고/검정고시. 의예과·약학과는 3-1까지 과학교과 20단위(진로선택 포함) 이상 이수자만(검정고시 제외). 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 각 2등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              17
+            ]
+          },
+          {
+            "trackName": "지역의사",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,지역의사",
+            "quotaInitial": 15,
+            "applicationQualification": "우리대학 의예과 입학 후 의무복무 지역 10년 복무 지역의사 희망자로 부울경 중학교 입학~졸업 이수·거주 및 해당지역 고교 입학~졸업 이수·거주(검정고시 불가, 해당지역별 복수지원 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 각 2등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              18
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 각 2등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "약학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 26,
+        "tracks": [
+          {
+            "trackName": "지역인재Ⅰ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 6,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 합이 9등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 5,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 합이 9등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "지역인재 기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,기초생활수급권자",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만 + 부울경 소재 고교 전 교육과정 이수(2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 이수·거주). 검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 합이 9등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          },
+          {
+            "trackName": "의예·약학",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "일반고/자율고/대안학교/종합고(인문)/과학고·국제고·외국어고/검정고시. 의예과·약학과는 3-1까지 과학교과 20단위(진로선택 포함) 이상 이수자만(검정고시 제외). 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학(미적분 또는 기하 중 택1), 영어, 과학탐구(택1) 4개 영역 합이 9등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              17
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "혁신신약⋅제약공학계열",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 101,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 45,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 30,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "간호학과[교직]",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 92,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 64,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회·과학 중 1과목) 중 2개 영역 합이 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 25,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회·과학 중 1과목) 중 2개 영역 합이 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "지역인재 기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재,기초생활수급권자",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만 + 부울경 소재 고교 전 교육과정 이수(2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 이수·거주). 검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 탐구(사회·과학 중 1과목) 중 2개 영역 합이 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "물리치료학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 18,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "반려동물보건학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 44,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 23,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "방사선학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 1,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 6,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠헬스케어학부(스포츠산업⋅재활전공)",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 33,
+        "tracks": [
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          },
+          {
+            "trackName": "실기",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 28,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 30,
+                  "면접": 20,
+                  "실기": 50
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              22
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "스포츠헬스케어학부(경기지도전공)",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 40,
+        "tracks": [
+          {
+            "trackName": "체육특기자",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "체육특기자",
+            "quotaInitial": 40,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자로 종목별(조정·씨름·축구·필드하키) 자격조건 충족자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 15,
+                  "출결": 5,
+                  "경기실적": 80
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "임상병리학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 46,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 22,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "작업치료학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 41,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅰ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 4,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "1단계",
+                "multiplier": 5,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              },
+              {
+                "stageLabel": "2단계",
+                "multiplier": null,
+                "components": {
+                  "1단계성적": 80,
+                  "면접": 20
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "사회배려대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 국가보훈대상자/기초생활수급(권)자·차상위계층·한부모가족 지원대상자/만 30세 이상 만학도/특수교육대상자 자격 충족자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              20
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 1,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "의생명보건⋅의료공학계열",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 231,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 153,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 35,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 30,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 5,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "유아교육과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "인문",
+        "totalQuotaHint": 23,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 11,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "특수교육과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "인문",
+        "totalQuotaHint": 25,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 12,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "사회배려대상자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "사회배려대상자",
+            "quotaInitial": 1,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 국가보훈대상자/기초생활수급(권)자·차상위계층·한부모가족 지원대상자/만 30세 이상 만학도/특수교육대상자 자격 충족자",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "사회과학계열",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "인문",
+        "totalQuotaHint": 174,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 69,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 32,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 48,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 16,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 5,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "경영계열",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "인문",
+        "totalQuotaHint": 65,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 50,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 2,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 2,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 3,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "글로컬리더스학부(이공계열)",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 18,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 과탐(1과목) 중 수학 포함 2합 7등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 8,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "국어, 수학, 영어, 과탐(1과목) 중 수학 포함 2합 9등급 이내",
+            "csatMinimumExempt": false,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "자유전공학부",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": null,
+        "totalQuotaHint": 37,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 30,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 5,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 2,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "웹툰영상학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 13,
+        "tracks": [
+          {
+            "trackName": "실기",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 13,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 20,
+                  "실기": 80
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              22
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "음악학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "예체능",
+        "totalQuotaHint": 14,
+        "tracks": [
+          {
+            "trackName": "실기",
+            "trackTypeRaw": "실기/실적위주",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 14,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "실기": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              22
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "미디어⋅콘텐츠계열",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "인문",
+        "totalQuotaHint": 123,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 85,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 15,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 15,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "공학·건축계열",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 212,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 113,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 20,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 20,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 51,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "융합기술공학과",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 15,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 10,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 5,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "departmentName": "컴퓨터·AI⋅게임⋅스마트물류계열",
+        "campus": "김해캠퍼스(단, 의예과는 부산캠퍼스 면접)",
+        "trackHint": "자연",
+        "totalQuotaHint": 117,
+        "tracks": [
+          {
+            "trackName": "학생부교과",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 52,
+            "applicationQualification": "일반고/자율고/대안학교(교육부인가)/종합고(인문)/과학고·외국어고·국제고/검정고시 졸업(예정)자. 예술고·체육고·마이스터고·특성화고[직업]·학력인정고·방송통신고·해외고·각종학교 지원 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              14
+            ]
+          },
+          {
+            "trackName": "면접",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": null,
+            "quotaInitial": 15,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자(검정고시·특성화고·특수목적고·해외고 등 지원 가능)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 70,
+                  "면접": 30
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              15
+            ]
+          },
+          {
+            "trackName": "지역인재Ⅱ",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "지역인재",
+            "quotaInitial": 30,
+            "applicationQualification": "부산·울산·경남 소재 고등학교에서 입학~졸업 전 교육과정 이수 졸업(예정)자. 단 의예과·약학과·간호학과 지원자 중 2022학년도 이후 중학교 입학자는 수도권 외 중학교+부울경 고교 전 교육과정 이수 및 해당지역 거주(검정고시 불가)",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              16
+            ]
+          },
+          {
+            "trackName": "특성화고교",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "특성화고",
+            "quotaInitial": 12,
+            "applicationQualification": "특성화고[직업]/종합고 직업계열/마이스터고/예술고·체육고·방송통신고·학력인정고 졸업(예정)자. 특성화고[대안]·대안학교·검정고시 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              19
+            ]
+          },
+          {
+            "trackName": "농어촌학생",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "농어촌학생(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "농어촌지역 중·고 6년 또는 초·중·고 12년 전 교육과정 이수 졸업(예정)자(부모·본인 거주요건). 약학과는 3-1까지 과학교과 20단위 이상 이수자만. 검정고시·농어촌 특목고 불가",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              29
+            ]
+          },
+          {
+            "trackName": "기초생활수급권자",
+            "trackTypeRaw": "학생부위주(교과)",
+            "recruitmentPeriodRaw": "수시",
+            "specialTypeKeyword": "기초생활수급권자(정원외)",
+            "quotaInitial": 4,
+            "applicationQualification": "고등학교 졸업(예정)자 및 동등학력 소지(예정)자 중 기초생활수급(권)자/차상위계층/한부모가족 지원대상자. 의예과·약학과는 3-1까지 과학교과 20단위 이상 이수자만",
+            "reflectionStages": [
+              {
+                "stageLabel": "일괄합산",
+                "multiplier": null,
+                "components": {
+                  "교과": 100
+                },
+                "stageMaxScore": 100
+              }
+            ],
+            "csatMinimumRawText": "없음",
+            "csatMinimumExempt": true,
+            "csatRequiredAreasRawText": null,
+            "prevYearResult": null,
+            "sourcePages": [
+              8,
+              31
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "모집인원 총괄표(물리적 8페이지)가 컬럼이 매우 넓고 정시 컬럼과 혼재되어 pdftotext -bbox-layout 좌표로 컬럼 정렬 후 추출함. 수시 13개 컬럼 합계 전부 원문 합계행과 일치(교과799·면접245·지역인재Ⅰ67·지역인재Ⅱ184·지역인재기초7·의예약학33·지역의사15·특성화고교110·사회배려2·실기55·체육특기자40·농어촌48·기초생활정원외40).",
+      "totalQuotaHint는 수시 firm(정원내+정원외) 합. 총괄표의 '모집인원' 컬럼(1,691) 및 정시 컬럼은 제외함(정시는 본 추출 대상 아님).",
+      "농어촌학생·기초생활수급권자 전형은 정원외(specialTypeKeyword에 표기). 수시 정원외 합=88(농어촌48+기초생활40).",
+      "계열모집(혁신신약⋅제약공학계열·의생명보건⋅의료공학계열·사회과학계열·미디어⋅콘텐츠계열·공학·건축계열·컴퓨터·AI⋅게임⋅스마트물류계열)은 단과대학 내 동일계열 학과(부)를 묶어 모집하는 전공자율선택제 광역모집단위. 학과명은 원문 그대로 보존.",
+      "자유전공학부는 계열 선발범위 내 전 학과 선택 가능한 자율전공 광역모집단위(40명).",
+      "글로컬리더스학부(이공계열)는 학생부교과(2합7)·면접(2합9) 전형에 수능최저 있음.",
+      "스포츠헬스케어학부는 (스포츠산업⋅재활전공)과 (경기지도전공) 두 모집단위로 분리. 경기지도전공은 체육특기자(실적위주)만 모집."
+    ]
+  }
+}
