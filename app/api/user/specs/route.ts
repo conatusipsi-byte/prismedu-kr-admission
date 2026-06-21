@@ -15,7 +15,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   const sb = getAdminSupabase();
   const { data, error } = await sb
     .from("user_specs")
-    .select("id, as_of, school_record, csat, school_type, updated_at")
+    .select("id, as_of, school_record, csat, school_type, track, high_school, updated_at")
     .eq("user_id", auth.uid)
     .order("updated_at", { ascending: false })
     .limit(20);
@@ -49,6 +49,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       school_record: input.schoolRecord,
       csat: input.csat ?? null,
       school_type: input.schoolType ?? null,
+      track: input.track ?? null,
+      high_school: input.highSchool ?? null,
     })
     .select("id")
     .single();

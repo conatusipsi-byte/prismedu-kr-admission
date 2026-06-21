@@ -58,6 +58,12 @@ export const UserSpecsUpsertSchema = z.object({
     })),
   }).optional(),
   schoolType: z.enum(["general", "autonomous", "special_purpose", "specialized"]).optional(),
+  // 기본정보 영속화 — 분석 폼 prefill 용 (분석마다 재입력 방지). 미입력 허용.
+  track: z.enum(["humanities", "natural", "arts"]).optional(),
+  highSchool: z
+    .object({ code: z.string(), name: z.string(), region: z.string() })
+    .nullable()
+    .optional(),
 });
 
 export type UserSpecsUpsert = z.infer<typeof UserSpecsUpsertSchema>;

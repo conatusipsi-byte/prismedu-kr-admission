@@ -70,6 +70,8 @@ serviceAccountKey.json
 # 파싱 산출물은 data/parsed-admissions/ 또는 Supabase 에 적재됨.
 /university/
 /univ/
+# 한국교육시설안전원 학교위치 CSV (high_schools seed 원본 — DB 적재 후 불필요, ~3.6MB)
+/한국교육시설안전원_*.csv
 
 # Claude Code local session state
 /.claude/

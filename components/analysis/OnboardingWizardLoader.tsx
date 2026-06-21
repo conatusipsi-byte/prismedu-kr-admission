@@ -47,6 +47,8 @@ interface SpecRow {
       percentile?: number;
     }>;
   };
+  track?: "humanities" | "natural" | "arts" | null;
+  high_school?: { code: string; name: string; region: string } | null;
 }
 
 export function OnboardingWizardLoader(): React.ReactElement {
@@ -139,9 +141,9 @@ function specRowToPayload(row: SpecRow): OnboardingPayload {
   return {
     basic: {
       gradeLevel,
-      track: null, // user_specs 에 미저장 — 사용자 재선택
-      abroadHighSchool: null,
-      highSchool: null,
+      track: row.track ?? null,
+      abroadHighSchool: row.high_school ? "no" : null,
+      highSchool: row.high_school ?? null,
     },
     score: { naesin, csat },
     extra: EMPTY_ONBOARDING.extra,

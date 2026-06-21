@@ -352,6 +352,9 @@ function buildSpecPayload(form: OnboardingPayload) {
     schoolRecord: {
       gpaByTerm,
     },
+    // 기본정보 영속화 — 다음 분석에서 prefill (재입력 방지)
+    ...(basic.track ? { track: basic.track } : {}),
+    ...(basic.highSchool ? { highSchool: basic.highSchool } : {}),
     ...(csat ? { csat } : {}),
   };
 }

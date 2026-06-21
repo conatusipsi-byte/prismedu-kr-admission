@@ -47,6 +47,8 @@ interface SpecRow {
       percentile?: number;
     }>;
   };
+  track?: "humanities" | "natural" | "arts" | null;
+  high_school?: { code: string; name: string; region: string } | null;
 }
 
 export interface AnalysisFormWizardLoaderProps {
@@ -145,9 +147,9 @@ function specRowToPayload(row: SpecRow): AnalysisFormPayload {
   return {
     basic: {
       gradeLevel,
-      track: null,
-      abroadHighSchool: null,
-      highSchool: null,
+      track: row.track ?? null,
+      abroadHighSchool: row.high_school ? "no" : null,
+      highSchool: row.high_school ?? null,
     },
     score: { naesin, csat },
     extra: EMPTY_ANALYSIS_FORM.extra,
