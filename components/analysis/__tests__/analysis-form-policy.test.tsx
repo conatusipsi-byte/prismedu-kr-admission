@@ -1,15 +1,17 @@
 /**
  * 분석 폼 정책 회귀
  *
- * 회귀 게이트 — 본 테스트가 깨지면 P-013 또는 자소서 정책 위반:
- *   1. P-013: 외국 고교 = '예' 답변 → /admissions/jaeoegukmin redirect
- *   2. 자소서 폐지(24학번~): 분석 폼 어디에도 자소서 입력 필드·키워드 없음
- *   3. P-002: 정직성 안내(참고용·모집요강 확인) 노출
- *   4. P-002: "확정 합격" 표현 차단 (단, 부정 문맥은 허용)
+ * 회귀 게이트 — 본 테스트가 깨지면 자소서/정직성 정책 위반:
+ *   1. 자소서 폐지(24학번~): 분석 폼 어디에도 자소서 입력 필드·키워드 없음
+ *   2. P-002: "확정 합격" 표현 차단 (단, 부정 문맥은 허용)
+ *
+ * 외국 고교 질문은 폼에서 제거됨(국내 일반고 기준). 재외국민 분리는 서버
+ * (matching-kr) abroadHighSchool 가드가 담당. 참고용 정직성 안내는 결과
+ * 페이지에 노출되며 result-page-policy.test.tsx 가 검증한다.
  */
 
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { describe, it, expect, vi, beforeEach } from "vitest";
+import { render } from "@testing-library/react";
 
 const pushMock = vi.fn();
 
@@ -27,73 +29,14 @@ vi.mock("next/navigation", () => ({
 }));
 
 import { AnalysisFormWizard } from "../AnalysisFormWizard";
-import { BasicInfoStep, EMPTY_BASIC_INFO } from "../BasicInfoStep";
 import { ExtraActivityStep, EMPTY_EXTRA_ACTIVITY_STEP } from "../ExtraActivityStep";
 
 beforeEach(() => {
   pushMock.mockReset();
 });
 
-afterEach(() => {
-  // jsdom DOM 정리는 RTL이 자동.
-});
-
 /* ═══════════════════════════════════════════════════════════════════════
-   1. P-013 — 외국 고교 = '예' 시 jaeoegukmin redirect
-   ═══════════════════════════════════════════════════════════════════════ */
-
-describe("P-013 — 분석 폼 외국 고교 답변 redirect", () => {
-  it("BasicInfoStep에서 '외국 고교 = 예' 선택 → /admissions/jaeoegukmin push", () => {
-    function Wrapper() {
-      const [v, setV] = (
-        require("react") as typeof import("react")
-      ).useState(EMPTY_BASIC_INFO);
-      return <BasicInfoStep value={v} onChange={setV} />;
-    }
-    render(<Wrapper />);
-
-    // '예' 라디오 클릭
-    const yesRadio = screen.getByLabelText(/예 \(외국 고교 졸업/);
-    fireEvent.click(yesRadio);
-
-    expect(pushMock).toHaveBeenCalledWith("/admissions/jaeoegukmin");
-  });
-
-  it("'아니요' 선택 시 redirect 미발생", () => {
-    function Wrapper() {
-      const [v, setV] = (
-        require("react") as typeof import("react")
-      ).useState(EMPTY_BASIC_INFO);
-      return <BasicInfoStep value={v} onChange={setV} />;
-    }
-    render(<Wrapper />);
-
-    const noRadio = screen.getByLabelText(/아니요 \(한국 고교/);
-    fireEvent.click(noRadio);
-
-    expect(pushMock).not.toHaveBeenCalled();
-  });
-
-  it("redirect 안내 노티스 노출 (즉시 push 전 사용자 인식)", () => {
-    function Wrapper() {
-      const [v, setV] = (
-        require("react") as typeof import("react")
-      ).useState(EMPTY_BASIC_INFO);
-      return <BasicInfoStep value={v} onChange={setV} />;
-    }
-    render(<Wrapper />);
-
-    fireEvent.click(screen.getByLabelText(/예 \(외국 고교/));
-
-    expect(screen.getByTestId("jaeoegukmin-redirect-notice")).toBeInTheDocument();
-    expect(screen.getByTestId("jaeoegukmin-redirect-notice").textContent).toMatch(
-      /재외국민|외국인|12년/,
-    );
-  });
-});
-
-/* ═══════════════════════════════════════════════════════════════════════
-   2. 자소서 영역 부재 (24학번~ 자소서 폐지)
+   1. 자소서 영역 부재 (24학번~ 자소서 폐지)
    ═══════════════════════════════════════════════════════════════════════ */
 
 describe("자소서 영역 부재 — 24학번부터 자소서 폐지", () => {
@@ -131,17 +74,10 @@ describe("자소서 영역 부재 — 24학번부터 자소서 폐지", () => {
 });
 
 /* ═══════════════════════════════════════════════════════════════════════
-   3. P-002 — 정직성 안내 노출 + "확정 합격" 표현 차단
+   2. P-002 — "확정 합격" 표현 차단 (참고용 안내는 결과 페이지 게이트)
    ═══════════════════════════════════════════════════════════════════════ */
 
-describe("P-002 — 정직성 안내 (참고용 / 모집요강 / 확정 차단)", () => {
-  it("AnalysisFormWizard에 '참고용' 또는 '모집요강' 안내 노출", () => {
-    const { container } = render(<AnalysisFormWizard />);
-    const text = container.textContent ?? "";
-    // 두 키워드 중 적어도 하나
-    expect(text).toMatch(/참고용|모집요강/);
-  });
-
+describe("P-002 — '확정 합격' 표현 차단", () => {
   it("'확정 합격' 단어 자체 미사용 (또는 부정 문맥에서만)", () => {
     const { container } = render(<AnalysisFormWizard />);
     const text = container.textContent ?? "";

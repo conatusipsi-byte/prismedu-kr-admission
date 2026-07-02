@@ -3,7 +3,7 @@
 /**
  * AnalysisFormWizard — /analysis 페이지 본체 (3-step Stepper)
  *
- * Step 1 BasicInfo  → 외국 고교 = '예' 시 BasicInfoStep 내부에서 jaeoegukmin로 redirect (P-013).
+ * Step 1 BasicInfo  → 학년·계열·(선택)출신 고교 입력. 국내 일반고 기준(외국 고교 여부 미질문).
  * Step 2 ScoreInput → 내신·수능 입력. RequiredAreasValidator로 응시영역 자격 자가검토 (B1).
  * Step 3 ExtraActivity → 생기부 비교과 정량. 자소서 영역 미포함.
  *
@@ -92,7 +92,8 @@ export function AnalysisFormWizard({
         return;
       }
       // /api/match는 KrSpecsSchema 전체(basic+score+extra)를 요구. isBasicInfoValid가
-      // gradeLevel/track/abroadHighSchool='no' 모두 통과를 보장한 시점이므로 non-null 단언.
+      // gradeLevel/track 통과를 보장한 시점이므로 non-null 단언. abroadHighSchool은
+      // 국내 일반고 기준 폼이라 'no' 고정(서버 P-013 가드도 'no'만 허용).
       const payload = {
         basic: {
           gradeLevel: value.basic.gradeLevel!,
@@ -210,12 +211,6 @@ export function AnalysisFormWizard({
             />
           )}
         </div>
-
-        {/* Honesty caveat (P-002) — 항상 노출 */}
-        <p className="rounded-md border border-amber-200 bg-amber-50/60 p-2 text-xs text-amber-900 dark:border-amber-900/40 dark:bg-amber-900/15 dark:text-amber-200">
-          ⚠️ 본 분석은 참고용입니다. 표본이 부족한 학과는 합격 확률을 표시하지 않으며,
-          최종 지원·합격 여부는 모집요강과 본인 판단으로 결정하세요.
-        </p>
 
         {error && (
           <div
