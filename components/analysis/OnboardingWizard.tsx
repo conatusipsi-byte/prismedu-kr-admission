@@ -6,8 +6,7 @@
  * 첫 로그인 시 KR Specs(학년·계열·내신·수능·비교과)를 받아 사용자 spec 스냅샷으로
  * 저장한 뒤 대시보드 또는 첫 분석으로 안내한다.
  *
- * Step 1 BasicInfo  → BasicInfoStep 재사용. 외국 고교 = '예'면 BasicInfoStep 내부에서
- *                     /admissions/jaeoegukmin로 redirect (P-013).
+ * Step 1 BasicInfo  → BasicInfoStep 재사용 (학년·계열·(선택)출신 고교, 국내 일반고 기준).
  * Step 2 ScoreInput → ScoreInputStep 재사용 (내신 + 수능/모의).
  * Step 3 ExtraActivity → ExtraActivityStep 재사용 (생기부 비교과 정량).
  * Step 4 Done → 저장 결과 안내 + 다음 액션 분기. 의향(수시 6장 + 정시 가/나/다)은
@@ -224,14 +223,6 @@ export function OnboardingWizard({
           )}
           {step === 4 && <DoneStep saved={saved} router={router} />}
         </div>
-
-        {/* Honesty caveat (P-002) — step 4 제외 항상 노출 */}
-        {step < 4 && (
-          <p className="rounded-md border border-amber-200 bg-amber-50/60 p-2 text-xs text-amber-900 dark:border-amber-900/40 dark:bg-amber-900/15 dark:text-amber-200">
-            ⚠️ 입력 내용은 본인만 조회 가능합니다. 표본이 부족한 학과는 합격 확률을
-            표시하지 않으며, 비교과는 빈 값이어도 분석에 페널티가 없어요.
-          </p>
-        )}
 
         {error && (
           <div
