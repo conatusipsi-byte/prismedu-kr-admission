@@ -9,6 +9,8 @@
  */
 
 import * as React from "react";
+import Link from "next/link";
+import { ArrowRight, Globe2 } from "lucide-react";
 import { Label } from "@/components/ui/label";
 import {
   Select,
@@ -121,6 +123,21 @@ export function BasicInfoStep({ value, onChange }: BasicInfoStepProps): React.Re
         <p className="text-2xs text-muted-foreground">
           학교 검색 데이터는 NEIS 공공데이터를 사용해요. 비워두셔도 분석에는 영향 없습니다.
         </p>
+      </div>
+
+      {/* 재외국민·외국인 전형 대상자 — 소수 케이스라 폼을 어지럽히지 않도록 작은
+          선택 링크로 분리(P-013). 국내 일반고 기준 폼(abroadHighSchool='no')은 유지. */}
+      <div className="border-t border-border/60 pt-4">
+        <Link
+          href="/admissions/jaeoegukmin"
+          className="group inline-flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-brand-600 dark:hover:text-brand-400"
+        >
+          <Globe2 className="h-3.5 w-3.5 shrink-0" />
+          <span className="break-keep-all">
+            외국 고교 출신·재외국민·외국인 전형 자격이 궁금하신가요?
+          </span>
+          <ArrowRight className="h-3 w-3 shrink-0 transition-transform group-hover:translate-x-0.5" />
+        </Link>
       </div>
     </div>
   );

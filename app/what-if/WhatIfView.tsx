@@ -442,7 +442,7 @@ function NoBaseSpecState(): React.ReactElement {
           </Button>
           <Button asChild size="lg" variant="outline">
             <Link href="/dashboard">
-              <ArrowLeft className="h-3.5 w-3.5" /> 대시보드
+              <ArrowLeft className="h-3.5 w-3.5" /> 나의 입시
             </Link>
           </Button>
         </div>

@@ -131,7 +131,7 @@ export function PublicNav(): React.ReactElement | null {
                       // 어우러지도록 transparent fill + theme-aware border.
                       className="dark:bg-transparent dark:border-border dark:hover:bg-accent/40"
                     >
-                      <Link href="/dashboard">대시보드</Link>
+                      <Link href="/dashboard">나의 입시</Link>
                     </Button>
                     <UserMenu
                       name={profile?.name ?? (user.user_metadata?.name as string | undefined) ?? "내 계정"}
@@ -227,7 +227,7 @@ export function PublicNav(): React.ReactElement | null {
                     {user ? (
                       <>
                         <Button asChild size="xl" variant="primary" className="w-full">
-                          <Link href="/dashboard">대시보드</Link>
+                          <Link href="/dashboard">나의 입시</Link>
                         </Button>
                         <Button
                           asChild
@@ -319,7 +319,7 @@ function UserMenu({
         <DropdownMenuItem asChild>
           <Link href="/dashboard">
             <LayoutDashboard className="h-4 w-4" />
-            <span>대시보드</span>
+            <span>나의 입시</span>
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>

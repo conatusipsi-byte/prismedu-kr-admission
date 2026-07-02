@@ -27,7 +27,7 @@ export function HeroCta(): React.ReactElement {
     >
       <Button asChild size="2xl" variant="primary" className="shadow-glow-brand">
         <Link href={loggedIn ? "/dashboard" : "/signup?returnUrl=/onboarding"}>
-          {loggedIn ? "내 대시보드로" : "무료 가입하고 분석 받기"}
+          {loggedIn ? "나의 입시로" : "무료 가입하고 분석 받기"}
           <ArrowRight className="h-4 w-4" />
         </Link>
       </Button>

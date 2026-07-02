@@ -285,7 +285,7 @@ function DoneStep({
         </h2>
         <p className="text-sm text-muted-foreground leading-relaxed">
           이제 첫 분석을 돌려서 학과별 합격률을 확인해보세요. 마음에 드는 학과를
-          고르며 수시 6장·정시 가/나/다군 의향을 채우면, 대시보드가 D-Day와 함께
+          고르며 수시 6장·정시 가/나/다군 의향을 채우면, '나의 입시'에서 D-Day와 함께
           관리해드려요.
         </p>
       </div>
@@ -305,7 +305,7 @@ function DoneStep({
           variant="outline"
           onClick={() => router.push("/dashboard")}
         >
-          대시보드 먼저 보기
+          나의 입시 먼저 보기
         </Button>
       </div>
     </div>

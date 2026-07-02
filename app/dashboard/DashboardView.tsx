@@ -39,7 +39,7 @@ import {
 import { useAuth } from "@/lib/auth-context";
 import { fetchWithAuth, ApiError } from "@/lib/api-client";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 
@@ -135,10 +135,10 @@ export function DashboardView(): React.ReactElement {
         <div className="relative flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-1.5">
-              안녕하세요 👋
+              안녕하세요, {displayName}님 👋
             </p>
             <h1 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-              {displayName}님의 입시 대시보드
+              나의 입시
             </h1>
             <p className="mt-1.5 text-sm text-muted-foreground">
               오늘도 한 걸음씩, 차근차근 진행해요.
@@ -163,28 +163,50 @@ export function DashboardView(): React.ReactElement {
 
       {/* Spec 미작성 안내 (P-002 정직성 — 빈 데이터에 가짜 진행도 표시 X) */}
       {!loading && !hasSpec && (
-        <Card variant="accent">
-          <CardContent className="flex flex-col sm:flex-row sm:items-center gap-3 p-card-lg">
-            <div className="w-10 h-10 rounded-xl bg-brand-500/15 text-brand-600 dark:text-brand-400 flex items-center justify-center shrink-0">
-              <ClipboardList className="h-5 w-5" />
+        <div className="relative overflow-hidden rounded-3xl border border-brand-200/70 bg-gradient-to-br from-brand-50 to-emerald-50/40 p-6 lg:p-7 dark:border-brand-900/50 dark:from-brand-950/40 dark:to-emerald-950/20">
+          <div className="pointer-events-none absolute -right-8 -top-10 h-40 w-40 rounded-full bg-brand-300/20 blur-3xl" aria-hidden="true" />
+          <div className="relative flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-6">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-emerald-600 text-white shadow-lg shadow-brand-500/30">
+              <ClipboardList className="h-7 w-7" />
             </div>
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-foreground">
+            <div className="min-w-0 flex-1">
+              <p className="text-2xs font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">
+                첫 단계
+              </p>
+              <h2 className="mt-1 text-lg font-bold text-foreground">
                 먼저 입시 프로필부터 채워주세요
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground leading-relaxed break-keep-all">
+                내신·수능·생기부를 한 번만 입력하면 아래 기능이 모두 같은 데이터로 동작해요.
               </p>
-              <p className="text-xs text-muted-foreground mt-0.5 break-keep-all">
-                내신·수능·생기부를 한 번 입력하면 합격률 분석·What-if·카운슬러가
-                같은 데이터로 동작해요.
-              </p>
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {[
+                  { icon: <BarChart3 className="h-3.5 w-3.5" />, label: "합격률 분석" },
+                  { icon: <Wand2 className="h-3.5 w-3.5" />, label: "What-If 시뮬" },
+                  { icon: <Bot className="h-3.5 w-3.5" />, label: "AI 카운슬러" },
+                ].map((chip) => (
+                  <span
+                    key={chip.label}
+                    className="inline-flex items-center gap-1 rounded-full border border-brand-200/70 bg-background/60 px-2.5 py-1 text-2xs font-medium text-brand-700 dark:border-brand-800/70 dark:bg-background/30 dark:text-brand-300"
+                  >
+                    {chip.icon}
+                    {chip.label}
+                  </span>
+                ))}
+              </div>
             </div>
-            <Button asChild size="sm" className="bg-brand-600 hover:bg-brand-700">
+            <Button
+              asChild
+              size="lg"
+              className="w-full shrink-0 bg-brand-600 text-white shadow-lg shadow-brand-500/30 hover:bg-brand-700 sm:w-auto"
+            >
               <Link href="/onboarding">
                 프로필 만들기
-                <ArrowRight className="h-3.5 w-3.5" />
+                <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       )}
 
       {/* TodayFocusCard — D-Day 그리드 */}
@@ -281,7 +303,7 @@ export function DashboardView(): React.ReactElement {
           role="alert"
           className="text-xs text-muted-foreground border-t pt-3"
         >
-          ⚠️ 대시보드 데이터 조회 실패: {error} — 일부 카드가 비어있을 수 있어요.
+          ⚠️ 나의 입시 데이터 조회 실패: {error} — 일부 카드가 비어있을 수 있어요.
         </p>
       )}
     </div>
