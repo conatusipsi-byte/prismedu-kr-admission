@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/select";
 import { SampleStatsOverview } from "@/components/admin/SampleStatsOverview";
 import { SampleStatsTable } from "@/components/admin/SampleStatsTable";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import type {
   SampleStatsItem,
   SampleStatsSummary,
@@ -43,7 +44,7 @@ const TRACK_KINDS = [
 ] as const;
 
 export function SampleStatsView(): React.ReactElement {
-  const [year, setYear] = React.useState<number>(new Date().getFullYear() + 1);
+  const [year, setYear] = React.useState<number>(getCurrentAdmissionYear());
   const [trackKind, setTrackKind] = React.useState<string>("all");
   const [status, setStatus] = React.useState<"all" | "sufficient" | "insufficient">("all");
   const [data, setData] = React.useState<ApiResponse | null>(null);

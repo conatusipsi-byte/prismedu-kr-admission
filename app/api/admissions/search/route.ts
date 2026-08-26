@@ -19,6 +19,7 @@ import {
   type AdmissionsSearchQuery,
 } from "@/lib/schemas/api/admissions";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import { zodErrorResponse } from "@/lib/api-auth";
 import type {
   AdmissionTrackKind,
@@ -94,7 +95,7 @@ async function searchDepartments(
   allowJaeoegukmin: boolean,
 ): Promise<SearchResponse> {
   const sb = getAdminSupabase();
-  const year = new Date().getFullYear() + 1;
+  const year = getCurrentAdmissionYear();
   const offset = decodeOffset(query.cursor);
 
   /* ─────────────────────────────────────────────────────────────────────

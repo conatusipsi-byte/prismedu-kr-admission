@@ -12,6 +12,7 @@
 import "server-only";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "./sample-gate";
+import { getCurrentAdmissionYear } from "./current-year";
 import type {
   AdmissionIntent,
   AdmissionSampleStats,
@@ -89,7 +90,7 @@ export async function loadSchoolsForFocus(
     const sufficient = await isAnyTrackSampleSufficient(
       pair.universityId,
       pair.departmentId,
-      new Date().getFullYear() + 1,
+      getCurrentAdmissionYear(),
     );
     out.push({
       universityId: pair.universityId,
@@ -124,7 +125,7 @@ export async function loadIntentContext(uid: string): Promise<ChatContextSchool[
       intent.jeongsi.ga, intent.jeongsi.na, intent.jeongsi.da,
     ].filter((s): s is NonNullable<typeof s> => Boolean(s));
 
-    const year = new Date().getFullYear() + 1;
+    const year = getCurrentAdmissionYear();
     const out: ChatContextSchool[] = [];
     for (const slot of slots.slice(0, 10)) {
       const display = await formatDepartmentDisplayName(slot.universityId, slot.departmentId);

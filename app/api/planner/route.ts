@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { isMasterEmail } from "@/lib/master";
 import { getAdminSupabase } from "@/lib/supabase-server";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import { reportRouteError } from "@/lib/sentry-report";
 import { canUseFeature, type Plan } from "@/lib/plans";
 import {
@@ -36,7 +37,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
   try {
     const intent = await loadLatestIntent(auth.uid);
-    const targetYear = new Date().getFullYear() + 1;
+    const targetYear = getCurrentAdmissionYear();
     const generated = generatePlannerTasks(intent, targetYear);
 
     if (generated.length === 0) {

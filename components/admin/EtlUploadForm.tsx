@@ -21,6 +21,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { EtlParseResultPreview } from "./EtlParseResultPreview";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import type { ParsedAdmissionPartial, ParserTrustLevel } from "../../scripts/etl/parsers/types";
 import type { CsatMinimum } from "@/types/admission";
 
@@ -45,7 +46,7 @@ export interface EtlUploadFormProps {
 export function EtlUploadForm({ fetchOverride }: EtlUploadFormProps): React.ReactElement {
   const [file, setFile] = React.useState<File | null>(null);
   const [universityId, setUniversityId] = React.useState("");
-  const [year, setYear] = React.useState<string>(String(new Date().getFullYear() + 1));
+  const [year, setYear] = React.useState<string>(String(getCurrentAdmissionYear()));
   const [phase, setPhase] = React.useState<Phase>("idle");
   const [progressMessage, setProgressMessage] = React.useState<string>("");
   const [result, setResult] = React.useState<UploadResponse | null>(null);

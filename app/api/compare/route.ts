@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireAuth, zodErrorResponse } from "@/lib/api-auth";
 import { isMasterEmail } from "@/lib/master";
 import { getAdminSupabase } from "@/lib/supabase-server";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import { reportRouteError } from "@/lib/sentry-report";
 import { CompareRequestSchema } from "@/lib/schemas/api/compare";
 import { KrSpecsSchema, type KrSpecsInput } from "@/lib/schemas/api/match";
@@ -55,7 +56,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       );
     }
 
-    const year = new Date().getFullYear() + 1;
+    const year = getCurrentAdmissionYear();
 
     let baseSpecs: KrSpecsInput | null = null;
     if (baseSpecId) {

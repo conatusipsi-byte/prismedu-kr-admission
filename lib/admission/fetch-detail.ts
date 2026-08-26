@@ -11,6 +11,7 @@ import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
 import { ADMISSION_PROBABILITY_ENABLED } from "@/lib/admission/feature-flags";
 import { isValidAdmissionId, canonicalizeAdmissionId } from "@/lib/admission/id-validation";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import type {
   AdmissionSampleStats,
   AdmissionTrack,
@@ -50,7 +51,7 @@ export async function fetchDepartmentDetail(
   if (!isValidAdmissionId(departmentId)) return null;
 
   const sb = getAdminSupabase();
-  const year = new Date().getFullYear() + 1;
+  const year = getCurrentAdmissionYear();
 
   // URL param 은 id 또는 slug. slug 우선 → 못 찾으면 id로. canonical 한 id 만 후속 쿼리에 사용.
   const { data: uniRow } = await sb

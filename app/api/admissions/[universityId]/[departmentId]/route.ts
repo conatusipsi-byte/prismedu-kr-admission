@@ -9,6 +9,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { checkSampleSufficiency } from "@/lib/admission/sample-gate";
 import { isValidAdmissionId, canonicalizeAdmissionId } from "@/lib/admission/id-validation";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import type {
   AdmissionSampleStats,
   AdmissionTrackKind,
@@ -32,7 +33,7 @@ export async function GET(
     return NextResponse.json({ error: "유효하지 않은 ID" }, { status: 400 });
   }
 
-  const year = new Date().getFullYear() + 1;
+  const year = getCurrentAdmissionYear();
   const sb = getAdminSupabase();
 
   // 임베드 select — 한 쿼리로 모든 정보

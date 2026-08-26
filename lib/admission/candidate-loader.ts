@@ -19,6 +19,7 @@
 
 import { getAdminSupabase } from "@/lib/supabase-server";
 import { loadSampleStatsBatch, sampleStatId } from "@/lib/admission/sample-stats";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import type { KrSpecsInput } from "@/lib/schemas/api/match";
 import type { MatchCandidate } from "@/lib/matching-kr";
 import type {
@@ -60,7 +61,7 @@ export async function loadKrCandidates(
   limit: number,
 ): Promise<MatchCandidate[]> {
   const sb = getAdminSupabase();
-  const year = new Date().getFullYear() + 1;
+  const year = getCurrentAdmissionYear();
   const tracks = uiTrackToDeptTracks(specs.basic.track);
   if (tracks.length === 0) return [];
 

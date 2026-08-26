@@ -14,6 +14,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from "vitest";
+import { getCurrentAdmissionYear } from "@/lib/admission/current-year";
 import { NextRequest } from "next/server";
 
 interface RpcCall {
@@ -161,10 +162,13 @@ describe("GET /api/admissions/search — BUG-020 RPC 기반", () => {
     expect(body.nextCursor).toBe("o:20");
   });
 
-  it("p_year — current+1 전달 (trackKind 필터 동작용)", async () => {
+  // 과거엔 여기서 `new Date().getFullYear() + 1` 을 그대로 미러링해, 2027-01-01 롤오버
+  // 버그(DB 에 없는 학년도 조회 → 빈 결과)를 테스트가 함께 통과시켰다.
+  // 이제 라우트와 동일한 단일 소스를 참조해 "라우트가 그 함수를 쓰는지"만 검증한다.
+  // (학년도 계산 로직 자체는 lib/admission/__tests__/current-year.test.ts 가 시각 고정으로 검증)
+  it("p_year — getCurrentAdmissionYear() 전달 (trackKind 필터 동작용)", async () => {
     await callRoute("");
-    const year = new Date().getFullYear() + 1;
-    expect(lastRpc().args.p_year).toBe(year);
+    expect(lastRpc().args.p_year).toBe(getCurrentAdmissionYear());
   });
 
   /* dedup + jaeoegukmin display 회귀 — RPC 외부 (JS) 후처리 보존 검증 */
