@@ -15,6 +15,19 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 
 vi.mock("server-only", () => ({}));
 
+/* ─────────────────────────────────────────────────────────────────────
+   시각 고정 (2026-08-26 이관 점검) — 시한폭탄 제거.
+   아래 3개 테스트(빈 timeSlots / untimedRemaining=2 / booking 차감)는 시각을 고정하지 않아
+   `validUntil: FUTURE` 가 **실제 현재보다 미래**라는 가정에 의존했다.
+   2028-01-01 이 지나면 FUTURE 가 과거가 되어 권한이 만료 처리 → untimedRemaining 0 →
+   테스트가 저절로 깨진다(그전에도 '빈 timeSlots' 는 만료 때문에 통과하는 위양성이 된다).
+   → 파일 전체의 기준 시각을 다른 테스트와 동일한 2026-07-01 로 고정한다.
+   (useFakeTimers 미사용 = Date 만 모킹. 개별 테스트의 useFakeTimers 호출은 그대로 유효)
+   ───────────────────────────────────────────────────────────────────── */
+/** 파일 전체 기준 시각 — 개별 테스트가 필요 시 setSystemTime 으로 덮어쓴다. */
+const NOW_FIXED = new Date("2026-07-01T00:00:00Z");
+
+/** 기준 시각(NOW_FIXED) 대비 확실한 미래 — 권한 만료 경로를 타지 않게 하는 validUntil. */
 const FUTURE = "2027-12-31T23:59:59Z";
 
 interface Entry {
@@ -58,6 +71,7 @@ function makeEntry(timeSlots: Record<string, { remaining: number; validFrom: str
 }
 
 beforeEach(() => {
+  vi.setSystemTime(NOW_FIXED);
   state.active = [];
   state.confirmedBookings = 0;
 });

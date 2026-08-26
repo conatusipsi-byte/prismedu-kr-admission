@@ -63,13 +63,23 @@ vi.mock("@/lib/api-client", () => ({
   fetchWithAuth: vi.fn().mockResolvedValue({}),
 }));
 
+/*
+ * 모듈 로드는 테스트 본문이 아니라 **파일 import 단계**에서 1회만 수행한다.
+ *   - 기존엔 각 it() 안에서 `await import(...)` 했는데, 첫 테스트가 모듈 그래프 전체의
+ *     콜드 트랜스폼(측정 ~5.9s)을 떠안아 testTimeout 5000ms 를 넘겼다.
+ *   - 더 나쁜 건 연쇄 오염: 타임아웃된 test 본문은 중단되지 않고 계속 실행돼
+ *     cleanup 이후에 render() 가 뒤늦게 실행 → 다음 테스트에서 "Found multiple elements".
+ *   - top-level await 로 옮기면 로드 비용이 testTimeout 대상에서 빠지고 고아 렌더도 사라진다.
+ *   - vi.mock 은 트랜스폼 단계에서 이 위로 hoist 되므로 모킹은 그대로 적용된다.
+ */
+const { LoginView } = await import("../LoginView");
+
 describe("카카오 OAuth 로그인", () => {
   beforeEach(() => {
     mockSignInWithOAuth.mockClear();
   });
 
   it("카카오 로그인 버튼이 노출된다", async () => {
-    const { LoginView } = await import("../LoginView");
     render(<LoginView />);
     const btn = screen.getByTestId("login-kakao");
     expect(btn).toBeInTheDocument();
@@ -77,7 +87,6 @@ describe("카카오 OAuth 로그인", () => {
   });
 
   it("클릭 시 signInWithOAuth({ provider: 'kakao' }) 호출", async () => {
-    const { LoginView } = await import("../LoginView");
     render(<LoginView />);
     fireEvent.click(screen.getByTestId("login-kakao"));
 
@@ -89,7 +98,6 @@ describe("카카오 OAuth 로그인", () => {
   });
 
   it("scopes에 profile_nickname 포함", async () => {
-    const { LoginView } = await import("../LoginView");
     render(<LoginView />);
     fireEvent.click(screen.getByTestId("login-kakao"));
 
@@ -100,7 +108,6 @@ describe("카카오 OAuth 로그인", () => {
   });
 
   it("scopes에 account_email 포함 — GoTrue 기본 + 비즈 앱 동의 항목", async () => {
-    const { LoginView } = await import("../LoginView");
     render(<LoginView />);
     fireEvent.click(screen.getByTestId("login-kakao"));
 
@@ -111,7 +118,6 @@ describe("카카오 OAuth 로그인", () => {
   });
 
   it("scopes에 profile_image 포함 — GoTrue 기본 scope", async () => {
-    const { LoginView } = await import("../LoginView");
     render(<LoginView />);
     fireEvent.click(screen.getByTestId("login-kakao"));
 
@@ -122,7 +128,6 @@ describe("카카오 OAuth 로그인", () => {
   });
 
   it("redirectTo가 /auth/callback 경로를 포함한다", async () => {
-    const { LoginView } = await import("../LoginView");
     render(<LoginView />);
     fireEvent.click(screen.getByTestId("login-kakao"));
 
@@ -133,7 +138,6 @@ describe("카카오 OAuth 로그인", () => {
   });
 
   it("provider가 정확히 'kakao'이다", async () => {
-    const { LoginView } = await import("../LoginView");
     render(<LoginView />);
     fireEvent.click(screen.getByTestId("login-kakao"));
 
@@ -147,13 +151,11 @@ describe("카카오 OAuth 로그인", () => {
     // 死버튼 재발 방지: 구글 OAuth(external_google_enabled)가 Supabase 에서 켜지고
     // LoginView 의 GOOGLE_OAUTH_ENABLED 가 true 가 되기 전까지, 누르면 실패하는
     // 구글 버튼은 렌더되지 않아야 한다. (회원가입·로그인 불능의 원인이었음)
-    const { LoginView } = await import("../LoginView");
     render(<LoginView />);
     expect(screen.queryByTestId("login-google")).toBeNull();
   });
 
   it("회원가입 모드에서도 카카오 버튼이 노출된다", async () => {
-    const { LoginView } = await import("../LoginView");
     render(<LoginView initialMode="signup" />);
     const btn = screen.getByTestId("login-kakao");
     expect(btn).toBeInTheDocument();

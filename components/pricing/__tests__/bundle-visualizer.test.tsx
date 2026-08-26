@@ -10,11 +10,28 @@
  *   - data-element attribute (E2E 셀렉터)
  */
 
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render } from "@testing-library/react";
 import { BundlePackageVisualizer } from "../BundlePackageVisualizer";
 
+/* ─────────────────────────────────────────────────────────────────────
+   시각 고정 (2026-08-26 이관 점검) — 시한폭탄 제거.
+   아래 단언들은 얼리버드 가격(lib/plans.ts earlybirdUntil="2027-03-31")에 물려 있어,
+   2027-04-01 부터 정가로 바뀌며 **테스트가 저절로 깨진다**.
+   얼리버드 만료는 의도된 프로덕션 정책이므로 건드리지 않고, 테스트만 활성 시점에 고정한다.
+   (BUG-017/021 회귀 가드인 절약액·부풀린 표기 단언의 의도는 그대로 유지)
+   ───────────────────────────────────────────────────────────────────── */
+/** 얼리버드 활성 구간 안의 고정 기준 시각 (KST). */
+const EARLYBIRD_ACTIVE_NOW = new Date("2026-09-01T00:00:00+09:00");
+
 describe("BundlePackageVisualizer (BUG-021)", () => {
+  beforeEach(() => {
+    vi.setSystemTime(EARLYBIRD_ACTIVE_NOW);
+  });
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
   it("2개 번들 카드 노출 — season_consult_1 + season_consult_3", () => {
     const { container } = render(<BundlePackageVisualizer />);
     const c1 = container.querySelector('[data-product-kind="season_consult_1"]');

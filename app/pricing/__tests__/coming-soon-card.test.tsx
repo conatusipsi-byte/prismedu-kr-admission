@@ -13,11 +13,28 @@
  *   4. season_consult_3 = 시기 슬롯 라벨 (6모/9모/수능) 노출
  */
 
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render } from "@testing-library/react";
 import PricingPage from "../page";
 
+/* ─────────────────────────────────────────────────────────────────────
+   시각 고정 (2026-08-26 이관 점검) — 시한폭탄 제거.
+   아래 단언들은 얼리버드 가격(lib/plans.ts earlybirdUntil="2027-03-31")에 물려 있어,
+   2027-04-01 부터 정가로 바뀌며 **테스트가 저절로 깨진다**.
+   얼리버드 만료는 의도된 프로덕션 정책이므로 건드리지 않고, 테스트만 활성 시점에 고정한다.
+   (얼리버드 미적용 상품 = data-earlybird="false" 케이스는 그대로 유지)
+   ───────────────────────────────────────────────────────────────────── */
+/** 얼리버드 활성 구간 안의 고정 기준 시각 (KST). */
+const EARLYBIRD_ACTIVE_NOW = new Date("2026-09-01T00:00:00+09:00");
+
 describe("/pricing 카드 (QA round 2 ④)", () => {
+  beforeEach(() => {
+    vi.setSystemTime(EARLYBIRD_ACTIVE_NOW);
+  });
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
   it("consult_one 카드 = enabled (출시 예정 라벨 X)", () => {
     const { container } = render(<PricingPage />);
     const card = container.querySelector(

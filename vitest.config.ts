@@ -8,6 +8,13 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: ["./vitest.setup.ts"],
+    // 기본 5000ms 로는 무거운 View 통합 테스트(AdmissionsSearchView 등)가
+    // **병렬 실행 경합** 때문에 간헐 타임아웃 → flaky. 무한 대기가 아니라 순수 속도 문제:
+    // 단독 실행 시 최초 테스트 ~1.3s 인데 전체 스위트 동시 실행에선 5s 를 넘긴다.
+    // (측정 근거: 2026-08-26, region-filter-integration 단독 7/7 통과 3.83s)
+    // 타임아웃은 "행(hang) 감지" 용도로만 남기고 여유를 준다.
+    testTimeout: 20000,
+    hookTimeout: 20000,
     // 신규 프로젝트는 src/ 미사용 — 루트의 lib/, app/, components/ 기준.
     // scripts/**는 기본 exclude이지만 scripts/etl/**/__tests__는 명시적 include
     // (Day 9 ETL 파서 회귀 — 외부 도구 의존성 없는 pure 함수만 테스트).

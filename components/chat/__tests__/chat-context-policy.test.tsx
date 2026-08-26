@@ -219,7 +219,11 @@ describe("ChatContextDialog — 학과 추가·제거·한도", () => {
       () => {
         expect(document.querySelector('[data-element="search-hit"]')).not.toBeNull();
       },
-      { timeout: 2000 },
+      // 300ms debounce + fetch. 2000ms 는 전체 스위트 병렬 실행의 CPU 경합에서
+      // 간헐 초과 → flaky (2026-08-26 run 에서 '검색 중…' 상태로 타임아웃).
+      // vitest.config.ts testTimeout 은 waitFor 개별 timeout 을 덮지 않으므로 여기서 올린다.
+      // 행(hang) 감지 용도로만 남기는 값 — 정상 경로는 여전히 수백 ms 에 끝난다.
+      { timeout: 15000 },
     );
 
     // 추가 버튼
@@ -261,7 +265,11 @@ describe("ChatContextDialog — 학과 추가·제거·한도", () => {
       () => {
         expect(document.body.textContent).toMatch(/표본 부족 학과/);
       },
-      { timeout: 2000 },
+      // 300ms debounce + fetch. 2000ms 는 전체 스위트 병렬 실행의 CPU 경합에서
+      // 간헐 초과 → flaky (2026-08-26 run 에서 '검색 중…' 상태로 타임아웃).
+      // vitest.config.ts testTimeout 은 waitFor 개별 timeout 을 덮지 않으므로 여기서 올린다.
+      // 행(hang) 감지 용도로만 남기는 값 — 정상 경로는 여전히 수백 ms 에 끝난다.
+      { timeout: 15000 },
     );
   });
 });

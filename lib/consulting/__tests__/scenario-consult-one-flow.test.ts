@@ -65,13 +65,19 @@ describe("시나리오 — consult_one 풀 흐름 (Day 7)", () => {
   it("webhook 출력 → entitlement 해석 → 캘린더 요약 → 차감 → 환불 (계층 계약 검증)", async () => {
     // 1. webhook 이 만드는 active 엔트리 모양 (lib/plans + payment/confirm 의 빌더 로직).
     //    여기선 webhook 직접 호출 X — 알려진 출력 형태를 state 에 주입.
-    const FUTURE = "2026-07-23T00:00:00Z";
+    // validUntil/grantedAt 은 현재 시각 기준 상대값 — 고정 날짜를 쓰면 그 날짜가 지나는 순간
+    // entitlement 가 만료로 판정돼 테스트가 저절로 깨진다 (실제 2026-07-23 하드코딩분이 그렇게 터짐).
+    // 대상 코드(getConsultingEntitlement / getCalendarEntitlementSummary)가 Date.now() 를
+    // 두 곳에서 읽고 mock supabase 가 promise 기반이라, fake timer 보다 상대 날짜가 단순·안전.
+    const DAY_MS = 24 * 60 * 60 * 1000;
+    const FUTURE = new Date(Date.now() + 60 * DAY_MS).toISOString(); // 60일 뒤 = 미유효기간 내
+    const GRANTED_AT = new Date(Date.now() - 1 * DAY_MS).toISOString(); // 어제 지급
     state.active = [
       {
         orderId: "kr_consult_one_once_uuid_1234567890123_abc123",
         productKind: "consult_one",
         validUntil: FUTURE,
-        grantedAt: "2026-05-24T00:00:00Z",
+        grantedAt: GRANTED_AT,
         // consult_one 은 bundleContents 없음 — 단건
       },
     ];

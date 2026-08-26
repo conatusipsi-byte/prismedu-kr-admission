@@ -11,7 +11,7 @@
  *   7. 토스 status != 'DONE' → 400
  */
 
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { NextRequest } from "next/server";
 
 const requireAuthMock = vi.fn();
@@ -131,7 +131,20 @@ const tossOk = (orderId: string, totalAmount: number): Response =>
     { status: 200, headers: { "Content-Type": "application/json" } },
   );
 
+/* ─────────────────────────────────────────────────────────────────────
+   시각 고정 (2026-08-26 이관 점검) — 시한폭탄 제거.
+   번들 결제 금액 190,000 / 490,000 은 얼리버드가(lib/plans.ts earlybirdUntil="2027-03-31")다.
+   2027-04-01 부터 라우트의 effective price 가 정가(300,000 / 700,000)로 바뀌어
+   "가격 mismatch → 400" 으로 떨어지며 **테스트가 저절로 깨진다**.
+   얼리버드 만료는 의도된 프로덕션 정책이므로 건드리지 않고, 테스트만 활성 시점에 고정한다.
+   makeOrderId 의 ts 도 같은 고정 클럭을 쓰므로 orderId 30분 신선도 창과 일관된다.
+   ───────────────────────────────────────────────────────────────────── */
+/** 얼리버드 활성 구간 안의 고정 기준 시각 (KST). */
+const EARLYBIRD_ACTIVE_NOW = new Date("2026-09-01T00:00:00+09:00");
+
 beforeEach(() => {
+  // Date 만 고정 (useFakeTimers 미사용) — 아래 setImmediate microtask drain 이 그대로 동작해야 함.
+  vi.setSystemTime(EARLYBIRD_ACTIVE_NOW);
   requireAuthMock.mockReset();
   rateLimitMock.mockReset();
   sendEmailMock.mockReset();
@@ -146,6 +159,10 @@ beforeEach(() => {
   sendEmailMock.mockResolvedValue({ ok: true, id: "em_1" });
   process.env.TOSS_SECRET_KEY = "test_secret";
   (globalThis as unknown as { fetch: typeof fetchMock }).fetch = fetchMock;
+});
+
+afterEach(() => {
+  vi.useRealTimers();
 });
 
 function buildReq(orderId: string, amount: number): NextRequest {

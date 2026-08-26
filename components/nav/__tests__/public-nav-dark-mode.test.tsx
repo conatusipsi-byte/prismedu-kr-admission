@@ -24,9 +24,19 @@ vi.mock("@/lib/auth-context", () => ({
   useAuth: () => ({ user: null, profile: null, loading: false, logout: vi.fn() }),
 }));
 
+/*
+ * 모듈 로드는 테스트 본문이 아니라 **파일 import 단계**에서 1회만 수행한다.
+ *   - 기존엔 각 it() 안에서 `await import(...)` 했는데, 첫 테스트가 모듈 그래프 전체의
+ *     콜드 트랜스폼(측정 ~5.9s)을 떠안아 testTimeout 5000ms 를 넘겼다.
+ *   - 더 나쁜 건 연쇄 오염: 타임아웃된 test 본문은 중단되지 않고 계속 실행돼
+ *     cleanup 이후에 render() 가 뒤늦게 실행 → 다음 테스트에서 "Found multiple elements".
+ *   - top-level await 로 옮기면 로드 비용이 testTimeout 대상에서 빠지고 고아 렌더도 사라진다.
+ *   - vi.mock 은 트랜스폼 단계에서 이 위로 hoist 되므로 모킹은 그대로 적용된다.
+ */
+const { PublicNav } = await import("../PublicNav");
+
 describe("PublicNav — BUG-024 다크모드 outline 버튼 (logged-out)", () => {
   it("로그인 버튼 (desktop): dark:bg-transparent + dark:border-border + hover variant", async () => {
-    const { PublicNav } = await import("../PublicNav");
     const { container } = render(<PublicNav />);
     const loginLinks = container.querySelectorAll('a[href="/login"]') as NodeListOf<HTMLElement>;
     expect(loginLinks.length, "로그인 버튼 미노출").toBeGreaterThan(0);
@@ -40,7 +50,6 @@ describe("PublicNav — BUG-024 다크모드 outline 버튼 (logged-out)", () =>
   });
 
   it("primary '무료로 시작' 버튼은 outline 아님 — 본 fix 영향 X (회귀 가드)", async () => {
-    const { PublicNav } = await import("../PublicNav");
     const { container } = render(<PublicNav />);
     const startLink = container.querySelector('a[href="/login?returnUrl=/onboarding"]') as HTMLElement;
     expect(startLink).not.toBeNull();
